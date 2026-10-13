@@ -1,0 +1,2336 @@
+{
+  "items": [
+    {
+      "id": "acc-001",
+      "skill": "fin-acc",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Depreciation expense increases by 10. The tax rate is 25%. Walk through the net effect on the three financial statements. Which option is correct?",
+      "options": [
+        "Net income -10; cash unchanged; PP&E -10; shareholders' equity -10",
+        "Net income -7.5; cash -7.5; PP&E -10; shareholders' equity -7.5",
+        "Net income -7.5; cash +2.5; PP&E -10; shareholders' equity -7.5",
+        "Net income -7.5; cash +10; PP&E -10; shareholders' equity -7.5"
+      ],
+      "answer": 2,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Conto economico: EBIT -10, tasse -2.5 (25% di 10), quindi net income -7.5.",
+          "Cash flow statement: parti dal net income -7.5 e riaggiungi la depreciation +10 perché non è cassa. CFO +2.5, quindi cassa +2.5.",
+          "Stato patrimoniale, attivo: cassa +2.5 e PP&E -10, totale -7.5.",
+          "Passivo e patrimonio: retained earnings -7.5 per il minore utile. Attivo -7.5 = patrimonio -7.5, il bilancio quadra."
+        ],
+        "shortcut": "Un costo non monetario deducibile genera sempre cassa pari a costo × aliquota: 10 × 25% = +2.5. Utile e patrimonio scendono di costo × (1 - t) = 7.5.",
+        "trap": "Dimenticare le tasse (utile -10) oppure dimenticare di riaggiungere la depreciation nel CFO, ottenendo cassa -7.5 e un bilancio che non quadra.",
+        "rule": "Costo non cash deducibile X: utile -X(1 - t), cassa +X·t, attivo e patrimonio -X(1 - t)."
+      },
+      "tags": [
+        "three-statement",
+        "depreciation",
+        "tax-shield",
+        "classic"
+      ]
+    },
+    {
+      "id": "acc-002",
+      "skill": "fin-acc",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Which line item links the income statement to both the cash flow statement and the balance sheet?",
+      "options": [
+        "Revenue",
+        "EBITDA",
+        "Capital expenditure",
+        "Net income"
+      ],
+      "answer": 3,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Il net income è l'ultima riga del conto economico ed è la prima riga del cash flow statement con il metodo indiretto.",
+          "Lo stesso net income, al netto dei dividendi, si somma ai retained earnings nel patrimonio netto.",
+          "Revenue ed EBITDA restano dentro il conto economico; il capex è nel CFI e nel PP&E ma non passa dal conto economico."
+        ],
+        "shortcut": "Chiediti quale numero compare in tutti e tre i prospetti: è sempre il net income.",
+        "trap": "Scegliere il capex perché tocca due prospetti (CFS e PP&E): il conto economico lo vede solo più avanti, tramite la depreciation.",
+        "rule": "Net income: fine del conto economico, inizio del CFS, entra nei retained earnings."
+      },
+      "tags": [
+        "three-statement",
+        "linkages"
+      ]
+    },
+    {
+      "id": "acc-003",
+      "skill": "fin-acc",
+      "level": 1,
+      "type": "mcq",
+      "stem": "A company buys 20 of inventory and pays in cash. What is the immediate effect on the three statements?",
+      "options": [
+        "No income statement effect; CFO -20; inventory +20 and cash -20",
+        "COGS +20 so net income -15 at a 25% tax rate; cash -20; inventory unchanged",
+        "No income statement effect; CFI -20; inventory +20 and cash -20",
+        "No income statement effect; no cash flow statement effect; inventory +20 and cash -20"
+      ],
+      "answer": 0,
+      "timeTarget": 50,
+      "explanation": {
+        "steps": [
+          "Comprare inventory non è un costo: il COGS si registra solo quando la merce viene venduta. Conto economico invariato.",
+          "Nel CFS l'aumento di inventory è un aumento di working capital: CFO -20.",
+          "Stato patrimoniale: inventory +20, cassa -20. Il totale attivo non cambia."
+        ],
+        "shortcut": "Inventory = working capital = CFO. Il CFI è solo per investimenti di lungo periodo (capex, acquisizioni).",
+        "trap": "Mettere l'acquisto nel CFI come se fosse capex, oppure registrarlo subito come COGS.",
+        "rule": "Acquisto di inventory: nessun effetto sul conto economico finché non vendi, uscita nel CFO."
+      },
+      "tags": [
+        "three-statement",
+        "working-capital",
+        "inventory"
+      ]
+    },
+    {
+      "id": "acc-004",
+      "skill": "fin-acc",
+      "level": 1,
+      "type": "mcq",
+      "stem": "A software company receives 50 in cash today from a customer for a service it will deliver next year. What is the effect today?",
+      "options": [
+        "Revenue +50; cash +50; retained earnings +50",
+        "No revenue; cash +50; deferred revenue (liability) +50; CFO +50",
+        "No revenue; cash +50; accounts receivable -50",
+        "No revenue; cash +50; deferred revenue +50; CFF +50"
+      ],
+      "answer": 1,
+      "timeTarget": 50,
+      "explanation": {
+        "steps": [
+          "Il servizio non è ancora stato erogato, quindi non c'è ricavo: conto economico invariato.",
+          "Nel CFS l'aumento di deferred revenue è una variazione positiva di working capital: CFO +50.",
+          "Stato patrimoniale: cassa +50 nell'attivo, deferred revenue +50 nelle passività perché devi ancora il servizio. Quadra."
+        ],
+        "shortcut": "Incasso prima del servizio = debito verso il cliente (deferred revenue), non ricavo.",
+        "trap": "Registrare il ricavo al momento dell'incasso (logica di cassa) invece che al momento dell'erogazione (competenza).",
+        "rule": "Deferred revenue: cassa e passività salgono insieme, il ricavo arriva quando consegni."
+      },
+      "tags": [
+        "three-statement",
+        "deferred-revenue",
+        "accruals"
+      ]
+    },
+    {
+      "id": "acc-005",
+      "skill": "fin-acc",
+      "level": 1,
+      "type": "numeric",
+      "stem": "Net income is 120, D&A is 30, accounts receivable increase by 15, accounts payable increase by 10 and inventory increases by 5. What is cash flow from operations (EUR m)?",
+      "answer": 140,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Parti dal net income: 120.",
+          "Aggiungi la D&A non monetaria: 120 + 30 = 150.",
+          "Working capital: aumento AR -15 (vendite non incassate), aumento AP +10 (costi non ancora pagati), aumento inventory -5.",
+          "CFO = 150 - 15 + 10 - 5 = 140."
+        ],
+        "shortcut": "Attivi operativi che salgono assorbono cassa (segno meno), passività operative che salgono generano cassa (segno più).",
+        "trap": "Invertire il segno dei payables (ottenendo 120) o trattare l'aumento dei crediti come un'entrata (ottenendo 170).",
+        "rule": "CFO = net income + costi non cash - aumento attivi operativi + aumento passività operative."
+      },
+      "tags": [
+        "cash-flow-statement",
+        "working-capital",
+        "cfo"
+      ]
+    },
+    {
+      "id": "acc-006",
+      "skill": "fin-acc",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Accounts receivable increase by 25 during the year. What is the effect on cash flow from operations?",
+      "options": [
+        "CFO increases by 25, because revenue has grown",
+        "No effect, because receivables are a balance sheet item",
+        "CFO decreases by 25 × (1 - tax rate)",
+        "CFO decreases by 25, because revenue was recognised but not yet collected in cash"
+      ],
+      "answer": 3,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Un aumento dei crediti significa che parte dei ricavi inclusi nel net income non è ancora stata incassata.",
+          "Nel CFS indiretto quella parte va tolta: CFO -25.",
+          "Le variazioni di working capital non hanno un effetto fiscale aggiuntivo: le tasse sono già nel net income."
+        ],
+        "shortcut": "Attivo operativo che sale = cassa che scende, uno a uno.",
+        "trap": "Pensare che più crediti = più vendite = più cassa, oppure applicare l'aliquota fiscale a una variazione di working capital.",
+        "rule": "Aumento di un attivo operativo: sottrai l'intero importo nel CFO."
+      },
+      "tags": [
+        "cash-flow-statement",
+        "working-capital",
+        "receivables"
+      ]
+    },
+    {
+      "id": "acc-007",
+      "skill": "fin-acc",
+      "level": 1,
+      "type": "mcq",
+      "stem": "A company spends 80 in cash on new machinery (capex). What is the immediate effect, before any depreciation is charged?",
+      "options": [
+        "Operating expenses +80; net income -60 at a 25% tax rate; cash -80",
+        "No income statement effect; CFI -80; PP&E +80; shareholders' equity -80",
+        "No income statement effect; CFO -80; PP&E +80; cash -80",
+        "No income statement effect; CFI -80; PP&E +80; cash -80"
+      ],
+      "answer": 3,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Il capex è un investimento capitalizzato: nessun effetto sul conto economico al momento dell'acquisto.",
+          "Nel CFS è un'uscita di cassa negli investimenti: CFI -80.",
+          "Stato patrimoniale: PP&E +80, cassa -80. Totale attivo invariato, nessun effetto sul patrimonio.",
+          "Il costo passerà a conto economico negli anni successivi tramite la depreciation."
+        ],
+        "shortcut": "Capex = scambio di un attivo (cassa) con un altro (PP&E).",
+        "trap": "Spesare il capex subito a conto economico, oppure classificarlo nel CFO.",
+        "rule": "Capex: CFI negativo, PP&E su, conto economico toccato solo dalla depreciation futura."
+      },
+      "tags": [
+        "three-statement",
+        "capex",
+        "pp-and-e"
+      ]
+    },
+    {
+      "id": "acc-008",
+      "skill": "fin-acc",
+      "level": 1,
+      "type": "numeric",
+      "stem": "Revenue 400, COGS 260, SG&A 70, D&A 20, interest expense 10, tax rate 25%. What is net income (EUR m)?",
+      "answer": 30,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Gross profit = 400 - 260 = 140.",
+          "EBITDA = 140 - 70 = 70; EBIT = 70 - 20 = 50.",
+          "EBT = 50 - 10 = 40; tasse = 40 × 25% = 10.",
+          "Net income = 40 - 10 = 30."
+        ],
+        "shortcut": "Scendi il conto economico una riga alla volta e applica l'aliquota solo sull'EBT: 40 × 0.75 = 30.",
+        "trap": "Applicare le tasse sull'EBIT (50 × 0.75 - 10 = 27.5) o dimenticare la D&A (ottenendo 45).",
+        "rule": "Net income = (EBIT - interessi) × (1 - t)."
+      },
+      "tags": [
+        "income-statement",
+        "net-income"
+      ]
+    },
+    {
+      "id": "acc-009",
+      "skill": "fin-acc",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Which of the following is NOT deducted when calculating EBITDA?",
+      "options": [
+        "Cost of goods sold",
+        "SG&A expenses",
+        "Amortisation of acquired intangibles",
+        "R&D expenses"
+      ],
+      "answer": 2,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "EBITDA = utile prima di interessi, tasse, depreciation e amortisation.",
+          "COGS, SG&A ed R&D spesato sono costi operativi: vengono dedotti.",
+          "L'amortisation degli intangibili acquisiti è la A di EBITDA: è esclusa."
+        ],
+        "shortcut": "Se la voce è una delle lettere I, T, D, A, non riduce l'EBITDA.",
+        "trap": "Pensare che l'R&D sia escluso perché è un investimento: se è spesato a conto economico, riduce l'EBITDA.",
+        "rule": "EBITDA = EBIT + D&A; tutti gli altri costi operativi restano dentro."
+      },
+      "tags": [
+        "income-statement",
+        "ebitda"
+      ]
+    },
+    {
+      "id": "acc-010",
+      "skill": "fin-acc",
+      "level": 1,
+      "type": "mcq",
+      "stem": "A company issues 100 of new shares for cash. What is the effect on the three statements?",
+      "options": [
+        "Revenue +100; cash +100; retained earnings +100",
+        "No income statement effect; CFI +100; cash +100; share capital +100",
+        "No income statement effect; CFF +100; cash +100; debt +100",
+        "No income statement effect; CFF +100; cash +100; share capital / APIC +100"
+      ],
+      "answer": 3,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Emettere azioni è un'operazione con gli azionisti, non un ricavo: conto economico invariato.",
+          "Nel CFS è un'entrata da attività di finanziamento: CFF +100.",
+          "Stato patrimoniale: cassa +100, capitale sociale (o APIC) +100. Quadra."
+        ],
+        "shortcut": "Tutto ciò che riguarda debito, azioni e dividendi passa dal CFF.",
+        "trap": "Mettere l'aumento di capitale nei retained earnings, che contengono solo utili accumulati meno dividendi.",
+        "rule": "Aumento di capitale: CFF +, cassa +, patrimonio + (non retained earnings)."
+      },
+      "tags": [
+        "three-statement",
+        "equity-issuance",
+        "cff"
+      ]
+    },
+    {
+      "id": "acc-011",
+      "skill": "fin-acc",
+      "level": 1,
+      "type": "mcq",
+      "stem": "At the start of the year a company pays 12 in cash for a 12-month insurance policy. What is the effect at the moment of payment?",
+      "options": [
+        "Operating expenses +12; net income -9 at a 25% tax rate; cash -12",
+        "No income statement effect; prepaid expenses +12; cash -12; CFO -12",
+        "No income statement effect; PP&E +12; cash -12; CFI -12",
+        "No income statement effect; prepaid expenses +12; cash -12; CFF -12"
+      ],
+      "answer": 1,
+      "timeTarget": 50,
+      "explanation": {
+        "steps": [
+          "Il servizio assicurativo non è ancora stato consumato: nessun costo a conto economico oggi.",
+          "Si crea un attivo, prepaid expenses +12, e la cassa scende di 12.",
+          "L'aumento dei prepaid è working capital: CFO -12.",
+          "Ogni mese 1 di prepaid diventa costo a conto economico (12 / 12 mesi)."
+        ],
+        "shortcut": "Pagato prima di consumare = prepaid (attivo); consumato prima di pagare = accrued (passività).",
+        "trap": "Spesare subito l'intero importo, oppure trattare il prepaid come capex nel CFI.",
+        "rule": "Prepaid: attivo di working capital, il costo segue il consumo del servizio."
+      },
+      "tags": [
+        "three-statement",
+        "prepaid-expenses",
+        "accruals"
+      ]
+    },
+    {
+      "id": "acc-012",
+      "skill": "fin-acc",
+      "level": 1,
+      "type": "numeric",
+      "stem": "Opening retained earnings are 500. Net income for the year is 80, dividends paid are 30 and share buybacks of 20 are recorded in treasury stock. What are closing retained earnings (EUR m)?",
+      "answer": 550,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 50,
+      "explanation": {
+        "steps": [
+          "Retained earnings finali = iniziali + net income - dividendi.",
+          "500 + 80 - 30 = 550.",
+          "I buyback sono registrati nel treasury stock, una riga separata del patrimonio netto: non toccano i retained earnings."
+        ],
+        "shortcut": "Nel roll-forward dei retained earnings entrano solo utile e dividendi.",
+        "trap": "Sottrarre anche i buyback (ottenendo 530): riducono il patrimonio totale ma non i retained earnings.",
+        "rule": "RE finali = RE iniziali + net income - dividendi."
+      },
+      "tags": [
+        "balance-sheet",
+        "retained-earnings",
+        "roll-forward"
+      ]
+    },
+    {
+      "id": "acc-013",
+      "skill": "fin-acc",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Which of the following changes in working capital INCREASES cash flow from operations?",
+      "options": [
+        "An increase in inventory",
+        "An increase in accounts payable",
+        "An increase in accounts receivable",
+        "A decrease in accrued liabilities"
+      ],
+      "answer": 1,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Un aumento dei payables significa che hai ricevuto beni o servizi senza pagarli ancora: trattieni cassa.",
+          "Aumenti di inventory e crediti assorbono cassa.",
+          "Una riduzione delle accrued liabilities significa che hai pagato debiti operativi: assorbe cassa."
+        ],
+        "shortcut": "Passività operativa che sale o attivo operativo che scende = cassa in entrata.",
+        "trap": "Sbagliare la direzione per le passività: un debito operativo che sale è positivo per la cassa.",
+        "rule": "Δ passività operative: stesso segno della cassa; Δ attivi operativi: segno opposto."
+      },
+      "tags": [
+        "cash-flow-statement",
+        "working-capital",
+        "payables"
+      ]
+    },
+    {
+      "id": "acc-014",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A company buys equipment for 100, funded entirely with new debt at 10% interest. The equipment is depreciated straight-line over 10 years; tax rate 25%. At the end of year 1 (no principal repaid), what are the cumulative effects versus no purchase?",
+      "options": [
+        "Net income -15; cash -5; PP&E +90; debt +100; shareholders' equity -15",
+        "Net income -20; cash -10; PP&E +90; debt +100; shareholders' equity -20",
+        "Net income -15; cash -15; PP&E +100; debt +100; shareholders' equity -15",
+        "Net income -7.5; cash +2.5; PP&E +90; debt +100; shareholders' equity -7.5"
+      ],
+      "answer": 0,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Conto economico anno 1: depreciation 100 / 10 = 10, interessi 100 × 10% = 10. EBT -20, tasse -5, net income -15.",
+          "CFS: CFO = -15 + 10 (depreciation) = -5; CFI -100; CFF +100. Variazione di cassa = -5.",
+          "Stato patrimoniale, attivo: cassa -5, PP&E +100 - 10 = +90, totale +85.",
+          "Passivo e patrimonio: debito +100, retained earnings -15, totale +85. Quadra."
+        ],
+        "shortcut": "Utile = -(10 + 10) × 0.75 = -15; cassa = utile + D&A = -5. Il resto segue.",
+        "trap": "Dimenticare l'effetto fiscale (utile -20), dimenticare gli interessi (utile -7.5) o non ridurre il PP&E per la depreciation.",
+        "rule": "Acquisto finanziato a debito: anno 0 solo stato patrimoniale; dall'anno 1 depreciation e interessi passano dal conto economico."
+      },
+      "tags": [
+        "three-statement",
+        "debt-financing",
+        "depreciation",
+        "classic"
+      ]
+    },
+    {
+      "id": "acc-015",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A company writes down inventory by 20. The write-down is tax-deductible and the tax rate is 25%. What is the net effect on the statements?",
+      "options": [
+        "Net income -20; cash unchanged; inventory -20; shareholders' equity -20",
+        "Net income -15; cash -15; inventory -20; shareholders' equity -15",
+        "Net income -15; cash +5; inventory -20; shareholders' equity -15",
+        "Net income -15; cash +5; inventory -20; shareholders' equity -20"
+      ],
+      "answer": 2,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Conto economico: costo di 20 (in COGS o in una riga separata), tasse -5, net income -15.",
+          "CFS: -15 + 20 di write-down non monetario = CFO +5, cioè il risparmio fiscale.",
+          "Stato patrimoniale: cassa +5, inventory -20, attivo -15.",
+          "Patrimonio: retained earnings -15. Attivo -15 = patrimonio -15."
+        ],
+        "shortcut": "Stessa logica della depreciation: costo non cash deducibile, cassa = 20 × 25% = +5.",
+        "trap": "Trattare la svalutazione come un'uscita di cassa (cassa -15) o dimenticare le tasse (utile -20).",
+        "rule": "Svalutazione deducibile: cassa + importo × t, patrimonio - importo × (1 - t)."
+      },
+      "tags": [
+        "three-statement",
+        "write-down",
+        "inventory",
+        "classic"
+      ]
+    },
+    {
+      "id": "acc-016",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Stock-based compensation expense increases by 10. Assume it is tax-deductible at 25%. What is the net effect?",
+      "options": [
+        "Net income -7.5; cash +2.5; total shareholders' equity +2.5",
+        "Net income -7.5; cash -7.5; total shareholders' equity -7.5",
+        "Net income -10; cash unchanged; total shareholders' equity unchanged",
+        "Net income -7.5; cash +2.5; total shareholders' equity -7.5"
+      ],
+      "answer": 0,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Conto economico: costo 10, tasse -2.5, net income -7.5.",
+          "CFS: la SBC non è cassa e si riaggiunge: CFO = -7.5 + 10 = +2.5.",
+          "Stato patrimoniale: cassa +2.5. Nel patrimonio i retained earnings scendono di 7.5, ma l'APIC sale di 10 perché le azioni vengono emesse ai dipendenti.",
+          "Patrimonio totale = -7.5 + 10 = +2.5, uguale all'attivo +2.5."
+        ],
+        "shortcut": "La SBC è un costo pagato in azioni: il patrimonio si riprende i 10 tramite l'APIC, quindi patrimonio e cassa salgono entrambi di 2.5.",
+        "trap": "Fermarsi ai retained earnings (patrimonio -7.5) dimenticando la contropartita in APIC: il bilancio non quadrerebbe.",
+        "rule": "SBC: cassa + SBC × t, patrimonio totale + SBC × t, ma diluizione per gli azionisti."
+      },
+      "tags": [
+        "three-statement",
+        "stock-based-compensation",
+        "classic"
+      ]
+    },
+    {
+      "id": "acc-017",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "numeric",
+      "stem": "Net income 60, D&A 25, stock-based compensation 5, increase in deferred tax liability 3, increase in receivables 12, decrease in inventory 4, decrease in payables 6, capex 30. What is free cash flow, defined as CFO minus capex (EUR m)?",
+      "answer": 49,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Voci non cash: 60 + 25 + 5 + 3 = 93. L'aumento della DTL indica tasse di competenza non ancora pagate.",
+          "Working capital: crediti in aumento -12; inventory in calo +4; payables in calo -6. Totale -14.",
+          "CFO = 93 - 14 = 79.",
+          "FCF = 79 - 30 = 49."
+        ],
+        "shortcut": "Somma prima tutti i non cash, poi applica la regola dei segni a ogni voce di working capital in una sola riga.",
+        "trap": "Trattare la riduzione dei payables come un'entrata (ottenendo 61) o sottrarre l'aumento della DTL (ottenendo 43).",
+        "rule": "FCF = net income + non cash - Δ NWC - capex."
+      },
+      "tags": [
+        "cash-flow-statement",
+        "free-cash-flow",
+        "deferred-tax"
+      ]
+    },
+    {
+      "id": "acc-018",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A company sells a machine with a book value of 40 for 50 in cash. Tax rate 25%. What is the net effect on the statements?",
+      "options": [
+        "Net income +10; CFO +10; CFI +50; cash +60; PP&E -40",
+        "Net income +7.5; CFO +7.5; CFI +50; cash +57.5; PP&E -40; shareholders' equity +7.5",
+        "Net income +7.5; CFO -2.5; CFI +40; cash +37.5; PP&E -40; shareholders' equity +7.5",
+        "Net income +7.5; CFO -2.5; CFI +50; cash +47.5; PP&E -40; shareholders' equity +7.5"
+      ],
+      "answer": 3,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Conto economico: plusvalenza 50 - 40 = 10, tasse 2.5, net income +7.5.",
+          "CFS: nel CFO si storna la plusvalenza perché l'incasso è già nel CFI: 7.5 - 10 = -2.5, che è la tassa pagata. CFI +50 per l'incasso lordo.",
+          "Cassa totale = -2.5 + 50 = +47.5.",
+          "Stato patrimoniale: cassa +47.5, PP&E -40, attivo +7.5; retained earnings +7.5. Quadra."
+        ],
+        "shortcut": "Cassa netta = prezzo di vendita - tasse sulla plusvalenza = 50 - 2.5 = 47.5.",
+        "trap": "Lasciare la plusvalenza nel CFO e mettere anche i 50 nel CFI, contando 10 due volte (cassa +57.5).",
+        "rule": "Plusvalenze e minusvalenze si stornano dal CFO; l'incasso lordo va nel CFI."
+      },
+      "tags": [
+        "three-statement",
+        "asset-sale",
+        "gain-on-sale",
+        "classic"
+      ]
+    },
+    {
+      "id": "acc-019",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "mcq",
+      "stem": "At year end a company accrues a 20 employee bonus that will be paid in cash next year. The bonus is tax-deductible this year at 25%. What is the effect this year?",
+      "options": [
+        "Net income -15; cash -15; accrued liabilities unchanged; shareholders' equity -15",
+        "Net income -15; cash +5; accrued liabilities +20; shareholders' equity -15",
+        "Net income -20; cash unchanged; accrued liabilities +20; shareholders' equity -20",
+        "No effect until the bonus is paid next year"
+      ],
+      "answer": 1,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Conto economico: costo del personale 20, tasse -5, net income -15.",
+          "CFS: il bonus non è stato pagato, quindi l'aumento delle accrued liabilities (+20) entra nel CFO: -15 + 20 = +5.",
+          "Stato patrimoniale: cassa +5; accrued liabilities +20; retained earnings -15. Attivo +5 = passività +20 + patrimonio -15."
+        ],
+        "shortcut": "Costo maturato e non pagato: per la cassa si comporta come un costo non cash, sale del risparmio fiscale (20 × 25% = 5).",
+        "trap": "Ignorare il principio di competenza e rimandare tutto all'anno prossimo, quando il bonus viene pagato.",
+        "rule": "Accrual: costo a conto economico ora, passività su, cassa in uscita solo al pagamento."
+      },
+      "tags": [
+        "three-statement",
+        "accruals",
+        "accrued-liabilities"
+      ]
+    },
+    {
+      "id": "acc-020",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "numeric",
+      "stem": "Revenue 1,095, COGS 730, accounts receivable 150, inventory 120, accounts payable 80. Using a 365-day year, revenue for receivable days and COGS for inventory and payable days, what is the cash conversion cycle (days)?",
+      "answer": 70,
+      "tolerance": 0.5,
+      "unit": "days",
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "DSO = 150 / 1,095 × 365 = 50 giorni.",
+          "DIO = 120 / 730 × 365 = 60 giorni.",
+          "DPO = 80 / 730 × 365 = 40 giorni.",
+          "CCC = DSO + DIO - DPO = 50 + 60 - 40 = 70 giorni."
+        ],
+        "shortcut": "1,095 / 365 = 3 di ricavi al giorno e 730 / 365 = 2 di COGS al giorno: 150 / 3 = 50, 120 / 2 = 60, 80 / 2 = 40.",
+        "trap": "Sommare i DPO invece di sottrarli (150 giorni) o usare i ricavi anche per inventory e payables (circa 63 giorni).",
+        "rule": "CCC = DSO + DIO - DPO: quanti giorni la cassa resta bloccata nel ciclo operativo."
+      },
+      "tags": [
+        "working-capital",
+        "cash-conversion-cycle",
+        "ratios"
+      ]
+    },
+    {
+      "id": "acc-021",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A company records a goodwill impairment of 50. The impairment is not tax-deductible. What is the effect on the statements?",
+      "options": [
+        "Net income -37.5; cash +12.5; goodwill -50; shareholders' equity -37.5",
+        "Net income -50; cash -50; goodwill -50; shareholders' equity -50",
+        "Net income -50; cash unchanged; goodwill -50; shareholders' equity -50",
+        "No income statement effect; goodwill -50; shareholders' equity -50"
+      ],
+      "answer": 2,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Conto economico: costo 50; non essendo deducibile, le tasse non cambiano: net income -50.",
+          "CFS: l'impairment è non cash e si riaggiunge: CFO = -50 + 50 = 0. Cassa invariata.",
+          "Stato patrimoniale: goodwill -50; retained earnings -50. Quadra."
+        ],
+        "shortcut": "Non deducibile = nessuno scudo fiscale = nessun effetto sulla cassa.",
+        "trap": "Applicare in automatico il 25% come per la depreciation (cassa +12.5), quando la svalutazione dell'avviamento di norma non è deducibile.",
+        "rule": "Costo non cash non deducibile: utile e patrimonio giù per l'intero importo, cassa invariata."
+      },
+      "tags": [
+        "three-statement",
+        "goodwill",
+        "impairment",
+        "classic"
+      ]
+    },
+    {
+      "id": "acc-022",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A fast-growing distributor reports rising net income but negative cash flow from operations. What is the most likely explanation?",
+      "options": [
+        "Receivables and inventory are growing faster than payables",
+        "Its depreciation charges are unusually high",
+        "It recorded a large non-cash impairment",
+        "It issued new shares during the year"
+      ],
+      "answer": 0,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "In un distributore che cresce, crediti e magazzino aumentano con i volumi: l'aumento del working capital assorbe cassa nel CFO.",
+          "Depreciation e impairment sono non cash: si riaggiungono e fanno salire il CFO rispetto all'utile, non scendere.",
+          "Un aumento di capitale passa dal CFF, non dal CFO."
+        ],
+        "shortcut": "Utile positivo e CFO negativo in una società in crescita = quasi sempre working capital.",
+        "trap": "Pensare che alti costi non cash riducano la cassa: riducono l'utile ma vengono riaggiunti nel CFO.",
+        "rule": "La crescita consuma cassa quando DSO + DIO > DPO."
+      },
+      "tags": [
+        "cash-flow-statement",
+        "working-capital",
+        "earnings-quality"
+      ]
+    },
+    {
+      "id": "acc-023",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "numeric",
+      "stem": "EBITDA is 100. Book depreciation is 20, while accelerated tax depreciation is 30. Tax rate 25%, no interest. By how much does the deferred tax liability increase this year (EUR m)?",
+      "answer": 2.5,
+      "tolerance": 0.05,
+      "unit": "EUR m",
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Tasse di competenza (bilancio): (100 - 20) × 25% = 20.",
+          "Tasse correnti (dichiarazione, cassa): (100 - 30) × 25% = 17.5.",
+          "La differenza 20 - 17.5 = 2.5 è una tassa rinviata: la DTL sale di 2.5."
+        ],
+        "shortcut": "Δ DTL = differenza di depreciation × aliquota = (30 - 20) × 25% = 2.5.",
+        "trap": "Rispondere 10 (la differenza di depreciation senza applicare l'aliquota) o 7.5 (applicando 1 - t invece di t).",
+        "rule": "Ammortamento fiscale più veloce di quello civilistico: paghi meno tasse oggi e crei una DTL."
+      },
+      "tags": [
+        "deferred-tax",
+        "dtl",
+        "depreciation"
+      ]
+    },
+    {
+      "id": "acc-024",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Under IFRS 16, a company that used to expense operating lease rentals of 30 per year now recognises those leases on balance sheet. All else equal, what happens to reported EBITDA and to net debt including lease liabilities?",
+      "options": [
+        "EBITDA increases by about 30; net debt increases by the lease liability",
+        "EBITDA unchanged; net debt unchanged",
+        "EBITDA decreases by about 30; net debt increases by the lease liability",
+        "EBITDA increases by about 30; net debt unchanged"
+      ],
+      "answer": 0,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Prima il canone di 30 era un costo operativo sopra l'EBITDA.",
+          "Con IFRS 16 il canone è sostituito da depreciation del right-of-use asset e interessi sulla lease liability, entrambi sotto l'EBITDA: EBITDA +30 circa.",
+          "La lease liability (valore attuale dei canoni futuri) entra tra i debiti: il net debt sale.",
+          "Per questo EV/EBITDA va calcolato in modo coerente: EV con leasing ed EBITDA post IFRS 16, oppure entrambi senza."
+        ],
+        "shortcut": "IFRS 16 sposta il canone sotto l'EBITDA e il debito per leasing dentro il net debt.",
+        "trap": "Pensare che un cambio di principio contabile non tocchi l'EBITDA: cambiano sia l'EBITDA sia la leva.",
+        "rule": "IFRS 16: EBITDA su, net debt su; confronta i multipli di leva con cautela."
+      },
+      "tags": [
+        "ifrs-16",
+        "leases",
+        "ebitda",
+        "net-debt"
+      ]
+    },
+    {
+      "id": "acc-025",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "numeric",
+      "stem": "A company makes an additional sale of 100 at a 40% gross margin. The goods were already held in inventory and half of the sale is collected in cash this year. Tax rate 25%, taxes paid in cash. What is the change in the company's cash balance this year (EUR m)?",
+      "answer": 40,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Conto economico: ricavi +100, COGS +60, utile lordo +40, tasse -10, net income +30.",
+          "CFO: parti da +30; inventory -60 è un rilascio di working capital (+60); crediti +50 per la metà non incassata (-50).",
+          "CFO = 30 + 60 - 50 = +40.",
+          "Verifica sullo stato patrimoniale: cassa +40, crediti +50, inventory -60, attivo +30 = patrimonio +30."
+        ],
+        "shortcut": "Cassa = incassato dai clienti - tasse pagate = 50 - 10 = 40, perché la merce era già stata pagata.",
+        "trap": "Rispondere 30 (il net income) oppure -20 (sottraendo il COGS come se fosse un'uscita di cassa di quest'anno).",
+        "rule": "Variazione di cassa = flussi davvero incassati e pagati; il net income è solo il punto di partenza."
+      },
+      "tags": [
+        "three-statement",
+        "working-capital",
+        "revenue"
+      ]
+    },
+    {
+      "id": "acc-026",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "mcq",
+      "stem": "In a period of rising purchase prices, a US company switches its inventory method from FIFO to LIFO. All else equal, what is the effect?",
+      "options": [
+        "Higher COGS, lower net income, lower taxes paid and higher operating cash flow",
+        "Lower COGS, higher net income, higher taxes paid and lower operating cash flow",
+        "Higher COGS, lower net income and no effect on cash",
+        "Higher COGS, lower net income and higher inventory on the balance sheet"
+      ],
+      "answer": 0,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Con prezzi in aumento, il LIFO scarica a COGS le unità più recenti e più costose: COGS più alto.",
+          "COGS più alto significa EBT e net income più bassi, quindi meno tasse pagate.",
+          "Meno tasse = più cassa: il CFO migliora anche se l'utile scende.",
+          "In magazzino restano le unità vecchie e meno costose: inventory più basso in bilancio."
+        ],
+        "shortcut": "LIFO con inflazione: utile giù, tasse giù, cassa su, magazzino giù.",
+        "trap": "Pensare che un metodo contabile non possa toccare la cassa: la tocca tramite le tasse. Nota: gli IFRS non ammettono il LIFO.",
+        "rule": "Il metodo di valutazione del magazzino cambia la cassa solo attraverso l'effetto fiscale."
+      },
+      "tags": [
+        "inventory",
+        "lifo-fifo",
+        "us-gaap"
+      ]
+    },
+    {
+      "id": "acc-027",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A company starts capitalising 50 of development costs that it previously expensed. In the year of the change, ignoring tax and amortisation, which is true?",
+      "options": [
+        "EBITDA +50; CFO unchanged; CFI unchanged; total cash flow +50",
+        "EBITDA +50; CFO +50; CFI -50; total cash flow unchanged",
+        "EBITDA unchanged; CFO +50; CFI -50; total cash flow unchanged",
+        "EBITDA +50; CFO +50; CFI unchanged; total cash flow +50"
+      ],
+      "answer": 1,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Prima i 50 erano un costo operativo: riducevano EBITDA e CFO.",
+          "Capitalizzandoli diventano un investimento: escono dal conto economico (EBITDA +50) e dal CFO (+50).",
+          "La stessa uscita di cassa compare ora nel CFI come investimento: CFI -50.",
+          "Cassa totale invariata: la spesa è stata pagata comunque, cambia solo la sua classificazione."
+        ],
+        "shortcut": "Capitalizzare non crea cassa: sposta il costo dall'EBITDA al capex.",
+        "trap": "Credere che più EBITDA significhi più cassa: guarda sempre EBITDA - capex.",
+        "rule": "Capitalizzazione: EBITDA e CFO su, CFI giù dello stesso importo, cassa invariata."
+      },
+      "tags": [
+        "capitalisation",
+        "r-and-d",
+        "earnings-quality"
+      ]
+    },
+    {
+      "id": "acc-028",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "numeric",
+      "stem": "Year 0: receivables 80, inventory 60, payables 50. Year 1: receivables 95, inventory 55, payables 62. What is the cash flow impact of the change in net working capital in year 1 (EUR m; enter a negative number for an outflow)?",
+      "answer": 2,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "NWC anno 0 = 80 + 60 - 50 = 90.",
+          "NWC anno 1 = 95 + 55 - 62 = 88.",
+          "Δ NWC = 88 - 90 = -2: il working capital è sceso.",
+          "Un calo del NWC libera cassa: impatto sul cash flow +2."
+        ],
+        "shortcut": "Voce per voce: crediti +15 → -15; inventory -5 → +5; payables +12 → +12. Totale +2.",
+        "trap": "Riportare la variazione di NWC (-2) come impatto di cassa, senza invertire il segno.",
+        "rule": "Impatto di cassa = -(Δ NWC)."
+      },
+      "tags": [
+        "working-capital",
+        "nwc",
+        "cash-flow-statement"
+      ]
+    },
+    {
+      "id": "acc-029",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Convertible bonds with a carrying value of 100 are converted into ordinary shares. What is the effect at conversion (ignore unamortised issuance costs)?",
+      "options": [
+        "Cash +100; shareholders' equity +100",
+        "Debt -100; cash -100; CFF -100",
+        "Debt -100; net income +100 from a gain on extinguishment",
+        "Debt -100; shareholders' equity +100; no cash flow and no income statement effect"
+      ],
+      "answer": 3,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "La conversione scambia una passività (debito) con patrimonio netto: nessuna cassa si muove.",
+          "Stato patrimoniale: debito -100, capitale e APIC +100. Totale passivo e patrimonio invariato.",
+          "Nessun effetto su conto economico o CFS al momento della conversione; da lì in poi spariscono gli interessi ma aumenta il numero di azioni."
+        ],
+        "shortcut": "Conversione = riclassificazione dentro il passivo: da debito a equity.",
+        "trap": "Trattarla come un rimborso in cassa (CFF -100) o come un guadagno a conto economico.",
+        "rule": "Conversione: leva giù, azioni su, cassa ferma. Va considerata nel conteggio delle diluted shares."
+      },
+      "tags": [
+        "balance-sheet",
+        "convertible-bonds",
+        "equity"
+      ]
+    },
+    {
+      "id": "acc-030",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "numeric",
+      "stem": "EBITDA 200, D&A 50, interest expense 30, tax rate 25%, capex 60, increase in net working capital 10, mandatory debt repayment 40. How much cash is left after the mandatory debt repayment (EUR m)?",
+      "answer": 30,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Net income = (200 - 50 - 30) × 75% = 120 × 0.75 = 90.",
+          "CFO = 90 + 50 (D&A) - 10 (Δ NWC) = 130.",
+          "Levered FCF = 130 - 60 (capex) = 70.",
+          "Dopo il rimborso obbligatorio: 70 - 40 = 30."
+        ],
+        "shortcut": "Dall'EBITDA: 200 - interessi 30 - tasse 30 - capex 60 - NWC 10 - rimborso 40 = 30.",
+        "trap": "Calcolare le tasse sull'EBITDA (50 invece di 30, risultato 10) o sottrarre la D&A come se fosse un'uscita di cassa (risultato -20).",
+        "rule": "La D&A riduce le tasse ma non è cassa; il rimborso del debito non è deducibile."
+      },
+      "tags": [
+        "cash-flow-statement",
+        "levered-fcf",
+        "debt-repayment"
+      ]
+    },
+    {
+      "id": "acc-031",
+      "skill": "fin-acc",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A company's debt accrues 10 of PIK (payment-in-kind) interest this year. The interest is tax-deductible at 25%. What is the net effect?",
+      "options": [
+        "Net income -7.5; cash -7.5; debt unchanged; shareholders' equity -7.5",
+        "Net income -7.5; cash +2.5; debt +10; shareholders' equity -7.5",
+        "Net income -10; cash unchanged; debt +10; shareholders' equity -10",
+        "Net income -7.5; cash +2.5; debt unchanged; shareholders' equity -7.5"
+      ],
+      "answer": 1,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Conto economico: interessi 10, tasse -2.5, net income -7.5.",
+          "CFS: l'interesse PIK non è pagato in cassa ma capitalizzato sul debito, quindi si riaggiunge: CFO = -7.5 + 10 = +2.5.",
+          "Stato patrimoniale: cassa +2.5; debito +10 perché l'interesse si somma al capitale; retained earnings -7.5.",
+          "Attivo +2.5 = passività +10 + patrimonio -7.5. Quadra."
+        ],
+        "shortcut": "PIK = interesse non cash: per la cassa si comporta come la depreciation, ma il debito cresce.",
+        "trap": "Trattarlo come un interesse pagato (cassa -7.5) o dimenticare che il debito aumenta.",
+        "rule": "PIK: cassa + interesse × t, debito + interesse, patrimonio - interesse × (1 - t)."
+      },
+      "tags": [
+        "three-statement",
+        "pik-interest",
+        "leveraged-finance"
+      ]
+    },
+    {
+      "id": "acc-032",
+      "skill": "fin-acc",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A company repurchases bonds with a face value of 100 in the market for 80 in cash. The gain is taxable at 25%. What is the net effect?",
+      "options": [
+        "Net income +15; CFO -5; CFF -80; cash -85; debt -100; shareholders' equity +15",
+        "Net income +20; CFO 0; CFF -80; cash -80; debt -100; shareholders' equity +20",
+        "Net income +15; CFO +15; CFF -80; cash -65; debt -100; shareholders' equity +15",
+        "No income statement effect; CFF -80; cash -80; debt -80"
+      ],
+      "answer": 0,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Conto economico: gain on extinguishment 100 - 80 = 20, tasse 5, net income +15.",
+          "CFS: il gain è non cash e si storna dal CFO: 15 - 20 = -5, cioè la tassa pagata. CFF -80 per il riacquisto.",
+          "Cassa totale = -5 - 80 = -85.",
+          "Stato patrimoniale: cassa -85; debito -100; retained earnings +15. Attivo -85 = -100 + 15. Quadra."
+        ],
+        "shortcut": "Cassa = prezzo pagato + tasse sul guadagno = -80 - 5 = -85.",
+        "trap": "Lasciare il gain nel CFO (cassa -65) oppure ridurre il debito solo del prezzo pagato (80) invece che del valore nominale.",
+        "rule": "Riacquisto sotto la pari: debito giù al nominale, gain tassato a conto economico e stornato dal CFO."
+      },
+      "tags": [
+        "three-statement",
+        "debt-repurchase",
+        "gain-on-extinguishment"
+      ]
+    },
+    {
+      "id": "acc-033",
+      "skill": "fin-acc",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A parent owns 80% of a subsidiary and fully consolidates it. The subsidiary earns net income of 50 and pays no dividend. How does this appear in the parent's consolidated accounts?",
+      "options": [
+        "Consolidated net income includes 40 only; no non-controlling interest appears",
+        "Consolidated net income includes 50; 10 is recorded as a liability to minority shareholders",
+        "The parent records 40 as equity-method income below EBIT",
+        "Consolidated net income includes 50; 10 is attributed to non-controlling interest; NCI within equity increases by 10"
+      ],
+      "answer": 3,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Con il consolidamento integrale (controllo) il conto economico include il 100% di ricavi, costi e utile della controllata: 50.",
+          "In fondo al conto economico l'utile si divide: 40 agli azionisti della capogruppo, 10 al non-controlling interest (20%).",
+          "Nello stato patrimoniale l'NCI è una riga del patrimonio netto, non una passività, e sale di 10.",
+          "Per questo nel bridge da equity value a EV si somma l'NCI: l'EBITDA consolidato include il 100% della controllata."
+        ],
+        "shortcut": "Controllo = 100% delle righe, poi si separa la quota dei terzi in fondo.",
+        "trap": "Consolidare solo la quota posseduta (80%), che è la logica dell'equity method, non del consolidamento integrale.",
+        "rule": "Controllata: consolidata al 100%, quota dei terzi esposta come NCI nel patrimonio e nell'utile."
+      },
+      "tags": [
+        "consolidation",
+        "non-controlling-interest"
+      ]
+    },
+    {
+      "id": "acc-034",
+      "skill": "fin-acc",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A company owns 30% of an associate accounted for under the equity method. The associate earns net income of 40 and pays total dividends of 10. Ignoring tax, what is the effect on the investor's statements?",
+      "options": [
+        "Net income +12; cash +3; investment in associate +9",
+        "Net income +3; cash +3; investment in associate unchanged",
+        "Net income +12; cash +12; investment in associate +12",
+        "Net income +40; cash +10; non-controlling interest +28"
+      ],
+      "answer": 0,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Conto economico: quota di utile = 30% × 40 = 12, esposta in una riga separata ed esclusa dall'EBITDA (nel bridge le collegate si sottraggono dall'EV per questo).",
+          "CFS: i 12 sono non cash e si stornano; si aggiunge il dividendo incassato 30% × 10 = 3. Cassa +3.",
+          "Stato patrimoniale: partecipazione +12 (quota di utile) - 3 (dividendo) = +9; cassa +3; attivo +12.",
+          "Patrimonio: retained earnings +12. Quadra."
+        ],
+        "shortcut": "Equity method: l'utile segue la quota di profitto, la cassa segue solo i dividendi.",
+        "trap": "Registrare come utile solo il dividendo (+3) o confondere il caso con il consolidamento integrale.",
+        "rule": "Partecipazione a equity method = costo + quota di utili - dividendi ricevuti."
+      },
+      "tags": [
+        "equity-method",
+        "associates",
+        "three-statement"
+      ]
+    },
+    {
+      "id": "acc-035",
+      "skill": "fin-acc",
+      "level": 3,
+      "type": "numeric",
+      "stem": "A company sells a building with a book value of 300 for 260 in cash. The loss is tax-deductible at 25%. What is the total change in the company's cash this year (EUR m)?",
+      "answer": 270,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Minusvalenza = 260 - 300 = -40; risparmio fiscale 40 × 25% = 10; net income -30.",
+          "CFO: -30 + 40 (storno della minusvalenza non cash) = +10, cioè il risparmio fiscale.",
+          "CFI: +260 di incasso dalla vendita.",
+          "Cassa totale = 10 + 260 = 270."
+        ],
+        "shortcut": "Cassa = prezzo di vendita + scudo fiscale sulla perdita = 260 + 10 = 270.",
+        "trap": "Rispondere 260 dimenticando lo scudo fiscale, o 230 sottraendo di nuovo la perdita al netto delle tasse.",
+        "rule": "Vendita in perdita: incassi il prezzo più il risparmio fiscale sulla perdita."
+      },
+      "tags": [
+        "three-statement",
+        "asset-sale",
+        "loss-on-sale"
+      ]
+    },
+    {
+      "id": "acc-036",
+      "skill": "fin-acc",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A company has tax loss carryforwards of 200, for which it previously recognised a deferred tax asset of 50. This year it earns pre-tax income of 120; tax rate 25%. What happens this year?",
+      "options": [
+        "Tax expense 0; cash taxes 0; net income 120; DTA unchanged",
+        "Tax expense 30; cash taxes 30; net income 90; DTA unchanged",
+        "Tax expense 0; cash taxes 0; net income 120; DTA falls by 30",
+        "Tax expense 30; cash taxes 0; net income 90; DTA falls by 30"
+      ],
+      "answer": 3,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Le perdite pregresse coprono tutto l'imponibile (120 < 200): tasse cash = 0.",
+          "Il beneficio era già stato riconosciuto in passato con la DTA, quindi a conto economico si registra comunque una tax expense di 120 × 25% = 30: net income 90.",
+          "La DTA si consuma: 50 - 30 = 20, pari alle perdite residue 80 × 25%.",
+          "CFS: 90 + 30 (calo della DTA, non cash) = CFO 120."
+        ],
+        "shortcut": "DTA già iscritta: il conto economico mostra la tassa normale, la cassa no. La differenza riduce la DTA.",
+        "trap": "Mettere tax expense 0, che vale solo se la DTA non era mai stata riconosciuta in bilancio.",
+        "rule": "Uso di perdite pregresse con DTA iscritta: tax expense normale, tasse cash zero, DTA giù."
+      },
+      "tags": [
+        "deferred-tax",
+        "dta",
+        "nol"
+      ]
+    },
+    {
+      "id": "acc-037",
+      "skill": "fin-acc",
+      "level": 3,
+      "type": "numeric",
+      "stem": "Net income 150, D&A 40, gain on sale of equipment 12, asset impairment 20, increase in deferred revenue 18, increase in receivables 25, increase in prepaid expenses 6, decrease in accrued liabilities 9. What is cash flow from operations (EUR m)?",
+      "answer": 176,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Aggiustamenti non cash: 150 + 40 - 12 (gain, l'incasso è già nel CFI) + 20 (impairment) = 198.",
+          "Working capital: deferred revenue +18; crediti -25; prepaid -6; accrued liabilities -9. Totale -22.",
+          "CFO = 198 - 22 = 176."
+        ],
+        "shortcut": "Prima gli aggiustamenti non cash in un blocco, poi il working capital con la regola dei segni.",
+        "trap": "Sommare il gain invece di sottrarlo (ottenendo 200) o trattare l'aumento di deferred revenue come un'uscita (ottenendo 140).",
+        "rule": "Gain da cessione: meno nel CFO; perdite e impairment: più nel CFO."
+      },
+      "tags": [
+        "cash-flow-statement",
+        "cfo",
+        "working-capital"
+      ]
+    },
+    {
+      "id": "acc-038",
+      "skill": "fin-acc",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Which business is most likely to generate a working-capital cash inflow as its revenue grows?",
+      "options": [
+        "An equipment distributor that gives customers 90-day payment terms",
+        "A supermarket chain that sells for cash, holds 20 days of inventory and pays suppliers at 60 days",
+        "A semiconductor manufacturer building inventory ahead of a product ramp",
+        "A consulting firm that invoices monthly in arrears with 60-day payment terms"
+      ],
+      "answer": 1,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Il supermercato incassa subito (DSO circa 0), tiene la merce 20 giorni e paga a 60: CCC = 0 + 20 - 60 = -40 giorni, working capital negativo.",
+          "Con working capital negativo, ogni euro di crescita aumenta i payables più di magazzino e crediti: la crescita genera cassa.",
+          "Distributore e società di consulenza hanno crediti lunghi; il produttore di semiconduttori accumula magazzino: per loro la crescita assorbe cassa."
+        ],
+        "shortcut": "Calcola a mente DSO + DIO - DPO: se è negativo, la crescita si autofinanzia.",
+        "trap": "Scegliere la società più tecnologica o con margini più alti: il segno del working capital dipende dai termini di pagamento, non dai margini.",
+        "rule": "CCC negativo: la crescita libera cassa; CCC positivo: la crescita la assorbe."
+      },
+      "tags": [
+        "working-capital",
+        "cash-conversion-cycle",
+        "business-models"
+      ]
+    },
+    {
+      "id": "acc-039",
+      "skill": "fin-acc",
+      "level": 3,
+      "type": "mcq",
+      "stem": "In a share acquisition with no step-up in tax basis, the target's PP&E is written up by 100 to fair value at closing. Tax rate 25%. Versus no write-up, what is the effect on the acquirer's consolidated balance sheet?",
+      "options": [
+        "PP&E +100 and goodwill 100 lower; no deferred tax effect",
+        "PP&E +100, a deferred tax asset of 25 and goodwill 125 lower",
+        "PP&E +100, a deferred tax liability of 25 and goodwill 75 lower",
+        "PP&E +100 and shareholders' equity +100"
+      ],
+      "answer": 2,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Il write-up aumenta il valore contabile del PP&E di 100, ma la base fiscale resta quella vecchia (share deal, nessuno step-up).",
+          "In futuro la depreciation contabile supererà quella fiscale di 100: il bilancio mostrerà più tasse di quelle pagate. Si crea una DTL = 100 × 25% = 25.",
+          "Attività nette identificabili: +100 - 25 = +75; a parità di prezzo pagato, il goodwill scende di 75."
+        ],
+        "shortcut": "Goodwill = prezzo - attività nette a fair value; write-up al netto delle tasse = 100 × (1 - 25%) = 75.",
+        "trap": "Dimenticare la DTL e ridurre il goodwill dell'intero write-up (100).",
+        "rule": "Write-up senza step-up fiscale: DTL = write-up × t, goodwill giù di write-up × (1 - t)."
+      },
+      "tags": [
+        "purchase-accounting",
+        "deferred-tax",
+        "goodwill"
+      ]
+    },
+    {
+      "id": "acc-040",
+      "skill": "fin-acc",
+      "level": 3,
+      "type": "numeric",
+      "stem": "A company buys a machine for 100. For tax purposes it is fully expensed in year 1 (100% bonus depreciation); for book purposes it is depreciated straight-line over 5 years. Tax rate 25%. What is the deferred tax liability at the end of year 1 (EUR m)?",
+      "answer": 20,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Valore contabile a fine anno 1: 100 - 100 / 5 = 80.",
+          "Valore fiscale a fine anno 1: 100 - 100 = 0.",
+          "Differenza temporanea = 80 - 0 = 80.",
+          "DTL = 80 × 25% = 20."
+        ],
+        "shortcut": "DTL = (valore contabile - valore fiscale) × aliquota.",
+        "trap": "Rispondere 25 usando l'intero costo invece della differenza dopo un anno di depreciation contabile, o 5 usando la sola depreciation annua.",
+        "rule": "La DTL misura le tasse che pagherai quando la differenza temporanea si riassorbe."
+      },
+      "tags": [
+        "deferred-tax",
+        "dtl",
+        "depreciation"
+      ]
+    },
+    {
+      "id": "val-001",
+      "skill": "fin-val",
+      "level": 1,
+      "type": "numeric",
+      "stem": "Equity value is 800, total debt 300, cash 100 and non-controlling interest 50. There are no preferred shares. What is enterprise value (EUR m)?",
+      "answer": 1050,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "EV = equity value + debito - cassa + NCI + preferred.",
+          "EV = 800 + 300 - 100 + 50 + 0 = 1,050."
+        ],
+        "shortcut": "Equity value + net debt (300 - 100 = 200) + NCI (50) = 1,050.",
+        "trap": "Sottrarre l'NCI (950) o sommare la cassa invece di sottrarla (1,250).",
+        "rule": "Somma i claim degli altri finanziatori (debito, NCI, preferred), sottrai gli attivi non operativi (cassa)."
+      },
+      "tags": [
+        "ev-bridge",
+        "enterprise-value",
+        "net-debt"
+      ]
+    },
+    {
+      "id": "val-002",
+      "skill": "fin-val",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Why is cash subtracted when moving from equity value to enterprise value?",
+      "options": [
+        "Because EV values the core operating business for all capital providers, and cash is a non-operating asset",
+        "Because cash is already included in EBITDA",
+        "Because cash is taxed when it is distributed to shareholders",
+        "Because accounting standards require cash to be presented net of debt"
+      ],
+      "answer": 0,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "L'EV misura il valore delle attività operative, cioè quelle che generano EBITDA e free cash flow.",
+          "La cassa in eccesso non produce EBITDA: è un attivo non operativo che un acquirente potrebbe usare, per esempio, per ripagare il debito.",
+          "Per questo si toglie nel passaggio da equity value a EV e si somma nel passaggio inverso."
+        ],
+        "shortcut": "Pensa a comprare una casa con 10 di contanti nel cassetto: il prezzo 'netto' della casa è il prezzo pagato meno i 10.",
+        "trap": "Pensare che la cassa si tolga perché è già nell'EBITDA: l'EBITDA non include né la cassa né gli interessi attivi.",
+        "rule": "EV = valore del business operativo; gli attivi non operativi si tolgono."
+      },
+      "tags": [
+        "enterprise-value",
+        "concepts",
+        "cash"
+      ]
+    },
+    {
+      "id": "val-003",
+      "skill": "fin-val",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Which of the following valuation multiples is internally consistent, with numerator and denominator relating to the same capital providers?",
+      "options": [
+        "Equity value / EBITDA",
+        "EV / EBITDA",
+        "EV / Net income",
+        "Equity value / Unlevered free cash flow"
+      ],
+      "answer": 1,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "EBITDA, EBIT, ricavi e unlevered FCF sono metriche prima degli interessi: spettano a tutti i finanziatori, quindi vanno con l'EV.",
+          "Net income e levered FCF sono dopo gli interessi: spettano solo agli azionisti, quindi vanno con l'equity value.",
+          "L'unica coppia coerente tra le opzioni è EV / EBITDA."
+        ],
+        "shortcut": "La metrica è prima o dopo gli interessi? Prima = EV, dopo = equity value.",
+        "trap": "Usare equity value / EBITDA perché la market cap è più facile da trovare: ignora il debito.",
+        "rule": "Numeratore e denominatore devono riferirsi agli stessi finanziatori."
+      },
+      "tags": [
+        "multiples",
+        "consistency"
+      ]
+    },
+    {
+      "id": "val-004",
+      "skill": "fin-val",
+      "level": 1,
+      "type": "numeric",
+      "stem": "Enterprise value is 1,200. Total debt is 400, cash is 50 and non-controlling interest is 40. What is equity value (EUR m)?",
+      "answer": 810,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 50,
+      "explanation": {
+        "steps": [
+          "Equity value = EV - debito + cassa - NCI.",
+          "1,200 - 400 + 50 - 40 = 810."
+        ],
+        "shortcut": "Equity = EV - net debt (350) - NCI (40) = 810.",
+        "trap": "Sommare l'NCI (890) o sottrarre la cassa (710).",
+        "rule": "Da EV a equity value si inverte ogni segno del bridge."
+      },
+      "tags": [
+        "ev-bridge",
+        "equity-value",
+        "net-debt"
+      ]
+    },
+    {
+      "id": "val-005",
+      "skill": "fin-val",
+      "level": 1,
+      "type": "mcq",
+      "stem": "A company raises 100 of new debt and keeps the proceeds as cash on the balance sheet. Ignoring fees, what happens to enterprise value and equity value?",
+      "options": [
+        "EV +100; equity value unchanged",
+        "EV unchanged; equity value -100",
+        "EV +100; equity value +100",
+        "Both are unchanged"
+      ],
+      "answer": 3,
+      "timeTarget": 50,
+      "explanation": {
+        "steps": [
+          "Equity value: gli azionisti hanno 100 di cassa in più e 100 di debito in più, il valore netto non cambia.",
+          "EV = equity value + debito - cassa = invariato + 100 - 100 = invariato.",
+          "Il business operativo non è cambiato, quindi anche l'EV resta fermo."
+        ],
+        "shortcut": "Se il net debt non cambia e il business è lo stesso, l'EV non si muove.",
+        "trap": "Sommare il nuovo debito all'EV senza ricordare che la cassa sale dello stesso importo.",
+        "rule": "L'EV cambia solo se cambia il valore delle attività operative."
+      },
+      "tags": [
+        "enterprise-value",
+        "capital-structure",
+        "concepts"
+      ]
+    },
+    {
+      "id": "val-006",
+      "skill": "fin-val",
+      "level": 1,
+      "type": "numeric",
+      "stem": "Unlevered free cash flow in year 5 is 100. WACC is 9% and the perpetual growth rate is 2%. Using the Gordon growth method, what is the terminal value at the end of year 5 (EUR m)?",
+      "answer": 1457.1,
+      "tolerance": 1,
+      "unit": "EUR m",
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Formula: TV = FCF anno 6 / (WACC - g) = FCF anno 5 × (1 + g) / (WACC - g).",
+          "FCF anno 6 = 100 × 1.02 = 102.",
+          "TV = 102 / (0.09 - 0.02) = 102 / 0.07 = 1,457.1."
+        ],
+        "shortcut": "102 / 0.07: 7 × 14.57 = 102, quindi circa 1,457.",
+        "trap": "Usare il FCF dell'anno 5 senza farlo crescere: 100 / 0.07 = 1,428.6.",
+        "rule": "Gordon growth: al numeratore va sempre il flusso dell'anno successivo."
+      },
+      "tags": [
+        "dcf",
+        "terminal-value",
+        "gordon-growth"
+      ]
+    },
+    {
+      "id": "val-007",
+      "skill": "fin-val",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Which formula correctly defines unlevered free cash flow?",
+      "options": [
+        "Net income + D&A - capex - increase in NWC",
+        "EBITDA - interest - capex - increase in NWC",
+        "EBIT × (1 - tax rate) + D&A - capex - increase in NWC",
+        "EBIT + D&A - capex + increase in NWC"
+      ],
+      "answer": 2,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "L'unlevered FCF è il flusso disponibile per tutti i finanziatori, prima degli interessi.",
+          "Si parte dall'EBIT e lo si tassa come se la società non avesse debito: EBIT × (1 - t), cioè il NOPAT.",
+          "Si riaggiunge la D&A non cash e si sottraggono capex e aumento del working capital."
+        ],
+        "shortcut": "UFCF = NOPAT + D&A - capex - Δ NWC.",
+        "trap": "Partire dal net income, che è già dopo gli interessi: quella strada porta al levered FCF.",
+        "rule": "Unlevered = prima degli interessi, con tasse calcolate sull'EBIT."
+      },
+      "tags": [
+        "dcf",
+        "unlevered-fcf"
+      ]
+    },
+    {
+      "id": "val-008",
+      "skill": "fin-val",
+      "level": 1,
+      "type": "mcq",
+      "stem": "In a DCF based on unlevered free cash flow, which rate should be used to discount the cash flows?",
+      "options": [
+        "Weighted average cost of capital (WACC)",
+        "Cost of equity",
+        "Pre-tax cost of debt",
+        "Risk-free rate"
+      ],
+      "answer": 0,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "L'unlevered FCF spetta a tutti i finanziatori, azionisti e creditori.",
+          "Il tasso coerente è quindi il costo medio ponderato di tutto il capitale: il WACC.",
+          "Il risultato è l'enterprise value; per arrivare all'equity value si sottrae il net debt."
+        ],
+        "shortcut": "Flusso unlevered → WACC → EV. Flusso levered → cost of equity → equity value.",
+        "trap": "Usare il cost of equity sull'unlevered FCF: mescola i flussi di tutti i finanziatori con il rendimento richiesto dai soli azionisti.",
+        "rule": "Il tasso di sconto deve corrispondere a chi riceve il flusso."
+      },
+      "tags": [
+        "dcf",
+        "wacc",
+        "discount-rate"
+      ]
+    },
+    {
+      "id": "val-009",
+      "skill": "fin-val",
+      "level": 1,
+      "type": "numeric",
+      "stem": "Comparable companies trade at 8.0x EV/EBITDA. The target's EBITDA is 75 and its net debt is 200. What is the implied equity value (EUR m)?",
+      "answer": 400,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 50,
+      "explanation": {
+        "steps": [
+          "EV implicito = 8.0 × 75 = 600.",
+          "Equity value = EV - net debt = 600 - 200 = 400."
+        ],
+        "shortcut": "Multiplo × EBITDA, poi togli il net debt.",
+        "trap": "Fermarsi all'EV (600) o sommare il net debt invece di sottrarlo (800).",
+        "rule": "Un multiplo EV restituisce un EV: per l'equity value serve sempre il bridge."
+      },
+      "tags": [
+        "multiples",
+        "trading-comps",
+        "ev-bridge"
+      ]
+    },
+    {
+      "id": "val-010",
+      "skill": "fin-val",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Which multiple is most commonly used to value a commercial bank?",
+      "options": [
+        "EV / EBITDA",
+        "EV / Revenue",
+        "Price / Tangible book value",
+        "EV / EBIT"
+      ],
+      "answer": 2,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Per una banca il debito (depositi, funding) è la materia prima del business, non una fonte di finanziamento separata: l'EV perde significato.",
+          "Anche l'EBITDA non ha senso, perché gli interessi sono ricavi e costi operativi.",
+          "Si usano multipli di equity: P/TBV (letto insieme al ROTE) e P/E."
+        ],
+        "shortcut": "Banche e assicurazioni: solo multipli equity (P/E, P/BV, P/TBV).",
+        "trap": "Applicare EV/EBITDA come per una società industriale.",
+        "rule": "Per le istituzioni finanziarie si valuta l'equity; il riferimento chiave è P/TBV rispetto al ROTE."
+      },
+      "tags": [
+        "multiples",
+        "financial-institutions"
+      ]
+    },
+    {
+      "id": "val-011",
+      "skill": "fin-val",
+      "level": 1,
+      "type": "mcq",
+      "stem": "All else equal, why do precedent transaction multiples usually exceed trading comparables multiples?",
+      "options": [
+        "Because precedent transactions use forward earnings while trading comps use historical earnings",
+        "Because acquirers pay a control premium, partly justified by expected synergies",
+        "Because listed companies are less liquid than private companies",
+        "Because transaction multiples exclude debt from enterprise value"
+      ],
+      "answer": 1,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "I multipli di trading riflettono il prezzo di quote di minoranza scambiate in borsa.",
+          "In un'acquisizione l'acquirente compra il controllo e paga un premio, spesso del 20-40% sul prezzo di borsa, giustificato anche dalle sinergie attese.",
+          "Quindi, a parità di condizioni, i multipli delle transazioni sono più alti."
+        ],
+        "shortcut": "Precedent transactions = prezzo del controllo; trading comps = prezzo di una quota di minoranza.",
+        "trap": "Spiegarlo con differenze di periodo (LTM contro forward): possono esistere, ma non sono la ragione strutturale.",
+        "rule": "I multipli delle precedent transactions includono il premio di controllo."
+      },
+      "tags": [
+        "multiples",
+        "precedent-transactions",
+        "control-premium"
+      ]
+    },
+    {
+      "id": "val-012",
+      "skill": "fin-val",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Under CAPM, which change increases a company's cost of equity, all else equal?",
+      "options": [
+        "A higher levered beta",
+        "A lower risk-free rate",
+        "A lower equity risk premium",
+        "A higher corporate tax rate"
+      ],
+      "answer": 0,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "CAPM: Ke = risk-free + beta × equity risk premium.",
+          "Un beta più alto aumenta il premio richiesto per il rischio sistematico: Ke sale.",
+          "Risk-free o ERP più bassi riducono il Ke; l'aliquota fiscale non compare nella formula del CAPM."
+        ],
+        "shortcut": "Ke sale se sale uno tra risk-free, beta ed ERP.",
+        "trap": "Pensare che l'aliquota fiscale entri nel cost of equity: entra nel costo del debito after-tax e nella formula di relevering del beta.",
+        "rule": "Ke = rf + β × ERP."
+      },
+      "tags": [
+        "wacc",
+        "capm",
+        "cost-of-equity"
+      ]
+    },
+    {
+      "id": "val-013",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "numeric",
+      "stem": "The share price is 20 and there are 100m basic shares outstanding. There are also 10m options with an exercise price of 12. Using the treasury stock method, how many diluted shares are outstanding (m)?",
+      "answer": 104,
+      "tolerance": 0.05,
+      "unit": "m shares",
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Le opzioni sono in the money (12 < 20): si assume che vengano esercitate, +10m azioni.",
+          "Incasso dall'esercizio = 10m × 12 = 120m.",
+          "Con l'incasso la società riacquista azioni al prezzo corrente: 120 / 20 = 6m.",
+          "Nuove azioni nette = 10 - 6 = 4m; diluted shares = 100 + 4 = 104m."
+        ],
+        "shortcut": "Azioni nette = n. opzioni × (P - K) / P = 10 × 8 / 20 = 4.",
+        "trap": "Sommare tutte le 10m opzioni (110m) dimenticando il riacquisto finanziato dai proventi.",
+        "rule": "TSM: solo opzioni in the money; ogni opzione aggiunge (P - K) / P azioni."
+      },
+      "tags": [
+        "dilution",
+        "treasury-stock-method",
+        "options"
+      ]
+    },
+    {
+      "id": "val-014",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "numeric",
+      "stem": "The share price is EUR 30 and there are 200m basic shares. Tranche A: 6m options with an exercise price of 15. Tranche B: 4m options with an exercise price of 36. There are also 2m RSUs. Using the treasury stock method, what is the diluted equity value (EUR m)?",
+      "answer": 6150,
+      "tolerance": 1,
+      "unit": "EUR m",
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Tranche A in the money: 6 - (6 × 15) / 30 = 6 - 3 = 3m nuove azioni nette.",
+          "Tranche B out of the money (36 > 30): si esclude.",
+          "RSU: nessun prezzo di esercizio, si sommano per intero: +2m.",
+          "Diluted shares = 200 + 3 + 2 = 205m; equity value diluito = 205 × 30 = 6,150."
+        ],
+        "shortcut": "Per ogni tranche n × (P - K) / P, ignora quelle out of the money, aggiungi le RSU intere.",
+        "trap": "Includere la tranche B out of the money (per esempio 209m azioni, 6,270) o dimenticare le RSU (203m, 6,090).",
+        "rule": "Diluted equity value = prezzo × (basic + azioni nette da opzioni ITM + RSU)."
+      },
+      "tags": [
+        "dilution",
+        "treasury-stock-method",
+        "rsu",
+        "equity-value"
+      ]
+    },
+    {
+      "id": "val-015",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "mcq",
+      "stem": "When moving from equity value to enterprise value, which item should be SUBTRACTED?",
+      "options": [
+        "Non-controlling interest",
+        "Preferred shares",
+        "Equity-method investments in associates",
+        "Unfunded pension liabilities"
+      ],
+      "answer": 2,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "NCI, preferred e pension deficit sono claim di altri soggetti sul business: si sommano.",
+          "Le partecipazioni in collegate (equity method) sono attivi non operativi: il loro reddito non è nell'EBITDA consolidato.",
+          "Per coerenza con l'EBITDA si sottraggono, come la cassa."
+        ],
+        "shortcut": "Il valore è già nell'EBITDA consolidato? NCI sì (consolidato al 100%), quindi si somma. Collegate no, quindi si sottraggono.",
+        "trap": "Trattare collegate e NCI allo stesso modo perché sono entrambe 'quote di minoranza': hanno segni opposti nel bridge.",
+        "rule": "EV = equity + debito + preferred + NCI + pension deficit - cassa - collegate."
+      },
+      "tags": [
+        "ev-bridge",
+        "associates",
+        "non-controlling-interest"
+      ]
+    },
+    {
+      "id": "val-016",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Why is non-controlling interest added to equity value when calculating enterprise value?",
+      "options": [
+        "Because NCI is a form of debt owed to minority shareholders",
+        "Because minority shareholders rank ahead of ordinary shareholders",
+        "Because NCI represents the parent's share of an associate's earnings",
+        "Because consolidated EBITDA includes 100% of the subsidiary's EBITDA, so EV must include the value of the stake the parent does not own"
+      ],
+      "answer": 3,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Se la capogruppo controlla una partecipata all'80%, consolida il 100% di ricavi ed EBITDA della partecipata.",
+          "L'equity value della capogruppo però contiene solo l'80% del valore della partecipata.",
+          "Per confrontare l'EV con un EBITDA che include il 100%, si somma il valore del 20% dei terzi (NCI)."
+        ],
+        "shortcut": "Coerenza tra numeratore e denominatore: EBITDA al 100% richiede EV al 100%.",
+        "trap": "Descrivere l'NCI come debito: è patrimonio netto di terzi e non ha priorità sugli azionisti.",
+        "rule": "All'EV si somma ciò che genera EBITDA consolidato ma non appartiene agli azionisti della capogruppo."
+      },
+      "tags": [
+        "ev-bridge",
+        "non-controlling-interest",
+        "concepts"
+      ]
+    },
+    {
+      "id": "val-017",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "numeric",
+      "stem": "EBITDA 250, D&A 50, tax rate 25%, capex 70, increase in net working capital 15. What is unlevered free cash flow (EUR m)?",
+      "answer": 115,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "EBIT = 250 - 50 = 200; NOPAT = 200 × 75% = 150.",
+          "UFCF = 150 + 50 (D&A) - 70 (capex) - 15 (Δ NWC) = 115."
+        ],
+        "shortcut": "EBITDA - tasse sull'EBIT - capex - Δ NWC = 250 - 50 - 70 - 15 = 115.",
+        "trap": "Tassare l'EBITDA invece dell'EBIT (250 × 0.75 - 70 - 15 = 102.5), perdendo lo scudo fiscale della D&A.",
+        "rule": "UFCF = EBIT × (1 - t) + D&A - capex - Δ NWC."
+      },
+      "tags": [
+        "dcf",
+        "unlevered-fcf"
+      ]
+    },
+    {
+      "id": "val-018",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "numeric",
+      "stem": "Market value of equity is 600 and market value of debt is 400. Cost of equity is 11%, pre-tax cost of debt is 6% and the tax rate is 25%. What is the WACC (%)?",
+      "answer": 8.4,
+      "tolerance": 0.05,
+      "unit": "%",
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Pesi: E / (D + E) = 600 / 1,000 = 60%; D / (D + E) = 40%.",
+          "Costo del debito after-tax = 6% × (1 - 25%) = 4.5%.",
+          "WACC = 60% × 11% + 40% × 4.5% = 6.6% + 1.8% = 8.4%."
+        ],
+        "shortcut": "Lavora in punti: 0.6 × 11 = 6.6; 0.4 × 4.5 = 1.8; somma 8.4.",
+        "trap": "Usare il costo del debito pre-tax (WACC 9.0%) o pesare con D/E invece che con D/(D + E).",
+        "rule": "WACC = E/V × Ke + D/V × Kd × (1 - t), con valori di mercato."
+      },
+      "tags": [
+        "wacc",
+        "cost-of-debt",
+        "cost-of-capital"
+      ]
+    },
+    {
+      "id": "val-019",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "numeric",
+      "stem": "Year-5 EBITDA is 120 and the exit multiple is 8.0x EV/EBITDA. WACC is 10%. Discounting from the end of year 5, what is the present value today of the terminal value (EUR m)?",
+      "answer": 596.1,
+      "tolerance": 1,
+      "unit": "EUR m",
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "TV a fine anno 5 = 8.0 × 120 = 960.",
+          "Fattore di sconto = 1.10^5 = 1.6105.",
+          "PV del TV = 960 / 1.6105 = 596.1."
+        ],
+        "shortcut": "Ricorda 1.1^5 ≈ 1.61: 960 / 1.61 ≈ 596.",
+        "trap": "Non scontare il TV (960) o scontarlo per 4 anni invece di 5 (960 / 1.4641 = 655.7).",
+        "rule": "Il TV è un valore a fine anno N: va riportato a oggi con (1 + WACC)^N."
+      },
+      "tags": [
+        "dcf",
+        "terminal-value",
+        "exit-multiple",
+        "discounting"
+      ]
+    },
+    {
+      "id": "val-020",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "numeric",
+      "stem": "Equity value is 2,000. Gross debt is 700, of which 100 are IFRS 16 lease liabilities. Cash is 250, non-controlling interest 60, investments in associates 90 and the unfunded pension deficit 40. What is enterprise value including lease liabilities (EUR m)?",
+      "answer": 2460,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Parti dall'equity value: 2,000.",
+          "Somma i claim: debito lordo con leasing 700, NCI 60, pension deficit 40. Totale 800, quindi 2,800.",
+          "Sottrai gli attivi non operativi: cassa 250 e collegate 90. Totale 340, quindi 2,800 - 340 = 2,460."
+        ],
+        "shortcut": "Equity + (700 + 60 + 40) - (250 + 90) = 2,000 + 800 - 340 = 2,460.",
+        "trap": "Sommare le collegate invece di sottrarle (2,640) o escludere i 100 di leasing che la domanda chiede di includere (2,360).",
+        "rule": "Un EV che include i leasing va confrontato con un EBITDA post IFRS 16."
+      },
+      "tags": [
+        "ev-bridge",
+        "ifrs-16",
+        "pensions",
+        "associates"
+      ]
+    },
+    {
+      "id": "val-021",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "mcq",
+      "stem": "In a DCF, annual D&A increases by 10 with no change to capex, EBITDA or working capital. Tax rate 25%. By how much does unlevered free cash flow change each year?",
+      "options": [
+        "-7.5",
+        "0",
+        "+2.5",
+        "+10"
+      ],
+      "answer": 2,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "L'EBIT scende di 10, quindi le tasse calcolate sull'EBIT scendono di 2.5: NOPAT -7.5.",
+          "Nel UFCF la D&A si riaggiunge: -7.5 + 10 = +2.5.",
+          "Il flusso sale solo dello scudo fiscale: più D&A deducibile significa meno tasse pagate."
+        ],
+        "shortcut": "Δ UFCF = Δ D&A × t = 10 × 25% = +2.5.",
+        "trap": "Rispondere 0 pensando che la D&A, essendo non cash, sia irrilevante: è non cash ma deducibile.",
+        "rule": "Nel DCF la D&A crea valore solo tramite lo scudo fiscale."
+      },
+      "tags": [
+        "dcf",
+        "unlevered-fcf",
+        "tax-shield"
+      ]
+    },
+    {
+      "id": "val-022",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "mcq",
+      "stem": "For a mature company valued with a 5-year DCF, what share of enterprise value does the terminal value typically represent?",
+      "options": [
+        "Over 95%",
+        "Around 60-80%",
+        "Around 30-40%",
+        "Around 10-20%"
+      ],
+      "answer": 1,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Cinque anni di flussi sono una piccola parte di una vita potenzialmente illimitata.",
+          "Con WACC dell'8-10% e crescita del 2%, il valore dal sesto anno in poi pesa di solito il 60-80% dell'EV.",
+          "Per società in forte crescita o con flussi negativi nei primi anni il peso può essere anche maggiore."
+        ],
+        "shortcut": "Regola pratica: in un DCF a 5 anni il TV vale da due terzi a tre quarti dell'EV.",
+        "trap": "Pensare che pesi di più il periodo esplicito perché è modellato in dettaglio: proprio per questo le sensitivity su WACC e g contano tanto.",
+        "rule": "Se il TV pesa oltre il 90%, allunga l'orizzonte o rivedi le ipotesi."
+      },
+      "tags": [
+        "dcf",
+        "terminal-value",
+        "concepts"
+      ]
+    },
+    {
+      "id": "val-023",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "mcq",
+      "stem": "What is the effect of switching a DCF from end-of-year to mid-year discounting convention?",
+      "options": [
+        "Valuation decreases, because cash flows are assumed to arrive later",
+        "No effect on valuation, only on presentation",
+        "Valuation increases, because the terminal growth rate is applied one year earlier",
+        "Valuation increases, because each year's cash flows are discounted by half a period less"
+      ],
+      "answer": 3,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "La mid-year convention assume che i flussi arrivino in media a metà anno, non al 31 dicembre.",
+          "Il flusso dell'anno 1 si sconta per 0.5 anni, quello dell'anno 2 per 1.5, e così via.",
+          "Meno anni di sconto significa fattori di sconto più alti e valore attuale maggiore."
+        ],
+        "shortcut": "Flussi che arrivano prima = valore più alto.",
+        "trap": "Considerarla una convenzione solo estetica: con WACC 10% alza il valore dei flussi espliciti di circa il 5% (1.1^0.5 ≈ 1.049).",
+        "rule": "Mid-year convention: esponente t - 0.5 per i flussi del periodo esplicito."
+      },
+      "tags": [
+        "dcf",
+        "mid-year-convention",
+        "discounting"
+      ]
+    },
+    {
+      "id": "val-024",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Two companies have identical operations, growth and risk, but one is debt-free and the other is highly levered. Which multiple should be most similar for the two companies?",
+      "options": [
+        "P/E",
+        "Price / Book value",
+        "Dividend yield",
+        "EV / EBITDA"
+      ],
+      "answer": 3,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "P/E, P/BV e dividend yield sono multipli di equity: dipendono da interessi e leva.",
+          "EV ed EBITDA sono entrambi prima della struttura finanziaria: misurano il business operativo.",
+          "Quindi EV/EBITDA è in larga parte indipendente dalla leva, a meno di effetti fiscali e costi di distress."
+        ],
+        "shortcut": "Strutture del capitale diverse: usa multipli EV.",
+        "trap": "Scegliere il P/E perché è il multiplo più citato: la leva cambia l'utile netto e quindi il P/E.",
+        "rule": "Per confrontare società con leve diverse, preferisci multipli EV."
+      },
+      "tags": [
+        "multiples",
+        "capital-structure"
+      ]
+    },
+    {
+      "id": "val-025",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "mcq",
+      "stem": "An analyst projects levered free cash flow (after interest and debt repayments). Which discount rate and output are consistent?",
+      "options": [
+        "Discount at WACC to get enterprise value",
+        "Discount at the cost of equity to get equity value",
+        "Discount at the cost of debt to get enterprise value",
+        "Discount at WACC to get equity value"
+      ],
+      "answer": 1,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Il levered FCF è ciò che resta agli azionisti dopo aver servito il debito.",
+          "Spetta solo agli azionisti, quindi si sconta al loro rendimento richiesto: il cost of equity.",
+          "Il risultato è direttamente l'equity value, senza bridge."
+        ],
+        "shortcut": "Levered → Ke → equity value; unlevered → WACC → EV.",
+        "trap": "Scontare il levered FCF al WACC: il WACC include il costo del debito, che hai già tolto dal flusso.",
+        "rule": "Flusso, tasso e output devono riferirsi allo stesso gruppo di finanziatori."
+      },
+      "tags": [
+        "dcf",
+        "levered-fcf",
+        "cost-of-equity"
+      ]
+    },
+    {
+      "id": "val-026",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "mcq",
+      "stem": "You are valuing a fast-growing deep-tech company with negative EBITDA and negative earnings. Which multiple is the most appropriate primary benchmark?",
+      "options": [
+        "EV / EBITDA",
+        "P / E",
+        "EV / Revenue (or EV / Gross profit)",
+        "Price / Book value"
+      ],
+      "answer": 2,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Con EBITDA e utile negativi, EV/EBITDA e P/E non hanno significato.",
+          "Il P/BV dice poco per società asset-light, dove il valore sta in IP e crescita.",
+          "Si usa EV/Revenue, o EV/Gross profit se i margini lordi dei peer sono molto diversi, sempre letto insieme a crescita e margini attesi."
+        ],
+        "shortcut": "Profitti negativi: risali il conto economico fino alla prima riga positiva, ricavi o gross profit.",
+        "trap": "Applicare d'istinto EV/EBITDA, il multiplo più usato: con EBITDA negativo il multiplo è negativo e privo di significato.",
+        "rule": "Più la società è giovane, più in alto nel conto economico si prende la metrica."
+      },
+      "tags": [
+        "multiples",
+        "tech",
+        "growth-companies"
+      ]
+    },
+    {
+      "id": "val-027",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A company has a EUR 500m convertible bond with a conversion price of EUR 25. The share price is EUR 32. How should the convertible be treated when calculating diluted equity value and enterprise value?",
+      "options": [
+        "Add 20m shares to the diluted count and also keep the 500 in debt",
+        "Keep the 500 in debt and ignore it in the share count",
+        "Add 20m shares to the diluted count and exclude the 500 from debt",
+        "Apply the treasury stock method: add 20m shares less 500 / 32"
+      ],
+      "answer": 2,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Il convertibile è in the money (32 > 25): si assume convertito (if-converted method).",
+          "Azioni da conversione = 500m / 25 = 20m, da sommare alle diluted shares.",
+          "Se converte non va rimborsato: si toglie il 500 dal debito, altrimenti lo conteresti due volte."
+        ],
+        "shortcut": "In the money: azioni. Out of the money: debito. Mai entrambi.",
+        "trap": "Contare sia le azioni sia il debito, gonfiando l'EV.",
+        "rule": "If-converted method: convertibili ITM come azioni, OTM come debito."
+      },
+      "tags": [
+        "dilution",
+        "convertible-bonds",
+        "ev-bridge"
+      ]
+    },
+    {
+      "id": "val-028",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A DCF sensitivity table shows enterprise value with WACC on one axis (8% to 12%) and terminal growth on the other (1% to 3%). Where is the highest value?",
+      "options": [
+        "WACC 12% and growth 3%",
+        "WACC 8% and growth 1%",
+        "WACC 12% and growth 1%",
+        "WACC 8% and growth 3%"
+      ],
+      "answer": 3,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "WACC più basso: flussi scontati meno, valore più alto.",
+          "Crescita terminale più alta: TV più alto, perché TV = FCF × (1 + g) / (WACC - g).",
+          "Il massimo è nell'angolo con WACC minimo e crescita massima: 8% e 3%."
+        ],
+        "shortcut": "Il valore è massimo dove lo spread WACC - g è minimo: 8% - 3% = 5%.",
+        "trap": "Associare un WACC alto a un valore alto, confondendo il tasso di sconto con un rendimento ottenuto.",
+        "rule": "L'EV sale quando il WACC scende e g sale; la sensibilità è massima quando lo spread è stretto."
+      },
+      "tags": [
+        "dcf",
+        "sensitivity-analysis",
+        "terminal-value"
+      ]
+    },
+    {
+      "id": "val-029",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Starting from zero debt, a company gradually increases its leverage. What typically happens to its WACC?",
+      "options": [
+        "It falls continuously, because debt is always cheaper than equity",
+        "It rises continuously, because debt makes the equity riskier",
+        "It first falls, thanks to cheaper after-tax debt, then rises as financial distress risk increases",
+        "It is unaffected, because the higher cost of equity always offsets the cheaper debt"
+      ],
+      "answer": 2,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Il debito costa meno dell'equity e gli interessi sono deducibili: all'inizio sostituire equity con debito abbassa il WACC.",
+          "Con più leva salgono sia il cost of equity (beta levered più alto) sia il costo del debito (rating peggiore).",
+          "Oltre un certo livello prevalgono i costi di distress e il WACC risale: esiste una struttura ottimale."
+        ],
+        "shortcut": "Curva a U: scende, tocca un minimo, poi risale.",
+        "trap": "Rispondere che scende sempre perché il debito costa meno, ignorando l'aumento del rischio per azionisti e creditori.",
+        "rule": "Struttura ottimale = equilibrio tra scudo fiscale e costi di distress."
+      },
+      "tags": [
+        "wacc",
+        "capital-structure",
+        "concepts"
+      ]
+    },
+    {
+      "id": "val-030",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "mcq",
+      "stem": "All else equal, which characteristic would justify a HIGHER EV/EBITDA multiple?",
+      "options": [
+        "Higher expected growth with lower capital intensity",
+        "Higher capital expenditure needed to sustain EBITDA",
+        "Higher cost of capital due to cyclical end markets",
+        "Higher customer concentration"
+      ],
+      "answer": 0,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Il multiplo riflette il valore attuale dei flussi futuri per ogni euro di EBITDA di oggi.",
+          "Più crescita aumenta i flussi futuri; meno capex significa che una quota maggiore dell'EBITDA diventa free cash flow.",
+          "Capex elevato, WACC più alto e concentrazione dei clienti riducono i flussi o aumentano il rischio: multiplo più basso."
+        ],
+        "shortcut": "Multiplo alto = crescita alta, conversione di cassa alta, rischio basso.",
+        "trap": "Pensare che più capex significhi più crescita e quindi multiplo più alto: a parità di crescita, più capex riduce il valore.",
+        "rule": "EV/EBITDA ≈ (FCF / EBITDA) × (1 + g) / (WACC - g)."
+      },
+      "tags": [
+        "multiples",
+        "value-drivers"
+      ]
+    },
+    {
+      "id": "val-031",
+      "skill": "fin-val",
+      "level": 3,
+      "type": "numeric",
+      "stem": "Your DCF uses an exit multiple that produces a terminal value of 960 at the end of year 5. Year-5 unlevered free cash flow is 60 and WACC is 10%. What perpetual growth rate is implied by this terminal value (%)?",
+      "answer": 3.53,
+      "tolerance": 0.05,
+      "unit": "%",
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Parti dalla formula di Gordon: TV = FCF × (1 + g) / (WACC - g).",
+          "Risolvi per g: TV × (WACC - g) = FCF × (1 + g), quindi g = (TV × WACC - FCF) / (TV + FCF).",
+          "g = (960 × 0.10 - 60) / (960 + 60) = (96 - 60) / 1,020 = 36 / 1,020.",
+          "g = 3.53%."
+        ],
+        "shortcut": "Stima veloce: FCF / TV = 60 / 960 = 6.25%, quindi g ≈ 10% - 6.25% = 3.75%; poi correggi al ribasso perché al numeratore c'è FCF × (1 + g).",
+        "trap": "Fermarsi alla stima del 3.75%, dimenticando che il flusso terminale è FCF × (1 + g).",
+        "rule": "g implicito = (TV × WACC - FCF) / (TV + FCF): usalo per verificare che l'exit multiple sia realistico."
+      },
+      "tags": [
+        "dcf",
+        "terminal-value",
+        "implied-growth",
+        "gordon-growth"
+      ]
+    },
+    {
+      "id": "val-032",
+      "skill": "fin-val",
+      "level": 3,
+      "type": "numeric",
+      "stem": "A comparable company has a levered beta of 1.30 and a debt-to-equity ratio of 0.50. Your target's D/E is 0.25. Tax rate 25%, risk-free rate 3.0%, equity risk premium 5.0%. Using the Hamada formula, what is the target's cost of equity (%)?",
+      "answer": 8.61,
+      "tolerance": 0.05,
+      "unit": "%",
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Unlever: βu = βL / (1 + (1 - t) × D/E) = 1.30 / (1 + 0.75 × 0.50) = 1.30 / 1.375 = 0.945.",
+          "Relever alla struttura del target: βL = 0.945 × (1 + 0.75 × 0.25) = 0.945 × 1.1875 = 1.123.",
+          "CAPM: Ke = 3.0% + 1.123 × 5.0% = 3.0% + 5.61% = 8.61%."
+        ],
+        "shortcut": "βL target = 1.30 × 1.1875 / 1.375 = 1.30 × 0.864 ≈ 1.123.",
+        "trap": "Usare direttamente il beta del comparable (Ke = 3% + 1.30 × 5% = 9.5%) senza adattarlo alla leva del target.",
+        "rule": "Beta: unlever con la leva del comparable, relever con quella del target."
+      },
+      "tags": [
+        "wacc",
+        "beta",
+        "capm",
+        "relevering"
+      ]
+    },
+    {
+      "id": "val-033",
+      "skill": "fin-val",
+      "level": 3,
+      "type": "numeric",
+      "stem": "Unlevered free cash flows are 100 in year 1, 110 in year 2 and 120 in year 3. WACC is 10% and the perpetual growth rate after year 3 is 2%. Using end-of-year discounting, what is the enterprise value (EUR m)?",
+      "answer": 1421.5,
+      "tolerance": 1.5,
+      "unit": "EUR m",
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "PV dei flussi espliciti: 100 / 1.1 = 90.9; 110 / 1.21 = 90.9; 120 / 1.331 = 90.2. Totale 272.0.",
+          "TV a fine anno 3 = 120 × 1.02 / (0.10 - 0.02) = 122.4 / 0.08 = 1,530.",
+          "PV del TV = 1,530 / 1.331 = 1,149.5.",
+          "EV = 272.0 + 1,149.5 = 1,421.5."
+        ],
+        "shortcut": "Somma flusso e TV dell'anno 3 prima di scontare: (120 + 1,530) / 1.331 = 1,239.7, poi aggiungi 90.9 + 90.9.",
+        "trap": "Scontare il TV per 4 anni invece di 3 (EV circa 1,317) o dimenticare il fattore (1 + g) nel TV (EV circa 1,399).",
+        "rule": "EV = Σ FCF_t / (1 + WACC)^t + TV_N / (1 + WACC)^N."
+      },
+      "tags": [
+        "dcf",
+        "terminal-value",
+        "discounting",
+        "enterprise-value"
+      ]
+    },
+    {
+      "id": "val-034",
+      "skill": "fin-val",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Your comps table computes EV including IFRS 16 lease liabilities. To keep EV/EBITDA consistent, which EBITDA should you use?",
+      "options": [
+        "EBITDA after deducting lease rentals (pre-IFRS 16 basis)",
+        "EBITDA before lease costs (post-IFRS 16 basis, with rentals replaced by depreciation and interest)",
+        "EBITDA after deducting lease depreciation but before lease interest",
+        "Either, as long as the same choice is applied to all peers"
+      ],
+      "answer": 1,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Se il leasing è nel numeratore (EV) come debito, il suo costo non deve stare sopra l'EBITDA, altrimenti lo conti due volte.",
+          "Post IFRS 16 il canone è sostituito da depreciation e interessi, entrambi sotto l'EBITDA: è la metrica coerente.",
+          "In alternativa si usa EV senza leasing ed EBITDA dopo i canoni (pre-IFRS 16): l'importante è non mescolare.",
+          "EV con leasing ed EBITDA pre-IFRS 16 gonfiano il multiplo; il contrario lo comprime."
+        ],
+        "shortcut": "Leasing nel numeratore: canone fuori dal denominatore.",
+        "trap": "Pensare che basti la coerenza tra peer: serve anche coerenza tra numeratore e denominatore della stessa società.",
+        "rule": "EV con lease liabilities ↔ EBITDA post IFRS 16; EV senza leasing ↔ EBITDA dopo i canoni."
+      },
+      "tags": [
+        "multiples",
+        "ifrs-16",
+        "consistency"
+      ]
+    },
+    {
+      "id": "val-035",
+      "skill": "fin-val",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A company raises 200 of new debt and uses all of it to buy back shares at the current market price. Ignoring taxes, fees and signalling effects, what happens immediately?",
+      "options": [
+        "EV unchanged; equity value -200; share price unchanged",
+        "EV +200; equity value unchanged; share price up",
+        "EV unchanged; equity value -200; share price down",
+        "EV +200; equity value -200; share price unchanged"
+      ],
+      "answer": 0,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Il business operativo non cambia: EV invariato.",
+          "Il net debt sale di 200, quindi l'equity value (EV - net debt) scende di 200.",
+          "Le azioni riacquistate al prezzo di mercato sono 200 / P: equity value e numero di azioni scendono nella stessa proporzione, prezzo per azione invariato.",
+          "Nel tempo l'EPS può salire o scendere in base al costo del debito after-tax rispetto all'earnings yield, ma il valore immediato non cambia."
+        ],
+        "shortcut": "Ricapitalizzazione: il valore si sposta da equity a debito, l'EV resta fermo.",
+        "trap": "Pensare che il nuovo debito si sommi all'EV: il debito sale, ma l'equity scende dello stesso importo.",
+        "rule": "I cambi di struttura finanziaria non toccano l'EV, prima di tasse e costi di distress."
+      },
+      "tags": [
+        "enterprise-value",
+        "share-buyback",
+        "capital-structure"
+      ]
+    },
+    {
+      "id": "val-036",
+      "skill": "fin-val",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Your Gordon growth terminal value implies an exit multiple of 22x EBITDA, while mature peers trade at around 9x. What is the most likely problem?",
+      "options": [
+        "The terminal growth rate is too high and/or the WACC is too low",
+        "The mid-year convention has been applied to the terminal value",
+        "Net debt has been subtracted twice",
+        "The explicit forecast period is too long"
+      ],
+      "answer": 0,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Il multiplo implicito è TV / EBITDA dell'ultimo anno; con Gordon dipende da (1 + g) / (WACC - g).",
+          "22x contro 9x dei peer indica uno spread WACC - g troppo stretto: g troppo alto, WACC troppo basso o entrambi.",
+          "Il net debt non entra nel TV a livello di EV, e la mid-year convention sposta il valore di pochi punti percentuali, non lo raddoppia."
+        ],
+        "shortcut": "Cross-check sempre: da Gordon ricava il multiplo implicito, dall'exit multiple ricava la g implicita.",
+        "trap": "Cercare errori meccanici marginali invece di mettere in discussione le due ipotesi che pesano di più.",
+        "rule": "Il TV deve essere coerente con i multipli dei peer maturi e con una crescita di lungo periodo non superiore al PIL nominale."
+      },
+      "tags": [
+        "dcf",
+        "terminal-value",
+        "sanity-check"
+      ]
+    },
+    {
+      "id": "val-037",
+      "skill": "fin-val",
+      "level": 3,
+      "type": "mcq",
+      "stem": "In a DCF that discounts unlevered free cash flow at WACC, where is the value of the interest tax shield captured?",
+      "options": [
+        "In unlevered free cash flow, through lower taxes",
+        "It is not captured anywhere and must be added separately",
+        "In the terminal value, through a higher growth rate",
+        "In the WACC, through the after-tax cost of debt"
+      ],
+      "answer": 3,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "L'unlevered FCF tassa l'EBIT come se non ci fosse debito: lo scudo fiscale degli interessi non è nel flusso.",
+          "Lo scudo entra nel tasso: Kd × (1 - t) abbassa il WACC e quindi aumenta il valore attuale.",
+          "Inserirlo anche nel flusso (tassando EBIT - interessi) significherebbe contarlo due volte."
+        ],
+        "shortcut": "UFCF + WACC after-tax: lo scudo fiscale sta nel denominatore.",
+        "trap": "Calcolare le tasse del UFCF sull'EBT: è un double counting dello scudo fiscale. Aggiungerlo a parte è la logica dell'APV, non del metodo WACC.",
+        "rule": "Nel metodo WACC lo scudo fiscale vive solo nel tasso; nell'APV si aggiunge separatamente."
+      },
+      "tags": [
+        "dcf",
+        "wacc",
+        "tax-shield",
+        "apv"
+      ]
+    },
+    {
+      "id": "val-038",
+      "skill": "fin-val",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Your 5-year DCF applies the mid-year convention to the projected cash flows. The terminal value is calculated with an exit EBITDA multiple. Over how many years should the terminal value be discounted?",
+      "options": [
+        "4.5 years, consistent with the mid-year convention",
+        "5.0 years, because the exit multiple values the business at a point in time at the end of year 5",
+        "5.5 years, because the terminal period starts in year 6",
+        "6.0 years, because the first terminal cash flow arrives at the end of year 6"
+      ],
+      "answer": 1,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "L'exit multiple applicato all'EBITDA dell'anno 5 rappresenta il prezzo a cui si venderebbe il business alla fine dell'anno 5.",
+          "È un valore puntuale a fine periodo, non un flusso distribuito durante l'anno: si sconta per 5.0 anni.",
+          "La mid-year convention vale solo per i flussi di cassa che arrivano nel corso dell'anno."
+        ],
+        "shortcut": "Exit multiple = transazione a una data precisa = fine anno N.",
+        "trap": "Applicare in automatico la mid-year anche al TV (4.5 anni), gonfiando il suo valore di circa il 5% con WACC al 10%.",
+        "rule": "TV con exit multiple: sconto per N anni anche con la mid-year convention."
+      },
+      "tags": [
+        "dcf",
+        "terminal-value",
+        "mid-year-convention"
+      ]
+    },
+    {
+      "id": "val-039",
+      "skill": "fin-val",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Two semiconductor companies both trade at 12x EV/EBITDA. Company A owns its fabs and spends capex equal to 45% of EBITDA; Company B is fabless with capex equal to 5% of EBITDA. Which metric best shows that A is actually more expensive?",
+      "options": [
+        "EV / Revenue",
+        "P / Book value",
+        "EV / EBITDA on next year's numbers",
+        "EV / (EBITDA - capex)"
+      ],
+      "answer": 3,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "L'EBITDA ignora il capex, che per una società con fab proprie è un costo ricorrente enorme.",
+          "A: EBITDA - capex = 55% dell'EBITDA, quindi EV / (EBITDA - capex) = 12 / 0.55 ≈ 21.8x.",
+          "B: EBITDA - capex = 95% dell'EBITDA, quindi 12 / 0.95 ≈ 12.6x.",
+          "A paga quasi il doppio per ogni euro di cassa operativa: è più cara."
+        ],
+        "shortcut": "Multiplo EBITDA / conversione di cassa = multiplo sul cash flow.",
+        "trap": "Guardare EV/Revenue: dipende dai margini, non dall'intensità di capitale, e non isola il problema del capex.",
+        "rule": "Nei settori capital intensive confronta EV / (EBITDA - capex) o EV / FCF, non solo EV/EBITDA."
+      },
+      "tags": [
+        "multiples",
+        "semiconductors",
+        "capex",
+        "cash-conversion"
+      ]
+    },
+    {
+      "id": "val-040",
+      "skill": "fin-val",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Which of the following is generally NOT treated as a debt-like item in an enterprise-value-to-equity-value bridge?",
+      "options": [
+        "An unfunded defined-benefit pension deficit",
+        "Deferred consideration owed on a past acquisition",
+        "Trade payables within normal payment terms",
+        "Dividends declared but not yet paid"
+      ],
+      "answer": 2,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "I debt-like items sono obbligazioni simili al debito che l'acquirente dovrà pagare e che non fanno parte del working capital normale.",
+          "Pension deficit, deferred consideration ed eventuali earn-out, dividendi dichiarati e non pagati: sono uscite di cassa verso terzi, quindi si trattano come debito.",
+          "I payables entro i termini normali fanno parte del working capital operativo, già riflesso nel livello normale di NWC e nei flussi.",
+          "Contarli come debito significherebbe penalizzare il prezzo due volte."
+        ],
+        "shortcut": "Chiediti: è un'uscita straordinaria o parte del ciclo operativo normale? Solo la prima è debt-like.",
+        "trap": "Trattare ogni passività come debito: il working capital normale non è debt-like.",
+        "rule": "Debt-like = obbligazioni finanziarie o straordinarie; working capital normale = no."
+      },
+      "tags": [
+        "ev-bridge",
+        "debt-like-items",
+        "m-and-a"
+      ]
+    }
+  ]
+}

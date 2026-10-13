@@ -1,0 +1,625 @@
+{
+  "lessons": [
+    {
+      "id": "les-acc-01",
+      "skill": "fin-acc",
+      "order": 1,
+      "title": "I tre prospetti contabili e come si collegano",
+      "minutes": 15,
+      "summary": "Saprai spiegare in 60 secondi income statement, balance sheet e cash flow statement e tracciare ogni collegamento tra i tre.",
+      "sections": [
+        {
+          "h": "Cosa vogliono sentire e in quanto tempo",
+          "body": "La domanda 'Walk me through the three financial statements' arriva in quasi ogni primo colloquio tecnico. Non testa la teoria: testa se sai **strutturare** una risposta in 45-60 secondi.\n\nSchema della risposta (IS = income statement, BS = balance sheet, CFS = cash flow statement):\n1. **Income statement**: ricavi e costi di un periodo, fino al net income. Segue la competenza, non la cassa.\n2. **Balance sheet**: fotografia a una data di attività, passività e patrimonio netto. Assets = Liabilities + Equity.\n3. **Cash flow statement**: parte dal net income, rettifica le voci non monetarie e il working capital, poi aggiunge investimenti e finanziamenti per arrivare alla variazione di cassa.\n4. **Collegamenti**: il net income apre il CFS ed entra nelle retained earnings; la cassa finale del CFS è la cassa del balance sheet.\n\nQuando hai finito i 60 secondi, fermati. Sarà l'intervistatore a chiederti di approfondire."
+        },
+        {
+          "h": "Income statement: dalla revenue al net income",
+          "body": "Leggilo dall'alto verso il basso: ogni riga è un livello di profitto che userai nei multipli.\n\n| Riga | Cosa contiene | Perché conta |\n|---|---|---|\n| Revenue | Vendite del periodo | Base di EV/Sales |\n| - COGS | Costo diretto del venduto | Determina il gross margin |\n| = Gross profit | Revenue - COGS | Misura il pricing power |\n| - Opex (SG&A, R&D) | Costi operativi | Nel semis l'R&D pesa molto |\n| = EBITDA | Utile prima di D&A | Proxy della cassa operativa, base di EV/EBITDA |\n| - D&A | Ammortamenti, non monetari | Collegati al capex passato |\n| = EBIT | Risultato operativo | Base di EV/EBIT e del DCF |\n| - Interest expense | Costo del debito | Qui entra la struttura finanziaria |\n| = EBT | Utile ante imposte | Base imponibile |\n| - Taxes | Imposte | Aliquota effettiva |\n| = Net income | Utile per gli azionisti | Base di P/E ed EPS |\n\n**Principio chiave**: l'income statement segue la **competenza** (accrual). Un ricavo si registra quando è guadagnato, non quando incassi. Per questo il net income non coincide con la cassa generata."
+        },
+        {
+          "h": "Balance sheet: cosa possiedi e chi lo ha finanziato",
+          "body": "È una fotografia a una data. L'equazione da non dimenticare mai: **Assets = Liabilities + Equity**.\n\n- **Assets correnti**: cash, accounts receivable (crediti verso clienti), inventory (magazzino), prepaid expenses.\n- **Assets non correnti**: PP&E (impianti, al netto degli ammortamenti), intangibles, goodwill (nasce dalle acquisizioni).\n- **Liabilities correnti**: accounts payable (debiti verso fornitori), accrued expenses (costi maturati non pagati), deferred revenue (incassi anticipati non ancora guadagnati), quota a breve del debito.\n- **Liabilities non correnti**: debito finanziario a lungo termine, lease liabilities (IFRS 16), fondi.\n- **Equity**: capitale versato (common stock e APIC) + **retained earnings** (utili cumulati non distribuiti).\n\n**Working capital operativo** = (receivable + inventory + prepaid) - (payable + accrued + deferred revenue). Cassa e debito sono esclusi: sono voci finanziarie, non operative."
+        },
+        {
+          "h": "Cash flow statement (metodo indiretto)",
+          "body": "Il CFS riconcilia l'utile di competenza con la cassa. Tre sezioni.\n\n**1. Cash flow from operations (CFO)**\n- Parti dal net income.\n- Aggiungi le voci non monetarie: D&A, stock-based compensation, svalutazioni (impairment, write-down).\n- Rettifica per la variazione del working capital: **un asset che sale consuma cassa (segno meno)**, una liability che sale genera cassa (segno più).\n\n**2. Cash flow from investing (CFI)**\n- Capex (negativo), acquisizioni (negativo), cessioni di asset (positivo).\n\n**3. Cash flow from financing (CFF)**\n- Emissione o rimborso di debito, emissione o riacquisto di azioni, dividendi pagati.\n\nCFO + CFI + CFF = **variazione della cassa** del periodo. Free cash flow (versione semplice) = CFO - capex."
+        },
+        {
+          "h": "I collegamenti da sapere a memoria",
+          "body": "Questa è la parte che separa chi ha studiato da chi ha capito.\n\n| Voce | Income statement | Cash flow statement | Balance sheet |\n|---|---|---|---|\n| Net income | Ultima riga | Prima riga del CFO | Aumenta le retained earnings |\n| D&A | Costo, riduce EBIT | Aggiunta nel CFO (non monetaria) | Riduce PP&E o intangibles |\n| Capex | Nessun effetto immediato | Uscita nel CFI | Aumenta PP&E |\n| Working capital | Nessun effetto diretto | Variazione nel CFO | Cambiano le voci correnti |\n| Debito (capitale) | Nessun effetto | Entrata o uscita nel CFF | Cambia il debito |\n| Interessi | Costo, riduce l'utile | Già dentro il net income | Effetto via net income e cassa |\n| Dividendi | Nessun effetto | Uscita nel CFF | Riducono le retained earnings |\n| Cassa finale | Nessun effetto | Ultima riga del CFS | Diventa la cassa del balance sheet |\n\nRegola di controllo: **Retained earnings finali = iniziali + net income - dividendi**."
+        },
+        {
+          "h": "Le domande classiche (e la risposta breve)",
+          "body": "- **'If you could use only one statement to judge a company, which one?'** Il cash flow statement: mostra la cassa reale generata e consumata ed è più difficile da influenzare con le scelte contabili.\n- **'Which two statements would you need to build the third?'** Balance sheet di inizio e fine periodo più income statement: dalle variazioni del balance sheet ricostruisci il CFS.\n- **'How can a profitable company go bankrupt?'** Se il net income non diventa cassa: crediti che crescono, magazzino che si accumula, debito che scade e non si rifinanzia. Si fallisce per mancanza di cassa, non di utili.\n- **'Is EBITDA a good proxy for cash flow?'** Solo in parte: ignora capex, working capital, interessi e imposte. In un business ad alta intensità di capitale (per esempio una fonderia di semiconduttori) l'EBITDA sovrastima molto la cassa.\n- **'Why do we add back depreciation?'** Perché è un costo non monetario: ha ridotto l'utile, ma la cassa è uscita prima, al momento del capex."
+        },
+        {
+          "h": "Le trappole più frequenti",
+          "body": "- **Segno del working capital**: receivable +15 nel balance sheet significa -15 nel CFO. Pensa: 'ho venduto ma non ho ancora incassato'.\n- **Interessi vs rimborso del debito**: gli interessi passano dall'income statement, il rimborso del capitale solo dal CFF.\n- **Dividendi**: non sono un costo, non toccano l'income statement.\n- **Capex**: non è un costo dell'anno; diventa costo solo tramite la depreciation negli anni successivi.\n- **Bilancio che non quadra**: se attivo e passivo più equity non cambiano dello stesso importo, quasi sempre hai dimenticato le imposte o un passaggio dalla cassa."
+        }
+      ],
+      "examples": [
+        {
+          "q": "Walk me through the three financial statements.",
+          "steps": [
+            "Apri con l'income statement: revenue meno costi operativi, D&A, interessi e imposte, fino al net income del periodo.",
+            "Passa al balance sheet: attività da un lato, passività ed equity dall'altro, e i due lati si bilanciano sempre.",
+            "Prosegui con il cash flow statement: parte dal net income, aggiunge le voci non monetarie e la variazione del working capital, poi investing e financing, fino alla variazione di cassa.",
+            "Chiudi con i collegamenti: net income nel CFO e nelle retained earnings, cassa finale del CFS uguale alla cassa del balance sheet, D&A e capex che muovono il PP&E."
+          ],
+          "answer": "Risposta in 45-60 secondi, da dire in inglese con questa sequenza: IS (performance del periodo) -> BS (fotografia, A = L + E) -> CFS (riconciliazione tra utile e cassa) -> 3 collegamenti chiave (net income, cassa finale, D&A e capex sul PP&E)."
+        },
+        {
+          "q": "A company reports net income of 80, D&A of 30, an increase in accounts receivable of 15, an increase in accounts payable of 10 and capex of 40. What is its free cash flow (CFO minus capex)?",
+          "steps": [
+            "Parti dal net income: 80.",
+            "Aggiungi la D&A non monetaria: 80 + 30 = 110.",
+            "Working capital: receivable +15 è un asset che sale, quindi -15; payable +10 è una liability che sale, quindi +10. CFO = 110 - 15 + 10 = 105.",
+            "Free cash flow = CFO - capex = 105 - 40 = 65."
+          ],
+          "answer": "65"
+        },
+        {
+          "q": "Opening retained earnings are 200 and opening cash is 50. During the year the company earns net income of 80 and pays dividends of 25. The cash flow statement shows CFO of 105, CFI of -40 and CFF of -25. What are closing retained earnings and closing cash?",
+          "steps": [
+            "Retained earnings finali = 200 + 80 - 25 = 255.",
+            "Variazione di cassa = CFO + CFI + CFF = 105 - 40 - 25 = +40.",
+            "Cassa finale = 50 + 40 = 90: è la cifra che compare nel balance sheet di fine anno."
+          ],
+          "answer": "Retained earnings 255, cassa finale 90."
+        }
+      ],
+      "cheatsheet": [
+        "Assets = Liabilities + Equity, sempre.",
+        "Net income: prima riga del CFO e si somma alle retained earnings.",
+        "CFO = net income + voci non monetarie - aumento del working capital.",
+        "Asset corrente che sale = cassa che scende; liability che sale = cassa che sale.",
+        "Cassa finale del CFS = cassa del balance sheet.",
+        "Retained earnings finali = iniziali + net income - dividendi.",
+        "Interessi nell'income statement; rimborso del capitale solo nel CFF.",
+        "FCF semplice = CFO - capex."
+      ]
+    },
+    {
+      "id": "les-acc-02",
+      "skill": "fin-acc",
+      "order": 2,
+      "title": "Far passare una variazione nei tre prospetti",
+      "minutes": 18,
+      "summary": "Saprai far passare in 90 secondi qualsiasi variazione (depreciation, inventory, debito) nei tre prospetti e dimostrare che il balance sheet quadra.",
+      "sections": [
+        {
+          "h": "Il metodo in 3 passi: IS, poi CFS, poi BS",
+          "body": "Ogni domanda del tipo 'Depreciation goes up by 10, walk me through the statements' si risolve sempre nello stesso ordine.\n\n1. **Income statement**: quale riga cambia? Calcola l'effetto ante imposte, poi moltiplica per (1 - tax rate) per arrivare al net income.\n2. **Cash flow statement**: parti dalla variazione del net income, rettifica voci non monetarie e working capital, poi CFI e CFF. Ottieni la **variazione di cassa**.\n3. **Balance sheet**: cassa (dal CFS) più le altre attività toccate; passività toccate; equity che cambia del net income (retained earnings) e di eventuali emissioni.\n\n**Controllo finale**: variazione delle attività = variazione di passività + equity. Dillo ad alta voce: 'and the balance sheet balances'.\n\nIn questa lezione usiamo un **tax rate del 25%**. Molte guide americane usano il 40%: dichiara la tua ipotesi all'inizio."
+        },
+        {
+          "h": "Caso 1: la depreciation sale di 10",
+          "body": "È la domanda più frequente in assoluto.\n\n| Prospetto | Effetto | Calcolo |\n|---|---|---|\n| Income statement | EBIT -10, imposte -2.5, net income -7.5 | -10 x (1 - 25%) = -7.5 |\n| Cash flow statement | Net income -7.5, add-back D&A +10, cassa +2.5 | -7.5 + 10 = +2.5 |\n| Balance sheet (attivo) | Cassa +2.5, PP&E -10, totale -7.5 | 2.5 - 10 = -7.5 |\n| Balance sheet (passività + equity) | Retained earnings -7.5, totale -7.5 | Quadra |\n\n**Intuizione**: la depreciation non costa cassa, ma riduce le imposte. Quindi la cassa **sale** di depreciation x aliquota: 10 x 25% = 2.5. Questo è il **tax shield**."
+        },
+        {
+          "h": "Caso 2: inventory (acquisto, vendita, svalutazione)",
+          "body": "Tre varianti, tre risultati diversi. Tutto dipende dal fatto che l'evento passi o no dall'income statement.\n\n**a) Compri inventory per 20 in contanti**\n- IS: nessun effetto (il costo arriva solo quando vendi).\n- CFS: inventory +20 è un asset che sale, CFO -20. Cassa -20.\n- BS: cassa -20, inventory +20. Totale attivo invariato, quadra.\n\n**b) Vendi inventory con valore contabile 20 a 30 in contanti** (imposte pagate subito)\n- IS: revenue +30, COGS +20, utile ante imposte +10, imposte +2.5, net income +7.5.\n- CFS: net income +7.5; inventory scende di 20, quindi +20 nel CFO. Cassa +27.5.\n- BS: cassa +27.5, inventory -20, attivo +7.5. Retained earnings +7.5. Quadra.\n\n**c) Svaluti l'inventory di 20 (write-down)**\n- IS: costo +20, imposte -5, net income -15.\n- CFS: net income -15, add-back del write-down non monetario +20. Cassa +5.\n- BS: cassa +5, inventory -20, attivo -15. Retained earnings -15. Quadra.\n\nIl write-down funziona come la depreciation: è un costo non monetario."
+        },
+        {
+          "h": "Caso 3: raccogli 100 di debito, paghi gli interessi e rimborsi",
+          "body": "Separa sempre il **giorno dell'emissione** dall'**anno successivo**.\n\n**Giorno 0: emetti 100 di debito**\n- IS: nessun effetto.\n- CFS: CFF +100. Cassa +100.\n- BS: cassa +100, debito +100. Quadra.\n\n**Anno 1: interessi al 5% e rimborso di 20 a fine anno**\n- IS: interest expense +5, imposte -1.25, net income -3.75.\n- CFS: net income -3.75 nel CFO; rimborso del debito -20 nel CFF. Cassa -23.75.\n- BS: cassa -23.75. Debito -20 e retained earnings -3.75, totale -23.75. Quadra.\n\n**Variante**: se usi i 100 di debito per comprare macchinari, la cassa non cambia (CFF +100, CFI -100) e nel BS salgono sia PP&E sia debito di 100."
+        },
+        {
+          "h": "Altre varianti che ti possono chiedere",
+          "body": "Stesso metodo, cambia solo la riga di partenza (tax rate 25%).\n\n| Evento | Net income | Cassa | Balance sheet |\n|---|---|---|---|\n| Accrued expense +10 (bonus maturato, non pagato) | -7.5 | -7.5 + 10 = +2.5 | Cassa +2.5; accrued liabilities +10, retained earnings -7.5 |\n| Stock-based compensation +10 | -7.5 | -7.5 + 10 = +2.5 | Cassa +2.5; retained earnings -7.5, APIC +10 |\n| Impairment di un asset di 10 | -7.5 | +2.5 | Cassa +2.5, asset -10; retained earnings -7.5 |\n| Capex di 50 in contanti | 0 | -50 (CFI) | Cassa -50, PP&E +50 |\n| Dividendo di 15 | 0 | -15 (CFF) | Cassa -15, retained earnings -15 |\n| Cliente paga 20 in anticipo | 0 | +20 (CFO) | Cassa +20, deferred revenue +20 |\n\nPer l'impairment assumiamo, come si fa nei colloqui, che sia deducibile. Nella realtà spesso non lo è ai fini fiscali: se te lo chiedono, menzionalo."
+        },
+        {
+          "h": "Come dirlo in colloquio (90 secondi)",
+          "body": "Parla per prospetto: prima i numeri, poi la spiegazione. Esempio per la depreciation:\n\n'On the income statement, operating income falls by 10 and, at a 25% tax rate, net income falls by 7.5. On the cash flow statement, net income is down 7.5 but we add back the 10 of non-cash depreciation, so cash is up 2.5. On the balance sheet, cash is up 2.5 and PP&E is down 10, so assets are down 7.5; on the other side retained earnings are down 7.5, so it balances.'\n\nTre regole di forma:\n- Dichiara l'aliquota fiscale all'inizio.\n- Non saltare il controllo finale: è la prova che hai capito.\n- Se ti blocchi, torna alla domanda: 'questa voce è cassa o non cassa? passa o no dall'income statement?'."
+        },
+        {
+          "h": "Le trappole",
+          "body": "- **Dimenticare le imposte**: nel caso depreciation la cassa sale di 2.5, non resta invariata.\n- **Add-back sbagliato**: si riaggiunge il costo non monetario pieno (10), non quello al netto delle imposte (7.5).\n- **Interessi nel CFF**: nel modello da colloquio gli interessi sono già dentro il net income, quindi passano dal CFO. Con IFRS la classificazione degli interessi pagati può essere diversa, ma parti sempre dal net income.\n- **Rimborso del debito nell'income statement**: il capitale non è un costo.\n- **Acquisto di inventory nell'income statement**: il costo passa da COGS solo quando vendi."
+        }
+      ],
+      "examples": [
+        {
+          "q": "Depreciation increases by 10. Assuming a 25% tax rate, walk me through the impact on the three statements.",
+          "steps": [
+            "IS: EBIT -10, imposte -2.5, net income -7.5.",
+            "CFS: net income -7.5 + add-back D&A 10 = cassa +2.5.",
+            "BS attivo: cassa +2.5, PP&E -10, totale -7.5.",
+            "BS passività + equity: retained earnings -7.5, quindi il balance sheet quadra."
+          ],
+          "answer": "Net income -7.5, cassa +2.5, attivo e passività + equity entrambi -7.5."
+        },
+        {
+          "q": "A company writes down inventory by 40. Assuming a 25% tax rate, what is the change in cash and in total assets?",
+          "steps": [
+            "IS: costo +40, imposte -10, net income -30.",
+            "CFS: -30 + 40 (write-down non monetario) = cassa +10.",
+            "BS: cassa +10, inventory -40, totale attivo -30, che coincide con retained earnings -30."
+          ],
+          "answer": "Cassa +10, totale attivo -30."
+        },
+        {
+          "q": "A company raises 200 of debt at a 6% interest rate. One year later it pays the interest and repays 50 of principal. Assuming a 25% tax rate, what is the cumulative change in cash across the two events?",
+          "steps": [
+            "Emissione: CFF +200, cassa +200, debito +200.",
+            "Anno 1, IS: interessi 200 x 6% = 12; net income -12 x 0.75 = -9.",
+            "Anno 1, CFS: CFO -9, CFF -50, cassa -59.",
+            "Totale: 200 - 59 = +141. Controllo BS: cassa +141 = debito +150 e retained earnings -9."
+          ],
+          "answer": "+141"
+        },
+        {
+          "q": "Stock-based compensation increases by 20. Assuming a 25% tax rate, walk me through the three statements.",
+          "steps": [
+            "IS: costo +20, imposte -5, net income -15.",
+            "CFS: -15 + 20 (SBC non monetaria) = cassa +5.",
+            "BS: cassa +5 nell'attivo; in equity retained earnings -15 e common stock/APIC +20, totale +5. Quadra."
+          ],
+          "answer": "Net income -15, cassa +5, equity +5."
+        }
+      ],
+      "cheatsheet": [
+        "Ordine fisso: IS -> CFS -> BS -> controllo.",
+        "Effetto sul net income = variazione ante imposte x (1 - t).",
+        "Costo non monetario di X: cassa +X x t (tax shield).",
+        "Acquisto di inventory o capex: nessun effetto sull'income statement al momento dell'acquisto.",
+        "Vendita di inventory: cassa = prezzo incassato - imposte sull'utile.",
+        "Debito: emissione e rimborso solo in CFF e BS; interessi nell'income statement.",
+        "SBC di X: cassa +X x t, equity +X x t (APIC +X, retained earnings -X x (1 - t)).",
+        "Variazione dell'attivo = variazione di passività + equity, sempre."
+      ]
+    },
+    {
+      "id": "les-val-01",
+      "skill": "fin-val",
+      "order": 1,
+      "title": "Enterprise value, equity value e multipli",
+      "minutes": 16,
+      "summary": "Saprai passare da equity value a enterprise value e viceversa, calcolare le azioni diluite e scegliere il multiplo giusto per ogni tipo di azienda.",
+      "sections": [
+        {
+          "h": "Due valori, due domande diverse",
+          "body": "- **Equity value** (market cap per una quotata): quanto valgono le azioni, cioè la parte che spetta agli azionisti. Equity value = prezzo per azione x **azioni diluite**.\n- **Enterprise value (EV)**: quanto valgono le **attività operative** dell'azienda per tutti i finanziatori (azionisti, creditori, minoranze, preferred).\n\nAnalogia della casa: compri una casa da 500 con un mutuo di 300. La tua equity vale 200, ma il valore della casa (EV) è 500. Se in casa trovi 20 di contanti, la casa ti costa di fatto 20 in meno: per questo la cassa si sottrae."
+        },
+        {
+          "h": "Il bridge da equity value a EV",
+          "body": "**EV = Equity value + Debito + Preferred stock + Minority interest - Cassa e investimenti non operativi**\n\n| Voce | Segno | Perché |\n|---|---|---|\n| Debito finanziario (incluse obbligazioni) | + | Altri finanziatori con un diritto sui flussi operativi |\n| Preferred stock | + | Si comporta come debito |\n| Minority interest (NCI) | + | Consolidi il 100% dell'EBITDA di controllate non possedute al 100%: per coerenza aggiungi il valore della quota di terzi |\n| Lease liabilities (IFRS 16) | + | Solo se l'EBITDA che usi è post-IFRS 16, cioè il canone di leasing non è dedotto (finisce in D&A e interessi) |\n| Deficit pensionistico | + | Spesso trattato come debito |\n| Cassa | - | Non è operativa: il compratore se la ritrova |\n| Partecipazioni in collegate | - | Il loro utile non è nell'EBITDA |\n\n**Regola di coerenza**: ciò che contribuisce all'EBITDA sta nell'EV; ciò che non contribuisce all'EBITDA si toglie."
+        },
+        {
+          "h": "Azioni diluite: il treasury stock method",
+          "body": "Per l'equity value usa le azioni **diluite**, non le azioni base. Le opzioni in the money (strike inferiore al prezzo) si considerano esercitate.\n\n**Treasury stock method** in 3 passi:\n1. Tieni solo le opzioni con strike inferiore al prezzo corrente.\n2. Proventi dell'esercizio = numero di opzioni x strike.\n3. L'azienda usa i proventi per riacquistare azioni al prezzo corrente. Nuove azioni nette = opzioni - proventi / prezzo.\n\nEsempio veloce: 10m opzioni con strike 15, prezzo 20. Proventi 150m, riacquisto di 7.5m azioni, nuove azioni nette 2.5m.\n\nRSU e azioni vincolate si aggiungono per intero, perché non hanno strike. Le obbligazioni convertibili in the money si trattano come azioni (e quel debito non si aggiunge nel bridge)."
+        },
+        {
+          "h": "I multipli: numeratore e denominatore devono parlarsi",
+          "body": "Un multiplo confronta un valore con una metrica. Regola d'oro: **EV con metriche prima degli interessi, equity value con metriche dopo gli interessi**.\n\n| Multiplo | Numeratore | Denominatore | Logica |\n|---|---|---|---|\n| EV/Sales | EV | Revenue | La revenue serve tutti i finanziatori |\n| EV/EBITDA | EV | EBITDA | Il più usato, neutrale rispetto a leva e D&A |\n| EV/EBIT | EV | EBIT | Considera la D&A, utile se la capital intensity varia |\n| P/E | Prezzo (o equity value) | EPS (o net income) | Il net income è dopo gli interessi, spetta solo agli azionisti |\n\n**Mai** EV/Net income o Prezzo/EBITDA: mescolano grandezze di finanziatori diversi.\n\nRelazione utile: un P/E di 20x equivale a un **earnings yield** del 5% (1 / 20). Lo userai nell'accretion/dilution."
+        },
+        {
+          "h": "Quale multiplo quando",
+          "body": "- **EV/EBITDA**: default per aziende mature e profittevoli (industriali, consumer, telecom, buona parte del tech hardware).\n- **EV/EBIT**: quando la capital intensity differisce molto tra i peer. Un produttore di chip con fonderie proprie ha una D&A molto più alta di uno fabless: su EV/EBITDA sembrerebbe più economico di quello che è.\n- **EV/Sales**: aziende in perdita o in forte crescita (software early stage, deep tech pre-profit), dove l'EBITDA è negativo o poco significativo.\n- **P/E**: banche e assicurazioni (il debito è materia prima, l'EV non ha senso) e aziende mature con struttura del capitale stabile.\n- **P/BV (price to book)**: banche, letto insieme al ROE.\n- **Multipli settoriali**: EV/EBITDAR (retail, airline), P/NAV (real estate), EV/ARR (SaaS).\n\n**Trading comps vs precedent transactions**: i multipli delle transazioni sono di solito più alti perché includono un **premio di controllo** (spesso 20-40% sul prezzo pre-annuncio) e parte delle sinergie attese."
+        },
+        {
+          "h": "Domande trappola su EV ed equity value",
+          "body": "| Evento | Equity value | EV | Perché |\n|---|---|---|---|\n| Emetti 100 di debito e tieni la cassa | Invariato | Invariato | +100 di debito e +100 di cassa si compensano |\n| Emetti 100 di azioni e tieni la cassa | +100 | Invariato | L'equity sale, ma la cassa in più si sottrae |\n| Paghi un dividendo di 100 con la cassa | -100 | Invariato | Il valore esce verso gli azionisti, il business non cambia |\n| Emetti 100 di azioni per rimborsare 100 di debito | +100 | Invariato | Cambia solo il mix di finanziamento |\n| Usi 100 di cassa per comprare un business da 100 | Invariato | +100 | Cassa giù, attività operative su |\n\n**EV negativo?** Possibile, se la cassa supera market cap + debito. Succede a società con molta cassa e prospettive percepite come negative.\n\n**Perché sottrarre la cassa?** Perché l'EV misura il valore del business operativo: chi compra l'azienda si ritrova anche la sua cassa, quindi il costo netto è più basso."
+        },
+        {
+          "h": "Le trappole",
+          "body": "- **Azioni base invece che diluite**: sottostimi l'equity value, soprattutto nel tech dove le stock option pesano molto.\n- **Bridge al contrario**: da EV a equity value si **sottrae** il debito e si **aggiunge** la cassa.\n- **Multiplo incoerente**: EBITDA pre-IFRS 16 con le lease liabilities nell'EV (o viceversa).\n- **Valore del debito**: in colloquio il book value va bene, ma in teoria si usa il valore di mercato.\n- **Dimenticare il minority interest**: se consolidi il 100% dell'EBITDA della controllata, devi aggiungere la quota di terzi."
+        }
+      ],
+      "examples": [
+        {
+          "q": "A company has a share price of EUR 25 and 40m diluted shares. It has debt of EUR 400m, cash of EUR 150m and minority interest of EUR 50m. EBITDA is EUR 130m. What are its enterprise value and its EV/EBITDA multiple?",
+          "steps": [
+            "Equity value = 25 x 40m = EUR 1,000m.",
+            "EV = 1,000 + 400 (debito) + 50 (minority interest) - 150 (cassa) = EUR 1,300m.",
+            "EV/EBITDA = 1,300 / 130 = 10.0x."
+          ],
+          "answer": "EV EUR 1,300m; EV/EBITDA 10.0x."
+        },
+        {
+          "q": "A company has 100m basic shares trading at EUR 20. It has 10m options with a strike of EUR 15 and 4m options with a strike of EUR 25. Using the treasury stock method, what are the diluted share count and the equity value?",
+          "steps": [
+            "Le 4m opzioni con strike 25 sono out of the money (25 > 20): si escludono.",
+            "10m opzioni con strike 15: proventi = 10m x 15 = EUR 150m.",
+            "Azioni riacquistate = 150m / 20 = 7.5m. Nuove azioni nette = 10m - 7.5m = 2.5m.",
+            "Azioni diluite = 100m + 2.5m = 102.5m. Equity value = 102.5m x 20 = EUR 2,050m."
+          ],
+          "answer": "102.5m azioni diluite; equity value EUR 2,050m."
+        },
+        {
+          "q": "Comparable companies trade at a median EV/EBITDA of 8.0x. The target has EBITDA of EUR 50m, net debt of EUR 120m, minority interest of EUR 10m and 18m diluted shares. What is the implied value per share?",
+          "steps": [
+            "EV implicito = 8.0 x 50 = EUR 400m.",
+            "Equity value = 400 - 120 (net debt) - 10 (minority interest) = EUR 270m.",
+            "Valore per azione = 270 / 18 = EUR 15.0."
+          ],
+          "answer": "EUR 15.0 per azione."
+        },
+        {
+          "q": "A company issues EUR 200m of new shares and uses all the proceeds to repay EUR 200m of debt. What happens to its equity value and its enterprise value?",
+          "steps": [
+            "Equity value: più azioni allo stesso prezzo, quindi +200.",
+            "Bridge: l'EV riceve +200 dall'equity e -200 dal debito.",
+            "EV invariato: il business operativo non è cambiato, è cambiata solo la struttura del capitale."
+          ],
+          "answer": "Equity value +EUR 200m, EV invariato."
+        }
+      ],
+      "cheatsheet": [
+        "EV = equity value + debito + preferred + minority interest - cassa.",
+        "Equity value = prezzo x azioni diluite (treasury stock method).",
+        "TSM: nuove azioni = opzioni ITM - (opzioni x strike) / prezzo.",
+        "EV con metriche pre-interessi (Sales, EBITDA, EBIT); equity value con metriche post-interessi (net income).",
+        "Earnings yield = 1 / P/E.",
+        "In perdita o early stage: EV/Sales. Banche: P/E e P/BV. Capital intensity diversa: EV/EBIT.",
+        "Precedent transactions sopra le trading comps per il premio di controllo.",
+        "Cambiare la struttura del capitale non muove l'EV."
+      ]
+    },
+    {
+      "id": "les-val-02",
+      "skill": "fin-val",
+      "order": 2,
+      "title": "DCF passo per passo",
+      "minutes": 20,
+      "summary": "Saprai costruire e spiegare un DCF: unlevered FCF, WACC, terminal value con i due metodi e tabella di sensitività.",
+      "sections": [
+        {
+          "h": "La logica in una frase",
+          "body": "Un DCF dice che un'azienda vale la **somma dei suoi free cash flow futuri, scontati a oggi** a un tasso che riflette il rischio.\n\nIn colloquio: 'You project the company's unlevered free cash flows for 5 to 10 years, calculate a terminal value for the period after that, discount both back at the WACC to get enterprise value, then move to equity value through the bridge and divide by diluted shares.'\n\nI 6 passi:\n1. Proietta revenue, margini, capex e working capital (5-10 anni).\n2. Calcola gli **unlevered FCF**.\n3. Stima il **WACC**.\n4. Calcola il **terminal value** (Gordon o exit multiple).\n5. Sconta tutto a oggi: la somma è l'**enterprise value**.\n6. Bridge: EV - net debt - altri claim = equity value; diviso per le azioni diluite = valore per azione."
+        },
+        {
+          "h": "Unlevered free cash flow",
+          "body": "**UFCF = EBIT x (1 - t) + D&A - Capex - Aumento del NWC**\n\nOppure, partendo dall'EBITDA: UFCF = EBITDA - imposte sull'EBIT - capex - aumento del NWC.\n\n- **Unlevered** significa prima degli interessi: è la cassa disponibile per **tutti** i finanziatori. Per questo si sconta al WACC e porta all'EV.\n- Le imposte si calcolano sull'**EBIT**, non sull'EBT: il beneficio fiscale del debito è già nel WACC (Kd x (1 - t)). Se lo mettessi anche nei flussi, lo conteresti due volte.\n- Un aumento del NWC consuma cassa (segno meno).\n- Stock-based compensation: è un costo reale per gli azionisti (diluizione); molti la trattano come costo e non la riaggiungono.\n\n**Levered FCF** = net income + D&A - capex - aumento del NWC + nuovo debito netto (emissioni meno rimborsi). Si sconta al **cost of equity** e porta direttamente all'equity value."
+        },
+        {
+          "h": "WACC e cost of equity",
+          "body": "**WACC = E/(D+E) x Ke + D/(D+E) x Kd x (1 - t)**\n\n- **Ke (cost of equity)** con il CAPM: Ke = Rf + Beta x ERP.\n  - Rf: rendimento del titolo di Stato a 10 anni nella valuta dei flussi.\n  - ERP (equity risk premium): di solito 4.5-6%.\n  - Beta: si prende dai comparable, si fa **unlever** e poi **relever** alla struttura target: Beta levered = Beta unlevered x (1 + (1 - t) x D/E).\n- **Kd (cost of debt)**: rendimento attuale del debito (o tasso base + spread per il rating), poi al netto delle imposte.\n- **Pesi**: valori di mercato o struttura del capitale target, non book value.\n\nOrdine di grandezza: **Ke > Kd sempre**, perché l'azionista è pagato per ultimo e corre più rischio. Più debito all'inizio abbassa il WACC (scudo fiscale, debito meno caro), ma fa salire Ke (beta levered più alto) e, oltre una certa soglia, anche Kd: da lì il WACC risale."
+        },
+        {
+          "h": "Terminal value: Gordon growth ed exit multiple",
+          "body": "Il terminal value cattura il valore dopo l'ultimo anno di proiezione e di solito pesa il **60-80% dell'EV**.\n\n**Metodo 1: Gordon growth (perpetuity growth)**\nTV(anno n) = UFCF(n) x (1 + g) / (WACC - g)\n- g di lungo periodo: tipicamente tra 1.5% e 3%, mai sopra la crescita nominale di lungo periodo dell'economia.\n- Serve WACC > g, altrimenti la formula non ha senso.\n\n**Metodo 2: exit multiple**\nTV(anno n) = EBITDA(n) x multiplo EV/EBITDA (dai comparable).\n\n**Sconto del TV**: il TV è un valore all'anno n, quindi si sconta con il fattore dell'anno n, cioè TV / (1 + WACC)^n. Non con n + 1.\n\n**Cross-check**: con il Gordon calcola il multiplo implicito (TV / EBITDA anno n); con l'exit multiple calcola la g implicita = (TV x WACC - UFCF) / (TV + UFCF). Se il Gordon implica 25x EBITDA per un industriale maturo, qualcosa non va."
+        },
+        {
+          "h": "Dallo sconto al valore per azione",
+          "body": "Fattore di sconto dell'anno t = 1 / (1 + WACC)^t.\n\n**Mid-year convention**: i flussi arrivano durante l'anno, non tutti il 31 dicembre, quindi si sconta con t - 0.5 (0.5, 1.5, 2.5...). Il valore sale leggermente. In colloquio basta citarla e spiegare il perché.\n\nPoi:\n- **EV** = somma dei PV dei flussi + PV del TV.\n- **Equity value** = EV - debito + cassa - minority interest - preferred.\n- **Valore per azione** = equity value / azioni diluite.\n\nControllo di buon senso: calcola quanto pesa il TV sull'EV. Sopra l'80-85%, il valore dipende quasi tutto dalle ipotesi di lungo periodo."
+        },
+        {
+          "h": "Sensitività: la tabella che tutti guardano",
+          "body": "Un DCF dà un **range**, non un numero. Si mostrano due tabelle: **WACC vs g** (metodo Gordon) e **WACC vs exit multiple**.\n\nEsempio (mini DCF dell'esempio 4: UFCF 50, 55, 60, net debt 200, 50m azioni). Valore per azione in EUR:\n\n| WACC | g = 1.5% | g = 2.0% | g = 2.5% |\n|---|---|---|---|\n| 9% | 11.31 | 12.27 | 13.38 |\n| 10% | 9.49 | 10.21 | 11.04 |\n| 11% | 8.05 | 8.62 | 9.25 |\n\nLettura: 1 punto di WACC sposta il valore per azione di circa il 15-21%, mezzo punto di g di circa il 7-9%. Per questo il terminal value è dove si discute di più.\n\n**Football field**: grafico che confronta i range di DCF, trading comps, precedent transactions e, per un compratore finanziario, LBO."
+        },
+        {
+          "h": "Domande classiche sul DCF",
+          "body": "- **'Why do we use unlevered FCF?'** Per separare il valore operativo dalla struttura del capitale: il finanziamento entra solo nel WACC.\n- **'Which is more sensitive, WACC or g?'** In genere il WACC, perché entra sia nel denominatore del TV sia in tutti i fattori di sconto.\n- **'How would you value a company with negative cash flows?'** Allunga il periodo esplicito finché i flussi si stabilizzano e verifica con EV/Sales; ricorda che il valore sarà quasi tutto terminal value.\n- **'What happens to the DCF if the tax rate rises?'** Gli UFCF scendono (valore giù); lo scudo fiscale del debito sale e il WACC scende un po', ma l'effetto sui flussi prevale quasi sempre.\n- **'Would you use a DCF for a bank?'** No: per una banca il debito è operativo. Si usa un dividend discount model o l'approccio P/BV e ROE."
+        },
+        {
+          "h": "Le trappole",
+          "body": "- **Interessi sottratti negli UFCF**: errore grave, li conti due volte (nei flussi e nel WACC).\n- **Gordon con UFCF(n) invece di UFCF(n) x (1 + g)**: sottostimi il TV.\n- **TV scontato con n + 1 anni**: il TV è già un valore all'anno n.\n- **g più alta della crescita di lungo periodo dell'economia**: nessuna azienda cresce più del PIL per sempre.\n- **Ke per scontare flussi unlevered**: unlevered si sconta al WACC, levered al Ke.\n- **Dimenticare il bridge**: il DCF unlevered dà l'EV, non il prezzo per azione."
+        }
+      ],
+      "examples": [
+        {
+          "q": "A company has EBIT of EUR 100m, a 25% tax rate, D&A of EUR 20m, capex of EUR 30m and an increase in net working capital of EUR 10m. What is its unlevered free cash flow?",
+          "steps": [
+            "NOPAT = EBIT x (1 - t) = 100 x 0.75 = 75.",
+            "Aggiungi la D&A: 75 + 20 = 95.",
+            "Sottrai capex e aumento del NWC: 95 - 30 - 10 = 55."
+          ],
+          "answer": "EUR 55m"
+        },
+        {
+          "q": "The risk-free rate is 4%, the equity beta is 1.2 and the equity risk premium is 5%. The pre-tax cost of debt is 6%, the tax rate is 25% and the target capital structure is 30% debt and 70% equity. What is the WACC?",
+          "steps": [
+            "Ke = 4% + 1.2 x 5% = 10.0%.",
+            "Kd dopo le imposte = 6% x (1 - 25%) = 4.5%.",
+            "WACC = 70% x 10.0% + 30% x 4.5% = 7.0% + 1.35% = 8.35%."
+          ],
+          "answer": "8.35%"
+        },
+        {
+          "q": "Year-5 unlevered FCF is EUR 100m and year-5 EBITDA is EUR 150m. WACC is 9%. Calculate the terminal value using (a) the Gordon growth method with g = 2% and (b) a 10.0x exit multiple, and the present value of each.",
+          "steps": [
+            "Gordon: TV = 100 x 1.02 / (9% - 2%) = 102 / 0.07 = EUR 1,457m.",
+            "Exit multiple: TV = 150 x 10.0 = EUR 1,500m.",
+            "Fattore di sconto anno 5: 1.09^5 = 1.5386. PV Gordon = 1,457 / 1.5386 = EUR 947m; PV exit multiple = 1,500 / 1.5386 = EUR 975m.",
+            "Cross-check: il Gordon implica 1,457 / 150 = 9.7x EBITDA; l'exit a 10.0x implica g = (1,500 x 9% - 100) / (1,500 + 100) = 35 / 1,600 = 2.2%. I due metodi sono coerenti."
+          ],
+          "answer": "TV Gordon EUR 1,457m (PV EUR 947m); TV exit multiple EUR 1,500m (PV EUR 975m)."
+        },
+        {
+          "q": "A company is expected to generate unlevered FCF of EUR 50m, 55m and 60m in years 1 to 3. WACC is 10%, terminal growth is 2%, net debt is EUR 200m and there are 50m diluted shares. What is the value per share?",
+          "steps": [
+            "PV dei flussi: 50 / 1.10 = 45.5; 55 / 1.21 = 45.5; 60 / 1.331 = 45.1. Somma = 136.0.",
+            "TV anno 3 = 60 x 1.02 / (10% - 2%) = 61.2 / 0.08 = 765. PV del TV = 765 / 1.331 = 574.8.",
+            "EV = 135.99 + 574.76 = 710.74, circa 710.7 (il TV pesa l'81%).",
+            "Equity value = 710.74 - 200 = 510.74. Valore per azione = 510.74 / 50 = EUR 10.21."
+          ],
+          "answer": "EUR 10.21 per azione"
+        }
+      ],
+      "cheatsheet": [
+        "UFCF = EBIT x (1 - t) + D&A - capex - aumento del NWC.",
+        "Ke = Rf + Beta x ERP.",
+        "WACC = E/V x Ke + D/V x Kd x (1 - t).",
+        "Beta levered = Beta unlevered x (1 + (1 - t) x D/E).",
+        "TV Gordon = UFCF(n) x (1 + g) / (WACC - g).",
+        "TV exit = EBITDA(n) x multiplo; entrambi si scontano con (1 + WACC)^n.",
+        "g implicita = (TV x WACC - UFCF) / (TV + UFCF).",
+        "Unlevered -> WACC -> EV. Levered -> Ke -> equity value.",
+        "Il TV pesa tipicamente il 60-80% dell'EV."
+      ]
+    },
+    {
+      "id": "les-ma-01",
+      "skill": "fin-ma",
+      "order": 1,
+      "title": "M&A: processo, accretion/dilution, sinergie e consideration mix",
+      "minutes": 20,
+      "summary": "Saprai descrivere un processo sell-side e buy-side, calcolare a mano accretion/dilution e argomentare la scelta tra cassa e azioni.",
+      "sections": [
+        {
+          "h": "Il processo sell-side (asta)",
+          "body": "Il cliente vende. Obiettivo della banca: massimizzare prezzo e certezza di chiusura. Durata tipica fino al signing: 4-6 mesi.\n\n| Fase | Cosa succede | Documenti |\n|---|---|---|\n| 1. Preparazione | Analisi, valutazione, lista compratori (strategici e financial sponsor), vendor due diligence | Teaser, Information Memorandum (IM o CIM), modello, NDA |\n| 2. Primo round | Contatto con i compratori, firma degli NDA, invio dell'IM | Non-binding offers (range di prezzo) |\n| 3. Secondo round | Shortlist, management presentation, data room, due diligence | Bozza di SPA, binding offers con mark-up dello SPA |\n| 4. Negoziazione e signing | Scelta del compratore, negoziazione finale | SPA firmato, comunicato |\n| 5. Closing | Autorizzazioni antitrust e investimenti esteri (in Italia golden power), condizioni sospensive | Pagamento e trasferimento delle azioni |\n\nVarianti: **broad auction** (molti compratori, massima tensione competitiva), **targeted auction** (pochi compratori selezionati), **negoziazione bilaterale** (un solo compratore, più riservatezza e velocità, meno tensione sul prezzo)."
+        },
+        {
+          "h": "Il processo buy-side",
+          "body": "Il cliente compra. Obiettivo: trovare il target giusto e non pagarlo troppo.\n\n1. **Strategia e screening**: criteri (settore, dimensione, geografia, tecnologia), long list e short list.\n2. **Approccio**: contatto diretto con il target o partecipazione a un'asta organizzata da altri.\n3. **Valutazione**: trading comps, precedent transactions, DCF, valore delle sinergie, accretion/dilution, capacità di finanziamento.\n4. **Offerta**: non-binding offer o LOI (letter of intent), eventuale esclusiva.\n5. **Due diligence**: finanziaria, legale, fiscale, commerciale, tecnologica (nel semis: IP, export control, concentrazione dei clienti).\n6. **Financing e SPA**: struttura (cassa, azioni, debito), prezzo, garanzie, meccanismo di prezzo (locked box o completion accounts).\n7. **Signing, closing e integrazione (PMI)**: è nell'integrazione che le sinergie si realizzano o si perdono."
+        },
+        {
+          "h": "Accretion/dilution: il metodo",
+          "body": "Domanda: dopo l'operazione l'**EPS pro forma** del compratore sale (accretive) o scende (dilutive)?\n\n**EPS pro forma = Net income pro forma / Azioni pro forma**\n\nNet income pro forma = NI compratore + NI target + sinergie x (1 - t) - interessi sul nuovo debito x (1 - t) - interessi persi sulla cassa usata x (1 - t) - ammortamento dei nuovi intangibles x (1 - t).\n\nAzioni pro forma = azioni del compratore + nuove azioni emesse, dove nuove azioni = parte pagata in azioni / prezzo del **compratore**.\n\n**Shortcut del costo di acquisizione** (senza sinergie): confronta l'**earnings yield del target al prezzo pagato** (NI target / equity value pagato) con il **costo medio ponderato del finanziamento**:\n- costo della cassa = tasso sulla cassa x (1 - t);\n- costo del debito = tasso sul debito x (1 - t);\n- costo delle azioni = earnings yield del compratore = 1 / P/E del compratore.\n\nSe l'earnings yield del target è **maggiore** del costo medio, il deal è **accretive**. Caso tutto azioni: accretive se il P/E del compratore è maggiore del P/E pagato per il target."
+        },
+        {
+          "h": "Esempio completo di accretion/dilution",
+          "body": "Dati: compratore con net income 500 e 100m azioni (EPS 5.00), prezzo 75 (P/E 15x). Target con net income 60, equity value pagato 960 (P/E 16x). Finanziamento: 50% nuovo debito al 6%, 50% nuove azioni. Tax rate 25%. Sinergie ante imposte 20.\n\n| Voce | Calcolo | Valore |\n|---|---|---|\n| Nuovo debito | 960 x 50% | 480 |\n| Interessi dopo le imposte | 480 x 6% x 0.75 | -21.6 |\n| Nuove azioni | 480 / 75 | 6.4m |\n| Sinergie dopo le imposte | 20 x 0.75 | +15.0 |\n| Net income pro forma | 500 + 60 - 21.6 + 15.0 | 553.4 |\n| Azioni pro forma | 100 + 6.4 | 106.4m |\n| EPS pro forma | 553.4 / 106.4 | 5.20 |\n| Accretion | 5.20 / 5.00 - 1 | +4.0% |\n\nSenza sinergie: (500 + 60 - 21.6) / 106.4 = 5.06, accretion +1.2%.\n\nVerifica con lo shortcut: costo del debito 6% x 0.75 = 4.5%; costo delle azioni 1 / 15 = 6.67%; costo medio 50/50 = 5.58%. Earnings yield del target = 60 / 960 = 6.25%. Poiché 6.25% > 5.58%, il deal è accretive anche senza sinergie."
+        },
+        {
+          "h": "Sinergie: come parlarne",
+          "body": "- **Cost synergies**: eliminazione di funzioni duplicate (sede, SG&A), procurement, consolidamento di impianti. Più facili da stimare e realizzare: il mercato le prezza di più.\n- **Revenue synergies**: cross-selling, nuovi canali o clienti, offerte combinate. Più incerte: il mercato le sconta pesantemente.\n- **Phasing e costi**: le sinergie arrivano a regime (run-rate) in 2-3 anni e richiedono **costi di integrazione** una tantum, per regola empirica dell'ordine di 1-1.5x le sinergie di costo annue.\n- **Valore delle sinergie**: sinergie run-rate dopo le imposte, capitalizzate a un multiplo (o in un DCF), meno i costi di integrazione. Il premio pagato non dovrebbe superare questo valore: se lo eguaglia, tutto il valore delle sinergie va al venditore; se lo supera, il compratore distrugge valore.\n- **Dis-synergies**: clienti che se ne vanno per non dipendere da un concorrente, perdita di talenti chiave (critica nel deep tech)."
+        },
+        {
+          "h": "Consideration mix: cassa, azioni o entrambi",
+          "body": "| Fattore | Spinge verso la cassa | Spinge verso le azioni |\n|---|---|---|\n| Valutazione del compratore | Azioni del compratore sottovalutate | Azioni del compratore care (P/E alto): sono una valuta forte |\n| Costo | Costo del debito dopo le imposte basso | Earnings yield del compratore basso |\n| Bilancio | Cassa disponibile, leva bassa, rating solido | Leva già alta, rischio di downgrade |\n| Rischio | Il venditore vuole un valore certo | Il compratore vuole condividere il rischio sulle sinergie |\n| Controllo | Gli azionisti del compratore non vogliono essere diluiti | Il venditore vuole restare esposto al gruppo combinato |\n| Tempi e fisco | Esecuzione più semplice, spesso senza voto degli azionisti del compratore | In alcune giurisdizioni lo scambio di azioni rinvia la tassazione del venditore |\n\nIn colloquio: 'The mix depends on the acquirer's cost of each source of financing, its balance sheet capacity and who should bear the deal risk. Stock makes sense when the acquirer's shares are richly valued or when it wants the seller to share the integration risk.'"
+        },
+        {
+          "h": "Le trappole",
+          "body": "- **Accretive non significa che crea valore**: un compratore con P/E alto può fare un deal accretive pagando troppo. Il criterio di valore è il confronto tra prezzo pagato e valore del target più le sinergie nette.\n- **Dimenticare le imposte** su interessi e sinergie.\n- **Dimenticare gli interessi persi** quando paghi con la cassa in bilancio.\n- **Prezzo del target**: usa l'equity value pagato (con il premio), non il market cap pre-annuncio.\n- **Nuove azioni**: si dividono per il prezzo del **compratore**, non del target."
+        }
+      ],
+      "examples": [
+        {
+          "q": "An acquirer has net income of EUR 300m, 100m shares and a share price of EUR 36. It buys a target with net income of EUR 50m for an equity value of EUR 900m, paid entirely in new shares. Ignoring synergies, is the deal accretive or dilutive and by how much? What pre-tax synergies are needed to break even at a 25% tax rate?",
+          "steps": [
+            "EPS del compratore = 300 / 100 = 3.00; P/E = 36 / 3 = 12x. P/E pagato per il target = 900 / 50 = 18x: con un deal tutto azioni è già chiaro che sarà dilutive (12x < 18x).",
+            "Nuove azioni = 900 / 36 = 25m. Azioni pro forma = 125m.",
+            "EPS pro forma = (300 + 50) / 125 = 2.80. Diluizione = 2.80 / 3.00 - 1 = -6.7%.",
+            "Break-even: serve un net income di 3.00 x 125 = 375, cioè 25 in più dopo le imposte, ovvero 25 / 0.75 = 33.3 di sinergie ante imposte."
+          ],
+          "answer": "Dilutive del 6.7%; servono circa EUR 33m di sinergie ante imposte."
+        },
+        {
+          "q": "An acquirer has net income of EUR 200m and 50m shares. It buys a target with net income of EUR 20m for EUR 300m, paid with balance sheet cash that currently earns 3% pre-tax. The tax rate is 25%. What is the impact on EPS?",
+          "steps": [
+            "EPS iniziale = 200 / 50 = 4.00.",
+            "Interessi persi dopo le imposte = 300 x 3% x 0.75 = 6.75.",
+            "Net income pro forma = 200 + 20 - 6.75 = 213.25; azioni invariate (50m).",
+            "EPS pro forma = 213.25 / 50 = 4.265: accretion +6.6%. Shortcut: costo della cassa 2.25% contro earnings yield del target 20 / 300 = 6.67%."
+          ],
+          "answer": "Accretive del 6.6% (EPS da 4.00 a 4.27)."
+        },
+        {
+          "q": "An acquirer trades at a P/E of 20x. It buys a target at a purchase P/E of 14x, financed 60% with new debt at 7% pre-tax and 40% with new shares. The tax rate is 25%. Without building a full model, is the deal accretive?",
+          "steps": [
+            "Costo del debito dopo le imposte = 7% x 0.75 = 5.25%.",
+            "Costo delle azioni = 1 / 20 = 5.0%.",
+            "Costo medio = 60% x 5.25% + 40% x 5.0% = 3.15% + 2.0% = 5.15%.",
+            "Earnings yield del target = 1 / 14 = 7.14%. Poiché 7.14% > 5.15%, il deal è accretive."
+          ],
+          "answer": "Accretive (7.14% contro 5.15%)."
+        },
+        {
+          "q": "A buyer pays a EUR 150m premium over the target's standalone value. Run-rate cost synergies are EUR 20m pre-tax, one-off integration costs are EUR 25m pre-tax, the tax rate is 25% and after-tax synergies are valued at 10x. Is the premium justified?",
+          "steps": [
+            "Sinergie dopo le imposte = 20 x 0.75 = 15 all'anno.",
+            "Valore capitalizzato = 15 x 10 = 150.",
+            "Costi di integrazione dopo le imposte = 25 x 0.75 = 18.75. Valore netto delle sinergie = 150 - 18.75 = 131.25.",
+            "Premio di 150 > 131.25: il compratore cede al venditore più del 100% del valore delle sinergie, e il phasing (sinergie a regime solo dopo 2-3 anni) peggiorerebbe ancora il quadro."
+          ],
+          "answer": "No: valore netto delle sinergie circa EUR 131m contro un premio di EUR 150m."
+        }
+      ],
+      "cheatsheet": [
+        "Sell-side: preparazione -> non-binding offers -> due diligence e binding offers -> signing -> closing.",
+        "EPS pro forma = (NI compratore + NI target + sinergie x (1 - t) - costo del finanziamento x (1 - t)) / (azioni compratore + nuove azioni).",
+        "Nuove azioni = parte pagata in azioni / prezzo del compratore.",
+        "Tutto azioni: accretive se P/E del compratore > P/E pagato per il target.",
+        "Mix: accretive se earnings yield del target > costo medio (cassa e debito x (1 - t), azioni = 1 / P/E).",
+        "Sinergie di costo più credibili delle sinergie di ricavo.",
+        "Premio pagato <= valore netto delle sinergie.",
+        "Accretive non vuol dire value-creating."
+      ]
+    },
+    {
+      "id": "les-lbo-01",
+      "skill": "fin-lbo",
+      "order": 1,
+      "title": "LBO in 15 minuti (paper LBO)",
+      "minutes": 18,
+      "summary": "Saprai impostare sources & uses, proiettare il rimborso del debito e stimare IRR e MoM a mano in meno di 15 minuti.",
+      "sections": [
+        {
+          "h": "La logica di un LBO",
+          "body": "Un financial sponsor (fondo di private equity) compra un'azienda con molto debito (tipicamente 50-70% del prezzo) e poca equity. Per 3-7 anni usa la cassa generata per pagare gli interessi e rimborsare il debito, poi vende.\n\nTre motori del rendimento:\n1. **Crescita dell'EBITDA** (ricavi e margini).\n2. **Rimborso del debito** (deleveraging): ogni euro di debito rimborsato diventa un euro di equity.\n3. **Multiple expansion**: vendere a un multiplo più alto di quello d'ingresso.\n\nLa leva amplifica i rendimenti perché lo sponsor mette meno equity per lo stesso EV, ma amplifica anche le perdite.\n\n**Candidato ideale**: flussi di cassa stabili e prevedibili, capex contenuti, posizione di mercato forte, margini migliorabili, management solido, exit chiare. Un'azienda di semiconduttori molto ciclica e capital intensive è un candidato più difficile."
+        },
+        {
+          "h": "Sources & uses",
+          "body": "La prima tabella di ogni LBO. Le due colonne hanno sempre lo stesso totale.\n\n| Uses (cosa paghi) | Sources (come lo finanzi) |\n|---|---|\n| Prezzo dell'equity del target | Senior debt (term loan) |\n| Rifinanziamento del debito esistente | Debito subordinato, high yield o private credit |\n| Fee di transazione e di finanziamento | Reinvestimento del management (eventuale) |\n| Cassa minima per l'operatività | **Sponsor equity (plug)** |\n\nL'equity dello sponsor è sempre il **plug**: totale uses meno tutto il debito.\n\nSe il testo dà l'EV d'ingresso (EBITDA x multiplo) e il target è acquistato cash-free, debt-free, gli uses sono semplicemente EV + fee."
+        },
+        {
+          "h": "Proiezione e rimborso del debito",
+          "body": "Per un paper LBO bastano poche righe per anno:\n\n1. EBITDA meno D&A = EBIT.\n2. EBIT meno interessi (tasso x debito di inizio anno) = EBT.\n3. EBT meno imposte = net income.\n4. Net income + D&A - capex - aumento del NWC = **FCF disponibile per il rimborso**.\n5. Debito di fine anno = debito di inizio anno - FCF (cash sweep al 100%).\n\n**Scorciatoia**: se D&A = capex e il NWC non cambia, FCF = (EBITDA - D&A - interessi) x (1 - t).\n\nSe sei di fretta: calcola il FCF del primo e dell'ultimo anno, fai la media e moltiplica per il numero di anni. L'errore è piccolo e all'intervistatore interessa il ragionamento."
+        },
+        {
+          "h": "Esempio guidato: 5 anni",
+          "body": "Ingresso: EBITDA 100, multiplo 10.0x, EV 1,000. Debito 6.0x = 600 all'8%, equity dello sponsor 400 (ignoriamo le fee). EBITDA +6 all'anno, D&A = capex = 20, NWC costante, tax rate 25%. Exit a fine anno 5 a 10.0x.\n\n| Anno | EBITDA | Interessi | EBT | Imposte | FCF | Debito fine anno |\n|---|---|---|---|---|---|---|\n| 1 | 106 | 48.0 | 38.0 | 9.5 | 28.5 | 571.5 |\n| 2 | 112 | 45.7 | 46.3 | 11.6 | 34.7 | 536.8 |\n| 3 | 118 | 42.9 | 55.1 | 13.8 | 41.3 | 495.5 |\n| 4 | 124 | 39.6 | 64.4 | 16.1 | 48.3 | 447.2 |\n| 5 | 130 | 35.8 | 74.2 | 18.6 | 55.7 | 391.6 |\n\n- Debito rimborsato in 5 anni: 600 - 391.6 = 208.4.\n- Exit EV = 130 x 10.0 = 1,300. Exit equity = 1,300 - 391.6 = 908.4.\n- **MoM** = 908.4 / 400 = 2.27x. **IRR** = 2.27^(1/5) - 1 = 17.8%.\n\n**Attribuzione del valore creato** (908.4 - 400 = 508.4): crescita dell'EBITDA 30 x 10.0 = 300; rimborso del debito 208.4; multiple expansion 0."
+        },
+        {
+          "h": "IRR e MoM a mente",
+          "body": "IRR = MoM^(1/n) - 1, con n = anni di detenzione (senza dividendi intermedi).\n\nTabella da memorizzare:\n\n| MoM | 3 anni | 4 anni | 5 anni |\n|---|---|---|---|\n| 1.5x | 14.5% | 10.7% | 8.4% |\n| 2.0x | 26.0% | 18.9% | 14.9% |\n| 2.5x | 35.7% | 25.7% | 20.1% |\n| 3.0x | 44.2% | 31.6% | 24.6% |\n\nTrucchi:\n- **Regola del 72**: anni per raddoppiare = circa 72 / IRR%. Quindi 2x in 5 anni = circa 72 / 5 = 14.4% (valore esatto 14.9%).\n- **Interpolazione**: 2.27x in 5 anni sta tra 2.0x (14.9%) e 2.5x (20.1%): 14.9% + (0.27 / 0.5) x 5.2% = circa 17.7%. Valore esatto 17.8%.\n- **Benchmark**: i fondi puntano di solito a un IRR intorno al 20% e a 2.0-3.0x. Riferimenti: 20% per 5 anni = 2.5x; 25% per 3 anni = circa 2.0x (1.95x)."
+        },
+        {
+          "h": "Lavorare a ritroso: quale multiplo d'uscita serve?",
+          "body": "Domanda tipica: 'What exit multiple do you need to hit a 20% IRR?'. Con i numeri dell'esempio guidato:\n\n1. Equity necessaria all'exit = equity iniziale x (1 + IRR)^n = 400 x 1.2^5 = 400 x 2.488 = 995.3.\n2. EV necessario = equity + debito residuo = 995.3 + 391.6 = 1,386.9.\n3. Multiplo d'uscita = 1,386.9 / 130 = 10.7x.\n\nQuindi serve uscire a circa 10.7x (contro 10.0x d'ingresso). Controprova: a 11.0x l'exit equity è 1,430 - 391.6 = 1,038.4, MoM 2.60x, IRR 21.0%."
+        },
+        {
+          "h": "Le trappole",
+          "body": "- **Exit equity = EV - debito netto**: non dimenticare di sottrarre il debito residuo (e di aggiungere l'eventuale cassa accumulata).\n- **Fee**: aumentano gli uses e quindi l'equity, abbassando MoM e IRR. Se il testo le dà, includile.\n- **Interessi sul debito di inizio anno**: nel paper LBO è la convenzione più semplice ed evita la circolarità.\n- **MoM vs IRR**: un MoM alto su tanti anni può essere un IRR mediocre. 3.0x in 7 anni = 17.0%.\n- **Dividend recap**: se lo sponsor riceve un dividendo intermedio, l'IRR sale più del MoM perché la cassa torna prima."
+        }
+      ],
+      "examples": [
+        {
+          "q": "A sponsor buys a company with EBITDA of EUR 100m at an EV of 10.0x. The EV includes EUR 200m of existing net debt that must be refinanced, fees are EUR 30m, and the new debt package is 4.0x senior plus 1.5x subordinated. How much equity does the sponsor contribute and what share of total sources is it?",
+          "steps": [
+            "Uses: EV = 10.0 x 100 = 1,000, cioè equity del target 800 + rifinanziamento del debito 200; più fee 30. Totale uses = 1,030.",
+            "Debito: senior 4.0 x 100 = 400; subordinato 1.5 x 100 = 150. Totale 550.",
+            "Sponsor equity (plug) = 1,030 - 550 = 480.",
+            "Peso dell'equity = 480 / 1,030 = 46.6%."
+          ],
+          "answer": "EUR 480m, circa il 47% delle sources."
+        },
+        {
+          "q": "A PE fund invests EUR 500m of equity and exits after 5 years with equity proceeds of EUR 1,250m, with no interim dividends. What are the MoM and the approximate IRR?",
+          "steps": [
+            "MoM = 1,250 / 500 = 2.5x.",
+            "Dalla tabella: 2.5x in 5 anni = circa 20%.",
+            "Verifica: 1.2^5 = 2.49, quindi IRR = 20.1%."
+          ],
+          "answer": "2.5x, IRR circa 20%."
+        },
+        {
+          "q": "Paper LBO: EBITDA of EUR 100m, entry at 10.0x, leverage of 6.0x at 8%, EBITDA grows by EUR 6m a year, D&A equals capex at EUR 20m, no working capital changes, 25% tax rate, 100% cash sweep, exit after 5 years at 10.0x. Estimate the IRR.",
+          "steps": [
+            "Equity iniziale = 1,000 - 600 = 400.",
+            "FCF anno 1 = (106 - 20 - 48) x 0.75 = 28.5; FCF anno 5 circa (130 - 20 - 36) x 0.75 = 55.5. Media circa 42, per 5 anni circa 210 di debito rimborsato (valore esatto 208.4).",
+            "Debito all'exit circa 600 - 210 = 390. Exit equity = 1,300 - 390 = 910.",
+            "MoM = 910 / 400 = circa 2.3x; IRR tra 14.9% (2.0x) e 20.1% (2.5x), circa 18%. Valore esatto 17.8%."
+          ],
+          "answer": "IRR circa 18% (MoM circa 2.3x)."
+        },
+        {
+          "q": "Deal A: a sponsor invests EUR 300m and receives EUR 600m after 3 years. Deal B: it invests EUR 300m and receives EUR 750m after 5 years. Which deal has the higher IRR?",
+          "steps": [
+            "Deal A: MoM = 600 / 300 = 2.0x in 3 anni, IRR = 2^(1/3) - 1 = 26.0%.",
+            "Deal B: MoM = 750 / 300 = 2.5x in 5 anni, IRR = 2.5^(1/5) - 1 = 20.1%.",
+            "A ha l'IRR più alto; B ha MoM e guadagno assoluto più alti (450 contro 300) ma impiega il capitale per più tempo."
+          ],
+          "answer": "Deal A (26% contro 20%), anche se B ha il MoM più alto."
+        }
+      ],
+      "cheatsheet": [
+        "Uses = EV (o equity del target + rifinanziamento) + fee; sponsor equity = uses - debito.",
+        "FCF per il rimborso = net income + D&A - capex - aumento del NWC.",
+        "Se D&A = capex: FCF = (EBITDA - D&A - interessi) x (1 - t).",
+        "Exit equity = EBITDA di uscita x multiplo - debito netto residuo.",
+        "IRR = MoM^(1/n) - 1.",
+        "2x: 26% in 3 anni, 15% in 5 anni. 2.5x in 5 anni = 20%. 3x in 5 anni = 25%.",
+        "Valore creato = crescita EBITDA x multiplo d'ingresso + debito rimborsato + (multiplo d'uscita - multiplo d'ingresso) x EBITDA di uscita.",
+        "Fee: alzano l'equity iniziale e abbassano MoM e IRR.",
+        "Dividendo intermedio: alza l'IRR più del MoM."
+      ]
+    },
+    {
+      "id": "les-com-01",
+      "skill": "commercial",
+      "order": 1,
+      "title": "Mercati e commercial awareness",
+      "minutes": 18,
+      "summary": "Saprai collegare un evento di mercato (tassi, inflazione, FX, spread, borsa) al suo impatto e al lavoro che farai, con la struttura in 3 passi.",
+      "sections": [
+        {
+          "h": "Cosa testano e la struttura in 3 passi",
+          "body": "Domande tipiche: 'Tell me about a market event you have followed recently', 'Where do you think rates are going?', 'How do interest rates affect M&A?'. Nessuno si aspetta la previsione giusta: vogliono vedere se **ragioni come un banker**.\n\nUsa sempre 3 passi:\n1. **Event**: cosa è successo, con 1-2 numeri precisi (data, entità, livello).\n2. **Market impact**: chi vince e chi perde, e attraverso quali canali (tassi, valute, spread, valutazioni).\n3. **Link to the role**: cosa cambia per la divisione in cui ti candidi (M&A, DCM, leveraged finance, ECM, markets, risk) e per i suoi clienti.\n\nChiudi con una **view** misurata: 'On balance I think..., but the key risk is...'. Dimostra giudizio, non certezza."
+        },
+        {
+          "h": "Tassi d'interesse e inflazione",
+          "body": "**Tassi**\n- Le banche centrali fissano il tasso a breve: la BCE guida con il **deposit facility rate**, la Fed con il **fed funds target range**.\n- I rendimenti a lungo termine (Bund, Treasury, BTP a 10 anni) riflettono attese sui tassi futuri, inflazione attesa e premio per il rischio.\n- **Prezzi dei bond e rendimenti si muovono in direzione opposta**. Variazione di prezzo circa = - duration x variazione del rendimento: un bond con duration 8 perde circa l'8% se il rendimento sale di 1 punto.\n- **Curva invertita** (tassi a breve sopra quelli a lungo): storicamente segnale di rallentamento atteso.\n- **Spread BTP-Bund**: premio di rischio sull'Italia, da conoscere per ogni colloquio in Italia.\n\n**Inflazione**\n- **Headline** (tutti i prezzi) vs **core** (senza energia e alimentari): le banche centrali guardano molto la core e i servizi. Obiettivo di BCE e Fed: 2% nel medio periodo.\n- **Tasso reale** = tasso nominale - inflazione attesa.\n- Inflazione sopra le attese: attese di tassi più alti, bond giù, azioni growth sotto pressione.\n- Per le aziende conta il **pricing power**: chi trasferisce i costi ai clienti protegge i margini.\n\nEffetti di un rialzo dei tassi: valutazioni azionarie più basse (tasso di sconto più alto), debito più caro per le aziende, margine d'interesse più alto per le banche (almeno all'inizio), valuta di solito più forte."
+        },
+        {
+          "h": "Valute (FX)",
+          "body": "- Driver principali: **differenziale dei tassi** (la valuta con tassi più alti attrae capitali), crescita relativa, bilancia commerciale, propensione al rischio.\n- In fase di stress (risk-off) si rafforzano le valute rifugio: USD, CHF, JPY.\n- **Euro più debole**: aiuta gli esportatori europei (prezzi più competitivi, ricavi in USD che valgono di più in EUR) e rende più care le importazioni, energia inclusa.\n- **Effetto traduzione**: un gruppo europeo con ricavi in USD vede salire i ricavi riportati in EUR se il dollaro si rafforza, anche senza vendere di più.\n- **M&A cross-border**: una valuta debole rende gli asset di quel Paese più economici per i compratori esteri. Se EUR/USD scende da 1.10 a 1.00, un target da EUR 1bn costa a un compratore americano USD 1.0bn invece di 1.1bn, cioè il 9% in meno."
+        },
+        {
+          "h": "Credit spread",
+          "body": "- **Credit spread** = rendimento di un'obbligazione societaria - rendimento del titolo di Stato (o dello swap) di pari scadenza. È il premio per il rischio di default.\n- **Investment grade** (rating da BBB- in su) vs **high yield** (sotto BBB-): gli spread HY sono molto più volatili.\n- Indici da conoscere: iTraxx Main (investment grade europeo), iTraxx Crossover (high yield europeo), CDX negli Stati Uniti.\n- **Spread che si allargano**: mercato più avverso al rischio, emissioni più care o impossibili, LBO più difficili da finanziare, banche e private credit più selettivi.\n- **Spread che si stringono**: finestra aperta per rifinanziamenti, repricing, dividend recap e nuove emissioni.\n\nCosto del debito di un'azienda = tasso base (Euribor o rendimento governativo) + spread. Può salire anche mentre la banca centrale taglia, se lo spread si allarga di più."
+        },
+        {
+          "h": "Mercati azionari",
+          "body": "- Indici: S&P 500, Nasdaq, Euro Stoxx 50, FTSE MIB, FTSE 100, Nikkei. Per il tuo settore: Philadelphia Semiconductor Index (SOX).\n- **Valutazione dell'indice**: P/E forward. Più è alto, più l'indice è sensibile ai tassi.\n- **Volatilità** (VIX negli Stati Uniti, V2X in Europa): quando è alta, la finestra per IPO e aumenti di capitale si chiude.\n- **Growth vs value**: le growth hanno più valore in flussi lontani nel tempo, quindi soffrono di più quando i tassi salgono (si comportano come bond a lunga duration).\n- **ECM**: le IPO ripartono quando gli indici sono vicini ai massimi, la volatilità è bassa e le IPO recenti hanno performato bene."
+        },
+        {
+          "h": "Come i tassi muovono l'attività di M&A",
+          "body": "Quattro canali da citare in ordine.\n\n1. **Costo del finanziamento**: con tassi più alti lo stesso EBITDA sostiene meno debito. Se le banche chiedono EBITDA / interessi di almeno 3.0x su un EBITDA di 100, gli interessi possono arrivare a 33.3. Con un costo del debito del 5% il debito massimo è 667 (6.7x), con l'8% scende a 417 (4.2x). Per un prezzo di 1,000 l'equity dello sponsor sale da 333 a 583: ignorando il rimborso del debito e con un'exit a 1,300, il MoM scende da 1.9x a 1.5x. Quindi gli sponsor offrono meno.\n2. **Valutazioni**: tasso di sconto più alto, multipli più bassi. Un flusso perpetuo che cresce del 2% vale 1 / (8% - 2%) = 16.7x con un costo del capitale dell'8% e 1 / (9% - 2%) = 14.3x al 9%: -14%.\n3. **Bid-ask gap**: i venditori ricordano i prezzi passati, i compratori applicano i nuovi tassi. Le trattative si allungano e i volumi calano finché le aspettative non si riallineano.\n4. **Fiducia e visibilità**: incertezza macro e volatilità spingono i consigli di amministrazione a rinviare.\n\nQuando i tassi **scendono** o si stabilizzano: riparte il leveraged finance, gli sponsor investono il dry powder e vendono le partecipazioni accumulate (exit backlog), i corporate con bilanci solidi tornano ad acquisire. Gli strategici con molta cassa o azioni ad alta valutazione sono meno sensibili ai tassi degli sponsor."
+        },
+        {
+          "h": "Routine settimanale (30 minuti nel weekend)",
+          "body": "I livelli di mercato cambiano: **non imparare a memoria numeri vecchi**, aggiornali ogni settimana.\n\n1. Annota 8 numeri: tasso BCE, fed funds, Bund a 10 anni, spread BTP-Bund, EUR/USD, Brent, Euro Stoxx 50 o S&P 500, iTraxx Crossover.\n2. Scegli **1 evento macro** e **1 deal** della settimana, meglio se nel tuo settore (semiconduttori, deep tech).\n3. Per ciascuno scrivi 5 righe nella struttura event -> market impact -> link to the role.\n4. Prepara una **view** con un rischio: 'I would expect..., unless...'.\n\nFonti: Financial Times, Reuters, Bloomberg, Il Sole 24 Ore, comunicati e calendari delle banche centrali."
+        },
+        {
+          "h": "Le trappole",
+          "body": "- **Notizie senza numeri**: 'rates went up' non basta; 'the ECB raised rates by 25bp to x%' sì.\n- **Fermarsi al passo 1**: raccontare la notizia senza impatto e senza collegamento al ruolo.\n- **Previsioni troppo sicure**: nessuno sa dove andranno i tassi; mostra scenari e rischi.\n- **Deal che non sai spiegare**: scegli deal di cui conosci valore, multiplo, razionale e consideration, e collegali al lavoro della banca che hai davanti.\n- **Direzioni invertite**: tassi su = prezzi dei bond giù; spread più larghi = debito più caro."
+        }
+      ],
+      "examples": [
+        {
+          "q": "The ECB cuts its deposit rate by 25bp, more than the market expected. What happens to the euro, Bund yields, European equities and M&A activity?",
+          "steps": [
+            "Event: taglio di 25bp superiore alle attese del mercato, quindi una sorpresa accomodante.",
+            "Market impact: rendimenti dei Bund in calo, soprattutto sulle scadenze brevi; euro più debole (differenziale dei tassi meno favorevole); azioni in rialzo, in particolare growth e settori più indebitati; credit spread in genere più stretti.",
+            "Link to the role: debito più economico e più capacità di leva per gli LBO, finestra per rifinanziamenti ed emissioni; valutazioni più alte aiutano a chiudere il bid-ask gap, quindi pipeline di M&A in ripresa.",
+            "View: positivo per l'attività, con il rischio che il taglio segnali un'economia più debole e renda i compratori prudenti."
+          ],
+          "answer": "Euro più debole, rendimenti più bassi, azioni e credito in rialzo; per M&A e leveraged finance finanziamento più facile e valutazioni più alte, con il rischio di un segnale di crescita debole."
+        },
+        {
+          "q": "High-yield credit spreads widen by 150bp. A sponsor is about to finance an LBO with EUR 500m of high-yield debt. What does this mean for the deal?",
+          "steps": [
+            "Costo aggiuntivo: 500 x 1.5% = EUR 7.5m di interessi in più all'anno.",
+            "Con la stessa soglia di copertura degli interessi la leva sostenibile scende: lo sponsor deve mettere più equity o abbassare il prezzo.",
+            "Più equity a parità di exit significa MoM e IRR più bassi: lo sponsor rinegozia, rinvia o cerca alternative (private credit, vendor loan, earn-out).",
+            "Link to the role: in leveraged finance e M&A più lavoro sulla struttura del finanziamento e meno deal chiusi nel breve periodo."
+          ],
+          "answer": "EUR 7.5m di interessi annui in più, meno leva, più equity e rendimenti più bassi: deal rinegoziato o rinviato."
+        },
+        {
+          "q": "Why do rising interest rates hurt growth stocks more than value stocks? Illustrate with the present value of EUR 100 received in year 1 and in year 10 when the discount rate rises from 8% to 9%.",
+          "steps": [
+            "Anno 1: 100 / 1.08 = 92.59; 100 / 1.09 = 91.74. Calo dello 0.9%.",
+            "Anno 10: 100 / 1.08^10 = 46.32; 100 / 1.09^10 = 42.24. Calo dell'8.8%.",
+            "Le growth hanno gran parte del valore in flussi lontani (alta duration), quindi lo stesso aumento dei tassi ne riduce il valore molto di più."
+          ],
+          "answer": "Il flusso dell'anno 10 perde l'8.8% contro lo 0.9% di quello dell'anno 1: le growth sono titoli ad alta duration."
+        },
+        {
+          "q": "Tell me about a deal you have followed recently.",
+          "steps": [
+            "Il deal in una frase, con i numeri: chi compra chi, valore, multiplo, consideration. Esempio di forma: 'Northbridge Semiconductor agreed to buy Alvona Photonics for EUR 2.4bn, about 18x EBITDA, 70% cash and 30% stock'.",
+            "Il razionale: tecnologia, quota di mercato, sinergie dichiarate.",
+            "Contesto e impatto: reazione del titolo del compratore, finanziamento, rischi (antitrust, golden power, export control).",
+            "Link al ruolo e view: perché conta per la banca e per i suoi clienti, e cosa ne pensi ('I think the price is justified only if...')."
+          ],
+          "answer": "Struttura deal -> razionale -> contesto e rischi -> view. Prepara 2 deal reali che sai raccontare con numeri esatti in 60-90 secondi."
+        }
+      ],
+      "cheatsheet": [
+        "Struttura: event -> market impact -> link to the role -> view con un rischio.",
+        "Tassi su: bond giù, valutazioni giù, valuta su, debito più caro.",
+        "Variazione di prezzo del bond circa = - duration x variazione del rendimento.",
+        "Tasso reale = tasso nominale - inflazione attesa.",
+        "Valuta debole: export favorito e target più economici per i compratori esteri.",
+        "Costo del debito = tasso base + credit spread.",
+        "Spread larghi: leveraged finance più caro o chiuso; spread stretti: rifinanziamenti e LBO.",
+        "Tassi più alti: meno leva, multipli più bassi, bid-ask gap, meno M&A.",
+        "Growth = alta duration: più sensibili ai tassi.",
+        "Aggiorna 8 numeri di mercato ogni weekend."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,507 @@
+{
+  "lessons": [
+    {
+      "id": "les-ver-01",
+      "skill": "verbal",
+      "order": 1,
+      "title": "Verbal reasoning: il metodo True / False / Cannot Say",
+      "minutes": 15,
+      "summary": "Saprai classificare ogni affermazione come True, False o Cannot Say con una regola di decisione fissa, senza cadere nelle trappole di assunzioni e conoscenza esterna.",
+      "sections": [
+        {
+          "h": "Com'è fatto il test",
+          "body": "Nei test di verbal reasoning tipo SHL o Kenexa ricevi un passaggio di 150-300 parole (economia, business, società) e 3-4 affermazioni da valutare. Per ognuna scegli una di tre risposte:\n\n- **True**: l'affermazione segue dal passaggio.\n- **False**: il passaggio la contraddice.\n- **Cannot Say**: il passaggio non dà abbastanza informazioni per dire né True né False.\n\nIl tempo medio è di circa 40-60 secondi per affermazione, lettura del passaggio inclusa (il ritmo esatto dipende dal fornitore del test). Non misurano quanto sai di finanza, ma quanto sei rigoroso nel separare **ciò che il testo dice** da **ciò che pensi tu**.\n\n**Nota**: alcuni test di critical thinking (es. formato Watson-Glaser) usano scale diverse, come “probably true”. Il metodo di questa lezione vale per il formato a tre risposte, il più comune nei graduate programme bancari."
+        },
+        {
+          "h": "La regola di decisione esatta",
+          "body": "Tratta il passaggio come **l'unica verità del mondo**, anche se contiene cose che sai essere false. Poi applica queste domande, in quest'ordine:\n\n1. **Trova il punto del passaggio** a cui si riferisce l'affermazione.\n2. **Il passaggio rende l'affermazione necessariamente vera?** Cioè: se tutto il passaggio è vero, l'affermazione non può essere falsa? Se sì → **True**.\n3. **Il passaggio rende l'affermazione necessariamente falsa?** Cioè: dice, o implica in modo inevitabile, il contrario? Se sì → **False**.\n4. **Altrimenti** → **Cannot Say**.\n\n| Situazione | Risposta |\n|---|---|\n| Il testo lo dice, anche con parole diverse | True |\n| Il testo lo implica senza bisogno di assunzioni aggiuntive | True |\n| Il testo dice il contrario o qualcosa di incompatibile | False |\n| Il testo non ne parla | Cannot Say |\n| Il testo ne parla, ma per concludere serve un'assunzione | Cannot Say |\n\nLa riga più importante è la quarta: **“non menzionato” non vuol dire False**. Per rispondere False serve una contraddizione esplicita o logicamente inevitabile."
+        },
+        {
+          "h": "Trappola 1: la conoscenza esterna",
+          "body": "Da analista sai molte cose sui mercati, e nel test è un rischio. Se il passaggio dice che “i tassi più alti di solito riducono i multipli azionari” e l'affermazione dice “i multipli azionari sono scesi nel 2022”, tu forse ricordi che è successo davvero, ma il passaggio non lo dice: **Cannot Say**.\n\nVale anche al contrario: se il passaggio afferma un fatto che sai essere sbagliato nella realtà, nel test quel fatto è vero.\n\n**Test rapido**: chiediti “sto usando una frase del passaggio o una cosa che so io?”. Se è la seconda, fermati.\n\nL'unica cosa esterna ammessa è il significato normale delle parole e la logica elementare: se il testo dice “all subsidiaries met their targets” e cita una controllata italiana, puoi concludere che anche quella ha raggiunto il target."
+        },
+        {
+          "h": "Trappola 2: le assunzioni “ragionevoli”",
+          "body": "Gli errori più frequenti nascono da inferenze che sembrano ovvie ma non sono necessarie. Le cinque più comuni:\n\n- **Possibilità vs certezza**: “may”, “could”, “is expected to”, “plans to” non diventano “will” o “did”.\n- **Sequenza o correlazione vs causa**: “after the rate rise, approvals fell” non dice che il rialzo abbia causato il calo.\n- **Parte vs tutto**: “some”, “many”, “most” non dicono nulla su “all”.\n- **Cambio di periodo**: “was the market leader in 2019” non dice nulla sul 2025.\n- **Cambio di soggetto o di misura**: il testo parla di “revenue”, l'affermazione di “profit”; il testo parla di Europa, l'affermazione di Italia.\n\nQuando l'affermazione è “quasi” nel testo ma con uno di questi slittamenti, la risposta corretta è quasi sempre **Cannot Say**, raramente False."
+        },
+        {
+          "h": "Le parole qualificatrici: tabella di conversione",
+          "body": "| Nel passaggio | Nell'affermazione | Risposta tipica |\n|---|---|---|\n| all / every | some / un membro specifico del gruppo | True |\n| some / many / most | all | Cannot Say |\n| only some / not all / all except X | all | False |\n| never / none | sometimes / at least one | False |\n| may / could / is likely to | will / does | Cannot Say |\n| rose 10% | doubled | False |\n| the largest of the group | larger than Y (Y è un altro membro del gruppo) | True |\n| A happened after B | B caused A | Cannot Say |\n| X contributed to Y | X was the main cause of Y | Cannot Say |\n\nDue avvertenze:\n\n- **“Most”** va trattato come “più della metà, forse tutti”. Puoi rispondere False a un'affermazione con “all” solo se il testo indica un'eccezione precisa: “not all”, “only some”, “except X”, oppure un membro del gruppo che non rispetta la condizione.\n- **Le doppie negazioni** (“it is not untrue that”) vanno riscritte in positivo prima di decidere."
+        },
+        {
+          "h": "Procedura sotto tempo, affermazione per affermazione",
+          "body": "1. **Leggi l'affermazione per prima** e individua soggetto, verbo, numero, periodo e qualificatore.\n2. **Vai alla frase del passaggio** che tratta quel soggetto (vedi la lezione sulla lettura veloce).\n3. **Confronta elemento per elemento**: stesso soggetto? stessa misura? stesso periodo? stesso grado di certezza?\n4. **Se tutto coincide** → True. **Se un elemento è incompatibile** → False. **Se un elemento manca o è più debole** → Cannot Say.\n5. **Non tornare indietro**: una volta deciso, passa alla successiva.\n\nControllo finale: per rispondere **False** devi poter indicare la frase che contraddice. Per rispondere **True** devi poter indicare la frase che prova. Se non riesci a indicare né l'una né l'altra, è **Cannot Say**."
+        }
+      ],
+      "examples": [
+        {
+          "q": "Passage: Northbridge Industrials reported a 12% increase in revenue in 2025, driven mainly by its aerospace division. Each of the three acquisitions it completed during the year was paid entirely in cash. Management expects operating margins to improve in 2026 as raw material costs stabilise. Statement: Northbridge's operating margins will improve in 2026.",
+          "steps": [
+            "Frase rilevante: “Management expects operating margins to improve in 2026”.",
+            "L'affermazione trasforma un'aspettativa del management in un fatto certo (“will improve”).",
+            "Il testo non dice che i margini miglioreranno e nemmeno che non miglioreranno: manca la certezza, ma non c'è contraddizione."
+          ],
+          "answer": "Cannot Say"
+        },
+        {
+          "q": "Same passage. Statement: Northbridge paid for at least one of its 2025 acquisitions partly in shares.",
+          "steps": [
+            "Frase rilevante: “Each of the three acquisitions it completed during the year was paid entirely in cash”.",
+            "“Each” copre tutte e tre le acquisizioni e “entirely in cash” esclude qualsiasi pagamento, anche parziale, in azioni.",
+            "Puoi indicare la frase che smentisce l'affermazione: contraddizione diretta, quindi False.",
+            "Attenzione al cambio di misura: “paid in cash” riguarda il corrispettivo pagato ai venditori. Se l'affermazione dicesse “the cash was raised through a share issue”, la risposta sarebbe Cannot Say, perché il testo non dice da dove arriva la cassa."
+          ],
+          "answer": "False"
+        },
+        {
+          "q": "Same passage. Statement: Northbridge's revenue was higher in 2025 than in 2024.",
+          "steps": [
+            "Frase rilevante: “a 12% increase in revenue in 2025”, cioè ricavi 2025 = ricavi 2024 × 1,12.",
+            "Se i ricavi 2025 sono il 112% di quelli 2024, sono necessariamente più alti: non serve nessuna assunzione."
+          ],
+          "answer": "True"
+        },
+        {
+          "q": "Passage: In the two years after the central bank of Country X raised its policy rate in 2023, mortgage approvals in the country fell by a third. Statement: The rise in the policy rate caused the fall in mortgage approvals.",
+          "steps": [
+            "Il testo collega i due fatti solo nel tempo: “In the two years after ... approvals fell”.",
+            "L'affermazione aggiunge un nesso causale (“caused”) che il testo non afferma.",
+            "La tua conoscenza economica dice che è plausibile, ma il passaggio non lo prova né lo esclude."
+          ],
+          "answer": "Cannot Say"
+        }
+      ],
+      "cheatsheet": [
+        "True = segue necessariamente dal passaggio, senza assunzioni.",
+        "False = il passaggio dice il contrario o qualcosa di incompatibile.",
+        "Cannot Say = né provato né contraddetto: è il default quando manca un pezzo.",
+        "“Non menzionato” non è mai False.",
+        "Il passaggio è l'unica verità: ignora ciò che sai del mondo reale.",
+        "may / could / expects / plans non equivalgono a will / did.",
+        "Sequenza temporale o correlazione non è causalità.",
+        "some / many / most non dicono nulla su all; only some / not all / except rendono all False.",
+        "Per False indica la frase che contraddice; per True quella che prova."
+      ]
+    },
+    {
+      "id": "les-ver-02",
+      "skill": "verbal",
+      "order": 2,
+      "title": "Verbal reasoning: lettura veloce e keyword matching",
+      "minutes": 12,
+      "summary": "Saprai trovare in pochi secondi la frase del passaggio che decide ogni affermazione, senza farti ingannare da parole uguali con significato diverso.",
+      "sections": [
+        {
+          "h": "Il problema è il tempo, non la comprensione",
+          "body": "Capisci senza problemi ogni passaggio. Il problema è che hai meno di un minuto per affermazione e lo stesso passaggio serve a 3-4 affermazioni. Se rileggi tutto il testo ogni volta, perdi 20-30 secondi per domanda e arrivi a metà test senza tempo.\n\nObiettivo della lezione: **leggere il passaggio una volta sola in modo strutturato**, poi per ogni affermazione **andare dritto alla frase giusta**.\n\nBudget indicativo per un passaggio con 4 affermazioni (circa 3-4 minuti in totale, cioè 40-60 secondi per affermazione):\n\n| Fase | Tempo |\n|---|---|\n| Prima lettura con mappa mentale | 40-50 s |\n| Ogni affermazione (parole chiave, ricerca, verifica) | 30-40 s |\n| Riserva per i casi difficili | 10-20 s |"
+        },
+        {
+          "h": "Prima lettura: la mappa del passaggio",
+          "body": "Leggi il passaggio una volta a velocità sostenuta, senza memorizzare i dettagli. Devi solo sapere **dove** si trova ogni cosa:\n\n- **Un'etichetta per paragrafo** (es. “P1 ricavi, P2 acquisizioni, P3 outlook”).\n- **Numeri, date e nomi propri**: non li memorizzi, ricordi solo in quale paragrafo sono.\n- **Parole segnale**, cioè i punti in cui si decidono le risposte:\n\n| Tipo | Parole |\n|---|---|\n| Contrasto | however, but, although, yet, whereas, despite |\n| Causa | because, due to, as a result, driven by, led to |\n| Condizione | if, unless, provided that, only if |\n| Limite | only, except, solely, at least, no more than |\n| Incertezza | may, could, likely, suggests, expected, estimated |\n\nUna frase con una parola segnale vale più di tre frasi descrittive: è lì che il test costruisce le trappole."
+        },
+        {
+          "h": "Keyword matching: prima l'affermazione, poi il testo",
+          "body": "Per ogni affermazione:\n\n1. **Estrai 2-3 parole chiave “rare”**: nomi propri, numeri, date, termini tecnici. Evita parole generiche come “company” o “market”, che compaiono ovunque.\n2. **Usa la mappa** per andare al paragrafo giusto e cerca le parole chiave con lo sguardo (scanning), senza leggere riga per riga.\n3. **Leggi per intero la frase trovata**, più quella prima e quella dopo se contengono una parola segnale.\n4. **Applica la regola True / False / Cannot Say** della lezione precedente.\n\n**Attenzione alle parafrasi**: il test riscrive quasi sempre il testo con sinonimi. Cerca il concetto, non la parola esatta.\n\n| Nel passaggio | Nell'affermazione |\n|---|---|\n| turnover, sales | revenue |\n| cut, trim, scale back | reduce |\n| the six months to December | the second half (se l'esercizio va da gennaio a dicembre) |\n| headcount | number of employees |\n| more than doubled | increased by over 100% |"
+        },
+        {
+          "h": "Parola uguale non vuol dire significato uguale",
+          "body": "La trappola più costosa del keyword matching: trovi le stesse parole dell'affermazione e rispondi True d'istinto. I test costruiscono apposta affermazioni che riprendono le parole del testo cambiandone il senso:\n\n- **Negazione o contrasto**: “Contrary to forecasts of a 5% decline, income rose 3%” contiene “5%” e “decline”, ma dice il contrario.\n- **Soggetto scambiato**: il testo dice che A ha acquisito B, l'affermazione che B ha acquisito A.\n- **Eccezione**: “all subsidiaries except the Brazilian one” non equivale a “all subsidiaries”.\n- **Previsione presentata come fatto**: “analysts forecast X” non vuol dire che X sia accaduto.\n\n**Regola**: quando trovi il match, rallenta per 5 secondi e rileggi la frase **intera**, soprattutto le parole che precedono il match (contrary to, except, unlike, despite)."
+        },
+        {
+          "h": "Gestione del tempo e risposte in dubbio",
+          "body": "- **Tetto per affermazione**: se dopo circa 75 secondi non hai deciso, scegli la risposta più probabile e vai avanti. Il tempo perso su una domanda lo paghi su altre tre.\n- **Default ragionato**: se esiti tra True e Cannot Say, chiediti se serve un'assunzione; se sì, Cannot Say. Se esiti tra False e Cannot Say, chiediti se riesci a indicare la frase che contraddice; se no, Cannot Say.\n- **Non lasciare risposte vuote**: nella maggior parte dei test online una risposta sbagliata non toglie punti, ma verifica sempre le istruzioni iniziali.\n- **Non tornare sulle risposte già date**, salvo errori evidenti: la prima analisi rigorosa è di solito quella giusta."
+        },
+        {
+          "h": "Come allenarsi nel weekend",
+          "body": "La velocità si costruisce con esercizi brevi e ripetuti, non con maratone:\n\n1. **10 minuti di lettura attiva**: un articolo economico in inglese (sezione companies o markets di un quotidiano finanziario). Per ogni paragrafo scrivi un'etichetta di 2-3 parole.\n2. **Crea le tue affermazioni**: per ogni articolo scrivi 3 affermazioni, una True, una False e una Cannot Say. Costruire le trappole ti insegna a riconoscerle.\n3. **Set cronometrati**: fai i set di questo sito con il timer attivo e annota per ogni errore la causa (parola chiave ingannevole, assunzione, conoscenza esterna, tempo).\n4. **Revisione degli errori**: dopo 3-4 sessioni vedrai che i tuoi errori si concentrano su 1-2 cause. Lavora su quelle."
+        }
+      ],
+      "examples": [
+        {
+          "q": "Passage extract: Alvona Foods' financial year runs from January to December. Although turnover in Europe rose over the full year, it declined in the six months to December. Statement: Alvona's European sales fell in the second half of its financial year.",
+          "steps": [
+            "Parole chiave rare dell'affermazione: Alvona, European, second half (“sales” e “fell” sono generiche: cercane i sinonimi).",
+            "“Europe” porta alla seconda frase; “sales” è parafrasato come “turnover”.",
+            "Con un esercizio da gennaio a dicembre, “the six months to December” è il secondo semestre; “declined” equivale a “fell”.",
+            "La parola segnale “Although” separa l'anno intero (crescita) dal secondo semestre (calo): l'affermazione riguarda solo il secondo semestre, quindi è provata."
+          ],
+          "answer": "True"
+        },
+        {
+          "q": "Passage extract: Contrary to analysts' forecasts of a 5% decline, the bank's net interest income rose 3% in the quarter. Statement: The bank's net interest income fell 5% in the quarter.",
+          "steps": [
+            "Le parole chiave “net interest income”, “5%” e “quarter” sono tutte nella stessa frase: match apparente perfetto.",
+            "Rileggendo la frase intera, “Contrary to” indica che il calo del 5% era solo una previsione, smentita dai fatti.",
+            "Il dato effettivo è +3%, incompatibile con un calo del 5%."
+          ],
+          "answer": "False"
+        },
+        {
+          "q": "Passage extract: All subsidiaries, except the Brazilian one, met their 2025 cash-flow targets. Statement: Every subsidiary met its 2025 cash-flow target.",
+          "steps": [
+            "Parole chiave: subsidiary, 2025, cash-flow target: tutte nella stessa frase.",
+            "La parola limite “except” esclude la controllata brasiliana.",
+            "Il testo implica che la controllata brasiliana non ha raggiunto il target, quindi “every subsidiary” è contraddetto."
+          ],
+          "answer": "False"
+        },
+        {
+          "q": "Passage extract: Headcount at the Milan office more than doubled between 2022 and 2025, while the London office was reorganised. Statement: The London office had fewer employees in 2025 than in 2022.",
+          "steps": [
+            "La parola chiave “employees” corrisponde a “headcount”, ma nel testo quel dato riguarda solo Milano.",
+            "Per Londra il testo dice solo “was reorganised”: una riorganizzazione non implica né un calo né un aumento del personale.",
+            "Nessuna frase prova o contraddice l'affermazione."
+          ],
+          "answer": "Cannot Say"
+        }
+      ],
+      "cheatsheet": [
+        "Una sola lettura del passaggio, con un'etichetta per paragrafo.",
+        "Leggi prima l'affermazione ed estrai 2-3 parole chiave rare.",
+        "Cerca il concetto, non la parola: i test parafrasano.",
+        "Trovato il match, rileggi la frase intera e le parole segnale vicine.",
+        "Contrasto, eccezione, incertezza: lì si nascondono le trappole.",
+        "Tetto di circa 75 secondi per affermazione, poi decidi.",
+        "Dubbio tra True e Cannot Say: serve un'assunzione? Allora Cannot Say.",
+        "Non lasciare risposte vuote, salvo istruzioni diverse."
+      ]
+    },
+    {
+      "id": "les-log-01",
+      "skill": "logical",
+      "order": 1,
+      "title": "Ragionamento deduttivo: sillogismi, condizionali e puzzle di ordinamento",
+      "minutes": 22,
+      "summary": "Saprai stabilire se una conclusione segue davvero dalle premesse, tradurre if / only if / unless senza errori e risolvere puzzle di ordinamento e di posti a sedere con un diagramma.",
+      "sections": [
+        {
+          "h": "Cosa chiede un test deduttivo",
+          "body": "Nel ragionamento deduttivo ricevi delle **premesse** e una o più **conclusioni**. Devi dire se la conclusione **segue necessariamente**: se le premesse sono vere, la conclusione non può essere falsa.\n\nTre principi:\n\n- **Contano solo le premesse**. Una conclusione vera nel mondo reale ma non garantita dalle premesse **non segue**.\n- **“Necessariamente” è la parola chiave**. Basta un solo caso compatibile con le premesse in cui la conclusione è falsa per scartarla.\n- **Distingui il tipo di domanda**: “must be true” (vero in tutti i casi possibili), “could be true” (vero in almeno un caso), “cannot be true” (falso in tutti i casi)."
+        },
+        {
+          "h": "Sillogismi: le quattro forme e i pattern",
+          "body": "Ogni premessa ha una di quattro forme: **All A are B**, **No A are B**, **Some A are B**, **Some A are not B**.\n\n| Premesse | Conclusione valida |\n|---|---|\n| All A are B; All B are C | All A are C |\n| All A are B; No B are C | No A are C |\n| Some A are B; All B are C | Some A are C |\n| No A are B; Some C are A | Some C are not B |\n| No A are B | No B are A (si può invertire) |\n| Some A are B | Some B are A (si può invertire) |\n\n| Premesse | Errore tipico (NON segue) |\n|---|---|\n| All A are B | All B are A |\n| All A are B; All C are B | All A are C, oppure Some A are C |\n| Some A are B; Some B are C | Some A are C |\n| Some A are B | Some A are not B |\n| All A are B; No A are C | No B are C |\n\nNei test si assume di solito che gli insiemi non siano vuoti: da “All A are B” puoi concludere “Some A are B”."
+        },
+        {
+          "h": "Il metodo del controesempio",
+          "body": "Quando un sillogismo non rientra nei pattern, non cercare di dimostrarlo: **cerca di smontarlo**.\n\n1. Disegna le premesse come cerchi (diagramma di Venn) **nel modo più sfavorevole** alla conclusione.\n2. Se riesci a costruire un caso in cui tutte le premesse sono vere e la conclusione è falsa, la conclusione **non segue**.\n3. Se ogni disegno possibile rende vera la conclusione, la conclusione **segue**.\n\n**Trucco veloce**: sostituisci A, B, C con categorie concrete. “All cats are animals; all dogs are animals; therefore all cats are dogs” rende evidente l'errore in due secondi.\n\n**Regola del termine medio**: il termine che compare in entrambe le premesse deve essere preso “per intero” almeno una volta, cioè deve comparire come soggetto di una frase con All o No, oppure come predicato di una frase con No o “are not”. Se non succede mai, la conclusione non segue."
+        },
+        {
+          "h": "Condizionali: tradurre if, only if, unless",
+          "body": "Prima di ragionare, **riscrivi ogni frase nella forma “se P allora Q” (P → Q)**. P è la condizione sufficiente, Q quella necessaria.\n\n| Frase nel test | Traduzione |\n|---|---|\n| If P, then Q | P → Q |\n| P only if Q | P → Q |\n| Only if Q, P | P → Q |\n| Q is necessary for P | P → Q |\n| P is sufficient for Q | P → Q |\n| No P without Q | P → Q |\n| All P are Q | P → Q |\n| P unless Q | non Q → P (equivale a: non P → Q) |\n| P if and only if Q | P → Q e Q → P |\n\n**Only if** è la trappola principale: “A deal is approved only if the committee signs off” dice che la firma è **necessaria**, non che basta. Se il comitato firma, l'operazione **può** essere approvata, ma non è garantito.\n\n**Unless** significa “se non”: “The deal will close unless regulators object” = se i regolatori non si oppongono, l'operazione si chiude. **Non** dice cosa succede se i regolatori si oppongono."
+        },
+        {
+          "h": "Inferenze valide e non valide",
+          "body": "Dato P → Q:\n\n| Sai che... | Puoi concludere? | Nome |\n|---|---|---|\n| P | Sì: Q | modus ponens |\n| non Q | Sì: non P | modus tollens (contrapposizione) |\n| Q | No, P resta incerto | affermazione del conseguente |\n| non P | No, Q resta incerto | negazione dell'antecedente |\n\n**Contrapposta**: P → Q equivale sempre a non Q → non P, mai a Q → P. È lo strumento più potente del test.\n\n**Catene**: P → Q e Q → R danno P → R. Allinea le frasi in modo che il conseguente di una sia l'antecedente della successiva, usando le contrapposte quando serve.\n\n**Negazioni utili**:\n\n- La negazione di “all A are B” è “some A are not B” (non “no A are B”, che è un'affermazione più forte).\n- La negazione di “some A are B” è “no A are B”.\n- La negazione di “if P then Q” è “P and not Q”."
+        },
+        {
+          "h": "Puzzle di ordinamento",
+          "body": "Esempi: cinque persone che presentano in sequenza, deal chiusi in giorni diversi, analisti classificati per ore lavorate.\n\n1. **Disegna gli slot** (1 2 3 4 5) e fissa il verso (1 = primo, più alto, prima).\n2. **Inserisci gli indizi fissi**: “T presents third”, “E was not first”.\n3. **Poi i blocchi**: “Q immediately after P” diventa un blocco rigido **PQ** che occupa due slot adiacenti.\n4. **Poi le relazioni**: “R before S” diventa R < S. Uniscile in catene (T < R < S) quando possibile.\n5. **Se resta ambiguità, apri i casi**: prova le 2-3 posizioni possibili del blocco più vincolato ed elimina quelle che violano un indizio.\n6. **Rispondi alla domanda giusta**: “must be true” deve valere in **tutti** i casi rimasti, “could be true” in **almeno uno**.\n\nAttenzione: “before” non vuol dire “immediately before”, e “not last” non vuol dire “first”."
+        },
+        {
+          "h": "Puzzle di posti a sedere",
+          "body": "**Tavolo in linea**: come l'ordinamento, ma con destra e sinistra. Chiarisci il punto di vista: se le persone sono rivolte verso di te, la loro destra è la tua sinistra.\n\n**Tavolo rotondo**:\n\n- **Fissa una persona** in un posto qualsiasi, meglio in basso nel disegno: in un cerchio conta solo la posizione relativa, quindi elimini tutte le rotazioni equivalenti.\n- **Sinistra e destra**: si assume che tutti guardino il centro. Per la persona in basso nel disegno, la sua sinistra coincide con la tua sinistra sul foglio. Per la persona in alto, che guarda verso di te, è il contrario.\n- **Opposite** (di fronte) esiste solo con un numero pari di posti: con 6 posti, la persona di fronte è a 3 posti di distanza.\n- **Next to** non dice da che lato: apri due casi.\n\nOrdine di inserimento: persona fissata → indizi “opposite” e “immediately left / right” → divieti (“not next to”) → posti rimasti."
+        },
+        {
+          "h": "Errori da evitare",
+          "body": "- Usare la conoscenza del mondo reale invece delle sole premesse.\n- Invertire un condizionale: da P → Q concludere Q → P.\n- Leggere “only if” come “if”.\n- Leggere “unless” come “if and only if not”.\n- Trattare “before” come “immediately before”.\n- Rispondere “must be true” a qualcosa che vale solo in uno dei casi possibili.\n- Non disegnare: a mente si sbaglia anche un puzzle semplice. Tieni sempre carta e penna accanto al computer, se le regole del test lo consentono."
+        }
+      ],
+      "examples": [
+        {
+          "q": "Premises: All analysts in the M&A team are CFA candidates. Some CFA candidates work at weekends. Conclusion: Some analysts in the M&A team work at weekends. Does the conclusion follow?",
+          "steps": [
+            "Forma: All A are B; Some B are C; conclusione proposta: Some A are C.",
+            "Termine medio B (CFA candidates): è predicato di una frase con All e soggetto di una frase con Some, quindi non è mai preso per intero.",
+            "Controesempio: tutti gli analisti M&A sono dentro l'insieme dei CFA candidates, ma quelli che lavorano nel weekend appartengono tutti ad altri team. Premesse vere, conclusione falsa."
+          ],
+          "answer": "No, la conclusione non segue."
+        },
+        {
+          "q": "The bond will be repaid at par unless the issuer defaults. The bond was not repaid at par. Which statement must be true? (A) The issuer defaulted. (B) The issuer did not default. (C) The bond was repaid early. (D) It cannot be determined.",
+          "steps": [
+            "Traduci “unless”: se l'emittente non va in default → rimborso alla pari.",
+            "Sai che il bond non è stato rimborsato alla pari: è la negazione del conseguente.",
+            "Modus tollens (contrapposta): non rimborsato alla pari → l'emittente è andato in default.",
+            "Nota: se invece ti dicessero che l'emittente è andato in default, non potresti concludere nulla sul rimborso."
+          ],
+          "answer": "A. The issuer defaulted."
+        },
+        {
+          "q": "Five analysts, A, B, C, D and E, finish a model in a different order (1st to 5th). B finished before D. A finished immediately after C. E was neither first nor last. D was not last. Who finished last, and who must have finished first?",
+          "steps": [
+            "Chi può essere ultimo? Non E e non D (indizi diretti), non B (deve precedere D), non C (A arriva subito dopo C). Resta solo A: A = 5°.",
+            "Il blocco CA impone C = 4°.",
+            "B, D, E occupano le posizioni 1-3, con B prima di D ed E non primo. Il primo non è E e non può essere D (B lo precede), quindi B = 1°.",
+            "Restano due casi: B, E, D oppure B, D, E. “B è primo” è must be true; “D è secondo” è solo could be true."
+          ],
+          "answer": "A è ultimo; B è certamente primo (e C è quarto)."
+        },
+        {
+          "q": "Six colleagues, Anna, Ben, Carla, Dario, Elena and Fabio, sit equally spaced around a round table, facing the centre. Anna sits directly opposite Dario. Ben sits immediately to Anna's left. Elena sits immediately to Dario's right. Carla does not sit next to Anna. Who sits directly opposite Ben?",
+          "steps": [
+            "Fissa Anna in basso. Guarda il centro come te, quindi la sua sinistra è la tua sinistra sul foglio: Ben va in basso a sinistra.",
+            "Dario è di fronte ad Anna, quindi in alto. Dario guarda verso di te, quindi la sua destra è la tua sinistra: Elena va in alto a sinistra.",
+            "Restano i due posti a destra: in alto a destra e in basso a destra. Il posto in basso a destra è accanto ad Anna, quindi Carla va in alto a destra e Fabio in basso a destra.",
+            "Di fronte a Ben (in basso a sinistra) c'è il posto in alto a destra: Carla."
+          ],
+          "answer": "Carla."
+        }
+      ],
+      "cheatsheet": [
+        "Una conclusione segue solo se è vera in tutti i casi compatibili con le premesse.",
+        "Termine medio mai preso per intero (soggetto di All / No, predicato di No / are not) = sillogismo non valido.",
+        "P only if Q = P → Q: Q è necessaria, non sufficiente.",
+        "P unless Q = se non Q, allora P; non dice nulla su cosa accade se Q.",
+        "P → Q equivale a non Q → non P, mai a Q → P.",
+        "Negazione di all = some ... not; negazione di some = none.",
+        "Ordinamento: indizi fissi, poi blocchi, poi relazioni, poi casi.",
+        "Tavolo rotondo: fissa una persona; tutti guardano il centro.",
+        "Must be true = in tutti i casi; could be true = in almeno uno."
+      ]
+    },
+    {
+      "id": "les-log-02",
+      "skill": "logical",
+      "order": 2,
+      "title": "Ragionamento induttivo e astratto: la checklist delle regole",
+      "minutes": 15,
+      "summary": "Saprai scomporre una sequenza di figure in elementi indipendenti e trovare le regole testando una checklist fissa, invece di aspettare l'intuizione.",
+      "sections": [
+        {
+          "h": "I formati che incontrerai",
+          "body": "Nei test induttivi (chiamati anche diagrammatic o abstract reasoning) le figure seguono regole nascoste. I formati più comuni:\n\n- **Next in series**: 4-5 riquadri in sequenza, scegli il successivo.\n- **Odd one out**: trova la figura che non segue la regola delle altre.\n- **Matrice 3×3**: manca una cella, le regole valgono per righe e/o colonne.\n- **Set A / Set B**: due gruppi con regole diverse; assegni una nuova figura al gruppo giusto o a nessuno dei due.\n\nIl tempo è stretto (spesso 45-75 secondi per item) e le figure contengono quasi sempre **2-3 regole contemporanee**. Chi aspetta l'intuizione si blocca; chi segue una checklist trova le regole una alla volta."
+        },
+        {
+          "h": "Il metodo in quattro passi",
+          "body": "1. **Scomponi**: elenca gli elementi presenti (es. “un cerchio, una freccia, dei quadratini”). Ogni elemento può avere una regola propria.\n2. **Segui un elemento alla volta** lungo tutti i riquadri, ignorando gli altri.\n3. **Testa la checklist** su quell'elemento finché trovi una regola che vale per **tutti** i riquadri, non solo per i primi due.\n4. **Prevedi la risposta prima di guardare le opzioni**, poi elimina ogni opzione che viola anche una sola regola.\n\nSe sopravvivono due opzioni, ti manca una regola: torna al passo 2 con l'elemento che distingue quelle due opzioni. Le opzioni stesse ti dicono quale elemento conta."
+        },
+        {
+          "h": "La checklist delle regole",
+          "body": "| Regola | Cosa controllare | Esempio |\n|---|---|---|\n| Posizione | l'elemento si sposta di un numero fisso di posti (angoli, celle, lati) | il puntino avanza di un angolo in senso orario |\n| Rotazione | angolo e verso costanti (45°, 90°, 180°) | la freccia ruota di 90° in senso orario |\n| Colore / riempimento | nero, grigio, bianco, tratteggio; ciclo o alternanza | il cerchio alterna grigio e bianco |\n| Numero | quantità di forme, lati, linee, puntini, intersezioni | +1 quadratino a ogni riquadro |\n| Dimensione | cresce, diminuisce, alterna | il triangolo si rimpicciolisce ogni due riquadri |\n| Alternanza | regole diverse nei riquadri pari e dispari | riquadri dispari con forme, pari con linee |\n| Progressione aritmetica | una quantità cresce di un passo costante, o il passo stesso cresce | lati 3, 4, 5, 6: triangolo, quadrato, pentagono, esagono |\n| Sovrapposizione | il terzo riquadro è la somma dei primi due; le parti comuni spariscono o restano | le linee presenti in entrambi spariscono |\n| Simmetria / riflessione | asse di simmetria; figura specchiata invece che ruotata | la lettera F diventa speculare |\n\n**Ordine di test consigliato**: numero → posizione → rotazione → colore → dimensione → alternanza → progressioni e sovrapposizioni. Le prime quattro risolvono la maggior parte degli item standard."
+        },
+        {
+          "h": "Contare bene: cosa contare",
+          "body": "La regola del **numero** è la più frequente ed è spesso nascosta. Se sembra che nulla cambi, conta:\n\n- forme totali e forme per tipo;\n- lati totali di tutte le forme;\n- linee rette e linee curve, separatamente;\n- intersezioni tra linee;\n- angoli retti;\n- elementi dentro una forma vs fuori;\n- elementi neri vs bianchi.\n\nScrivi i conteggi sotto ogni riquadro (es. 3, 5, 7, 9): diventano una serie numerica, che risolvi con il metodo delle differenze (vedi la lezione sulle serie)."
+        },
+        {
+          "h": "Posizione e rotazione: usa l'aritmetica",
+          "body": "Non simulare a occhio dieci passi: calcola.\n\n- **Posizione**: se un elemento ha N posizioni su un percorso chiuso (4 angoli, 8 celle del bordo di una griglia 3×3) e avanza di k posizioni a riquadro, dopo n passi è avanzato di k × n posizioni. Dividi per N e guarda il resto. Attenzione: dal riquadro 1 al riquadro m ci sono **m − 1 passi**, non m.\n- **Rotazione**: angolo dopo n passi = angolo iniziale + passo × n, tolti i multipli di 360°.\n- **Ciclo di colori**: con un ciclo di 3 colori, il colore del riquadro n dipende dal resto di (n − 1) diviso 3.\n\n**Rotazione o riflessione?** Una figura asimmetrica (una F, una bandierina, una freccia con un trattino su un lato) rivela la differenza: ruotata resta la stessa figura, specchiata cambia lato. Le opzioni sbagliate usano spesso l'immagine speculare."
+        },
+        {
+          "h": "Odd one out, matrici e set A / B",
+          "body": "- **Odd one out**: trova una proprietà condivisa da tutte le figure tranne una. Testa la checklist **confrontando le figure tra loro**, non in sequenza. Spesso la regola collega due attributi (es. numero di puntini = numero di lati − 2). Se trovi due regole che isolano figure diverse, scegli quella che spiega tutte le figure in modo più semplice.\n- **Matrici 3×3**: cerca la regola prima sulle righe, poi sulle colonne. Regole tipiche: ogni riga contiene una volta ciascuna forma o colore; la terza cella è la somma o la sovrapposizione delle prime due; una quantità cresce lungo la riga.\n- **Set A / Set B**: trova la caratteristica **presente in tutte** le figure di A e assente in tutte quelle di B (e viceversa). Spesso una nuova figura può appartenere ad A, a B o a **nessuno dei due**: non dimenticare la terza opzione."
+        },
+        {
+          "h": "Gestione del tempo",
+          "body": "- **Primi 15 secondi**: scomponi e conta.\n- **Fino a 45 secondi**: checklist sull'elemento più evidente, poi sugli altri.\n- **A 60-75 secondi**: elimina le opzioni con le regole già trovate e scegli tra quelle rimaste. Spesso due regole su tre bastano a lasciare una sola opzione.\n- **Non tornare indietro**: gli item induttivi non diventano più facili alla seconda lettura, le altre domande sì.\n\nIn allenamento, dopo ogni errore scrivi **quale regola della checklist non hai testato**. In poche sessioni vedrai il tuo punto cieco ricorrente (di solito il conteggio dei lati o la confusione tra rotazione e riflessione)."
+        }
+      ],
+      "examples": [
+        {
+          "q": "A square has a dot in one corner. Frame 1: the dot is black, in the top-left corner. In each new frame the dot moves one corner clockwise and its colour alternates (black, white, black, white...). What does frame 6 show?",
+          "steps": [
+            "Due regole indipendenti: posizione (un angolo in senso orario) e colore (alternanza).",
+            "Posizione: dal riquadro 1 al 6 ci sono 5 passi; 5 diviso 4 angoli dà resto 1, quindi un angolo oltre il top-left in senso orario: top-right.",
+            "Colore: riquadri dispari neri, pari bianchi; 6 è pari, quindi bianco.",
+            "Previsione: puntino bianco in alto a destra. Elimina ogni opzione con il puntino nero o in un altro angolo."
+          ],
+          "answer": "A white dot in the top-right corner."
+        },
+        {
+          "q": "Frame 1: an arrow inside a circle points up, the circle is grey and there is 1 small square outside the circle. In each new frame the arrow rotates 90° clockwise, the circle alternates grey and white, and one small square is added. Which option is frame 5? (A) Arrow up, white circle, 5 squares (B) Arrow left, grey circle, 5 squares (C) Arrow up, grey circle, 5 squares (D) Arrow up, grey circle, 4 squares",
+          "steps": [
+            "Rotazione: dal riquadro 1 al 5 ci sono 4 passi; 4 × 90° = 360°, la freccia torna in alto. Elimina B.",
+            "Colore: riquadri dispari grigi; 5 è dispari, quindi grigio. Elimina A.",
+            "Numero: 1 + 4 = 5 quadratini. Elimina D.",
+            "Resta C, che rispetta tutte e tre le regole."
+          ],
+          "answer": "C. Arrow up, grey circle, 5 squares."
+        },
+        {
+          "q": "Which figure is the odd one out? (A) A hexagon with 4 dots inside (B) A triangle with 2 dots inside (C) A square with 2 dots inside (D) A heptagon with 5 dots inside (E) A pentagon with 3 dots inside",
+          "steps": [
+            "Forme e numero di puntini cambiano tutti: la regola deve collegare due attributi.",
+            "Confronta lati e puntini: esagono 6 e 4, quadrato 4 e 2, ettagono 7 e 5, pentagono 5 e 3. In tutti i casi puntini = lati − 2.",
+            "Triangolo: 3 − 2 = 1 puntino atteso, ma ne ha 2.",
+            "B è l'unica figura che viola la regola."
+          ],
+          "answer": "B."
+        }
+      ],
+      "cheatsheet": [
+        "Scomponi la figura in elementi e segui un elemento alla volta.",
+        "Checklist: numero, posizione, rotazione, colore, dimensione, alternanza, progressione, sovrapposizione, riflessione.",
+        "Aspettati 2-3 regole contemporanee.",
+        "Prevedi la risposta prima di guardare le opzioni, poi elimina.",
+        "Posizione dopo n passi (riquadro m = m − 1 passi): avanzamento k × n, poi resto della divisione per il numero di posizioni.",
+        "Rotazione dopo n passi: passo × n, togli i multipli di 360°.",
+        "Se sembra che nulla cambi, conta lati, linee, intersezioni, angoli.",
+        "Ruotata o specchiata? Controlla un dettaglio asimmetrico.",
+        "Set A / B: considera sempre anche l'opzione “nessuno dei due”."
+      ]
+    },
+    {
+      "id": "les-log-03",
+      "skill": "logical",
+      "order": 3,
+      "title": "Serie numeriche e di lettere: il metodo delle differenze",
+      "minutes": 14,
+      "summary": "Saprai risolvere serie numeriche e alfabetiche con una sequenza fissa di controlli (differenze, rapporti, serie intrecciate, serie note) in meno di un minuto.",
+      "sections": [
+        {
+          "h": "Perché serve un metodo",
+          "body": "Le serie compaiono nei test di numerical e logical reasoning e anche nei test induttivi, dove i conteggi delle figure diventano numeri. Una serie si risolve in 20-40 secondi se sai **in che ordine cercare**; si perdono minuti se si prova a indovinare.\n\nLa regola d'oro: **una regola è valida solo se spiega tutti i termini**, non solo i primi tre."
+        },
+        {
+          "h": "La sequenza di controlli",
+          "body": "1. **Guarda l'andamento**: cresce lentamente (somme), velocemente (prodotti o potenze), oppure sale e scende (due serie intrecciate o operazioni alternate)?\n2. **Differenze prime**: scrivi sotto la serie la differenza tra termini consecutivi. Se è costante, hai finito.\n3. **Differenze seconde**: se le differenze prime non sono costanti, calcola le loro differenze. Spesso sono costanti o formano una serie semplice.\n4. **Rapporti**: se la serie cresce in fretta, dividi ogni termine per il precedente (×2, ×3, oppure ×2 + 1).\n5. **Posizioni pari e dispari**: se nulla funziona, separa i termini in posizione dispari da quelli in posizione pari: spesso sono due serie indipendenti.\n6. **Serie note**: quadrati, cubi, numeri primi, Fibonacci (ogni termine è la somma dei due precedenti)."
+        },
+        {
+          "h": "Catalogo dei pattern più frequenti",
+          "body": "| Pattern | Esempio | Termine successivo |\n|---|---|---|\n| Differenza costante | 7, 11, 15, 19 | 23 |\n| Differenze crescenti | 3, 5, 9, 15, 23 (+2, +4, +6, +8) | 33 |\n| Rapporto costante | 3, 6, 12, 24 | 48 |\n| ×a + b | 3, 7, 15, 31 (×2 + 1) | 63 |\n| Operazioni alternate | 2, 6, 7, 21, 22 (×3, +1) | 66 |\n| Due serie intrecciate | 4, 20, 7, 17, 10, 14 (+3 sui dispari, −3 sui pari) | 13 |\n| Fibonacci | 2, 3, 5, 8, 13 | 21 |\n| Quadrati ± k | 2, 5, 10, 17, 26 (n² + 1) | 37 |\n| Cubi | 1, 8, 27, 64 | 125 |\n| Numeri primi | 2, 3, 5, 7, 11, 13 | 17 |\n| Differenze = numeri primi | 1, 3, 6, 11, 18 (+2, +3, +5, +7) | 29 |"
+        },
+        {
+          "h": "Serie di lettere: trasformale in numeri",
+          "body": "Converti ogni lettera nella sua posizione nell'alfabeto inglese (26 lettere) e risolvi la serie numerica.\n\n| Lettera | E | J | O | T | Y |\n|---|---|---|---|---|---|\n| Posizione | 5 | 10 | 15 | 20 | 25 |\n\nMemorizza **EJOTY** (i multipli di 5): da lì conti al massimo due lettere avanti o indietro.\n\nAltri strumenti:\n\n- **Posizione inversa**: A ↔ Z, B ↔ Y, C ↔ X. La somma delle due posizioni è sempre 27 (A = 1, Z = 26).\n- **Giro dell'alfabeto**: dopo Z si ricomincia da A. Se ottieni 28, togli 26: 28 − 26 = 2 = B.\n- **Gruppi di lettere**: in “AZ, CX, EV, ?” la prima lettera avanza di 2 (A, C, E, G) e la seconda arretra di 2 (Z, X, V, T): risposta GT.\n- **L'alfabeto inglese include J, K, W, X, Y**, che in italiano usiamo poco: saltarle è un errore frequente."
+        },
+        {
+          "h": "Serie miste e varianti",
+          "body": "- **Numero + lettera**: in “2B, 4D, 8H, ?” i numeri raddoppiano (2, 4, 8, 16) e la lettera corrisponde al numero (B = 2, D = 4, H = 8, P = 16): risposta 16P.\n- **Frazioni**: tratta numeratore e denominatore come due serie separate.\n- **Serie decrescenti**: valgono le stesse regole al contrario (÷2, −3, differenze che calano).\n- **Termine mancante in mezzo**: usa i termini **a entrambi i lati** del vuoto per verificare la regola.\n- **Termine sbagliato** (“which number does not fit?”): trova la regola su almeno quattro termini, poi individua l'unico che la viola."
+        },
+        {
+          "h": "Trappole e gestione del tempo",
+          "body": "- **Fermarsi ai primi tre termini**: 2, 4, 8 può continuare con 16 (×2) o con 14 (differenze +2, +4, +6). Verifica sempre su tutta la serie.\n- **Ignorare le serie intrecciate**: se la serie sale e scende, quasi sempre ci sono due serie alternate o due operazioni alternate.\n- **Sbagliare la posizione del termine richiesto**: in una serie intrecciata, il termine mancante appartiene alla sottoserie dei dispari o dei pari? Conta le posizioni.\n- **Errori sulle lettere**: scrivi la posizione sotto ogni lettera, non contare a mente.\n- **Tempo**: se dopo 45 secondi non hai la regola, lavora dalle opzioni: calcola la differenza tra l'ultimo termine e ciascuna opzione; spesso una sola è compatibile con l'andamento delle differenze."
+        }
+      ],
+      "examples": [
+        {
+          "q": "What comes next? 4, 9, 18, 31, 48, ?",
+          "steps": [
+            "Differenze prime: 9 − 4 = 5, 18 − 9 = 9, 31 − 18 = 13, 48 − 31 = 17: non costanti.",
+            "Differenze seconde: 9 − 5 = 4, 13 − 9 = 4, 17 − 13 = 4: costanti.",
+            "Prossima differenza prima: 17 + 4 = 21.",
+            "Termine successivo: 48 + 21 = 69."
+          ],
+          "answer": "69"
+        },
+        {
+          "q": "What comes next? 5, 10, 7, 14, 11, 22, ?",
+          "steps": [
+            "La serie sale e scende: sospetta operazioni alternate.",
+            "5 → 10 è ×2; 10 → 7 è −3; 7 → 14 è ×2; 14 → 11 è −3; 11 → 22 è ×2.",
+            "Il passo successivo è −3: 22 − 3 = 19."
+          ],
+          "answer": "19"
+        },
+        {
+          "q": "What comes next? 3, 50, 6, 45, 12, 40, 24, ?",
+          "steps": [
+            "Termini molto diversi e andamento a zigzag: separa posizioni dispari e pari.",
+            "Dispari (1°, 3°, 5°, 7°): 3, 6, 12, 24, cioè ×2.",
+            "Pari (2°, 4°, 6°): 50, 45, 40, cioè −5.",
+            "Il termine mancante è l'8°, quindi pari: 40 − 5 = 35."
+          ],
+          "answer": "35"
+        },
+        {
+          "q": "What comes next? C, F, J, O, ?",
+          "steps": [
+            "Converti: C = 3, F = 6, J = 10, O = 15.",
+            "Differenze: +3, +4, +5, quindi la prossima è +6.",
+            "15 + 6 = 21. Da T = 20 (EJOTY) avanzi di una lettera: U."
+          ],
+          "answer": "U"
+        }
+      ],
+      "cheatsheet": [
+        "Ordine: andamento → differenze prime → differenze seconde → rapporti → pari / dispari → serie note.",
+        "Una regola vale solo se spiega tutti i termini.",
+        "Zigzag = due serie intrecciate o operazioni alternate.",
+        "Crescita rapida = moltiplicazione, ×a + b o potenze.",
+        "Lettere: converti in numeri, A = 1, Z = 26.",
+        "EJOTY = 5, 10, 15, 20, 25.",
+        "Posizione inversa: la somma fa 27 (A ↔ Z).",
+        "Oltre Z: togli 26 e ricomincia da A."
+      ]
+    },
+    {
+      "id": "les-ws-01",
+      "skill": "workstyle",
+      "order": 1,
+      "title": "Questionari di work style e personalità",
+      "minutes": 12,
+      "summary": "Saprai come vengono usati i questionari di personalità nei graduate programme e come rispondere in modo sincero, coerente e allineato al ruolo, anche nei formati a scelta forzata.",
+      "sections": [
+        {
+          "h": "Cosa sono e come li usano le banche",
+          "body": "Molti processi di selezione affiancano ai test cognitivi un questionario su come lavori: preferenze, comportamenti, motivazioni. Non ci sono risposte giuste o sbagliate in assoluto, ma il risultato viene confrontato con il **profilo del ruolo**, cioè le competenze che la banca considera importanti per un analyst.\n\nGli usi tipici:\n\n- **Punteggio di fit**: un profilo molto lontano da quello desiderato può pesare sulla decisione, soprattutto se i test cognitivi sono al limite.\n- **Guida per l'intervista**: i punti estremi del tuo profilo diventano domande (“il questionario dice che preferisci lavorare da solo: raccontami una volta in cui hai lavorato in team sotto pressione”).\n- **Sviluppo**: dopo l'assunzione, a volte viene usato nei percorsi di formazione.\n\nIl modo esatto in cui viene usato varia da banca a banca e quasi mai è pubblico: prepararsi significa essere coerenti, non indovinare un algoritmo."
+        },
+        {
+          "h": "I formati",
+          "body": "| Formato | Come funziona | Cosa misura bene |\n|---|---|---|\n| Scala Likert | valuti un'affermazione da “strongly disagree” a “strongly agree” | intensità di ogni tratto |\n| Scelta forzata | in un blocco di 3-4 affermazioni scegli la più e la meno simile a te | priorità tra tratti; più difficile da “gonfiare” |\n| Ranking | ordini 3-4 affermazioni dalla più alla meno simile a te | come la scelta forzata, con più dettaglio |\n| Strengths-based | valuti quanto ti dà energia un'attività, a volte con tempo limitato | motivazione e punti di forza naturali |\n\nNei formati a scelta forzata le affermazioni di un blocco sono di solito **ugualmente desiderabili**: non puoi scegliere “quella giusta”, devi rivelare che cosa viene prima per te."
+        },
+        {
+          "h": "Il profilo del ruolo di analyst",
+          "body": "Prima del test, chiarisci quali comportamenti cerca un graduate programme bancario. Per i ruoli di analyst (IB, markets, corporate banking, risk) ricorrono quasi sempre:\n\n| Area | Comportamenti tipici |\n|---|---|\n| Affidabilità | precisione, controllo degli errori, rispetto delle scadenze |\n| Resilienza | calma sotto pressione, carichi variabili, reazione al feedback |\n| Drive | ambizione, voglia di imparare, iniziativa |\n| Teamwork | collaborazione, supporto ai colleghi, comunicazione chiara |\n| Integrità | rispetto delle regole, trasparenza sugli errori |\n| Orientamento al cliente | ascolto, qualità del servizio, attenzione alle esigenze |\n| Pensiero analitico | lavoro con i dati, ragionamento strutturato |\n\nLeggi anche i **valori pubblicati dalla banca** nella pagina careers: spesso sono 4-5 parole che ritrovi nel questionario, nei test situazionali e nelle domande d'intervista."
+        },
+        {
+          "h": "Rispondere in modo sincero ma allineato",
+          "body": "La strategia corretta non è mentire: un profilo costruito a tavolino crolla in intervista e all'assessment centre. Si tratta di **presentare la versione autentica di te al lavoro**, nel contesto del ruolo.\n\n1. **Rispondi pensando a te al lavoro o allo studio**, non alla vita privata. “I enjoy routine” al lavoro può valere diversamente che nel weekend.\n2. **Pensa ai comportamenti, non alle intenzioni**: che cosa hai fatto davvero nell'ultimo anno, in banca o all'università?\n3. **Sui tratti centrali del ruolo** (precisione, resilienza, teamwork, integrità), se sono veri per te, rispondi con decisione: “agree” o “strongly agree”.\n4. **Evita il centro sistematico**: troppe risposte “neutral” producono un profilo piatto che non dice nulla di te. È un rischio tipico di chi tende alla modestia.\n5. **Evita gli estremi ovunque**: tutto “strongly agree” sui tratti positivi sembra un tentativo di apparire perfetto.\n6. **Ritmo**: 8-15 secondi per affermazione. La prima risposta ragionata è di solito la più autentica."
+        },
+        {
+          "h": "Consistenza: come viene misurata",
+          "body": "Il questionario misura ogni tratto con **più affermazioni**, formulate in modi diversi e sparse nel test. Alcune sono **invertite**:\n\n- “I always check my work before submitting it.”\n- “I sometimes submit work without reviewing it when I am busy.”\n\nSe rispondi “strongly agree” a entrambe, il profilo risulta incoerente. Molti questionari calcolano un **indice di coerenza** e alcuni includono affermazioni di desiderabilità sociale (“I have never made a mistake at work”), a cui quasi nessuno può rispondere sinceramente “strongly agree”.\n\nCome restare coerente:\n\n- Leggi ogni affermazione fino in fondo: “not”, “rarely”, “sometimes” cambiano il verso.\n- Ancora le risposte a esempi reali: se hai in mente un episodio concreto, risponderai allo stesso modo ogni volta.\n- Allinea il profilo al tuo CV e a ciò che racconterai in intervista."
+        },
+        {
+          "h": "Scelta forzata: il metodo",
+          "body": "Ricevi un blocco di affermazioni, tutte positive, e devi scegliere **most like me** e **least like me**.\n\n1. **Leggi le affermazioni** e assegna a ciascuna un tratto (precisione, socievolezza, creatività, resilienza...).\n2. **Filtro della sincerità**: escludi da “most” ciò che non è vero per te.\n3. **Filtro del ruolo**: tra le affermazioni vere, per “most” scegli quella più centrale per il lavoro di analyst.\n4. **Per “least”** scegli quella meno caratteristica di te **e** meno critica per il ruolo. Non mettere mai in “least” un tratto chiave (es. integrità o precisione) se non è davvero il tuo punto debole.\n5. **Coerenza tra blocchi**: lo stesso tratto ritorna in blocchi diversi abbinato ad altri; mantieni lo stesso ordine di priorità.\n\nLa scelta forzata ti obbliga a rivelare un ordine, e non è un male: un analyst che mette la precisione sopra l'essere al centro dell'attenzione è credibile."
+        },
+        {
+          "h": "Checklist prima del test",
+          "body": "- Scrivi 5-6 tratti del ruolo e, accanto a ciascuno, un tuo esempio reale.\n- Rileggi i valori della banca.\n- Fai il test riposato e senza interruzioni: anche se non è cronometrato, la stanchezza aumenta le risposte incoerenti.\n- Non dare la stessa risposta a blocchi interi di affermazioni.\n- Dopo il test, annota i tratti su cui hai risposto in modo estremo e prepara un esempio per ciascuno: possono tornare in intervista."
+        }
+      ],
+      "examples": [
+        {
+          "q": "Statement: I double-check figures before sending a document, even when I am under time pressure. (Strongly disagree / Disagree / Neutral / Agree / Strongly agree)",
+          "steps": [
+            "Tratto misurato: precisione e affidabilità, centrale per un analyst.",
+            "Verifica di sincerità: lo fai davvero? Pensa a un episodio concreto in cui hai controllato un modello o una pitch sotto scadenza.",
+            "Se sì, rispondi Agree o Strongly agree e mantieni la stessa posizione sulle affermazioni simili (e quella opposta sulle affermazioni invertite)."
+          ],
+          "answer": "Agree o Strongly agree, se corrisponde al tuo comportamento reale; poi coerenza sugli item simili."
+        },
+        {
+          "q": "Choose the statement MOST like you and the one LEAST like you: (A) I stay calm when a deadline is brought forward unexpectedly. (B) I enjoy being the centre of attention at social events. (C) I make sure every number in my work can be traced to a source. (D) I like trying unconventional approaches to problems.",
+          "steps": [
+            "Tratti: A resilienza, B estroversione sociale, C precisione, D creatività.",
+            "Filtro del ruolo: A e C sono centrali per un analyst; D è utile ma secondaria; B è poco rilevante.",
+            "Most: tra A e C scegli quella più vera per te (es. C, se la tracciabilità dei numeri è il tuo standard nei modelli M&A).",
+            "Least: B, se rispecchia davvero le tue preferenze; non mettere A o C in least solo per variare."
+          ],
+          "answer": "Most: C (oppure A); Least: B, se coerente con il tuo comportamento reale."
+        },
+        {
+          "q": "Item 12: I always finish tasks I have started. Item 47: I sometimes leave tasks unfinished when something more interesting comes up. A candidate answers Strongly agree to both. What is the problem, and how should they answer?",
+          "steps": [
+            "Le due affermazioni misurano lo stesso tratto (perseveranza) con verso opposto: l'item 47 è invertito.",
+            "Strongly agree a entrambe è logicamente incoerente e abbassa l'indice di coerenza.",
+            "Risposta coerente, se di solito porti a termine i compiti: Agree all'item 12 e Disagree all'item 47. Con un assoluto come “always”, Agree è più credibile di Strongly agree se ammetti qualche eccezione."
+          ],
+          "answer": "Incoerenza tra item diretto e item invertito; risposta coerente: Agree al 12, Disagree al 47."
+        }
+      ],
+      "cheatsheet": [
+        "Non esistono risposte giuste, ma esiste un profilo del ruolo.",
+        "Rispondi come sei al lavoro, sulla base di comportamenti reali.",
+        "Tratti centrali per un analyst: precisione, resilienza, drive, teamwork, integrità.",
+        "Niente neutral sistematici, niente strongly agree ovunque.",
+        "Attenzione agli item invertiti: not, rarely, sometimes.",
+        "Scelta forzata: prima la sincerità, poi la rilevanza per il ruolo.",
+        "Mai un tratto chiave in least se non è davvero il tuo punto debole.",
+        "Il profilo torna in intervista: prepara un esempio per ogni risposta estrema."
+      ]
+    }
+  ]
+}

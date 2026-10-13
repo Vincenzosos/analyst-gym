@@ -1,0 +1,1907 @@
+{
+  "items": [
+    {
+      "id": "ma-001",
+      "skill": "fin-ma",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Northbridge Industrials' shares traded at EUR 20.00 on the day before any deal rumours. An acquirer offers EUR 25.00 per share in cash. What is the offer premium to the unaffected share price?",
+      "options": ["20%", "25%", "5%", "125%"],
+      "answer": 1,
+      "timeTarget": 30,
+      "explanation": {
+        "steps": [
+          "Il premio si calcola sul prezzo indisturbato (unaffected), cioè quello prima di rumors e annuncio: (25.00 - 20.00) / 20.00.",
+          "5.00 / 20.00 = 0.25, quindi il premio è del 25%."
+        ],
+        "shortcut": "Prezzo offerto / prezzo indisturbato - 1: 25 / 20 = 1.25, premio 25%.",
+        "trap": "Dividere la differenza per il prezzo offerto (5 / 25 = 20%): la base è sempre il prezzo prima dell'offerta.",
+        "rule": "Premio = (prezzo offerto - prezzo indisturbato) / prezzo indisturbato."
+      },
+      "tags": ["premium", "unaffected-price"]
+    },
+    {
+      "id": "ma-002",
+      "skill": "fin-ma",
+      "level": 1,
+      "type": "mcq",
+      "stem": "An acquirer trades at a P/E of 20x. It buys a target at a purchase P/E of 15x, paying entirely in newly issued shares. Ignoring synergies, fees and purchase accounting adjustments, what is the effect on the acquirer's EPS?",
+      "options": ["Accretive", "Dilutive", "Neutral", "Cannot be determined without the share counts"],
+      "answer": 0,
+      "timeTarget": 40,
+      "explanation": {
+        "steps": [
+          "In un deal tutto in azioni il compratore paga con azioni il cui costo implicito è il suo earnings yield: 1 / 20 = 5.0%.",
+          "Il target rende un earnings yield di 1 / 15 = 6.7% sul prezzo pagato.",
+          "Gli utili acquistati (6.7% del prezzo) superano gli utili ceduti con le nuove azioni (5.0%), quindi l'EPS sale: accretive."
+        ],
+        "shortcut": "Tutto azioni: P/E del compratore > P/E pagato per il target significa accretive. 20x > 15x.",
+        "trap": "Pensare che servano i numeri assoluti: con consideration 100% in azioni e senza sinergie il confronto tra i P/E basta.",
+        "rule": "Deal tutto in azioni: accretive se P/E del compratore > P/E di acquisto del target."
+      },
+      "tags": ["accretion-dilution", "all-stock", "pe-rule"]
+    },
+    {
+      "id": "ma-003",
+      "skill": "fin-ma",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Which of the following is a cost synergy rather than a revenue synergy?",
+      "options": [
+        "Cross-selling the target's products to the acquirer's customer base",
+        "Raising prices thanks to a stronger combined market position",
+        "Closing the target's headquarters and consolidating its functions into the acquirer's",
+        "Launching the combined product range in new geographies"
+      ],
+      "answer": 2,
+      "timeTarget": 30,
+      "explanation": {
+        "steps": [
+          "Le sinergie di costo riducono la base costi della combined entity: eliminazione di duplicazioni (sedi, funzioni corporate, IT), acquisti con più potere contrattuale, razionalizzazione degli impianti.",
+          "Cross-selling, aumento dei prezzi ed espansione geografica aumentano il fatturato: sono sinergie di ricavo.",
+          "Chiudere la sede del target elimina costi duplicati: è una sinergia di costo."
+        ],
+        "shortcut": "Chiediti se la voce riduce i costi o aumenta il fatturato: solo la chiusura della sede riduce i costi.",
+        "trap": "Considerare il pricing power una sinergia di costo perché migliora i margini: li migliora lato ricavi, non lato costi.",
+        "rule": "Sinergie di costo = eliminare duplicazioni; sono più credibili e più rapide da realizzare di quelle di ricavo."
+      },
+      "tags": ["synergies", "cost-vs-revenue"]
+    },
+    {
+      "id": "ma-004",
+      "skill": "fin-ma",
+      "level": 1,
+      "type": "mcq",
+      "stem": "In a public takeover, what does a fairness opinion delivered to the target's board typically state?",
+      "options": [
+        "That the offer price is the highest price any bidder would pay",
+        "That the transaction complies with competition law and securities regulation",
+        "That the acquirer will achieve the synergies announced to the market",
+        "That the consideration is fair, from a financial point of view, to the target's shareholders"
+      ],
+      "answer": 3,
+      "timeTarget": 40,
+      "explanation": {
+        "steps": [
+          "La fairness opinion è una lettera di un advisor finanziario, di solito una banca d'affari, indirizzata al board.",
+          "Conclude che il corrispettivo è 'fair, from a financial point of view' per gli azionisti, sulla base di analisi come DCF, trading comps, precedent transactions e premi pagati.",
+          "Non certifica che sia il prezzo massimo ottenibile, non è un parere legale e non garantisce le sinergie: aiuta il board a dimostrare di aver agito con diligenza."
+        ],
+        "shortcut": "Ricorda la formula fissa 'fair, from a financial point of view': tutto il resto è fuori perimetro.",
+        "trap": "Scegliere 'il prezzo più alto ottenibile': la fairness opinion colloca il prezzo dentro un range di valore ragionevole, non ne certifica il massimo.",
+        "rule": "Fairness opinion = giudizio finanziario sulla congruità del prezzo, a supporto della diligenza del board."
+      },
+      "tags": ["fairness-opinion", "deal-process"]
+    },
+    {
+      "id": "ma-005",
+      "skill": "fin-ma",
+      "level": 1,
+      "type": "mcq",
+      "stem": "After signing a merger agreement with Bidder A, the target's board terminates the deal to accept a superior proposal from Bidder B. Which payment is typically triggered?",
+      "options": [
+        "A break fee paid by the target to Bidder A",
+        "A reverse termination fee paid by Bidder A to the target",
+        "A ticking fee paid by Bidder B to the target's shareholders",
+        "A success fee paid by Bidder A to its own advisers"
+      ],
+      "answer": 0,
+      "timeTarget": 40,
+      "explanation": {
+        "steps": [
+          "La break fee (termination fee) è dovuta dal target al primo compratore se il target si ritira, tipicamente per accettare un'offerta superiore grazie al fiduciary out.",
+          "Compensa il compratore per tempo, costi e opportunità persa; spesso vale circa l'1-4% dell'equity value.",
+          "La reverse termination fee va nella direzione opposta: la paga il compratore se il deal salta per motivi a lui riconducibili, come mancato finanziamento o blocco regolamentare."
+        ],
+        "shortcut": "Chi si ritira paga: se si ritira il target, paga il target al compratore.",
+        "trap": "Confondere break fee e reverse termination fee: la 'reverse' la paga il compratore, non il target.",
+        "rule": "Break fee: il target paga al compratore; reverse fee: il compratore paga al target."
+      },
+      "tags": ["breakup-fee", "deal-protection"]
+    },
+    {
+      "id": "ma-006",
+      "skill": "fin-ma",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Which sequence best describes a typical two-stage sell-side auction?",
+      "options": [
+        "Teaser and NDA, binding offers, information memorandum, data room, non-binding offers, signing, closing",
+        "Teaser and NDA, non-binding offers, binding offers, data room and management presentations, closing, signing",
+        "Teaser and NDA, information memorandum, non-binding offers, data room and management presentations, binding offers, signing, closing",
+        "Information memorandum, signing, data room, non-binding offers, binding offers, closing"
+      ],
+      "answer": 2,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Fase 1: teaser anonimo, firma dell'NDA, invio dell'information memorandum e raccolta di offerte non vincolanti (indicative).",
+          "Fase 2: i bidder selezionati accedono a data room e management presentation, fanno due diligence e presentano offerte vincolanti con il markup dell'SPA.",
+          "Poi signing dell'SPA e, una volta soddisfatte le condizioni sospensive (antitrust, FDI, finanziamento), closing."
+        ],
+        "shortcut": "Due filtri: prima un'offerta indicativa con informazioni limitate, poi un'offerta vincolante dopo la due diligence. Il signing precede sempre il closing.",
+        "trap": "Mettere la data room prima delle offerte non vincolanti: l'accesso completo si concede solo ai bidder ammessi alla seconda fase.",
+        "rule": "NDA e information memorandum, offerte non vincolanti, due diligence, offerte vincolanti, signing, condizioni, closing."
+      },
+      "tags": ["deal-process", "sell-side-auction"]
+    },
+    {
+      "id": "ma-007",
+      "skill": "fin-ma",
+      "level": 1,
+      "type": "numeric",
+      "stem": "An acquirer whose shares trade at EUR 40 pays EUR 600m for a target entirely in newly issued shares. How many new shares (in millions) must it issue?",
+      "answer": 15,
+      "tolerance": 0,
+      "unit": "m shares",
+      "timeTarget": 30,
+      "explanation": {
+        "steps": [
+          "Nuove azioni = valore pagato in azioni / prezzo dell'azione del compratore.",
+          "600 / 40 = 15 milioni di nuove azioni."
+        ],
+        "shortcut": "Dividi la parte pagata in azioni per il prezzo del compratore, non per quello del target.",
+        "trap": "Usare il prezzo o il numero di azioni del target: conta solo il prezzo a cui il compratore emette.",
+        "rule": "Nuove azioni = consideration in azioni / prezzo dell'azione del compratore."
+      },
+      "tags": ["share-issuance", "all-stock"]
+    },
+    {
+      "id": "ma-008",
+      "skill": "fin-ma",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Following the announcement of an all-cash offer at EUR 50.00 per share, the target trades at EUR 47.00. What is the gross merger arbitrage spread?",
+      "options": ["6.4%", "6.0%", "3.0%", "94.0%"],
+      "answer": 0,
+      "timeTarget": 40,
+      "explanation": {
+        "steps": [
+          "Lo spread lordo è il guadagno di chi compra oggi a 47.00 e incassa 50.00 al closing: 50.00 - 47.00 = 3.00.",
+          "Il rendimento si calcola sul capitale investito, cioè sul prezzo corrente: 3.00 / 47.00 = 6.4%."
+        ],
+        "shortcut": "Prezzo offerto / prezzo corrente - 1: 50 / 47 = 1.064.",
+        "trap": "Dividere per il prezzo offerto (3 / 50 = 6.0%): la base è il prezzo che paghi oggi.",
+        "rule": "Spread lordo = (offerta - prezzo corrente) / prezzo corrente."
+      },
+      "tags": ["merger-arbitrage", "spread"]
+    },
+    {
+      "id": "ma-009",
+      "skill": "fin-ma",
+      "level": 1,
+      "type": "mcq",
+      "stem": "What is the main purpose of an earn-out in an M&A transaction?",
+      "options": [
+        "To guarantee the seller a minimum price whatever the target's performance",
+        "To protect the buyer against undisclosed liabilities found after closing",
+        "To allow the buyer to pay the whole price in shares instead of cash",
+        "To bridge a valuation gap by making part of the price contingent on the target's future performance"
+      ],
+      "answer": 3,
+      "timeTarget": 35,
+      "explanation": {
+        "steps": [
+          "Quando venditore e compratore non concordano sulle prospettive future, una parte del prezzo viene pagata solo se dopo il closing il target raggiunge obiettivi di performance, ad esempio di EBITDA o di ricavi.",
+          "Il venditore ottimista ottiene il prezzo che chiede se i numeri arrivano; il compratore paga di più solo se il valore si materializza.",
+          "La protezione contro passività non dichiarate è compito di garanzie, indemnity ed escrow, non dell'earn-out."
+        ],
+        "shortcut": "Earn-out = prezzo condizionato al futuro: serve a colmare il gap di valutazione.",
+        "trap": "Confonderlo con escrow o indemnity: proteggono il compratore da rischi del passato, mentre l'earn-out riguarda la performance futura.",
+        "rule": "Earn-out: consideration differita e condizionata ai risultati, usata per colmare il bid-ask spread sul prezzo."
+      },
+      "tags": ["earn-out", "deal-structuring"]
+    },
+    {
+      "id": "ma-010",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "numeric",
+      "stem": "Acquirer: net income EUR 400m, 200m shares outstanding, share price EUR 30. Target: net income EUR 60m, acquired for an equity value of EUR 1,200m paid entirely in new acquirer shares. Ignoring synergies, fees and purchase accounting, by what percentage does the acquirer's EPS change? Answer in %, one decimal place (negative for dilution).",
+      "answer": -4.17,
+      "tolerance": 0.1,
+      "unit": "%",
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "EPS standalone: 400 / 200 = EUR 2.00.",
+          "Nuove azioni: 1,200 / 30 = 40m; azioni pro forma 200 + 40 = 240m.",
+          "Utile pro forma: 400 + 60 = EUR 460m; EPS pro forma 460 / 240 = EUR 1.917.",
+          "Variazione: 1.917 / 2.00 - 1 = -4.2%, quindi dilutive."
+        ],
+        "shortcut": "Controllo rapido: P/E del compratore 30 / 2.00 = 15x contro P/E pagato 1,200 / 60 = 20x. Pagare con azioni un P/E più alto del proprio è sempre dilutive.",
+        "trap": "Dimenticare di aggiungere le nuove azioni al denominatore, oppure calcolare le nuove azioni con il prezzo del target.",
+        "rule": "EPS pro forma = (NI compratore + NI target) / (azioni esistenti + nuove azioni)."
+      },
+      "tags": ["accretion-dilution", "all-stock"]
+    },
+    {
+      "id": "ma-011",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "numeric",
+      "stem": "An acquirer has net income of EUR 250m and 100m shares. It buys a target with net income of EUR 40m for EUR 600m, funded entirely with new debt at 6.0% pre-tax. The tax rate is 25%. Ignoring synergies and fees, what is the EPS accretion or dilution? Answer in %, one decimal place (negative for dilution).",
+      "answer": 5.2,
+      "tolerance": 0.1,
+      "unit": "%",
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "EPS standalone: 250 / 100 = EUR 2.50.",
+          "Interessi sul nuovo debito: 600 x 6.0% = EUR 36m; al netto delle tasse 36 x (1 - 0.25) = EUR 27m.",
+          "Utile pro forma: 250 + 40 - 27 = EUR 263m, con le azioni invariate a 100m.",
+          "EPS pro forma 2.63 contro 2.50: +5.2%, accretive."
+        ],
+        "shortcut": "Confronta l'earnings yield del target (40 / 600 = 6.7%) con il costo netto del debito (6.0% x 0.75 = 4.5%): 6.7% > 4.5%, accretive.",
+        "trap": "Dedurre gli interessi lordi (36m) invece di quelli netti: si otterrebbe 254 / 100 = 2.54, cioè solo +1.6%.",
+        "rule": "Deal a debito: accretive se earnings yield del target > costo del debito x (1 - t)."
+      },
+      "tags": ["accretion-dilution", "debt-financed", "tax-shield"]
+    },
+    {
+      "id": "ma-012",
+      "skill": "fin-ma",
+      "level": 3,
+      "type": "mcq",
+      "stem": "An acquirer trades at a P/E of 16x. It buys a target at a purchase P/E of 12.5x, paying 50% with balance sheet cash that currently earns 4.0% pre-tax and 50% with new shares. The tax rate is 25%. Ignoring synergies, what is the weighted after-tax cost of the consideration, and is the deal accretive?",
+      "options": ["5.1%; accretive", "4.6%; dilutive", "4.6%; accretive", "6.3%; dilutive"],
+      "answer": 2,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Costo della cassa: interessi persi 4.0% x (1 - 0.25) = 3.0% dopo le tasse.",
+          "Costo delle azioni: earnings yield del compratore, 1 / 16 = 6.25%.",
+          "Costo medio ponderato: 50% x 3.0% + 50% x 6.25% = 4.6%.",
+          "Rendimento acquistato: earnings yield del target 1 / 12.5 = 8.0%. Poiché 8.0% > 4.6%, il deal è accretive."
+        ],
+        "shortcut": "Calcola tre yield: cassa netta (3.0%), azioni (1 / P/E = 6.25%), target (1 / P/E pagato = 8.0%). Se il target rende più del mix di finanziamento, è accretive.",
+        "trap": "Usare il rendimento della cassa al lordo delle tasse (4.0%) e ottenere un costo medio del 5.1%: qui la conclusione non cambia, ma il numero è sbagliato e in altri casi ribalta il risultato.",
+        "rule": "Accretive se 1 / P/E pagato > media pesata di costo cassa o debito x (1 - t) e di 1 / P/E del compratore."
+      },
+      "tags": ["accretion-dilution", "mixed-consideration", "earnings-yield"]
+    },
+    {
+      "id": "ma-013",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "numeric",
+      "stem": "Acquirer: net income EUR 300m, 150m shares, share price EUR 24. Target: net income EUR 45m, acquired for EUR 720m paid entirely in new acquirer shares. The tax rate is 25%. What run-rate pre-tax synergies (EUR m) are needed for the deal to be EPS-neutral?",
+      "answer": 20,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "EPS standalone: 300 / 150 = EUR 2.00.",
+          "Nuove azioni: 720 / 24 = 30m; azioni pro forma 150 + 30 = 180m.",
+          "Utile necessario per lasciare l'EPS invariato: 2.00 x 180 = EUR 360m. Senza sinergie l'utile è 300 + 45 = EUR 345m: mancano EUR 15m dopo le tasse.",
+          "Sinergie ante imposte: 15 / (1 - 0.25) = EUR 20m."
+        ],
+        "shortcut": "Utile che il target deve portare = EPS del compratore x nuove azioni = 2.00 x 30 = 60m; il target ne porta 45m, mancano 15m netti, cioè 20m lordi.",
+        "trap": "Fermarsi a 15m: quello è il fabbisogno dopo le tasse, mentre le sinergie si esprimono ante imposte.",
+        "rule": "Sinergie di breakeven ante imposte = (EPS standalone x azioni pro forma - utile pro forma) / (1 - t)."
+      },
+      "tags": ["accretion-dilution", "breakeven-synergies"]
+    },
+    {
+      "id": "ma-014",
+      "skill": "fin-ma",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A buyer pays a premium of EUR 250m over the target's standalone value. It expects run-rate cost synergies of EUR 30m a year pre-tax, in perpetuity with no growth, and one-off integration costs of EUR 40m pre-tax (tax-deductible). The tax rate is 25% and the discount rate is 10%. Is the premium covered by the net value of the synergies?",
+      "options": [
+        "No: the net value of the synergies is about EUR 195m",
+        "Yes: the synergies are worth EUR 300m",
+        "Yes: the synergies are worth EUR 260m net of integration costs",
+        "No: the net value of the synergies is about EUR 225m"
+      ],
+      "answer": 0,
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Sinergie dopo le tasse: 30 x (1 - 0.25) = EUR 22.5m l'anno.",
+          "Valore della perpetuità: 22.5 / 10% = EUR 225m.",
+          "Costi di integrazione dopo le tasse: 40 x 0.75 = EUR 30m.",
+          "Valore netto: 225 - 30 = EUR 195m, inferiore al premio di 250m: il compratore cede al venditore più valore di quanto ne crei."
+        ],
+        "shortcut": "Sinergie nette / tasso, meno costi one-off netti: 22.5 / 0.10 - 30 = 195 < 250.",
+        "trap": "Capitalizzare le sinergie ante imposte (30 / 10% = 300m) e dimenticare i costi di integrazione: è l'errore che fa sembrare sostenibile qualsiasi premio.",
+        "rule": "Premio massimo giustificabile = valore attuale delle sinergie dopo le tasse - costi di integrazione dopo le tasse."
+      },
+      "tags": ["synergies", "premium", "valuation"]
+    },
+    {
+      "id": "ma-015",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A stock-for-stock offer gives target shareholders 0.75 acquirer shares for each target share. The acquirer trades at EUR 40.00 and the target's unaffected price is EUR 24.00. What premium does the offer imply?",
+      "options": ["25%", "20%", "33%", "75%"],
+      "answer": 0,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Prezzo implicito per azione del target: 0.75 x 40.00 = EUR 30.00.",
+          "Premio sul prezzo indisturbato: 30.00 / 24.00 - 1 = 25%."
+        ],
+        "shortcut": "Exchange ratio x prezzo del compratore = offerta implicita; poi offerta / unaffected - 1.",
+        "trap": "Calcolare (30 - 24) / 30 = 20% usando il prezzo offerto come base, oppure ragionare sull'exchange ratio (1 / 0.75 = 1.33) invece che sui prezzi.",
+        "rule": "Offerta implicita = exchange ratio x prezzo dell'azione del compratore."
+      },
+      "tags": ["exchange-ratio", "premium", "stock-deal"]
+    },
+    {
+      "id": "ma-016",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "numeric",
+      "stem": "An acquirer with 300m shares outstanding buys a target with 80m shares at a fixed exchange ratio of 0.50 acquirer shares per target share. What percentage of the combined company will the target's former shareholders own? Answer in %, one decimal place.",
+      "answer": 11.76,
+      "tolerance": 0.1,
+      "unit": "%",
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Nuove azioni emesse: 80m x 0.50 = 40m.",
+          "Azioni pro forma: 300 + 40 = 340m.",
+          "Quota degli ex azionisti del target: 40 / 340 = 11.8%."
+        ],
+        "shortcut": "Nuove azioni / (vecchie + nuove): 40 / 340.",
+        "trap": "Dividere 40 per 300 (13.3%) dimenticando che il denominatore include anche le azioni appena emesse.",
+        "rule": "Ownership pro forma = nuove azioni / (azioni esistenti + nuove azioni)."
+      },
+      "tags": ["pro-forma-ownership", "exchange-ratio"]
+    },
+    {
+      "id": "ma-017",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A stock-for-stock deal is signed with a fixed exchange ratio and no collar. Before closing, the acquirer's share price falls 10% while the target's standalone prospects are unchanged. Which statement is correct?",
+      "options": [
+        "The acquirer must issue 10% more shares so that target shareholders receive the agreed value",
+        "Target shareholders receive the same number of acquirer shares, so the value they receive falls by 10%",
+        "The value received by target shareholders is unchanged, because the exchange ratio is fixed",
+        "The deal automatically converts into an all-cash transaction at the original price"
+      ],
+      "answer": 1,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Con exchange ratio fisso è fisso il numero di azioni che gli azionisti del target ricevono, non il valore.",
+          "Se il prezzo del compratore scende del 10%, il valore della consideration scende del 10%: il rischio di prezzo tra signing e closing ricade sugli azionisti del target.",
+          "Con una struttura a valore fisso (exchange ratio variabile) sarebbe invece il compratore a emettere più azioni, subendo più diluizione."
+        ],
+        "shortcut": "Fixed ratio = numero di azioni certo, valore incerto; fixed value = valore certo, numero di azioni incerto.",
+        "trap": "Pensare che 'fisso' si riferisca al valore: è il rapporto di cambio a essere fisso.",
+        "rule": "Fixed exchange ratio: rischio di prezzo sul venditore; fixed value: rischio di diluizione sul compratore."
+      },
+      "tags": ["exchange-ratio", "consideration", "stock-deal"]
+    },
+    {
+      "id": "ma-018",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A target trades at EUR 57.00 after an all-cash offer of EUR 60.00 per share. Closing is expected in 6 months and no dividends will be paid. What is the simple annualised return for an arbitrageur who buys now, if the deal closes on schedule?",
+      "options": ["5.3%", "10.0%", "10.5%", "2.6%", "21.1%"],
+      "answer": 2,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Spread lordo: (60.00 - 57.00) / 57.00 = 5.3% in 6 mesi.",
+          "Annualizzazione semplice: 5.3% x (12 / 6) = 10.5%.",
+          "Con capitalizzazione composta sarebbe 1.053^2 - 1 = 10.8%, ma la domanda chiede il rendimento semplice."
+        ],
+        "shortcut": "Spread / prezzo corrente x 12 / mesi al closing.",
+        "trap": "Usare il prezzo offerto come base (3 / 60 x 2 = 10.0%) oppure dimenticare di annualizzare (5.3%).",
+        "rule": "Rendimento annualizzato semplice = spread lordo x (12 / mesi al closing)."
+      },
+      "tags": ["merger-arbitrage", "annualisation"]
+    },
+    {
+      "id": "ma-019",
+      "skill": "fin-ma",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A target has received an all-cash offer of EUR 50.00 and trades at EUR 46.00. Analysts estimate the shares would fall back to EUR 36.00 if the deal failed. Ignoring the time value of money, what probability of completion does the market price imply?",
+      "options": ["92%", "78%", "29%", "71%"],
+      "answer": 3,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Il prezzo corrente è una media pesata dei due esiti: 46 = p x 50 + (1 - p) x 36.",
+          "46 - 36 = p x (50 - 36), cioè 10 = 14p.",
+          "p = 10 / 14 = 71%."
+        ],
+        "shortcut": "(Prezzo attuale - prezzo di fallback) / (offerta - prezzo di fallback) = 10 / 14.",
+        "trap": "Dividere 46 per 50 (92%): ignora che se il deal fallisce il titolo non va a zero ma torna a 36.",
+        "rule": "Probabilità implicita = (P attuale - P downside) / (P offerta - P downside)."
+      },
+      "tags": ["merger-arbitrage", "implied-probability"]
+    },
+    {
+      "id": "ma-020",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Which situation most favours paying for an acquisition with stock rather than cash?",
+      "options": [
+        "The acquirer has large excess cash earning a low return and unused debt capacity",
+        "The acquirer's management believes its own shares are undervalued by the market",
+        "The target's shareholders want certainty of value and immediate liquidity",
+        "The acquirer believes its shares are richly valued and the synergies are uncertain, so it wants target shareholders to share the risk"
+      ],
+      "answer": 3,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Pagare in azioni significa usare il proprio titolo come moneta: conviene quando la moneta è cara, cioè quando il compratore ritiene il suo titolo sopravvalutato.",
+          "Con le azioni gli azionisti del target diventano soci della combined entity e condividono il rischio che le sinergie non arrivino.",
+          "Cassa in eccesso, azioni sottovalutate e un venditore che vuole certezza e liquidità spingono invece verso il pagamento cash."
+        ],
+        "shortcut": "Azioni care o deal rischioso: paga in azioni. Azioni a sconto, cassa disponibile, venditore che vuole certezza: paga cash.",
+        "trap": "Scegliere l'opzione delle azioni sottovalutate: emettere azioni a sconto trasferisce valore ai venditori, quindi in quel caso si preferisce la cassa.",
+        "rule": "La scelta tra cash e azioni dipende da valutazione relativa, condivisione del rischio, capacità di debito e preferenze del venditore."
+      },
+      "tags": ["consideration", "stock-vs-cash", "signalling"]
+    },
+    {
+      "id": "ma-021",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "numeric",
+      "stem": "A buyer acquires a software business for EUR 200m upfront plus an earn-out equal to 3.0x the amount by which year-2 EBITDA exceeds EUR 30m, capped at EUR 60m. Year-2 EBITDA comes in at EUR 42m. Ignoring discounting, what is the total consideration paid (EUR m)?",
+      "answer": 236,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Eccedenza di EBITDA rispetto alla soglia: 42 - 30 = EUR 12m.",
+          "Earn-out: 3.0 x 12 = EUR 36m, sotto il cap di 60m, quindi pagato per intero.",
+          "Consideration totale: 200 + 36 = EUR 236m."
+        ],
+        "shortcut": "Prima l'eccedenza sopra la soglia, poi il multiplo, infine il controllo del cap.",
+        "trap": "Applicare il multiplo all'intero EBITDA (3.0 x 42 = 126m, tagliato a 60m) e rispondere 260m: l'earn-out remunera solo la parte sopra la soglia.",
+        "rule": "Earn-out = min(cap, multiplo x (metrica effettiva - soglia)), se positivo."
+      },
+      "tags": ["earn-out", "contingent-consideration"]
+    },
+    {
+      "id": "ma-022",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A buyer pays EUR 500m for 100% of a target's equity. The target's book net assets are EUR 280m and the fair value write-up of its identifiable net assets is EUR 40m. Ignoring deferred taxes, how much goodwill is created?",
+      "options": ["EUR 220m", "EUR 180m", "EUR 140m", "EUR 500m"],
+      "answer": 1,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Fair value delle attività nette identificabili: 280 + 40 = EUR 320m.",
+          "Goodwill = prezzo pagato - fair value delle attività nette identificabili: 500 - 320 = EUR 180m."
+        ],
+        "shortcut": "Prezzo - (book value + write-up): 500 - 320.",
+        "trap": "Sottrarre solo il book value (500 - 280 = 220m) dimenticando il write-up, oppure sottrarre il write-up due volte (140m).",
+        "rule": "Goodwill = equity purchase price - fair value delle attività nette identificabili."
+      },
+      "tags": ["goodwill", "purchase-accounting"]
+    },
+    {
+      "id": "ma-023",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A deal is 5% EPS-accretive in year 1. Why might it still destroy value for the acquirer's shareholders?",
+      "options": [
+        "Because accretion is only measured on a pre-tax basis",
+        "Because accretion can come from cheap financing or a low target P/E, while the price paid may still exceed the target's standalone value plus net synergies",
+        "Because accretive deals always increase the acquirer's cost of equity",
+        "Because EPS accretion is incompatible with paying a control premium"
+      ],
+      "answer": 1,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "L'accretion confronta il rendimento degli utili acquistati con il costo contabile del finanziamento: interessi netti o earnings yield delle azioni emesse.",
+          "Il debito costa poco in termini contabili ma aumenta rischio e costo del capitale: l'EPS non misura il valore.",
+          "Si crea valore solo se il prezzo pagato è inferiore al valore standalone più le sinergie nette: un deal può essere accretive e allo stesso tempo strapagato."
+        ],
+        "shortcut": "Accretion = test contabile; creazione di valore = prezzo contro valore intrinseco più sinergie.",
+        "trap": "Pensare che accretive significhi automaticamente buon deal: è proprio il fraintendimento che gli intervistatori vogliono smascherare.",
+        "rule": "Accretive non vuol dire value-creating: guarda prezzo contro valore, non solo l'EPS."
+      },
+      "tags": ["accretion-dilution", "value-creation"]
+    },
+    {
+      "id": "ma-024",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "mcq",
+      "stem": "In a two-stage sell-side auction, when do bidders typically receive full virtual data room access and a management presentation?",
+      "options": [
+        "Before signing the NDA, to decide whether to participate",
+        "Together with the teaser, to speed up the process",
+        "After signing the SPA, during the period before closing",
+        "After submitting non-binding offers, during phase two ahead of binding offers"
+      ],
+      "answer": 3,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Nella prima fase i bidder ricevono solo teaser, NDA e information memorandum e presentano offerte non vincolanti.",
+          "Il venditore seleziona una short list e solo a questa concede data room completa, management presentation, site visit e sessioni di Q&A.",
+          "Su questa base i bidder completano la due diligence e presentano offerte vincolanti con il markup dell'SPA."
+        ],
+        "shortcut": "Informazioni sensibili solo ai bidder seri, cioè dopo il primo filtro delle offerte non vincolanti.",
+        "trap": "Pensare che la due diligence avvenga dopo il signing: dopo il signing si lavora sulle condizioni al closing, non si valuta più il deal.",
+        "rule": "Fase 1: information memorandum e offerte indicative; fase 2: data room, management presentation e offerte vincolanti."
+      },
+      "tags": ["deal-process", "due-diligence"]
+    },
+    {
+      "id": "ma-025",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "numeric",
+      "stem": "An acquirer offers EUR 15.00 per share for a target with 100m diluted shares and EUR 300m of net debt. The target's LTM EBITDA is EUR 150m. What is the implied EV/EBITDA multiple of the offer (x, one decimal place)?",
+      "answer": 12.0,
+      "tolerance": 0.05,
+      "unit": "x",
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Equity value dell'offerta: 15.00 x 100m = EUR 1,500m.",
+          "Enterprise value: 1,500 + 300 di debito netto = EUR 1,800m.",
+          "Multiplo: 1,800 / 150 = 12.0x."
+        ],
+        "shortcut": "Prezzo x azioni diluite + debito netto, poi diviso EBITDA.",
+        "trap": "Dividere l'equity value per l'EBITDA (1,500 / 150 = 10.0x): l'EBITDA va confrontato con l'enterprise value, che include il debito.",
+        "rule": "Purchase EV = offerta per azione x azioni diluite + debito netto."
+      },
+      "tags": ["purchase-price", "ev-ebitda"]
+    },
+    {
+      "id": "ma-026",
+      "skill": "fin-ma",
+      "level": 3,
+      "type": "numeric",
+      "stem": "Acquirer: net income EUR 500m, 250m shares, share price EUR 40. Target: net income EUR 80m, acquired for an equity value of EUR 1,600m, paid 50% in cash funded by new debt at 6.0% pre-tax and 50% in new acquirer shares. Expected run-rate pre-tax synergies are EUR 40m. The tax rate is 25%. What is the EPS accretion or dilution? Answer in %, one decimal place (negative for dilution).",
+      "answer": 6.3,
+      "tolerance": 0.1,
+      "unit": "%",
+      "timeTarget": 150,
+      "explanation": {
+        "steps": [
+          "EPS standalone: 500 / 250 = EUR 2.00.",
+          "Parte cash: 800m di nuovo debito, interessi 800 x 6.0% = EUR 48m, netti 48 x 0.75 = EUR 36m.",
+          "Parte in azioni: 800 / 40 = 20m nuove azioni, per un totale di 270m.",
+          "Sinergie nette: 40 x 0.75 = EUR 30m. Utile pro forma: 500 + 80 + 30 - 36 = EUR 574m.",
+          "EPS pro forma: 574 / 270 = EUR 2.126; variazione 2.126 / 2.00 - 1 = +6.3%."
+        ],
+        "shortcut": "Ragiona per rapporti: utile +14.8% (574 / 500 = 1.148), azioni +8% (270 / 250 = 1.08); 1.148 / 1.08 = 1.063.",
+        "trap": "Dimenticare l'effetto fiscale su interessi e sinergie, oppure calcolare le nuove azioni sull'intero prezzo (40m) invece che sulla sola metà pagata in azioni.",
+        "rule": "Utile pro forma = NI compratore + NI target + (sinergie - interessi) x (1 - t); azioni = esistenti + parte in azioni / prezzo."
+      },
+      "tags": ["accretion-dilution", "mixed-consideration", "synergies"]
+    },
+    {
+      "id": "ma-027",
+      "skill": "fin-ma",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A stock-for-stock merger has an exchange ratio of 0.50 while the acquirer's share price stays between EUR 36 and EUR 44. Below EUR 36, the ratio floats so that target shareholders receive a fixed value of EUR 18 per share; above EUR 44, they receive a fixed value of EUR 22. At closing the acquirer trades at EUR 32. How many acquirer shares does each target share receive?",
+      "options": ["0.5000", "0.6875", "0.5625", "0.4444"],
+      "answer": 2,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "A EUR 32 il prezzo è sotto il floor del collar (36), quindi il ratio fisso di 0.50 non si applica più.",
+          "Sotto il floor gli azionisti del target ricevono un valore fisso di EUR 18 per azione, pari a 0.50 x 36.",
+          "Exchange ratio: 18 / 32 = 0.5625 azioni del compratore per ogni azione del target."
+        ],
+        "shortcut": "Fuori dal collar: valore protetto / prezzo attuale del compratore, qui 18 / 32.",
+        "trap": "Usare il valore del cap (22 / 32 = 0.6875) invece di quello del floor, oppure lasciare 0.50 ignorando il collar.",
+        "rule": "Dentro il collar ratio fisso; fuori dal collar valore fisso, quindi ratio = valore garantito / prezzo del compratore."
+      },
+      "tags": ["collar", "exchange-ratio", "stock-deal"]
+    },
+    {
+      "id": "ma-028",
+      "skill": "fin-ma",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A buyer agrees to acquire a European semiconductor company. The deal needs several antitrust clearances and foreign investment approvals, which could take 12 to 18 months. The seller fears being tied up for a long period and then seeing the deal blocked. Which package best addresses the seller's concern?",
+      "options": [
+        "A larger break fee payable by the target if its board changes its recommendation",
+        "A reverse termination fee payable by the buyer if regulatory approvals are not obtained, a strong regulatory efforts covenant and a defined long-stop date",
+        "A broad material adverse change clause in the buyer's favour",
+        "An earn-out based on the target's revenue in the two years after closing"
+      ],
+      "answer": 1,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Il rischio del venditore è regolamentare e di tempo: un business congelato per mesi può perdere clienti, dipendenti e valore.",
+          "La reverse termination fee compensa il venditore se l'approvazione non arriva e incentiva il compratore a gestire con impegno il processo regolamentare.",
+          "Un efforts covenant forte (fino al 'hell or high water', cioè accettare rimedi come cessioni di asset) e una long-stop date chiara limitano rischio e durata dell'incertezza.",
+          "Break fee del target e clausola MAC proteggono il compratore; l'earn-out riguarda il prezzo, non il rischio di esecuzione."
+        ],
+        "shortcut": "Chiediti chi va protetto: il venditore vuole che il compratore paghi un costo se il deal salta per motivi regolamentari.",
+        "trap": "Scegliere la break fee: la paga il target e protegge il compratore, cioè l'opposto di ciò che serve.",
+        "rule": "Rischio regolamentare a carico del venditore: reverse termination fee, efforts covenant e long-stop date."
+      },
+      "tags": ["reverse-termination-fee", "regulatory-risk", "deal-protection"]
+    },
+    {
+      "id": "ma-029",
+      "skill": "fin-ma",
+      "level": 3,
+      "type": "numeric",
+      "stem": "A target has 100m shares trading at an unaffected price of EUR 30. The buyer expects run-rate cost synergies of EUR 60m pre-tax in year 1, growing at 2% a year thereafter, and one-off integration costs of EUR 70m pre-tax (tax-deductible, incurred now). The tax rate is 25% and the discount rate is 8%. What is the maximum premium (%) the buyer can pay before giving away all the synergy value? Answer to one decimal place.",
+      "answer": 23.25,
+      "tolerance": 0.15,
+      "unit": "%",
+      "timeTarget": 150,
+      "explanation": {
+        "steps": [
+          "Sinergie dopo le tasse: 60 x 0.75 = EUR 45m nell'anno 1.",
+          "Valore con crescita perpetua: 45 / (8% - 2%) = EUR 750m.",
+          "Costi di integrazione dopo le tasse: 70 x 0.75 = EUR 52.5m; valore netto 750 - 52.5 = EUR 697.5m.",
+          "Market cap indisturbata: 100 x 30 = EUR 3,000m. Premio massimo: 697.5 / 3,000 = 23.3%, cioè circa EUR 36.98 per azione."
+        ],
+        "shortcut": "Premio massimo % = valore netto delle sinergie / market cap indisturbata.",
+        "trap": "Capitalizzare le sinergie ante imposte e ignorare i costi (60 / 6% = 1,000m, premio 33.3%) oppure dimenticare solo i costi di integrazione (750 / 3,000 = 25.0%).",
+        "rule": "Premio massimo = sinergie x (1 - t) / (r - g) - costi di integrazione x (1 - t)."
+      },
+      "tags": ["synergies", "premium", "gordon-growth"]
+    },
+    {
+      "id": "ma-030",
+      "skill": "fin-ma",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A stock-for-stock offer gives 0.80 acquirer shares for each target share. The acquirer trades at EUR 50.00 and the target at EUR 37.00. Which position locks in the deal spread, and what is the gross spread?",
+      "options": [
+        "Long 1 target share, short 1 acquirer share; 8.1%",
+        "Long 1 target share, short 0.8 acquirer shares; 7.5%",
+        "Short 1 target share, long 0.8 acquirer shares; 8.1%",
+        "Long 1 target share, short 0.8 acquirer shares; 8.1%"
+      ],
+      "answer": 3,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Valore implicito dell'offerta: 0.80 x 50.00 = EUR 40.00 per azione del target.",
+          "Spread lordo: (40.00 - 37.00) / 37.00 = 8.1%.",
+          "Per bloccarlo l'arbitraggista compra 1 azione del target e vende allo scoperto 0.80 azioni del compratore: al closing usa le azioni ricevute per chiudere lo short, e il rischio di prezzo del compratore è neutralizzato."
+        ],
+        "shortcut": "Long target, short (exchange ratio x 1) azioni del compratore; spread calcolato sul prezzo del target.",
+        "trap": "Calcolare lo spread sul valore dell'offerta (3 / 40 = 7.5%) o vendere allo scoperto 1 azione intera del compratore, lasciando una posizione sbilanciata.",
+        "rule": "Stock deal: long 1 target, short ratio di cambio in azioni del compratore; spread = (ratio x P compratore - P target) / P target."
+      },
+      "tags": ["merger-arbitrage", "stock-deal", "hedging"]
+    },
+    {
+      "id": "lbo-001",
+      "skill": "fin-lbo",
+      "level": 1,
+      "type": "mcq",
+      "stem": "A private equity fund doubles its money (2.0x MoM) over 5 years with no interim distributions. What is the approximate IRR?",
+      "options": ["10%", "15%", "20%", "26%"],
+      "answer": 1,
+      "timeTarget": 25,
+      "explanation": {
+        "steps": [
+          "IRR = MoM^(1/n) - 1 = 2.0^(1/5) - 1.",
+          "2.0^(0.2) = 1.149, quindi IRR circa 15%."
+        ],
+        "shortcut": "Regola del 72: per raddoppiare in 5 anni serve circa 72 / 5 = 14.4%, quindi circa 15%.",
+        "trap": "Dividere il guadagno del 100% per 5 anni (20%): così si ignora la capitalizzazione composta.",
+        "rule": "2x in 5 anni circa 15%; 2x in 3 anni circa 26%; 2.5x in 5 anni circa 20%; 3x in 5 anni circa 25%."
+      },
+      "tags": ["irr", "mom", "rule-of-thumb"]
+    },
+    {
+      "id": "lbo-002",
+      "skill": "fin-lbo",
+      "level": 1,
+      "type": "mcq",
+      "stem": "A sponsor turns EUR 100m of equity into EUR 200m in 3 years, with no interim cash flows. What is the approximate IRR?",
+      "options": ["33%", "15%", "20%", "26%"],
+      "answer": 3,
+      "timeTarget": 25,
+      "explanation": {
+        "steps": [
+          "IRR = 2.0^(1/3) - 1.",
+          "2.0^(1/3) = 1.26, quindi IRR circa 26%.",
+          "Verifica: 1.26 x 1.26 x 1.26 = circa 2.0."
+        ],
+        "shortcut": "Regola del 72: 72 / 3 = 24%; la regola sottostima per tassi alti, quindi arrotonda a circa 26%.",
+        "trap": "100% / 3 anni = 33%: è un rendimento semplice, non composto.",
+        "rule": "IRR = MoM^(1/anni) - 1; a parità di MoM, meno anni significa IRR più alto."
+      },
+      "tags": ["irr", "mom", "rule-of-thumb"]
+    },
+    {
+      "id": "lbo-003",
+      "skill": "fin-lbo",
+      "level": 1,
+      "type": "numeric",
+      "stem": "A sponsor invests EUR 300m of equity and receives EUR 900m of equity proceeds at exit, with no interim distributions. What is the MoM (x)?",
+      "answer": 3.0,
+      "tolerance": 0.05,
+      "unit": "x",
+      "timeTarget": 20,
+      "explanation": {
+        "steps": [
+          "MoM = distribuzioni totali / equity investita.",
+          "900 / 300 = 3.0x."
+        ],
+        "shortcut": "Proventi totali diviso equity iniziale, senza sottrarre nulla.",
+        "trap": "Calcolare (900 - 300) / 300 = 2.0x: quello è il profitto in rapporto al capitale, non il multiplo del capitale.",
+        "rule": "MoM = totale incassato / totale investito."
+      },
+      "tags": ["mom"]
+    },
+    {
+      "id": "lbo-004",
+      "skill": "fin-lbo",
+      "level": 1,
+      "type": "mcq",
+      "stem": "In an LBO sources and uses table, which item is a use of funds?",
+      "options": ["Senior term loan", "Refinancing of the target's existing debt", "Sponsor equity contribution", "Management rollover equity"],
+      "answer": 1,
+      "timeTarget": 30,
+      "explanation": {
+        "steps": [
+          "Le sources indicano da dove arrivano i soldi: debito nuovo (term loan, bond), equity dello sponsor, rollover del management.",
+          "Gli uses indicano dove vanno: acquisto dell'equity del target, rimborso del debito esistente, fee di transazione e di finanziamento.",
+          "Il rifinanziamento del debito esistente è quindi un use."
+        ],
+        "shortcut": "Uses = cosa paghi (prezzo, debito da rimborsare, fee); sources = chi ti dà i soldi.",
+        "trap": "Classificare il rollover del management come use: è equity reinvestita nel deal, quindi una source.",
+        "rule": "Sources = uses: debito + equity sponsor + rollover = equity del target + rifinanziamento + fee."
+      },
+      "tags": ["sources-and-uses"]
+    },
+    {
+      "id": "lbo-005",
+      "skill": "fin-lbo",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Which company profile is the most suitable LBO candidate?",
+      "options": [
+        "A pre-revenue biotech with high R&D spending",
+        "A cyclical steelmaker with heavy capex and volatile margins",
+        "A fast-growing software start-up burning cash to gain market share",
+        "A mature business services company with stable margins, low capex and recurring revenue"
+      ],
+      "answer": 3,
+      "timeTarget": 30,
+      "explanation": {
+        "steps": [
+          "Un LBO si regge sul debito, che va servito e rimborsato con il free cash flow.",
+          "Servono quindi flussi stabili e prevedibili, bassa intensità di capex e una posizione di mercato solida.",
+          "Biotech pre-ricavi e start-up che bruciano cassa non generano FCF; un business ciclico ad alto capex rischia di non servire il debito nella fase bassa del ciclo."
+        ],
+        "shortcut": "Cerca 'stable cash flow, low capex, recurring revenue': è quasi sempre la risposta.",
+        "trap": "Scegliere la crescita più alta: senza cassa la crescita non ripaga il debito, ed è il caso tipico del growth equity, non dell'LBO.",
+        "rule": "Buon target LBO: FCF stabile, capex basso, posizione difendibile, poca leva esistente, margini migliorabili."
+      },
+      "tags": ["lbo-candidate"]
+    },
+    {
+      "id": "lbo-006",
+      "skill": "fin-lbo",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Which of the following is NOT one of the three classic value creation levers in an LBO?",
+      "options": ["EBITDA growth", "Paying a higher entry multiple", "Multiple expansion", "Debt paydown (deleveraging)"],
+      "answer": 1,
+      "timeTarget": 30,
+      "explanation": {
+        "steps": [
+          "Le tre leve classiche sono: crescita dell'EBITDA, espansione del multiplo tra ingresso e uscita, rimborso del debito con il free cash flow.",
+          "Un multiplo d'ingresso più alto aumenta l'equity investita e, a parità di uscita, riduce MoM e IRR.",
+          "È quindi l'opposto di una leva di creazione di valore."
+        ],
+        "shortcut": "Tutto ciò che aumenta il prezzo pagato abbassa i rendimenti.",
+        "trap": "Confondere un multiplo d'ingresso alto con il multiple expansion: il valore si crea quando il multiplo d'uscita supera quello d'ingresso.",
+        "rule": "Rendimenti LBO = crescita EBITDA + variazione del multiplo + deleveraging, al netto di fee e costi."
+      },
+      "tags": ["returns-drivers"]
+    },
+    {
+      "id": "lbo-007",
+      "skill": "fin-lbo",
+      "level": 2,
+      "type": "numeric",
+      "stem": "A sponsor buys a company with EBITDA of EUR 80m at 9.0x EV/EBITDA. Transaction fees are EUR 20m and the debt package is 5.0x EBITDA. The EV already includes the refinancing of existing debt and there is no rollover. How much sponsor equity (EUR m) is required?",
+      "answer": 340,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "EV d'ingresso: 80 x 9.0 = EUR 720m.",
+          "Uses totali: 720 + 20 di fee = EUR 740m.",
+          "Debito: 80 x 5.0 = EUR 400m.",
+          "Equity dello sponsor: 740 - 400 = EUR 340m, circa il 46% delle sources."
+        ],
+        "shortcut": "Equity = (multiplo d'ingresso - leva) x EBITDA + fee = (9.0 - 5.0) x 80 + 20.",
+        "trap": "Dimenticare le fee (risposta 320m): sono un use e vanno finanziate, di solito con equity.",
+        "rule": "Sponsor equity = uses (EV + fee) - debito - rollover."
+      },
+      "tags": ["sources-and-uses", "sponsor-equity"]
+    },
+    {
+      "id": "lbo-008",
+      "skill": "fin-lbo",
+      "level": 2,
+      "type": "numeric",
+      "stem": "A sponsor earns a 3.0x MoM over 4 years with no interim cash flows. What is the IRR? Answer in %, one decimal place.",
+      "answer": 31.6,
+      "tolerance": 0.3,
+      "unit": "%",
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "IRR = 3.0^(1/4) - 1.",
+          "Elevare a 1/4 equivale a due radici quadrate: radice di 3.0 = 1.732, radice di 1.732 = 1.316.",
+          "IRR circa 31.6%."
+        ],
+        "shortcut": "Radice quadrata due volte: 3.0, poi 1.732, poi 1.316.",
+        "trap": "Calcolare (3.0 - 1) / 4 = 50% come rendimento semplice, oppure usare il benchmark '3x in 5 anni = 25%' senza aggiustare per il periodo più breve.",
+        "rule": "Esponente 1/4 = due radici quadrate; per 1/5 usa i benchmark (2x 15%, 2.5x 20%, 3x 25%)."
+      },
+      "tags": ["irr", "mom"]
+    },
+    {
+      "id": "lbo-009",
+      "skill": "fin-lbo",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A portfolio company has EBITDA of EUR 100m, D&A of EUR 20m, capex of EUR 20m, interest expense of EUR 30m and no change in working capital. The tax rate is 25%. How much free cash flow (EUR m) is available to repay debt?",
+      "options": ["57.5", "50.0", "37.5", "60.0"],
+      "answer": 2,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "EBIT: 100 - 20 = EUR 80m; utile ante imposte: 80 - 30 = EUR 50m.",
+          "Utile netto: 50 x (1 - 0.25) = EUR 37.5m.",
+          "FCF = utile netto + D&A - capex - variazione NWC = 37.5 + 20 - 20 - 0 = EUR 37.5m."
+        ],
+        "shortcut": "Se D&A = capex, FCF = (EBITDA - D&A - interessi) x (1 - t) = 50 x 0.75.",
+        "trap": "Riaggiungere la D&A senza togliere il capex (57.5m), dimenticare le tasse (50.0m) o ignorare del tutto gli interessi, calcolando il FCF unlevered (60.0m).",
+        "rule": "FCF disponibile per il rimborso = net income + D&A - capex - aumento del NWC."
+      },
+      "tags": ["fcf", "debt-paydown"]
+    },
+    {
+      "id": "lbo-010",
+      "skill": "fin-lbo",
+      "level": 2,
+      "type": "numeric",
+      "stem": "A sponsor bought a company with EBITDA of EUR 100m at 9.0x, funded with EUR 540m of debt and EUR 360m of equity (no fees). After 5 years EBITDA is EUR 130m, the exit multiple is 9.0x and net debt has fallen to EUR 450m. What is the sponsor's MoM (x)?",
+      "answer": 2.0,
+      "tolerance": 0.05,
+      "unit": "x",
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "EV di uscita: 130 x 9.0 = EUR 1,170m.",
+          "Equity di uscita: 1,170 - 450 = EUR 720m.",
+          "MoM: 720 / 360 = 2.0x, cioè un IRR di circa il 15% in 5 anni."
+        ],
+        "shortcut": "Equity di uscita = EBITDA x multiplo - debito netto residuo, poi diviso l'equity iniziale.",
+        "trap": "Dividere l'EV di uscita per l'equity iniziale (1,170 / 360 = 3.25x) dimenticando di sottrarre il debito.",
+        "rule": "MoM = (EV di uscita - debito netto all'uscita) / equity d'ingresso."
+      },
+      "tags": ["mom", "exit-equity"]
+    },
+    {
+      "id": "lbo-011",
+      "skill": "fin-lbo",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Deal A returns 2.0x in 3 years. Deal B returns 2.5x in 6 years. Neither has interim cash flows. Which statement is correct?",
+      "options": [
+        "Deal B has the higher IRR because it has the higher MoM",
+        "Both deals have an IRR of roughly 20%",
+        "Deal A has the higher IRR, about 26% versus about 16.5% for Deal B",
+        "Deal A has the higher IRR, about 33% versus about 25% for Deal B"
+      ],
+      "answer": 2,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Deal A: 2.0^(1/3) - 1 = circa 26%.",
+          "Deal B: 2.5^(1/5) = 1.20, quindi su 6 anni il tasso è più basso: 2.5^(1/6) = circa 1.165, cioè 16.5%.",
+          "A ha un MoM più basso ma un IRR molto più alto perché restituisce il capitale in metà del tempo."
+        ],
+        "shortcut": "Usa i benchmark: 2x in 3 anni = 26%; 2.5x in 5 anni = 20%, quindi in 6 anni meno del 20%.",
+        "trap": "Guardare solo il MoM (B sembra migliore) o usare rendimenti semplici: 100% / 3 = 33% e 150% / 6 = 25%.",
+        "rule": "L'IRR premia la velocità, il MoM premia la quantità: un investitore guarda entrambi."
+      },
+      "tags": ["irr", "mom", "holding-period"]
+    },
+    {
+      "id": "lbo-012",
+      "skill": "fin-lbo",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Two years into a five-year hold, a sponsor raises new debt to pay itself a dividend equal to 40% of its initial equity. Compared with no recap, what is the most likely effect on the sponsor's returns?",
+      "options": [
+        "IRR rises because cash is returned earlier; MoM stays roughly flat or falls slightly, because the extra debt and its interest cost reduce exit equity",
+        "IRR falls because higher leverage always reduces equity returns",
+        "MoM rises sharply but IRR is unchanged, because IRR ignores interim cash flows",
+        "Neither IRR nor MoM changes, because the dividend is only a transfer of value"
+      ],
+      "answer": 0,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Il dividendo restituisce cassa allo sponsor già nell'anno 2: nell'IRR i flussi anticipati pesano di più, quindi l'IRR sale.",
+          "Il nuovo debito genera interessi e va rimborsato all'uscita: l'equity di uscita si riduce del debito aggiuntivo più gli interessi netti pagati.",
+          "Il totale incassato (dividendo + equity di uscita) resta circa uguale e di solito scende leggermente per il costo degli interessi: il MoM è piatto o un po' più basso, mentre l'IRR sale."
+        ],
+        "shortcut": "Cassa prima = IRR su; il dividendo torna come debito extra all'uscita, più gli interessi = MoM piatto o in leggero calo.",
+        "trap": "Pensare che l'IRR ignori i flussi intermedi: è proprio il calcolo che li valorizza in base al momento in cui arrivano.",
+        "rule": "Dividend recap: alza l'IRR, lascia il MoM circa invariato o lo riduce leggermente e aumenta il rischio finanziario."
+      },
+      "tags": ["dividend-recap", "irr", "mom"]
+    },
+    {
+      "id": "lbo-013",
+      "skill": "fin-lbo",
+      "level": 2,
+      "type": "numeric",
+      "stem": "An LBO is financed with EUR 400m of debt at 8.0% interest, calculated on the opening balance. In year 1, EBITDA is EUR 100m, D&A and capex are both EUR 15m, there is no change in working capital and the tax rate is 25%. All free cash flow is used to repay debt. What is the debt balance (EUR m) at the end of year 1?",
+      "answer": 360.25,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Interessi: 400 x 8.0% = EUR 32m.",
+          "Utile ante imposte: 100 - 15 - 32 = EUR 53m; utile netto: 53 x 0.75 = EUR 39.75m.",
+          "FCF: 39.75 + 15 - 15 = EUR 39.75m, interamente usato per rimborsare il debito.",
+          "Debito a fine anno: 400 - 39.75 = EUR 360.25m."
+        ],
+        "shortcut": "Con D&A = capex: FCF = (EBITDA - D&A - interessi) x (1 - t) = 53 x 0.75.",
+        "trap": "Calcolare il FCF senza tasse (53m, debito 347m) o senza dedurre gli interessi (63.75m, debito 336.25m).",
+        "rule": "Debito di fine anno = debito di inizio anno - FCF dopo interessi e tasse (cash sweep al 100%)."
+      },
+      "tags": ["debt-paydown", "cash-sweep", "fcf"]
+    },
+    {
+      "id": "lbo-014",
+      "skill": "fin-lbo",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A sponsor buys a company with EBITDA of EUR 100m at 10.0x, with EUR 600m of debt and EUR 400m of equity. Five years later it exits at 10.0x on EBITDA of EUR 140m, with net debt of EUR 350m. Approximately what share of the equity value gain comes from debt paydown?",
+      "options": ["62%", "25%", "38%", "42%"],
+      "answer": 2,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Equity di uscita: 140 x 10.0 - 350 = 1,400 - 350 = EUR 1,050m; guadagno 1,050 - 400 = EUR 650m.",
+          "Crescita EBITDA: (140 - 100) x 10.0 = EUR 400m; variazione del multiplo: zero.",
+          "Deleveraging: 600 - 350 = EUR 250m.",
+          "Quota del deleveraging: 250 / 650 = circa 38%; il restante 62% viene dalla crescita dell'EBITDA."
+        ],
+        "shortcut": "Debito rimborsato / guadagno totale di equity: 250 / 650.",
+        "trap": "Scegliere 62%, che è la quota della crescita EBITDA, oppure dividere 250 per l'EV d'ingresso (25%) o per il debito iniziale (42%).",
+        "rule": "Guadagno di equity = crescita EBITDA x multiplo + variazione del multiplo x EBITDA di uscita + riduzione del debito netto."
+      },
+      "tags": ["returns-attribution", "deleveraging"]
+    },
+    {
+      "id": "lbo-015",
+      "skill": "fin-lbo",
+      "level": 3,
+      "type": "numeric",
+      "stem": "A sponsor buys a company at 8.0x EBITDA of EUR 50m and sells it at 9.0x EBITDA of EUR 70m. Using the convention that EBITDA growth is valued at the entry multiple and the change in multiple is applied to exit EBITDA, how much of the increase in enterprise value (EUR m) comes from multiple expansion?",
+      "answer": 70,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "EV d'ingresso: 50 x 8.0 = EUR 400m; EV d'uscita: 70 x 9.0 = EUR 630m; aumento EUR 230m.",
+          "Crescita EBITDA al multiplo d'ingresso: (70 - 50) x 8.0 = EUR 160m.",
+          "Multiple expansion sull'EBITDA d'uscita: (9.0 - 8.0) x 70 = EUR 70m.",
+          "Controllo: 160 + 70 = 230."
+        ],
+        "shortcut": "Variazione del multiplo x EBITDA di uscita: 1.0 x 70.",
+        "trap": "Applicare la variazione del multiplo all'EBITDA d'ingresso (1.0 x 50 = 50m): con questa convenzione l'effetto incrociato (20 x 1.0) finisce nel multiple expansion.",
+        "rule": "Delta EV = delta EBITDA x multiplo d'ingresso + delta multiplo x EBITDA d'uscita."
+      },
+      "tags": ["returns-attribution", "multiple-expansion"]
+    },
+    {
+      "id": "lbo-016",
+      "skill": "fin-lbo",
+      "level": 2,
+      "type": "mcq",
+      "stem": "All else equal, which change increases the sponsor's IRR in an LBO?",
+      "options": [
+        "More debt at entry, provided the after-tax cost of debt is below the return on the business",
+        "Higher transaction fees funded with equity",
+        "A longer holding period with the same MoM",
+        "A higher entry multiple with the same exit value"
+      ],
+      "answer": 0,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Fee più alte e multiplo d'ingresso più alto aumentano l'equity investita a parità di uscita: MoM e IRR scendono.",
+          "Lo stesso MoM ottenuto in più anni significa un IRR più basso.",
+          "Più debito riduce l'equity iniziale; se il business rende più del costo netto del debito, il rendimento in eccesso va all'equity e l'IRR sale, con più rischio."
+        ],
+        "shortcut": "La leva aiuta solo se il rendimento degli asset supera il costo del debito: è la condizione da cercare nelle opzioni.",
+        "trap": "Pensare che un holding period più lungo aiuti sempre: a parità di MoM abbassa l'IRR.",
+        "rule": "IRR su con meno equity, uscita più alta o anticipata e leva conveniente; IRR giù con fee e prezzi d'ingresso alti."
+      },
+      "tags": ["leverage", "irr", "returns-drivers"]
+    },
+    {
+      "id": "lbo-017",
+      "skill": "fin-lbo",
+      "level": 3,
+      "type": "numeric",
+      "stem": "A sponsor targets a 20% IRR over a 5-year hold and projects exit equity proceeds of EUR 1,000m. The debt package is fixed at EUR 500m and fees are EUR 20m. The company's EBITDA is EUR 100m. What is the maximum entry EV/EBITDA multiple the sponsor can pay (x, one decimal place)?",
+      "answer": 8.8,
+      "tolerance": 0.1,
+      "unit": "x",
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "MoM richiesto per il 20% in 5 anni: 1.2^5 = 2.49x, circa 2.5x.",
+          "Equity massima investibile oggi: 1,000 / 2.49 = EUR 402m.",
+          "EV massimo: equity + debito - fee = 402 + 500 - 20 = EUR 882m.",
+          "Multiplo massimo: 882 / 100 = 8.8x."
+        ],
+        "shortcut": "Usa 2.5x per il 20% in 5 anni: 1,000 / 2.5 = 400; 400 + 500 - 20 = 880, cioè 8.8x.",
+        "trap": "Aggiungere le fee all'EV invece di sottrarle (circa 9.2x): le fee consumano equity e riducono il prezzo che puoi pagare per il business.",
+        "rule": "Prezzo massimo = valore attuale dell'equity di uscita al tasso target + debito - fee."
+      },
+      "tags": ["irr", "max-entry-price", "backsolve"]
+    },
+    {
+      "id": "lbo-018",
+      "skill": "fin-lbo",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Paper LBO: a company with EBITDA of EUR 50m is bought at 8.0x with 5.0x leverage at 8.0% interest (on the opening balance) and no fees. EBITDA grows by EUR 4m a year to EUR 70m in year 5. D&A equals capex at EUR 10m, working capital is unchanged, the tax rate is 25% and all free cash flow repays debt. The sponsor exits at 8.0x at the end of year 5. What are the approximate MoM and IRR?",
+      "options": ["About 2.1x and 16%", "About 3.7x and 30%", "About 3.3x and 27%", "About 3.0x and 24%"],
+      "answer": 3,
+      "timeTarget": 180,
+      "explanation": {
+        "steps": [
+          "Ingresso: EV 50 x 8.0 = 400m, debito 50 x 5.0 = 250m, equity 150m.",
+          "FCF annuo = (EBITDA - 10 - interessi) x 0.75. Anno 1: (54 - 10 - 20) x 0.75 = 18m; anno 5: (70 - 10 - 12.2) x 0.75 = circa 35.8m.",
+          "FCF cumulato: 18 + 22.1 + 26.4 + 31.0 + 35.8 = circa 133m, quindi debito residuo circa 250 - 133 = 117m.",
+          "Uscita: EV 70 x 8.0 = 560m, equity 560 - 117 = circa 443m. MoM 443 / 150 = circa 3.0x; IRR circa 24% (3x in 5 anni è circa 25%)."
+        ],
+        "shortcut": "Stima il FCF medio con la media tra anno 1 e anno 5 (circa 27m), moltiplica per 5 (circa 135m) e sottrailo dal debito iniziale.",
+        "trap": "Dimenticare il rimborso del debito (560 - 250 = 310m, circa 2.1x), dividere l'EV di uscita per l'equity (560 / 150 = 3.7x) o calcolare il FCF senza tasse o senza interessi (circa 3.3x).",
+        "rule": "Paper LBO: EV d'ingresso, sources and uses, FCF anno per anno, debito residuo, equity di uscita, MoM, IRR."
+      },
+      "tags": ["paper-lbo", "irr", "debt-paydown"]
+    },
+    {
+      "id": "lbo-019",
+      "skill": "fin-lbo",
+      "level": 3,
+      "type": "numeric",
+      "stem": "A sponsor invested EUR 400m of equity 5 years ago, with no interim cash flows. At exit, EBITDA is EUR 130m and net debt is EUR 350m. What exit EV/EBITDA multiple is needed for a 20% IRR? Answer in x, two decimal places.",
+      "answer": 10.35,
+      "tolerance": 0.1,
+      "unit": "x",
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "MoM richiesto: 1.2^5 = 2.488x.",
+          "Equity di uscita necessaria: 400 x 2.488 = EUR 995m.",
+          "EV di uscita necessario: 995 + 350 = EUR 1,345m.",
+          "Multiplo: 1,345 / 130 = 10.35x."
+        ],
+        "shortcut": "Con 2.5x: 400 x 2.5 = 1,000; 1,000 + 350 = 1,350; 1,350 / 130 = circa 10.4x, dentro la tolleranza.",
+        "trap": "Dimenticare di aggiungere il debito netto (995 / 130 = 7.7x): il multiplo si applica all'enterprise value, non all'equity.",
+        "rule": "Multiplo d'uscita richiesto = (equity d'ingresso x (1 + IRR)^n + debito netto all'uscita) / EBITDA d'uscita."
+      },
+      "tags": ["irr", "exit-multiple", "backsolve"]
+    },
+    {
+      "id": "lbo-020",
+      "skill": "fin-lbo",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A business is bought for an EV of EUR 500m and sold for EUR 750m after 5 years, with no interim cash flows to investors. Option 1: all equity. Option 2: 60% funded with a PIK loan at 10% a year (compounding, repaid at exit) and 40% with equity. What are the approximate equity IRRs?",
+      "options": [
+        "Option 1 about 8.4%, Option 2 about 5.9%",
+        "Option 1 about 8.4%, Option 2 about 17.6%",
+        "Option 1 about 8.4%, Option 2 about 8.4%",
+        "Option 1 about 10.0%, Option 2 about 6.7%"
+      ],
+      "answer": 0,
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Opzione 1: MoM 750 / 500 = 1.5x; IRR = 1.5^(1/5) - 1 = circa 8.4%.",
+          "Opzione 2: debito di 300m che capitalizza al 10%: 300 x 1.1^5 = circa 483m all'uscita.",
+          "Equity: 200m all'ingresso, 750 - 483 = circa 267m all'uscita; MoM 1.33x, IRR = 1.33^(1/5) - 1 = circa 5.9%.",
+          "La leva riduce l'IRR perché il costo del debito (10%) supera il rendimento degli asset (8.4%)."
+        ],
+        "shortcut": "Confronta subito il rendimento degli asset (8.4%) con il costo del debito (10%): se il debito costa di più, la leva peggiora l'IRR.",
+        "trap": "Ignorare la capitalizzazione degli interessi PIK (equity 750 - 300 = 450m, 2.25x, 17.6%): se dimentichi il costo del debito la leva sembra sempre vincente.",
+        "rule": "La leva aumenta l'IRR solo se il rendimento degli asset supera il costo del debito; altrimenti lo riduce."
+      },
+      "tags": ["leverage", "pik", "irr"]
+    },
+    {
+      "id": "mkt-001",
+      "skill": "markets",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Market interest rates rise. What happens to the price of an existing fixed-coupon bond?",
+      "options": [
+        "It rises, because new bonds pay higher coupons",
+        "It falls, so that its yield rises to match new market rates",
+        "It is unchanged, because the coupon is fixed",
+        "It falls only if the issuer's credit rating is downgraded"
+      ],
+      "answer": 1,
+      "timeTarget": 25,
+      "explanation": {
+        "steps": [
+          "Il coupon del bond esistente è fisso: se i nuovi bond rendono di più, nessuno pagherà più il vecchio prezzo.",
+          "Il prezzo scende finché il rendimento a scadenza del vecchio bond eguaglia quello di mercato.",
+          "Prezzo e rendimento si muovono sempre in direzione opposta."
+        ],
+        "shortcut": "Tassi su, prezzi giù: vale per qualsiasi bond a tasso fisso.",
+        "trap": "Pensare che il coupon fisso protegga il prezzo: proprio perché il coupon non cambia, è il prezzo che deve aggiustarsi.",
+        "rule": "Prezzo del bond e rendimento si muovono in direzione opposta."
+      },
+      "tags": ["bond-prices", "rates"]
+    },
+    {
+      "id": "mkt-002",
+      "skill": "markets",
+      "level": 1,
+      "type": "mcq",
+      "stem": "What does an inverted government yield curve mean, and what has it historically been associated with?",
+      "options": [
+        "Long-term yields above short-term yields; strong expected growth",
+        "All maturities yielding the same; a stable economy",
+        "Negative yields at all maturities; very high inflation",
+        "Short-term yields above long-term yields; expectations of future rate cuts and a higher risk of recession"
+      ],
+      "answer": 3,
+      "timeTarget": 30,
+      "explanation": {
+        "steps": [
+          "Normalmente la curva è inclinata positivamente: le scadenze lunghe rendono di più per via del term premium.",
+          "Quando è invertita i rendimenti a breve superano quelli a lungo: il mercato si aspetta che la banca centrale tagli i tassi in futuro, spesso perché prevede un rallentamento.",
+          "Storicamente l'inversione (ad esempio 2 anni sopra 10 anni) ha anticipato molte recessioni, anche se con ritardi variabili."
+        ],
+        "shortcut": "Invertita = breve sopra lungo = mercato che prevede tagli = rischio recessione.",
+        "trap": "Confondere l'inversione con una curva ripida: una curva ripida segnala di solito aspettative di crescita e inflazione.",
+        "rule": "La forma della curva riflette le aspettative sui tassi futuri più un premio per la durata."
+      },
+      "tags": ["yield-curve", "recession-signal"]
+    },
+    {
+      "id": "mkt-003",
+      "skill": "markets",
+      "level": 1,
+      "type": "mcq",
+      "stem": "A company's 5-year bond yields 5.60%. The 5-year government bond yields 3.80%. What is the credit spread?",
+      "options": ["180bp", "18bp", "1.8bp", "940bp"],
+      "answer": 0,
+      "timeTarget": 25,
+      "explanation": {
+        "steps": [
+          "Credit spread = rendimento corporate - rendimento governativo di pari scadenza: 5.60% - 3.80% = 1.80%.",
+          "1 punto percentuale = 100 basis points, quindi 1.80% = 180bp."
+        ],
+        "shortcut": "Differenza in punti percentuali x 100 = basis points.",
+        "trap": "Sbagliare la conversione: 1bp = 0.01%, quindi 1.80% non è 18bp.",
+        "rule": "Spread = yield corporate - yield risk-free di pari scadenza; 100bp = 1%."
+      },
+      "tags": ["credit-spread", "basis-points"]
+    },
+    {
+      "id": "mkt-004",
+      "skill": "markets",
+      "level": 1,
+      "type": "mcq",
+      "stem": "EUR/USD moves from 1.10 to 1.05. Which statement is correct?",
+      "options": [
+        "The euro has appreciated against the dollar",
+        "A European exporter selling in dollars receives fewer euros per dollar of sales",
+        "One euro now buys fewer dollars, so the euro has depreciated",
+        "US tourists in Europe now pay more dollars for the same euro-priced hotel"
+      ],
+      "answer": 2,
+      "timeTarget": 40,
+      "explanation": {
+        "steps": [
+          "EUR/USD indica quanti dollari servono per 1 euro: da 1.10 a 1.05 un euro compra meno dollari, quindi l'euro si è deprezzato.",
+          "Un esportatore europeo che incassa 1 dollaro ora riceve 1 / 1.05 = 0.952 euro invece di 1 / 1.10 = 0.909 euro: ne riceve di più.",
+          "Un turista americano paga 1.05 dollari per ogni euro invece di 1.10: spende meno."
+        ],
+        "shortcut": "In EUR/USD l'euro è la valuta base: se il numero scende, l'euro si indebolisce.",
+        "trap": "Leggere il calo del numero come un rafforzamento dell'euro, confondendo valuta base e valuta di quotazione.",
+        "rule": "In una coppia BASE/QUOTE il numero indica quante unità di QUOTE servono per 1 unità di BASE."
+      },
+      "tags": ["fx", "quotation"]
+    },
+    {
+      "id": "mkt-005",
+      "skill": "markets",
+      "level": 1,
+      "type": "mcq",
+      "stem": "A central bank unexpectedly raises its policy rate by 50bp. All else equal, what is the most likely immediate reaction of its currency and of short-term government bond yields?",
+      "options": [
+        "Currency weakens; short-term yields fall",
+        "Currency strengthens; short-term yields rise",
+        "Currency strengthens; short-term yields fall",
+        "No change, because the move was only 50bp"
+      ],
+      "answer": 1,
+      "timeTarget": 30,
+      "explanation": {
+        "steps": [
+          "Un rialzo inatteso aumenta i rendimenti attesi sugli asset denominati in quella valuta.",
+          "I rendimenti a breve, molto legati al tasso di policy, salgono subito.",
+          "Rendimenti più alti attirano capitali: la valuta si apprezza, a parità di altre condizioni."
+        ],
+        "shortcut": "Sorpresa hawkish: valuta su, rendimenti a breve su, prezzi dei bond giù.",
+        "trap": "Ignorare la parola 'unexpectedly': i mercati reagiscono alla sorpresa rispetto alle attese, non al movimento in sé.",
+        "rule": "Conta la differenza tra decisione e attese: sorpresa hawkish = valuta e rendimenti in rialzo."
+      },
+      "tags": ["central-banks", "fx", "rates"]
+    },
+    {
+      "id": "mkt-006",
+      "skill": "markets",
+      "level": 2,
+      "type": "numeric",
+      "stem": "A bond has a modified duration of 7.0. If its yield rises by 50bp, what is the approximate percentage change in its price? Answer in %, one decimal place (negative for a fall).",
+      "answer": -3.5,
+      "tolerance": 0.05,
+      "unit": "%",
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Variazione % del prezzo circa = - modified duration x variazione del rendimento.",
+          "50bp = 0.50%; -7.0 x 0.50% = -3.5%."
+        ],
+        "shortcut": "Duration x variazione in punti percentuali, con il segno opposto.",
+        "trap": "Usare 50 invece di 0.50 (risultato -350%) oppure dimenticare il segno negativo.",
+        "rule": "Delta P / P circa = - D mod x delta y."
+      },
+      "tags": ["duration", "bond-prices"]
+    },
+    {
+      "id": "mkt-007",
+      "skill": "markets",
+      "level": 2,
+      "type": "mcq",
+      "stem": "What is the price of a 5-year zero-coupon bond with a face value of 100 and a yield to maturity of 4.0% (annual compounding)?",
+      "options": ["80.00", "96.15", "82.19", "83.33"],
+      "answer": 2,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Il prezzo di uno zero coupon è il valore attuale del rimborso: 100 / 1.04^5.",
+          "1.04^2 = 1.0816; 1.04^4 = 1.1699; 1.04^5 = 1.2167.",
+          "100 / 1.2167 = 82.19."
+        ],
+        "shortcut": "1.04^5 è circa 1.22, quindi il prezzo è circa 82: l'unica opzione vicina è 82.19.",
+        "trap": "Usare lo sconto semplice (100 x (1 - 5 x 4%) = 80.00, oppure 100 / 1.20 = 83.33) o scontare un solo anno (96.15).",
+        "rule": "Prezzo zero coupon = valore nominale / (1 + y)^n."
+      },
+      "tags": ["bond-pricing", "zero-coupon"]
+    },
+    {
+      "id": "mkt-008",
+      "skill": "markets",
+      "level": 2,
+      "type": "mcq",
+      "stem": "The 10-year nominal government bond yields 4.2% and the 10-year inflation-linked bond of the same issuer has a real yield of 1.7%. What is the breakeven inflation rate and what does it represent?",
+      "options": [
+        "2.5%; the average annual inflation the market is pricing over the next 10 years",
+        "5.9%; the total expected return of the nominal bond",
+        "2.5%; the central bank's inflation target",
+        "1.7%; the expected inflation rate"
+      ],
+      "answer": 0,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Breakeven inflation circa = rendimento nominale - rendimento reale: 4.2% - 1.7% = 2.5%.",
+          "È l'inflazione media annua che rende indifferente detenere il bond nominale o quello indicizzato: è l'inflazione prezzata dal mercato.",
+          "Non coincide con il target della banca centrale e include anche premi per rischio e liquidità."
+        ],
+        "shortcut": "Nominale - reale = inflazione attesa dal mercato.",
+        "trap": "Scegliere il target della banca centrale: il breakeven è una misura di mercato, non un obiettivo di policy, anche quando i numeri sono simili.",
+        "rule": "Tasso nominale circa = tasso reale + inflazione attesa (Fisher)."
+      },
+      "tags": ["inflation", "real-yields", "breakeven"]
+    },
+    {
+      "id": "mkt-009",
+      "skill": "markets",
+      "level": 2,
+      "type": "mcq",
+      "stem": "The risk-free rate is 3.5%, the equity risk premium is 5.5% and a stock's beta is 1.2. What is its cost of equity under CAPM?",
+      "options": ["9.0%", "5.9%", "10.8%", "10.1%"],
+      "answer": 3,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "CAPM: Ke = rf + beta x ERP.",
+          "1.2 x 5.5% = 6.6%.",
+          "Ke = 3.5% + 6.6% = 10.1%."
+        ],
+        "shortcut": "Il premio per il rischio (5.5%) si moltiplica per il beta, il risk-free no.",
+        "trap": "Trattare 5.5% come rendimento di mercato (3.5% + 1.2 x (5.5% - 3.5%) = 5.9%), moltiplicare anche il risk-free per il beta (10.8%) o ignorare il beta (9.0%).",
+        "rule": "Ke = rf + beta x (rendimento di mercato - rf) = rf + beta x ERP."
+      },
+      "tags": ["capm", "equity-risk-premium", "cost-of-equity"]
+    },
+    {
+      "id": "mkt-010",
+      "skill": "markets",
+      "level": 3,
+      "type": "mcq",
+      "stem": "EUR/USD spot is 1.1000. The 1-year USD interest rate is 5.0% and the 1-year EUR interest rate is 3.0%. Under covered interest parity, what is the 1-year EUR/USD forward rate?",
+      "options": ["1.0790", "1.1214", "1.1000", "1.1550"],
+      "answer": 1,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Forward = spot x (1 + tasso della valuta di quotazione) / (1 + tasso della valuta base). In EUR/USD la base è l'euro, la quotazione è il dollaro.",
+          "1.1000 x 1.05 / 1.03 = 1.1214.",
+          "La valuta con il tasso più basso (EUR) quota a premio nel forward: a termine un euro compra più dollari, compensando il minor rendimento."
+        ],
+        "shortcut": "Valuta con il tasso più basso = a premio nel forward. Il forward deve salire di circa il differenziale del 2%: 1.10 x 1.019 = circa 1.121.",
+        "trap": "Invertire i tassi (1.10 x 1.03 / 1.05 = 1.0790): l'errore tipico è pensare che la valuta con il tasso più alto si apprezzi nel forward.",
+        "rule": "F = S x (1 + i quotazione) / (1 + i base): nessun arbitraggio tra depositi coperti nelle due valute."
+      },
+      "tags": ["fx-forward", "interest-rate-parity"]
+    },
+    {
+      "id": "mkt-011",
+      "skill": "markets",
+      "level": 2,
+      "type": "numeric",
+      "stem": "A 3-year bond pays an annual coupon of 5% on a face value of 100. The market yield is 6%. What is its price per 100 of face value? Answer to two decimal places.",
+      "answer": 97.33,
+      "tolerance": 0.05,
+      "unit": "per 100",
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Flussi: 5 nell'anno 1, 5 nell'anno 2, 105 nell'anno 3.",
+          "Valori attuali: 5 / 1.06 = 4.717; 5 / 1.06^2 = 4.450; 105 / 1.06^3 = 88.160.",
+          "Prezzo: 4.717 + 4.450 + 88.160 = 97.33."
+        ],
+        "shortcut": "Coupon sotto il rendimento implica prezzo sotto la pari. Stima: sconto circa (6% - 5%) x duration modificata di circa 2.7 = 2.7%, prezzo circa 97.3, poi conferma con il calcolo.",
+        "trap": "Dimenticare il rimborso del nominale nell'ultimo anno o scontare tutti i flussi per un solo anno.",
+        "rule": "Prezzo = somma di coupon e nominale scontati al rendimento di mercato; coupon < yield significa prezzo sotto la pari."
+      },
+      "tags": ["bond-pricing", "discounting"]
+    },
+    {
+      "id": "mkt-012",
+      "skill": "markets",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Over a month, 2-year government yields rise by 5bp and 10-year yields rise by 40bp. How is this move described?",
+      "options": ["Bear steepening", "Bull flattening", "Bull steepening", "Bear flattening"],
+      "answer": 0,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "'Bear' indica rendimenti in rialzo (prezzi dei bond in calo); 'bull' indica rendimenti in calo.",
+          "La curva si irripidisce se il lungo sale più del breve: lo spread tra 10 e 2 anni si allarga di 40 - 5 = 35bp.",
+          "Rendimenti in rialzo con il lungo che sale di più: bear steepening, spesso legato a un term premium più alto, a più offerta di titoli o ad aspettative di inflazione."
+        ],
+        "shortcut": "Prima la direzione dei rendimenti (su = bear), poi lo spread lungo-breve (si allarga = steepening).",
+        "trap": "Associare 'bull' a buone notizie per l'economia: bull e bear si riferiscono ai prezzi dei bond, non alla crescita.",
+        "rule": "Bear o bull = rendimenti su o giù; steepening o flattening = spread lungo-breve che si allarga o si stringe."
+      },
+      "tags": ["yield-curve", "steepening"]
+    },
+    {
+      "id": "mkt-013",
+      "skill": "markets",
+      "level": 3,
+      "type": "numeric",
+      "stem": "A bond has a modified duration of 8.0 and a convexity of 90. Using the duration-convexity approximation, what is the percentage price change if yields rise by 100bp? Answer in %, two decimal places (negative for a fall).",
+      "answer": -7.55,
+      "tolerance": 0.05,
+      "unit": "%",
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Effetto duration: -8.0 x 0.01 = -8.00%.",
+          "Effetto convexity: 0.5 x 90 x (0.01)^2 = 0.0045, cioè +0.45%.",
+          "Totale: -8.00% + 0.45% = -7.55%."
+        ],
+        "shortcut": "Il termine di convexity, 0.5 x C x (delta y)^2, è sempre positivo: riduce la perdita quando i tassi salgono e aumenta il guadagno quando scendono.",
+        "trap": "Sottrarre la convexity (-8.45%) o dimenticare lo 0.5 (-7.10%).",
+        "rule": "Delta P / P circa = - D mod x delta y + 0.5 x C x (delta y)^2."
+      },
+      "tags": ["duration", "convexity", "bond-prices"]
+    },
+    {
+      "id": "mkt-014",
+      "skill": "markets",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A central bank moves from quantitative easing to quantitative tightening, letting its government bond holdings run off. What is the most direct expected effect?",
+      "options": [
+        "An immediate cut in the policy rate",
+        "Lower long-term yields, as the central bank buys more bonds",
+        "Upward pressure on long-term yields, as the private sector must absorb more duration",
+        "A guaranteed appreciation of the currency against all others"
+      ],
+      "answer": 2,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Con il QE la banca centrale compra bond e comprime i rendimenti a lungo e il term premium.",
+          "Con il QT smette di reinvestire i titoli in scadenza o li vende: il mercato privato deve assorbire più offerta di titoli a lunga scadenza.",
+          "L'effetto atteso è una pressione al rialzo sui rendimenti a lungo e meno liquidità nel sistema."
+        ],
+        "shortcut": "QE = la banca compra = rendimenti giù; QT = la banca esce = rendimenti su.",
+        "trap": "Confondere il QT con una mossa sui tassi di policy: il QT agisce sul bilancio della banca centrale e sui rendimenti lunghi.",
+        "rule": "Bilancio della banca centrale: l'espansione comprime i term premium, la contrazione li fa salire."
+      },
+      "tags": ["central-banks", "quantitative-tightening", "yields"]
+    },
+    {
+      "id": "mkt-015",
+      "skill": "markets",
+      "level": 2,
+      "type": "mcq",
+      "stem": "An issuer rated BBB- is downgraded one notch to BB+. Why might its bond spreads widen far more than a typical one-notch downgrade would suggest?",
+      "options": [
+        "Because BB+ issuers are no longer allowed to pay coupons",
+        "Because a downgrade automatically triggers a default under most bond indentures",
+        "Because the government bond yield rises at the same time",
+        "Because the issuer becomes a 'fallen angel': it drops out of investment grade, and many mandates restricted to investment grade are forced to sell"
+      ],
+      "answer": 3,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "BBB- è l'ultimo gradino dell'investment grade; BB+ è il primo dell'high yield.",
+          "Molti fondi, assicurazioni e indici possono detenere solo bond investment grade: dopo il downgrade devono vendere, mentre il mercato high yield deve assorbire volumi elevati.",
+          "La vendita forzata allarga lo spread oltre quanto giustificato dal solo peggioramento del rischio di credito."
+        ],
+        "shortcut": "La soglia BBB-/BB+ è il confine dell'investment grade: superarla cambia la base di investitori, non solo il rating.",
+        "trap": "Pensare che un downgrade causi un default automatico: al massimo attiva clausole specifiche, come uno step-up del coupon, non l'insolvenza.",
+        "rule": "Fallen angel: il passaggio a high yield provoca vendite forzate e spread più ampi."
+      },
+      "tags": ["credit-ratings", "credit-spread", "fallen-angel"]
+    },
+    {
+      "id": "com-001",
+      "skill": "commercial",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Central banks raise interest rates sharply. What is the most likely effect on leveraged buyout activity?",
+      "options": [
+        "It increases, because sponsors earn more on their cash",
+        "It decreases, because debt becomes more expensive, sponsors can borrow less and must pay lower prices to hit target returns",
+        "It is unaffected, because LBOs are funded mainly with equity",
+        "It increases, because sellers immediately accept lower prices"
+      ],
+      "answer": 1,
+      "timeTarget": 40,
+      "explanation": {
+        "steps": [
+          "Un LBO dipende dal debito: tassi più alti aumentano gli interessi e riducono la leva che il FCF può sostenere.",
+          "Con meno leva e debito più caro, a parità di prezzo l'IRR scende: lo sponsor deve offrire meno.",
+          "I venditori restano spesso ancorati alle valutazioni passate: il bid-ask spread si allarga e i volumi calano."
+        ],
+        "shortcut": "Tassi su = debito caro = meno leva = prezzi offerti più bassi = meno LBO.",
+        "trap": "Pensare che i venditori accettino subito prezzi più bassi: l'aggiustamento delle aspettative richiede tempo, ed è per questo che i volumi scendono.",
+        "rule": "Costo e disponibilità del debito sono il motore principale dell'attività di private equity."
+      },
+      "tags": ["rates", "lbo-activity", "macro"]
+    },
+    {
+      "id": "com-002",
+      "skill": "commercial",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Which market conditions most typically open the IPO window?",
+      "options": [
+        "Rising equity markets, low volatility and strong aftermarket performance of recent IPOs",
+        "Falling equity markets and high volatility",
+        "Widening credit spreads and a strong flight to government bonds",
+        "A recession with rising unemployment"
+      ],
+      "answer": 0,
+      "timeTarget": 35,
+      "explanation": {
+        "steps": [
+          "Un'IPO richiede investitori disposti a comprare un titolo nuovo a un prezzo che soddisfi chi vende.",
+          "Mercati in rialzo e bassa volatilità sostengono le valutazioni e riducono il rischio di prezzare male l'offerta.",
+          "Il buon andamento delle IPO recenti, che trattano sopra il prezzo d'offerta, richiama domanda per le successive."
+        ],
+        "shortcut": "IPO window = mercato su + volatilità giù + IPO recenti in guadagno.",
+        "trap": "Pensare che le aziende si quotino quando i mercati scendono: nell'IPO l'azienda e i suoi azionisti vendono, quindi vogliono valutazioni alte.",
+        "rule": "Gli equity capital markets sono attivi quando le valutazioni sono alte e la volatilità è bassa."
+      },
+      "tags": ["ipo", "ecm", "volatility"]
+    },
+    {
+      "id": "com-003",
+      "skill": "commercial",
+      "level": 1,
+      "type": "mcq",
+      "stem": "The currency of Country X depreciates significantly. All else equal, what is the likely effect on inbound M&A, that is, foreign buyers acquiring Country X companies?",
+      "options": [
+        "It falls, because local companies become more expensive for foreign buyers",
+        "It is unaffected, because valuations are set in local currency",
+        "It falls, because local companies lose their export revenue",
+        "It rises, because local targets become cheaper in the foreign buyers' currencies"
+      ],
+      "answer": 3,
+      "timeTarget": 40,
+      "explanation": {
+        "steps": [
+          "Con la valuta locale più debole, lo stesso prezzo in valuta locale costa meno in dollari, euro o yen.",
+          "I target diventano più economici per i compratori esteri, e i loro eventuali ricavi in valuta estera valgono di più in valuta locale.",
+          "Il risultato tipico è un aumento dell'M&A in entrata, a parità di rischio politico e regolamentare."
+        ],
+        "shortcut": "Valuta debole = saldi per i compratori esteri.",
+        "trap": "Ragionare dal punto di vista del compratore locale che compra all'estero: per lui i target esteri diventano più cari, quindi cala l'M&A in uscita, non quello in entrata.",
+        "rule": "Valuta debole: M&A in entrata su, in uscita giù; valuta forte: il contrario."
+      },
+      "tags": ["fx", "cross-border-ma"]
+    },
+    {
+      "id": "com-004",
+      "skill": "commercial",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Which semiconductor segment is typically the most cyclical, with prices driven by large swings in supply and demand?",
+      "options": [
+        "Electronic design automation (EDA) software",
+        "Licensing of processor architecture IP",
+        "Memory chips (DRAM and NAND)",
+        "Analog and power management chips sold to industrial customers"
+      ],
+      "answer": 2,
+      "timeTarget": 35,
+      "explanation": {
+        "steps": [
+          "Le memorie sono prodotti molto standardizzati: il prezzo dipende quasi solo dall'equilibrio tra capacità produttiva e domanda.",
+          "La capacità si aggiunge con investimenti enormi e ritardi di anni: quando arriva tutta insieme i prezzi crollano, quando scarseggia salgono rapidamente.",
+          "EDA e licenze IP hanno ricavi ricorrenti; l'analogico ha migliaia di prodotti, cicli di vita lunghi e clienti diversificati: sono molto meno ciclici."
+        ],
+        "shortcut": "Più il prodotto è una commodity, più è ciclico: nei semiconduttori la commodity è la memoria.",
+        "trap": "Scegliere l'analogico perché esposto all'industria: è ciclico nei volumi, ma con prezzi molto più stabili delle memorie.",
+        "rule": "Ciclicità = standardizzazione del prodotto + intensità di capitale + ritardi nell'aggiunta di capacità."
+      },
+      "tags": ["semiconductors", "cyclicality", "sector"]
+    },
+    {
+      "id": "com-005",
+      "skill": "commercial",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Why are higher interest rates particularly painful for renewable energy developers?",
+      "options": [
+        "Because solar and wind projects consume more energy when rates are high",
+        "Because projects are capital-intensive, with most costs upfront and long-dated cash flows, so their value is very sensitive to the cost of capital",
+        "Because renewable revenues are always linked to oil prices",
+        "Because renewable developers cannot use project finance"
+      ],
+      "answer": 1,
+      "timeTarget": 40,
+      "explanation": {
+        "steps": [
+          "Un impianto solare o eolico ha quasi tutti i costi all'inizio (capex) e costi operativi bassi: il valore dipende dai flussi dei 20-30 anni successivi.",
+          "Flussi lontani nel tempo sono molto sensibili al tasso di sconto, come un bond a lunga duration.",
+          "Inoltre i progetti sono finanziati con molto debito (project finance): tassi più alti ne aumentano il costo e riducono i rendimenti, se tariffe e prezzi non si adeguano."
+        ],
+        "shortcut": "Capex iniziale + flussi lunghi = alta duration = forte sensibilità ai tassi.",
+        "trap": "Pensare che il problema sia il prezzo dell'energia: il punto chiave è il costo del capitale, non il costo di un input.",
+        "rule": "I business ad alta intensità di capitale e con flussi lunghi soffrono di più quando salgono i tassi."
+      },
+      "tags": ["energy-transition", "rates", "project-finance"]
+    },
+    {
+      "id": "com-006",
+      "skill": "commercial",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Why are utilities and electrical equipment makers often linked to the AI investment theme?",
+      "options": [
+        "Because AI software lowers utilities' operating costs, which is the main driver of their valuations",
+        "Because most AI data centres are built and owned by regulated utilities",
+        "Because AI chips are mainly manufactured by electrical equipment companies",
+        "Because AI data centres need large amounts of reliable power, and grid connections, transformers and cooling are bottlenecks, so AI capex drives power demand and grid investment"
+      ],
+      "answer": 3,
+      "timeTarget": 50,
+      "explanation": {
+        "steps": [
+          "I data centre per l'AI consumano molta più energia per rack di quelli tradizionali e devono funzionare 24 ore su 24.",
+          "Il vincolo spesso non è il chip ma l'accesso alla rete: connessioni, trasformatori, quadri elettrici, generazione e raffreddamento hanno tempi di consegna lunghi.",
+          "Il capex degli hyperscaler si trasferisce così su utility, produttori di apparecchiature elettriche e di sistemi di raffreddamento: beneficiari di secondo livello del tema AI."
+        ],
+        "shortcut": "Segui la catena del valore del capex: chip, memoria, rete dati, energia, raffreddamento.",
+        "trap": "Pensare che l'AI aiuti le utility riducendone i costi: il driver è la domanda di elettricità e di investimenti nella rete.",
+        "rule": "Un tema di capex crea vincitori lungo tutta la supply chain, compresi i colli di bottiglia fisici."
+      },
+      "tags": ["ai-capex", "utilities", "value-chain"]
+    },
+    {
+      "id": "com-007",
+      "skill": "commercial",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Why do large cross-border semiconductor acquisitions often have long and uncertain timelines between signing and closing?",
+      "options": [
+        "Because they usually need several antitrust clearances plus foreign investment and national security reviews, and can be affected by export controls",
+        "Because semiconductor targets cannot be valued with trading multiples",
+        "Because semiconductor companies are legally barred from using acquisition debt",
+        "Because shareholder votes in the sector must be unanimous"
+      ],
+      "answer": 0,
+      "timeTarget": 50,
+      "explanation": {
+        "steps": [
+          "I semiconduttori sono considerati tecnologia strategica: molte giurisdizioni esaminano i deal sia per la concorrenza sia per la sicurezza nazionale, con regimi di screening degli investimenti esteri.",
+          "Un grande deal può richiedere approvazioni in molte giurisdizioni, ciascuna con tempi e possibili rimedi diversi; basta un blocco per far saltare l'operazione.",
+          "Per questo questi deal prevedono long-stop date lunghe, reverse termination fee e clausole sui rimedi regolamentari."
+        ],
+        "shortcut": "Semiconduttori = tecnologia strategica = antitrust più screening FDI in più paesi.",
+        "trap": "Pensare che il problema sia la valutazione o il finanziamento: il collo di bottiglia è regolamentare.",
+        "rule": "Nei settori strategici il rischio regolamentare guida tempi, struttura e protezioni del deal."
+      },
+      "tags": ["semiconductors", "regulatory", "cross-border-ma"]
+    },
+    {
+      "id": "com-008",
+      "skill": "commercial",
+      "level": 2,
+      "type": "mcq",
+      "stem": "After a sharp rise in interest rates, M&A volumes fall even though many corporates have strong balance sheets. Which explanation is most complete?",
+      "options": [
+        "Corporates are legally prevented from making acquisitions when rates rise",
+        "Strategic buyers stop all deals because they only use debt financing",
+        "M&A volumes depend only on GDP growth, so rates are irrelevant",
+        "Higher financing costs reduce what sponsors can pay and raise discount rates, while sellers anchored to earlier prices resist, so the bid-ask spread widens and uncertainty delays decisions"
+      ],
+      "answer": 3,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Il debito più caro riduce il prezzo che gli sponsor possono pagare per rispettare i loro target di IRR, e alza il tasso di sconto per tutti i compratori.",
+          "I venditori, ancorati alle valutazioni degli anni precedenti, non accettano subito prezzi più bassi: il divario tra domanda e offerta (bid-ask spread) si allarga.",
+          "L'incertezza su tassi e crescita spinge i board a rinviare: anche con bilanci solidi, meno deal arrivano al signing finché le aspettative non si riallineano."
+        ],
+        "shortcut": "Shock sui tassi = repricing dei compratori + venditori ancorati = bid-ask gap = meno deal.",
+        "trap": "Scegliere una spiegazione con una sola causa: l'intervistatore cerca il legame tra finanziamento, valutazioni e psicologia dei venditori.",
+        "rule": "Volumi M&A = fiducia + finanziamento disponibile + allineamento tra aspettative di compratori e venditori."
+      },
+      "tags": ["rates", "ma-activity", "bid-ask-spread"]
+    },
+    {
+      "id": "com-009",
+      "skill": "commercial",
+      "level": 2,
+      "type": "mcq",
+      "stem": "High-yield credit spreads tighten significantly and new-issue yields fall. Which leveraged finance activity typically picks up first?",
+      "options": [
+        "Corporate bankruptcies",
+        "Equity rights issues to pay down debt",
+        "Refinancing and repricing of existing debt, followed by dividend recaps and new LBO financings",
+        "Sale-and-leaseback transactions by investment grade companies"
+      ],
+      "answer": 2,
+      "timeTarget": 50,
+      "explanation": {
+        "steps": [
+          "Quando gli spread si stringono, chi ha debito costoso o in scadenza lo rifinanzia o lo rinegozia a condizioni migliori: è l'attività più rapida da eseguire.",
+          "Poi gli sponsor sfruttano la finestra per dividend recap e per finanziare nuovi LBO e add-on.",
+          "Fallimenti e aumenti di capitale per ridurre il debito sono tipici di una fase con spread larghi, non stretti."
+        ],
+        "shortcut": "Spread stretti: prima si sistema il debito esistente, poi si fa debito nuovo.",
+        "trap": "Scegliere i rights issue: si fanno quando il debito è caro o inaccessibile, cioè nella fase opposta del ciclo.",
+        "rule": "Credito aperto: refinancing e repricing, poi recap e LBO; credito chiuso: amend-and-extend, ristrutturazioni, equity."
+      },
+      "tags": ["leveraged-finance", "credit-spreads", "refinancing"]
+    },
+    {
+      "id": "com-010",
+      "skill": "commercial",
+      "level": 2,
+      "type": "mcq",
+      "stem": "European natural gas prices double over a few months. Which group of companies is most directly hurt?",
+      "options": [
+        "Upstream gas producers",
+        "Energy-intensive chemicals and fertiliser producers",
+        "LNG exporters with spare capacity",
+        "Renewable generators selling power at market prices"
+      ],
+      "answer": 1,
+      "timeTarget": 50,
+      "explanation": {
+        "steps": [
+          "Per chimica di base e fertilizzanti il gas è sia combustibile sia materia prima: un raddoppio del prezzo comprime i margini e può rendere gli impianti non competitivi rispetto a produttori in aree con energia più economica.",
+          "Produttori di gas ed esportatori di LNG incassano prezzi più alti.",
+          "Nei mercati elettrici in cui il gas fissa il prezzo marginale l'elettricità rincara: i produttori rinnovabili, con costi quasi fissi, vedono salire i margini."
+        ],
+        "shortcut": "Chi usa il gas come input soffre; chi lo vende, o produce elettricità senza gas, guadagna.",
+        "trap": "Pensare che le rinnovabili soffrano perché fanno parte del settore energia: beneficiano del prezzo marginale fissato dal gas.",
+        "rule": "Shock di prezzo di una commodity: vincono produttori e sostituti, perdono gli utilizzatori intensivi."
+      },
+      "tags": ["energy", "commodities", "sector"]
+    },
+    {
+      "id": "com-011",
+      "skill": "commercial",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Why might a diversified group decide to spin off one of its divisions?",
+      "options": [
+        "To raise new debt at the parent level at a lower cost",
+        "To avoid any tax on the division's future profits",
+        "To reduce a conglomerate discount, give each business a clearer equity story and management focus, and let investors value each part separately",
+        "To increase the parent's consolidated revenue"
+      ],
+      "answer": 2,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "I gruppi diversificati trattano spesso a sconto rispetto alla somma delle parti: gli investitori preferiscono scegliere da soli l'esposizione settoriale.",
+          "Uno spin-off crea due società quotate con strategia, capital allocation e incentivi del management specifici, e una equity story più chiara.",
+          "Non serve a fare debito più economico né ad aumentare i ricavi consolidati, che anzi scendono; la divisione continuerà a pagare le tasse sui propri utili."
+        ],
+        "shortcut": "Spin-off = sbloccare la somma delle parti eliminando il conglomerate discount.",
+        "trap": "Scegliere l'opzione fiscale: la separazione può essere fiscalmente neutra in alcune giurisdizioni, ma non elimina le tasse sugli utili futuri.",
+        "rule": "Break-up e spin-off puntano su focus, trasparenza e rivalutazione della somma delle parti."
+      },
+      "tags": ["spin-off", "conglomerate-discount", "corporate-strategy"]
+    },
+    {
+      "id": "com-012",
+      "skill": "commercial",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A fabless chip designer with strong IP and high margins is considering acquiring a mature-node manufacturing fab to secure supply. What is the strongest financial argument against the deal?",
+      "options": [
+        "It would turn a capital-light, high-return model into a capital-intensive one exposed to utilisation swings, while foundries spread fab costs across many customers",
+        "Fabless companies are not allowed to own manufacturing assets",
+        "Mature-node fabs never generate positive cash flow",
+        "Owning a fab would reduce the company's gross margin to zero"
+      ],
+      "answer": 0,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Il modello fabless ha capex basso e ROIC alto: la produzione è affidata a foundry che distribuiscono i costi fissi su molti clienti.",
+          "Possedere una fab aggiunge costi fissi elevati, capex di mantenimento e rischio di bassa utilizzazione: quando la domanda cala i margini si comprimono molto.",
+          "Il mercato potrebbe quindi valutare l'azienda con multipli più bassi, tipici di un business ciclico e ad alta intensità di capitale. Accordi di capacità a lungo termine o prepagamenti assicurano la supply senza possedere l'asset."
+        ],
+        "shortcut": "Chiediti cosa cambia nel profilo di ROIC e di ciclicità: da capital-light a capital-heavy.",
+        "trap": "Farsi attirare da affermazioni assolute ('mai', 'zero', 'non è consentito'): nelle domande di commercial awareness le opzioni estreme sono quasi sempre sbagliate.",
+        "rule": "L'integrazione verticale ha senso solo se il beneficio strategico supera il peggioramento di intensità di capitale, rischio e multiplo."
+      },
+      "tags": ["semiconductors", "business-model", "vertical-integration"]
+    },
+    {
+      "id": "com-013",
+      "skill": "commercial",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Why has private credit taken market share from syndicated leveraged loans in financing sponsor-backed buyouts?",
+      "options": [
+        "Because private credit is always cheaper than syndicated loans",
+        "Because private credit lenders do not perform due diligence",
+        "Because regulators require sponsors to use private credit for all buyouts",
+        "Because it offers certainty and speed of execution, confidentiality, no syndication or market flex risk and flexible terms, even at a higher spread"
+      ],
+      "answer": 3,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "In un prestito sindacato le banche sottoscrivono il debito e poi lo collocano sul mercato: se il mercato peggiora scattano le clausole di flex e il costo per lo sponsor può salire, oppure la sindacazione può fallire.",
+          "Un fondo di private credit tiene il prestito in portafoglio: offre certezza del finanziamento al signing, tempi rapidi, riservatezza e termini su misura, come componenti PIK o linee delayed draw.",
+          "In cambio chiede di solito uno spread più alto: gli sponsor pagano un premio per la certezza, soprattutto quando i mercati sono volatili."
+        ],
+        "shortcut": "Private credit = certezza di esecuzione, non prezzo più basso.",
+        "trap": "Scegliere 'più economico': di norma il private credit costa più del mercato sindacato e vince sulla certezza.",
+        "rule": "Nel finanziamento degli LBO conta il trade-off tra costo del debito e certezza di esecuzione."
+      },
+      "tags": ["private-credit", "leveraged-finance", "lbo-financing"]
+    },
+    {
+      "id": "com-014",
+      "skill": "commercial",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A colleague argues that AI demand has made the semiconductor sector structurally non-cyclical. Which is the strongest counterargument?",
+      "options": [
+        "Demand is concentrated in a few large buyers whose capex depends on monetising AI, while new supply arrives with long lags, so inventory and capacity cycles can still produce boom and bust",
+        "AI chips are sold only to governments, so demand is fixed by public budgets",
+        "Semiconductor prices are regulated, so they cannot rise with demand",
+        "AI workloads do not use memory chips, so memory cycles are irrelevant"
+      ],
+      "answer": 0,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "La domanda AI dipende dal capex di pochi grandi clienti, come gli hyperscaler, che può essere rivisto rapidamente se i ritorni degli investimenti deludono.",
+          "L'offerta (nuove fab, packaging avanzato, memoria ad alta banda) si espande con ritardi di anni: in fase di carenza si accumulano ordini doppi e scorte, poi la capacità arriva tutta insieme.",
+          "È lo stesso meccanismo che ha creato i cicli passati: un trend strutturale di crescita può convivere con cicli violenti attorno al trend."
+        ],
+        "shortcut": "Crescita strutturale non significa assenza di cicli: guarda concentrazione dei clienti e ritardi dell'offerta.",
+        "trap": "Scegliere opzioni basate su fatti falsi (prezzi regolati, AI senza memoria): un contro-argomento forte usa la meccanica del ciclo, non affermazioni estreme.",
+        "rule": "Ciclo dei semiconduttori = domanda volatile + offerta rigida + scorte lungo la catena."
+      },
+      "tags": ["semiconductors", "ai-capex", "cyclicality"]
+    },
+    {
+      "id": "com-015",
+      "skill": "commercial",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A major economy imposes broad export controls on advanced chips and chipmaking equipment sold to another large market. Which set of consequences is most likely?",
+      "options": [
+        "Global semiconductor demand disappears, so all capex projects are cancelled",
+        "Equipment makers gain sales in the restricted market, and cross-border deal reviews become faster",
+        "Equipment makers lose some sales to the restricted market, governments subsidise domestic fab capex, supply chains split along geopolitical lines and cross-border semiconductor deals face tougher scrutiny",
+        "Chip prices fall everywhere because the restricted market starts exporting more advanced chips"
+      ],
+      "answer": 2,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "I fornitori di chip avanzati e di macchinari perdono, almeno in parte, l'accesso al mercato soggetto ai controlli.",
+          "Il mercato colpito investe per sviluppare capacità domestica, mentre altri governi sussidiano nuove fab per ridurre la dipendenza: più capex pubblico e privato in più regioni.",
+          "Le supply chain si dividono lungo linee geopolitiche e la sicurezza nazionale pesa di più nelle revisioni dei deal cross-border, con tempi più lunghi e più blocchi."
+        ],
+        "shortcut": "Restrizioni su tecnologia strategica = vendite perse per i fornitori + sussidi alla capacità domestica + più scrutinio sui deal.",
+        "trap": "Scegliere effetti estremi come la scomparsa della domanda globale: le restrizioni spostano e frammentano la domanda, non la eliminano.",
+        "rule": "Geopolitica nei settori strategici: supply chain frammentate, sussidi e rischio regolamentare più alto per l'M&A."
+      },
+      "tags": ["semiconductors", "geopolitics", "export-controls"]
+    }
+  ]
+}

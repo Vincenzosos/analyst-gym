@@ -1,0 +1,1 @@
+{ "name": "analyst-gym", "private": true, "type": "module", "scripts": { "test": "node tests/gen.test.js && node tests/content.test.js" } }

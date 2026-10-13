@@ -1,0 +1,1874 @@
+{
+  "items": [
+    {
+      "id": "log-001",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Statements: All associates at Kestrel Partners hold a CFA charter. Elena is an associate at Kestrel Partners.\nWhich of the following must be true?",
+      "options": [
+        "All CFA charterholders at Kestrel Partners are associates.",
+        "Elena's colleagues who are not associates do not hold a CFA charter.",
+        "Elena holds a CFA charter.",
+        "Elena obtained her CFA charter before joining Kestrel Partners."
+      ],
+      "answer": 2,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Traduci la prima frase in insiemi: il cerchio 'Associate' sta tutto dentro il cerchio 'CFA'.",
+          "Elena sta nel cerchio Associate, quindi sta per forza anche nel cerchio CFA: Elena ha il CFA.",
+          "'Tutti i CFA sono associate' inverte la frase: il cerchio CFA può contenere anche analyst o partner.",
+          "'I non associate non hanno il CFA' è l'inversa e non segue; la frase sul 'prima di entrare' aggiunge un'informazione temporale che le premesse non danno."
+        ],
+        "shortcut": "Con 'All A are B' e 'x è A' l'unica conclusione valida è 'x è B'. Cerca l'opzione che applica la regola alla persona senza aggiungere nulla.",
+        "trap": "Scegliere l'opzione che inverte la frase ('tutti i CFA sono associate'). 'All A are B' non implica 'All B are A'.",
+        "rule": "All A are B: puoi scendere da A a B, mai risalire da B ad A."
+      },
+      "tags": [
+        "deductive",
+        "syllogism",
+        "all"
+      ]
+    },
+    {
+      "id": "log-002",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Statements: All bonds in the portfolio are investment grade. Some investment-grade securities are callable.\nWhich conclusion follows?",
+      "options": [
+        "Some bonds in the portfolio are callable.",
+        "No bonds in the portfolio are callable.",
+        "All callable securities are investment grade.",
+        "None of these conclusions necessarily follows."
+      ],
+      "answer": 3,
+      "timeTarget": 50,
+      "explanation": {
+        "steps": [
+          "Disegna i cerchi: 'Bond del portafoglio' sta dentro 'Investment grade'. 'Callable' si sovrappone a Investment grade solo in parte.",
+          "La parte di Investment grade che è callable può stare dentro o fuori dal cerchio dei bond: le premesse non dicono dove.",
+          "Quindi 'some bonds are callable' è possibile ma non necessaria, e lo stesso vale per 'no bonds are callable'.",
+          "'All callable securities are investment grade' gira la seconda premessa: sappiamo solo che alcuni investment grade sono callable. Nessuna conclusione segue."
+        ],
+        "shortcut": "Se il termine in comune (investment grade) è il cerchio grande della frase 'All' e compare in una frase 'Some', i due cerchi esterni possono non toccarsi: nessuna conclusione certa.",
+        "trap": "Scegliere 'Some bonds in the portfolio are callable' perché sembra ragionevole. Il test chiede cosa segue necessariamente, non cosa è plausibile.",
+        "rule": "All A are B + Some B are C: nessuna conclusione certa tra A e C."
+      },
+      "tags": [
+        "deductive",
+        "syllogism",
+        "all-some"
+      ]
+    },
+    {
+      "id": "log-003",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Statements: No junior analysts are authorised to sign NDAs. Some members of the deal team are junior analysts.\nWhich of the following must be true?",
+      "options": [
+        "Some members of the deal team are not authorised to sign NDAs.",
+        "No members of the deal team are authorised to sign NDAs.",
+        "Some people authorised to sign NDAs are junior analysts.",
+        "All deal team members who are not junior analysts are authorised to sign NDAs."
+      ],
+      "answer": 0,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Prendi i membri del deal team che sono junior analyst: esistono, per la seconda frase.",
+          "Per la prima frase nessun junior analyst può firmare NDA, quindi quei membri del team non possono firmare.",
+          "Ne segue 'some members of the deal team are not authorised'. Degli altri membri non sappiamo nulla, quindi né 'nessun membro' né 'tutti i non junior sono autorizzati' sono certe.",
+          "'Some people authorised to sign NDAs are junior analysts' contraddice direttamente la prima premessa."
+        ],
+        "shortcut": "No A are B + Some C are A porta sempre a 'Some C are not B'. È una delle combinazioni valide più frequenti nei test.",
+        "trap": "Generalizzare a tutto il team ('No members... are authorised'): la premessa parla solo di alcuni membri.",
+        "rule": "Some C are A + No A are B: Some C are not B."
+      },
+      "tags": [
+        "deductive",
+        "syllogism",
+        "no-some"
+      ]
+    },
+    {
+      "id": "log-004",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Statements: If the deal closes before 31 December, the bonus pool will increase. The bonus pool did not increase.\nWhich of the following must be true?",
+      "options": [
+        "The deal did not close before 31 December.",
+        "The deal closed after 31 December.",
+        "The deal was cancelled.",
+        "The bonus pool decreased.",
+        "Nothing can be concluded about the deal."
+      ],
+      "answer": 0,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Struttura: se P (chiusura prima del 31 dicembre) allora Q (il bonus pool aumenta). Fatto: non Q.",
+          "Contrapositiva: se non Q allora non P. Quindi il deal non ha chiuso prima del 31 dicembre.",
+          "Non sappiamo se ha chiuso dopo, se è stato cancellato o se è ancora aperto: 'closed after' e 'was cancelled' sono solo alcune delle possibilità.",
+          "'The bonus pool decreased' non è necessaria: 'non aumentato' può voler dire invariato."
+        ],
+        "shortcut": "Negato il conseguente, nega l'antecedente parola per parola: 'did not close before 31 December'. Scarta tutto ciò che aggiunge dettagli.",
+        "trap": "Scegliere 'The deal closed after 31 December': è più specifica di quanto si possa dedurre, il deal potrebbe non chiudere mai.",
+        "rule": "Se P allora Q; non Q, quindi non P (modus tollens)."
+      },
+      "tags": [
+        "deductive",
+        "conditional",
+        "contrapositive"
+      ]
+    },
+    {
+      "id": "log-005",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Statements: Every company in the Meridian Index publishes an annual sustainability report. Halden Group publishes an annual sustainability report.\nWhich of the following is correct?",
+      "options": [
+        "Halden Group is in the Meridian Index.",
+        "Halden Group may or may not be in the Meridian Index.",
+        "Halden Group is not in the Meridian Index.",
+        "Only Meridian Index companies publish sustainability reports."
+      ],
+      "answer": 1,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Struttura: se una società è nell'indice allora pubblica il report. Il cerchio 'Indice' sta dentro il cerchio 'Report'.",
+          "Halden pubblica il report: sta nel cerchio grande, che però contiene anche società fuori dall'indice.",
+          "Non possiamo dire né che è dentro né che è fuori dall'indice: l'unica affermazione corretta è 'may or may not'.",
+          "'Only Meridian Index companies publish' trasforma la regola nella sua conversa, che non è data."
+        ],
+        "shortcut": "Se il fatto conferma la seconda parte della regola (il conseguente), non sai nulla della prima. Risposta: indeterminato.",
+        "trap": "Affermare il conseguente: 'pubblica il report, quindi è nell'indice'. È l'errore logico più testato in assoluto.",
+        "rule": "Se P allora Q; Q vero non dice nulla su P."
+      },
+      "tags": [
+        "deductive",
+        "conditional",
+        "affirming-consequent"
+      ]
+    },
+    {
+      "id": "log-006",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Statements: Some project managers are engineers. All engineers have attended the safety course.\nWhich of the following must be true?",
+      "options": [
+        "All project managers have attended the safety course.",
+        "Some people who attended the safety course are not engineers.",
+        "Some project managers have attended the safety course.",
+        "No project manager who is not an engineer has attended the safety course."
+      ],
+      "answer": 2,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "I project manager che sono ingegneri esistono (prima frase).",
+          "Tutti gli ingegneri hanno fatto il corso (seconda frase), quindi anche quei project manager lo hanno fatto.",
+          "Conclusione: some project managers have attended. Non possiamo estendere a tutti i project manager.",
+          "Le altre due opzioni parlano di persone (non ingegneri) su cui le premesse non dicono nulla."
+        ],
+        "shortcut": "Some A are B + All B are C: Some A are C. Basta 'trasportare' il gruppo comune dentro il cerchio grande.",
+        "trap": "Passare da 'some' ad 'all' e scegliere 'All project managers have attended': la premessa parla solo di alcuni.",
+        "rule": "Some A are B + All B are C: Some A are C."
+      },
+      "tags": [
+        "deductive",
+        "syllogism",
+        "some-all"
+      ]
+    },
+    {
+      "id": "log-007",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Statement: The loan will be approved only if the borrower provides audited accounts.\nWhich of the following must be true?",
+      "options": [
+        "If the borrower provides audited accounts, the loan will be approved.",
+        "If the loan is not approved, the borrower did not provide audited accounts.",
+        "The loan will be approved if and only if audited accounts are provided.",
+        "If the loan is approved, the borrower provided audited accounts."
+      ],
+      "answer": 3,
+      "timeTarget": 55,
+      "explanation": {
+        "steps": [
+          "'A only if B' si traduce: se A allora B. Qui: se il prestito è approvato, allora i bilanci certificati sono stati forniti.",
+          "L'opzione 'If the loan is approved, the borrower provided audited accounts' è esattamente questa traduzione.",
+          "'If the borrower provides audited accounts, the loan will be approved' è la conversa: i bilanci sono necessari ma non sufficienti.",
+          "'If the loan is not approved...' è l'inversa e 'if and only if' trasforma la condizione necessaria in necessaria e sufficiente."
+        ],
+        "shortcut": "'Only if' introduce la condizione necessaria: ciò che segue 'only if' va sempre dopo la freccia.",
+        "trap": "Leggere 'only if' come 'if': avere i bilanci certificati non garantisce l'approvazione.",
+        "rule": "A only if B = se A allora B (B è necessario per A)."
+      },
+      "tags": [
+        "deductive",
+        "conditional",
+        "only-if"
+      ]
+    },
+    {
+      "id": "log-008",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Statements: The board will not approve the acquisition unless the fairness opinion is delivered. The fairness opinion was delivered on Monday.\nWhich of the following must be true?",
+      "options": [
+        "The statements do not establish whether the board will approve the acquisition.",
+        "The board will approve the acquisition.",
+        "The board will reject the acquisition.",
+        "The board would have approved the acquisition even without the opinion."
+      ],
+      "answer": 0,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "'Not X unless Y' significa: se X allora Y. Qui: se il board approva, la fairness opinion è stata consegnata.",
+          "La fairness opinion è una condizione necessaria, non sufficiente.",
+          "Sapere che l'opinion è stata consegnata conferma il conseguente: non dice nulla sull'approvazione, né in un senso né nell'altro.",
+          "'Would have approved even without the opinion' contraddice la regola: senza opinion il board non approva."
+        ],
+        "shortcut": "Con 'unless' sostituisci mentalmente 'if not': 'il board non approva se non c'è l'opinion'. Poi chiediti se il fatto dato attiva la regola: qui no.",
+        "trap": "Scegliere 'The board will approve': si tratta la condizione necessaria come se fosse sufficiente.",
+        "rule": "Not A unless B = se A allora B = A only if B."
+      },
+      "tags": [
+        "deductive",
+        "conditional",
+        "unless"
+      ]
+    },
+    {
+      "id": "log-009",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Statements: If the client has signed the mandate, the team has started due diligence. If the team has started due diligence, the data room has been opened. The data room has not been opened.\nWhich of the following must be true?",
+      "options": [
+        "The team has started due diligence.",
+        "The client has not signed the mandate.",
+        "The client has signed the mandate, but due diligence has not started yet.",
+        "Due diligence will start as soon as the data room is opened."
+      ],
+      "answer": 1,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Catena: mandato firmato → due diligence → data room aperta.",
+          "La data room non è aperta: per contrapositiva la due diligence non è iniziata.",
+          "Applica di nuovo la contrapositiva: se la due diligence non è iniziata, il mandato non è stato firmato.",
+          "'Signed the mandate, but due diligence has not started yet' contraddice la prima regola; 'will start as soon as the data room is opened' è la conversa della seconda regola."
+        ],
+        "shortcut": "Negare l'ultimo anello di una catena di 'if' nega tutti gli anelli precedenti, fino al primo.",
+        "trap": "Pensare che il mandato possa essere firmato con la due diligence ancora da avviare: la prima regola dice che, se il mandato è firmato, la due diligence è già iniziata.",
+        "rule": "A → B → C; non C, quindi non B e non A."
+      },
+      "tags": [
+        "deductive",
+        "conditional",
+        "chain",
+        "contrapositive"
+      ]
+    },
+    {
+      "id": "log-010",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Statements: No loss-making companies pay dividends. Some technology companies pay dividends.\nWhich of the following must be true?",
+      "options": [
+        "No technology companies are loss-making.",
+        "Some technology companies are loss-making.",
+        "Some loss-making companies are technology companies.",
+        "Some technology companies are not loss-making.",
+        "All dividend payers are technology companies."
+      ],
+      "answer": 3,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Prendi le aziende tech che pagano dividendi: esistono per la seconda frase.",
+          "Nessuna azienda in perdita paga dividendi, quindi quelle aziende tech non sono in perdita.",
+          "Conclusione: some technology companies are not loss-making.",
+          "'No technology companies are loss-making' generalizza troppo; le due opzioni 'some... are loss-making' possono essere vere ma non sono garantite; 'All dividend payers are tech' non ha base."
+        ],
+        "shortcut": "Individua il gruppo che 'esiste' grazie al 'some' e fallo passare attraverso il 'no': ottieni sempre un 'some... are not'.",
+        "trap": "Scegliere 'No technology companies are loss-making': vale solo per le tech che pagano dividendi, non per tutte.",
+        "rule": "No A are B + Some C are B: Some C are not A."
+      },
+      "tags": [
+        "deductive",
+        "syllogism",
+        "no-some"
+      ]
+    },
+    {
+      "id": "log-011",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Statements: All members of the credit committee are managing directors. Some managing directors work in London. No one who works in London sits on the pricing committee.\nWhich of the following CANNOT be true?",
+      "options": [
+        "Some credit committee members work in London.",
+        "Some managing directors sit on the pricing committee.",
+        "Some credit committee members sit on the pricing committee.",
+        "No credit committee member works in London.",
+        "A London-based managing director sits on the pricing committee."
+      ],
+      "answer": 4,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Insiemi: Credit committee dentro Managing directors; MD e London si sovrappongono; London e Pricing committee non si toccano.",
+          "'A London-based MD sits on the pricing committee' mette una persona in London e in Pricing insieme: viola la terza premessa, quindi non può essere vera.",
+          "'Some credit committee members work in London' e 'No credit committee member works in London' sono entrambe possibili: le premesse non dicono se i membri del credit committee siano tra gli MD di Londra.",
+          "Un MD che non lavora a Londra (anche del credit committee) può sedere nel pricing committee: le altre due opzioni sono possibili."
+        ],
+        "shortcut": "In una domanda 'CANNOT be true' cerca l'opzione che unisce due insiemi che una premessa con 'No' separa.",
+        "trap": "Scartare come impossibile un'opzione che sembra 'strana' ma che le premesse non escludono: possibile non vuol dire probabile.",
+        "rule": "Cannot be true = contraddice almeno una premessa; tutto il resto è possibile."
+      },
+      "tags": [
+        "deductive",
+        "syllogism",
+        "cannot-be-true"
+      ]
+    },
+    {
+      "id": "log-012",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Statements: A trainee is offered a permanent role only if they pass all three exams and receive a positive review. Sara was offered a permanent role. Tom passed all three exams and received a positive review.\nWhich of the following must be true?",
+      "options": [
+        "Sara passed all three exams, and Tom will be offered a permanent role.",
+        "Sara passed all three exams; Tom may or may not be offered a permanent role.",
+        "Sara may have failed one exam, provided her review was positive.",
+        "Tom will be offered a permanent role, but Sara's exam results are unknown."
+      ],
+      "answer": 1,
+      "timeTarget": 70,
+      "explanation": {
+        "steps": [
+          "Traduzione: ruolo permanente → (tre esami superati E review positiva).",
+          "Sara ha il ruolo: per modus ponens ha superato tutti e tre gli esami e ha una review positiva.",
+          "Tom soddisfa le condizioni, ma sono necessarie, non sufficienti: il conseguente vero non dice nulla sull'antecedente.",
+          "Sara: certo; Tom: indeterminato. Solo 'Sara passed all three exams; Tom may or may not' combina correttamente i due esiti."
+        ],
+        "shortcut": "Con due persone, risolvi ciascuna separatamente e poi cerca l'opzione che combina esattamente i due esiti.",
+        "trap": "Pensare che Tom, avendo tutto, riceverà il ruolo: 'only if' dà condizioni necessarie, non una garanzia.",
+        "rule": "A only if (B e C): A garantisce B e C; B e C non garantiscono A."
+      },
+      "tags": [
+        "deductive",
+        "conditional",
+        "only-if"
+      ]
+    },
+    {
+      "id": "log-013",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Statements: Either the target's EBITDA exceeds EUR 50m, or the buyer will request a price adjustment, or both. The buyer will not request a price adjustment.\nWhich of the following must be true?",
+      "options": [
+        "The target's EBITDA does not exceed EUR 50m.",
+        "The buyer will request a price adjustment at a later stage.",
+        "The target's EBITDA exceeds EUR 50m.",
+        "Nothing can be concluded about the target's EBITDA."
+      ],
+      "answer": 2,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Struttura: P o Q, con almeno uno dei due vero ('or both' conferma che è un 'o' inclusivo).",
+          "Q (il buyer chiederà un aggiustamento di prezzo) è falso: la seconda frase dice che non lo chiederà.",
+          "Se almeno uno deve essere vero e Q è falso, P deve essere vero: l'EBITDA supera EUR 50m.",
+          "'Does not exceed' nega proprio l'unica cosa certa; 'at a later stage' contraddice la seconda frase; 'Nothing can be concluded' ignora che la disgiunzione obbliga almeno un termine a essere vero."
+        ],
+        "shortcut": "In un 'either... or' elimina il termine negato: quello che resta è la risposta.",
+        "trap": "Pensare che senza un dato diretto sull'EBITDA non si possa dire nulla: la disgiunzione è proprio quel dato.",
+        "rule": "P o Q; non Q, quindi P (sillogismo disgiuntivo)."
+      },
+      "tags": [
+        "deductive",
+        "disjunction"
+      ]
+    },
+    {
+      "id": "log-014",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Statements: Every analyst who joined in 2024 completed the modelling course. Nobody who completed the modelling course failed the year-end assessment. Giulia failed the year-end assessment.\nWhich of the following must be true?",
+      "options": [
+        "Giulia joined in a year other than 2024.",
+        "Giulia is not an analyst.",
+        "Some analysts who joined in 2024 failed the year-end assessment.",
+        "Giulia completed the modelling course but failed for other reasons.",
+        "Giulia did not complete the modelling course."
+      ],
+      "answer": 4,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Catena: analyst entrato nel 2024 → corso completato → assessment non fallito.",
+          "Giulia ha fallito l'assessment: per contrapositiva della seconda frase non ha completato il corso.",
+          "Risalendo, Giulia non è 'un analyst entrato nel 2024'. Ma può essere un analyst entrato in un altro anno oppure una non analyst entrata nel 2024: né 'other year' né 'not an analyst' sono certe.",
+          "Le due opzioni rimanenti contraddicono le premesse."
+        ],
+        "shortcut": "Con la contrapositiva fermati all'anello sicuro. Quando l'antecedente è composto (analyst E 2024), negarlo lascia aperte più possibilità.",
+        "trap": "Scegliere 'Giulia joined in a year other than 2024': negare 'analyst entrato nel 2024' non nega per forza il 2024, Giulia potrebbe non essere un analyst.",
+        "rule": "Non (A e B) = non A oppure non B: non sai quale dei due."
+      },
+      "tags": [
+        "deductive",
+        "conditional",
+        "chain",
+        "contrapositive"
+      ]
+    },
+    {
+      "id": "log-015",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Which statement is logically equivalent to: 'If the covenant is breached, the lender can demand early repayment'?",
+      "options": [
+        "If the lender cannot demand early repayment, the covenant has not been breached.",
+        "If the lender can demand early repayment, the covenant has been breached.",
+        "If the covenant is not breached, the lender cannot demand early repayment.",
+        "The lender can demand early repayment only if the covenant is breached."
+      ],
+      "answer": 0,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Forma: se P (covenant violato) allora Q (rimborso anticipato esigibile).",
+          "L'unica forma equivalente è la contrapositiva: se non Q allora non P, cioè 'If the lender cannot demand early repayment, the covenant has not been breached'.",
+          "'If the lender can demand..., the covenant has been breached' è la conversa. 'Can demand only if breached' dice la stessa cosa, perché 'Q only if P' significa 'se Q allora P'.",
+          "'If the covenant is not breached, the lender cannot demand' è l'inversa: il lender potrebbe avere altri motivi per chiedere il rimborso."
+        ],
+        "shortcut": "Equivalente = inverti l'ordine E nega entrambe le parti. Se manca uno dei due passaggi, è sbagliata.",
+        "trap": "Scegliere l'inversa ('if not breached, cannot demand'): sembra naturale, ma il covenant non è l'unico evento che può dare diritto al rimborso.",
+        "rule": "Se P allora Q equivale solo a: se non Q allora non P."
+      },
+      "tags": [
+        "deductive",
+        "conditional",
+        "contrapositive",
+        "only-if"
+      ]
+    },
+    {
+      "id": "log-016",
+      "skill": "logical",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Statements: (1) The fund invests in a company only if it has positive free cash flow. (2) Unless a company is rated BBB or above, it does not have positive free cash flow. (3) No company rated BBB or above operates in the shipping sector.\nWhich of the following must be true?",
+      "options": [
+        "Every company rated BBB or above has positive free cash flow.",
+        "The fund invests in every company with positive free cash flow.",
+        "Some shipping companies have positive free cash flow.",
+        "The fund does not invest in any shipping company.",
+        "A shipping company rated below BBB could still receive investment from the fund."
+      ],
+      "answer": 3,
+      "timeTarget": 100,
+      "explanation": {
+        "steps": [
+          "(1) Investe → FCF positivo. (2) 'Non FCF positivo unless BBB+' significa FCF positivo → BBB+. (3) BBB+ → non shipping.",
+          "Catena: investe → FCF positivo → BBB+ → non shipping. Quindi il fondo non investe in nessuna società dello shipping.",
+          "'Every company rated BBB or above has positive FCF' è la conversa di (2); 'invests in every company with positive FCF' è la conversa di (1): non seguono.",
+          "'Some shipping companies have positive FCF' è falsa (FCF positivo implica BBB+, che esclude lo shipping). Anche l'ultima è falsa: sotto BBB non c'è FCF positivo, quindi niente investimento."
+        ],
+        "shortcut": "Riscrivi ogni frase come freccia 'se... allora' e collega le frecce: la risposta è quasi sempre il primo anello collegato all'ultimo.",
+        "trap": "Tradurre male 'unless' nella frase (2) e girare la freccia: si arriva a 'every BBB company has positive FCF', che è la conversa.",
+        "rule": "Not B unless C = se B allora C; poi concatena: A→B, B→C, C→D dà A→D."
+      },
+      "tags": [
+        "deductive",
+        "conditional",
+        "chain",
+        "unless",
+        "only-if"
+      ]
+    },
+    {
+      "id": "log-017",
+      "skill": "logical",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Exactly one of four analysts (Aldo, Bianca, Carlo, Dora) left an error in the model. Each makes one statement:\nAldo: 'Bianca made the error.'\nBianca: 'Dora made the error.'\nCarlo: 'I did not make the error.'\nDora: 'Bianca is lying.'\nIf exactly one of the four statements is true, who made the error?",
+      "options": [
+        "Aldo",
+        "Bianca",
+        "Carlo",
+        "Dora",
+        "It cannot be determined"
+      ],
+      "answer": 2,
+      "timeTarget": 100,
+      "explanation": {
+        "steps": [
+          "Bianca e Dora si contraddicono: Dora dice che Bianca mente, quindi esattamente una delle due dice il vero.",
+          "Dato che in tutto c'è una sola affermazione vera, Aldo e Carlo mentono entrambi.",
+          "Carlo mente quando dice 'non sono stato io': quindi l'errore è di Carlo.",
+          "Verifica: Aldo (Bianca) falso, Bianca (Dora) falso, Carlo falso, Dora ('Bianca mente') vero. Una sola affermazione vera: coerente."
+        ],
+        "shortcut": "Cerca la coppia di affermazioni che si negano a vicenda: contiene l'unica verità, e tutte le altre si determinano subito.",
+        "trap": "Testare i colpevoli uno per uno senza notare la contraddizione Bianca/Dora: si perde tempo e si sbaglia facilmente il conteggio.",
+        "rule": "Due affermazioni che si negano a vicenda: esattamente una è vera."
+      },
+      "tags": [
+        "deductive",
+        "truth-teller"
+      ]
+    },
+    {
+      "id": "log-018",
+      "skill": "logical",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Statements: All of the bank's graduate hires speak at least two languages. Some people who speak at least two languages work in compliance. No one who works in compliance is a graduate hire.\nWhich of the following must be true?",
+      "options": [
+        "Some people who speak at least two languages are not graduate hires.",
+        "Some graduate hires work in compliance.",
+        "No one who speaks at least two languages is a graduate hire.",
+        "Everyone in compliance speaks at least two languages.",
+        "Some people in compliance speak only one language."
+      ],
+      "answer": 0,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Insiemi: Graduate dentro Bilingui; Bilingui e Compliance si sovrappongono; Compliance e Graduate non si toccano.",
+          "Prendi i bilingui che lavorano in compliance (esistono per la seconda frase). Per la terza frase non sono graduate hire.",
+          "Quindi esistono bilingui che non sono graduate hire: 'Some people who speak at least two languages are not graduate hires' è necessaria.",
+          "'Some graduate hires work in compliance' contraddice la terza premessa; 'No one who speaks two languages is a graduate hire' contraddice la prima; le due opzioni sui dipendenti di compliance sono possibili ma non certe."
+        ],
+        "shortcut": "Quando una frase 'Some' e una frase 'No' condividono un insieme (qui compliance), applica il 'No' al gruppo del 'Some': ottieni un 'Some... are not'.",
+        "trap": "Partire dalla prima premessa, la più 'forte', e cercare conclusioni sui graduate hire: la conclusione valida nasce dalla seconda e dalla terza.",
+        "rule": "Some A are B + No B are C: Some A are not C."
+      },
+      "tags": [
+        "deductive",
+        "syllogism",
+        "three-premises"
+      ]
+    },
+    {
+      "id": "log-019",
+      "skill": "logical",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Statements: (1) The IPO proceeds only if market volatility is low. (2) If the anchor investor commits, the IPO proceeds unless the regulator raises an objection. (3) The regulator raises an objection only if the prospectus is amended.\nFacts: The anchor investor committed. The prospectus was not amended.\nWhich of the following must be true?",
+      "options": [
+        "The IPO does not proceed.",
+        "Market volatility is low.",
+        "The regulator raises an objection.",
+        "It cannot be determined whether the IPO proceeds.",
+        "The IPO proceeds even though market volatility is high."
+      ],
+      "answer": 1,
+      "timeTarget": 110,
+      "explanation": {
+        "steps": [
+          "Traduci: (1) IPO → volatilità bassa. (2) Anchor commit E nessuna obiezione → IPO. (3) Obiezione → prospetto modificato.",
+          "Il prospetto non è stato modificato: per contrapositiva della (3) il regolatore non solleva obiezioni.",
+          "L'anchor ha confermato e non c'è obiezione: per la (2) l'IPO procede.",
+          "L'IPO procede: per la (1) la volatilità deve essere bassa. Tutte le altre opzioni contraddicono questa catena."
+        ],
+        "shortcut": "Parti dal fatto che attiva una sola regola (prospetto non modificato) e fai scorrere la catena: ogni conclusione sblocca la regola successiva.",
+        "trap": "Pensare che non si sappia nulla della volatilità e scegliere 'cannot be determined': se l'IPO procede, la sua condizione necessaria è per forza vera.",
+        "rule": "Se un risultato è certo, ogni sua condizione necessaria ('only if') è certa anch'essa."
+      },
+      "tags": [
+        "deductive",
+        "conditional",
+        "chain",
+        "unless",
+        "only-if"
+      ]
+    },
+    {
+      "id": "log-020",
+      "skill": "logical",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Statements: Some deals in the pipeline are not cross-border. All deals that require antitrust filings in two jurisdictions are cross-border.\nWhich of the following must be true?",
+      "options": [
+        "Some deals in the pipeline require antitrust filings in two jurisdictions.",
+        "No deal in the pipeline requires antitrust filings in two jurisdictions.",
+        "All cross-border deals require antitrust filings in two jurisdictions.",
+        "Some cross-border deals are not in the pipeline.",
+        "Some deals in the pipeline do not require antitrust filings in two jurisdictions."
+      ],
+      "answer": 4,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Insiemi: 'Doppia filing' sta dentro 'Cross-border'. Esistono deal in pipeline fuori dal cerchio Cross-border.",
+          "Un deal fuori dal cerchio Cross-border è anche fuori dal cerchio più piccolo 'Doppia filing'.",
+          "Quindi quei deal in pipeline non richiedono la doppia filing: l'ultima opzione è necessaria.",
+          "Le prime due sono possibili ma non certe (non sappiamo nulla dei deal cross-border in pipeline); 'All cross-border deals require...' è la conversa; 'Some cross-border deals are not in the pipeline' non è supportata."
+        ],
+        "shortcut": "Chi è fuori dal cerchio grande è fuori anche da ogni cerchio contenuto in esso.",
+        "trap": "Scegliere 'No deal in the pipeline requires...': sappiamo solo di alcuni deal non cross-border, quelli cross-border in pipeline potrebbero richiedere la doppia filing.",
+        "rule": "Some A are not B + All C are B: Some A are not C."
+      },
+      "tags": [
+        "deductive",
+        "syllogism",
+        "some-not"
+      ]
+    },
+    {
+      "id": "log-021",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Five funds (Alder, Birch, Cedar, Dune, Elm) are ranked by last year's return, with no ties.\n- Elm returned less than Birch but more than Cedar.\n- Cedar returned more than Dune.\n- Alder returned less than Dune.\nWhich fund had the fourth-highest return?",
+      "options": [
+        "Cedar",
+        "Elm",
+        "Alder",
+        "Dune"
+      ],
+      "answer": 3,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Prima frase: Birch > Elm > Cedar.",
+          "Aggiungi Cedar > Dune: Birch > Elm > Cedar > Dune.",
+          "Aggiungi Alder < Dune: Birch > Elm > Cedar > Dune > Alder.",
+          "Il quarto rendimento più alto è quello di Dune."
+        ],
+        "shortcut": "Trasforma ogni frase in un pezzo di catena con '>' e incastra i pezzi partendo dall'elemento che compare in più frasi.",
+        "trap": "Contare dal basso invece che dall'alto: il quarto più alto è Dune, il quarto dal basso sarebbe Elm.",
+        "rule": "Ordinamenti lineari: costruisci una sola catena 'maggiore di' e leggi la posizione richiesta."
+      },
+      "tags": [
+        "ordering",
+        "linear-ranking"
+      ]
+    },
+    {
+      "id": "log-022",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Four client meetings (Fenwick, Galt, Harlow, Ingram) are held from Monday to Thursday, one per day.\n- The Galt meeting is the day immediately after the Fenwick meeting.\n- The Harlow meeting is later in the week than the Galt meeting.\n- The Ingram meeting is on neither Monday nor Thursday.\nWhich meeting is held on Tuesday?",
+      "options": [
+        "Fenwick",
+        "Galt",
+        "Harlow",
+        "Ingram"
+      ],
+      "answer": 1,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Ingram è martedì o mercoledì.",
+          "Se Ingram fosse martedì, Fenwick e Galt (giorni consecutivi) dovrebbero essere mercoledì e giovedì, e Harlow (dopo Galt) non avrebbe posto. Impossibile.",
+          "Quindi Ingram è mercoledì. Con Fenwick e Galt consecutivi e Harlow dopo Galt: Fenwick lunedì, Galt martedì, Harlow giovedì.",
+          "Martedì c'è Galt."
+        ],
+        "shortcut": "Parti dall'elemento con meno posizioni possibili (Ingram: 2 giorni) e prova i casi: uno dei due crolla subito.",
+        "trap": "Mettere Fenwick e Galt martedì e mercoledì senza controllare Ingram: si risponde Fenwick.",
+        "rule": "Inizia dal vincolo più restrittivo e testa i pochi casi possibili."
+      },
+      "tags": [
+        "ordering",
+        "schedule"
+      ]
+    },
+    {
+      "id": "log-023",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Four departments (Legal, Risk, Sales, Tax) occupy floors 1 to 4 of an office building, one department per floor.\n- Risk is on the floor directly above Sales.\n- Legal is not on floor 1 or floor 4.\n- Tax is on a higher floor than Legal.\nWhich department is on floor 2?",
+      "options": [
+        "Legal",
+        "Sales",
+        "Risk",
+        "Tax"
+      ],
+      "answer": 2,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Legal è al piano 2 o al piano 3.",
+          "Se Legal fosse al 2, Tax andrebbe al 3 o al 4 e a Sales e Risk resterebbero due piani non consecutivi (1 e 4, oppure 1 e 3). Ma Risk deve stare direttamente sopra Sales: impossibile.",
+          "Quindi Legal al 3 e Tax al 4. Restano i piani 1 e 2: Sales al 1, Risk al 2.",
+          "Al piano 2 c'è Risk."
+        ],
+        "shortcut": "Piazza prima l'elemento con due sole opzioni (Legal), poi controlla dove può stare la coppia 'attaccata' (Risk sopra Sales).",
+        "trap": "Mettere Legal al 2 perché è la prima opzione, senza verificare che Risk e Sales restino consecutivi.",
+        "rule": "Le coppie adiacenti (direttamente sopra, il giorno dopo) eliminano più casi: testale per prime."
+      },
+      "tags": [
+        "ordering",
+        "positions"
+      ]
+    },
+    {
+      "id": "log-024",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Four speakers (Anna, Ben, Chloe, Dev) sit in seats 1 to 4, numbered from left to right, on a conference panel.\n- Chloe sits at one end of the row.\n- Ben sits immediately to the right of Anna.\n- Dev does not sit next to Chloe.\n- Dev sits to the left of Anna.\nWho sits next to Chloe?",
+      "options": [
+        "Anna",
+        "Ben",
+        "Dev",
+        "It cannot be determined"
+      ],
+      "answer": 1,
+      "timeTarget": 70,
+      "explanation": {
+        "steps": [
+          "Chloe è al posto 1 o al posto 4.",
+          "Dev sta a sinistra di Anna e Ben subito a destra di Anna: l'ordine relativo è Dev, poi Anna, Ben attaccati.",
+          "Se Chloe fosse al posto 1, Dev, Anna, Ben occuperebbero 2, 3, 4 e Dev sarebbe accanto a Chloe: vietato.",
+          "Quindi Chloe al 4: Dev 1, Anna 2, Ben 3, Chloe 4. Accanto a Chloe c'è Ben."
+        ],
+        "shortcut": "Unisci i vincoli relativi in un blocco (Dev ... Anna-Ben) e prova il blocco nelle poche posizioni libere.",
+        "trap": "Non usare l'ultimo vincolo (Dev a sinistra di Anna): restano due soluzioni e si sceglie 'cannot be determined'.",
+        "rule": "Ogni vincolo serve: se trovi più soluzioni, rileggi quello che non hai ancora usato."
+      },
+      "tags": [
+        "ordering",
+        "seating",
+        "linear"
+      ]
+    },
+    {
+      "id": "log-025",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Five candidates (Hugo, Ines, Jonas, Karin, Leo) are interviewed one after another in slots 1 to 5.\n- Ines is interviewed immediately before Leo.\n- Hugo is interviewed after Karin but before Jonas.\n- Leo is not interviewed last.\n- Karin is not interviewed first.\nWho is interviewed third?",
+      "options": [
+        "Hugo",
+        "Ines",
+        "Leo",
+        "Jonas",
+        "Karin"
+      ],
+      "answer": 4,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Karin, Hugo, Jonas devono stare in quest'ordine (non per forza attaccati); Ines-Leo è un blocco di due slot consecutivi.",
+          "Karin non è prima e deve avere Hugo e Jonas dopo di sé: può essere solo seconda o terza.",
+          "Karin seconda: il blocco Ines-Leo va in 3-4 o in 4-5. Con 3-4, Hugo e Jonas restano in 1 e 5, ma Hugo deve seguire Karin e precedere Jonas: impossibile. Con 4-5 Leo sarebbe ultimo: vietato.",
+          "Karin terza: Hugo 4, Jonas 5, Ines 1, Leo 2. Tutti i vincoli sono rispettati: al terzo posto c'è Karin."
+        ],
+        "shortcut": "Una catena ordinata di 3 elementi in 5 slot limita il primo elemento ai primi 3 posti: con 'Karin non prima' restano solo due casi.",
+        "trap": "Mettere il blocco Ines-Leo in fondo (4-5) dimenticando che Leo non può essere ultimo.",
+        "rule": "Blocchi consecutivi e catene ordinate riducono i casi: conta quante posizioni restano a ciascuno."
+      },
+      "tags": [
+        "ordering",
+        "schedule",
+        "blocks"
+      ]
+    },
+    {
+      "id": "log-026",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Six board members (Marta, Nadia, Oscar, Pietro, Rosa, Sven) sit evenly spaced around a round table.\n- Marta sits directly opposite Oscar.\n- Nadia sits next to Marta.\n- Pietro sits next to Oscar and directly opposite Nadia.\n- Sven does not sit next to Oscar.\nWho sits directly opposite Sven?",
+      "options": [
+        "Marta",
+        "Nadia",
+        "Pietro",
+        "Rosa",
+        "Oscar"
+      ],
+      "answer": 3,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Numera i posti da 1 a 6 in senso orario e fissa Marta al posto 1: Oscar, opposto, è al 4.",
+          "Nadia è accanto a Marta: posto 2 o 6. Pietro, opposto a Nadia, va al 5 o al 3: in entrambi i casi è accanto a Oscar, coerente.",
+          "Caso Nadia 2, Pietro 5: restano 3 e 6. Sven non accanto a Oscar (3 e 5), quindi Sven 6 e Rosa 3. Opposto a Sven (6) c'è il posto 3: Rosa.",
+          "Caso Nadia 6, Pietro 3: restano 2 e 5. Sven non può stare al 5 (accanto a Oscar), quindi Sven 2 e Rosa 5; opposto a Sven (2) c'è il 5: Rosa.",
+          "In entrambe le disposizioni opposto a Sven c'è Rosa: la disposizione non è unica, ma la risposta sì."
+        ],
+        "shortcut": "Nei tavoli rotondi fissa una persona al posto 1 per eliminare le rotazioni. Le soluzioni speculari danno la stessa risposta per 'opposto' e 'accanto'.",
+        "trap": "Trovare due disposizioni e concludere che la risposta non è determinata: chiediti sempre se la domanda dipende davvero dal verso.",
+        "rule": "Tavolo rotondo da 6: opposto = posto + 3; fissa un nome per togliere le rotazioni."
+      },
+      "tags": [
+        "ordering",
+        "seating",
+        "circular"
+      ]
+    },
+    {
+      "id": "log-027",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "An analyst visits five plants (Bari, Como, Genoa, Parma, Turin), one per day from Monday to Friday.\n- Parma is visited on Tuesday.\n- Turin is visited after Como, and Genoa is visited after Turin.\n- Bari and Genoa are not visited on consecutive days.\nOn which day is Turin visited?",
+      "options": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "answer": 2,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Restano lunedì, mercoledì, giovedì e venerdì per Bari, Como, Turin e Genoa, con Como prima di Turin e Turin prima di Genoa.",
+          "Bari giovedì: Como, Turin, Genoa sarebbero lunedì, mercoledì, venerdì, con Genoa venerdì accanto a Bari. Bari venerdì: Genoa sarebbe giovedì, accanto a Bari. Entrambi vietati.",
+          "Quindi Bari è lunedì o mercoledì. In entrambi i casi i due giorni liberi più tardi sono giovedì e venerdì: Turin giovedì, Genoa venerdì.",
+          "Bari e Como si scambiano tra lunedì e mercoledì, ma Turin è sempre giovedì."
+        ],
+        "shortcut": "Non serve risolvere tutto: la domanda chiede solo Turin. Controlla se nei casi possibili Turin cade sempre nello stesso giorno.",
+        "trap": "Notare che Bari e Como non sono determinati e pensare che la risposta non sia univoca: la domanda riguarda una posizione fissa in tutti i casi.",
+        "rule": "Se le soluzioni sono più di una, la risposta corretta è ciò che resta uguale in tutte."
+      },
+      "tags": [
+        "ordering",
+        "schedule",
+        "partial-solution"
+      ]
+    },
+    {
+      "id": "log-028",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Four analysts (Anya, Bruno, Chen, Dario) sit at desks 1 to 4 in a row, and each covers a different sector (Energy, Healthcare, Retail, Tech).\n- The Tech analyst sits at desk 1.\n- Anya sits at an end desk but does not cover Tech.\n- Chen covers Retail and sits next to the Tech analyst.\n- Bruno sits next to the Healthcare analyst.\nWho covers Energy, and at which desk?",
+      "options": [
+        "Bruno, desk 3",
+        "Bruno, desk 4",
+        "Dario, desk 3",
+        "Anya, desk 4",
+        "Dario, desk 1"
+      ],
+      "answer": 0,
+      "timeTarget": 100,
+      "explanation": {
+        "steps": [
+          "Anya è a un'estremità ma non è Tech, che siede alla 1: Anya è alla 4.",
+          "Chen (Retail) è accanto alla scrivania 1: Chen alla 2. Bruno e Dario occupano la 1 e la 3.",
+          "Se Bruno fosse alla 1 (Tech), il suo unico vicino sarebbe Chen, che è Retail e non Healthcare. Quindi Bruno alla 3 e Dario alla 1 (Tech).",
+          "I vicini di Bruno sono Chen (Retail) e Anya: Anya è Healthcare. A Bruno resta Energy, alla scrivania 3."
+        ],
+        "shortcut": "Con due attributi, fissa prima le posizioni con vincoli assoluti (desk 1, estremità), poi usa i vicini per assegnare i settori.",
+        "trap": "Mettere Bruno alla scrivania 1 senza controllare il vincolo dei vicini: si finisce su 'Dario, desk 3'.",
+        "rule": "Costruisci una griglia persona, posizione, attributo e riempila partendo dai vincoli fissi."
+      },
+      "tags": [
+        "ordering",
+        "two-attributes",
+        "seating"
+      ]
+    },
+    {
+      "id": "log-029",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Six deals (P, Q, R, S, T, U) are ranked by fee earned, with no ties.\n- P and S each earned more than Q.\n- Q earned more than R, and R earned more than T.\n- U earned less than S but more than R.\nWhich of the following must be true?",
+      "options": [
+        "S earned the highest fee.",
+        "Q earned the fourth-highest fee.",
+        "U earned more than Q.",
+        "R earned the fifth-highest fee.",
+        "P earned more than U."
+      ],
+      "answer": 3,
+      "timeTarget": 100,
+      "explanation": {
+        "steps": [
+          "Relazioni: P > Q, S > Q, Q > R > T, S > U > R.",
+          "Sopra R ci sono Q e U direttamente, e P e S tramite Q: quattro deal sopra R.",
+          "Sotto R c'è solo T. Quindi R è quinto e T sesto in ogni caso.",
+          "Le prime quattro posizioni si possono ordinare in più modi (per esempio P, S, Q, U oppure S, U, P, Q): le altre opzioni non sono sempre vere."
+        ],
+        "shortcut": "Per 'must be true' conta quanti elementi stanno sicuramente sopra e sotto ciascuno: se i conti chiudono la posizione, quella è certa.",
+        "trap": "Costruire un solo ordine valido e scegliere l'opzione vera in quell'ordine: in un ordinamento parziale una soluzione non basta.",
+        "rule": "Must be true = vero in tutti gli ordini compatibili; un controesempio basta a scartare."
+      },
+      "tags": [
+        "ordering",
+        "linear-ranking",
+        "must-be-true"
+      ]
+    },
+    {
+      "id": "log-030",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Five calls (Ortiz, Park, Quinn, Rossi, Silva) are scheduled in slots 1 to 5, one per slot.\n- Exactly two calls are scheduled between the Ortiz call and the Quinn call.\n- The Park call is immediately after the Quinn call.\n- The Silva call is before the Rossi call.\n- The Ortiz call is after the Rossi call.\nWhich call is in slot 4?",
+      "options": [
+        "Park",
+        "Rossi",
+        "Ortiz",
+        "Silva",
+        "Quinn"
+      ],
+      "answer": 1,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Due call in mezzo tra Ortiz e Quinn: le coppie di slot possibili sono 1 e 4 oppure 2 e 5, in un verso o nell'altro.",
+          "Silva precede Rossi, che precede Ortiz: Ortiz è almeno nello slot 3. Restano Ortiz 4 con Quinn 1, oppure Ortiz 5 con Quinn 2.",
+          "Ortiz 4, Quinn 1, Park 2: Rossi e Silva andrebbero in 3 e 5, ma entrambi devono stare prima di Ortiz. Impossibile.",
+          "Quindi Ortiz 5, Quinn 2, Park 3. Restano 1 e 4: Silva 1, Rossi 4."
+        ],
+        "shortcut": "'Exactly two between' in una fila da 5 lascia solo le coppie di slot (1,4) e (2,5): testale entrambe.",
+        "trap": "Considerare solo Quinn prima di Ortiz (o solo il contrario): 'between' vale in entrambi i versi.",
+        "rule": "Distanza fissa tra due elementi: elenca tutte le coppie di slot possibili, in entrambi i versi."
+      },
+      "tags": [
+        "ordering",
+        "schedule",
+        "fixed-gap"
+      ]
+    },
+    {
+      "id": "log-031",
+      "skill": "logical",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Six analysts (Fabio, Greta, Hana, Jakob, Kai, Lena) present in slots 1 to 6, one per slot.\n- Either Fabio or Lena presents first.\n- Hana presents after both Greta and Jakob.\n- Kai presents immediately after Jakob.\n- If Fabio presents first, Lena presents fourth.\nIf Hana presents fifth, who presents sixth?",
+      "options": [
+        "Fabio",
+        "Greta",
+        "Kai",
+        "Lena",
+        "Jakob"
+      ],
+      "answer": 0,
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Ipotesi: Hana quinta. Greta e Jakob devono stare prima di lei e Kai subito dopo Jakob.",
+          "Se Fabio fosse primo, Lena sarebbe quarta: restano 2, 3 e 6 per Greta, Jakob e Kai. Jakob-Kai consecutivi vanno in 2-3 e Greta finisce al 6, dopo Hana. Impossibile.",
+          "Quindi Lena è prima. Il sesto posto non può essere Greta o Jakob (devono precedere Hana) né Kai (Jakob sarebbe al 5, che è di Hana).",
+          "Al sesto posto resta solo Fabio. Esempi validi: Lena, Greta, Jakob, Kai, Hana, Fabio oppure Lena, Jakob, Kai, Greta, Hana, Fabio."
+        ],
+        "shortcut": "In una domanda 'if', applica subito l'ipotesi e chiediti chi PUÒ stare nella posizione richiesta: elimina per esclusione.",
+        "trap": "Mettere Fabio primo perché è il primo nome della regola, senza vedere che con Hana quinta il ramo 'Fabio primo' crea un conflitto.",
+        "rule": "Con regole condizionali, testa il ramo 'se' e verifica se porta a una contraddizione."
+      },
+      "tags": [
+        "ordering",
+        "schedule",
+        "conditional-rules"
+      ]
+    },
+    {
+      "id": "log-032",
+      "skill": "logical",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Five analysts (Amir, Bea, Carl, Dina, Eli) joined the bank in different years from 2020 to 2024, and each covers a different sector (Banks, Energy, Media, Pharma, Tech).\n- The Pharma analyst joined in 2022.\n- Bea joined exactly two years after the Energy analyst.\n- The Media analyst joined before Carl, and Carl joined before Amir.\n- Eli covers Tech and joined after Dina.\n- Amir does not cover Banks.\nWhich of the following is true?",
+      "options": [
+        "Carl covers Energy and joined in 2022.",
+        "Amir covers Pharma and joined in 2024.",
+        "Dina covers Media and joined in 2021.",
+        "Bea covers Banks and joined in 2023.",
+        "Eli covers Tech and joined in 2023."
+      ],
+      "answer": 3,
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Eli è Tech. Il Media analyst viene prima di Carl e di Amir, quindi non è nessuno dei due: è Bea o Dina.",
+          "Se Bea fosse Media, Carl e Amir sarebbero dopo di lei e Bea dovrebbe essere almeno del 2022 (due anni dopo l'Energy analyst): Bea 2022, Carl 2023, Amir 2024. Ma il 2022 è dell'analista Pharma: contraddizione. Quindi Dina è Media.",
+          "Dina precede Carl, Amir ed Eli, e Bea non può essere del 2020 perché deve venire due anni dopo qualcuno: Dina 2020.",
+          "Amir, Bea e Carl si dividono Banks, Energy e Pharma; Bea non è Energy e Amir non è Banks. Se Amir fosse Energy, sarebbe almeno del 2023 (dopo Carl, e il 2022 è Pharma) e Bea del 2025: impossibile. Quindi Carl Energy, Amir Pharma (2022), Bea Banks.",
+          "Carl sta tra Dina (2020) e Amir (2022): Carl 2021. Bea = 2021 + 2 = 2023. Eli 2024."
+        ],
+        "shortcut": "Riduci prima i candidati con i vincoli 'chi non può essere' (il Media analyst ha solo due candidati), poi usa i vincoli numerici (Pharma 2022, Bea +2) come test.",
+        "trap": "Leggere 'two years after' come un generico 'dopo' e collocare Bea in un anno qualsiasi successivo all'Energy analyst.",
+        "rule": "Puzzle a due attributi: parti dalle eliminazioni e usa i vincoli numerici per chiudere i casi."
+      },
+      "tags": [
+        "ordering",
+        "two-attributes",
+        "grid"
+      ]
+    },
+    {
+      "id": "log-033",
+      "skill": "logical",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Six partners (Tara, Ugo, Vera, Wes, Xavi, Yara) sit evenly spaced around a round table.\n- Wes sits immediately clockwise of Tara.\n- Yara sits directly opposite Wes.\n- Xavi sits next to Yara.\n- Ugo does not sit next to Tara.\n- Vera does not sit directly opposite Tara.\n- Ugo and Vera do not sit next to each other.\nWho sits directly opposite Ugo?",
+      "options": [
+        "Tara",
+        "Xavi",
+        "Yara",
+        "Vera",
+        "Wes"
+      ],
+      "answer": 3,
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Numera i posti da 1 a 6 in senso orario: Tara 1, Wes 2, Yara (opposta a Wes) 5. Restano 3, 4 e 6.",
+          "Ugo non accanto a Tara: non al 6, quindi 3 o 4. Xavi accanto a Yara: 4 o 6. Vera non opposta a Tara: non al 4, quindi 3 o 6.",
+          "Se Ugo fosse al 4, Xavi andrebbe al 6 e Vera al 3, accanto a Ugo: vietato.",
+          "Quindi Ugo 3, Xavi 4, Vera 6. Opposto al posto 3 c'è il posto 6: Vera."
+        ],
+        "shortcut": "Dopo aver fissato Tara, scrivi per ogni persona rimasta l'elenco dei posti ammessi: i casi da testare sono al massimo due.",
+        "trap": "Trascurare l'ultimo vincolo (Ugo e Vera non vicini): il caso Ugo al 4 sembra valido e porta a rispondere Tara.",
+        "rule": "Tavolo rotondo: fissa una persona, traduci 'opposto' in +3 posti e testa i casi residui."
+      },
+      "tags": [
+        "ordering",
+        "seating",
+        "circular"
+      ]
+    },
+    {
+      "id": "log-034",
+      "skill": "logical",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Five deal tasks (NDA, Teaser, Model, Valuation, Info memo) are completed one per day from Monday to Friday.\n- The NDA is completed before the Teaser.\n- The Model is completed before the Valuation, and the Valuation before the Info memo.\n- The Teaser and the Info memo are not completed on consecutive days.\n- The Model is not completed on Monday.\nWhich of the following could be true?",
+      "options": [
+        "The Valuation is completed on Wednesday.",
+        "The Info memo is completed on Thursday.",
+        "The Model is completed on Thursday.",
+        "The Teaser is completed on Friday.",
+        "The Teaser is completed on Wednesday."
+      ],
+      "answer": 4,
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Model, Valuation e Info memo sono in quest'ordine e il Model non è lunedì: occupano tre giorni tra martedì e venerdì. Lunedì tocca a NDA o Teaser, e siccome l'NDA precede il Teaser, lunedì è NDA.",
+          "Se l'Info memo fosse giovedì, Model e Valuation sarebbero martedì e mercoledì e il Teaser venerdì, accanto all'Info memo: vietato. Quindi Info memo venerdì.",
+          "Il Teaser non può essere giovedì (accanto all'Info memo) e nemmeno il Model (la Valuation deve venire dopo di lui e prima di venerdì): giovedì è Valuation, e Model e Teaser si dividono martedì e mercoledì.",
+          "Soluzioni: NDA, Teaser, Model, Valuation, Info memo oppure NDA, Model, Teaser, Valuation, Info memo. Nella seconda il Teaser è mercoledì: può essere vero. Le altre opzioni sono false in entrambe."
+        ],
+        "shortcut": "Per 'could be true' trova tutte le soluzioni (qui solo due) e cerca l'opzione presente in almeno una.",
+        "trap": "Scegliere 'Valuation on Wednesday' costruendo un ordine che ignora il divieto Teaser e Info memo in giorni consecutivi.",
+        "rule": "Could be true = vero in almeno una soluzione valida; cannot be true = falso in tutte."
+      },
+      "tags": [
+        "ordering",
+        "schedule",
+        "could-be-true"
+      ]
+    },
+    {
+      "id": "log-035",
+      "skill": "logical",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Four analysts (Willa, Xander, Yusuf, Zoe) are each assigned one of four consecutive weekends of on-call duty.\n- Xander is on call before Yusuf.\n- Willa is not on call on the first weekend.\n- Zoe is not on call on the weekend immediately after Xander.\nHow many different rotas are possible?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "12"
+      ],
+      "answer": 1,
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Senza vincoli i turni possibili sono 4! = 24. 'Xander prima di Yusuf' vale in esattamente metà dei casi: 12.",
+          "Togli i casi con Willa al primo weekend: restano 3 weekend per Xander, Yusuf e Zoe con Xander prima di Yusuf, cioè 3! / 2 = 3 casi. 12 - 3 = 9.",
+          "Tra questi 9, togli quelli con Zoe subito dopo Xander. Blocco Xander-Zoe nei weekend 1-2: Yusuf e Willa vanno in 3-4 in 2 modi, entrambi validi, quindi 2 casi da togliere.",
+          "Blocco 2-3: Yusuf al 4 e Willa al 1, caso già eliminato. Blocco 3-4: Yusuf non può venire dopo Xander, nessun caso.",
+          "9 - 2 = 7 turni possibili."
+        ],
+        "shortcut": "Conta per sottrazione: parti dal totale con il vincolo d'ordine (metà dei casi), poi togli i casi vietati uno alla volta, senza contarli due volte.",
+        "trap": "Fermarsi a 9 dimenticando il terzo vincolo, oppure sottrarre 3 casi Xander-Zoe includendo quello con Willa primo, già eliminato, e ottenere 6.",
+        "rule": "Vincolo 'A prima di B' su n elementi: n!/2 casi; poi sottrai i casi vietati evitando i doppi conteggi."
+      },
+      "tags": [
+        "ordering",
+        "counting",
+        "schedule"
+      ]
+    },
+    {
+      "id": "log-036",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Northbridge Coffee's sales rose 20% in the quarter after it launched a customer loyalty app. The marketing director concludes that the app caused the increase in sales.\nWhich of the following, if true, most weakens the director's conclusion?",
+      "options": [
+        "Over 30,000 customers downloaded the app in its first month, far more than the company had forecast.",
+        "Loyalty apps have become common in the coffee-shop sector, and most large chains now offer one.",
+        "During the same quarter, Northbridge's main competitor closed 40% of its stores in the same cities.",
+        "Northbridge plans to add mobile ordering to the app next year to raise average spend per visit."
+      ],
+      "answer": 2,
+      "timeTarget": 70,
+      "explanation": {
+        "steps": [
+          "La conclusione è causale: app → aumento delle vendite.",
+          "Per indebolirla serve una causa alternativa che spieghi lo stesso +20% nello stesso periodo.",
+          "La chiusura del 40% dei negozi del concorrente principale nelle stesse città sposta clienti verso Northbridge indipendentemente dall'app: è la causa alternativa.",
+          "I 30,000 download sopra le previsioni rafforzano leggermente; la diffusione delle app nel settore e i piani futuri sono irrilevanti per la causa delle vendite passate."
+        ],
+        "shortcut": "Argomento causale da indebolire: cerca un'altra causa nello stesso periodo e nello stesso mercato.",
+        "trap": "Scegliere 'Loyalty apps have become common': non dice nulla su cosa abbia causato l'aumento di Northbridge.",
+        "rule": "Weaken un nesso causale = causa alternativa, causalità inversa o effetto presente anche senza la causa."
+      },
+      "tags": [
+        "critical-reasoning",
+        "weaken",
+        "causal"
+      ]
+    },
+    {
+      "id": "log-037",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Alvona Foods plans to raise the prices of its entire product range by 8% next year. The CFO expects revenue to rise by roughly 8% as a result.\nThe CFO's expectation depends on which assumption?",
+      "options": [
+        "Alvona's costs, mainly raw materials and wages, will rise by less than 8% next year.",
+        "Volumes sold will not fall materially as a result of the price increase.",
+        "Alvona's main competitors will raise their own prices by at least 8% next year.",
+        "Alvona has not increased the prices of its product range in any of the last three years."
+      ],
+      "answer": 1,
+      "timeTarget": 70,
+      "explanation": {
+        "steps": [
+          "Ricavi = prezzo x volumi. Se il prezzo sale dell'8% e i ricavi devono salire di circa l'8%, i volumi devono restare più o meno invariati.",
+          "Test di negazione: se i volumi calassero molto, i ricavi non salirebbero dell'8%. L'assunzione sui volumi è necessaria.",
+          "L'opzione sui costi riguarda il margine, non i ricavi.",
+          "Concorrenti che alzano i prezzi renderebbero la previsione più probabile ma non sono necessari; la storia dei prezzi è irrilevante."
+        ],
+        "shortcut": "Assumption test: nega l'opzione. Se negata l'argomentazione crolla, è l'assunzione giusta.",
+        "trap": "Scegliere l'opzione sui costi confondendo ricavi e profitti: i costi non entrano nel calcolo dei ricavi.",
+        "rule": "Assunzione = premessa non dichiarata e necessaria; si riconosce con il test di negazione."
+      },
+      "tags": [
+        "critical-reasoning",
+        "assumption",
+        "pricing"
+      ]
+    },
+    {
+      "id": "log-038",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "A consultancy found that new hires onboarded remotely in 2025 billed 15% fewer hours in their first six months than new hires onboarded in the office in 2023. It concludes that remote onboarding reduces new-hire productivity.\nWhich of the following, if true, most strengthens the conclusion?",
+      "options": [
+        "Remote onboarding costs the firm 40% less per hire than office onboarding, mainly through lower travel costs.",
+        "The 2025 intake was larger than the 2023 intake and was spread across more of the firm's offices.",
+        "Client demand for consulting services fell sharply in 2025, and many client projects were postponed.",
+        "Within the 2025 intake, hires onboarded remotely billed fewer hours than those onboarded in the office."
+      ],
+      "answer": 3,
+      "timeTarget": 70,
+      "explanation": {
+        "steps": [
+          "Il confronto è tra anni diversi (2025 da remoto contro 2023 in ufficio): la differenza potrebbe dipendere dall'anno e non dal tipo di onboarding.",
+          "Confrontare remoto e ufficio nello stesso anno (intake 2025) elimina la spiegazione 'anno diverso' e rafforza il nesso causale.",
+          "Il calo della domanda nel 2025 indebolisce (spiega meno ore fatturate senza tirare in ballo l'onboarding).",
+          "Il costo dell'onboarding non riguarda la produttività; dimensione e distribuzione dell'intake non cambiano un confronto sulle ore medie fatturate da ciascun nuovo assunto."
+        ],
+        "shortcut": "Per rafforzare un confronto tra gruppi diversi, cerca l'opzione che rende i gruppi comparabili (stesso periodo, stesse condizioni).",
+        "trap": "Scegliere l'opzione sul calo della domanda solo perché parla del 2025: in realtà offre una causa alternativa e indebolisce.",
+        "rule": "Strengthen un nesso causale = elimina le cause alternative o mostra l'effetto a parità di condizioni."
+      },
+      "tags": [
+        "critical-reasoning",
+        "strengthen",
+        "causal"
+      ]
+    },
+    {
+      "id": "log-039",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Since Halden Telecom outsourced its call centre a year ago, the number of formal customer complaints has fallen by 12%. The CEO argues that this shows customer service has improved.\nWhich of the following, if true, most seriously weakens the CEO's argument?",
+      "options": [
+        "The outsourcing provider charges Halden 20% less than the cost of the previous in-house team, freeing budget for marketing.",
+        "Across the telecom industry, formal complaints fell by only 3% over the same period, with no change in how they are recorded.",
+        "Halden's customer base grew by 5% over the year, mainly through new contracts with small business customers.",
+        "Waiting times on the complaints line have tripled since the outsourcing, and many callers hang up before lodging a complaint."
+      ],
+      "answer": 3,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "L'argomento usa il numero di reclami formali come misura della qualità del servizio.",
+          "Se i tempi di attesa sono triplicati e molti clienti riattaccano prima di registrare il reclamo, il calo dei reclami nasce dalla misura stessa: l'indicatore non misura più la soddisfazione e l'attesa più lunga suggerisce un servizio peggiore.",
+          "Il calo di settore del 3% rafforza (Halden fa molto meglio della media) e la crescita della base clienti rafforza (più clienti, meno reclami).",
+          "Il risparmio di costo riguarda l'efficienza, non la qualità del servizio."
+        ],
+        "shortcut": "Quando un argomento si basa su un indicatore, chiediti se l'indicatore misura davvero ciò che si vuole dimostrare.",
+        "trap": "Scegliere il dato di settore pensando che un calo generale indebolisca: il calo di Halden (12%) è molto più forte di quello del settore (3%).",
+        "rule": "Weaken = mostra che l'evidenza non misura la conclusione o ha un'altra spiegazione."
+      },
+      "tags": [
+        "critical-reasoning",
+        "weaken",
+        "measurement"
+      ]
+    },
+    {
+      "id": "log-040",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Analysts at our bank who use Excel keyboard shortcuts complete models 30% faster than those who do not. Therefore, if we train every analyst to use shortcuts, model turnaround times will improve significantly.\nWhich of the following is an assumption on which the argument depends?",
+      "options": [
+        "The speed gap is caused by the shortcuts themselves, not by other traits of those analysts such as experience.",
+        "Shortcut training can be delivered at low cost and without taking analysts away from live deals for long.",
+        "Analysts at other banks use Excel keyboard shortcuts less often than analysts at our bank do.",
+        "Model turnaround time is the bank's most important performance metric for its analyst teams.",
+        "Analysts who already use shortcuts would not become even faster if they also attended the training."
+      ],
+      "answer": 0,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Evidenza: chi usa gli shortcut è più veloce (correlazione). Conclusione: insegnarli a tutti renderà tutti più veloci (causalità).",
+          "Il passaggio regge solo se è lo shortcut a causare la velocità e non un terzo fattore come l'esperienza.",
+          "Test di negazione: se la velocità dipendesse dall'esperienza, la formazione non cambierebbe i tempi e l'argomento crollerebbe.",
+          "Costo e tempi della formazione riguardano la convenienza, non l'effetto; il confronto con altre banche e la priorità delle metriche sono irrilevanti; l'ultima opzione non è necessaria (anche se chi usa già gli shortcut migliorasse ancora, la conclusione resterebbe valida)."
+        ],
+        "shortcut": "Quando l'argomento passa da 'chi fa X ottiene Y' a 'facciamo fare X a tutti', l'assunzione è quasi sempre che X causi Y.",
+        "trap": "Scegliere l'opzione sul costo basso della formazione: riguarda se convenga farla, non se migliorerà i tempi.",
+        "rule": "Da correlazione a raccomandazione: l'assunzione nascosta è il nesso causale."
+      },
+      "tags": [
+        "critical-reasoning",
+        "assumption",
+        "correlation-causation"
+      ]
+    },
+    {
+      "id": "log-041",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Velora Pharma's gross margin rose by 6 percentage points last year. Management attributes the rise to its new, highly automated plant in Ireland rather than to the weaker euro, which made its exports cheaper.\nWhich of the following, if true, most strengthens management's explanation?",
+      "options": [
+        "The euro weakened by 8% against the US dollar during the year, its largest annual fall in a decade.",
+        "Products made in Velora's older plants, sold in the same markets and currencies, saw no change in gross margin.",
+        "Several European competitors without automated plants also reported higher gross margins last year.",
+        "The new plant cost EUR 300m to build and took four years to complete, longer than originally planned.",
+        "Velora plans to build a second automated plant in 2027 to serve its growing US customer base."
+      ],
+      "answer": 1,
+      "timeTarget": 80,
+      "explanation": {
+        "steps": [
+          "Due spiegazioni concorrenti: nuovo impianto contro euro debole. Per rafforzare il management bisogna isolare l'effetto impianto.",
+          "I prodotti degli impianti vecchi sono esposti allo stesso cambio ma non al nuovo impianto: se il loro margine non è cambiato, l'euro non basta a spiegare il +6 punti. È un gruppo di controllo.",
+          "L'indebolimento dell'euro e i margini in crescita di concorrenti senza impianti automatizzati rafforzano la spiegazione rivale (cambio o fattore comune al settore).",
+          "Costo dell'impianto e piani futuri non dicono nulla sulla causa del margine dell'anno scorso."
+        ],
+        "shortcut": "Con due cause in competizione, l'opzione vincente mostra un gruppo esposto a una sola delle due cause che non ha avuto l'effetto.",
+        "trap": "Scegliere il dato sull'euro perché contiene un numero 'tecnico': conferma che l'euro si è indebolito, cioè rafforza la spiegazione rivale.",
+        "rule": "Per rafforzare una causa, escludi l'altra con un gruppo di controllo."
+      },
+      "tags": [
+        "critical-reasoning",
+        "strengthen",
+        "control-group"
+      ]
+    },
+    {
+      "id": "log-042",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "In a survey of 200 clients who attended our annual investor conference, 85% said they were satisfied with our equity research. Therefore, most of our clients are satisfied with our equity research.\nWhich of the following best describes the flaw in this reasoning?",
+      "options": [
+        "It assumes that clients who attended the conference are representative of all clients.",
+        "It relies on a sample of 200 clients, which is too small to support any conclusion at all.",
+        "It confuses clients' satisfaction with the research with the actual quality of the research.",
+        "It does not state when the survey was carried out or how long it took to complete."
+      ],
+      "answer": 0,
+      "timeTarget": 70,
+      "explanation": {
+        "steps": [
+          "La conclusione parla di tutti i clienti; il campione comprende solo i clienti presenti alla conferenza.",
+          "Chi partecipa alla conferenza annuale è probabilmente più coinvolto e più soddisfatto della media: il campione è auto-selezionato e quindi distorto.",
+          "L'obiezione sulla dimensione è debole: 200 risposte non sono poche in sé, il problema è chi è stato intervistato, non quanti.",
+          "La conclusione parla di soddisfazione, non di qualità, e la data del sondaggio non cambia la logica: non sono difetti del ragionamento."
+        ],
+        "shortcut": "Generalizzazione da sondaggio: chiediti subito 'chi è stato intervistato e come è stato scelto?'.",
+        "trap": "Scegliere 'sample too small': la dimensione è un difetto solo se è davvero minuscola; un campione grande ma distorto resta distorto.",
+        "rule": "Un campione deve rappresentare la popolazione della conclusione: la selezione conta più della dimensione."
+      },
+      "tags": [
+        "critical-reasoning",
+        "flaw",
+        "sampling"
+      ]
+    },
+    {
+      "id": "log-043",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Kestrel Bank's Turin branch had the highest mortgage sales per employee of all its branches last year. The regional director therefore proposes rolling out the Turin branch's sales training to every branch.\nWhich of the following, if true, most weakens the director's proposal?",
+      "options": [
+        "The Turin training programme costs about EUR 2,000 per employee, more than any other course the bank runs.",
+        "Employees at the Turin branch rated the training highly in an anonymous survey run by HR.",
+        "Mortgage sales across Kestrel Bank grew by 4% last year, in line with the national market.",
+        "Several branch managers have asked to receive the Turin training before the next sales season.",
+        "Turin is the only branch next to a large residential development that opened last year."
+      ],
+      "answer": 4,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "La proposta assume che il primato di Turin dipenda dalla formazione.",
+          "Il grande complesso residenziale appena aperto accanto alla filiale genera domanda di mutui indipendentemente dalla formazione: è una causa alternativa tipica solo di Turin.",
+          "Se la causa è il contesto locale, replicare la formazione altrove non replicherà i risultati: la proposta si indebolisce.",
+          "Il costo non dice se la formazione funzioni, il gradimento dei dipendenti rafforza appena, la crescita complessiva e le richieste dei manager non toccano il nesso formazione-vendite."
+        ],
+        "shortcut": "Se si vuole replicare ovunque un successo locale, cerca un fattore unico di quel luogo che non si può copiare.",
+        "trap": "Scegliere il costo di EUR 2,000: senza un confronto con i benefici non indebolisce l'idea che la formazione funzioni.",
+        "rule": "Weaken un 'replichiamo X ovunque' = mostra che il risultato dipende da condizioni locali non replicabili."
+      },
+      "tags": [
+        "critical-reasoning",
+        "weaken",
+        "alternative-cause"
+      ]
+    },
+    {
+      "id": "log-044",
+      "skill": "logical",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Fenwick Software's revenue grew 25% last year and the company remained profitable, yet its cash balance fell. Capital expenditure was minimal, and the company made no acquisitions, paid no dividends and repaid no debt.\nWhich of the following, if true, best explains this?",
+      "options": [
+        "The company recorded a large non-cash impairment of goodwill linked to an acquisition made in 2021.",
+        "Depreciation charges increased because of investments made in previous years, reducing reported profit.",
+        "The company's gross margin improved from 68% to 72% thanks to lower hosting costs per customer.",
+        "The company's share price fell 10% during the year, reducing its market capitalisation.",
+        "Most new revenue came from multi-year contracts invoiced annually in arrears, so receivables rose sharply."
+      ],
+      "answer": 4,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Ricavi in crescita e utile positivo, ma cassa in calo. Capex minimo e nessuna acquisizione, dividendo o rimborso di debito: le uscite classiche sono escluse e resta il capitale circolante.",
+          "Con contratti fatturati annualmente in via posticipata, i ricavi vengono riconosciuti ma l'incasso arriva dopo: i crediti commerciali salgono e assorbono cassa. Questo spiega entrambe le osservazioni.",
+          "Impairment e ammortamenti sono costi non monetari: riducono l'utile, non la cassa.",
+          "Un margine lordo più alto aumenterebbe la generazione di cassa; il prezzo dell'azione e la capitalizzazione non toccano la cassa della società."
+        ],
+        "shortcut": "Utile positivo, cassa in calo, capex minimo e nessun movimento di finanziamento: la risposta è quasi sempre il capitale circolante (crediti o magazzino).",
+        "trap": "Scegliere l'impairment: colpisce il conto economico ma non è un'uscita di cassa, quindi non spiega il calo della cassa.",
+        "rule": "Paradosso: cerca il fatto che rende vere entrambe le osservazioni; utile e cassa divergono per voci non monetarie e working capital."
+      },
+      "tags": [
+        "critical-reasoning",
+        "paradox",
+        "cash-flow"
+      ]
+    },
+    {
+      "id": "log-045",
+      "skill": "logical",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A bank added a video interview to its graduate assessment for its latest intake. The latest cohort's average first-year performance rating was 10% higher than the previous cohort's. HR concludes that the video interview improved the quality of hires.\nEach of the following, if true, weakens HR's conclusion EXCEPT:",
+      "options": [
+        "The latest cohort was rated on a revised scale that, on average, produces higher scores than the old one.",
+        "Applications doubled for the latest intake, allowing the bank to be far more selective at every stage.",
+        "The previous cohort joined during a restructuring that disrupted their training and their first year.",
+        "Within the latest cohort, the highest video-interview scorers tended to get the highest first-year ratings.",
+        "The managers who rated the latest cohort knew which graduates had excelled in the video interview."
+      ],
+      "answer": 3,
+      "timeTarget": 100,
+      "explanation": {
+        "steps": [
+          "La conclusione è causale: video interview → assunti migliori. Indebolisce ogni opzione che spiega il +10% in altro modo o mette in dubbio la misura.",
+          "La nuova scala di valutazione, la maggiore selettività grazie al doppio delle candidature e la coorte precedente penalizzata dalla ristrutturazione sono spiegazioni alternative del +10%.",
+          "I manager che sapevano chi era andato bene nel video introducono un bias nelle valutazioni: anche questo indebolisce.",
+          "Il legame, dentro la stessa coorte, tra punteggio nel video e rating del primo anno mostra che il video interview predice la performance: rafforza la conclusione, quindi è l'eccezione."
+        ],
+        "shortcut": "Nelle domande EXCEPT segna ogni opzione con W (weaken) o S/N (strengthen o neutra): la risposta è l'unica senza W.",
+        "trap": "Scegliere l'opzione sui manager informati perché sembra parlare bene del video interview: in realtà rende le valutazioni sospette, quindi indebolisce.",
+        "rule": "EXCEPT = cerca l'intruso: l'unica opzione che rafforza o è neutra."
+      },
+      "tags": [
+        "critical-reasoning",
+        "weaken-except",
+        "causal"
+      ]
+    },
+    {
+      "id": "log-046",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "What number comes next in the series?\n3, 7, 15, 31, 63, ?",
+      "options": [
+        "95",
+        "126",
+        "127",
+        "125"
+      ],
+      "answer": 2,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Differenze: 4, 8, 16, 32. Raddoppiano ogni volta.",
+          "La prossima differenza è 64: 63 + 64 = 127.",
+          "Controllo con la regola equivalente: ogni termine = precedente x 2 + 1 (63 x 2 + 1 = 127)."
+        ],
+        "shortcut": "Termini uguali a una potenza di 2 meno 1 (4 - 1, 8 - 1, 16 - 1, 32 - 1, 64 - 1) segnalano la regola x 2 + 1: il prossimo è 128 - 1 = 127.",
+        "trap": "Scegliere 126 applicando solo x 2 senza il +1, oppure 95 ripetendo l'ultima differenza (+32).",
+        "rule": "Calcola prima le differenze; se raddoppiano, la serie è del tipo x 2 + costante."
+      },
+      "tags": [
+        "series",
+        "number-series",
+        "differences"
+      ]
+    },
+    {
+      "id": "log-047",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "What number comes next in the series?\n5, 9, 17, 29, 45, ?",
+      "options": [
+        "61",
+        "65",
+        "69",
+        "90"
+      ],
+      "answer": 1,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Differenze: 4, 8, 12, 16. Crescono di 4 ogni volta.",
+          "Prossima differenza: 20. 45 + 20 = 65."
+        ],
+        "shortcut": "Se le differenze crescono di una quantità fissa (+4), aggiungi semplicemente la differenza successiva.",
+        "trap": "Ripetere l'ultima differenza (+16) e scegliere 61, oppure saltarne una (+24) e scegliere 69.",
+        "rule": "Differenze seconde costanti: prolunga la serie delle differenze."
+      },
+      "tags": [
+        "series",
+        "number-series",
+        "differences"
+      ]
+    },
+    {
+      "id": "log-048",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Which letter comes next in the series?\nB, E, H, K, N, ?",
+      "options": [
+        "Q",
+        "P",
+        "R",
+        "S"
+      ],
+      "answer": 0,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Converti in numeri: B = 2, E = 5, H = 8, K = 11, N = 14.",
+          "Ogni lettera avanza di 3 posizioni: 14 + 3 = 17, cioè Q."
+        ],
+        "shortcut": "Memorizza le ancore E = 5, J = 10, O = 15, T = 20, Y = 25: da lì conti al massimo due lettere.",
+        "trap": "Contare le lettere saltate (2) invece del passo (3) e scegliere P.",
+        "rule": "Serie di lettere: trasformale in numeri (A = 1) e cerca la regola numerica."
+      },
+      "tags": [
+        "series",
+        "letter-series"
+      ]
+    },
+    {
+      "id": "log-049",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Revenue is to income statement as total assets is to:",
+      "options": [
+        "Balance sheet",
+        "Cash flow statement",
+        "Notes to the accounts",
+        "Statement of changes in equity"
+      ],
+      "answer": 0,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Relazione della prima coppia: i ricavi sono una voce che compare nel conto economico (income statement).",
+          "Total assets è una voce che compare nello stato patrimoniale (balance sheet).",
+          "Cash flow statement e note contengono informazioni collegate agli asset, ma la voce 'total assets' appartiene al balance sheet."
+        ],
+        "shortcut": "Formula la relazione in una frase ('X è una voce di Y') e applicala alla seconda coppia.",
+        "trap": "Scegliere il cash flow statement per associazione mentale tra asset e capex.",
+        "rule": "Analogie: definisci il legame esatto della prima coppia, poi cerca lo stesso legame."
+      },
+      "tags": [
+        "analogy",
+        "finance-vocab"
+      ]
+    },
+    {
+      "id": "log-050",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "What number comes next in the series?\n2, 6, 18, 54, ?",
+      "options": [
+        "108",
+        "90",
+        "216",
+        "162"
+      ],
+      "answer": 3,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Rapporto tra termini consecutivi: 6 / 2 = 3, 18 / 6 = 3, 54 / 18 = 3.",
+          "Prossimo termine: 54 x 3 = 162."
+        ],
+        "shortcut": "Se le differenze crescono in fretta (4, 12, 36), prova subito il rapporto invece delle differenze.",
+        "trap": "Ripetere l'ultima differenza (+36) e scegliere 90, oppure moltiplicare per 2 e scegliere 108.",
+        "rule": "Se il rapporto tra termini consecutivi è costante la serie è geometrica: moltiplica l'ultimo termine per quel rapporto."
+      },
+      "tags": [
+        "series",
+        "number-series",
+        "geometric"
+      ]
+    },
+    {
+      "id": "log-051",
+      "skill": "logical",
+      "level": 1,
+      "type": "mcq",
+      "stem": "What number comes next in the series?\n100, 96, 88, 76, 60, ?",
+      "options": [
+        "40",
+        "44",
+        "36",
+        "42"
+      ],
+      "answer": 0,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Differenze: -4, -8, -12, -16. Aumentano di 4 in valore assoluto.",
+          "Prossima differenza: -20. 60 - 20 = 40."
+        ],
+        "shortcut": "Stessa logica delle serie crescenti: guarda le differenze e prolungale.",
+        "trap": "Ripetere l'ultima differenza (-16) e scegliere 44.",
+        "rule": "Differenze in progressione aritmetica: aggiungi la successiva, anche quando la serie scende."
+      },
+      "tags": [
+        "series",
+        "number-series",
+        "differences"
+      ]
+    },
+    {
+      "id": "log-052",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "What number comes next in the series?\n2, 3, 5, 9, 17, 33, ?",
+      "options": [
+        "49",
+        "64",
+        "66",
+        "65"
+      ],
+      "answer": 3,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Differenze: 1, 2, 4, 8, 16. Raddoppiano.",
+          "Prossima differenza: 32. 33 + 32 = 65.",
+          "Regola equivalente: ogni termine = precedente x 2 - 1 (33 x 2 - 1 = 65)."
+        ],
+        "shortcut": "Ogni termine è una potenza di 2 più 1 (1+1, 2+1, 4+1, 8+1, 16+1, 32+1): il prossimo è 64 + 1.",
+        "trap": "Scegliere 66 raddoppiando senza togliere 1, oppure 64 fermandosi alla potenza di 2.",
+        "rule": "Riconosci le potenze di 2 nascoste nei termini o nelle differenze: 1, 2, 4, 8, 16, 32, 64."
+      },
+      "tags": [
+        "series",
+        "number-series",
+        "powers"
+      ]
+    },
+    {
+      "id": "log-053",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "What number comes next in the series?\n4, 12, 8, 24, 20, 60, ?",
+      "options": [
+        "180",
+        "56",
+        "64",
+        "52",
+        "120"
+      ],
+      "answer": 1,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Le operazioni si alternano: 4 x 3 = 12, 12 - 4 = 8, 8 x 3 = 24, 24 - 4 = 20, 20 x 3 = 60.",
+          "Il prossimo passo è '- 4': 60 - 4 = 56."
+        ],
+        "shortcut": "Se la serie sale e scende, sospetta subito due operazioni che si alternano.",
+        "trap": "Scegliere 180 applicando di nuovo x 3 senza notare l'alternanza.",
+        "rule": "Serie a zig-zag: due regole alternate, verifica posizione per posizione."
+      },
+      "tags": [
+        "series",
+        "number-series",
+        "alternating"
+      ]
+    },
+    {
+      "id": "log-054",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Which letter comes next in the series?\nA, C, F, J, O, ?",
+      "options": [
+        "T",
+        "V",
+        "U",
+        "S"
+      ],
+      "answer": 2,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Posizioni: A = 1, C = 3, F = 6, J = 10, O = 15.",
+          "Passi: +2, +3, +4, +5. Il prossimo è +6: 15 + 6 = 21, cioè U."
+        ],
+        "shortcut": "Usa le ancore O = 15 e T = 20: U è la ventunesima lettera.",
+        "trap": "Ripetere il passo +5 e scegliere T.",
+        "rule": "Serie di lettere con passo crescente: scrivi i numeri e trova la progressione dei passi."
+      },
+      "tags": [
+        "series",
+        "letter-series",
+        "increasing-step"
+      ]
+    },
+    {
+      "id": "log-055",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "What number comes next in the series?\n3, 4, 7, 11, 18, 29, ?",
+      "options": [
+        "40",
+        "47",
+        "58",
+        "36"
+      ],
+      "answer": 1,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Ogni termine è la somma dei due precedenti: 3 + 4 = 7, 4 + 7 = 11, 7 + 11 = 18, 11 + 18 = 29.",
+          "Prossimo: 18 + 29 = 47."
+        ],
+        "shortcut": "Se le differenze (1, 3, 4, 7, 11) ricalcano i termini stessi della serie, è una serie tipo Fibonacci.",
+        "trap": "Aggiungere l'ultima differenza (+11) e scegliere 40, oppure raddoppiare e scegliere 58.",
+        "rule": "Termine = somma dei due precedenti: verificalo quando le differenze ripetono la serie."
+      },
+      "tags": [
+        "series",
+        "number-series",
+        "fibonacci"
+      ]
+    },
+    {
+      "id": "log-056",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Lender is to interest as shareholder is to:",
+      "options": [
+        "Coupon",
+        "Principal",
+        "Dividend",
+        "Collateral",
+        "Fee"
+      ],
+      "answer": 2,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Relazione: l'interesse è la remunerazione periodica di chi presta capitale di debito.",
+          "Chi apporta capitale di rischio (shareholder) riceve come remunerazione periodica il dividendo.",
+          "Coupon è la remunerazione dell'obbligazionista (ancora debito); principal e collateral appartengono al debito; fee è il compenso per un servizio."
+        ],
+        "shortcut": "Riduci la relazione a 'tipo di investitore → ciò che riceve' e scarta tutte le opzioni del mondo del debito.",
+        "trap": "Scegliere Coupon: è il pagamento di un'obbligazione, quindi resta sul lato debito come l'interesse.",
+        "rule": "Analogie finanziarie: distingui sempre debito (interest, coupon, principal) ed equity (dividend, buyback)."
+      },
+      "tags": [
+        "analogy",
+        "finance-vocab"
+      ]
+    },
+    {
+      "id": "log-057",
+      "skill": "logical",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Which letter comes next in the series?\nZ, X, U, Q, L, ?",
+      "options": [
+        "F",
+        "G",
+        "E",
+        "H"
+      ],
+      "answer": 0,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Posizioni: Z = 26, X = 24, U = 21, Q = 17, L = 12.",
+          "Passi: -2, -3, -4, -5. Il prossimo è -6: 12 - 6 = 6, cioè F."
+        ],
+        "shortcut": "Per le serie all'indietro usa le ancore Z = 26, U = 21, P = 16, K = 11, F = 6.",
+        "trap": "Ripetere il passo -5 e scegliere G (7).",
+        "rule": "Serie decrescenti: stessi passi delle crescenti, ma conta all'indietro con attenzione."
+      },
+      "tags": [
+        "series",
+        "letter-series",
+        "increasing-step"
+      ]
+    },
+    {
+      "id": "log-058",
+      "skill": "logical",
+      "level": 3,
+      "type": "mcq",
+      "stem": "What number comes next in the series?\n2, 10, 4, 15, 8, 20, 16, ?",
+      "options": [
+        "32",
+        "24",
+        "30",
+        "21",
+        "25"
+      ],
+      "answer": 4,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Separa le posizioni dispari da quelle pari.",
+          "Posizioni dispari: 2, 4, 8, 16 (ogni termine x 2). Posizioni pari: 10, 15, 20 (ogni termine + 5).",
+          "Il termine mancante è l'ottavo, quindi in posizione pari: 20 + 5 = 25."
+        ],
+        "shortcut": "Se una serie lunga alterna salite e discese senza una regola unica, dividila subito in due sottoserie (posizioni dispari e pari).",
+        "trap": "Scegliere 32 continuando la sottoserie sbagliata: il termine richiesto è in posizione pari.",
+        "rule": "Serie interlacciate: due serie indipendenti alle posizioni dispari e pari."
+      },
+      "tags": [
+        "series",
+        "number-series",
+        "interleaved"
+      ]
+    },
+    {
+      "id": "log-059",
+      "skill": "logical",
+      "level": 3,
+      "type": "mcq",
+      "stem": "What number comes next in the series?\n1, 3, 8, 21, 55, ?",
+      "options": [
+        "89",
+        "110",
+        "165",
+        "76",
+        "144"
+      ],
+      "answer": 4,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "I rapporti (3, 2.67, 2.63, 2.62) non sono costanti e nemmeno le differenze (2, 5, 13, 34): serve un legame con i due termini precedenti.",
+          "Prova 'x 3 meno il termine di due posti prima': 3 x 3 - 1 = 8, 8 x 3 - 3 = 21, 21 x 3 - 8 = 55. Funziona.",
+          "Prossimo: 55 x 3 - 21 = 165 - 21 = 144.",
+          "Controllo: sono i numeri di Fibonacci presi uno sì e uno no (1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144): dopo 55 si salta 89 e si arriva a 144."
+        ],
+        "shortcut": "Se riconosci numeri di Fibonacci (1, 3, 8, 21, 55), controlla se la serie ne prende uno sì e uno no.",
+        "trap": "Scegliere 89, il Fibonacci successivo: la serie salta un termine ogni volta. Oppure 165, dimenticando di sottrarre 21.",
+        "rule": "Se né differenze né rapporti sono costanti, prova una combinazione dei due termini precedenti."
+      },
+      "tags": [
+        "series",
+        "number-series",
+        "recursive"
+      ]
+    },
+    {
+      "id": "log-060",
+      "skill": "logical",
+      "level": 3,
+      "type": "mcq",
+      "stem": "In a code, MARGIN is written as NZSFJM. How is EQUITY written in the same code?",
+      "options": [
+        "FRVJUZ",
+        "FPVHUX",
+        "DPTHSX",
+        "FPVJUX",
+        "GPWHVX"
+      ],
+      "answer": 1,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Confronta lettera per lettera MARGIN e NZSFJM: M → N (+1), A → Z (-1, si torna alla fine dell'alfabeto), R → S (+1), G → F (-1), I → J (+1), N → M (-1).",
+          "Regola: posizioni dispari +1, posizioni pari -1.",
+          "Applica a EQUITY: E → F, Q → P, U → V, I → H, T → U, Y → X.",
+          "Codice: FPVHUX."
+        ],
+        "shortcut": "Controlla le prime due lettere: se gli spostamenti sono diversi, la regola è quasi sempre un'alternanza. Poi guarda solo le opzioni che iniziano con F, P.",
+        "trap": "Guardare solo la prima lettera (+1) e applicare +1 a tutto: si ottiene FRVJUZ.",
+        "rule": "Codici di lettere: calcola lo spostamento di ogni posizione, non solo della prima."
+      },
+      "tags": [
+        "series",
+        "coding",
+        "letters"
+      ]
+    }
+  ]
+}

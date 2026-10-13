@@ -1,0 +1,3165 @@
+{
+ "questions": [
+  {
+   "id": "beh-001",
+   "category": "motivation",
+   "level": 1,
+   "q": "Tell me about yourself.",
+   "tests": "Se sai raccontare in 90 secondi un percorso coerente che porta in modo naturale a questo ruolo, e come comunichi: sintesi, energia, priorità. È la prima impressione e spesso orienta le domande successive.",
+   "structure": [
+    "Apri con il presente: ruolo attuale e un risultato concreto (Present, 20-25 secondi)",
+    "Collega il passato: 2-3 tappe che hanno costruito le competenze utili, per esempio l'università e le prime esperienze in finanza (Past, 30-35 secondi)",
+    "Rendi esplicito il filo rosso: cosa ti ha portato a M&A e al settore tech",
+    "Chiudi con il futuro: perché questo programma e questa banca, adesso (Future, 20-25 secondi)"
+   ],
+   "good": [
+    "Un filo rosso esplicito (es. interesse per tecnologia e transazioni) che unisce tutte le tappe",
+    "Almeno un fatto concreto: voto, numero di deal, dimensione di un'operazione",
+    "Durata 75-90 secondi e un finale che invita alla domanda successiva"
+   ],
+   "pitfalls": [
+    "Ripetere il CV riga per riga in ordine cronologico",
+    "Partire dalla scuola superiore o da dettagli personali irrilevanti",
+    "Chiudere senza collegare il racconto al ruolo per cui ti candidi"
+   ],
+   "skeleton": "I'm currently an analyst at [boutique], an M&A advisory firm focused on [semiconductors and deep tech], where I have worked on [number] live mandates, most recently [type of deal]. I got here through [your MSc], where I graduated [with top marks] and focused on [area]. What connects these steps is [your common thread, e.g. how technology reshapes industries and how transactions finance that change]. I am now applying to [programme] because I want [larger deals, broader product exposure, an international platform], and [Bank] is where [specific reason].",
+   "explanation": {
+    "steps": [
+     "Cronometrati: se superi i 2 minuti stai elencando, non raccontando; taglia le tappe che non portano al ruolo.",
+     "Rileggi la prima frase: deve dire chi sei oggi e cosa fai, con un fatto concreto, non dove sei nato.",
+     "Verifica il ponte finale: l'ultima frase deve spiegare perché questo programma è il passo logico successivo."
+    ],
+    "shortcut": "Present, Past, Future: tre blocchi, un filo rosso, 90 secondi.",
+    "trap": "Trasformare la risposta in una lettura del CV: l'intervistatore lo ha già davanti e cerca la logica delle scelte, non l'elenco.",
+    "rule": "Ogni tappa che citi deve servire a spiegare perché sei qui oggi."
+   },
+   "time": 90,
+   "tags": [
+    "tell-me-about-yourself"
+   ]
+  },
+  {
+   "id": "beh-002",
+   "category": "motivation",
+   "level": 1,
+   "q": "Why investment banking?",
+   "tests": "Se la tua motivazione è autentica e informata: se sai cosa fa davvero un banker e se hai già prove di aver scelto questo lavoro conoscendone i costi.",
+   "structure": [
+    "Apri con la ragione principale in una frase (es. lavorare su decisioni che cambiano la traiettoria di un'azienda)",
+    "Prova 1: un'esperienza concreta in cui hai fatto il lavoro e ti è piaciuto (modelli, processi M&A in boutique)",
+    "Prova 2: cosa ti attrae del ruolo nello specifico: curva di apprendimento, esposizione a clienti e senior, varietà di settori",
+    "Chiudi collegando a dove vuoi crescere: esecuzione di deal più grandi e cross-border"
+   ],
+   "good": [
+    "Motivi legati al contenuto del lavoro, non a stipendio o prestigio",
+    "Esempi dalla tua esperienza in boutique: hai già visto il lavoro dall'interno",
+    "Consapevolezza dei sacrifici, detta con naturalezza e senza drammi"
+   ],
+   "pitfalls": [
+    "Risposte generiche come 'I love finance' o 'it is fast-paced and challenging' senza prova",
+    "Citare soldi, status o exit opportunities come motivazione principale",
+    "Descrivere il lavoro in modo sbagliato, per esempio come 'investing in companies'"
+   ],
+   "skeleton": "I want to work in investment banking because I enjoy being close to the decisions that change a company's trajectory, such as [a sale, an acquisition, a capital raise]. I have tested this at [boutique]: on [deal], I [built the model / drafted the information memorandum / ran the buyer list], and what I enjoyed most was [specific element]. Banking also gives me the steepest learning curve I know of: in [timeframe] I learned [skill]. I want to keep building that on [larger, cross-border transactions], which is why I am applying for this role.",
+   "explanation": {
+    "steps": [
+     "Controlla che ci sia almeno una prova vissuta: un deal, un modello, un compito specifico, non solo aggettivi.",
+     "Verifica che la motivazione sia sul lavoro (analisi, transazioni, clienti) e non sui benefici (soldi, uscite verso il PE).",
+     "Togli ogni frase che varrebbe anche per consulenza o private equity: ciò che resta deve essere specifico del banking."
+    ],
+    "shortcut": "Una ragione, due prove dalla tua esperienza, un collegamento al futuro.",
+    "trap": "Parlare di 'ambiente dinamico e sfidante': lo dicono tutti e non dimostra nulla.",
+    "rule": "La motivazione si dimostra con ciò che hai già fatto, non con ciò che dici di provare."
+   },
+   "time": 90,
+   "tags": [
+    "why-banking"
+   ]
+  },
+  {
+   "id": "beh-003",
+   "category": "motivation",
+   "level": 2,
+   "q": "Why do you want to join our bank rather than one of our competitors?",
+   "tests": "Se hai fatto ricerca vera e se la tua scelta è ragionata. L'intervistatore cerca ragioni specifiche che non varrebbero per la banca concorrente.",
+   "structure": [
+    "Apri con una sintesi: 'Three reasons: the business, the people and the programme'",
+    "Business: un punto di forza concreto della banca rilevante per te, con una prova verificabile (un deal recente, una posizione in league table, un dato del report annuale)",
+    "Persone: cosa hai capito parlando con chi ci lavora, citando il contesto (evento, coffee chat) senza fare nomi",
+    "Programma: cosa ti offre in concreto (rotazioni, formazione, mobilità, tipo di clienti)",
+    "Chiudi collegando le tre ragioni al tuo profilo e ai tuoi obiettivi"
+   ],
+   "good": [
+    "Supera il test di genericità: se sostituisci il nome della banca la risposta non regge più",
+    "Adatta il punto di business alla banca: per esempio il network internazionale per HSBC, la scala globale per J.P. Morgan, l'asse Londra-New York per Barclays",
+    "Collega almeno una ragione alla tua esperienza in tech e semiconduttori"
+   ],
+   "pitfalls": [
+    "Lodi generiche come 'leading global bank' o 'great culture'",
+    "Citare dati sbagliati o non aggiornati sulla banca",
+    "Parlare male dei concorrenti per valorizzare la banca"
+   ],
+   "skeleton": "Three reasons. First, [Bank]'s strength in [sector, region or product], which I saw in [recent deal or league-table position]; that is exactly the type of work I want to do after [my experience at boutique]. Second, the people: at [event or conversation], [analysts from the team] described [specific aspect of the culture, e.g. early responsibility], which matches how I work best. Third, the programme itself: [rotation, training, international mobility] would give me [specific skill or exposure]. Together, these make [Bank] the place where I can [career goal].",
+   "explanation": {
+    "steps": [
+     "Fai il test di genericità: sostituisci mentalmente il nome della banca con un concorrente; ogni frase che resta vera va riscritta.",
+     "Verifica che ogni ragione abbia una prova: un deal, un numero, una conversazione.",
+     "Controlla che almeno una ragione parli di te: perché quel punto di forza conta per il tuo percorso."
+    ],
+    "shortcut": "Business, persone, programma: tre ragioni, una prova ciascuna.",
+    "trap": "Ripetere slogan del sito della banca: l'intervistatore li conosce meglio di te e li riconosce subito.",
+    "rule": "Una ragione vale solo se non si può trasferire a un concorrente."
+   },
+   "time": 90,
+   "tags": [
+    "why-this-bank"
+   ]
+  },
+  {
+   "id": "beh-004",
+   "category": "motivation",
+   "level": 2,
+   "q": "Why Investment Banking rather than Global Markets or Corporate Banking?",
+   "tests": "Se capisci cosa fa davvero ciascuna divisione e se la tua scelta nasce da un confronto consapevole, non dal nome più noto.",
+   "structure": [
+    "Apri con cosa fa concretamente la divisione IB: M&A e operazioni sul capitale, modelli, materiali per i clienti, processi con molti stakeholder",
+    "Mostra la tua prova: dove hai già fatto quel lavoro e cosa ti è piaciuto",
+    "Confronta con rispetto le alternative: cosa ti attrae meno in Markets (orizzonte breve, flusso continuo) o in Corporate Banking (relazione di credito ricorrente)",
+    "Chiudi con la traiettoria a 3-5 anni che solo questa divisione ti dà"
+   ],
+   "good": [
+    "Descrizione corretta del lavoro quotidiano di ciascuna divisione",
+    "Il confronto si basa sulle tue preferenze, non su un giudizio di valore sulle altre divisioni",
+    "Collegamento con l'esperienza in M&A già fatta"
+   ],
+   "pitfalls": [
+    "Svalutare le altre divisioni ('trading is just gambling')",
+    "Confondere IB con asset management o investimenti diretti",
+    "Non avere una risposta se la domanda diventa 'and if we offered you Markets?'"
+   ],
+   "skeleton": "Investment banking is where I can do what I have enjoyed most at [boutique]: understanding a business in depth, building [valuation models], and working on a transaction for [months] until it closes. Markets is fascinating, but its horizon is [minutes and days], while I am motivated by [long, project-based work with a defined outcome]. Corporate banking builds long relationships around [lending and transaction services], but I want to be closer to [strategic decisions like M&A]. In three to five years I want to [lead execution on cross-border tech deals], and IB is the direct path there.",
+   "explanation": {
+    "steps": [
+     "Verifica di aver descritto la divisione con attività concrete, non con aggettivi.",
+     "Controlla che il confronto con le altre divisioni sia rispettoso e basato sulle tue preferenze di lavoro.",
+     "Assicurati che la chiusura indichi un obiettivo che solo IB rende possibile."
+    ],
+    "shortcut": "Cosa si fa, la mia prova, perché non le alternative, dove voglio arrivare.",
+    "trap": "Dire perché le altre divisioni non ti piacciono senza spiegare perché IB ti piace: sembra una scelta per esclusione.",
+    "rule": "Scegli una divisione per ciò che fa, non per ciò che le altre non fanno."
+   },
+   "time": 90,
+   "tags": [
+    "why-division"
+   ]
+  },
+  {
+   "id": "beh-005",
+   "category": "motivation",
+   "level": 2,
+   "q": "Why do you want to work in London rather than in Milan?",
+   "tests": "Se la scelta della città è professionale e sostenibile nel tempo: l'intervistatore teme candidati che vogliono solo il nome della piazza o che torneranno a casa dopo un anno.",
+   "structure": [
+    "Apri con la ragione professionale: profondità del mercato e tipo di deal che passano da Londra (cross-border, EMEA, coverage settoriale)",
+    "Collega al tuo settore: i team tech e semis che coprono l'Europa sono spesso basati lì",
+    "Aggiungi un elemento personale credibile: esperienza internazionale, lingua, rete già costruita",
+    "Chiudi con l'impegno di lungo periodo e con il valore che porti dall'Italia (copertura di clienti italiani)"
+   ],
+   "good": [
+    "Ragioni legate ai deal e alla struttura dei team, non al fascino della città",
+    "Valorizzare l'italiano come asset per i clienti italiani all'interno di un team EMEA",
+    "Segnali di radicamento: hai già vissuto, studiato o lavorato all'estero"
+   ],
+   "pitfalls": [
+    "'London is the financial capital of Europe' come unica ragione",
+    "Dare l'impressione che Milano sia un ripiego o che vuoi solo un'esperienza breve",
+    "Farsi trovare impreparato se l'intervistatore solleva il costo della vita o il tema del visto"
+   ],
+   "skeleton": "Professionally, [London] is where most [EMEA technology and semiconductor] mandates are run, so the team covers [more cross-border deals and a broader client base] than I see in [Milan]. At [boutique] I have worked on [deal with foreign buyers], and I want to be at the centre of those processes rather than at the edge. I would also bring something to an EMEA team: [Italian language and network, knowledge of the Italian mid-market]. On a personal level, I have [lived abroad / studied in English], and I see [London] as a long-term base, not a short stop.",
+   "explanation": {
+    "steps": [
+     "Controlla che la prima ragione riguardi il tipo di lavoro e di deal, non la città in sé.",
+     "Verifica di aver dato un segnale di stabilità: esperienze all'estero, piano di lungo periodo.",
+     "Valuta se hai trasformato l'essere italiano in un vantaggio per il team."
+    ],
+    "shortcut": "Deal, settore, valore che porti, impegno a lungo termine.",
+    "trap": "Parlare di qualità della vita o di 'esperienza internazionale' generica: suona come una scelta turistica.",
+    "rule": "Una città si sceglie per il lavoro che vi si svolge e per restarci."
+   },
+   "time": 75,
+   "tags": [
+    "why-city"
+   ]
+  },
+  {
+   "id": "beh-006",
+   "category": "motivation",
+   "level": 2,
+   "q": "Why should we hire you?",
+   "tests": "Se sai sintetizzare il tuo valore in modo specifico e sicuro, senza arroganza, e se conosci ciò che il ruolo richiede.",
+   "structure": [
+    "Apri con la sintesi: 'Three things'",
+    "Punto 1: competenze tecniche già provate sul campo (modelli, valutazioni, materiali per i clienti)",
+    "Punto 2: esperienza su deal reali e conoscenza di un settore (semis e deep tech)",
+    "Punto 3: capacità di rendere sotto pressione e motivazione specifica per questa banca, con una prova",
+    "Chiudi con cosa porti al team dal primo giorno"
+   ],
+   "good": [
+    "Tre punti numerati, ognuno con un fatto verificabile",
+    "Collegamento esplicito a ciò che il programma cerca (resilienza, precisione, teamwork)",
+    "Tono sicuro ma non arrogante: parli di prove, non di superiorità"
+   ],
+   "pitfalls": [
+    "Paragonarti agli altri candidati, che non conosci",
+    "Elencare aggettivi ('hard-working, passionate, detail-oriented') senza prove",
+    "Essere troppo modesto e non dire chiaramente cosa porti"
+   ],
+   "skeleton": "Three things. First, I can contribute from day one: at [boutique] I have [built operating models, run comps, drafted materials] on [number] live deals, so my learning curve on execution is shorter. Second, I bring sector depth in [semiconductors and deep tech], which is relevant to [Bank]'s [technology coverage]. Third, I have shown I can perform under pressure: [short proof, e.g. graduated with top marks while working / delivered X in Y days]. I am here because I want to [goal], and I would bring the same [ownership] to your team.",
+   "explanation": {
+    "steps": [
+     "Conta i fatti: ogni punto deve avere un numero, un deal o un risultato, altrimenti è solo un aggettivo.",
+     "Verifica che ogni punto corrisponda a un requisito del ruolo.",
+     "Rileggi il tono: nessun confronto con altri candidati."
+    ],
+    "shortcut": "Tre punti: competenza, esperienza, tenuta sotto pressione, ciascuno con una prova.",
+    "trap": "Rispondere 'because I am hard-working and passionate': sono aggettivi che tutti usano e nessuno prova.",
+    "rule": "Il tuo valore si dichiara con prove, non con aggettivi."
+   },
+   "time": 90,
+   "tags": [
+    "why-you"
+   ]
+  },
+  {
+   "id": "beh-007",
+   "category": "motivation",
+   "level": 1,
+   "q": "Where do you see yourself in five years?",
+   "tests": "Se la tua ambizione è realistica e coerente con il percorso di carriera della banca, e se c'è il rischio che te ne vada presto.",
+   "structure": [
+    "Apri con l'obiettivo di crescita dentro la banca: da analyst ad associate, con più responsabilità sui deal",
+    "Specifica cosa vuoi saper fare: guidare l'esecuzione, gestire parte del rapporto con il cliente, coordinare analyst più junior",
+    "Indica una specializzazione coerente: copertura tech o semis in EMEA",
+    "Chiudi collegando l'obiettivo a ciò che il programma offre"
+   ],
+   "good": [
+    "Obiettivi concreti espressi in competenze e responsabilità, non in titoli",
+    "Coerenza con la struttura di carriera della banca",
+    "Ambizione chiara ma realistica"
+   ],
+   "pitfalls": [
+    "Dire 'in a private equity fund' o 'running my own business'",
+    "Puntare a un ruolo irrealistico, come diventare MD in 5 anni",
+    "Rispondere 'I don't know, I am open to anything'"
+   ],
+   "skeleton": "In five years I see myself as [an associate] in [the technology team] here, running day-to-day execution on [mid to large cap] deals, managing the analysts on the team and starting to own parts of the client relationship. By then I want to be the person the team relies on for [sector knowledge in semiconductors and deep tech]. The graduate programme is the right start because [training, rotations, exposure to senior bankers] would give me [specific skill] faster than anywhere else.",
+   "explanation": {
+    "steps": [
+     "Verifica che il tuo obiettivo sia dentro la banca e dentro la divisione per cui ti candidi.",
+     "Controlla di aver descritto competenze e responsabilità, non solo un titolo.",
+     "Assicurati che il programma sia presentato come il mezzo per arrivarci."
+    ],
+    "shortcut": "Dentro la banca, più responsabilità, un settore, il programma come trampolino.",
+    "trap": "Nominare il private equity come obiettivo: segnala che il programma è solo un passaggio.",
+    "rule": "Il piano a 5 anni deve rendere credibile per la banca l'investimento su di te."
+   },
+   "time": 60,
+   "tags": [
+    "career-goals"
+   ]
+  },
+  {
+   "id": "beh-008",
+   "category": "motivation",
+   "level": 3,
+   "q": "You already work in M&A at a boutique. Why do you want to join a graduate programme?",
+   "tests": "Se la scelta è ragionata e non una fuga, se accetti di ripartire da un livello iniziale e se porti umiltà oltre all'esperienza.",
+   "structure": [
+    "Apri riconoscendo il valore dell'esperienza in boutique: cosa hai imparato",
+    "Spiega cosa cerchi che la boutique non può darti: dimensione dei deal, prodotti (ECM, DCM, leveraged finance), piattaforma internazionale, formazione strutturata",
+    "Mostra umiltà: sei pronto a ripartire dalle basi e a imparare il modo di lavorare della banca",
+    "Chiudi con il vantaggio per loro: curva di apprendimento più rapida e prospettiva di chi ha già fatto esecuzione"
+   ],
+   "good": [
+    "Parlare di ciò che cerchi, mai di ciò da cui scappi",
+    "Mostrare che sai cosa offre una banca grande che una boutique non offre",
+    "Umiltà esplicita: nessuna pretesa di saltare livelli"
+   ],
+   "pitfalls": [
+    "Criticare la boutique, i colleghi o i capi",
+    "Dare l'impressione di sentirti sopra il livello graduate",
+    "Non avere una risposta se chiedono 'why not apply as a lateral analyst?'"
+   ],
+   "skeleton": "My time at [boutique] has been formative: I learned [valuation, process management, client materials] on [number] deals in [semiconductors and deep tech]. What a boutique cannot offer is [scale of transactions, access to financing products like DCM and leveraged finance, an international platform]. I want to see how [larger cross-border deals] are executed, with the structured training that [programme] offers. I am comfortable restarting at graduate level because [the breadth I would gain is worth it], and I think I can add value quickly because [I have already run parts of live processes].",
+   "explanation": {
+    "steps": [
+     "Controlla che non ci sia nessuna frase negativa sulla boutique: anche una sola sposta l'attenzione su un possibile problema.",
+     "Verifica di aver nominato almeno due cose concrete che solo una banca grande offre.",
+     "Assicurati che il messaggio 'sono disposto a ripartire' sia esplicito, non implicito."
+    ],
+    "shortcut": "Cosa ho imparato, cosa mi manca, perché qui, perché sono pronto a ripartire.",
+    "trap": "Sottolineare troppo l'esperienza fino a sembrare sovraqualificato o poco disposto ad accettare compiti di base.",
+    "rule": "Quando cambi, parla di ciò verso cui vai, non di ciò che lasci."
+   },
+   "time": 90,
+   "tags": [
+    "why-leave-boutique",
+    "why-graduate-programme"
+   ]
+  },
+  {
+   "id": "beh-009",
+   "category": "motivation",
+   "level": 2,
+   "q": "What do you know about our graduate programme?",
+   "tests": "Se hai studiato la struttura del programma e se le sue caratteristiche corrispondono a ciò che cerchi.",
+   "structure": [
+    "Apri con la struttura: durata, divisioni o rotazioni, sedi",
+    "Formazione: periodo iniziale di training e cosa include",
+    "Cosa lo distingue: mobilità, esposizione ai clienti, mentor o sponsor, tipo di deal",
+    "Chiudi spiegando quale caratteristica conta di più per te e perché"
+   ],
+   "good": [
+    "Dettagli precisi e corretti presi dal sito, dagli eventi o da conversazioni",
+    "Un collegamento personale: quale parte del programma ti serve di più",
+    "Una domanda intelligente per la fine del colloquio, nata da questa ricerca"
+   ],
+   "pitfalls": [
+    "Recitare il sito a memoria senza commento personale",
+    "Confondere il programma con quello di un'altra banca",
+    "Non conoscere la durata o la struttura di base"
+   ],
+   "skeleton": "The programme starts with [number] weeks of training in [location], covering [accounting, modelling, products], and then places analysts directly into [the team or a rotation]. What stood out to me is [specific feature, e.g. early client exposure, cross-border mobility, a mentoring scheme]. When I spoke to [a current analyst at an event], they told me [specific insight]. For me, the most valuable part is [feature], because [link to your development need, e.g. broader product knowledge after a boutique].",
+   "explanation": {
+    "steps": [
+     "Verifica che ogni dato citato sia corretto e specifico di quella banca.",
+     "Controlla di aver aggiunto almeno un'impressione raccolta da una persona, non solo dal sito.",
+     "Assicurati di chiudere con il perché quella caratteristica conta per te."
+    ],
+    "shortcut": "Struttura, formazione, elemento distintivo, perché conta per me.",
+    "trap": "Fermarsi alla descrizione: senza il collegamento personale la ricerca non dimostra motivazione.",
+    "rule": "Conoscere il programma serve solo se spieghi perché è adatto a te."
+   },
+   "time": 75,
+   "tags": [
+    "why-programme"
+   ]
+  },
+  {
+   "id": "beh-010",
+   "category": "motivation",
+   "level": 2,
+   "q": "Why do you want to cover the technology sector?",
+   "tests": "Se il tuo interesse per il settore è profondo e informato, e se sai collegarlo alle dinamiche di M&A.",
+   "structure": [
+    "Apri con il motivo di fondo: un settore dove la strategia cambia velocemente e l'M&A è uno strumento centrale",
+    "Porta la prova: deal seguiti in boutique su semis e deep tech",
+    "Mostra conoscenza: 2 driver concreti di M&A nel settore (accesso a tecnologia e talenti, consolidamento, sicurezza delle supply chain)",
+    "Chiudi con il valore che porti al team e una nota di apertura verso altri settori"
+   ],
+   "good": [
+    "Driver di settore concreti, non 'tech is the future'",
+    "Esperienza diretta raccontata con un dettaglio tecnico",
+    "Apertura a essere allocato altrove se il programma lo prevede"
+   ],
+   "pitfalls": [
+    "Parlare solo di prodotti consumer o di titoli di giornale",
+    "Sembrare rigido: 'I only want tech'",
+    "Non saper distinguere i sottosegmenti (design, foundry, equipment, software)"
+   ],
+   "skeleton": "Technology is the sector where strategy and M&A are most connected: companies buy [capabilities, IP and talent] they cannot build fast enough. At [boutique] I have worked on [semiconductor / deep-tech deals], where the key questions were [technology roadmap, customer concentration, supply-chain exposure]. I find that combination of [technical diligence and valuation] genuinely interesting. Right now I am following [trend, e.g. consolidation in a sub-segment], which I think will drive [deal activity]. I would bring that sector knowledge, while staying open to [other coverage areas] in the programme.",
+   "explanation": {
+    "steps": [
+     "Verifica di aver citato almeno un driver di M&A specifico del settore.",
+     "Controlla che l'esperienza in boutique sia raccontata con un dettaglio concreto.",
+     "Assicurati di aver chiuso con apertura, non con un'esclusiva rigida."
+    ],
+    "shortcut": "Perché il settore, la mia prova, due driver, apertura.",
+    "trap": "Confondere l'entusiasmo da utente di tecnologia con la comprensione del settore da banker.",
+    "rule": "Interesse di settore significa sapere perché le aziende comprano e vendono in quel settore."
+   },
+   "time": 75,
+   "tags": [
+    "why-sector"
+   ]
+  },
+  {
+   "id": "beh-011",
+   "category": "motivation",
+   "level": 2,
+   "q": "What is your greatest weakness?",
+   "tests": "Autoconsapevolezza e onestà: se riconosci un limite reale, se ci stai lavorando con metodo e se il limite non è fatale per il ruolo.",
+   "structure": [
+    "Apri con un difetto reale e specifico, non fatale per il ruolo",
+    "Dai un esempio breve in cui il difetto ha avuto un effetto",
+    "Spiega cosa stai facendo per migliorarlo, con un metodo concreto",
+    "Chiudi con un segnale misurabile di miglioramento"
+   ],
+   "good": [
+    "Un limite vero, per esempio chiedere aiuto troppo tardi, delegare poco, parlare poco nelle riunioni con i senior",
+    "Un'azione correttiva concreta e verificabile",
+    "Tono sereno, né difensivo né eccessivamente autocritico"
+   ],
+   "pitfalls": [
+    "Falsi difetti come 'I am a perfectionist' o 'I work too hard'",
+    "Un difetto incompatibile con il ruolo, come scarsa attenzione al dettaglio o difficoltà con le scadenze",
+    "Fermarsi al difetto senza piano di miglioramento"
+   ],
+   "skeleton": "Earlier in my career I found it hard to [ask for help early / push back on a senior / delegate], because [reason]. On [deal or project], this meant [concrete consequence, e.g. I spent a night on something a colleague could have fixed in 20 minutes]. Since then I have [specific method, e.g. set myself a 30-minute rule before escalating, asked my VP for feedback every week]. The result is [measurable sign, e.g. fewer late surprises, positive feedback in my review], although I still [consciously check this when deadlines are tight].",
+   "explanation": {
+    "steps": [
+     "Verifica che il difetto sia reale: se suona come un pregio travestito, l'intervistatore lo scarta.",
+     "Controlla che non tocchi le competenze chiave del ruolo (precisione, affidabilità, integrità).",
+     "Assicurati che ci sia un metodo di miglioramento e una prova che funziona."
+    ],
+    "shortcut": "Difetto vero, esempio, metodo, prova di miglioramento.",
+    "trap": "'I am a perfectionist': è la risposta più usata e viene letta come mancanza di autoconsapevolezza.",
+    "rule": "Una debolezza ben raccontata dimostra la capacità di migliorarsi."
+   },
+   "time": 90,
+   "tags": [
+    "weakness",
+    "self-awareness"
+   ]
+  },
+  {
+   "id": "beh-012",
+   "category": "motivation",
+   "level": 3,
+   "q": "Why do you want to work in private credit rather than in investment banking?",
+   "tests": "Se capisci il lavoro di un fondo di private credit (originare, analizzare e strutturare finanziamenti, seguire il portafoglio) e se la tua motivazione viene dal ruolo dell'investitore di credito, non da un generico 'buy-side'.",
+   "structure": [
+    "Apri con cosa fa un investitore di private credit: presta direttamente alle società, spesso partecipate da fondi di private equity, e porta il rischio fino al rimborso",
+    "Spiega cosa ti attrae: prospettiva da investitore, focus sul downside, struttura e covenant, relazione di lungo periodo",
+    "Collega la tua esperienza: analisi del business, modelli e due diligence in M&A sono la base dell'analisi di credito",
+    "Chiudi riconoscendo cosa ti mancherebbe del banking e perché il trade-off ti convince"
+   ],
+   "good": [
+    "Mentalità da credito: 'how do we get repaid?' prima di 'how much can it grow?'",
+    "Conoscenza dei termini chiave: leva, interest cover, covenant, garanzie, unitranche",
+    "Riconoscere con onestà il trade-off rispetto all'IB"
+   ],
+   "pitfalls": [
+    "Descrivere il private credit come private equity con un altro nome",
+    "Motivare la scelta con orari migliori",
+    "Non sapere cosa sia un covenant o come si misura la leva"
+   ],
+   "skeleton": "In M&A I help clients [sell or buy companies]; in private credit I would be the one taking [the risk], which changes the question from 'what is this worth' to 'how and when do we get repaid'. I enjoy that discipline: at [boutique], the part I found most interesting was [diligence on cash generation, customer concentration, downside cases]. Private credit lets me apply it as an investor, structuring [leverage, covenants and security] and following the company for [several years]. I will miss [the variety of deals], but I prefer [owning an investment decision over its whole life].",
+   "explanation": {
+    "steps": [
+     "Verifica di aver descritto il lavoro del fondo come prestatore, non come azionista.",
+     "Controlla di aver usato correttamente almeno due concetti di credito (leva, covenant, interest cover, garanzie).",
+     "Assicurati che il trade-off rispetto al banking sia dichiarato con onestà."
+    ],
+    "shortcut": "Prestatore, non azionista: downside, struttura, rimborso.",
+    "trap": "Usare la risposta del private equity ('I want to invest and create value'): nel credito il rendimento è limitato e conta proteggere il capitale.",
+    "rule": "Nel credito la prima domanda è sempre come vieni rimborsato."
+   },
+   "time": 90,
+   "tags": [
+    "why-division",
+    "private-credit"
+   ]
+  },
+  {
+   "id": "beh-013",
+   "category": "motivation",
+   "level": 2,
+   "q": "Walk me through the key decisions on your CV. Why did you make each one?",
+   "tests": "Se le tue scelte hanno una logica, se sai spiegarle in modo coerente e se hai imparato qualcosa da ciascun passo.",
+   "structure": [
+    "Apri con la logica comune a tutte le scelte, in una frase",
+    "Decisione 1: corso di studi e università, con il perché",
+    "Decisione 2: prime esperienze (stage, attività), con cosa ti hanno insegnato",
+    "Decisione 3: il ruolo attuale in boutique e perché quel settore",
+    "Chiudi con la prossima decisione: perché questo programma è coerente con le precedenti"
+   ],
+   "good": [
+    "Ogni scelta ha un perché esplicito e una lezione",
+    "Coerenza: le scelte si costruiscono l'una sull'altra",
+    "Ammettere con naturalezza una scelta che rifaresti diversamente, se c'è"
+   ],
+   "pitfalls": [
+    "Raccontare le scelte come casuali ('it just happened')",
+    "Giustificare a posteriori in modo poco credibile",
+    "Dilungarsi sulle prime tappe e arrivare tardi al presente"
+   ],
+   "skeleton": "Each step has been about [getting closer to transactions and technology]. I chose [your MSc] because [reason], and it gave me [skill]. During my studies I [internship or activity], where I learned [lesson] and realised I wanted [M&A]. I then joined [boutique] because it let me [work on live deals early and specialise in semiconductors]. Looking back, I would [one thing you would do differently]. Joining [Bank]'s programme is the logical next step because [scale, product breadth, international exposure].",
+   "explanation": {
+    "steps": [
+     "Verifica che ogni tappa abbia un perché e una lezione, non solo una data.",
+     "Controlla che il racconto dedichi più tempo al presente che al passato remoto.",
+     "Assicurati che l'ultima scelta (questo programma) sia la conseguenza naturale delle precedenti."
+    ],
+    "shortcut": "Un filo rosso, tre decisioni con il perché, la prossima decisione.",
+    "trap": "Elencare le esperienze senza spiegare le scelte: la domanda chiede il perché, non il cosa.",
+    "rule": "Un CV convincente è una sequenza di scelte motivate, non di eventi."
+   },
+   "time": 90,
+   "tags": [
+    "cv-decisions"
+   ]
+  },
+  {
+   "id": "beh-014",
+   "category": "motivation",
+   "level": 2,
+   "q": "What other firms are you applying to?",
+   "tests": "La coerenza della tua ricerca e la tua onestà: se ti candidi a ruoli simili per ragioni simili, e quanto sei richiesto sul mercato.",
+   "structure": [
+    "Apri con onestà: stai valutando ruoli simili in poche banche",
+    "Indica il criterio comune: stesso tipo di ruolo (IB, coverage tech, EMEA)",
+    "Nomina al massimo 2-3 realtà comparabili, senza classifiche",
+    "Chiudi riaffermando perché questa banca è tra le tue prime scelte, con un motivo specifico"
+   ],
+   "good": [
+    "Coerenza: tutte le candidature sono per lo stesso tipo di ruolo",
+    "Onestà sullo stato dei processi, senza esagerare",
+    "Ribadire l'interesse specifico per questa banca"
+   ],
+   "pitfalls": [
+    "Elencare ruoli incoerenti (consulenza, trading, revisione) che fanno sembrare la scelta casuale",
+    "Inventare offerte inesistenti per creare pressione",
+    "Dire 'only you': raramente credibile"
+   ],
+   "skeleton": "I am focusing on [investment banking graduate roles at banks with a strong technology franchise in EMEA], so I am in process with [two or three comparable banks]. The common thread is [M&A execution on larger, cross-border deals], which is what I want after [my time at boutique]. I am at [stage] with them. [Bank] is among my first choices because [specific reason from your research], and I would be very happy to continue the process here.",
+   "explanation": {
+    "steps": [
+     "Verifica che le altre candidature siano coerenti con il ruolo per cui sei al colloquio.",
+     "Controlla di non aver esagerato lo stato dei processi.",
+     "Assicurati di chiudere con un motivo specifico per questa banca."
+    ],
+    "shortcut": "Stesso ruolo, poche banche comparabili, voi tra le prime scelte e perché.",
+    "trap": "Nominare candidature molto diverse tra loro: suggerisce che non sai cosa vuoi.",
+    "rule": "La coerenza delle candidature è una prova di motivazione."
+   },
+   "time": 45,
+   "tags": [
+    "other-applications"
+   ]
+  },
+  {
+   "id": "beh-015",
+   "category": "motivation",
+   "level": 2,
+   "q": "What do you want to achieve in your first twelve months here?",
+   "tests": "Se hai aspettative realistiche sul primo anno e se sai cosa rende un analyst affidabile agli occhi del team.",
+   "structure": [
+    "Apri con l'obiettivo principale: diventare un analyst su cui il team può contare",
+    "Obiettivo 1: padronanza degli standard della banca (modelli, formattazione, processi interni)",
+    "Obiettivo 2: esposizione a prodotti nuovi rispetto alla boutique (finanziamenti, ECM, DCM)",
+    "Obiettivo 3: costruire relazioni nel team e con colleghi di altre sedi",
+    "Chiudi con come misurerai il successo: feedback, responsabilità ricevute, deal chiusi"
+   ],
+   "good": [
+    "Obiettivi concreti e osservabili",
+    "Umiltà: imparare i metodi della banca prima di proporre cambiamenti",
+    "Focus sull'essere utile al team, non solo sulla propria crescita"
+   ],
+   "pitfalls": [
+    "Obiettivi irrealistici, come portare deal o gestire clienti al primo anno",
+    "Obiettivi vaghi come 'learn as much as possible'",
+    "Parlare solo di cosa vuoi ricevere e non di cosa vuoi dare"
+   ],
+   "skeleton": "My main goal is to become an analyst the team can rely on without second-checking. In practice: first, master [Bank]'s standards for [models, pitch materials and internal processes] within [the first months]; second, get exposure to [products I did not see at a boutique, e.g. financing and capital markets]; third, build strong relationships with [the analyst class and senior bankers]. I would measure success by [the feedback in my first review and being trusted with larger parts of a deal].",
+   "explanation": {
+    "steps": [
+     "Verifica che gli obiettivi siano compatibili con il ruolo di analyst al primo anno.",
+     "Controlla che ogni obiettivo sia misurabile o almeno osservabile.",
+     "Assicurati che almeno un obiettivo riguardi il contributo al team."
+    ],
+    "shortcut": "Affidabilità, nuovi prodotti, relazioni, misura del successo.",
+    "trap": "Promettere di portare clienti o generare deal: rivela poca conoscenza del ruolo.",
+    "rule": "Il primo anno di un analyst si misura in affidabilità."
+   },
+   "time": 75,
+   "tags": [
+    "career-goals"
+   ]
+  },
+  {
+   "id": "beh-016",
+   "category": "competency",
+   "level": 1,
+   "q": "Tell me about a time you worked in a team to achieve a difficult goal.",
+   "tests": "Come contribuisci a un team: il tuo ruolo specifico, come coordini e comunichi, e se metti l'obiettivo comune davanti al tuo.",
+   "structure": [
+    "Situazione: il team, l'obiettivo e perché era difficile (1-2 frasi)",
+    "Task: il tuo ruolo preciso nel team",
+    "Azione: 2-3 cose che hai fatto per far funzionare il team (divisione del lavoro, comunicazione, supporto a un collega)",
+    "Risultato: esito con un numero e il feedback ricevuto",
+    "Chiudi con cosa hai imparato sul lavorare in team"
+   ],
+   "good": [
+    "'I' per le tue azioni e 'we' solo per l'esito",
+    "Un'azione che mostra attenzione agli altri, non solo al tuo compito",
+    "Risultato misurabile"
+   ],
+   "pitfalls": [
+    "Raccontare tutto al plurale senza far capire cosa hai fatto tu",
+    "Scegliere una storia senza una difficoltà reale",
+    "Prendersi tutto il merito"
+   ],
+   "skeleton": "At [boutique], we had [timeframe] to deliver [deliverable, e.g. a management presentation] for [sell-side process] with a team of [number]. My role was [building the financial section]. I [proposed splitting the work by section with a shared tracker], [checked in twice a day with the associate to unblock issues], and [helped a colleague finish the market section when they fell behind]. We delivered [on time], the client [outcome], and the VP [feedback]. I learned that [clear ownership and early check-ins] matter more than working longer hours.",
+   "explanation": {
+    "steps": [
+     "Conta quante volte dici 'I' nelle azioni: se prevale 'we', l'intervistatore non riesce a valutarti.",
+     "Verifica che la difficoltà sia chiara e reale nelle prime due frasi.",
+     "Controlla che il risultato abbia un numero e che la lezione sia applicabile al nuovo ruolo."
+    ],
+    "shortcut": "STAR con almeno un'azione che aiuta gli altri.",
+    "trap": "Raccontare il progetto invece del tuo contributo al team.",
+    "rule": "Nel teamwork conta come hai reso migliore il team, non solo il tuo pezzo."
+   },
+   "time": 90,
+   "tags": [
+    "teamwork"
+   ]
+  },
+  {
+   "id": "beh-017",
+   "category": "competency",
+   "level": 2,
+   "q": "Tell me about a time a team member was not pulling their weight.",
+   "tests": "Se affronti il problema in modo diretto e rispettoso, cerchi la causa prima di giudicare e proteggi il risultato del team.",
+   "structure": [
+    "Situazione: progetto, scadenza, il problema osservato (senza giudizi sulla persona)",
+    "Azione 1: parli in privato con il collega per capire la causa",
+    "Azione 2: proponi una soluzione concreta (redistribuzione, supporto, scadenze intermedie)",
+    "Azione 3: se serve, coinvolgi il responsabile in modo trasparente",
+    "Risultato sul lavoro e sulla relazione, poi la lezione"
+   ],
+   "good": [
+    "Cercare la causa prima di giudicare",
+    "Conversazione diretta e privata come primo passo",
+    "Escalation solo dopo aver provato a risolvere, e senza toni accusatori"
+   ],
+   "pitfalls": [
+    "Fare in silenzio il lavoro dell'altro senza affrontare il problema",
+    "Andare subito dal capo a lamentarsi",
+    "Parlare male del collega durante il colloquio"
+   ],
+   "skeleton": "During [university project / deal], a [teammate] was consistently [missing internal deadlines], which put [deliverable] at risk. Rather than assume, I [spoke to them privately] and learned [cause, e.g. they were also staffed on another urgent deal]. We agreed to [move the most time-sensitive section to me and set a midday check-in]. I also [let the associate know about the new split so priorities were clear]. We delivered [on time], and [the relationship stayed good]. I learned to [address issues early and directly, assuming good intent first].",
+   "explanation": {
+    "steps": [
+     "Verifica che il tuo primo passo sia una conversazione con il collega, non un'escalation.",
+     "Controlla di descrivere la persona in modo neutro, senza etichette.",
+     "Assicurati che il risultato includa sia il deliverable sia la relazione."
+    ],
+    "shortcut": "Capire la causa, parlare direttamente, soluzione concreta, escalation trasparente se serve.",
+    "trap": "Coprire il collega lavorando di notte: sembra generoso ma non risolve il problema e nasconde il rischio al team.",
+    "rule": "Affronta i problemi di team presto, in privato e partendo dalla buona fede."
+   },
+   "time": 90,
+   "tags": [
+    "teamwork",
+    "conflict"
+   ]
+  },
+  {
+   "id": "beh-018",
+   "category": "competency",
+   "level": 2,
+   "q": "Tell me about a time you worked with people from different backgrounds or locations.",
+   "tests": "Se sai lavorare in team internazionali e diversi: adattare la comunicazione, rispettare stili e fusi orari diversi, valorizzare prospettive diverse.",
+   "structure": [
+    "Situazione: il team (paesi, culture, funzioni) e l'obiettivo",
+    "Sfida: una differenza concreta (stile di comunicazione, fuso orario, lingua, aspettative)",
+    "Azione: come hai adattato il tuo modo di lavorare",
+    "Risultato con un esito misurabile",
+    "Chiudi con cosa hai imparato sulla diversità come vantaggio"
+   ],
+   "good": [
+    "Una differenza concreta descritta con rispetto",
+    "Adattamento attivo del tuo comportamento",
+    "Riconoscere il valore aggiunto della diversità per il risultato"
+   ],
+   "pitfalls": [
+    "Stereotipi culturali",
+    "Dire 'there were no differences, we all got along'",
+    "Raccontare una storia in cui erano gli altri a doversi adattare a te"
+   ],
+   "skeleton": "On [cross-border deal], I worked with [the buyer's team in country, lawyers in country and our client in Italy]. The challenge was [different communication styles: the buyer expected short written updates, the client preferred calls]. I [set up a single tracker and a weekly written summary], [scheduled calls in the overlap between time zones], and [confirmed key points in writing after each call]. As a result, [diligence questions were closed in X days instead of Y]. I learned that [adapting my style] is part of the job, and that [the buyer's perspective] improved our materials.",
+   "explanation": {
+    "steps": [
+     "Verifica di aver descritto una differenza concreta senza generalizzazioni sulle culture.",
+     "Controlla che sia tu ad adattarti, con azioni specifiche.",
+     "Assicurati che il risultato mostri un beneficio concreto."
+    ],
+    "shortcut": "Differenza concreta, mio adattamento, beneficio per il risultato.",
+    "trap": "Ridurre la diversità a un ostacolo da superare, invece che a una risorsa.",
+    "rule": "Nei team internazionali chi si adatta per primo guida la collaborazione."
+   },
+   "time": 90,
+   "tags": [
+    "teamwork",
+    "diversity"
+   ]
+  },
+  {
+   "id": "beh-019",
+   "category": "competency",
+   "level": 1,
+   "q": "Tell me about a time you took the lead.",
+   "tests": "Se prendi la responsabilità quando serve, sai dare direzione, coinvolgere gli altri e portare un risultato.",
+   "structure": [
+    "Situazione: perché serviva qualcuno che guidasse",
+    "Task: perché sei stato tu a farlo",
+    "Azione: come hai dato direzione (obiettivo chiaro, divisione dei compiti, decisioni)",
+    "Azione: come hai coinvolto e motivato gli altri",
+    "Risultato con un numero e cosa hai imparato sulla leadership"
+   ],
+   "good": [
+    "Leadership come servizio al gruppo, non come comando",
+    "Decisioni chiare e motivate",
+    "Un momento in cui hai ascoltato o cambiato idea"
+   ],
+   "pitfalls": [
+    "Confondere leadership con fare tutto da solo",
+    "Storie in cui il titolo formale è l'unica prova",
+    "Nessun riferimento a come gli altri hanno reagito"
+   ],
+   "skeleton": "In [context, e.g. a university case competition / student association], our team of [number] had [timeframe] to [goal], and after the first week we had [no clear plan]. I [offered to coordinate]: I [split the task into workstreams based on each person's strengths], [set two short check-ins a week], and [made the final call on our recommendation when we were split, after hearing both sides]. We [result, e.g. reached the final / delivered on time], and [feedback]. I learned that leading means [creating clarity for others], not doing everything myself.",
+   "explanation": {
+    "steps": [
+     "Verifica che ci sia un momento in cui hai preso una decisione difficile per il gruppo.",
+     "Controlla di aver mostrato come hai coinvolto gli altri, non solo cosa hai deciso.",
+     "Assicurati che il risultato sia del gruppo e misurabile."
+    ],
+    "shortcut": "Serviva chiarezza, l'ho creata, ho coinvolto gli altri, abbiamo ottenuto il risultato.",
+    "trap": "Raccontare una storia in cui sei il protagonista solitario: per gli assessor è un segnale di scarsa leadership.",
+    "rule": "Un leader crea chiarezza e responsabilità per gli altri."
+   },
+   "time": 90,
+   "tags": [
+    "leadership"
+   ]
+  },
+  {
+   "id": "beh-020",
+   "category": "competency",
+   "level": 3,
+   "q": "Describe a time you had to lead or influence people without formal authority.",
+   "tests": "Se sai ottenere risultati coordinando persone più senior o esterne (clienti, legali, revisori) che non rispondono a te, situazione quotidiana per un analyst.",
+   "structure": [
+    "Situazione: chi dovevi coordinare e perché non avevi autorità",
+    "Obiettivo: cosa serviva ottenere ed entro quando",
+    "Azione: rendere facile collaborare (richieste chiare, scadenze, bozze pronte)",
+    "Azione: costruire credibilità con preparazione e follow-up, escalation tramite il tuo senior",
+    "Risultato e lezione su come si influenza senza gerarchia"
+   ],
+   "good": [
+    "Strumenti concreti: tracker, richieste specifiche, preparazione che fa risparmiare tempo agli altri",
+    "Rispetto per ruoli e tempi altrui",
+    "Escalation usata con giudizio, attraverso il proprio senior"
+   ],
+   "pitfalls": [
+    "Raccontare di aver 'messo pressione' a persone senior",
+    "Aggirare la gerarchia senza coinvolgere il proprio responsabile",
+    "Non avere un risultato chiaro"
+   ],
+   "skeleton": "During [sell-side process], I ran [the data room and buyer Q&A], which meant getting answers from [the client's CFO, the lawyers and the auditors], none of whom reported to me. Answers took [X days] and buyers were [frustrated]. I [grouped questions by owner and priority], [sent each person a short list with a clear deadline and a draft answer where possible], and [flagged the three blocking items to my VP for the weekly client call]. Response time fell to [Y days] and [the process stayed on schedule]. I learned that [making it easy to help you] is the best way to influence.",
+   "explanation": {
+    "steps": [
+     "Verifica che le persone coinvolte fossero davvero fuori dalla tua autorità.",
+     "Controlla che le tue azioni rendano più facile collaborare, non che aumentino la pressione.",
+     "Assicurati che il risultato sia misurabile (tempi, scadenze rispettate)."
+    ],
+    "shortcut": "Rendi facile collaborare, costruisci credibilità, escalation attraverso il tuo senior.",
+    "trap": "Descrivere l'influenza come insistenza: con senior e clienti l'insistenza senza valore aggiunto è controproducente.",
+    "rule": "Senza autorità si guida con la preparazione e la chiarezza."
+   },
+   "time": 120,
+   "tags": [
+    "leadership",
+    "influence"
+   ]
+  },
+  {
+   "id": "beh-021",
+   "category": "competency",
+   "level": 2,
+   "q": "Tell me about a time you helped develop someone more junior.",
+   "tests": "Se sai trasferire conoscenza, dare feedback e far crescere gli altri, cosa che un analyst fa già con intern e nuovi arrivati.",
+   "structure": [
+    "Situazione: chi era la persona e cosa doveva imparare",
+    "Azione: come hai spiegato (esempio pratico, checklist, revisione insieme)",
+    "Azione: come hai dato feedback e aumentato gradualmente la sua autonomia",
+    "Risultato: cosa sapeva fare dopo e l'impatto sul team",
+    "Chiudi con cosa hai imparato tu"
+   ],
+   "good": [
+    "Metodo concreto (esempio guidato, checklist, sessioni brevi)",
+    "Feedback specifico e costruttivo",
+    "Equilibrio tra aiutare e lasciare autonomia"
+   ],
+   "pitfalls": [
+    "Rifare il lavoro dell'altro invece di insegnare",
+    "Tono paternalistico verso la persona",
+    "Nessuna prova che la persona sia migliorata"
+   ],
+   "skeleton": "When [an intern] joined [boutique] during [a busy period], they were asked to [update the trading comps] but had never [used our data provider or template]. I [walked them through one company end to end], [gave them a short checklist of the five most common errors], and [reviewed their first output with them line by line instead of fixing it myself]. Within [two weeks] they were [producing comps that needed only minor comments], which freed [X hours] of my time each week. I learned that [ten minutes of explaining] saves hours of correcting.",
+   "explanation": {
+    "steps": [
+     "Verifica di aver mostrato un metodo di insegnamento, non solo disponibilità.",
+     "Controlla che ci sia una prova del progresso della persona.",
+     "Assicurati che emerga il beneficio per il team."
+    ],
+    "shortcut": "Mostra, dai uno strumento, rivedi insieme, misura il progresso.",
+    "trap": "Raccontare di aver corretto tu il lavoro: è efficiente oggi ma non fa crescere nessuno.",
+    "rule": "Sviluppare qualcuno significa renderlo capace di fare senza di te."
+   },
+   "time": 90,
+   "tags": [
+    "leadership",
+    "coaching"
+   ]
+  },
+  {
+   "id": "beh-022",
+   "category": "competency",
+   "level": 2,
+   "q": "Tell me about a time you disagreed with your manager.",
+   "tests": "Se sai esprimere un disaccordo con rispetto e con dati, nel momento e nel modo giusti, e poi accettare ed eseguire la decisione finale.",
+   "structure": [
+    "Situazione: su cosa eri in disaccordo e perché contava",
+    "Azione: hai preparato evidenze prima di parlarne",
+    "Azione: hai scelto il momento giusto e un tono rispettoso, proponendo un'alternativa",
+    "Risultato: la decisione presa (anche se non a tuo favore) e come hai proseguito",
+    "Chiudi con la lezione"
+   ],
+   "good": [
+    "Disaccordo basato su dati, non su opinioni",
+    "Rispetto della gerarchia: proponi, non imponi",
+    "Disponibilità ad accettare la decisione finale e a eseguirla bene"
+   ],
+   "pitfalls": [
+    "Raccontare di aver avuto ragione contro il capo, con tono di rivincita",
+    "Disaccordo espresso davanti al cliente",
+    "Non riuscire a trovare un esempio: sembra passività"
+   ],
+   "skeleton": "On [deal], my VP wanted to [use a specific peer set] for the valuation. I thought [two of the peers had a very different business model], which would [overstate the multiple by about X turns]. Before raising it, I [prepared a one-page comparison of both peer sets]. I [asked for five minutes after the internal call], explained the impact and suggested [showing both sets]. The VP [decision]. Either way, I [executed the agreed approach quickly]. I learned that [disagreement backed by data, raised in private and with an alternative] is welcomed.",
+   "explanation": {
+    "steps": [
+     "Verifica che il disaccordo sia supportato da un'analisi concreta.",
+     "Controlla luogo e tono: in privato, con rispetto, proponendo un'alternativa.",
+     "Assicurati di mostrare che avresti eseguito la decisione anche se diversa dalla tua proposta."
+    ],
+    "shortcut": "Dati, momento privato, alternativa, rispetto della decisione.",
+    "trap": "Scegliere una storia in cui il manager sbagliava in modo evidente: suona come una critica e non mostra maturità.",
+    "rule": "Un buon disaccordo si porta con dati, in privato, con una proposta."
+   },
+   "time": 90,
+   "tags": [
+    "conflict",
+    "challenge-senior"
+   ]
+  },
+  {
+   "id": "beh-023",
+   "category": "competency",
+   "level": 2,
+   "q": "Describe a conflict with a colleague and how you resolved it.",
+   "tests": "Gestione delle relazioni sotto pressione: capacità di ascoltare, separare la persona dal problema e trovare una soluzione che regge nel tempo.",
+   "structure": [
+    "Situazione: il conflitto descritto in modo neutro, senza colpe",
+    "Azione: hai cercato di capire la prospettiva dell'altro",
+    "Azione: hai proposto un accordo concreto su come lavorare",
+    "Risultato: esito sul lavoro e sulla relazione",
+    "Lezione sul conflitto"
+   ],
+   "good": [
+    "Descrizione neutrale e responsabilità condivisa",
+    "Ascolto attivo e domande per capire l'altro punto di vista",
+    "Soluzione pratica e duratura"
+   ],
+   "pitfalls": [
+    "Descrivere il collega come il 'cattivo'",
+    "Conflitti personali non legati al lavoro",
+    "Risoluzione affidata interamente a un terzo"
+   ],
+   "skeleton": "On [project], another analyst and I [were both editing the same model], and we kept [overwriting each other's changes], which led to [tension and a version error]. I [suggested a short call] and asked how they saw it; they felt [I was changing their sections without telling them]. That was fair. We agreed [clear ownership of each tab, a change log and one master file]. After that, [there were no further version errors], and we [worked well together on the next two deals]. I learned to [address friction early and focus on the process, not the person].",
+   "explanation": {
+    "steps": [
+     "Verifica che il racconto ammetta anche una tua parte di responsabilità.",
+     "Controlla che ci sia una soluzione concreta sul modo di lavorare.",
+     "Assicurati che la relazione sia uscita rafforzata o almeno funzionante."
+    ],
+    "shortcut": "Neutralità, ascolto, accordo pratico, relazione salvata.",
+    "trap": "Mostrare di aver avuto completamente ragione: segnala scarsa autoconsapevolezza.",
+    "rule": "Nei conflitti si risolve il problema, non si vince contro la persona."
+   },
+   "time": 90,
+   "tags": [
+    "conflict"
+   ]
+  },
+  {
+   "id": "beh-024",
+   "category": "competency",
+   "level": 3,
+   "q": "Tell me about a time you dealt with a difficult client or counterparty.",
+   "tests": "Professionalità con interlocutori esterni: calma, comprensione degli interessi reali del cliente, capacità di proteggere relazione e processo senza superare il proprio perimetro.",
+   "structure": [
+    "Situazione: chi era il cliente o la controparte e cosa rendeva difficile la situazione",
+    "Azione: hai capito l'interesse reale dietro la richiesta",
+    "Azione: hai risposto con fatti, opzioni e tempi chiari, coinvolgendo il senior quando serviva",
+    "Risultato su processo e relazione",
+    "Lezione sulla gestione del cliente"
+   ],
+   "good": [
+    "Calma e rispetto anche quando il cliente è ostile",
+    "Distinzione tra posizione dichiarata e interesse reale",
+    "Coinvolgimento del senior per decisioni fuori dal tuo perimetro"
+   ],
+   "pitfalls": [
+    "Prendere impegni con il cliente senza consultare il team",
+    "Parlare male del cliente",
+    "Raccontare di aver ceduto su tutto pur di evitare il conflitto"
+   ],
+   "skeleton": "On [sell-side mandate], the [client's founder] was [unhappy with the valuation range in our first draft] and [called me directly late one evening]. I listened without arguing and realised the real concern was [that a competitor had sold at a higher multiple]. I [prepared a short comparison of growth and margins between the two businesses], [reviewed it with my VP], and we [walked the client through it the next morning, together with an upside case]. The client [accepted the range and became more engaged in the process]. I learned to [separate the emotion from the underlying question].",
+   "explanation": {
+    "steps": [
+     "Verifica di aver identificato l'interesse reale dietro la lamentela.",
+     "Controlla di non aver preso impegni da solo: le decisioni rilevanti passano dal senior.",
+     "Assicurati che il risultato includa la relazione con il cliente."
+    ],
+    "shortcut": "Ascolta, trova l'interesse reale, rispondi con fatti, coinvolgi il senior.",
+    "trap": "Raccontare di aver accontentato il cliente cambiando i numeri: sembra una mancanza di integrità.",
+    "rule": "Con un cliente difficile, fatti e calma valgono più delle concessioni."
+   },
+   "time": 120,
+   "tags": [
+    "conflict",
+    "client-focus"
+   ]
+  },
+  {
+   "id": "beh-025",
+   "category": "competency",
+   "level": 1,
+   "q": "Tell me about a time you made a mistake.",
+   "tests": "Integrità e ownership: se ammetti l'errore subito, limiti il danno, ne capisci la causa e cambi il tuo processo.",
+   "structure": [
+    "Situazione: l'errore, in modo diretto e senza minimizzare",
+    "Azione immediata: lo hai segnalato subito al responsabile",
+    "Azione: hai corretto e limitato l'impatto",
+    "Azione: hai capito la causa e introdotto un controllo per evitarlo",
+    "Risultato e prova che il controllo ha funzionato in seguito"
+   ],
+   "good": [
+    "Un errore reale ma non catastrofico",
+    "Segnalazione immediata e trasparente",
+    "Un cambiamento concreto e permanente del tuo processo di lavoro"
+   ],
+   "pitfalls": [
+    "Scegliere un errore finto o commesso da altri",
+    "Minimizzare o dare la colpa a circostanze esterne",
+    "Non spiegare cosa fai oggi di diverso"
+   ],
+   "skeleton": "On [deal], I sent my associate [a draft comps page] in which [the EBITDA of two peers came from the wrong fiscal year], which [moved the median EV/EBITDA by about X turns]. I spotted it [an hour later] and told him straight away, with the corrected page, before it reached [the client]. The root cause was [that my process had no check on periods]. Since then I [run a five-point checklist before sending anything, including periods, units and currencies], and it has [caught several issues since]. I learned that [flagging early] protects both the team and trust.",
+   "explanation": {
+    "steps": [
+     "Verifica che l'errore sia tuo e che lo racconti senza giustificazioni.",
+     "Controlla che la segnalazione sia stata immediata e trasparente.",
+     "Assicurati di descrivere il cambiamento permanente nel tuo processo."
+    ],
+    "shortcut": "Errore, segnalato subito, corretto, causa trovata, processo cambiato.",
+    "trap": "Scegliere un 'errore' che in realtà è un pregio, come 'I worked too hard': l'intervistatore lo legge come evasione.",
+    "rule": "In banca l'errore segnalato subito è gestibile, quello nascosto no."
+   },
+   "time": 90,
+   "tags": [
+    "mistake",
+    "integrity"
+   ]
+  },
+  {
+   "id": "beh-026",
+   "category": "competency",
+   "level": 2,
+   "q": "Tell me about a time you failed.",
+   "tests": "Resilienza e capacità di imparare: come reagisci a un risultato negativo importante e cosa cambi dopo.",
+   "structure": [
+    "Situazione: un obiettivo importante non raggiunto",
+    "La tua parte: cosa dipendeva da te, detto con onestà",
+    "Reazione: come hai gestito il momento e chiesto feedback",
+    "Lezione concreta",
+    "Risultato successivo: dove hai applicato la lezione con successo"
+   ],
+   "good": [
+    "Un fallimento vero, con conseguenze reali",
+    "Responsabilità personale senza autoflagellazione",
+    "Prova di aver applicato la lezione in una situazione successiva"
+   ],
+   "pitfalls": [
+    "Un 'fallimento' finto o minuscolo",
+    "Colpa interamente ad altri o alla sfortuna",
+    "Nessuna lezione, o una lezione generica come 'never give up'"
+   ],
+   "skeleton": "[On a pitch at boutique / In a competition at university], we [aimed for specific goal] and [did not achieve it: our pitch lost to a competitor]. Looking back, my part was [that I focused on the model and spent too little time understanding what the client actually wanted]. It was [disappointing], but I [asked the client contact and my MD for feedback]. The lesson was [start from the client's question, then build the analysis]. On the next pitch, I [drafted the key messages first and built the analysis around them], and we [won the mandate / received strong feedback].",
+   "explanation": {
+    "steps": [
+     "Verifica che il fallimento sia reale e che la tua parte di responsabilità sia chiara.",
+     "Controlla che la lezione sia specifica e non un motto generico.",
+     "Assicurati di chiudere con una situazione successiva in cui la lezione ha funzionato."
+    ],
+    "shortcut": "Fallimento vero, mia parte, lezione specifica, successo successivo.",
+    "trap": "Fermarsi al fallimento: senza il seguito positivo la storia mostra solo il problema.",
+    "rule": "Un fallimento racconta la tua capacità di imparare, non il tuo limite."
+   },
+   "time": 90,
+   "tags": [
+    "failure",
+    "resilience"
+   ]
+  },
+  {
+   "id": "beh-027",
+   "category": "competency",
+   "level": 2,
+   "q": "Tell me about a time you received critical feedback.",
+   "tests": "Se accetti il feedback senza difenderti, lo trasformi in azione e mostri un progresso visibile.",
+   "structure": [
+    "Situazione: chi ti ha dato il feedback e su cosa",
+    "Reazione: hai ascoltato e fatto domande per capire",
+    "Azione: il piano concreto per migliorare",
+    "Risultato: come è cambiata la valutazione successiva",
+    "Chiudi con il tuo rapporto con il feedback oggi"
+   ],
+   "good": [
+    "Feedback reale e rilevante per il ruolo",
+    "Reazione matura, senza giustificazioni",
+    "Prova del cambiamento"
+   ],
+   "pitfalls": [
+    "Feedback banale o che in realtà è un complimento",
+    "Raccontare di aver contestato il feedback",
+    "Non mostrare il miglioramento"
+   ],
+   "skeleton": "After [my first months at boutique], my VP told me that [my pages were analytically correct but the key message was buried]. My first instinct was [to explain why], but instead I [asked for two examples and for what good looked like]. I then [started writing the headline of each page before building it, and asked for a quick review of my first draft on the next deal]. In my next review, [the same VP said my materials needed far fewer comments]. Since then I [ask for feedback at the end of every deal].",
+   "explanation": {
+    "steps": [
+     "Verifica che il feedback sia sostanziale e legato al lavoro.",
+     "Controlla che la tua reazione sia stata ascolto e azione, non difesa.",
+     "Assicurati di chiudere con una prova del miglioramento."
+    ],
+    "shortcut": "Feedback, ascolto, piano, prova del miglioramento.",
+    "trap": "Dire che il feedback era ingiusto: anche se lo fosse, al colloquio segnala chiusura.",
+    "rule": "Il feedback vale per ciò che ne fai dopo."
+   },
+   "time": 75,
+   "tags": [
+    "feedback",
+    "self-awareness"
+   ]
+  },
+  {
+   "id": "beh-028",
+   "category": "competency",
+   "level": 1,
+   "q": "Tell me about a time you worked under significant pressure.",
+   "tests": "Come mantieni qualità e calma quando tempi e posta in gioco sono alti: organizzazione, priorità, comunicazione.",
+   "structure": [
+    "Situazione: scadenza e posta in gioco, in modo concreto",
+    "Azione: hai organizzato il lavoro e messo le priorità",
+    "Azione: hai protetto la qualità con controlli mirati",
+    "Azione: hai comunicato in anticipo rischi e progressi",
+    "Risultato con un numero e lezione"
+   ],
+   "good": [
+    "Metodo esplicito (priorità, piano a ore, controlli)",
+    "Calma e comunicazione proattiva",
+    "Qualità mantenuta nonostante la pressione"
+   ],
+   "pitfalls": [
+    "Raccontare solo di aver lavorato tutta la notte",
+    "Trasmettere panico o caos",
+    "Non dire come hai controllato la qualità"
+   ],
+   "skeleton": "On [deal], the [bid deadline was moved forward by X days], so we had [48 hours] to [update the model and the valuation materials]. I [listed every deliverable, ranked them by what the client would read first, and agreed the order with my associate]. I [built the model updates first, then the pages], and [kept the last 30 minutes for a full check of numbers across the document]. I [sent short progress updates every few hours]. We [delivered on time with no errors], and [outcome]. I learned that [a clear plan in the first hour] is what keeps pressure under control.",
+   "explanation": {
+    "steps": [
+     "Verifica che il metodo sia visibile: priorità, sequenza, controlli.",
+     "Controlla di aver mostrato comunicazione proattiva verso il team.",
+     "Assicurati che il risultato includa la qualità, non solo il rispetto della scadenza."
+    ],
+    "shortcut": "Piano, priorità, controllo qualità, aggiornamenti.",
+    "trap": "Usare le ore lavorate come prova: lavorare tanto non dimostra di saper gestire la pressione.",
+    "rule": "Sotto pressione vince chi pianifica nella prima ora."
+   },
+   "time": 90,
+   "tags": [
+    "pressure",
+    "resilience"
+   ]
+  },
+  {
+   "id": "beh-029",
+   "category": "competency",
+   "level": 2,
+   "q": "Describe a time you had to manage competing priorities from different people.",
+   "tests": "Se sai gestire richieste in conflitto da più senior senza promettere tutto: trasparenza, criteri di priorità, negoziazione delle scadenze.",
+   "structure": [
+    "Situazione: chi chiedeva cosa e perché le richieste erano incompatibili",
+    "Azione: hai stimato tempi, urgenza e impatto di ciascuna",
+    "Azione: hai reso trasparente il conflitto ai senior e proposto un ordine",
+    "Azione: hai eseguito e aggiornato tutti",
+    "Risultato e lezione"
+   ],
+   "good": [
+    "Trasparenza: i senior vengono informati del conflitto",
+    "Proposta di soluzione, non solo segnalazione del problema",
+    "Rispetto delle scadenze rinegoziate"
+   ],
+   "pitfalls": [
+    "Dire sì a tutti e consegnare in ritardo",
+    "Decidere da solo le priorità senza informare nessuno",
+    "Lamentarsi del carico di lavoro"
+   ],
+   "skeleton": "On the same afternoon, [my VP on deal A asked for a revised model by 9am] and [an MD on a pitch asked for a market page by the same time]. I could not deliver both properly. I [estimated each task at about X hours], then [wrote to both with a proposed plan: the model first because the client call was at 10am, the market page by noon, or support from another analyst]. The MD [agreed to noon]. I [delivered both as agreed]. I learned that [making the trade-off visible early] beats silently trying to do everything.",
+   "explanation": {
+    "steps": [
+     "Verifica di aver reso visibile il conflitto ai senior coinvolti.",
+     "Controlla che la tua proposta segua un criterio chiaro (scadenza del cliente, impatto).",
+     "Assicurati che le scadenze rinegoziate siano state rispettate."
+    ],
+    "shortcut": "Stima, criterio, proposta trasparente, esecuzione.",
+    "trap": "Accettare tutto in silenzio: sembra disponibilità ma porta a mancare scadenze o qualità.",
+    "rule": "Le priorità in conflitto si risolvono rendendole visibili, non nascondendole."
+   },
+   "time": 90,
+   "tags": [
+    "pressure",
+    "prioritisation"
+   ]
+  },
+  {
+   "id": "beh-030",
+   "category": "competency",
+   "level": 3,
+   "q": "Tell me about a time you missed, or nearly missed, a deadline.",
+   "tests": "Onestà e gestione del rischio: se riconosci presto il problema, avvisi in tempo con un piano e cambi metodo per il futuro.",
+   "structure": [
+    "Situazione: la scadenza e perché era a rischio",
+    "Riconoscimento: quando hai capito che non ci saresti arrivato e cosa hai fatto subito",
+    "Azione: avviso tempestivo con un piano alternativo (consegna parziale, aiuto, nuova scadenza)",
+    "Risultato: impatto limitato",
+    "Lezione e cambiamento nel modo di stimare o pianificare"
+   ],
+   "good": [
+    "Onestà sul ritardo",
+    "Avviso anticipato, non all'ultimo minuto",
+    "Cambiamento strutturale nel metodo di pianificazione"
+   ],
+   "pitfalls": [
+    "Negare di aver mai rischiato una scadenza",
+    "Dare la colpa ad altri",
+    "Avvisare solo dopo la scadenza"
+   ],
+   "skeleton": "On [project], I [underestimated how long it would take to collect data for X companies] and, [two days before the deadline], I realised I would not finish properly. I [told my associate immediately], [proposed delivering the core analysis on time and the remaining companies a day later], and [asked whether another analyst could take part of the data work]. The client [received the core output on time, with no impact on the process]. Since then I [break tasks into steps with time estimates and check progress at the halfway point], so [I flag risks much earlier].",
+   "explanation": {
+    "steps": [
+     "Verifica di aver ammesso il ritardo in modo diretto.",
+     "Controlla quando hai avvisato: prima è, meglio è.",
+     "Assicurati di descrivere il cambio di metodo che lo previene."
+    ],
+    "shortcut": "Riconosci presto, avvisa con un piano, limita l'impatto, cambia metodo.",
+    "trap": "Rispondere 'I have never missed a deadline': non è credibile e salta la competenza che vogliono valutare.",
+    "rule": "Una scadenza a rischio segnalata in anticipo è un problema di pianificazione, non di fiducia."
+   },
+   "time": 90,
+   "tags": [
+    "pressure",
+    "ownership"
+   ]
+  },
+  {
+   "id": "beh-031",
+   "category": "competency",
+   "level": 1,
+   "q": "Give an example of when your attention to detail made a difference.",
+   "tests": "Se il controllo di qualità fa parte del tuo modo di lavorare e se sai spiegare l'impatto di un errore evitato.",
+   "structure": [
+    "Situazione: il deliverable e perché la precisione contava",
+    "Azione: il tuo metodo di controllo (quadratura, confronto con le fonti, coerenza tra pagine)",
+    "Cosa hai trovato: l'errore o l'incongruenza, in concreto",
+    "Risultato: impatto evitato, con un numero",
+    "Chiudi con come il metodo è diventato un'abitudine"
+   ],
+   "good": [
+    "Un metodo di controllo sistematico, non la fortuna",
+    "Un errore con impatto quantificabile",
+    "Abitudine consolidata e condivisa con il team"
+   ],
+   "pitfalls": [
+    "Storie vaghe ('I always double-check')",
+    "Errori irrilevanti come un refuso",
+    "Sembrare lento o eccessivamente perfezionista"
+   ],
+   "skeleton": "Before [a board presentation on deal], I was [checking that the numbers in the executive summary matched the model]. I always [tie every number on a page back to its source]. I noticed that [the net debt on the summary page was from the previous quarter], which [misstated the implied equity value by about X million]. I [corrected it, checked every other page that used net debt, and told my associate what I had changed]. The client saw [consistent numbers], and [the VP added my tie-out step to the team's checklist].",
+   "explanation": {
+    "steps": [
+     "Verifica che il racconto mostri un metodo ripetibile, non un colpo di fortuna.",
+     "Controlla che l'errore abbia un impatto quantificato.",
+     "Assicurati di aver detto come hai comunicato la correzione."
+    ],
+    "shortcut": "Metodo, errore trovato, impatto evitato, abitudine.",
+    "trap": "Raccontare di aver trovato un refuso: non dimostra la precisione che serve su numeri e modelli.",
+    "rule": "La precisione si dimostra con un metodo, non con un'intenzione."
+   },
+   "time": 90,
+   "tags": [
+    "attention-to-detail"
+   ]
+  },
+  {
+   "id": "beh-032",
+   "category": "competency",
+   "level": 2,
+   "q": "How do you check your work before sending it to a senior?",
+   "tests": "Se hai un processo di controllo concreto e ripetibile: è una domanda pratica e la risposta deve essere un metodo, non una promessa.",
+   "structure": [
+    "Apri dicendo che segui una checklist fissa",
+    "Controllo 1: numeri (quadratura con il modello, fonti, unità, valute, periodi)",
+    "Controllo 2: logica (i numeri hanno senso? confronto con l'anno prima e con i peer, ordini di grandezza)",
+    "Controllo 3: forma (formattazione, coerenza tra pagine, note e fonti)",
+    "Chiudi con l'ultimo passo, rileggere come il destinatario, e un esempio di errore trovato così"
+   ],
+   "good": [
+    "Checklist concreta in 3-5 punti",
+    "Sanity check sugli ordini di grandezza",
+    "Un esempio reale di errore intercettato"
+   ],
+   "pitfalls": [
+    "'I read it twice' come unico controllo",
+    "Nessuna distinzione tra numeri, logica e forma",
+    "Dire che il controllo spetta al senior"
+   ],
+   "skeleton": "I use the same checklist every time. First, numbers: every figure [ties back to the model or the source], with [units, currency and period] checked. Second, logic: I ask whether the numbers make sense, for example [whether margins are in line with last year and with peers, and whether orders of magnitude are right]. Third, format: [consistent fonts, footnotes and sources across pages]. Finally, I [zoom out and read it as the client would]. Last month this [caught a revenue figure in thousands instead of millions] before it went to [my VP].",
+   "explanation": {
+    "steps": [
+     "Verifica che il metodo abbia almeno tre livelli distinti: numeri, logica, forma.",
+     "Controlla di aver incluso un sanity check sugli ordini di grandezza.",
+     "Assicurati di aver dato un esempio concreto."
+    ],
+    "shortcut": "Numeri, logica, forma, lettura da destinatario.",
+    "trap": "Descrivere il controllo come una rilettura generica: il senior vuole sapere cosa controlli, non quante volte.",
+    "rule": "Il primo revisore del tuo lavoro sei tu, con una checklist."
+   },
+   "time": 60,
+   "tags": [
+    "attention-to-detail",
+    "process"
+   ]
+  },
+  {
+   "id": "beh-033",
+   "category": "competency",
+   "level": 3,
+   "q": "Tell me about a time you spotted an error made by someone more senior.",
+   "tests": "Coraggio e tatto: se segnali l'errore di un senior in modo rapido, discreto e verificato, mettendo la qualità del lavoro davanti alla gerarchia.",
+   "structure": [
+    "Situazione: cosa hai notato e su quale documento",
+    "Verifica: hai ricontrollato prima di parlarne",
+    "Azione: lo hai segnalato in privato, rapidamente, con la prova e una correzione proposta",
+    "Risultato: errore corretto prima che uscisse",
+    "Lezione su come segnalare verso l'alto"
+   ],
+   "good": [
+    "Verifica prima della segnalazione",
+    "Comunicazione privata, rapida e non accusatoria",
+    "Correzione già pronta"
+   ],
+   "pitfalls": [
+    "Segnalarlo davanti ad altri o al cliente",
+    "Non dire nulla per timore della gerarchia",
+    "Tono di superiorità nel racconto"
+   ],
+   "skeleton": "While [preparing the final version of a valuation pack], I noticed that [the DCF the associate had built used the wrong tax rate], which [moved the valuation by about X%]. I [rechecked the source twice to be sure], then [messaged him privately with the figure, the source and a corrected version]. He [thanked me and updated it before it went to the client]. I learned that [seniors want to know quickly, privately and with a solution], and that [protecting the quality of what the client sees] matters more than hierarchy.",
+   "explanation": {
+    "steps": [
+     "Verifica di aver controllato l'errore prima di segnalarlo.",
+     "Controlla il canale: privato e immediato.",
+     "Assicurati di aver portato una soluzione, non solo il problema."
+    ],
+    "shortcut": "Verifica, segnala in privato, porta la correzione.",
+    "trap": "Tacere per rispetto della gerarchia: in banca un errore che arriva al cliente danneggia tutti.",
+    "rule": "Segnala gli errori verso l'alto in fretta, in privato e con la soluzione."
+   },
+   "time": 90,
+   "tags": [
+    "attention-to-detail",
+    "integrity",
+    "challenge-senior"
+   ]
+  },
+  {
+   "id": "beh-034",
+   "category": "competency",
+   "level": 2,
+   "q": "Tell me about a time you persuaded someone to change their mind.",
+   "tests": "Se sai influenzare con argomenti costruiti sulle priorità dell'interlocutore, ascoltando le sue obiezioni, senza imporre.",
+   "structure": [
+    "Situazione: chi dovevi convincere e su cosa",
+    "Azione: hai capito cosa contava davvero per l'altra persona",
+    "Azione: hai costruito l'argomento sui suoi criteri, con dati",
+    "Azione: hai gestito l'obiezione principale con una proposta concreta",
+    "Risultato e lezione"
+   ],
+   "good": [
+    "Argomento costruito sulle priorità dell'altro",
+    "Dati e un'alternativa concreta",
+    "Rispetto per la decisione dell'altro, qualunque fosse"
+   ],
+   "pitfalls": [
+    "Persuasione per insistenza o per gerarchia",
+    "Storie banali senza posta in gioco",
+    "Non citare le obiezioni dell'altro"
+   ],
+   "skeleton": "On [deal], the [client's CFO] wanted to [approach only strategic buyers], while we believed [adding two financial sponsors would create more competition]. With my VP, I [asked what worried him] and learned it was [confidentiality]. I [prepared a page showing recent sponsor deals in the sector at comparable multiples, and a proposal to share only a teaser with sponsors until they signed an NDA]. He [agreed to add three sponsors], and [one of them made the second-highest bid]. I learned that [persuasion starts from the other person's concern, not from my argument].",
+   "explanation": {
+    "steps": [
+     "Verifica di aver identificato la preoccupazione reale dell'interlocutore.",
+     "Controlla che l'argomento usi dati e risponda a quella preoccupazione.",
+     "Assicurati che il risultato sia concreto e verificabile."
+    ],
+    "shortcut": "Capisci la sua preoccupazione, rispondi con dati, offri una via d'uscita.",
+    "trap": "Raccontare di aver convinto qualcuno ripetendo la propria tesi: non è persuasione, è pressione.",
+    "rule": "Si persuade rispondendo alla preoccupazione dell'altro."
+   },
+   "time": 90,
+   "tags": [
+    "persuasion"
+   ]
+  },
+  {
+   "id": "beh-035",
+   "category": "competency",
+   "level": 2,
+   "q": "Tell me about a time you had to explain something complex to a non-expert.",
+   "tests": "Chiarezza: se sai semplificare senza perdere precisione, adattando il messaggio a chi ascolta e verificando che sia arrivato.",
+   "structure": [
+    "Situazione: chi era il pubblico e cosa dovevi spiegare",
+    "Azione: sei partito dalla conclusione e da ciò che contava per loro",
+    "Azione: hai usato un'analogia o un esempio con numeri semplici",
+    "Azione: hai verificato la comprensione con domande",
+    "Risultato e lezione"
+   ],
+   "good": [
+    "Messaggio principale in una frase",
+    "Analogia o esempio numerico semplice ma corretto",
+    "Verifica attiva della comprensione"
+   ],
+   "pitfalls": [
+    "Usare gergo tecnico con un pubblico non esperto",
+    "Semplificare fino a dire cose inesatte",
+    "Non verificare se il messaggio è arrivato"
+   ],
+   "skeleton": "The [founder of a deep-tech client] was [an engineer] and could not see why buyers would value his company on [a multiple of revenue rather than on what it had spent on R&D]. I [started with the conclusion: buyers pay for future cash flows]. Then I [used a simple example: two companies with the same revenue, one growing at 40% a year and one at 10%, and showed how growth changed the price]. I [asked him to explain it back in his own words]. He [later used the same logic with his board]. I learned to [lead with the answer and use one example].",
+   "explanation": {
+    "steps": [
+     "Verifica che il messaggio principale arrivi nelle prime due frasi.",
+     "Controlla che l'esempio sia semplice ma tecnicamente corretto.",
+     "Assicurati di aver verificato che l'altro avesse capito."
+    ],
+    "shortcut": "Conclusione, esempio semplice, verifica della comprensione.",
+    "trap": "Spiegare tutto il processo tecnico in ordine: il non esperto si perde prima di arrivare al punto.",
+    "rule": "Spiega partendo dalla risposta, poi un esempio, poi i dettagli se servono."
+   },
+   "time": 90,
+   "tags": [
+    "persuasion",
+    "communication"
+   ]
+  },
+  {
+   "id": "beh-036",
+   "category": "competency",
+   "level": 3,
+   "q": "Tell me about a time you negotiated something.",
+   "tests": "Se prepari una negoziazione, conosci il tuo margine e gli interessi dell'altra parte e cerchi un accordo che regge per entrambi.",
+   "structure": [
+    "Situazione: cosa era in gioco e con chi",
+    "Preparazione: il tuo obiettivo, il tuo limite e l'interesse dell'altra parte",
+    "Azione: proposta iniziale e scambio di concessioni",
+    "Risultato: accordo raggiunto, con un numero",
+    "Lezione sulla negoziazione"
+   ],
+   "good": [
+    "Preparazione esplicita (obiettivo, limite, alternative)",
+    "Concessioni scambiate, non regalate",
+    "Accordo che preserva la relazione"
+   ],
+   "pitfalls": [
+    "Raccontare una negoziazione in cui hai 'vinto' umiliando l'altro",
+    "Negoziazioni senza una posta in gioco reale",
+    "Assenza di numeri"
+   ],
+   "skeleton": "As [treasurer of a student association], I had to [agree terms with a corporate sponsor] for [our annual finance conference]. Before the meeting I [set a target of X, a walk-away point of Y, and listed what we could offer at little cost, such as visibility]. They opened at [figure]. Instead of simply pushing on price, I [traded a logo on our materials and a speaking slot for a higher contribution]. We closed at [figure, X% above their opening offer], and they [renewed the following year]. I learned that [preparation and trading concessions] matter more than tough talk.",
+   "explanation": {
+    "steps": [
+     "Verifica di aver descritto obiettivo, limite e interessi dell'altra parte prima della negoziazione.",
+     "Controlla che ogni concessione sia stata scambiata con qualcosa in cambio.",
+     "Assicurati che il risultato abbia un numero e che la relazione sia rimasta buona."
+    ],
+    "shortcut": "Obiettivo, limite, scambio di concessioni, accordo misurabile.",
+    "trap": "Confondere negoziazione e durezza: gli intervistatori cercano preparazione e creatività.",
+    "rule": "Non regalare concessioni: scambiale."
+   },
+   "time": 90,
+   "tags": [
+    "persuasion",
+    "negotiation"
+   ]
+  },
+  {
+   "id": "beh-037",
+   "category": "competency",
+   "level": 1,
+   "q": "Tell me about a time you went beyond what was asked of you.",
+   "tests": "Ownership e proattività: se fai di più quando aggiunge valore reale, senza trascurare il compito assegnato.",
+   "structure": [
+    "Situazione: cosa ti era stato chiesto",
+    "Cosa hai notato che mancava o si poteva migliorare",
+    "Azione: cosa hai fatto in più, dopo aver completato il compito principale",
+    "Risultato: valore concreto per il team o il cliente",
+    "Lezione"
+   ],
+   "good": [
+    "Il compito principale completato prima dell'extra",
+    "L'extra risponde a un bisogno reale, non alla voglia di farsi notare",
+    "Risultato misurabile"
+   ],
+   "pitfalls": [
+    "Extra che hanno fatto ritardare il lavoro richiesto",
+    "Iniziative prese senza informare il responsabile quando serviva",
+    "Storie in cui l'extra è solo 'ho lavorato di più'"
+   ],
+   "skeleton": "I was asked to [prepare a list of potential buyers for a semiconductor client]. After delivering it, I noticed [we had no view on which buyers had recently done similar deals or had the balance sheet to pay]. I [added a page ranking each buyer by recent M&A activity, net leverage and strategic fit] and [shared it with my associate as an optional addition]. The MD [used it in the client meeting to prioritise the first outreach], and [two of the top five buyers entered the process]. I learned that [the best initiative answers the next question the client will ask].",
+   "explanation": {
+    "steps": [
+     "Verifica che il compito richiesto sia stato completato prima dell'iniziativa.",
+     "Controlla che l'extra risponda a un bisogno concreto.",
+     "Assicurati che l'impatto sia visibile e misurato."
+    ],
+    "shortcut": "Compito fatto, bisogno notato, extra utile, impatto.",
+    "trap": "Raccontare un extra che nessuno ha usato: dimostra impegno ma non giudizio.",
+    "rule": "L'iniziativa vale quando anticipa la prossima domanda del cliente."
+   },
+   "time": 90,
+   "tags": [
+    "initiative"
+   ]
+  },
+  {
+   "id": "beh-038",
+   "category": "competency",
+   "level": 2,
+   "q": "Tell me about a time you improved a process.",
+   "tests": "Se sai riconoscere un'inefficienza, proporre una soluzione concreta, ottenere il consenso di chi la usa e misurarne l'effetto.",
+   "structure": [
+    "Situazione: il processo inefficiente e il suo costo (tempo, errori)",
+    "Azione: l'analisi della causa",
+    "Azione: la soluzione e come hai coinvolto chi doveva usarla",
+    "Risultato: tempo risparmiato o errori evitati, con un numero",
+    "Chiudi con l'adozione da parte di altri"
+   ],
+   "good": [
+    "Costo del problema quantificato",
+    "Coinvolgimento dei colleghi e del responsabile",
+    "Impatto misurato e duraturo"
+   ],
+   "pitfalls": [
+    "Imporre il cambiamento senza consenso",
+    "Spiegare la soluzione tecnica con dettaglio eccessivo",
+    "Nessuna misura dell'effetto"
+   ],
+   "skeleton": "At [boutique], updating [trading comps for each pitch] took [about X hours] because [data was copied by hand from different sources]. I [mapped the steps], then [built a template linked to our data provider, with standard definitions of EBITDA and net debt]. I [tested it on two pitches with my associate] before [proposing it to the team]. It [cut the update time to about Y hours] and [reduced definition errors]. It is now [the team's standard template]. I learned that [testing a change on a real case] is what gets people to adopt it.",
+   "explanation": {
+    "steps": [
+     "Verifica di aver quantificato il costo iniziale e il risparmio finale.",
+     "Controlla di aver coinvolto chi usava il processo prima di cambiarlo.",
+     "Assicurati che il miglioramento sia stato adottato, non solo proposto."
+    ],
+    "shortcut": "Costo, causa, soluzione testata, adozione, numero.",
+    "trap": "Descrivere la soluzione tecnica nei dettagli e dimenticare impatto e consenso.",
+    "rule": "Un processo migliora davvero quando gli altri lo adottano."
+   },
+   "time": 90,
+   "tags": [
+    "initiative",
+    "process-improvement"
+   ]
+  },
+  {
+   "id": "beh-039",
+   "category": "competency",
+   "level": 2,
+   "q": "Tell me about a time you identified an opportunity that others had missed.",
+   "tests": "Curiosità e senso commerciale: se colleghi informazioni in modo originale e trasformi un'intuizione in un'azione concreta.",
+   "structure": [
+    "Situazione: il contesto e l'informazione di partenza",
+    "L'intuizione: cosa hai collegato che altri non avevano visto",
+    "Azione: come hai verificato l'idea e a chi l'hai presentata",
+    "Risultato: cosa ne è nato",
+    "Lezione"
+   ],
+   "good": [
+    "Un collegamento logico chiaro tra dati e opportunità",
+    "Verifica dell'idea prima di presentarla",
+    "Presentazione sintetica, passando dal proprio responsabile"
+   ],
+   "pitfalls": [
+    "Idee vaghe o non verificate",
+    "Presentare l'idea scavalcando il proprio responsabile",
+    "Nessun seguito concreto"
+   ],
+   "skeleton": "While [reading the quarterly report of a mid-cap semiconductor company], I noticed [it had started reporting a non-core product line as a separate segment]. Combined with [management comments about refocusing the portfolio], it suggested [a possible carve-out]. I [built a quick view of the segment's revenue, margins and likely buyers] and [shared a one-page note with my VP]. We [used it to open a conversation with the company], and [it led to a follow-up meeting]. I learned that [reading primary sources closely] is where good ideas come from.",
+   "explanation": {
+    "steps": [
+     "Verifica che il collegamento tra informazione e opportunità sia logico e spiegabile.",
+     "Controlla di aver verificato l'idea con un'analisi prima di proporla.",
+     "Assicurati che ci sia un seguito concreto."
+    ],
+    "shortcut": "Dato, collegamento, verifica, proposta, seguito.",
+    "trap": "Raccontare un'idea brillante rimasta solo un'idea: l'intervistatore cerca anche l'esecuzione.",
+    "rule": "Un'opportunità vale quando la trasformi in un'azione verificabile."
+   },
+   "time": 90,
+   "tags": [
+    "initiative",
+    "commercial-awareness"
+   ]
+  },
+  {
+   "id": "beh-040",
+   "category": "competency",
+   "level": 2,
+   "q": "Tell me about a time you faced an ethical dilemma.",
+   "tests": "Integrità: se riconosci un problema etico, resisti alla pressione e usi i canali corretti, anche quando la scelta giusta ha un costo.",
+   "structure": [
+    "Situazione: il dilemma, descritto in modo concreto",
+    "Perché era difficile: la pressione o il costo della scelta giusta",
+    "Azione: cosa hai fatto e quali canali hai usato (responsabile, docente, compliance)",
+    "Risultato",
+    "Il principio che guida le tue scelte"
+   ],
+   "good": [
+    "Un dilemma reale con un costo per la scelta giusta",
+    "Uso dei canali corretti invece di decisioni solitarie",
+    "Un principio chiaro, coerente con la cultura di una banca regolamentata"
+   ],
+   "pitfalls": [
+    "Situazioni banali senza un vero dilemma",
+    "Storie in cui hai partecipato alla scorrettezza",
+    "Risolvere tutto da solo senza informare chi doveva sapere"
+   ],
+   "skeleton": "During [a university group project], [a team member suggested reusing analysis from a previous year's submission that another group had shared]. It would have [saved us days], and [the team was under pressure]. I said I was not comfortable, explained [the risk for all of us], and suggested [we ask the professor what was allowed and rebuild the analysis from public sources]. We [did so], [lost two days but delivered on time], and [the issue was handled correctly]. My principle is simple: [if I would not be comfortable explaining it to a regulator or a client, I do not do it].",
+   "explanation": {
+    "steps": [
+     "Verifica che il dilemma abbia un costo reale per la scelta giusta.",
+     "Controlla di aver usato i canali corretti (responsabile, docente, compliance).",
+     "Assicurati di chiudere con un principio chiaro."
+    ],
+    "shortcut": "Dilemma, costo, canale corretto, principio.",
+    "trap": "Scegliere un dilemma in cui la risposta giusta era ovvia e gratuita: non dimostra nulla.",
+    "rule": "In un ambiente regolamentato la scelta giusta passa dai canali giusti."
+   },
+   "time": 90,
+   "tags": [
+    "ethics",
+    "integrity"
+   ]
+  },
+  {
+   "id": "beh-041",
+   "category": "competency",
+   "level": 3,
+   "q": "Tell me about a time you challenged something you believed was wrong.",
+   "tests": "Coraggio e giudizio: se sai sollevare un problema in modo costruttivo, anche controcorrente o verso un senior, con i fatti dalla tua parte.",
+   "structure": [
+    "Situazione: cosa ritenevi sbagliato e perché",
+    "Verifica: hai controllato i fatti prima di agire",
+    "Azione: hai sollevato il tema con la persona giusta, in modo costruttivo",
+    "Risultato",
+    "Lezione su quando e come intervenire"
+   ],
+   "good": [
+    "Fatti verificati prima di agire",
+    "Tono costruttivo e orientato alla soluzione",
+    "Scelta della persona e del momento giusti"
+   ],
+   "pitfalls": [
+    "Confondere preferenze personali con questioni di principio",
+    "Raccontare uno scontro aperto o pubblico",
+    "Non mostrare il risultato"
+   ],
+   "skeleton": "On [project], [a valuation page presented management's projections as our own base case], although [they assumed growth of X% a year, well above the market's Y%]. I felt it could [mislead the reader]. I [checked the market data again], then [raised it privately with my associate], suggesting [labelling the case as management's and adding a sensitivity at market growth]. He [agreed and took it to the VP]. The final document [showed both cases clearly]. I learned that [challenging is easier when you bring evidence and a practical fix].",
+   "explanation": {
+    "steps": [
+     "Verifica che la questione sia di sostanza (correttezza, trasparenza) e non di gusto personale.",
+     "Controlla di aver verificato i fatti prima di sollevare il tema.",
+     "Assicurati di aver proposto una soluzione pratica."
+    ],
+    "shortcut": "Fatti, persona giusta, tono costruttivo, soluzione.",
+    "trap": "Raccontare la storia come una battaglia vinta contro un superiore: l'enfasi va sul risultato corretto, non sulla vittoria.",
+    "rule": "Si contesta con prove e con una proposta, non con lo scontro."
+   },
+   "time": 90,
+   "tags": [
+    "ethics",
+    "courage"
+   ]
+  },
+  {
+   "id": "beh-042",
+   "category": "competency",
+   "level": 2,
+   "q": "Tell me about a time you had to keep information confidential under pressure.",
+   "tests": "Se capisci il valore della riservatezza in M&A (informazioni privilegiate, nomi in codice, need-to-know) e mantieni la discrezione anche con amici e colleghi di altri team.",
+   "structure": [
+    "Situazione: quale tipo di informazione e chi insisteva per saperla",
+    "Perché era riservata e cosa si rischiava",
+    "Azione: come hai gestito la richiesta senza mentire e senza rivelare nulla",
+    "Azione: hai seguito le procedure interne (segnalazione a compliance, se prevista)",
+    "Chiudi con le abitudini che usi per proteggere le informazioni"
+   ],
+   "good": [
+    "Conoscenza delle regole (informazioni privilegiate, need-to-know, nomi in codice)",
+    "Risposta cortese ma ferma, senza confermare né smentire",
+    "Abitudini concrete di protezione"
+   ],
+   "pitfalls": [
+    "Rivelare dettagli identificabili del deal durante il colloquio stesso",
+    "Raccontare di aver mentito per proteggere l'informazione",
+    "Sottovalutare il rischio legale"
+   ],
+   "skeleton": "On [a live M&A mandate for a listed company], [a friend working in asset management] asked me directly whether [the rumours about the company being for sale] were true. I [said I never discuss client work, without confirming or denying anything], and [moved the conversation on]. I also [reported the approach to compliance, as our procedures require]. More generally, I [use code names, never discuss work in public places, and keep files only on approved systems]. For me, confidentiality is [both a legal obligation and the basis of client trust].",
+   "explanation": {
+    "steps": [
+     "Verifica di non aver rivelato nulla di identificabile sul deal neanche nella risposta al colloquio.",
+     "Controlla che la risposta alla richiesta sia stata ferma ma cortese, senza confermare né smentire.",
+     "Assicurati di aver citato abitudini concrete e la segnalazione a compliance quando prevista."
+    ],
+    "shortcut": "Né confermare né smentire, segnalare se previsto, abitudini di protezione.",
+    "trap": "Raccontare la storia citando il nome del cliente o dettagli identificabili: contraddice proprio la competenza valutata.",
+    "rule": "In M&A la riservatezza è un obbligo legale prima che una virtù."
+   },
+   "time": 75,
+   "tags": [
+    "ethics",
+    "confidentiality"
+   ]
+  },
+  {
+   "id": "beh-043",
+   "category": "competency",
+   "level": 1,
+   "q": "Tell me about a time you had to adapt to a significant change.",
+   "tests": "Flessibilità: come reagisci quando cambiano priorità, perimetro o contesto, e quanto velocemente torni produttivo.",
+   "structure": [
+    "Situazione: cosa è cambiato e perché era significativo",
+    "Reazione: hai accettato il cambiamento e chiarito le nuove priorità",
+    "Azione: hai riorganizzato il lavoro o imparato ciò che serviva",
+    "Risultato: come hai consegnato nel nuovo contesto",
+    "Lezione"
+   ],
+   "good": [
+    "Atteggiamento positivo e rapido",
+    "Azioni concrete per adattarsi",
+    "Risultato ottenuto nonostante il cambiamento"
+   ],
+   "pitfalls": [
+    "Lamentarsi del cambiamento",
+    "Storie in cui il cambiamento era minimo",
+    "Nessuna azione concreta"
+   ],
+   "skeleton": "Midway through [a sell-side process], [the client decided to sell only one division instead of the whole company]. Most of our materials [had been built for the group]. I [asked my VP to confirm the new scope and priorities], then [rebuilt the model to separate the division's revenue, costs and shared services], and [rewrote the buyer list for the new perimeter]. Within [one week] we [relaunched the process with revised materials], and [the division attracted X bids]. I learned that [confirming the new objective first] avoids wasted work when plans change.",
+   "explanation": {
+    "steps": [
+     "Verifica che il cambiamento sia significativo e non dipendesse da te.",
+     "Controlla che la prima azione sia chiarire le nuove priorità.",
+     "Assicurati che il risultato mostri un ritorno rapido alla produttività."
+    ],
+    "shortcut": "Cambiamento, nuove priorità, riorganizzazione, risultato.",
+    "trap": "Concentrarsi su quanto il cambiamento fosse frustrante: l'intervistatore vuole vedere la reazione, non il disagio.",
+    "rule": "Quando i piani cambiano, prima chiarisci il nuovo obiettivo, poi esegui."
+   },
+   "time": 90,
+   "tags": [
+    "adaptability"
+   ]
+  },
+  {
+   "id": "beh-044",
+   "category": "competency",
+   "level": 2,
+   "q": "Tell me about a time you had to learn something new very quickly.",
+   "tests": "Velocità di apprendimento: il metodo con cui impari in fretta qualcosa di nuovo e lo applichi subito in modo affidabile.",
+   "structure": [
+    "Situazione: cosa dovevi imparare, in quanto tempo e perché",
+    "Metodo: come hai imparato (fonti, persone, esempi, pratica)",
+    "Applicazione: dove lo hai usato subito",
+    "Risultato e verifica della qualità",
+    "Chiudi con come applichi lo stesso metodo oggi"
+   ],
+   "good": [
+    "Metodo di apprendimento esplicito e ripetibile",
+    "Uso intelligente delle persone esperte",
+    "Applicazione pratica con risultato"
+   ],
+   "pitfalls": [
+    "Raccontare solo di aver studiato molto",
+    "Nessuna verifica della qualità del lavoro prodotto",
+    "Scegliere qualcosa di troppo semplice"
+   ],
+   "skeleton": "When I joined [boutique], I was staffed on [a semiconductor equipment deal] and had [one week] to understand [the industry value chain and key metrics, such as book-to-bill]. I [read the annual reports and investor presentations of the two largest peers], [wrote a one-page glossary], and [asked a sector specialist on the team for 30 minutes to test my understanding]. By [the first client call] I could [build the market section and answer the client's questions on the cycle]. I still [use the same three steps: primary sources, a summary in my own words, and a check with an expert].",
+   "explanation": {
+    "steps": [
+     "Verifica che il metodo sia esplicito e riutilizzabile.",
+     "Controlla di aver mostrato un'applicazione concreta e rapida.",
+     "Assicurati di aver menzionato una verifica di qualità."
+    ],
+    "shortcut": "Fonti primarie, sintesi personale, verifica con un esperto, applicazione.",
+    "trap": "Raccontare le ore di studio invece del metodo: l'intervistatore valuta come impari, non quanto.",
+    "rule": "Imparare in fretta significa avere un metodo, non solo impegno."
+   },
+   "time": 75,
+   "tags": [
+    "adaptability",
+    "learning-agility"
+   ]
+  },
+  {
+   "id": "beh-045",
+   "category": "competency",
+   "level": 3,
+   "q": "Tell me about a time you had to make a decision with incomplete information.",
+   "tests": "Giudizio in condizioni di incertezza: se sai separare ciò che sai da ciò che ipotizzi, decidere in tempo e rendere esplicite le ipotesi.",
+   "structure": [
+    "Situazione: la decisione, la scadenza e cosa mancava",
+    "Azione: hai distinto fatti, ipotesi e incognite",
+    "Azione: hai scelto ipotesi ragionevoli e le hai rese esplicite (scenari, sensibilità)",
+    "Azione: hai comunicato i limiti e pianificato l'aggiornamento",
+    "Risultato e lezione"
+   ],
+   "good": [
+    "Ipotesi dichiarate e motivate",
+    "Analisi di sensibilità o scenari",
+    "Decisione presa in tempo, senza aspettare la perfezione"
+   ],
+   "pitfalls": [
+    "Paralisi: aspettare dati che non arriveranno",
+    "Presentare ipotesi come fatti",
+    "Non tornare sulla decisione quando arrivano dati nuovi"
+   ],
+   "skeleton": "For [a first-round bid analysis], we had to [give the client a view on a target's value within two days], but [the target had not yet shared its latest quarterly figures]. I [used the last audited year and the trend in listed peers' recent results to estimate current EBITDA], [built three scenarios with clear assumptions], and [flagged on the first page which numbers were estimates]. The client [submitted a range based on the base case], and when the figures arrived [our estimate was within X%]. I learned that [being explicit about assumptions] is what makes a fast decision safe.",
+   "explanation": {
+    "steps": [
+     "Verifica di aver separato chiaramente fatti e ipotesi.",
+     "Controlla di aver usato scenari o sensibilità per gestire l'incertezza.",
+     "Assicurati di aver comunicato i limiti e aggiornato l'analisi con i nuovi dati."
+    ],
+    "shortcut": "Fatti, ipotesi esplicite, scenari, comunicazione dei limiti.",
+    "trap": "Dire che hai aspettato di avere tutte le informazioni: in banca le decisioni hanno scadenze.",
+    "rule": "Con dati incompleti decidi, ma dichiara le ipotesi e prepara gli scenari."
+   },
+   "time": 90,
+   "tags": [
+    "adaptability",
+    "judgement"
+   ]
+  },
+  {
+   "id": "beh-046",
+   "category": "strengths",
+   "level": 1,
+   "q": "What energises you?",
+   "tests": "Quali attività ti danno energia in modo naturale e se coincidono con ciò che il ruolo richiede ogni giorno. Nei colloqui strengths-based valutano anche tono e autenticità, non solo il contenuto.",
+   "structure": [
+    "Rispondi subito con un'attività specifica, non con un valore astratto",
+    "Spiega in una frase perché ti dà energia",
+    "Dai un esempio recente e breve",
+    "Collega in modo naturale al ruolo, senza forzare"
+   ],
+   "good": [
+    "Un'attività concreta (es. risolvere un problema analitico, vedere un deal arrivare al signing)",
+    "Tono vivace e spontaneo",
+    "Allineamento naturale con il lavoro dell'analyst"
+   ],
+   "pitfalls": [
+    "Risposte generiche come 'challenges' o 'success'",
+    "Risposte preparate e recitate",
+    "Indicare come unica fonte di energia attività lontane dal ruolo"
+   ],
+   "skeleton": "Solving a problem where [the numbers do not add up at first]. I get a real lift when [a model finally reconciles or a messy dataset starts to tell a clear story]. Last month, [on a deal, a buyer's offer looked low until I rebuilt their likely synergy case and the gap made sense]; I [stayed with it until it clicked] and enjoyed every minute. It is also why I like working on transactions: [every deal is a new puzzle with a deadline].",
+   "explanation": {
+    "steps": [
+     "Riascoltati: se la risposta inizia con 'I think' o con una pausa lunga, sembra costruita. Parti dall'attività.",
+     "Verifica che l'esempio sia recente e concreto.",
+     "Controlla che il collegamento al ruolo sia naturale e breve."
+    ],
+    "shortcut": "Attività, perché, esempio, collegamento, in 45 secondi.",
+    "trap": "Dare la risposta che pensi l'intervistatore voglia sentire: nei colloqui strengths-based il tono costruito viene penalizzato.",
+    "rule": "Nelle domande sui punti di forza l'energia autentica conta quanto il contenuto."
+   },
+   "time": 45,
+   "tags": [
+    "strengths",
+    "energy"
+   ]
+  },
+  {
+   "id": "beh-047",
+   "category": "strengths",
+   "level": 1,
+   "q": "When do you lose track of time?",
+   "tests": "Le attività in cui entri in uno stato di concentrazione naturale: sono il segnale più diretto dei tuoi punti di forza reali.",
+   "structure": [
+    "Rispondi subito con un'attività precisa",
+    "Descrivi cosa succede mentre la fai",
+    "Esempio breve e recente",
+    "Collega al tipo di lavoro dell'analyst"
+   ],
+   "good": [
+    "Attività specifica e credibile",
+    "Dettagli vividi che mostrano autenticità",
+    "Allineamento con il lavoro analitico o di squadra"
+   ],
+   "pitfalls": [
+    "'When I am with friends' senza nessun collegamento",
+    "Risposte che suggeriscono una cattiva gestione del tempo",
+    "Risposte lunghe e ragionate"
+   ],
+   "skeleton": "When I am [building a model from scratch or digging into a company's annual report]. I start with [one question, like why margins dropped], and two hours later I have [traced it through segments, customers and pricing]. It happened last week when [I was preparing a buyer profile and ended up mapping the company's entire supply chain]. That kind of [deep analytical work around a clear question] is what I enjoy most about my job.",
+   "explanation": {
+    "steps": [
+     "Verifica che l'attività sia specifica, non una categoria generica.",
+     "Controlla che i dettagli rendano la risposta credibile.",
+     "Assicurati che la risposta resti intorno ai 45 secondi."
+    ],
+    "shortcut": "Attività precisa, cosa succede, esempio, collegamento.",
+    "trap": "Rispondere con un hobby lontano dal lavoro e fermarsi lì: perdi l'occasione di mostrare un punto di forza utile al ruolo.",
+    "rule": "Ciò che ti fa perdere la cognizione del tempo è un punto di forza naturale."
+   },
+   "time": 45,
+   "tags": [
+    "strengths",
+    "flow"
+   ]
+  },
+  {
+   "id": "beh-048",
+   "category": "strengths",
+   "level": 2,
+   "q": "Do you prefer starting tasks or finishing them?",
+   "tests": "Se sai scegliere un lato con onestà e mostrare come compensi l'altro. Non c'è una risposta giusta, ma l'indecisione penalizza.",
+   "structure": [
+    "Scegli un lato subito",
+    "Spiega perché in una frase",
+    "Dai un esempio breve",
+    "Mostra come gestisci il lato meno naturale (abitudine o metodo)"
+   ],
+   "good": [
+    "Scelta netta e motivata",
+    "Consapevolezza del lato meno naturale",
+    "Esempio concreto"
+   ],
+   "pitfalls": [
+    "'Both equally'",
+    "Scegliere 'starting' e ammettere di lasciare le cose a metà",
+    "Risposte lunghe e teoriche"
+   ],
+   "skeleton": "Finishing, honestly. I enjoy [the last mile: tying out the numbers, tightening the messages and seeing a document go out complete]. On [the last deal], I [took ownership of the final quality check of the management presentation]. Starting is less natural for me, so I [force myself to produce a quick first draft early, even if rough, to get feedback from my associate]. That way I [get the best of both]: early direction and a clean finish.",
+   "explanation": {
+    "steps": [
+     "Verifica di aver scelto un lato nelle prime parole.",
+     "Controlla di aver spiegato come compensi il lato meno naturale.",
+     "Assicurati che l'esempio sia breve e reale."
+    ],
+    "shortcut": "Un lato, un perché, un esempio, come compensi l'altro.",
+    "trap": "Dire 'both': sembra prudente ma viene letto come mancanza di autoconsapevolezza.",
+    "rule": "Nelle domande di preferenza scegli un lato e mostra come gestisci l'altro."
+   },
+   "time": 45,
+   "tags": [
+    "strengths",
+    "preference"
+   ]
+  },
+  {
+   "id": "beh-049",
+   "category": "strengths",
+   "level": 2,
+   "q": "Are you more of a detail person or a big-picture person?",
+   "tests": "Autoconsapevolezza e adattamento al ruolo: un analyst deve essere preciso sui dettagli ma capire il quadro generale del deal.",
+   "structure": [
+    "Scegli un lato subito",
+    "Esempio che lo dimostra",
+    "Mostra come colleghi l'altro lato",
+    "Chiudi collegando al ruolo"
+   ],
+   "good": [
+    "Scelta chiara e coerente con il ruolo",
+    "Collegamento tra dettaglio e messaggio finale",
+    "Esempio concreto"
+   ],
+   "pitfalls": [
+    "Dire 'big picture' senza dimostrare cura del dettaglio, per un ruolo da analyst",
+    "Indecisione",
+    "Risposta teorica senza esempio"
+   ],
+   "skeleton": "By nature I am [a detail person]: I [check every number back to its source and notice when something does not tie]. But I have learned that detail only matters if [it supports the message]. On [a recent valuation], I [found that two peers defined EBITDA differently], and the reason it mattered was [that it changed the conclusion of the page by about X turns of multiple]. So I start from the detail and always ask [what it means for the client].",
+   "explanation": {
+    "steps": [
+     "Verifica di aver scelto un lato con un esempio.",
+     "Controlla di aver mostrato il collegamento tra dettaglio e quadro generale.",
+     "Assicurati che la risposta sia credibile per un ruolo da analyst."
+    ],
+    "shortcut": "Un lato, un esempio, il ponte verso l'altro lato.",
+    "trap": "Scegliere 'big picture' per sembrare più senior: per un analyst la precisione è il requisito di base.",
+    "rule": "Per un analyst il dettaglio è la base, il quadro generale è la direzione."
+   },
+   "time": 45,
+   "tags": [
+    "strengths",
+    "preference",
+    "attention-to-detail"
+   ]
+  },
+  {
+   "id": "beh-050",
+   "category": "strengths",
+   "level": 1,
+   "q": "What do your friends or colleagues come to you for?",
+   "tests": "Come ti vedono gli altri: un modo indiretto per far emergere i punti di forza che ti vengono riconosciuti.",
+   "structure": [
+    "Rispondi con una cosa precisa per cui ti cercano",
+    "Spiega perché pensi che vengano da te",
+    "Esempio recente",
+    "Collega a come lo usi sul lavoro"
+   ],
+   "good": [
+    "Un punto di forza riconosciuto dagli altri, non autoproclamato",
+    "Esempio concreto e recente",
+    "Allineamento con il ruolo"
+   ],
+   "pitfalls": [
+    "Elenchi di qualità",
+    "Risposte troppo personali o irrilevanti",
+    "Falsa modestia"
+   ],
+   "skeleton": "Usually [to make sense of something complicated]: [a friend comparing two job offers, a colleague stuck on a model]. I think it is because [I ask the right questions and break problems into steps]. Last month [a colleague asked me to look at a three-statement model whose balance sheet would not balance], and we [found the issue together in twenty minutes]. At work it is the same: [I am often the person who reviews the logic before a document goes out].",
+   "explanation": {
+    "steps": [
+     "Verifica che la risposta sia un punto di forza riconosciuto da altri.",
+     "Controlla di aver dato un esempio concreto.",
+     "Assicurati del collegamento al ruolo."
+    ],
+    "shortcut": "Una cosa, perché, esempio, uso sul lavoro.",
+    "trap": "Elencare molte qualità: la domanda chiede una cosa specifica che gli altri riconoscono.",
+    "rule": "I punti di forza più credibili sono quelli che gli altri ti attribuiscono."
+   },
+   "time": 45,
+   "tags": [
+    "strengths",
+    "reputation"
+   ]
+  },
+  {
+   "id": "beh-051",
+   "category": "strengths",
+   "level": 2,
+   "q": "What kind of tasks do you find draining, or tend to put off?",
+   "tests": "Onestà e autoconsapevolezza: se ammetti attività meno naturali e come le gestisci, senza indicare qualcosa di centrale per il ruolo.",
+   "structure": [
+    "Indica un'attività reale ma non centrale per il ruolo",
+    "Spiega perché ti costa energia",
+    "Mostra come la gestisci (metodo, ordine, abitudine)",
+    "Chiudi con un segnale che non incide sulla qualità del lavoro"
+   ],
+   "good": [
+    "Onestà credibile",
+    "Strategia concreta per gestirlo",
+    "Scelta non critica per il lavoro dell'analyst"
+   ],
+   "pitfalls": [
+    "Dire 'nothing'",
+    "Scegliere qualcosa di centrale (lavorare sui numeri, controllare i dettagli, lavorare fino a tardi)",
+    "Lamentarsi"
+   ],
+   "skeleton": "Admin tasks with no clear purpose, like [expense reports or long internal forms], drain me more than complex work. I tend to [leave them for later], so I [batch them into a fixed 30-minute slot every Friday] and [use templates where I can]. That way they [never pile up or delay anything]. Interestingly, repetitive work with a clear purpose, like [updating comps], does not drain me, because [I can see what it is for].",
+   "explanation": {
+    "steps": [
+     "Verifica che l'attività scelta non sia centrale per il ruolo.",
+     "Controlla di aver mostrato un metodo concreto per gestirla.",
+     "Assicurati che il tono sia onesto ma non lamentoso."
+    ],
+    "shortcut": "Attività non centrale, perché, metodo, nessun impatto.",
+    "trap": "Rispondere 'I enjoy everything': non è credibile e fa perdere punti di autenticità.",
+    "rule": "Ammetti cosa ti costa energia e mostra come lo gestisci."
+   },
+   "time": 60,
+   "tags": [
+    "strengths",
+    "weakness"
+   ]
+  },
+  {
+   "id": "beh-052",
+   "category": "strengths",
+   "level": 1,
+   "q": "When are you at your best?",
+   "tests": "Le condizioni in cui rendi di più e se coincidono con l'ambiente di una banca: ritmo, team, responsabilità.",
+   "structure": [
+    "Rispondi con le condizioni specifiche",
+    "Esempio recente",
+    "Perché quelle condizioni ti fanno rendere",
+    "Collega al ruolo"
+   ],
+   "good": [
+    "Condizioni coerenti con il lavoro in banca",
+    "Esempio concreto",
+    "Energia nel tono"
+   ],
+   "pitfalls": [
+    "Condizioni lontane dal ruolo ('when I have total freedom and no deadlines')",
+    "Risposte vaghe",
+    "Nessun esempio"
+   ],
+   "skeleton": "I am at my best when [I own a clear piece of work, there is a real deadline and I am part of a team that depends on it]. On [a recent deal], [I was responsible for the valuation section of the board pack with three days to go], and that combination of [ownership and pace] got the best out of me. It is one reason [this role appeals to me]: [responsibility comes early, inside a strong team].",
+   "explanation": {
+    "steps": [
+     "Verifica che le condizioni descritte esistano davvero nel ruolo.",
+     "Controlla di aver dato un esempio concreto.",
+     "Assicurati che il tono trasmetta energia."
+    ],
+    "shortcut": "Condizioni, esempio, perché, collegamento.",
+    "trap": "Descrivere condizioni ideali che il lavoro in banca non offre: segnala un possibile disallineamento.",
+    "rule": "Le condizioni in cui rendi di più devono assomigliare al lavoro per cui ti candidi."
+   },
+   "time": 45,
+   "tags": [
+    "strengths",
+    "energy"
+   ]
+  },
+  {
+   "id": "beh-053",
+   "category": "strengths",
+   "level": 2,
+   "q": "Do you prefer working on your own or as part of a team?",
+   "tests": "Come lavori meglio e se sai che in banca servono entrambe le modalità: lavoro individuale concentrato all'interno di un team.",
+   "structure": [
+    "Scegli un lato o descrivi con chiarezza il tuo equilibrio preferito",
+    "Esempio concreto",
+    "Mostra di saper operare bene anche nell'altra modalità",
+    "Collega al funzionamento di un deal team"
+   ],
+   "good": [
+    "Scelta onesta con un equilibrio realistico",
+    "Esempio concreto",
+    "Consapevolezza di come funziona un deal team"
+   ],
+   "pitfalls": [
+    "'On my own' senza qualificarlo, per un ruolo di squadra",
+    "'In a team' detto in modo che sembri dipendenza dagli altri",
+    "Risposta indecisa"
+   ],
+   "skeleton": "I prefer [being part of a team, with a clear piece of work that I own]. On [deals], the best moments are [when the team comes together on the final materials], but much of my value comes from [quiet, focused hours on the model]. For example, on [a recent process], I [built the model on my own over two days, then walked the team through it and took their comments]. That mix of [individual ownership and team output] is how deal teams work.",
+   "explanation": {
+    "steps": [
+     "Verifica di aver espresso una preferenza chiara.",
+     "Controlla di aver mostrato che funzioni anche nell'altra modalità.",
+     "Assicurati che l'esempio rifletta il lavoro di un deal team."
+    ],
+    "shortcut": "Preferenza, esempio, l'altra modalità, collegamento al deal team.",
+    "trap": "Dire 'on my own' e fermarsi: per un lavoro di squadra è un campanello d'allarme.",
+    "rule": "In banca si lavora da soli dentro una squadra: mostra entrambe le cose."
+   },
+   "time": 45,
+   "tags": [
+    "strengths",
+    "preference",
+    "teamwork"
+   ]
+  },
+  {
+   "id": "beh-054",
+   "category": "strengths",
+   "level": 3,
+   "q": "How do you feel about routine or repetitive tasks?",
+   "tests": "Se hai aspettative realistiche sul lavoro dell'analyst, che include molte attività ripetitive (comps, formattazione, aggiornamenti), e se le affronti con qualità costante.",
+   "structure": [
+    "Rispondi con onestà: non sono la tua parte preferita, ma ne capisci il valore",
+    "Spiega perché contano (qualità del prodotto finale, fiducia del team)",
+    "Mostra come le rendi più efficienti o le migliori",
+    "Esempio breve"
+   ],
+   "good": [
+    "Realismo sul lavoro dell'analyst",
+    "Approccio orientato alla qualità e al miglioramento",
+    "Nessuna lamentela"
+   ],
+   "pitfalls": [
+    "Dire 'I love repetitive tasks': poco credibile",
+    "Mostrare insofferenza",
+    "Ignorare che fanno parte del ruolo"
+   ],
+   "skeleton": "They are not what I enjoy most, but [they are a big part of an analyst's job and where errors happen], so I take them seriously. I try to [make them faster and safer with templates, checklists and standard formulas]. At [boutique], [updating comps every week] was routine, so I [built a template that cut the time by about a third], which left more time for [the analytical work I enjoy]. Doing routine work well is [how you earn the more interesting work].",
+   "explanation": {
+    "steps": [
+     "Verifica di aver mostrato realismo: le attività ripetitive fanno parte del ruolo.",
+     "Controlla di aver indicato come garantisci una qualità costante.",
+     "Assicurati di aver mostrato un'iniziativa di miglioramento."
+    ],
+    "shortcut": "Onestà, perché contano, come le miglioro, esempio.",
+    "trap": "Mostrare noia o insofferenza: l'intervistatore teme analyst che trascurano i compiti di base.",
+    "rule": "Fare bene il lavoro di routine è il modo per guadagnarsi quello interessante."
+   },
+   "time": 60,
+   "tags": [
+    "strengths",
+    "resilience"
+   ]
+  },
+  {
+   "id": "beh-055",
+   "category": "strengths",
+   "level": 2,
+   "q": "Do you prefer to follow a plan or to adapt as you go?",
+   "tests": "Il tuo stile di lavoro naturale e se sai bilanciarlo: in M&A serve pianificare, ma i deal cambiano di continuo.",
+   "structure": [
+    "Scegli un lato",
+    "Esempio concreto",
+    "Come gestisci l'altro lato",
+    "Collega al lavoro sui deal"
+   ],
+   "good": [
+    "Preferenza chiara",
+    "Consapevolezza che i deal richiedono entrambe le cose",
+    "Esempio reale"
+   ],
+   "pitfalls": [
+    "Indecisione",
+    "Rigidità ('I always stick to the plan')",
+    "Improvvisazione presentata come metodo"
+   ],
+   "skeleton": "I prefer [having a plan]: at the start of each deal phase I [list the deliverables, owners and deadlines]. But deals rarely follow the plan, so I treat it as [a baseline that I update]. On [a recent process], [the client changed the perimeter halfway through], and having the plan meant [I could see in ten minutes which pages were affected and re-prioritise]. So I plan carefully, and [the plan is what makes adapting fast].",
+   "explanation": {
+    "steps": [
+     "Verifica di aver scelto un lato.",
+     "Controlla che l'esempio mostri come gestisci l'imprevisto.",
+     "Assicurati di collegare la risposta al ritmo dei deal."
+    ],
+    "shortcut": "Un lato, esempio, come gestisco l'altro, collegamento ai deal.",
+    "trap": "Dire 'it depends' senza scegliere: sembra una risposta evasiva.",
+    "rule": "Un buon piano è ciò che rende veloce l'adattamento."
+   },
+   "time": 45,
+   "tags": [
+    "strengths",
+    "preference",
+    "adaptability"
+   ]
+  },
+  {
+   "id": "beh-056",
+   "category": "banking-specific",
+   "level": 2,
+   "q": "Tell me about a deal you have followed recently.",
+   "tests": "Commercial awareness e capacità analitica: se capisci logica strategica, valutazione, struttura e rischi di un'operazione, e se hai una tua opinione.",
+   "structure": [
+    "Apri con i fatti chiave in una frase: acquirente, target, valore, multiplo, forma di pagamento",
+    "Logica strategica: perché l'acquirente compra (2 ragioni)",
+    "Valutazione: multiplo rispetto a comparabili e precedenti, premio pagato",
+    "Struttura e rischi: finanziamento, antitrust, integrazione",
+    "Chiudi con la tua opinione motivata e cosa guarderai nei prossimi mesi"
+   ],
+   "good": [
+    "Numeri chiave corretti (EV, multiplo, premio)",
+    "Un'opinione personale motivata",
+    "Riferimento a rischi e struttura, non solo alla strategia"
+   ],
+   "pitfalls": [
+    "Scegliere un deal che conosci superficialmente",
+    "Raccontare la notizia senza analisi",
+    "Scegliere un deal su cui hai lavorato e rivelare informazioni riservate"
+   ],
+   "skeleton": "[Acquirer] agreed to buy [target] for [an EV of X billion], about [Y times EBITDA / Z times revenue], paid in [cash / shares]. The logic is [first, access to technology or customers; second, cost synergies of about W]. The multiple looks [high / in line] against [peers at A times], which suggests [the buyer is paying away part of the synergies]. The key risks are [antitrust review in specific jurisdictions, integration and financing]. My view is that [the deal makes sense / is expensive] because [reason]. I will be watching [the regulatory decision and the next quarter's guidance].",
+   "explanation": {
+    "steps": [
+     "Verifica di conoscere a memoria EV, multiplo, premio e forma di pagamento.",
+     "Controlla che la logica strategica abbia almeno due ragioni concrete.",
+     "Assicurati di chiudere con un'opinione tua e un argomento a sostegno."
+    ],
+    "shortcut": "Fatti, logica, prezzo, rischi, opinione.",
+    "trap": "Raccontare il deal come una notizia senza giudizio: la vera domanda è 'cosa ne pensi?'.",
+    "rule": "Ogni deal si racconta con fatti, logica, prezzo, rischi e un'opinione."
+   },
+   "time": 120,
+   "tags": [
+    "deal-discussion",
+    "commercial-awareness"
+   ]
+  },
+  {
+   "id": "beh-057",
+   "category": "banking-specific",
+   "level": 2,
+   "q": "Why investment banking and not consulting?",
+   "tests": "Se capisci la differenza tra i due lavori e se la tua scelta è consapevole, non casuale.",
+   "structure": [
+    "Apri riconoscendo cosa hanno in comune (problem solving, clienti senior, ritmo)",
+    "Differenza 1: in banca lavori su transazioni con un esito concreto e misurabile",
+    "Differenza 2: valutazione e finanziamento sono al centro del lavoro",
+    "Prova personale: cosa ti è piaciuto nel lavoro sui deal",
+    "Chiudi con la scelta"
+   ],
+   "good": [
+    "Rispetto per la consulenza",
+    "Differenze concrete (transazione, valutazione, esito)",
+    "Prova personale"
+   ],
+   "pitfalls": [
+    "Svalutare la consulenza",
+    "Differenze vaghe",
+    "Dare l'impressione che ti candidi anche lì senza convinzione"
+   ],
+   "skeleton": "Both involve [solving problems for senior clients under time pressure]. The difference for me is [the transaction]: in banking the work ends in [a deal that closes or not, with a price and a structure], while consulting often ends in [a recommendation the client may or may not implement]. I also want [valuation and financing] at the centre of what I do. At [boutique], the moment I enjoyed most was [signing day on deal], seeing months of work turn into [a binding agreement]. That is why I choose banking.",
+   "explanation": {
+    "steps": [
+     "Verifica di aver riconosciuto i punti in comune prima delle differenze.",
+     "Controlla che le differenze siano concrete e corrette.",
+     "Assicurati di chiudere con una prova personale."
+    ],
+    "shortcut": "Punti in comune, due differenze concrete, prova personale.",
+    "trap": "Dire che la consulenza è 'meno concreta' in modo sprezzante: suona arrogante e superficiale.",
+    "rule": "Scegli un lavoro per il suo prodotto finale: in banca è la transazione."
+   },
+   "time": 75,
+   "tags": [
+    "why-banking",
+    "why-not-consulting"
+   ]
+  },
+  {
+   "id": "beh-058",
+   "category": "banking-specific",
+   "level": 2,
+   "q": "Why not go straight into private equity?",
+   "tests": "Se il banking è un obiettivo in sé o solo un passaggio, e se capisci la differenza tra advisor e investitore.",
+   "structure": [
+    "Apri con la differenza tra advisor e investitore",
+    "Spiega cosa ti dà il banking a inizio carriera che il PE non offre (varietà di deal, settori, controparti, formazione)",
+    "Mostra che ti interessa il ruolo dell'advisor in sé",
+    "Chiudi con la traiettoria nella banca"
+   ],
+   "good": [
+    "Rispetto e conoscenza del lavoro in PE",
+    "Valore specifico del banking a inizio carriera",
+    "Impegno credibile verso la banca"
+   ],
+   "pitfalls": [
+    "Ammettere che il banking è solo un passaggio verso il PE",
+    "Svalutare il PE",
+    "Non conoscere la differenza tra advisor e investitore"
+   ],
+   "skeleton": "Private equity is about [investing in a few companies and owning them for years]; banking is about [advising on many transactions across sectors and counterparties]. At this stage, I value [breadth]: in one year an analyst sees [dozens of companies, several deal types and how both buyers and sellers think]. I also enjoy [the advisory role itself: running a process, working with clients and getting the deal done]. That is why I want to build my career [in investment banking, growing into a senior coverage role in technology].",
+   "explanation": {
+    "steps": [
+     "Verifica di aver spiegato correttamente la differenza tra advisor e investitore.",
+     "Controlla che la risposta non suggerisca che il banking è solo una tappa.",
+     "Assicurati di chiudere con una traiettoria dentro la banca."
+    ],
+    "shortcut": "Advisor contro investitore, valore della varietà, traiettoria nella banca.",
+    "trap": "Dire 'PE later': per molti è vero, ma al colloquio da graduate segnala che te ne andrai dopo due anni.",
+    "rule": "Al colloquio in banca il banking è la destinazione, non la sala d'attesa."
+   },
+   "time": 75,
+   "tags": [
+    "why-banking",
+    "why-not-pe"
+   ]
+  },
+  {
+   "id": "beh-059",
+   "category": "banking-specific",
+   "level": 1,
+   "q": "What does an analyst do day to day?",
+   "tests": "Se sai davvero cosa ti aspetta: attività concrete, ritmo, responsabilità. Riduce per la banca il rischio di aspettative sbagliate.",
+   "structure": [
+    "Apri con il ruolo in una frase: il motore analitico ed esecutivo del deal team",
+    "Attività 1: modelli e valutazioni (comps, precedenti, DCF, merger model)",
+    "Attività 2: materiali per i clienti (pitch book, information memorandum, presentazioni al board)",
+    "Attività 3: supporto al processo (data room, Q&A, coordinamento con legali e consulenti)",
+    "Chiudi con le qualità richieste e la tua esperienza"
+   ],
+   "good": [
+    "Attività concrete e corrette",
+    "Consapevolezza del ritmo e delle ore",
+    "Esempi dalla tua esperienza in boutique"
+   ],
+   "pitfalls": [
+    "Descrizione romantica ('negotiating deals with CEOs')",
+    "Lamentare le ore",
+    "Elenco senza struttura"
+   ],
+   "skeleton": "An analyst is [the analytical and execution engine of the deal team]. Day to day that means [building and updating models: trading comps, precedent transactions, DCF and merger models], [drafting client materials such as pitch books, information memoranda and board presentations], and [supporting the process: data room, buyer Q&A, coordination with lawyers and accountants]. Days are [long and driven by client deadlines]. I already do much of this at [boutique], so I know it requires [precision, speed and reliability], and I enjoy it.",
+   "explanation": {
+    "steps": [
+     "Verifica di aver citato attività in tutte e tre le aree: analisi, materiali, processo.",
+     "Controlla che la descrizione sia realistica, senza enfasi su negoziazioni o decisioni strategiche.",
+     "Assicurati di aver collegato la risposta alla tua esperienza."
+    ],
+    "shortcut": "Modelli, materiali, processo, qualità richieste.",
+    "trap": "Descrivere il lavoro del senior banker (negoziare, portare clienti) invece di quello dell'analyst.",
+    "rule": "Conoscere il lavoro quotidiano è la prova più semplice di motivazione."
+   },
+   "time": 75,
+   "tags": [
+    "role-knowledge"
+   ]
+  },
+  {
+   "id": "beh-060",
+   "category": "banking-specific",
+   "level": 1,
+   "q": "How do you feel about the long hours?",
+   "tests": "Se hai aspettative realistiche, se hai già dimostrato di reggere carichi intensi e se hai strategie per farlo in modo sostenibile.",
+   "structure": [
+    "Apri con realismo: sai che le ore sono lunghe e imprevedibili",
+    "Prova: un periodo intenso già gestito (in boutique o durante gli studi)",
+    "Strategia: come rimani efficace (pianificazione, sonno, sport, organizzazione)",
+    "Chiudi con la motivazione: le ore pesano meno quando il lavoro ti interessa"
+   ],
+   "good": [
+    "Realismo senza drammi",
+    "Prova concreta di resilienza",
+    "Strategie sostenibili"
+   ],
+   "pitfalls": [
+    "'I don't mind working 100 hours a week': poco credibile",
+    "Mostrare preoccupazione eccessiva",
+    "Nessuna prova"
+   ],
+   "skeleton": "I know the hours are [long and often unpredictable], and I have already experienced it: at [boutique], during [a sell-side process], I worked [several weeks of late nights and weekends] to reach [signing]. What helps me is [planning the next day before I log off, protecting a few fixed things like sport when possible, and staying organised so that late nights are productive]. The hours are easier when [the work is interesting and the team is strong], which is what I expect here.",
+   "explanation": {
+    "steps": [
+     "Verifica che la risposta sia realistica, né eroica né preoccupata.",
+     "Controlla di aver portato una prova concreta di un carico già gestito.",
+     "Assicurati di aver citato strategie sostenibili."
+    ],
+    "shortcut": "Realismo, prova, strategie, motivazione.",
+    "trap": "Esagerare la resistenza: chi dice di non avere limiti sembra ingenuo o poco sincero.",
+    "rule": "Sulle ore conta la prova di averle già sostenute, non la promessa."
+   },
+   "time": 60,
+   "tags": [
+    "long-hours",
+    "resilience"
+   ]
+  },
+  {
+   "id": "beh-061",
+   "category": "banking-specific",
+   "level": 2,
+   "q": "What is your view on the M&A market right now?",
+   "tests": "Se segui i mercati con regolarità, sai collegare il contesto macro all'attività di M&A e hai un'opinione documentata.",
+   "structure": [
+    "Apri con una sintesi in una frase",
+    "Driver 1: tassi e condizioni di finanziamento",
+    "Driver 2: valutazioni e fiducia (mercati azionari, distanza tra prezzo chiesto e prezzo offerto)",
+    "Driver 3: un tema di settore (es. tech e semis) con un deal recente come prova",
+    "Chiudi con cosa guarderai nei prossimi mesi e le tue fonti"
+   ],
+   "good": [
+    "2-3 dati aggiornati e corretti (tassi, volumi, un deal)",
+    "Collegamento causa-effetto tra macro e attività di deal",
+    "Prospettiva sul tuo settore"
+   ],
+   "pitfalls": [
+    "Dati vecchi o inventati",
+    "Elenco di notizie senza filo logico",
+    "Nessuna opinione personale"
+   ],
+   "skeleton": "Overall, I see [a market that is recovering / slowing]. Three drivers: first, [rates: the central bank is at X%, which sets financing costs and therefore sponsor activity]; second, [valuations: with equity markets at Y, the gap between buyers' and sellers' price expectations is narrowing / widening]; third, in [technology and semiconductors], [strategic buyers keep paying for capabilities, as in recent deal]. Over the next months I will watch [financing conditions and regulatory reviews]. I follow this through [daily financial news, deal databases and bank research].",
+   "explanation": {
+    "steps": [
+     "Verifica che ogni dato citato sia aggiornato alla settimana del colloquio.",
+     "Controlla che ogni driver spieghi il suo effetto sull'attività di M&A.",
+     "Assicurati di chiudere con un'opinione e con una cosa da monitorare."
+    ],
+    "shortcut": "Sintesi, tassi, valutazioni, settore, cosa guardo.",
+    "trap": "Recitare notizie senza spiegare il collegamento con l'attività di M&A.",
+    "rule": "Una view di mercato è un'opinione con tre driver e un dato per ciascuno."
+   },
+   "time": 90,
+   "tags": [
+    "current-market",
+    "commercial-awareness"
+   ]
+  },
+  {
+   "id": "beh-062",
+   "category": "banking-specific",
+   "level": 3,
+   "q": "Pitch me an M&A idea in your sector.",
+   "tests": "Pensiero da banker: logica strategica, fattibilità finanziaria, acquirenti o target plausibili, rischi. È una prova di creatività disciplinata.",
+   "structure": [
+    "Apri con l'idea in una frase: chi compra chi e perché",
+    "Logica strategica: 2 ragioni (prodotto, clienti, tecnologia, costi)",
+    "Fattibilità: dimensioni relative, capacità di finanziamento, multiplo indicativo",
+    "Rischi: antitrust, integrazione, prezzo",
+    "Chiudi con il prossimo passo che proporresti al cliente"
+   ],
+   "good": [
+    "Idea plausibile e verificata nei numeri di base (dimensioni relative, leva)",
+    "Logica strategica chiara",
+    "Consapevolezza dei rischi"
+   ],
+   "pitfalls": [
+    "Idee irrealistiche, come una società piccola che compra una molto più grande",
+    "Ignorare l'antitrust o i vincoli di finanziamento",
+    "Pitch senza numeri"
+   ],
+   "skeleton": "I would pitch [Acquirer, a mid-cap player in sub-segment] buying [Target, a smaller player in an adjacent segment]. The logic: [first, the target's technology fills a gap in the acquirer's roadmap; second, they share customers, so cross-selling is realistic]. It is feasible: [the target is worth about X, roughly Y% of the acquirer's market value, and the acquirer has net leverage of Z times EBITDA, so it could pay with cash and new debt]. The risks are [antitrust in specific markets and retaining engineers]. Next step: [a meeting with the acquirer's strategy team to test the idea].",
+   "explanation": {
+    "steps": [
+     "Verifica i numeri di fattibilità: dimensione relativa e capacità di finanziamento devono essere plausibili (per esempio una leva post-deal ragionevole per il settore).",
+     "Controlla che la logica strategica abbia due ragioni concrete.",
+     "Assicurati di aver citato almeno un rischio rilevante e un prossimo passo."
+    ],
+    "shortcut": "Chi compra chi, perché, si può pagare, rischi, prossimo passo.",
+    "trap": "Proporre un deal 'trasformativo' tra due giganti senza considerare antitrust e finanziamento.",
+    "rule": "Un'idea di M&A vale se è strategica, finanziabile e approvabile."
+   },
+   "time": 120,
+   "tags": [
+    "deal-idea",
+    "commercial-awareness"
+   ]
+  },
+  {
+   "id": "beh-063",
+   "category": "banking-specific",
+   "level": 2,
+   "q": "Walk me through a sell-side M&A process.",
+   "tests": "Se conosci le fasi di un processo di vendita e il ruolo dell'analyst in ciascuna: chi lavora in boutique deve saperlo molto bene.",
+   "structure": [
+    "Apri con la sintesi: un'asta competitiva in due round, in genere 4-6 mesi fino al signing",
+    "Preparazione: mandato, analisi, materiali (teaser, information memorandum, modello), lista di acquirenti",
+    "Primo round: contatto con gli acquirenti, NDA, offerte non vincolanti",
+    "Secondo round: data room, management presentation, due diligence, offerte vincolanti con commenti allo SPA",
+    "Chiudi con negoziazione, signing, closing e il ruolo dell'analyst"
+   ],
+   "good": [
+    "Fasi nell'ordine corretto e con tempi realistici",
+    "Documenti chiave citati correttamente",
+    "Ruolo dell'analyst in ogni fase"
+   ],
+   "pitfalls": [
+    "Confondere offerte vincolanti e non vincolanti",
+    "Dimenticare NDA o data room",
+    "Confondere signing e closing"
+   ],
+   "skeleton": "A typical auction runs [four to six months to signing]. First, preparation: [we agree the strategy with the client, build the model, write the teaser and the information memorandum, and draft a buyer list]. Second, the first round: [we contact buyers, sign NDAs, share the memorandum and collect non-binding offers]. Third, the second round: [a shortlist gets data-room access, management presentations and due diligence, then submits binding offers with a mark-up of the SPA]. Finally, [we negotiate, sign, and close after approvals]. The analyst [runs the model, the materials and much of the process logistics].",
+   "explanation": {
+    "steps": [
+     "Verifica l'ordine: preparazione, primo round non vincolante, secondo round vincolante, signing, closing.",
+     "Controlla di aver citato i documenti chiave: teaser, NDA, information memorandum, data room, SPA.",
+     "Assicurati di aver distinto signing (firma del contratto) e closing (trasferimento effettivo dopo le approvazioni)."
+    ],
+    "shortcut": "Preparazione, round 1 non vincolante, round 2 vincolante, signing, closing.",
+    "trap": "Confondere signing e closing: tra i due ci sono approvazioni antitrust e regolamentari che possono richiedere mesi.",
+    "rule": "Un sell-side è un'asta in due round che restringe il campo e aumenta l'impegno degli acquirenti."
+   },
+   "time": 90,
+   "tags": [
+    "process-knowledge",
+    "fin-ma"
+   ]
+  },
+  {
+   "id": "beh-064",
+   "category": "banking-specific",
+   "level": 3,
+   "q": "What are the main trends in your sector, and what do they mean for M&A?",
+   "tests": "Se conosci il tuo settore (semis e deep tech) abbastanza da collegare i trend industriali a chi comprerà, chi venderà e a quale prezzo.",
+   "structure": [
+    "Apri con una sintesi in una frase",
+    "Trend 1 e implicazione per l'M&A (es. domanda di chip per AI e data center: acquisizioni di capacità di design e IP)",
+    "Trend 2 e implicazione (es. politica industriale e sicurezza delle supply chain: più controlli sugli investimenti esteri)",
+    "Trend 3 e implicazione (es. ciclicità nei segmenti maturi: consolidamento per raggiungere scala)",
+    "Chiudi con una tua conclusione e un deal recente come prova"
+   ],
+   "good": [
+    "Trend concreti collegati esplicitamente all'M&A",
+    "Consapevolezza dei vincoli regolamentari, come il controllo degli investimenti esteri",
+    "Un esempio di deal recente e verificato"
+   ],
+   "pitfalls": [
+    "Elenco di buzzword senza implicazioni",
+    "Ignorare il rischio regolamentare",
+    "Dati non aggiornati"
+   ],
+   "skeleton": "Three trends stand out in [semiconductors]. First, [demand from AI and data centres] is driving [acquisitions of design capabilities and IP, often at high revenue multiples]. Second, [industrial policy and supply-chain security] mean [more deals need foreign-investment approval, which lengthens timelines and rules out some buyers]. Third, [in more mature segments, cyclicality pushes companies to consolidate to gain scale]. Together, this means [strategic buyers lead, deal certainty depends on regulators, and valuations diverge across sub-segments], as [recent deal] showed.",
+   "explanation": {
+    "steps": [
+     "Verifica che ogni trend abbia la sua implicazione per l'M&A.",
+     "Controlla di aver citato il fattore regolamentare.",
+     "Assicurati di chiudere con un esempio recente e verificato."
+    ],
+    "shortcut": "Tre trend, tre implicazioni, un esempio.",
+    "trap": "Parlare di tecnologia come un ingegnere invece che come un banker: la domanda riguarda chi compra, chi vende e a che prezzo.",
+    "rule": "Un trend di settore interessa a un banker solo se spiega chi farà deal e a che prezzo."
+   },
+   "time": 90,
+   "tags": [
+    "sector-knowledge",
+    "commercial-awareness"
+   ]
+  },
+  {
+   "id": "beh-065",
+   "category": "banking-specific",
+   "level": 2,
+   "q": "What is the difference between working at a boutique and at a large bank?",
+   "tests": "Se conosci i due modelli di business e se sai spiegare in modo equilibrato perché ora vuoi la piattaforma di una grande banca.",
+   "structure": [
+    "Apri con il modello di business: advisory puro contro piattaforma integrata (advisory, finanziamenti, mercati)",
+    "Differenza 1: dimensione e tipo di deal, clienti, presenza internazionale",
+    "Differenza 2: struttura del team, formazione, specializzazione",
+    "Riconosci i vantaggi della boutique (responsabilità precoce, vicinanza ai senior)",
+    "Chiudi con cosa cerchi ora"
+   ],
+   "good": [
+    "Confronto equilibrato e corretto",
+    "Riconoscimento dei punti di forza della boutique",
+    "Collegamento alla tua scelta"
+   ],
+   "pitfalls": [
+    "Svalutare la boutique",
+    "Differenze superficiali come il prestigio del nome",
+    "Non sapere cosa aggiunge il bilancio di una grande banca (capacità di finanziare)"
+   ],
+   "skeleton": "A boutique offers [pure advisory, usually on mid-market deals, with small teams and very early responsibility]. A large bank combines [advisory with financing, capital markets and a global network], so it can [finance an acquisition, cover clients across regions and work on larger, more complex deals]. At [boutique] I gained [hands-on execution and close contact with senior bankers]. What I want now is [the scale, product breadth and structured training of a large platform], which is why [this programme] is the right next step.",
+   "explanation": {
+    "steps": [
+     "Verifica che il confronto sia equilibrato e riconosca i pregi della boutique.",
+     "Controlla di aver citato la capacità di finanziamento come differenza chiave.",
+     "Assicurati di chiudere con ciò che cerchi, non con ciò che lasci."
+    ],
+    "shortcut": "Modello di business, dimensione, struttura, pregi della boutique, cosa cerco.",
+    "trap": "Ridurre la differenza al prestigio del nome: suona superficiale.",
+    "rule": "Confronta i modelli di business, non i marchi."
+   },
+   "time": 75,
+   "tags": [
+    "role-knowledge",
+    "why-leave-boutique"
+   ]
+  },
+  {
+   "id": "beh-066",
+   "category": "technical-explain",
+   "level": 1,
+   "q": "Explain a DCF in 60 seconds.",
+   "tests": "Se capisci la logica della valutazione intrinseca e sai spiegarla in modo ordinato e sintetico, come faresti con un cliente.",
+   "structure": [
+    "Apri con il principio: il valore di un'azienda è il valore attuale dei suoi flussi di cassa futuri",
+    "Passo 1: proietti i free cash flow unlevered per 5-10 anni",
+    "Passo 2: calcoli il terminal value (crescita perpetua o multiplo di uscita)",
+    "Passo 3: attualizzi flussi e terminal value al WACC e ottieni l'enterprise value",
+    "Passo 4: dall'enterprise value all'equity value sottraendo il debito netto; chiudi con la sensibilità alle ipotesi"
+   ],
+   "good": [
+    "Ordine logico e terminologia precisa (unlevered FCF, WACC, terminal value)",
+    "Ricordare che il terminal value pesa spesso più della metà del valore",
+    "Citare la sensibilità alle ipotesi"
+   ],
+   "pitfalls": [
+    "Attualizzare i flussi unlevered al costo dell'equity",
+    "Dimenticare il passaggio da enterprise value a equity value",
+    "Superare i 90 secondi con dettagli inutili"
+   ],
+   "skeleton": "A DCF values a company as [the present value of its future cash flows]. First, I project [unlevered free cash flow: EBIT after tax, plus D&A, minus capex, minus the increase in working capital, for five to ten years]. Second, I estimate [a terminal value, with a perpetual growth rate or an exit multiple]. Third, I discount both at [the WACC] to get [enterprise value]. Then I subtract [net debt and other claims] to reach [equity value]. The result is very sensitive to [the WACC and the terminal assumptions], so I always show [a sensitivity table].",
+   "explanation": {
+    "steps": [
+     "Verifica la coerenza: flussi unlevered si scontano al WACC e danno l'enterprise value; flussi levered si scontano al costo dell'equity e danno l'equity value.",
+     "Controlla la formula del FCF unlevered: EBIT × (1 - t) + D&A - capex - aumento del capitale circolante.",
+     "Assicurati di aver menzionato il terminal value e la sensibilità alle ipotesi."
+    ],
+    "shortcut": "Proietta, terminal value, attualizza al WACC, togli il debito netto.",
+    "trap": "Mescolare flussi unlevered e costo dell'equity: è l'errore tecnico più penalizzato.",
+    "rule": "Il tasso di sconto deve essere coerente con il flusso: unlevered con WACC, levered con costo dell'equity."
+   },
+   "time": 60,
+   "tags": [
+    "dcf",
+    "fin-val"
+   ]
+  },
+  {
+   "id": "beh-067",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "Why is EV/EBITDA the most widely used multiple, and when would you not use it?",
+   "tests": "Se capisci perché un multiplo è coerente (numeratore e denominatore riferiti agli stessi finanziatori) e in quali casi non è adatto.",
+   "structure": [
+    "Apri con la coerenza: EV ed EBITDA appartengono a tutti i finanziatori, debito ed equity",
+    "Vantaggio 1: neutrale rispetto alla struttura del capitale, quindi confronta aziende con leve diverse",
+    "Vantaggio 2: prima di D&A, quindi meno influenzato da politiche di ammortamento diverse",
+    "Limiti: ignora capex e capitale circolante; non adatto a banche e assicurazioni o ad aziende con EBITDA negativo",
+    "Chiudi con le alternative: P/E, P/BV, EV/Revenue, EV/EBIT"
+   ],
+   "good": [
+    "Spiegare la coerenza tra numeratore e denominatore",
+    "Limiti precisi: settori ad alta intensità di capitale, settore finanziario, EBITDA negativo",
+    "Un'alternativa corretta per ciascun caso"
+   ],
+   "pitfalls": [
+    "Dire che l'EBITDA è il flusso di cassa",
+    "Abbinare l'EV a una misura dopo gli interessi, come l'utile netto",
+    "Non saper indicare quando non usarlo"
+   ],
+   "skeleton": "EV/EBITDA is consistent: [enterprise value belongs to all capital providers, and EBITDA is earned before paying any of them]. So it is [unaffected by capital structure], which lets me compare [companies with different leverage], and it is [before D&A, so less distorted by different depreciation policies]. I would not rely on it for [banks and insurers, where debt is part of operations, so I use P/E or P/BV], for [companies with negative EBITDA, where I use EV/Revenue], or for [capex-heavy businesses such as chip manufacturing, where EV/EBIT or EV/(EBITDA minus capex) is better].",
+   "explanation": {
+    "steps": [
+     "Verifica la coerenza: con l'EV al numeratore serve al denominatore una misura prima degli interessi (EBITDA, EBIT, ricavi); con l'equity value una misura dopo gli interessi (utile netto).",
+     "Controlla di aver indicato almeno due casi in cui il multiplo non funziona e l'alternativa corretta.",
+     "Ricorda i settori ad alta intensità di capitale: l'EBITDA ignora il capex, quindi due aziende con lo stesso EBITDA possono generare cassa molto diversa."
+    ],
+    "shortcut": "Stessi finanziatori sopra e sotto, neutrale alla leva, attenzione a capex e banche.",
+    "trap": "Usare EV/utile netto o prezzo/EBITDA: numeratore e denominatore si riferiscono a finanziatori diversi.",
+    "rule": "Enterprise value con misure prima degli interessi, equity value con misure dopo gli interessi."
+   },
+   "time": 75,
+   "tags": [
+    "multiples",
+    "fin-val"
+   ]
+  },
+  {
+   "id": "beh-068",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "Why do companies do M&A, and what drives overall deal activity?",
+   "tests": "Se conosci le ragioni strategiche e finanziarie delle acquisizioni e i fattori di mercato che fanno salire o scendere il numero di deal.",
+   "structure": [
+    "Apri con il principio: un'acquisizione crea valore per l'acquirente se il valore combinato supera la somma dei valori separati più premio e costi",
+    "Motivi strategici: crescita, accesso a tecnologia o mercati, sinergie di costo e di ricavo, consolidamento",
+    "Motivi finanziari: impiego della cassa in eccesso, efficienza fiscale, diversificazione (con cautela)",
+    "Driver di mercato: costo e disponibilità del debito, livello e volatilità delle valutazioni, fiducia dei CEO, regolamentazione",
+    "Chiudi con un esempio del tuo settore"
+   ],
+   "good": [
+    "Distinzione tra ragioni della singola azienda e driver di mercato",
+    "Sinergie spiegate con esempi concreti",
+    "Riferimento al costo del debito e alla volatilità"
+   ],
+   "pitfalls": [
+    "Elencare motivi senza struttura",
+    "Ignorare che molte acquisizioni distruggono valore se si paga troppo",
+    "Dimenticare i fattori macro"
+   ],
+   "skeleton": "A deal creates value for the acquirer's shareholders when [the combined business is worth more than the two standalone values plus the premium and the costs]. Companies buy for [growth they cannot achieve organically, access to technology or markets, cost synergies such as shared manufacturing, and revenue synergies such as cross-selling]. Across the market, activity is driven by [cheap and available financing, stable equity valuations, low volatility and CEO confidence], and held back by [regulation and uncertainty]. In [semiconductors], for example, [buyers often acquire IP and engineering teams to accelerate their roadmap].",
+   "explanation": {
+    "steps": [
+     "Verifica di aver separato i motivi della singola azienda dai driver del mercato.",
+     "Controlla di aver spiegato le sinergie con un esempio concreto.",
+     "Assicurati di aver detto quando l'M&A crea valore per l'acquirente: valore combinato maggiore della somma dei valori separati più premio e costi."
+    ],
+    "shortcut": "Per l'acquirente: valore combinato maggiore della somma dei valori separati più premio e costi; motivi strategici, finanziari e driver di mercato.",
+    "trap": "Dimenticare che pagare un premio superiore alle sinergie distrugge valore per gli azionisti dell'acquirente.",
+    "rule": "Un'acquisizione crea valore per l'acquirente solo se le sinergie superano il premio pagato più i costi."
+   },
+   "time": 75,
+   "tags": [
+    "ma-drivers",
+    "fin-ma"
+   ]
+  },
+  {
+   "id": "beh-069",
+   "category": "technical-explain",
+   "level": 1,
+   "q": "Walk me through the three financial statements and how they link.",
+   "tests": "Le basi di accounting: se sai come si collegano conto economico, stato patrimoniale e rendiconto finanziario, prerequisito di qualsiasi modello.",
+   "structure": [
+    "Conto economico: dai ricavi all'utile netto, su un periodo",
+    "Stato patrimoniale: attività uguale passività più patrimonio netto, in un momento preciso",
+    "Rendiconto finanziario: dall'utile netto alla variazione di cassa, in tre sezioni (operativa, investimenti, finanziamento)",
+    "Collegamenti: l'utile netto apre il cash flow e va negli utili non distribuiti; la cassa finale va nello stato patrimoniale; D&A e capex muovono le immobilizzazioni",
+    "Chiudi con un esempio rapido"
+   ],
+   "good": [
+    "Distinzione tra flusso (periodo) e stock (momento)",
+    "Collegamenti chiave nominati con precisione",
+    "Esempio breve"
+   ],
+   "pitfalls": [
+    "Dimenticare il collegamento della cassa finale",
+    "Confondere utile e cassa",
+    "Elencare le voci senza spiegare i collegamenti"
+   ],
+   "skeleton": "The income statement shows [profitability over a period, from revenue down to net income]. The balance sheet shows [assets, liabilities and equity at a point in time], and it must balance. The cash flow statement [starts from net income, adds back non-cash items like D&A, adjusts for changes in working capital, then adds investing and financing flows] to get [the change in cash]. The links: [net income goes to retained earnings and starts the cash flow statement; ending cash goes to the balance sheet; capex and D&A move PP&E; debt raised or repaid moves both debt and cash].",
+   "explanation": {
+    "steps": [
+     "Verifica i collegamenti principali: utile netto verso cash flow e utili non distribuiti, cassa finale verso stato patrimoniale, capex e D&A verso immobilizzazioni.",
+     "Controlla di aver distinto periodo (conto economico, cash flow) e momento (stato patrimoniale).",
+     "Assicurati di aver detto che lo stato patrimoniale deve quadrare."
+    ],
+    "shortcut": "CE: periodo; SP: istante; CF: ponte tra utile e cassa. Utile netto e cassa sono i due collegamenti chiave.",
+    "trap": "Dire che il cash flow parte dai ricavi: nel metodo indiretto parte dall'utile netto.",
+    "rule": "Ogni movimento in un prospetto deve avere la sua contropartita negli altri due."
+   },
+   "time": 90,
+   "tags": [
+    "three-statements",
+    "fin-acc"
+   ]
+  },
+  {
+   "id": "beh-070",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "Walk me through the three statements if depreciation increases by 10, with a 25% tax rate.",
+   "tests": "Se sai seguire un singolo movimento attraverso i tre prospetti con numeri corretti: la classica domanda tecnica da primo colloquio.",
+   "structure": [
+    "Conto economico: EBIT -10, imposte -2,5, utile netto -7,5",
+    "Cash flow: utile netto -7,5, più D&A +10 (non monetaria), cassa +2,5",
+    "Stato patrimoniale, attivo: immobilizzazioni -10, cassa +2,5, totale -7,5",
+    "Passivo e patrimonio netto: utili non distribuiti -7,5, totale -7,5, quindi quadra",
+    "Chiudi con l'intuizione: l'ammortamento non è un'uscita di cassa ma riduce le imposte (tax shield)"
+   ],
+   "good": [
+    "Numeri corretti in ogni passaggio",
+    "Ordine: conto economico, cash flow, stato patrimoniale",
+    "Spiegazione del tax shield"
+   ],
+   "pitfalls": [
+    "Dire che la cassa scende di 10",
+    "Dimenticare l'effetto delle imposte",
+    "Non verificare che lo stato patrimoniale quadri"
+   ],
+   "skeleton": "On the income statement, [EBIT falls by 10; at a 25% tax rate, taxes fall by 2.5, so net income falls by 7.5]. On the cash flow statement, [net income is down 7.5, but I add back the 10 of depreciation because it is non-cash, so cash from operations rises by 2.5]. On the balance sheet, [PP&E falls by 10 and cash rises by 2.5, so assets fall by 7.5; on the other side, retained earnings fall by 7.5]. It balances. The intuition: [depreciation saves taxes of 10 times 25%, which is 2.5].",
+   "explanation": {
+    "steps": [
+     "Conto economico: le imposte scendono di 10 × 0,25 = 2,5, quindi l'utile netto scende di 10 × (1 - 0,25) = 7,5.",
+     "Cash flow: -7,5 + 10 = +2,5 di cassa, perché l'ammortamento non è un'uscita monetaria.",
+     "Stato patrimoniale: attivo -10 (immobilizzazioni) + 2,5 (cassa) = -7,5; patrimonio netto -7,5 (utili non distribuiti). Quadra."
+    ],
+    "shortcut": "Effetto sulla cassa = aumento dell'ammortamento × aliquota = 10 × 25% = +2,5.",
+    "trap": "Pensare che più ammortamento riduca la cassa: riduce l'utile, ma la cassa aumenta grazie al risparmio fiscale.",
+    "rule": "Una spesa non monetaria deducibile aumenta la cassa di un importo pari a spesa × aliquota."
+   },
+   "time": 60,
+   "tags": [
+    "three-statements",
+    "fin-acc",
+    "depreciation"
+   ]
+  },
+  {
+   "id": "beh-071",
+   "category": "technical-explain",
+   "level": 1,
+   "q": "How do you get from enterprise value to equity value?",
+   "tests": "Se conosci il ponte tra enterprise value ed equity value e perché ogni voce si aggiunge o si sottrae.",
+   "structure": [
+    "Apri con le definizioni: l'EV è il valore dell'attività operativa per tutti i finanziatori; l'equity value è la parte degli azionisti",
+    "Sottrai il debito netto (debito finanziario meno cassa)",
+    "Sottrai gli altri diritti di terzi: minorities, azioni privilegiate, voci assimilabili al debito (leasing, fondi pensione non coperti, secondo la convenzione)",
+    "Aggiungi le attività non operative escluse dall'EV: partecipazioni in collegate, investimenti finanziari",
+    "Chiudi con un esempio numerico"
+   ],
+   "good": [
+    "Logica di ogni voce spiegata (chi ha diritto su cosa)",
+    "Esempio numerico corretto",
+    "Menzione delle voci assimilabili al debito"
+   ],
+   "pitfalls": [
+    "Aggiungere il debito invece di sottrarlo",
+    "Dimenticare le minorities",
+    "Confondere l'equity value con il patrimonio netto contabile"
+   ],
+   "skeleton": "Enterprise value is [the value of the operating business to all capital providers]. To get to equity value, I [subtract net debt, that is debt minus cash], then [subtract other claims that rank ahead of shareholders, such as minority interests, preferred shares and debt-like items like unfunded pensions], and [add non-operating assets such as stakes in associates]. For example, [an EV of 1,000 with debt of 300, cash of 100 and minorities of 50 gives an equity value of 1,000 - 300 + 100 - 50 = 750].",
+   "explanation": {
+    "steps": [
+     "Parti dall'EV e chiediti per ogni voce: chi altro, oltre agli azionisti ordinari, ha diritto su questo valore? Quei diritti si sottraggono.",
+     "Cassa e attività non operative appartengono agli azionisti ma non sono incluse nell'EV operativo: si aggiungono.",
+     "Esempio: 1.000 - 300 di debito + 100 di cassa - 50 di minorities = 750 di equity value."
+    ],
+    "shortcut": "Equity value = EV - debito netto - minorities - privilegiate + partecipazioni in collegate.",
+    "trap": "Aggiungere il debito all'EV: è il ponte inverso, quello da equity value a EV.",
+    "rule": "Dall'EV si sottrae tutto ciò che spetta a finanziatori diversi dagli azionisti ordinari."
+   },
+   "time": 60,
+   "tags": [
+    "ev-bridge",
+    "fin-val"
+   ]
+  },
+  {
+   "id": "beh-072",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "When is an all-stock acquisition accretive to the acquirer's EPS?",
+   "tests": "Se conosci la regola rapida di accretion/dilution e sai giustificarla con un esempio numerico.",
+   "structure": [
+    "Apri con la regola: in un deal tutto in azioni è accretive se il P/E dell'acquirente è superiore al P/E pagato per il target, premio incluso",
+    "Spiega perché: l'acquirente usa azioni 'care' per comprare utili a un prezzo più basso",
+    "Esempio numerico rapido",
+    "Estendi al cash: è accretive se il costo del debito dopo le imposte è inferiore all'earnings yield pagato (1 / P/E pagato)",
+    "Chiudi con il limite: accretive non significa creare valore"
+   ],
+   "good": [
+    "Regola corretta con il P/E pagato, non il P/E di mercato del target",
+    "Esempio con numeri che tornano",
+    "Distinzione tra accretion contabile e creazione di valore"
+   ],
+   "pitfalls": [
+    "Invertire la regola",
+    "Dimenticare il premio",
+    "Dire che un deal accretive crea sempre valore"
+   ],
+   "skeleton": "In an all-stock deal, it is accretive if [the acquirer's P/E is higher than the P/E it pays for the target, premium included]. Intuitively, [the acquirer uses expensive shares to buy cheaper earnings]. For example, [an acquirer earning 1,000 at 20x, so worth 20,000, buys a target earning 50 for 750, which is 15x: it issues 3.75% more shares while earnings rise 5%, so EPS rises by about 1.2%]. In a cash deal, compare [the after-tax cost of debt with the earnings yield paid]. But accretion is not value creation: [it ignores whether synergies justify the premium].",
+   "explanation": {
+    "steps": [
+     "Acquirente: utile 1.000, P/E 20x, capitalizzazione 20.000. Target pagato 750 per 50 di utile: P/E pagato 750 / 50 = 15x.",
+     "Nuove azioni: 750 / 20.000 = 3,75% in più. Utile combinato: 1.000 + 50 = 1.050, cioè +5% (ipotesi: nessuna sinergia e nessun costo).",
+     "EPS: 1,05 / 1,0375 = 1,012, quindi +1,2% circa: accretive, coerente con 20x > 15x."
+    ],
+    "shortcut": "Tutto azioni: P/E acquirente > P/E pagato significa accretive. Tutto cash: costo del debito dopo le imposte < 1 / P/E pagato significa accretive.",
+    "trap": "Usare il P/E di mercato del target ignorando il premio: il P/E rilevante è quello pagato.",
+    "rule": "L'EPS sale quando paghi gli utili del target meno di quanto il mercato paga i tuoi."
+   },
+   "time": 75,
+   "tags": [
+    "accretion-dilution",
+    "fin-ma"
+   ]
+  },
+  {
+   "id": "beh-073",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "What is WACC, and why might two companies in the same sector have different WACCs?",
+   "tests": "Se conosci la formula del WACC e capisci cosa la muove: rischio operativo, leva, costo del debito, fiscalità, paese.",
+   "structure": [
+    "Definizione: rendimento medio richiesto da tutti i finanziatori, pesato sui valori di mercato",
+    "Formula: WACC = E/(D+E) × Ke + D/(D+E) × Kd × (1 - t)",
+    "Costo dell'equity con il CAPM: Ke = tasso risk-free + beta × premio per il rischio azionario",
+    "Perché differisce: struttura del capitale, beta, merito di credito, aliquota fiscale, paese e valuta",
+    "Chiudi con un esempio di settore"
+   ],
+   "good": [
+    "Formula corretta con lo scudo fiscale sul debito",
+    "Pesi a valori di mercato",
+    "Ragioni concrete della differenza"
+   ],
+   "pitfalls": [
+    "Dimenticare (1 - t) sul costo del debito",
+    "Usare pesi contabili",
+    "Dire che più debito riduce sempre il WACC, senza limiti"
+   ],
+   "skeleton": "WACC is [the average return required by all capital providers, weighted by the market values of equity and debt]: [E/(D+E) times the cost of equity, plus D/(D+E) times the cost of debt times one minus the tax rate]. The cost of equity usually comes from [CAPM: the risk-free rate plus beta times the equity risk premium]. Two companies in [semiconductors] can differ because of [capital structure, different betas, for example a cyclical equipment maker versus a diversified design company, credit ratings, tax rates and the countries where they operate].",
+   "explanation": {
+    "steps": [
+     "Esempio: E = 70%, D = 30%, Ke = 10%, Kd = 5%, t = 25%. WACC = 0,7 × 10% + 0,3 × 5% × 0,75 = 7% + 1,125% = 8,125%.",
+     "Il debito costa meno dell'equity ed è deducibile, quindi un po' di leva riduce il WACC; oltre un certo livello Ke e Kd salgono per il rischio di default.",
+     "Le differenze tra aziende dello stesso settore vengono da leva, beta, rating, aliquota e paese."
+    ],
+    "shortcut": "WACC = peso equity × Ke + peso debito × Kd × (1 - t), con pesi di mercato.",
+    "trap": "Dimenticare lo scudo fiscale sul debito: sovrastima il WACC e sottostima la valutazione.",
+    "rule": "Il WACC riflette il rischio dei flussi e la struttura del capitale, non solo il settore."
+   },
+   "time": 60,
+   "tags": [
+    "wacc",
+    "fin-val"
+   ]
+  },
+  {
+   "id": "beh-074",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "Walk me through a basic LBO. Why does leverage increase returns?",
+   "tests": "Se capisci la logica di un leveraged buyout e le tre leve dei rendimenti: crescita dell'EBITDA, rimborso del debito, espansione del multiplo.",
+   "structure": [
+    "Apri con la definizione: un fondo compra un'azienda finanziando gran parte del prezzo con debito, ripagato dai flussi dell'azienda stessa",
+    "Passi: prezzo e fonti (debito ed equity), proiezioni e rimborso del debito, uscita dopo 3-7 anni, calcolo di IRR e multiplo sul capitale (MOIC)",
+    "Perché la leva aumenta i rendimenti: tutto l'aumento di valore va all'equity, che è una parte piccola del prezzo",
+    "Esempio numerico",
+    "Chiudi con il rischio: più leva significa più rischio di default"
+   ],
+   "good": [
+    "Le tre leve del rendimento",
+    "Esempio numerico corretto",
+    "Riconoscimento del rischio"
+   ],
+   "pitfalls": [
+    "Dimenticare il rimborso del debito come fonte di rendimento",
+    "Confondere IRR e MOIC",
+    "Ignorare il rischio della leva"
+   ],
+   "skeleton": "In an LBO, [a sponsor buys a company mostly with debt, repaid from its own cash flows]. I [set the price and the debt and equity], [project cash flows and debt paydown], [assume an exit after about five years] and [compute IRR and money multiple]. Leverage boosts returns because [the whole gain goes to a smaller equity cheque]. For example, [buy for 100 with 60 of debt and 40 of equity; exit at 130 with debt down to 40; equity is worth 90, so 2.25x, versus 1.5x if the same gain of 50 sat on 100 of equity]. The cost is [higher risk if cash flows fall].",
+   "explanation": {
+    "steps": [
+     "Ingresso: prezzo 100 = 60 di debito + 40 di equity.",
+     "Uscita: valore 130, debito residuo 40 (20 rimborsati con i flussi), equity = 130 - 40 = 90. Guadagno dell'equity: 90 - 40 = 50, cioè 30 di aumento di valore + 20 di debito rimborsato.",
+     "Rendimento con leva: 90 / 40 = 2,25x, circa 17,6% l'anno in 5 anni (2,25^(1/5) - 1).",
+     "Senza debito lo stesso guadagno di 50 (i 20 di cassa resterebbero in azienda) andrebbe su 100 di equity: 150 / 100 = 1,5x, circa 8,4% l'anno. Stesso guadagno, base più piccola: per questo la leva moltiplica il rendimento."
+    ],
+    "shortcut": "MOIC = equity in uscita / equity in ingresso; fonti di rendimento: crescita dell'EBITDA, rimborso del debito, espansione del multiplo.",
+    "trap": "Calcolare il rendimento sul prezzo totale (130 / 100 = 1,3x) invece che sull'equity investita (90 / 40).",
+    "rule": "La leva concentra la creazione di valore su un'equity più piccola, e con essa il rischio."
+   },
+   "time": 75,
+   "tags": [
+    "lbo",
+    "fin-lbo"
+   ]
+  },
+  {
+   "id": "beh-075",
+   "category": "technical-explain",
+   "level": 3,
+   "q": "How would you value a pre-profit deep-tech company?",
+   "tests": "Se sai adattare i metodi di valutazione a un'azienda senza utili né storia: giudizio, scenari e triangolazione, non una formula sola.",
+   "structure": [
+    "Apri dicendo che triangoli più metodi perché nessuno basta da solo",
+    "Multipli su ricavi attesi o su metriche operative di peer quotati e transazioni precedenti, aggiustati per crescita e margini attesi",
+    "DCF di lungo periodo (10 anni o più) con scenari, fino a margini da azienda matura, e un tasso di sconto adeguato al rischio",
+    "Approccio da venture capital: valore di uscita futuro attualizzato a un rendimento target elevato, tenendo conto delle diluizioni future",
+    "Chiudi con i punti chiave della due diligence: tecnologia, proprietà intellettuale, clienti, fabbisogno di cassa"
+   ],
+   "good": [
+    "Triangolazione di più metodi",
+    "Scenari con probabilità esplicite",
+    "Attenzione al fabbisogno di cassa e alla diluizione"
+   ],
+   "pitfalls": [
+    "Applicare un P/E a un'azienda in perdita",
+    "Un DCF a 5 anni con un terminal value che pesa quasi tutto il valore",
+    "Ignorare il rischio tecnologico"
+   ],
+   "skeleton": "I would triangulate. First, [EV/Revenue on forward revenue, using listed peers and recent transactions in the same niche, adjusted for growth]. Second, [a long-horizon DCF, ten years or more, with bear, base and bull scenarios until margins reach those of mature peers, weighted by probability]. Third, [a venture-style check: the expected exit value in year X discounted at a target return of Y%, adjusted for future dilution]. I would focus diligence on [technology readiness, IP, the customer pipeline and cash runway], because [they decide which scenario is realistic].",
+   "explanation": {
+    "steps": [
+     "Senza utili il P/E non esiste e, se anche l'EBITDA è negativo, l'EV/EBITDA è privo di significato: si passa a ricavi, metriche operative o flussi di lungo periodo.",
+     "Gli scenari gestiscono l'incertezza: con probabilità 25% bear, 50% base, 25% bull e valori 100, 300 e 800, il valore atteso è 0,25 × 100 + 0,5 × 300 + 0,25 × 800 = 25 + 150 + 200 = 375.",
+     "La triangolazione produce un intervallo, non un punto, e la due diligence decide quale scenario pesa di più."
+    ],
+    "shortcut": "Multipli sui ricavi, DCF lungo a scenari, metodo VC: tre metodi, un intervallo.",
+    "trap": "Forzare un DCF standard a 5 anni: il terminal value pesa quasi tutto e la valutazione diventa arbitraria.",
+    "rule": "Più è incerto il futuro, più servono scenari e triangolazione."
+   },
+   "time": 90,
+   "tags": [
+    "valuation",
+    "fin-val",
+    "deep-tech"
+   ]
+  },
+  {
+   "id": "beh-076",
+   "category": "curveball",
+   "level": 2,
+   "q": "How many smartphones are sold in Italy each year?",
+   "tests": "Pensiero strutturato sotto pressione: se scomponi il problema, fai ipotesi ragionevoli e dichiarate, calcoli a mente in modo pulito e verifichi il risultato.",
+   "structure": [
+    "Chiarisci l'obiettivo: unità nuove vendute in un anno, incluse quelle aziendali",
+    "Scomponi: popolazione, quota di utenti, ciclo di sostituzione",
+    "Calcola ad alta voce con numeri tondi",
+    "Aggiusta: usato e ricondizionati, secondi telefoni aziendali",
+    "Verifica di sensatezza e conclusione in un intervallo"
+   ],
+   "good": [
+    "Struttura dichiarata prima dei calcoli",
+    "Numeri tondi e calcoli chiari",
+    "Verifica di plausibilità finale"
+   ],
+   "pitfalls": [
+    "Sparare un numero senza struttura",
+    "Ipotesi non dichiarate",
+    "Calcoli complicati che portano a errori"
+   ],
+   "skeleton": "I would estimate it as [users divided by the replacement cycle]. Italy has [about 59 million people]; assume [about 85% own a smartphone], so [about 50 million users]. If people replace their phone [every three years on average], that gives [about 17 million phones a year]. I would adjust down for [second-hand and refurbished phones, say 10% to 15%], and up slightly for [second business phones], so [roughly 15 to 16 million]. As a sanity check, [that is about one new phone for every four people each year, which feels plausible].",
+   "explanation": {
+    "steps": [
+     "Utenti: 59 milioni × 85% = 50,15 milioni, arrotondati a 50 milioni.",
+     "Vendite lorde: 50 milioni / 3 anni di ciclo di sostituzione = 16,7 milioni, circa 17 milioni l'anno.",
+     "Aggiustamenti: 17 × (1 - 0,10) = 15,3 e 17 × (1 - 0,15) = 14,45 milioni, più una piccola quota di telefoni aziendali: circa 15-16 milioni. Verifica: 15,5 / 59 = 0,26, circa un telefono nuovo ogni 4 abitanti l'anno."
+    ],
+    "shortcut": "Base di utenti diviso ciclo di sostituzione, poi aggiustamenti e sanity check.",
+    "trap": "Partire da negozi o famiglie senza una struttura: i calcoli si complicano e le ipotesi diventano invisibili.",
+    "rule": "Nelle stime contano la struttura e la chiarezza delle ipotesi più del numero finale."
+   },
+   "time": 120,
+   "tags": [
+    "market-sizing",
+    "estimation"
+   ]
+  },
+  {
+   "id": "beh-077",
+   "category": "curveball",
+   "level": 2,
+   "q": "What is the angle between the hour and minute hands of a clock at 3:15?",
+   "tests": "Ragionamento sotto pressione e capacità di non cadere nella risposta istintiva sbagliata (zero gradi).",
+   "structure": [
+    "Non rispondere d'istinto: ragiona ad alta voce",
+    "Lancetta dei minuti: 15 minuti = 90 gradi",
+    "Lancetta delle ore: 3 ore = 90 gradi, più 15 minuti × 0,5 gradi al minuto = 7,5 gradi, quindi 97,5 gradi",
+    "Differenza: 7,5 gradi",
+    "Chiudi con la regola generale"
+   ],
+   "good": [
+    "Ragionamento ad alta voce",
+    "Ricordare che anche la lancetta delle ore si muove",
+    "Regola generale pronta per le varianti"
+   ],
+   "pitfalls": [
+    "Rispondere 0 gradi d'istinto",
+    "Andare nel panico in silenzio",
+    "Calcoli disordinati"
+   ],
+   "skeleton": "Let me think it through. At [15 minutes past], the minute hand points at [the 3, which is 90 degrees from the 12]. The hour hand is not exactly on the 3: it moves [30 degrees per hour, so 0.5 degrees per minute], so after [15 minutes] it has moved [7.5 degrees past the 3, to 97.5 degrees]. The angle between them is [97.5 minus 90, which is 7.5 degrees]. In general, [the angle is the absolute value of 30 times the hour minus 5.5 times the minutes, and if it exceeds 180 you take 360 minus it].",
+   "explanation": {
+    "steps": [
+     "Minuti: 360° / 60 = 6° al minuto; 15 × 6 = 90°.",
+     "Ore: 360° / 12 = 30° all'ora, cioè 0,5° al minuto; 3 × 30 + 15 × 0,5 = 90 + 7,5 = 97,5°.",
+     "Angolo = 97,5 - 90 = 7,5°. Con la formula generale: |30 × 3 - 5,5 × 15| = |90 - 82,5| = 7,5°."
+    ],
+    "shortcut": "Angolo = |30H - 5,5M|; se supera 180°, prendi 360° meno il risultato.",
+    "trap": "Rispondere 0° perché entrambe le lancette sembrano sul 3: la lancetta delle ore avanza con i minuti.",
+    "rule": "Nei brainteaser rallenta e verifica l'ipotesi che sembra ovvia."
+   },
+   "time": 60,
+   "tags": [
+    "brainteaser",
+    "mental-maths"
+   ]
+  },
+  {
+   "id": "beh-078",
+   "category": "curveball",
+   "level": 2,
+   "q": "Sell me this pen.",
+   "tests": "Senso commerciale: se fai domande per capire il bisogno prima di vendere e se colleghi il prodotto a quel bisogno con sicurezza, fino a chiedere la chiusura.",
+   "structure": [
+    "Non partire descrivendo la penna: fai 1-2 domande sul bisogno dell'interlocutore",
+    "Collega la penna al bisogno emerso (firmare, prendere appunti in riunione, fare buona impressione con un cliente)",
+    "Evidenzia 1-2 benefici, non caratteristiche",
+    "Gestisci un'obiezione",
+    "Chiudi chiedendo esplicitamente la vendita"
+   ],
+   "good": [
+    "Domande prima della proposta",
+    "Benefici legati al bisogno emerso",
+    "Chiusura esplicita"
+   ],
+   "pitfalls": [
+    "Elencare le caratteristiche tecniche della penna",
+    "Parlare troppo senza ascoltare",
+    "Non chiudere"
+   ],
+   "skeleton": "Before I tell you about it, can I ask [when you last used a pen, and what for]? [Signing a document in a client meeting.] So when it matters, [you want something reliable that looks professional in front of a client]. This pen [writes first time, every time, and looks right on the table at a signing]. You might say [you already have one]; but [is it the one you trust on the day a deal closes]? It costs [less than a coffee]. Shall I [leave it with you for your next signing]?",
+   "explanation": {
+    "steps": [
+     "Verifica di aver fatto almeno una domanda prima di parlare della penna.",
+     "Controlla di aver tradotto le caratteristiche in benefici legati al bisogno emerso.",
+     "Assicurati di aver chiuso con una richiesta esplicita."
+    ],
+    "shortcut": "Domanda, bisogno, beneficio, obiezione, chiusura.",
+    "trap": "Descrivere la penna ('it's blue, it writes smoothly'): vendere significa rispondere a un bisogno, non elencare caratteristiche.",
+    "rule": "Si vende ciò che risolve il problema del cliente, non il prodotto in sé."
+   },
+   "time": 60,
+   "tags": [
+    "sales",
+    "persuasion"
+   ]
+  },
+  {
+   "id": "beh-079",
+   "category": "curveball",
+   "level": 1,
+   "q": "Tell me something about yourself that is not on your CV.",
+   "tests": "Chi sei oltre il CV: autenticità, interessi e qualità personali che rendono piacevole lavorare con te anche durante le notti in ufficio.",
+   "structure": [
+    "Scegli un interesse o un'esperienza autentica e specifica",
+    "Racconta un dettaglio concreto che la rende viva",
+    "Mostra la qualità che rivela (costanza, curiosità, spirito di squadra)",
+    "Chiudi con un collegamento leggero, non forzato, al lavoro"
+   ],
+   "good": [
+    "Autenticità e dettagli specifici",
+    "Una qualità personale che emerge in modo naturale",
+    "Tono rilassato"
+   ],
+   "pitfalls": [
+    "Ripetere qualcosa che è già nel CV",
+    "Temi controversi o troppo personali",
+    "Collegamenti forzati al banking"
+   ],
+   "skeleton": "[Something specific, e.g. I have been training for and running half-marathons for four years]. What I like about it is [the routine: early mornings, a plan, and tracking small improvements week by week]. [Last spring I finally ran under X minutes after two failed attempts.] It has taught me [patience and consistency], which helps [on long deals too]. It is also [how I switch off and keep my energy up during busy periods], and I am always happy to [find running partners in a new team].",
+   "explanation": {
+    "steps": [
+     "Verifica che il tema non sia già nel CV e che sia autentico.",
+     "Controlla di aver aggiunto un dettaglio concreto che rende la storia memorabile.",
+     "Assicurati che l'eventuale collegamento al lavoro sia leggero."
+    ],
+    "shortcut": "Un interesse vero, un dettaglio, una qualità, un collegamento leggero.",
+    "trap": "Forzare il collegamento al banking ('I read financial news for fun'): sembra costruito e toglie autenticità.",
+    "rule": "Questa domanda valuta se sei una persona con cui si lavora bene alle due di notte."
+   },
+   "time": 60,
+   "tags": [
+    "personality"
+   ]
+  },
+  {
+   "id": "beh-080",
+   "category": "curveball",
+   "level": 3,
+   "q": "Why should we not hire you?",
+   "tests": "Sangue freddo e autoconsapevolezza: se reggi una domanda spiazzante senza irrigidirti, ammettendo un rischio reale visto dalla banca e mostrando come lo gestisci.",
+   "structure": [
+    "Non respingere la domanda: prendila sul serio, con calma",
+    "Indica un rischio realistico dal punto di vista della banca (non un difetto grave)",
+    "Spiega perché il rischio è gestibile, con una prova",
+    "Chiudi riaffermando in una frase il tuo valore"
+   ],
+   "good": [
+    "Calma e un pizzico di leggerezza",
+    "Un rischio credibile visto dalla prospettiva della banca",
+    "Chiusura positiva e sintetica"
+   ],
+   "pitfalls": [
+    "Dire 'there is no reason'",
+    "Ammettere un difetto grave (affidabilità, integrità, precisione)",
+    "Diventare difensivo"
+   ],
+   "skeleton": "A fair concern might be [that I already have boutique experience and could find it hard to restart as a graduate and learn a new way of working]. I understand that risk. But [I chose this path deliberately because I want the breadth of a large platform], and [at boutique I have shown I adapt quickly to new teams and standards, for example when I joined a live deal halfway through the process]. So I see that experience as [a head start, not a reason to cut corners]. I am ready [to learn your way of doing things from day one].",
+   "explanation": {
+    "steps": [
+     "Verifica di aver scelto un rischio realistico dal punto di vista della banca, non un difetto di carattere grave.",
+     "Controlla di aver mostrato perché il rischio è gestibile, con una prova.",
+     "Assicurati di chiudere in positivo, in una frase."
+    ],
+    "shortcut": "Rischio realistico, perché è gestibile, prova, chiusura positiva.",
+    "trap": "Rispondere con una battuta o con 'you should hire me': elude la domanda e segnala scarsa autoconsapevolezza.",
+    "rule": "Davanti a una domanda spiazzante, prendila sul serio e riportala sul tuo valore."
+   },
+   "time": 60,
+   "tags": [
+    "self-awareness",
+    "why-you"
+   ]
+  }
+ ]
+}

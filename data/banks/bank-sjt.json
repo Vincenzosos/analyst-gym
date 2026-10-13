@@ -1,0 +1,1164 @@
+{
+  "items": [
+    {
+      "id": "sjt-01",
+      "skill": "sjt",
+      "level": 1,
+      "type": "sjt",
+      "stem": "You are an analyst in the M&A team of a mid-sized investment bank. Last night you sent your associate a merger model that she will use to build pages for a client call tomorrow afternoon. This morning, reviewing the file, you realise that the synergies have been added twice in the pro forma EPS calculation, overstating accretion by about 4 percentage points. The associate has not yet started building the pages, and nobody else has seen the model. What should you do?",
+      "options": [
+        "Correct the model, send the new version to the associate straight away and explain clearly what was wrong and which outputs change.",
+        "Correct the model and quietly replace the file on the shared drive, since she has not started using it yet.",
+        "Tell the associate there is an issue with the model and ask her how she would like you to handle it before changing anything.",
+        "Leave the model as it is for now, since she will review it anyway and is likely to spot the double count herself."
+      ],
+      "ratings": [4, 2, 3, 1],
+      "best": 0,
+      "worst": 3,
+      "competencies": ["ownership", "integrity", "communication"],
+      "explanation": {
+        "steps": [
+          "A è la migliore (ownership, integrity): correggi subito, prima che l'errore arrivi nelle pagine per il cliente, e spieghi cosa cambia, così l'associate può continuare a fidarsi dei tuoi numeri.",
+          "D è la peggiore: sai che c'è un errore e lo lasci nel processo sperando che qualcun altro lo trovi. Se sfugge, un'accretion sovrastimata di 4 punti arriva davanti al cliente.",
+          "B (2) risolve il problema tecnico ma lo nasconde: l'associate potrebbe avere una copia locale o aver già visto i numeri vecchi, e scoprirlo dopo mina la fiducia. C (3) è trasparente ma lenta: passi all'associate una decisione che spetta a te, cioè correggere il tuo lavoro."
+        ],
+        "shortcut": "Errore tuo scoperto prima del danno: correggi e comunica subito cosa è cambiato.",
+        "trap": "B sembra efficiente perché 'nessuno ha ancora usato il file', ma correggere in silenzio è un problema di trasparenza, non di tecnica.",
+        "rule": "Possiedi i tuoi errori: correzione e comunicazione esplicita, sempre insieme."
+      },
+      "timeTarget": 60,
+      "tags": ["ib", "own-mistake"]
+    },
+    {
+      "id": "sjt-02",
+      "skill": "sjt",
+      "level": 1,
+      "type": "sjt",
+      "stem": "You are a graduate in a corporate banking team. A week after a refinancing you worked on closes, the CFO of the client company sends you a parcel containing a luxury watch and a handwritten note thanking you for 'all the late nights'. You know the bank has a gifts and entertainment policy requiring gifts above a modest value to be declared and approved, but you have never read it in detail. Colleagues joke that 'everyone keeps these'. What should you do?",
+      "options": [
+        "Keep the watch, since it was sent to you personally and the deal has already closed.",
+        "Read the gifts policy, declare the watch to compliance straight away and follow their guidance on keeping or returning it.",
+        "Return the watch to the CFO with a polite thank-you note explaining that you cannot accept it, without telling anyone at the bank.",
+        "Mention it to your manager and ask how gifts like this are normally handled in the team, before deciding what to do with it."
+      ],
+      "ratings": [1, 4, 2, 3],
+      "best": 1,
+      "worst": 0,
+      "competencies": ["integrity", "client-focus"],
+      "explanation": {
+        "steps": [
+          "B è la migliore (integrity): la policy esiste proprio per questi casi. Dichiarare subito crea una traccia e lascia a compliance la decisione, proteggendo te, il cliente e la banca.",
+          "A è la peggiore: un regalo di valore da un cliente, non dichiarato, è un potenziale conflitto di interessi anche a deal chiuso, perché la relazione continua. 'Lo fanno tutti' non è una giustificazione.",
+          "D (3) va nella direzione giusta perché chiedi guida a un senior, ma resta informale e non garantisce la registrazione richiesta. C (2) ottiene un esito eticamente corretto ma salta la dichiarazione e decide da solo su un tema che tocca la relazione con il cliente."
+        ],
+        "shortcut": "Regalo di valore da un cliente: la risposta migliore contiene quasi sempre 'policy' e 'compliance'.",
+        "trap": "Restituire in silenzio (C) sembra la scelta più etica, ma nei test delle banche il processo, cioè dichiarare, conta quanto l'esito.",
+        "rule": "Nel dubbio su regali e benefit: dichiara prima, decidi dopo insieme a compliance."
+      },
+      "timeTarget": 60,
+      "tags": ["corporate-banking", "gifts-entertainment"]
+    },
+    {
+      "id": "sjt-03",
+      "skill": "sjt",
+      "level": 1,
+      "type": "sjt",
+      "stem": "You are an analyst working on a confidential sell-side process for a listed software company. The deal is at an advanced stage and has not been announced. At dinner with university friends, one of them, who now works at a hedge fund, mentions a press rumour that the company is 'in play' and asks, half joking, whether your bank is involved and whether the rumour is true. Everyone at the table turns to look at you. What should you do?",
+      "options": [
+        "Say, in a friendly but firm way, that you never comment on rumours or on the bank's clients, and change the subject.",
+        "Laugh it off and say, with a wink, that the rumour 'is not completely crazy', without giving any names or further details.",
+        "Say that your bank is not involved and that the rumour is probably wrong, to close the topic quickly before anyone asks more.",
+        "Excuse yourself from the table for a few minutes and, when you come back, steer the conversation onto a completely different topic."
+      ],
+      "ratings": [4, 1, 2, 3],
+      "best": 0,
+      "worst": 1,
+      "competencies": ["integrity", "communication"],
+      "explanation": {
+        "steps": [
+          "A è la migliore (integrity, communication): una formula neutra e standard non conferma e non smentisce, ed è ciò che qualsiasi banchiere dice in questi casi. Il tono amichevole evita imbarazzo.",
+          "B è la peggiore: dire che il rumour 'non è del tutto assurdo' a chi lavora in un hedge fund equivale a passare un'informazione privilegiata. È un rischio di market abuse per te e per la banca.",
+          "C (2) non rivela dettagli ma è una bugia, e una smentita esplicita diventa un segnale quando il deal verrà annunciato. D (3) evita la fuga di notizie ma è goffa: non stabilisce un confine chiaro e il tema può tornare."
+        ],
+        "shortcut": "Su un deal riservato la risposta giusta non conferma, non smentisce e non mente.",
+        "trap": "Smentire (C) sembra prudente, ma è comunque una dichiarazione sul deal, ed è falsa.",
+        "rule": "Neither confirm nor deny: usa sempre la stessa frase neutra, con chiunque."
+      },
+      "timeTarget": 60,
+      "tags": ["ib", "confidentiality", "insider-info"]
+    },
+    {
+      "id": "sjt-04",
+      "skill": "sjt",
+      "level": 1,
+      "type": "sjt",
+      "stem": "It is your first week on a graduate rotation in the rates sales team. A busy director stops by your desk, asks you to 'pull together the usual client pack on the curve moves' by 4 pm, and walks off into a meeting. You do not know what the usual pack looks like, which clients it is for or which maturities matter. Your desk neighbour, a second-year analyst, is on an internal call that should end in a few minutes. What should you do?",
+      "options": [
+        "Start building a pack from scratch based on your own judgement of what the clients will want, to show the director that you can work independently.",
+        "Once your neighbour is off the call, ask for the previous version of the pack, start from it and message the director to confirm your understanding.",
+        "Email the director saying the request was too vague and that you will start once they explain exactly what is needed.",
+        "Wait for the director to come out of the meeting and ask them directly what the pack should contain, starting only once you have a clear answer."
+      ],
+      "ratings": [2, 4, 1, 3],
+      "best": 1,
+      "worst": 2,
+      "competencies": ["communication", "ownership"],
+      "explanation": {
+        "steps": [
+          "B è la migliore (communication, ownership): usi la risorsa più vicina per trovare il formato standard, parti subito e confermi per iscritto le tue ipotesi, così il director può correggerti in dieci secondi tra un meeting e l'altro.",
+          "C è la peggiore: il tono è accusatorio verso un senior alla prima interazione e blocchi il lavoro invece di cercare una soluzione.",
+          "D (3) ti dà informazioni affidabili ma consuma tempo prezioso e dipende da quando finisce il meeting. A (2) mostra iniziativa ma rischia di produrre un pack inutile, perché 'the usual' indica un formato che esiste già."
+        ],
+        "shortcut": "Istruzione vaga: cerca prima un precedente o un collega, poi conferma le ipotesi a chi ha chiesto il lavoro.",
+        "trap": "A sembra proattiva, ma l'indipendenza senza chiarire il formato è solo tempo sprecato.",
+        "rule": "Chiarisci presto, con la persona giusta, senza fermare il lavoro."
+      },
+      "timeTarget": 60,
+      "tags": ["markets", "graduate-rotation", "unclear-instructions"]
+    },
+    {
+      "id": "sjt-05",
+      "skill": "sjt",
+      "level": 1,
+      "type": "sjt",
+      "stem": "You are at a bank's assessment centre, taking part in a 30-minute group case on whether a client should acquire a competitor. One candidate keeps talking over everyone and pushing his own conclusion. Another candidate has barely spoken, but at the start she made a sharp point about financing risk that nobody picked up. Twelve minutes are left and the group has not agreed a structure for the final presentation. What should you do?",
+      "options": [
+        "Focus on preparing your own section of the presentation so that your individual contribution stands out to the assessors.",
+        "Tell the dominant candidate, in front of the group, that he is not letting anyone else speak.",
+        "Propose a quick structure for the remaining time and invite the quieter candidate to expand on her financing point.",
+        "Back the dominant candidate's conclusion to save time, but suggest the group lists the key risks together before finalising the slides."
+      ],
+      "ratings": [2, 1, 4, 3],
+      "best": 2,
+      "worst": 1,
+      "competencies": ["teamwork", "communication"],
+      "explanation": {
+        "steps": [
+          "C è la migliore (teamwork, communication): dai al gruppo ciò che manca, cioè una struttura e un timing, e recuperi un contributo di valore rimasto inascoltato. È il comportamento che gli assessor cercano.",
+          "B è la peggiore: criticare pubblicamente un altro candidato crea conflitto, fa perdere minuti preziosi e viene letto come scarsa maturità, anche se il problema è reale.",
+          "D (3) aiuta a chiudere e porta i rischi sul tavolo, ma accetta la dinamica dominante senza dare spazio agli altri. A (2) ignora il gruppo: in un esercizio di gruppo il contributo individuale isolato vale poco."
+        ],
+        "shortcut": "Nel group exercise vince chi facilita: struttura, tempo e coinvolgimento degli altri.",
+        "trap": "A sembra furba per 'farsi notare', ma gli assessor valutano come lavori con gli altri, non solo cosa dici.",
+        "rule": "Facilita: non dominare e non isolarti."
+      },
+      "timeTarget": 60,
+      "tags": ["assessment-day", "teamwork"]
+    },
+    {
+      "id": "sjt-06",
+      "skill": "sjt",
+      "level": 1,
+      "type": "sjt",
+      "stem": "You are a first-year analyst in a corporate banking team. You spent two days on your first credit memo for a mid-cap client. Your VP returns it covered in comments, says the risk section 'reads like a company brochure' and that the cash-flow analysis ignores working-capital seasonality. You think some comments are harsh, and a couple concern points you believe you did cover. The memo is due at the credit committee in four days. What should you do?",
+      "options": [
+        "Accept all the comments without discussion and rewrite the memo exactly as the VP suggests, so that the revised version is ready well before the committee.",
+        "Reply to the VP by email listing each comment you consider unfair, with page references showing where you had already covered the point.",
+        "Make the changes you agree with and leave the other sections unchanged, since you believe those points are already covered in the memo.",
+        "Ask the VP for 15 minutes to discuss the comments, clarify the points you believe you covered and agree what a strong risk section looks like."
+      ],
+      "ratings": [3, 1, 2, 4],
+      "best": 3,
+      "worst": 1,
+      "competencies": ["resilience", "communication", "ownership"],
+      "explanation": {
+        "steps": [
+          "D è la migliore (resilience, communication): tratti il feedback come informazione, chiarisci in modo costruttivo dove pensi di aver già coperto il punto e ti fai dare un riferimento concreto per la sezione rischi. Con quattro giorni di margine c'è tempo per farlo bene.",
+          "B è la peggiore: una risposta scritta punto per punto su cosa è 'ingiusto' è difensiva, irrita il VP e sposta la discussione da come migliorare il memo a chi ha ragione.",
+          "A (3) è collaborativa e veloce, ma rinunci a capire il criterio del VP e rischi di ripetere lo stesso errore. C (2) ignora in silenzio parte del feedback: se il VP non vede le modifiche, il memo torna indietro e la fiducia cala."
+        ],
+        "shortcut": "Feedback duro: ascolta, chiarisci a voce, concorda lo standard, applica.",
+        "trap": "A sembra la risposta umile, ma senza confronto non scopri cosa significa davvero 'brochure' per quel VP.",
+        "rule": "Il feedback si discute per capirlo, non per vincerlo."
+      },
+      "timeTarget": 60,
+      "tags": ["corporate-banking", "feedback"]
+    },
+    {
+      "id": "sjt-07",
+      "skill": "sjt",
+      "level": 1,
+      "type": "sjt",
+      "stem": "You work for a global asset manager in London and are preparing a quarterly review for an institutional client. You need performance attribution data from a colleague in the Singapore office whom you have never met. You sent her a short message three days ago and have had no reply. The review is due to your portfolio manager on Friday, in two days, and your working hours overlap for only one hour each morning. What should you do?",
+      "options": [
+        "Build the attribution yourself from the raw data using your own approach, even though you do not know the firm's methodology, and put it in the review.",
+        "Escalate to her manager in Singapore, explaining that she has not replied to your request and that your client deadline is now at risk.",
+        "Send her a specific request listing the exact data and the Friday deadline, and propose a 15-minute call in tomorrow's overlapping hour.",
+        "Tell your portfolio manager that the review may be late because the Singapore office has not replied to your request."
+      ],
+      "ratings": [1, 2, 4, 3],
+      "best": 2,
+      "worst": 0,
+      "competencies": ["communication", "teamwork"],
+      "explanation": {
+        "steps": [
+          "C è la migliore (communication, teamwork): il primo messaggio era probabilmente troppo generico. Una richiesta precisa, con scadenza e proposta di call nell'unica ora di sovrapposizione, rende facile per la collega aiutarti.",
+          "A è la peggiore: costruire da solo un'attribution con una metodologia che non conosci rischia di portare numeri sbagliati davanti a un cliente istituzionale.",
+          "D (3) gestisce correttamente le aspettative del PM, ma da sola non risolve nulla: va fatta in parallelo a un'azione concreta. B (2) è un'escalation prematura dopo un solo messaggio e rischia di rovinare il rapporto con una collega che ti servirà ogni trimestre."
+        ],
+        "shortcut": "Prima rendi la richiesta facile da soddisfare, poi eventualmente escala.",
+        "trap": "B sembra decisa, ma scavalcare qualcuno dopo un solo messaggio viene letto come scarsa collaborazione.",
+        "rule": "Nel lavoro remoto: richiesta specifica, scadenza chiara, canale sincrono quando serve."
+      },
+      "timeTarget": 60,
+      "tags": ["asset-management", "remote-teamwork"]
+    },
+    {
+      "id": "sjt-08",
+      "skill": "sjt",
+      "level": 1,
+      "type": "sjt",
+      "stem": "You are a graduate in a corporate finance team. During a team lunch, a senior analyst imitates the accent of a new colleague from Nigeria while retelling something she said in a meeting, and a few people laugh. Your new colleague smiles but goes quiet for the rest of lunch, and later you notice she seems uncomfortable around the senior analyst. You are junior to him but get on well with him. What should you do?",
+      "options": [
+        "Do nothing for now, since your colleague has not complained and you do not want to damage your relationship with the senior analyst.",
+        "Report the senior analyst's behaviour to HR straight away, without speaking to your colleague or to him first.",
+        "Tell your colleague it was only banter and that she will fit in better if she does not take that kind of joke personally.",
+        "Check in privately with your colleague, and tell the senior analyst one-to-one that the joke came across as hurtful."
+      ],
+      "ratings": [2, 3, 1, 4],
+      "best": 3,
+      "worst": 2,
+      "competencies": ["integrity", "teamwork", "communication"],
+      "explanation": {
+        "steps": [
+          "D è la migliore (integrity, teamwork): sostieni la collega, capisci come l'ha vissuta e affronti il comportamento in privato e in modo diretto con chi l'ha avuto. È proporzionato e spesso basta perché non si ripeta.",
+          "C è la peggiore: liquidare l'episodio come 'banter' e chiedere alla collega di non prenderla sul personale minimizza il comportamento, le comunica che il team lo trova accettabile e sposta su di lei il problema.",
+          "B (3) prende sul serio il problema ma salta i passaggi: non sai cosa vuole la collega e un primo episodio si può spesso risolvere direttamente; resta la strada giusta se si ripete. A (2) non peggiora le cose nell'immediato, ma il silenzio lascia sola la collega e normalizza l'episodio."
+        ],
+        "shortcut": "Su inclusione: sostieni la persona colpita e affronta il comportamento, non ignorarlo.",
+        "trap": "A sembra rispettosa perché la collega non si è lamentata, ma chi è appena arrivato raramente si lamenta di un senior.",
+        "rule": "Un comportamento non accettabile si affronta, con la risposta più proporzionata che funziona."
+      },
+      "timeTarget": 60,
+      "tags": ["ib", "diversity-inclusion"]
+    },
+    {
+      "id": "sjt-09",
+      "skill": "sjt",
+      "level": 1,
+      "type": "sjt",
+      "stem": "You are an analyst in an M&A team and have worked more than 90 hours a week for the past five weeks across two live deals. You have started making small mistakes, such as wrong cell references and typos in client pages, which your associate has caught. You feel exhausted and are sleeping about four hours a night. A third deal is about to start and the staffer asks whether you have capacity to join it. What should you do?",
+      "options": [
+        "Tell the staffer honestly about your workload and the recent errors, and explain that you cannot take on a third deal now without quality slipping.",
+        "Accept the new deal to show commitment, and add an extra review pass on every piece of work across all three deals to catch mistakes before they reach the associate.",
+        "Accept the new deal, then quietly cut back the time you spend on the existing deals to make room for it.",
+        "Say you are at capacity, without giving details about your hours or the errors, and ask to be considered for the next deal instead."
+      ],
+      "ratings": [4, 2, 1, 3],
+      "best": 0,
+      "worst": 2,
+      "competencies": ["resilience", "communication", "ownership"],
+      "explanation": {
+        "steps": [
+          "A è la migliore (resilience, communication): lo staffer chiede proprio per allocare bene le persone. Informazioni oneste su carico ed errori gli permettono di decidere e proteggono la qualità dei deal in corso.",
+          "C è la peggiore: accetti un impegno che non puoi rispettare e riduci di nascosto l'attenzione su deal già live, con più errori e nessuno che lo sa.",
+          "D (3) protegge te e i deal, ma senza contesto lo staffer non capisce l'urgenza e non sa degli errori già emersi. B (2) sembra impegno, ma aggiungere lavoro a chi sbaglia per stanchezza peggiora proprio il problema."
+        ],
+        "shortcut": "Se ti chiedono la capacità, la risposta giusta è onesta e motivata con fatti.",
+        "trap": "B sembra la risposta 'da banker', ma gli assessor premiano chi gestisce la propria capacità, non chi si sovraccarica.",
+        "rule": "Segnala i tuoi limiti prima che diventino errori davanti al cliente."
+      },
+      "timeTarget": 60,
+      "tags": ["ib", "wellbeing", "workload"]
+    },
+    {
+      "id": "sjt-10",
+      "skill": "sjt",
+      "level": 1,
+      "type": "sjt",
+      "stem": "You are a graduate in the settlements team of a global bank. At 3:20 pm you spot that a large bond trade due to settle today has a mismatch in the counterparty's account details; the settlement cut-off is 4 pm. Your supervisor, who normally handles these breaks, is on leave, and the team's escalation sheet names a senior analyst on the next desk as cover. You have seen this type of break fixed before. What should you do?",
+      "options": [
+        "Correct the counterparty's account details in the system yourself, based on what you have seen done before, so the trade settles on time.",
+        "Flag the break at once to the senior analyst named as cover, with the trade details and time left to cut-off, and offer to help.",
+        "Email your supervisor, even though she is on leave, so that she can decide what to do when she next checks her messages.",
+        "Contact the counterparty directly to ask them to confirm their account details, and wait for their answer before telling anyone, so you do not raise a false alarm."
+      ],
+      "ratings": [1, 4, 2, 3],
+      "best": 1,
+      "worst": 0,
+      "competencies": ["ownership", "prioritisation", "communication"],
+      "explanation": {
+        "steps": [
+          "B è la migliore (ownership, communication): segui la procedura di escalation prevista, dai subito al collega tutte le informazioni utili e ti metti a disposizione. Con 40 minuti al cut-off, conta la velocità del passaggio di consegne.",
+          "A è la peggiore: modificare da solo i dati di conto di una controparte, senza autorizzazione e verifica, è un rischio operativo e di frode serio, anche se l'hai già visto fare.",
+          "D (3) è un passo utile per risolvere la discrepanza, ma tenerlo per te significa che, se la risposta arriva tardi, nessuno può intervenire. C (2) coinvolge la persona sbagliata: è in ferie, e l'escalation sheet esiste proprio per questo."
+        ],
+        "shortcut": "Problema urgente e responsabile assente: usa subito il backup designato, con tutti i dettagli.",
+        "trap": "A sembra ownership, ma in operations l'ownership è escalare bene, non fare modifiche non autorizzate.",
+        "rule": "In operations, controlli ed escalation previste vengono prima dell'iniziativa individuale."
+      },
+      "timeTarget": 60,
+      "tags": ["operations", "escalation"]
+    },
+    {
+      "id": "sjt-11",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You are an analyst staffed on two deals. At 6 pm the VP on a sell-side mandate asks you to update the buyer list and teaser by 9 am tomorrow for an MD review. An hour later the VP on a live buy-side deal asks you to rerun the LBO model with new lender terms, also by 9 am, for a client call. Each task needs about six hours, and neither VP seems aware of the other request. What should you do?",
+      "options": [
+        "Prioritise the LBO because it is for a client call, and tell the sell-side VP tonight that the buyer list may be delayed.",
+        "Work through the night to complete both tasks, without mentioning the clash to either VP, so that neither deadline is missed.",
+        "Tell both VPs about the clash tonight with your time estimates, suggest which task looks more urgent, and ask them to agree the priority.",
+        "Do the LBO first because it is for a client call, and email the sell-side VP at 8 am that the buyer list will be late."
+      ],
+      "ratings": [3, 2, 4, 1],
+      "best": 2,
+      "worst": 3,
+      "competencies": ["prioritisation", "communication"],
+      "explanation": {
+        "steps": [
+          "C è la migliore (prioritisation, communication): rendi visibile il conflitto con dati (6 + 6 ore in una notte), dai la tua proposta e lasci decidere chi ha l'autorità. I VP preferiscono saperlo alle 19 che alle 8.",
+          "D è la peggiore: decidi da solo e avvisi il VP del sell-side quando non ha più tempo per reagire prima della review con l'MD.",
+          "A (3) usa un criterio ragionevole (prima il lavoro per il cliente) e avvisa in tempo, ma la priorità tra due deal non spetta all'analyst. B (2) sembra dedizione, ma 12 ore di lavoro in una notte mettono a rischio la qualità di entrambi i deliverable e nessuno sa che c'è un problema."
+        ],
+        "shortcut": "Due senior, una sola notte: informa entrambi subito, proponi, fai decidere.",
+        "trap": "A è attraente perché la logica 'prima il cliente' è corretta, ma esclude i senior da una decisione che spetta a loro.",
+        "rule": "I conflitti di priorità si rendono visibili presto, con stime, e li risolve chi ha l'autorità."
+      },
+      "timeTarget": 75,
+      "tags": ["ib", "conflicting-priorities"]
+    },
+    {
+      "id": "sjt-12",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You and another first-year analyst are preparing a pitch book for a mid-cap industrial client, due to your associate on Thursday. You agreed to split the work: you do the valuation, he does the market and trading pages. It is Tuesday evening, he has delivered almost nothing and has been leaving early. You have already started covering some of his pages, and your own section is now at risk. The associate has not noticed. What should you do?",
+      "options": [
+        "Keep doing his pages as well as your own, working late tonight and tomorrow, to make sure the pitch book reaches the associate on time.",
+        "At Wednesday's team check-in, point out in front of the associate that his pages are still not done.",
+        "Tell the associate that the timeline is at risk because the agreed work split is not working, and ask for guidance on next steps.",
+        "Speak to him privately tonight, ask whether something is getting in the way, and agree a plan for his pages with a Wednesday checkpoint."
+      ],
+      "ratings": [2, 1, 3, 4],
+      "best": 3,
+      "worst": 1,
+      "competencies": ["teamwork", "communication", "ownership"],
+      "explanation": {
+        "steps": [
+          "D è la migliore (teamwork, communication): parli prima con lui, in privato, perché potrebbe esserci un motivo (un altro deal, un problema personale), e concordi un piano verificabile. Se mercoledì il piano salta, avrai fatti concreti per coinvolgere l'associate.",
+          "B è la peggiore: esporre un collega davanti al senior crea conflitto, non recupera le pagine e fa apparire te come un compagno di squadra poco affidabile.",
+          "C (3) è un'escalation legittima e orientata al risultato, ma salta il confronto diretto con il collega. A (2) forse salva la scadenza, ma mette a rischio la tua sezione, non affronta la causa e nasconde il problema all'associate."
+        ],
+        "shortcut": "Collega che non contribuisce: prima conversazione diretta e piano con checkpoint, poi escalation se serve.",
+        "trap": "A sembra spirito di squadra, ma coprire in silenzio un problema strutturale abbassa la qualità e rimanda il conflitto.",
+        "rule": "Diretto, privato, concreto; l'escalation arriva dopo, con i fatti."
+      },
+      "timeTarget": 75,
+      "tags": ["ib", "teammate-performance"]
+    },
+    {
+      "id": "sjt-13",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You are an analyst on a sell-side mandate. Your MD is travelling and the associate is off sick. The client's CEO calls you directly, says his board meets tomorrow, and asks you to email him 'the valuation range you are working on', although it has not been reviewed by the MD or passed the bank's internal sign-off. He insists he only needs 'a rough number' and says he trusts you. What should you do?",
+      "options": [
+        "Explain politely that you cannot share unreviewed figures, reach the MD straight away by phone or message, and tell the CEO when to expect an answer today.",
+        "Tell the CEO you will send the range once the MD has approved it, and email the MD asking him to look at the numbers when he can.",
+        "Tell the CEO that you are not able to help with this request and that he should contact the MD directly.",
+        "Email him the current draft range, clearly marked 'preliminary, subject to internal review', so that the board has something to work with."
+      ],
+      "ratings": [4, 3, 2, 1],
+      "best": 0,
+      "worst": 3,
+      "competencies": ["client-focus", "integrity", "communication"],
+      "explanation": {
+        "steps": [
+          "A è la migliore (client-focus, integrity): proteggi la banca da numeri non approvati senza lasciare il cliente senza risposta. Attivi subito il senior e dai al CEO una tempistica concreta prima del board.",
+          "D è la peggiore: un numero scritto, anche con il disclaimer 'preliminare', diventa un'ancora per il board e un rischio per la banca se poi cambia. La sign-off interna esiste proprio per questo.",
+          "B (3) rispetta il processo, ma una email generica a un MD in viaggio potrebbe non essere letta in tempo e il cliente resta senza tempistica. C (2) è corretta nel non condividere, ma scarica il cliente e trasmette poca professionalità."
+        ],
+        "shortcut": "Richiesta del cliente che non puoi soddisfare: no al contenuto, sì al servizio (escalation e tempistica).",
+        "trap": "D sembra un compromesso intelligente grazie al disclaimer, ma un numero inviato non si ritira più.",
+        "rule": "Mai condividere output non approvati; sempre dare al cliente un next step chiaro."
+      },
+      "timeTarget": 75,
+      "tags": ["ib", "client-request"]
+    },
+    {
+      "id": "sjt-14",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You are an analyst in a coverage team. At 11 pm, reviewing the presentation for tomorrow's 9 am client board meeting, which your VP sent to the client this afternoon, you notice that the net debt on the valuation summary page excludes a EUR 40m lease liability. Including it lowers the implied equity value per share by about 3%. You built the page and the VP checked it. She is offline now but usually reads messages early. What should you do?",
+      "options": [
+        "Say nothing, since the VP has already checked the page and a 3% difference is well within a typical valuation range anyway.",
+        "Wait until the morning and tell the VP in person before the meeting, so that you can walk her through the correction and its impact.",
+        "Message the VP tonight with a short explanation, the corrected page and the impact, so she can decide first thing how to handle it.",
+        "Email the corrected deck directly to the client tonight with a short note explaining the change, so that the board works from the right number."
+      ],
+      "ratings": [1, 3, 4, 2],
+      "best": 2,
+      "worst": 0,
+      "competencies": ["integrity", "ownership", "communication"],
+      "explanation": {
+        "steps": [
+          "C è la migliore (integrity, ownership): segnali l'errore subito, porti già la pagina corretta e l'impatto quantificato, e lasci alla VP la decisione su come comunicarlo al cliente prima del board.",
+          "A è la peggiore: sapere che un numero davanti al board è sbagliato e tacere è una mancanza di integrità. Il controllo della VP non toglie a te la responsabilità della pagina che hai costruito.",
+          "B (3) è trasparente ma lenta: la mattina la VP avrebbe pochissimo tempo per decidere. D (2) è onesta ma salta la gerarchia: la relazione con il cliente è della VP, e una correzione non concordata alle 23 può creare confusione."
+        ],
+        "shortcut": "Errore scoperto tardi: avvisa subito chi possiede la relazione, con correzione e impatto già pronti.",
+        "trap": "D sembra la più trasparente, ma decidere come comunicare con il cliente non spetta all'analyst.",
+        "rule": "Segnala presto, porta la soluzione, lascia la decisione a chi possiede la relazione."
+      },
+      "timeTarget": 75,
+      "tags": ["ib", "error-found-late", "own-mistake"]
+    },
+    {
+      "id": "sjt-15",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You are a graduate on a rotation in the equities middle office. A senior trader, well liked and influential on the floor, asks you to amend the execution time on a trade ticket booked this morning, saying he 'fat-fingered the time' and that the real execution was 20 minutes earlier. The change would move the trade to before a market-moving company announcement. He says it is 'just admin' and needs it done before the end-of-day reports run. What should you do?",
+      "options": [
+        "Ask him to confirm the correct execution time in an email so there is an audit trail, then make the change before the reports run.",
+        "Refuse to make the change and leave it there, since checking or investigating traders' bookings is not part of your role.",
+        "Make the change, since he executed the trade himself and is best placed to know exactly when it happened.",
+        "Tell him politely that you cannot amend execution times without evidence, and raise it with your supervisor under the trade amendment procedure."
+      ],
+      "ratings": [2, 3, 1, 4],
+      "best": 3,
+      "worst": 2,
+      "competencies": ["integrity", "communication", "resilience"],
+      "explanation": {
+        "steps": [
+          "D è la migliore (integrity): spostare un trade prima di un annuncio price-sensitive è un red flag di market abuse. Rifiuti con calma e segui la procedura di amendment con il supervisore, che può verificare l'orario su evidenze oggettive come i log di sistema.",
+          "C è la peggiore: modificare senza verifica ti rende parte di una possibile manipolazione dei record, e 'è solo amministrazione' non è una giustificazione.",
+          "B (3) evita il danno immediato, ma un tentativo del genere va segnalato: tacere lascia il rischio aperto per la banca. A (2) crea una traccia scritta, ma una email del trader non è un'evidenza indipendente e la modifica resta tua."
+        ],
+        "shortcut": "Richiesta di cambiare un record a ridosso di un evento price-sensitive: non eseguire, escala secondo procedura.",
+        "trap": "A sembra prudente perché 'c'è una mail', ma la conferma arriva proprio dalla persona che ha l'interesse.",
+        "rule": "Seniority e simpatia non cambiano le regole sui record di trading."
+      },
+      "timeTarget": 75,
+      "tags": ["markets", "compliance", "graduate-rotation"]
+    },
+    {
+      "id": "sjt-16",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You are a junior analyst in an equity asset management team. Your portfolio manager asked for a two-page note on a mid-cap chemicals stock by 2 pm for the investment committee. At 12:30 you realise the consensus estimates you used come from a data export dated six weeks ago, before the company cut its guidance. Updating the numbers and the valuation would take about two hours. The PM is at her desk and reachable. What should you do?",
+      "options": [
+        "Submit on time with a clear warning at the top that the estimates pre-date the guidance cut and that an updated version will follow.",
+        "Tell the PM now, offer an updated note at about 2:30 pm or an on-time version with a clear caveat, and start updating immediately.",
+        "Update the numbers and send the note about 30 minutes late without warning the PM, since accuracy matters more than timing for an investment committee.",
+        "Submit the note on time as it is, since the committee mainly focuses on the investment thesis rather than on the detailed estimates."
+      ],
+      "ratings": [3, 4, 2, 1],
+      "best": 1,
+      "worst": 3,
+      "competencies": ["ownership", "communication", "prioritisation"],
+      "explanation": {
+        "steps": [
+          "B è la migliore (ownership, communication): avvisi il PM con 90 minuti di anticipo, offri due opzioni concrete e inizi subito a correggere. Il PM sceglie sapendo cosa c'è in gioco.",
+          "D è la peggiore: presentare stime che sai essere superate dopo un taglio della guidance può portare il comitato a una decisione d'investimento sbagliata.",
+          "A (3) è trasparente e rispetta la scadenza, ma il comitato riceve comunque numeri superati e il compromesso l'hai scelto tu, non il PM. C (2) produce un lavoro corretto, ma un ritardo non comunicato può lasciare il comitato senza nota."
+        ],
+        "shortcut": "Qualità a rischio vicino a una scadenza: avvisa subito chi ha commissionato il lavoro e proponi opzioni.",
+        "trap": "C sembra virtuosa perché mette l'accuratezza prima di tutto, ma il vero errore è il silenzio sul ritardo.",
+        "rule": "Mai scegliere da solo tra qualità e scadenza: rendi il trade-off visibile."
+      },
+      "timeTarget": 75,
+      "tags": ["asset-management", "quality-vs-deadline"]
+    },
+    {
+      "id": "sjt-17",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You are a graduate analyst in market risk. This morning's report shows that the credit trading desk breached its daily VaR limit by 8%. When you call the desk to confirm the positions, the head trader says the breach is 'technical', caused by a hedge that will be booked by noon, and asks you to leave it out of the report you send to senior management so as not to 'create noise'. Your manager is in a meeting until 11 am. What should you do?",
+      "options": [
+        "Include the breach in the report without the desk's explanation, and tell the trader firmly that what goes into the report is not negotiable.",
+        "Leave the breach out of the report as requested, since the hedge will be booked by noon and the breach is only technical.",
+        "Report the breach as required, adding the trader's explanation as context, and brief your manager as soon as her meeting ends.",
+        "Hold the report until noon to see whether the hedge is booked and the breach disappears, then send it with whatever the position shows."
+      ],
+      "ratings": [3, 1, 4, 2],
+      "best": 2,
+      "worst": 1,
+      "competencies": ["integrity", "communication", "resilience"],
+      "explanation": {
+        "steps": [
+          "C è la migliore (integrity, communication): il breach si riporta sempre, ma includere la spiegazione del desk rende il report più utile per il management. Informare la manager appena è libera la mette in condizione di gestire eventuali pressioni.",
+          "B è la peggiore: omettere un breach su richiesta del desk che dovresti controllare è esattamente il fallimento che la funzione risk esiste per prevenire.",
+          "A (3) è corretta nella sostanza, ma senza contesto il report informa meno e il tono rischia di rovinare la relazione con il desk. D (2) sembra prudente, ma ritardare un report dovuto per vedere se il problema sparisce è comunque un modo di nasconderlo."
+        ],
+        "shortcut": "In risk e compliance i numeri si riportano come sono: il contesto si aggiunge, non sostituisce il dato.",
+        "trap": "D sembra un compromesso ragionevole, ma il ritardo selettivo è una forma di omissione.",
+        "rule": "Indipendenza del controllo: riporta tutto, con contesto, e coinvolgi il tuo manager."
+      },
+      "timeTarget": 75,
+      "tags": ["risk", "compliance"]
+    },
+    {
+      "id": "sjt-18",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "It is Monday morning. You are an analyst with three requests due on Wednesday evening: a comparable companies analysis for an MD's pitch (about 9 hours), a data room index for a live sell-side deal (about 7 hours) and industry research for a VP's internal training session (about 6 hours). Your recurring daily tasks need another 12 hours over the three days, and you can realistically work about 30 hours in that time. What should you do?",
+      "options": [
+        "Ask a fellow analyst from another team to prepare the data room index, without telling the deal team, so you can focus on the rest.",
+        "Work through the requests in the order they arrived, staying late each evening as needed to get as much done as possible.",
+        "Do the live deal and the pitch first, and quietly produce a lighter version of the training research without telling the VP who asked for it.",
+        "Map out the hours, tell the requesters today that you are about four hours short, and propose rescoping or delaying the training research."
+      ],
+      "ratings": [1, 2, 3, 4],
+      "best": 3,
+      "worst": 0,
+      "competencies": ["prioritisation", "communication"],
+      "explanation": {
+        "steps": [
+          "D è la migliore (prioritisation, communication): quantifichi il problema (9 + 7 + 6 + 12 = 34 ore di lavoro contro 30 disponibili, gap di 4 ore), lo segnali subito e proponi di sacrificare l'attività meno critica, cioè la ricerca per un training interno.",
+          "A è la peggiore: passare un deliverable di un deal live a chi non è nel team, senza informare nessuno, crea un rischio di riservatezza e di qualità di cui il deal team non sa nulla.",
+          "C (3) ha la priorità giusta (deal live e pitch prima), ma ridurre in silenzio il lavoro per il VP gli toglie la possibilità di decidere o trovare un'alternativa. B (2) non prioritizza affatto: l'ordine di arrivo non riflette l'importanza e il gap di 4 ore resta."
+        ],
+        "shortcut": "Carico superiore alla capacità: fai i conti, comunica subito il gap, proponi cosa tagliare.",
+        "trap": "C sembra pragmatica, ma un taglio non comunicato al richiedente è una sorpresa negativa garantita.",
+        "rule": "Prioritizza per impatto e urgenza, e negozia i tagli apertamente."
+      },
+      "timeTarget": 80,
+      "tags": ["ib", "workload", "prioritisation"]
+    },
+    {
+      "id": "sjt-19",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You are on the second of four rotations in a bank's graduate programme, currently in the trade finance operations team. You had hoped for a front-office placement and find the work repetitive. Your rotation manager is supportive but busy, and your end-of-rotation review, which counts towards your final placement, is in three months. A friend in the M&A team tells you there may be an opening there for your next rotation. What should you do?",
+      "options": [
+        "Commit fully to the rotation, ask your manager for a stretching project, and build relationships with the M&A team in your own time.",
+        "Ask your rotation manager to move you to M&A straight away, explaining honestly that operations is not where you see your long-term career.",
+        "Keep doing your work well, but say nothing about your interest in M&A until the end-of-rotation review, so as not to seem distracted.",
+        "Do the minimum required in your current team and put most of your energy into networking with the M&A team for your next rotation."
+      ],
+      "ratings": [4, 2, 3, 1],
+      "best": 0,
+      "worst": 3,
+      "competencies": ["resilience", "ownership"],
+      "explanation": {
+        "steps": [
+          "A è la migliore (resilience, ownership): dai il massimo dove sei, perché la review conta e la trade finance insegna molto sui flussi reali delle aziende. In parallelo costruisci il percorso verso M&A senza togliere energie al lavoro.",
+          "D è la peggiore: il disimpegno si vede subito, peggiora la review che decide il tuo placement finale, e la reputazione nel programma circola tra i team, M&A compreso.",
+          "C (3) mantiene un buon livello di lavoro, ma non far sapere a nessuno cosa ti interessa riduce le tue possibilità. B (2) è onesta, ma chiedere di andare via a metà rotazione trasmette poca resilienza e raramente è possibile."
+        ],
+        "shortcut": "Rotazione che non ti piace: eccelli dove sei e costruisci il passo successivo in parallelo.",
+        "trap": "B sembra proattiva e trasparente, ma nei programmi graduate cambiare a metà rotazione è letto come mancanza di commitment.",
+        "rule": "La reputazione si costruisce in ogni rotazione, non solo in quella che preferisci."
+      },
+      "timeTarget": 75,
+      "tags": ["operations", "graduate-rotation"]
+    },
+    {
+      "id": "sjt-20",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You work in the equity capital markets team. In a crowded lift in your office building, which is shared with other companies, you hear two colleagues from another team of your bank openly discussing the timing of a client's upcoming share placement, mentioning the client's name. The placement has not been announced. You know the two colleagues only by sight, and several people in the lift do not work for the bank. What should you do?",
+      "options": [
+        "Say nothing in the lift, then find a discreet moment afterwards to remind them that the building is shared with other companies.",
+        "Discreetly interrupt them, for example by suggesting they pick it up upstairs, then speak to them afterwards and tell compliance what happened.",
+        "Say nothing, since they are not in your team, you barely know them and what they discuss is not your responsibility.",
+        "Tell them clearly and loudly enough to stop them at once that they should not be discussing confidential client matters in a shared lift."
+      ],
+      "ratings": [3, 4, 1, 2],
+      "best": 1,
+      "worst": 2,
+      "competencies": ["integrity", "communication"],
+      "explanation": {
+        "steps": [
+          "B è la migliore (integrity): fermi la fuga di informazioni mentre avviene, senza attirare attenzione, e poi coinvolgi compliance, perché nome del cliente e tempistica di un collocamento non annunciato potrebbero essere già usciti.",
+          "C è la peggiore: si tratta di informazioni privilegiate su un'operazione non annunciata, ascoltate da estranei. La riservatezza è responsabilità di tutti in banca, non solo del deal team.",
+          "A (3) ha il tono giusto, ma lascia proseguire la conversazione e non valuta se l'accaduto vada segnalato. D (2) ferma la conversazione ma, dicendo ad alta voce che è 'confidenziale', conferma agli estranei che l'informazione è sensibile e mette in imbarazzo i colleghi."
+        ],
+        "shortcut": "Fuga di informazioni in corso: fermala subito e con discrezione, poi valuta la segnalazione.",
+        "trap": "C sembra rispettosa dei confini tra team, ma con informazioni privilegiate 'non è affar mio' non esiste.",
+        "rule": "La riservatezza si difende subito, con discrezione, e si segnala quando c'è un rischio reale."
+      },
+      "timeTarget": 75,
+      "tags": ["markets", "confidentiality", "insider-info"]
+    },
+    {
+      "id": "sjt-21",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You are an analyst in a leveraged finance team. Rushing before a call, you email a draft term sheet containing the client's confidential financial projections to the wrong external address: autocomplete picked a contact at another company with a similar name. You notice two minutes later and the email has not bounced. Your VP is on the call you are about to join, which will last an hour. What should you do?",
+      "options": [
+        "Email the wrong recipient asking them to delete the message, and tell your VP after the call.",
+        "Try to recall the email and, if the recall appears to work, say nothing to avoid embarrassment.",
+        "Join the call and report the incident to your VP and compliance at the end of the day, once your other tasks are done.",
+        "Attempt a recall, message your VP immediately, and report the incident to compliance or the data protection team following the bank's procedure."
+      ],
+      "ratings": [3, 1, 2, 4],
+      "best": 3,
+      "worst": 1,
+      "competencies": ["integrity", "ownership", "communication"],
+      "explanation": {
+        "steps": [
+          "D è la migliore (integrity, ownership): ammetti subito l'errore, provi a contenerlo e attivi la procedura di incident. Con dati riservati di un cliente i minuti contano, e la banca può avere obblighi di notifica con scadenze precise.",
+          "B è la peggiore: un recall che 'sembra' riuscito non è una garanzia, e nascondere una possibile violazione dei dati del cliente trasforma un errore in un problema di integrità.",
+          "A (3) cerca di limitare il danno e informa la VP, ma salta la procedura formale e gestisci da solo un contatto esterno delicato. C (2) è onesta, ma un ritardo di ore riduce la possibilità di contenere la diffusione."
+        ],
+        "shortcut": "Errore con dati riservati: contieni, informa subito, segui la procedura di incident.",
+        "trap": "A sembra responsabile, ma gestire da solo il rapporto con un terzo esterno non sostituisce la segnalazione formale.",
+        "rule": "Gli errori si dichiarano subito: nasconderli è sempre peggio dell'errore."
+      },
+      "timeTarget": 75,
+      "tags": ["ib", "own-mistake", "confidentiality"]
+    },
+    {
+      "id": "sjt-22",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You work in a hybrid credit research team and share coverage of European telecoms with a peer who joined three months ago. Over the past few weeks she has stopped turning her camera on, replies to messages hours later and has missed two internal deadlines, which you covered. On your last call she sounded flat and said she was 'just tired'. Your manager has not said anything about it. What should you do?",
+      "options": [
+        "Arrange an informal one-to-one to ask how she is doing, listen without judging, and point her to the support the firm offers.",
+        "Tell your manager that you are worried about her, sharing the two missed deadlines you have covered and the other changes you have noticed.",
+        "Post in the team chat asking whether everyone is okay, since some people in the team seem less engaged lately.",
+        "Respect her privacy and keep covering her deadlines without saying anything, since she has told you she is just tired."
+      ],
+      "ratings": [4, 3, 1, 2],
+      "best": 0,
+      "worst": 2,
+      "competencies": ["teamwork", "communication"],
+      "explanation": {
+        "steps": [
+          "A è la migliore (teamwork, communication): un check-in privato e informale è il modo meno invasivo per capire se c'è un problema e indirizzarla verso il supporto giusto. Non devi risolvere tu, ma puoi essere il primo a notarlo.",
+          "C è la peggiore: un messaggio generico nel canale del team è passivo-aggressivo, mette in imbarazzo la collega e non apre alcun dialogo reale.",
+          "B (3) è legittima se la preoccupazione persiste, perché il benessere del team è responsabilità del manager, ma è meglio parlarle prima direttamente. D (2) è gentile nell'immediato, ma coprire le scadenze in silenzio non affronta la causa e non è sostenibile."
+        ],
+        "shortcut": "Collega in difficoltà: check-in privato, ascolto, rimando al supporto disponibile.",
+        "trap": "D sembra rispettosa della privacy, ma il silenzio lascia sola la persona e nasconde il problema al team.",
+        "rule": "Sul benessere altrui: nota, chiedi in privato, indirizza; non giudicare e non ignorare."
+      },
+      "timeTarget": 75,
+      "tags": ["markets", "wellbeing", "remote-teamwork"]
+    },
+    {
+      "id": "sjt-23",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You are an analyst in a corporate banking team. The CFO of a mid-sized client emails you directly, copying no one, asking you to send a revised term sheet for a EUR 150m revolving credit facility with the margin reduced by 25 basis points, 'as agreed verbally with your relationship manager last week'. You have no record of this agreement, and the relationship manager is on a flight to New York for the next eight hours. The CFO wants the document today. What should you do?",
+      "options": [
+        "Prepare the revised term sheet and send it to the relationship manager for approval when he lands, without replying to the CFO for now, so you do not commit to anything.",
+        "Reply that you are unable to help with the term sheet and that he should wait for the relationship manager to land in New York.",
+        "Reply to the CFO that you need to confirm the terms internally, tell him when to expect an answer, then contact a senior colleague on the deal and the relationship manager.",
+        "Send the revised term sheet as requested, since the CFO says the change was agreed with the relationship manager and wants it today."
+      ],
+      "ratings": [3, 2, 4, 1],
+      "best": 2,
+      "worst": 3,
+      "competencies": ["client-focus", "integrity", "communication"],
+      "explanation": {
+        "steps": [
+          "C è la migliore (client-focus, integrity): rispondi subito al cliente con una tempistica concreta, ma non modifichi condizioni economiche senza conferma. Coinvolgere anche un senior presente evita di bloccare tutto per otto ore.",
+          "D è la peggiore: 25 bps su EUR 150m valgono fino a EUR 375k l'anno se la linea è interamente utilizzata, e non hai alcuna prova dell'accordo. Inviare termini modificati sulla sola parola del cliente espone la banca.",
+          "A (3) è proattiva e rispetta l'autorizzazione, ma lascia il CFO senza risposta per ore. B (2) è corretta nella sostanza ma brusca e passiva: il cliente non sa quando riceverà una risposta."
+        ],
+        "shortcut": "Richiesta su termini economici non verificati: rispondi subito al cliente, conferma internamente prima di cambiare qualsiasi cosa.",
+        "trap": "A sembra efficiente perché il documento è pronto, ma il silenzio verso il cliente costa in termini di relazione.",
+        "rule": "Mai cambiare termini economici senza conferma interna; mai lasciare un cliente senza risposta."
+      },
+      "timeTarget": 75,
+      "tags": ["corporate-banking", "client-request"]
+    },
+    {
+      "id": "sjt-24",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You are an analyst in a financial sponsors coverage team. Your associate built the LBO template that the whole team uses. While working on your third model with it, you notice that taxes are calculated on EBIT instead of pre-tax profit, so interest is never tax-deductible and cash available for debt repayment is understated in every model built on it. Two live models currently use the template. The associate is proud of it and can react badly to criticism. What should you do?",
+      "options": [
+        "Fix the formula in your own model only and leave the template as it is, to avoid an awkward conversation with the associate.",
+        "Raise it privately with the associate, show the formula and its impact on a live model, and offer to fix the template and both live models.",
+        "Raise the issue at next week's team meeting so that everyone using the template hears about it at the same time and can update their models.",
+        "Email the VP about the issue straight away, since it affects two live deals and the associate is likely to react defensively if you raise it with him."
+      ],
+      "ratings": [1, 4, 2, 3],
+      "best": 1,
+      "worst": 0,
+      "competencies": ["communication", "ownership", "teamwork"],
+      "explanation": {
+        "steps": [
+          "B è la migliore (communication, ownership): affronti il tema prima con chi ha costruito il template, in privato e con evidenze concrete, e offri subito la soluzione. Anche un associate permaloso accetta più facilmente un problema presentato con la correzione già pronta.",
+          "A è la peggiore: sai che due modelli live sottostimano il cash disponibile per ripagare il debito e scegli di tacere per evitare imbarazzo. È un rischio per i clienti e per la banca.",
+          "D (3) garantisce che il problema venga risolto, ma scavalcare l'associate senza parlargli danneggia la fiducia nel team. C (2) è neutra nei toni, ma aspettare la riunione settimanale lascia i modelli live sbagliati più a lungo ed espone l'associate davanti a tutti."
+        ],
+        "shortcut": "Errore nel lavoro di un senior: in privato, con evidenze e soluzione, e in fretta se tocca deal live.",
+        "trap": "D sembra prudente perché coinvolge il VP, ma saltare il diretto interessato è una scorciatoia che costa fiducia.",
+        "rule": "Feedback verso l'alto: privato, fattuale, con una soluzione in mano."
+      },
+      "timeTarget": 75,
+      "tags": ["ib", "upward-feedback"]
+    },
+    {
+      "id": "sjt-25",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You are presenting your individual case study to two assessors at a bank's assessment centre. Halfway through, while explaining your recommendation that the client should fund an expansion with a new bank loan, you realise you misread the interest coverage ratio in the pack: it is 1.8x, not 3.8x. At 1.8x, taking on more debt looks considerably riskier. You have about five minutes left, and both assessors have the full pack in front of them. What should you do?",
+      "options": [
+        "Finish the presentation as prepared to keep your structure and timing, and mention the error briefly at the end if there is time.",
+        "Acknowledge the error and tell the assessors that you would need more time with the numbers before you could revisit your recommendation.",
+        "Continue with your original recommendation, since changing your view in the middle of the presentation would make you look indecisive.",
+        "Acknowledge the error openly, explain how the lower coverage changes the risk, and adjust your recommendation, for example to a smaller loan."
+      ],
+      "ratings": [2, 3, 1, 4],
+      "best": 3,
+      "worst": 2,
+      "competencies": ["integrity", "resilience", "communication"],
+      "explanation": {
+        "steps": [
+          "D è la migliore (integrity, resilience): correggere apertamente e adattare la raccomandazione in tempo reale dimostra ciò che gli assessor cercano, cioè giudizio, onestà e lucidità sotto pressione.",
+          "C è la peggiore: difendere una raccomandazione basata su un numero che sai sbagliato è un problema di integrità, e gli assessor hanno quasi certamente il dato corretto davanti.",
+          "B (3) è onesta, ma si ferma a metà: in cinque minuti puoi almeno dire in che direzione cambia la raccomandazione. A (2) rimanda la correzione e lascia gli assessor ad ascoltare un'argomentazione che sai essere debole."
+        ],
+        "shortcut": "Errore scoperto mentre presenti: ammetti, spiega l'impatto, aggiorna la conclusione.",
+        "trap": "A sembra un compromesso elegante, ma ogni minuto speso su un'analisi sbagliata pesa sulla valutazione.",
+        "rule": "Correggere un errore in pubblico vale più di una presentazione perfetta solo in apparenza."
+      },
+      "timeTarget": 75,
+      "tags": ["assessment-day", "own-mistake"]
+    },
+    {
+      "id": "sjt-26",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You are a graduate in a fund administration operations team. Every morning the team spends about two hours manually reconciling cash balances across 40 funds in spreadsheets. In your own time you have built a simple macro that cuts this to 20 minutes on test data. When you mention it, your manager says the current process 'has worked for years' and that she does not want to risk errors in the reconciliations. What should you do?",
+      "options": [
+        "Propose a few weeks' parallel run, checking the macro's results against the manual process, and offer to have it documented and reviewed by controls.",
+        "Start using the macro anyway for your share of the reconciliation, since it is faster and you have already tested it on sample data.",
+        "Accept the decision for now, keep improving the macro in your own time and raise the idea again at your next one-to-one with more evidence.",
+        "Ask a senior colleague from another team, who already uses similar tools, to persuade your manager that the macro is a good idea."
+      ],
+      "ratings": [4, 1, 3, 2],
+      "best": 0,
+      "worst": 1,
+      "competencies": ["ownership", "communication"],
+      "explanation": {
+        "steps": [
+          "A è la migliore (ownership, communication): rispondi alla preoccupazione specifica della manager, il rischio di errori, con un parallel run che lo misura, e coinvolgi i controlli. La decisione si basa così su dati, non su opinioni.",
+          "B è la peggiore: usare uno strumento non validato in una riconciliazione, contro la decisione della manager, crea proprio il rischio operativo che lei temeva e mina la fiducia.",
+          "C (3) rispetta la manager e tiene viva l'idea, ma rinvia senza affrontare la sua obiezione. D (2) cerca di convincerla aggirandola: anche se l'idea è buona, la manager si sentirà scavalcata."
+        ],
+        "shortcut": "Idea bocciata per il rischio: proponi un modo controllato e a basso rischio per provarla e misurarla.",
+        "trap": "C sembra paziente e rispettosa, ma non dà alla manager nulla di nuovo su cui cambiare idea.",
+        "rule": "Per far passare un cambiamento, rispondi all'obiezione reale con un test controllato."
+      },
+      "timeTarget": 75,
+      "tags": ["operations", "initiative"]
+    },
+    {
+      "id": "sjt-27",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You are an analyst travelling by train to a client meeting with your associate, who is sitting in another carriage. You need to finish updating the merger model before the meeting in 90 minutes. The train is crowded, the passenger next to you can easily see your screen, and you do not have a privacy filter. The model shows both companies' names, and the deal has not been announced. What should you do?",
+      "options": [
+        "Carry on working normally, since the passenger is unlikely to understand a financial model and you need every minute before the meeting.",
+        "Keep working on the model as planned, but hide the company names and rename the tabs while you are on the train so nothing identifies the deal.",
+        "Move to a seat where your screen cannot be seen or, failing that, work only on non-sensitive parts and agree a plan with your associate.",
+        "Stop working on the model completely and tell your associate that you will finish the update at the client site, just before the meeting starts."
+      ],
+      "ratings": [1, 2, 4, 3],
+      "best": 2,
+      "worst": 0,
+      "competencies": ["integrity", "prioritisation", "communication"],
+      "explanation": {
+        "steps": [
+          "C è la migliore (integrity, prioritisation): prima proteggi la riservatezza cercando un posto sicuro, poi riorganizzi il lavoro su parti non sensibili e concordi con l'associate un piano realistico per la riunione.",
+          "A è la peggiore: un deal non annunciato con i nomi delle società su uno schermo visibile è una potenziale fuga di informazioni privilegiate, e non sai chi sia il passeggero accanto.",
+          "D (3) protegge pienamente il deal e informa l'associate, ma rinuncia troppo presto a lavorare su parti non sensibili. B (2) riduce il rischio solo in parte: numeri, settore e struttura possono bastare a identificare le società."
+        ],
+        "shortcut": "In pubblico la riservatezza vince sulla comodità: cambia contesto o cambia attività, e avvisa chi dipende da te.",
+        "trap": "B sembra una soluzione tecnica furba, ma nascondere i nomi non rende anonimo un modello di M&A.",
+        "rule": "Mai lavorare su materiale riservato dove altri possono vederlo o sentirlo."
+      },
+      "timeTarget": 75,
+      "tags": ["ib", "confidentiality"]
+    },
+    {
+      "id": "sjt-28",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You are an analyst in a debt capital markets team. In a team meeting, a junior colleague, Elena, suggests pricing a client's new bond against a different peer group. Nobody reacts. Ten minutes later, a male associate makes almost the same suggestion and the director praises it as 'a great insight'. You have seen this happen to Elena before, and once again she says nothing. The meeting is still going on. What should you do?",
+      "options": [
+        "Say nothing, since the idea is being used and the outcome for the client is the same.",
+        "In the meeting, say something like 'that builds on Elena's point earlier', so that her contribution is acknowledged.",
+        "After the meeting, tell Elena you noticed what happened and ask whether she would like support in raising it.",
+        "After the meeting, tell the associate in front of other colleagues that he took credit for Elena's idea."
+      ],
+      "ratings": [2, 4, 3, 1],
+      "best": 1,
+      "worst": 3,
+      "competencies": ["teamwork", "integrity", "communication"],
+      "explanation": {
+        "steps": [
+          "B è la migliore (teamwork, integrity): un riconoscimento neutro e immediato corregge l'attribuzione senza accusare nessuno ed è quasi impossibile da contestare. Il director capisce da dove viene l'idea.",
+          "D è la peggiore: accusare l'associate davanti ad altri crea un conflitto aperto, mette Elena al centro di una scena che non ha chiesto e difficilmente cambia i comportamenti.",
+          "C (3) è rispettosa e utile, soprattutto perché il fenomeno si ripete, ma arriva quando il merito è già stato attribuito. A (2) ignora un pattern che danneggia la collega e il clima del team."
+        ],
+        "shortcut": "Idea non attribuita: ristabilisci il merito nel momento stesso, in modo neutro.",
+        "trap": "D sembra coraggiosa e giusta, ma il confronto pubblico sposta l'attenzione sul conflitto invece che sull'idea.",
+        "rule": "L'inclusione si pratica in tempo reale, con gesti semplici e non conflittuali."
+      },
+      "timeTarget": 75,
+      "tags": ["markets", "diversity-inclusion"]
+    },
+    {
+      "id": "sjt-29",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You are a junior client service analyst at an asset manager. A pension fund client calls, clearly angry: their multi-asset portfolio underperformed its benchmark by 3.2 percentage points last quarter, and he says he learned this from the quarterly report rather than from the firm. He demands to speak to the portfolio manager immediately and mentions reviewing the mandate. The portfolio manager is presenting at an investor conference until 4 pm. What should you do?",
+      "options": [
+        "Listen and acknowledge his frustration, then book a call with the portfolio manager after 4 pm today, confirm it by email and brief the PM beforehand.",
+        "Message the portfolio manager at the conference and ask him to step out of his session and call the client back straight away, as the mandate is at risk.",
+        "Explain that markets were difficult for everyone last quarter and reassure him that the underperformance is likely to reverse over the coming months.",
+        "Tell him the portfolio manager is at a conference today and will call him back at some point later this week."
+      ],
+      "ratings": [4, 3, 1, 2],
+      "best": 0,
+      "worst": 2,
+      "competencies": ["client-focus", "resilience", "communication"],
+      "explanation": {
+        "steps": [
+          "A è la migliore (client-focus, resilience): prima ascolti e riconosci il problema, poi prendi un impegno concreto (call con il PM oggi) e lo confermi per iscritto. Il briefing prepara il PM a una conversazione su cui si gioca il mandato.",
+          "C è la peggiore: minimizzare con 'è stato difficile per tutti' suona difensivo, e prevedere un recupero della performance è una promessa che non puoi fare.",
+          "B (3) mostra urgenza, ma far uscire il PM da una presentazione senza contesto porta a una chiamata improvvisata e non preparata. D (2) è corretta nei fatti ma vaga: per un cliente che parla di rivedere il mandato, 'in settimana' è troppo poco."
+        ],
+        "shortcut": "Cliente arrabbiato: ascolta, riconosci, impegno concreto con orario, conferma scritta.",
+        "trap": "B sembra la più orientata al cliente, ma la reattività senza preparazione può peggiorare la conversazione.",
+        "rule": "Con un cliente insoddisfatto, un impegno preciso vale più di una risposta immediata."
+      },
+      "timeTarget": 75,
+      "tags": ["asset-management", "client-request"]
+    },
+    {
+      "id": "sjt-30",
+      "skill": "sjt",
+      "level": 2,
+      "type": "sjt",
+      "stem": "You are a second-year analyst supervising a summer intern on a sell-side deal. You asked him to build a trading comparables table. He delivered it on time, but several multiples mix calendar-year and fiscal-year figures, and two of the peers are not really comparable. The intern is enthusiastic and has received little feedback so far. The associate needs the table by tomorrow afternoon, and you have a couple of hours free this evening. What should you do?",
+      "options": [
+        "Fix the table yourself tonight using your free hours to make sure it is right, and thank the intern for delivering his work on time.",
+        "Tell the associate that the intern's work was not good enough and ask whether a different intern could be assigned to the deal instead.",
+        "Go through the issues with the intern in person, explain why they matter, and ask him to fix them by tomorrow morning so you can review the table.",
+        "Send the intern a detailed list of the errors by email this evening and ask him to correct them all before the associate needs the table tomorrow afternoon."
+      ],
+      "ratings": [2, 1, 4, 3],
+      "best": 2,
+      "worst": 1,
+      "competencies": ["communication", "teamwork", "ownership"],
+      "explanation": {
+        "steps": [
+          "C è la migliore (communication, teamwork): un feedback specifico e spiegato insegna allo stagista perché i multipli vanno calcolati su periodi omogenei e come si sceglie un peer. La scadenza lascia tempo sia per correggere sia per la tua revisione.",
+          "B è la peggiore: scarichi il problema sull'associate invece di esercitare la supervisione che ti è stata affidata, e lo stagista non impara nulla.",
+          "D (3) segnala gli errori ma senza spiegarli: lo stagista potrebbe correggerli senza capirli e ripeterli. A (2) garantisce il risultato, ma lo stagista non sa di aver sbagliato e tu ti carichi di lavoro che non fa crescere nessuno."
+        ],
+        "shortcut": "Errori di un junior che supervisioni: feedback specifico, spiegato, con tempo per correggere.",
+        "trap": "A sembra la più sicura per la qualità, ma rinunciare al feedback è un fallimento come supervisore.",
+        "rule": "Il feedback utile è specifico, tempestivo e spiega il perché."
+      },
+      "timeTarget": 75,
+      "tags": ["ib", "feedback", "people-management"]
+    },
+    {
+      "id": "sjt-31",
+      "skill": "sjt",
+      "level": 3,
+      "type": "sjt",
+      "stem": "You are an analyst preparing valuation pages for a sell-side pitch. Your MD asks you to remove one listed peer from the trading comparables because its 6.0x EV/EBITDA multiple 'drags the range down', lowering the indicative valuation you can show the client. The peer operates in the same niche with similar size and margins, but it recently lost a large customer and faces a pending lawsuit. The other six peers trade between 8.5x and 10.5x. What should you do?",
+      "options": [
+        "Tell the MD you are uncomfortable removing a peer that is so similar in size and margins, and ask him to reconsider his request before the pitch.",
+        "Suggest excluding the peer for its company-specific issues, disclosed on the page with the reason, and show the MD the range with and without it.",
+        "Remove the peer as instructed without further comment, since the MD is responsible for the valuation and knows the client best.",
+        "Keep the peer in the table without telling the MD, since you believe including all the comparable companies is the more accurate approach."
+      ],
+      "ratings": [3, 4, 2, 1],
+      "best": 1,
+      "worst": 3,
+      "competencies": ["integrity", "communication", "client-focus"],
+      "explanation": {
+        "steps": [
+          "B è la migliore (integrity, communication): esiste un motivo legittimo per escludere il peer (perdita di un grande cliente, contenzioso), ma solo se dichiarato. Mostrare il range con e senza dà al MD ciò che chiede e mantiene la pagina difendibile davanti al cliente.",
+          "D è la peggiore: ignorare in silenzio l'istruzione di un MD su una scelta di giudizio crea una sorpresa, probabilmente davanti al cliente, e brucia la fiducia senza spiegare nulla.",
+          "A (3) solleva il tema correttamente, ma trascura che l'esclusione ha una base ragionevole e non propone una soluzione. C (2) rispetta la gerarchia, ma una rimozione non dichiarata rende la selezione dei comparabili meno trasparente e più facile da contestare."
+        ],
+        "shortcut": "Scelta di giudizio discutibile ma difendibile: rendila trasparente e mostra le alternative.",
+        "trap": "Nei livelli difficili 'integrità' non significa opporsi a tutto: escludere un outlier con problemi specifici è prassi, nasconderlo no.",
+        "rule": "Le scelte di valutazione si possono discutere; quelle non dichiarate no."
+      },
+      "timeTarget": 85,
+      "tags": ["ib", "compliance-grey", "valuation"]
+    },
+    {
+      "id": "sjt-32",
+      "skill": "sjt",
+      "level": 3,
+      "type": "sjt",
+      "stem": "You are a graduate in a bank's equity research team. You receive an email clearly intended for someone in the M&A team with a similar name. The preview shows it concerns a heavily discounted rights issue that a listed retailer is preparing with the bank, not yet announced. You hold a small number of shares in that retailer in a personal account, bought last year and declared to compliance, and you were already planning to sell them this week. What should you do?",
+      "options": [
+        "Sell the shares as planned this week, since you had decided to sell them before you received the email and they are already declared.",
+        "Forward the email to the intended recipient in the M&A team so that it reaches the right person, then delete it from your inbox.",
+        "Delete the email without reading further, tell the sender it was misdirected, and postpone the sale of your shares until the rights issue is public.",
+        "Stop reading, tell compliance at once that you received the email and hold shares in the company, and do not trade until they clear you."
+      ],
+      "ratings": [1, 2, 3, 4],
+      "best": 3,
+      "worst": 0,
+      "competencies": ["integrity"],
+      "explanation": {
+        "steps": [
+          "D è la migliore (integrity): ora possiedi un'informazione privilegiata e lavori sul lato 'public' del chinese wall. Compliance deve saperlo subito, sia per il tuo conto personale sia per eventuali restrizioni sul lavoro di research sul titolo.",
+          "A è la peggiore: vendere ora, prima di una notizia negativa non pubblica, significa evitare una perdita grazie a un'informazione privilegiata. È insider dealing anche se l'intenzione era precedente: un'idea di vendita non è un ordine già impartito.",
+          "C (3) evita il trade e limita la diffusione, ma senza compliance la banca non sa che il wall è stato superato. B (2) fa arrivare l'email alla persona giusta, ma diffonde ancora l'informazione e non affronta né la segnalazione né il conflitto con le tue azioni."
+        ],
+        "shortcut": "Informazione privilegiata ricevuta per errore: smetti di leggere, non operare, chiama compliance.",
+        "trap": "A sembra difendibile perché 'avevo già deciso', ma per le regole sul market abuse conta cosa sai nel momento in cui operi.",
+        "rule": "Con informazioni privilegiate: stop lettura, stop trading, segnalazione a compliance."
+      },
+      "timeTarget": 85,
+      "tags": ["markets", "insider-info", "compliance"]
+    },
+    {
+      "id": "sjt-33",
+      "skill": "sjt",
+      "level": 3,
+      "type": "sjt",
+      "stem": "You are an analyst attending a client board meeting with your VP in 30 minutes. She is driving to the client's offices and not answering calls. Doing a final check of the printed packs you are bringing, you notice that the share count on the valuation page omits the shares issued in last month's placing, so equity value per share is overstated by about 6%. Your MD is on the deal team but not attending, and you can reach him. What should you do?",
+      "options": [
+        "Call the MD, explain the issue and its impact and, with his agreement, prepare a corrected page, sending the VP a short summary to read on arrival.",
+        "Reprint the page with the corrected figure and swap it into the packs without telling anyone, since the correction is clearly right.",
+        "Leave the packs as they are and tell the VP after the meeting, since there is no time left to fix the page properly.",
+        "Keep trying to call the VP while she drives and tell her about the error as soon as she arrives, so that she can decide how to handle it."
+      ],
+      "ratings": [4, 2, 1, 3],
+      "best": 0,
+      "worst": 2,
+      "competencies": ["ownership", "communication", "client-focus"],
+      "explanation": {
+        "steps": [
+          "A è la migliore (ownership, communication): coinvolgi l'unico senior raggiungibile, porti l'impatto quantificato e una soluzione pronta, e informi la VP per iscritto così può leggerlo appena arriva. La decisione resta a un senior, ma non si perde tempo.",
+          "C è la peggiore: presentare consapevolmente a un board un valore per azione sovrastimato del 6% è un rischio reputazionale serio e un problema di integrità.",
+          "D (3) è trasparente e rispetta chi presenta, ma lascia la VP senza tempo per decidere e senza una correzione pronta. B (2) porta al board il numero giusto, ma una modifica non concordata sorprende la VP, che potrebbe trovarsi a commentare numeri diversi da quelli che conosce."
+        ],
+        "shortcut": "Errore critico, responsabile irraggiungibile, poco tempo: senior alternativo, correzione pronta, traccia scritta.",
+        "trap": "B sembra il massimo dell'ownership, ma un cambiamento non concordato in un materiale per un board crea un nuovo rischio.",
+        "rule": "Quando il tempo stringe, accelera l'escalation: non saltarla."
+      },
+      "timeTarget": 85,
+      "tags": ["ib", "error-found-late", "escalation"]
+    },
+    {
+      "id": "sjt-34",
+      "skill": "sjt",
+      "level": 3,
+      "type": "sjt",
+      "stem": "You are a graduate in a corporate banking team. A fellow graduate, who is also a close friend, mentions that he regularly forwards client spreadsheets to his personal email so he can work on his own laptop at weekends, because remote access is slow. You know the bank's policy forbids sending client data to personal accounts. He says 'everyone does it' and asks you not to make a big deal of it. What should you do?",
+      "options": [
+        "Ask him how he sets it up, since sending files home would also help you get through your own weekend work more easily.",
+        "Report the situation to compliance straight away without discussing it with him any further, since client data is involved and the bank may need to act on it quickly.",
+        "Tell him that it is risky and could get him into trouble, but leave it to him to decide what to do since he is a friend.",
+        "Tell him it breaches policy, urge him to delete the files and self-report to IT security today, and say you will report it if he does not."
+      ],
+      "ratings": [1, 3, 2, 4],
+      "best": 3,
+      "worst": 0,
+      "competencies": ["integrity", "teamwork", "communication"],
+      "explanation": {
+        "steps": [
+          "D è la migliore (integrity, teamwork): sei chiaro sul rischio, dai all'amico la possibilità di rimediare e segnalarsi da solo, che è la strada meno dannosa per lui, ma fissi un limite preciso: se oggi non lo fa, lo segnali tu.",
+          "A è la peggiore: invece di fermare la violazione la replichi, aumenti il rischio per i dati dei clienti e ne diventi corresponsabile.",
+          "B (3) protegge banca e clienti, ma rinuncia a far correggere il comportamento al collega in modo più costruttivo e altrettanto rapido. C (2) nomina il rischio, ma lasciare tutto alla sua discrezione significa che i dati restano quasi certamente sul suo laptop."
+        ],
+        "shortcut": "Collega che viola una policy di sicurezza: confronto diretto, invito ad autosegnalarsi con una scadenza, escalation se non agisce.",
+        "trap": "B sembra la più integra, ma nei livelli difficili la risposta migliore unisce integrità e collaborazione invece di contrapporle.",
+        "rule": "Amicizia e lealtà non arrivano a coprire rischi per i dati dei clienti."
+      },
+      "timeTarget": 85,
+      "tags": ["corporate-banking", "confidentiality", "teammate-performance"]
+    },
+    {
+      "id": "sjt-35",
+      "skill": "sjt",
+      "level": 3,
+      "type": "sjt",
+      "stem": "You are an analyst in a coverage team. A client whose bond issue your bank is currently arranging invites you and your associate to the final of a major tennis tournament in its corporate box, with dinner included. Tickets like these are worth several hundred euros each. Your associate says the relationship matters and suggests you both go. Bank policy allows client entertainment within limits if pre-approved, and requires extra scrutiny during live transactions. What should you do?",
+      "options": [
+        "Accept and attend with your associate, then record the event in the gifts and entertainment register the following week.",
+        "Decline politely for yourself, telling the client that you cannot attend hospitality events while a transaction with the bank is live.",
+        "Suggest to your associate that you both seek pre-approval from compliance before replying, and accept only if it is approved.",
+        "Accept and attend without recording it anywhere, since a relationship event with a client is not the same as receiving a gift."
+      ],
+      "ratings": [2, 3, 4, 1],
+      "best": 2,
+      "worst": 3,
+      "competencies": ["integrity", "client-focus", "teamwork"],
+      "explanation": {
+        "steps": [
+          "C è la migliore (integrity, client-focus): la policy consente l'intrattenimento con pre-approvazione, e durante un deal live il controllo è più severo. Chiedere prima a compliance protegge la relazione con il cliente e la banca, qualunque sia l'esito.",
+          "D è la peggiore: un evento di valore offerto da un cliente con un'operazione in corso è esattamente ciò che la policy vuole tracciare. Non registrarlo è una violazione, comunque lo si chiami.",
+          "B (3) elimina il rischio, ma rinuncia senza passare dal processo a un'occasione di relazione che potrebbe essere legittima, e decide in modo diverso dall'associate. A (2) dichiara l'evento, ma a posteriori: la policy chiede l'approvazione prima, proprio perché c'è un deal live."
+        ],
+        "shortcut": "Intrattenimento offerto da un cliente: la risposta migliore è 'pre-approvazione', non un sì o un no automatico.",
+        "trap": "B sembra la più etica, ma nei livelli difficili la scelta migliore segue il processo invece di evitare del tutto la situazione.",
+        "rule": "Prima l'approvazione, poi l'accettazione: mai dichiarare solo a cose fatte."
+      },
+      "timeTarget": 85,
+      "tags": ["ib", "gifts-entertainment", "compliance-grey"]
+    },
+    {
+      "id": "sjt-36",
+      "skill": "sjt",
+      "level": 3,
+      "type": "sjt",
+      "stem": "You are a graduate in the product control team. It is 7 pm on month-end, and your manager asks you to sign off the daily P&L reconciliation for a trading desk so the numbers can go to the CFO's office by 8 pm. You have reconciled every position except one, which shows an unexplained difference of EUR 1.2m that you have not yet investigated. Your manager says it is 'probably a timing issue' and that you can check it tomorrow. What should you do?",
+      "options": [
+        "Spend the next 40 minutes investigating the difference yourself and sign off if it turns out to be a timing issue, telling your manager this is your plan.",
+        "Explain that you cannot confirm a reconciliation with an unexplained EUR 1.2m difference, and propose sending the numbers by 8 pm with it flagged as an open item.",
+        "Sign off as asked, since your manager is more experienced, believes it is a timing issue and has taken responsibility for the decision.",
+        "Refuse to sign off and tell your manager that the numbers cannot go to the CFO's office until you have fully investigated the difference."
+      ],
+      "ratings": [3, 4, 1, 2],
+      "best": 1,
+      "worst": 2,
+      "competencies": ["integrity", "communication", "resilience"],
+      "explanation": {
+        "steps": [
+          "B è la migliore (integrity, communication): non firmi ciò che non puoi confermare, ma non blocchi nemmeno il processo. Inviare i numeri entro le 20 con la differenza segnalata come open item dà all'ufficio del CFO un'informazione vera e completa.",
+          "C è la peggiore: la firma attesta che la riconciliazione è completa. Firmare con EUR 1,2m non spiegati perché 'probabilmente' è un tema di timing è un'attestazione falsa, e la responsabilità resta tua.",
+          "A (3) è proattiva e potrebbe risolvere il problema, ma se l'analisi non si chiude entro le 20 ti ritrovi con la stessa scelta e meno tempo. D (2) difende l'integrità del controllo, ma senza alternative il report salta e il rapporto con la manager si irrigidisce."
+        ],
+        "shortcut": "Pressione a firmare qualcosa di incompleto: non firmare, proponi di inviare con l'eccezione dichiarata.",
+        "trap": "A sembra la via di mezzo ideale, ma lega la tua firma alla speranza di trovare la spiegazione in tempo.",
+        "rule": "Una firma attesta un fatto: si firma solo ciò che si è verificato, il resto si dichiara come eccezione."
+      },
+      "timeTarget": 85,
+      "tags": ["risk", "compliance", "pressure"]
+    },
+    {
+      "id": "sjt-37",
+      "skill": "sjt",
+      "level": 3,
+      "type": "sjt",
+      "stem": "You are in the first year of a bank's graduate programme, placed in a corporate banking team. The graduate programme office has scheduled a mandatory two-day regulatory training on Thursday and Friday; missing it means repeating the whole module later. On Tuesday your team director asks you to stay on a client refinancing that needs a credit paper finalised by Friday noon, saying 'training can wait'. You are the only analyst on the deal. What should you do?",
+      "options": [
+        "Tell the director what missing the training would mean, offer to finish most of the paper by Wednesday with a handover note, and ask him to settle it with the programme office.",
+        "Skip the training without telling the graduate programme office, since the director has asked you to stay and the client deadline is more important.",
+        "Contact the graduate programme office yourself and ask them to exempt you from this week's training, explaining the client deadline and that you are the only analyst working on the deal.",
+        "Attend the training as scheduled and leave the director to find someone else to finish the credit paper while you are away on Thursday and Friday."
+      ],
+      "ratings": [4, 1, 3, 2],
+      "best": 0,
+      "worst": 1,
+      "competencies": ["prioritisation", "communication", "integrity"],
+      "explanation": {
+        "steps": [
+          "A è la migliore (prioritisation, communication): il director forse non conosce le conseguenze della formazione obbligatoria. Gli dai i fatti, anticipi il lavoro per ridurre il rischio sul deal e porti la decisione tra le due persone che hanno l'autorità.",
+          "B è la peggiore: saltare una formazione regolamentare obbligatoria senza dirlo viola le regole del programma e ti espone personalmente; 'me l'ha chiesto il director' non ti protegge.",
+          "C (3) cerca una soluzione attraverso il canale corretto, ma senza coordinarti con il director rischi di ricevere due risposte incompatibili. D (2) rispetta l'obbligo formale, ma lascia un deal senza analyst e senza piano di passaggio."
+        ],
+        "shortcut": "Conflitto tra due autorità: informa, riduci il rischio con lavoro anticipato, fai parlare le autorità tra loro.",
+        "trap": "B sembra la scelta di squadra perché mette il cliente al primo posto, ma ignora un obbligo regolamentare.",
+        "rule": "Quando due senior chiedono cose incompatibili, il tuo compito è rendere visibile il conflitto e proporre un piano."
+      },
+      "timeTarget": 90,
+      "tags": ["corporate-banking", "graduate-rotation", "conflicting-priorities"]
+    },
+    {
+      "id": "sjt-38",
+      "skill": "sjt",
+      "level": 3,
+      "type": "sjt",
+      "stem": "You are an analyst in a leveraged finance team. A lateral hire who joined last week from a competitor bank shares with you, in a friendly way, a folder of 'useful templates', including a lender presentation with the competitor's internal pricing grid and a client's financial projections. She says it will save you hours on your current pitch, which targets the same client. Your pitch is due in two days and you are behind. What should you do?",
+      "options": [
+        "Use only the formatting and slide structure of her templates to save time on the pitch, and ignore the client data and the competitor's pricing grid.",
+        "Use the pricing grid and the projections, since they would make your pitch far more competitive against her former bank.",
+        "Do not use the material, tell her it is likely to be confidential to her former employer and its client, and inform your associate or compliance.",
+        "Do not use any of the material and quietly delete it from your folders, without saying anything to her so as not to embarrass a new colleague."
+      ],
+      "ratings": [2, 1, 4, 3],
+      "best": 2,
+      "worst": 1,
+      "competencies": ["integrity", "teamwork", "communication"],
+      "explanation": {
+        "steps": [
+          "C è la migliore (integrity, teamwork): il materiale contiene informazioni riservate di un'altra banca e di un cliente. Non lo usi, aiuti la collega a capire il rischio e coinvolgi chi può gestirlo correttamente, proteggendo anche lei.",
+          "B è la peggiore: usare il pricing grid riservato di un concorrente e le proiezioni di un cliente per vincere un pitch espone te e la banca a violazioni di riservatezza e a conseguenze legali.",
+          "D (3) evita di usare il materiale, ma la collega potrebbe condividerlo con altri e la banca resta esposta. A (2) sembra un compromesso, ma usi comunque materiale che non sarebbe mai dovuto entrare in banca e non risolvi il problema."
+        ],
+        "shortcut": "Informazioni riservate di un ex datore di lavoro: non usarle, non tacere, coinvolgi chi gestisce il rischio.",
+        "trap": "A sembra innocua perché 'è solo formattazione', ma il problema è la presenza del materiale in banca, non quanto ne usi.",
+        "rule": "Il vantaggio competitivo non può mai venire da informazioni riservate altrui."
+      },
+      "timeTarget": 85,
+      "tags": ["ib", "confidentiality", "compliance"]
+    },
+    {
+      "id": "sjt-39",
+      "skill": "sjt",
+      "level": 3,
+      "type": "sjt",
+      "stem": "You are an analyst in an M&A team. Your sister's wedding is on Saturday in another city; you booked the time off two months ago and your staffer approved it. On Friday at 3 pm, the VP on a live deal tells you that the buyer has moved the bid deadline forward and the team will need to work all weekend on the model and the bid letter. He asks whether you can 'make it work'. What should you do?",
+      "options": [
+        "Cancel your plans for the wedding and work the whole weekend with the team, since a live deal with a new bid deadline has to come first.",
+        "Explain your long-standing commitment, offer to work late tonight and all of Sunday, and leave a clear handover for Saturday while staying reachable for urgent questions.",
+        "Remind the VP that your leave was approved two months ago and go to the wedding without offering any further help to the team.",
+        "Agree to work all weekend, then attend the wedding anyway and reply to the team's messages whenever you get the chance."
+      ],
+      "ratings": [3, 4, 2, 1],
+      "best": 1,
+      "worst": 3,
+      "competencies": ["communication", "resilience", "teamwork"],
+      "explanation": {
+        "steps": [
+          "B è la migliore (communication, teamwork, resilience): rispetti un impegno personale approvato da tempo ma ti fai carico della tua parte con proposte concrete. Il VP può pianificare il weekend sapendo esattamente quando ci sei.",
+          "D è la peggiore: prometti una disponibilità che sai di non poter garantire, e il team scopre il problema nel momento peggiore.",
+          "A (3) garantisce copertura al deal, ma rinunci a un evento unico quando esiste una soluzione intermedia, e non è un modello sostenibile. C (2) è formalmente corretta, ma su un deal live non offrire alcun aiuto lascia il team in difficoltà e danneggia la fiducia."
+        ],
+        "shortcut": "Impegno privato importante contro urgenza di lavoro: non scegliere un estremo, negozia una soluzione concreta.",
+        "trap": "A sembra la risposta che una banca 'vuole', ma i test moderni premiano chi gestisce i propri limiti in modo trasparente e costruttivo.",
+        "rule": "Trasparenza sugli impegni, proposte concrete sul lavoro, e mai promettere ciò che non puoi mantenere."
+      },
+      "timeTarget": 85,
+      "tags": ["ib", "wellbeing", "conflicting-priorities"]
+    },
+    {
+      "id": "sjt-40",
+      "skill": "sjt",
+      "level": 3,
+      "type": "sjt",
+      "stem": "You are an analyst drafting the information memorandum for a sell-side process. The client's management has provided an 'adjusted EBITDA' of EUR 48m for last year, which they want as the headline figure. Reconciling it with the audited accounts, you find reported EBITDA of EUR 41m plus EUR 7m of add-backs, of which EUR 4m are 'one-off' restructuring costs that have recurred in each of the last three years. Your VP says management is the client and 'adjusted figures are standard'. What should you do?",
+      "options": [
+        "Replace the headline with the EUR 41m audited EBITDA and email management directly, telling them that their adjusted figure is misleading.",
+        "Raise the issue with the VP and, if he still wants the EUR 48m headline, ask compliance to review the memorandum before it goes out to buyers.",
+        "Use the EUR 48m as instructed without raising the point, since adjusted EBITDA is common practice and management owns the numbers in the memorandum.",
+        "Show the VP your reconciliation, highlight the recurring EUR 4m, and suggest showing a clear bridge from audited to adjusted EBITDA for him to discuss with management."
+      ],
+      "ratings": [1, 3, 2, 4],
+      "best": 3,
+      "worst": 0,
+      "competencies": ["integrity", "client-focus", "communication"],
+      "explanation": {
+        "steps": [
+          "D è la migliore (integrity, client-focus): non contesti l'adjusted EBITDA in sé, che è prassi, ma segnali che EUR 4m di costi ricorrenti tre anni su tre difficilmente possono essere considerati 'one-off'. Un bridge trasparente da EUR 41m a EUR 48m protegge il cliente in due diligence e la banca.",
+          "A è la peggiore: scavalchi il VP e contesti per iscritto il management, cioè il cliente, togliendo a chi gestisce la relazione la possibilità di affrontare il tema. Il dubbio è fondato, ma il modo crea un conflitto inutile e danneggia il mandato.",
+          "B (3) solleva il tema e prevede un'escalation, ma va a compliance prima di aver proposto una soluzione che il VP potrebbe accettare. C (2) segue l'istruzione senza sollevare il punto: a un multiplo ipotetico di 8x quei EUR 4m di EBITDA valgono circa EUR 32m di enterprise value, i compratori lo scopriranno nella quality of earnings e la credibilità del processo ne soffrirà."
+        ],
+        "shortcut": "Numero del cliente discutibile: non accettarlo e non sostituirlo da solo, rendilo trasparente con una riconciliazione.",
+        "trap": "A sembra la scelta più integra perché usa il dato certificato, ma il modo, unilaterale e conflittuale verso il cliente, la rende la peggiore.",
+        "rule": "Trasparenza tramite riconciliazione; la decisione spetta a chi ne ha l'autorità."
+      },
+      "timeTarget": 90,
+      "tags": ["ib", "compliance-grey", "client-request"]
+    }
+  ]
+}
