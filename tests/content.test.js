@@ -1,4 +1,4 @@
-// Validates the content packs in data/lessons and data/banks (or data/staging with --staging).
+// Validates the content packs in data/lessons, data/banks and data/news/concepts.json (or data/staging with --staging).
 import fs from 'fs';
 import path from 'path';
 
@@ -6,9 +6,10 @@ const staging = process.argv.includes('--staging');
 const ROOT = new URL('../data/', import.meta.url).pathname;
 const files = staging
   ? fs.readdirSync(path.join(ROOT, 'staging')).filter(f => f.endsWith('.json')).map(f => path.join(ROOT, 'staging', f))
-  : [...fs.readdirSync(path.join(ROOT, 'lessons')).map(f => path.join(ROOT, 'lessons', f)), ...fs.readdirSync(path.join(ROOT, 'banks')).map(f => path.join(ROOT, 'banks', f))].filter(f => f.endsWith('.json'));
+  : [...fs.readdirSync(path.join(ROOT, 'lessons')).map(f => path.join(ROOT, 'lessons', f)), ...fs.readdirSync(path.join(ROOT, 'banks')).map(f => path.join(ROOT, 'banks', f)), path.join(ROOT, 'news', 'concepts.json')].filter(f => f.endsWith('.json') && fs.existsSync(f));
 
-const SKILLS = new Set(['numerical', 'mental', 'verbal', 'logical', 'inductive', 'sjt', 'fin-acc', 'fin-val', 'fin-ma', 'fin-lbo', 'markets', 'commercial', 'behavioural', 'workstyle']);
+const SKILLS = new Set(['numerical', 'mental', 'verbal', 'logical', 'inductive', 'sjt', 'fin-acc', 'fin-val', 'fin-ma', 'fin-lbo', 'markets', 'commercial', 'behavioural', 'workstyle', 'culture']);
+const CONCEPT_SKILLS = new Set(['markets', 'commercial', 'culture']);
 let errors = 0, warns = 0;
 const ids = new Set();
 const err = (f, m) => { errors++; if (errors <= 60) console.log('ERR ', path.basename(f), m); };
@@ -76,6 +77,29 @@ for (const f of files) {
     } else err(f, `${it.id}: type ${t}`);
     checkExpl(f, it.id, it.explanation);
     if (EMDASH.test(it.stem + JSON.stringify(it.options || ''))) warn(f, `${it.id}: em dash in stem/options`);
+  }
+  const pos = [0, 0, 0, 0, 0, 0];
+  for (const it of d.items || []) if (it.type === 'mcq' && Number.isInteger(it.answer)) pos[it.answer]++;
+  const nMcq = pos.reduce((a, b) => a + b, 0);
+  if (nMcq >= 20 && Math.max(...pos) / nMcq > 0.4) warn(f, `answer position skew ${pos.join('/')}`);
+  for (const c of d.concepts || []) {
+    if (ids.has(c.id)) err(f, `dup concept id ${c.id}`); ids.add(c.id);
+    if (!CONCEPT_SKILLS.has(c.skill)) err(f, `${c.id}: skill ${c.skill}`);
+    for (const k of ['theme', 'title', 'explainer', 'interview']) if (!c[k] || typeof c[k] !== 'string') err(f, `${c.id}: ${k} missing`);
+    if (!Array.isArray(c.watch) || !c.watch.length) warn(f, `${c.id}: watch empty`);
+    if (!Array.isArray(c.match) || !c.match.length) err(f, `${c.id}: match empty`);
+    for (const r of [...(c.match || []), ...(c.exclude || [])]) { try { new RegExp(r, 'i'); } catch (e) { err(f, `${c.id}: bad regex ${r}`); } }
+    if (!Array.isArray(c.questions) || c.questions.length < 3) err(f, `${c.id}: needs 3 questions`);
+    for (const q of c.questions || []) {
+      if (ids.has(q.qid)) err(f, `dup qid ${q.qid}`); ids.add(q.qid);
+      if (q.type !== 'mcq' || !Array.isArray(q.options) || q.options.length !== 4) err(f, `${q.qid}: mcq with 4 options`);
+      else if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer > 3) err(f, `${q.qid}: answer ${q.answer}`);
+      else if (new Set(q.options.map(o => String(o).trim().toLowerCase())).size !== 4) err(f, `${q.qid}: duplicate options`);
+      if (!q.stem) err(f, `${q.qid}: stem`);
+      if (/this headline|the headline above/i.test(q.stem)) err(f, `${q.qid}: refers to the specific headline`);
+      checkExpl(f, q.qid, q.explanation);
+    }
+    if (EMDASH.test(JSON.stringify(c))) warn(f, `${c.id}: em dash`);
   }
   for (const q of d.questions || []) {
     if (ids.has(q.id)) err(f, `dup id ${q.id}`); ids.add(q.id);

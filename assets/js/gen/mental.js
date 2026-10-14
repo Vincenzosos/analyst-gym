@@ -1,4 +1,4 @@
-// Mental-math generator: fresh MCQs with Italian step-by-step explanations.
+// Mental-math generator: fresh MCQs with English step-by-step explanations.
 import { rng, randInt, pick, buildOptions, fmt, round } from '../util.js';
 
 const P = (x, d = 1) => `${fmt(x, d)}%`;
@@ -13,10 +13,10 @@ const TYPES = {
     return {
       stem: `What is ${fmt(p)}% of ${fmt(base, 0)}?`, ...o, timeTarget: 20, level: 1, tags: ['percent-of'],
       explanation: {
-        steps: [`${fmt(p)}% significa ${fmt(p)}/100.`, `Spezza: 10% di ${fmt(base, 0)} = ${N(base / 10)}; 1% = ${N(base / 100)}.`, `${fmt(p)}% = ${N(base / 100)} × ${fmt(p)} = ${N(ans)}.`],
-        shortcut: `Parti dal 10% (sposta la virgola) e combina: es. 35% = 3×10% + 5%; 12,5% = 1/8.`,
-        trap: `Dividere per la percentuale invece di moltiplicare, o calcolare il complemento (${100 - p}%).`,
-        rule: `X% di Y = Y × X / 100; costruiscilo da 10%, 5% e 1%.`,
+        steps: [`${fmt(p)}% means ${fmt(p)}/100.`, `Break it down: 10% of ${fmt(base, 0)} = ${N(base / 10)}; 1% = ${N(base / 100)}.`, `${fmt(p)}% = ${N(base / 100)} × ${fmt(p)} = ${N(ans)}.`],
+        shortcut: `Start from 10% (move the decimal point) and combine: e.g. 35% = 3×10% + 5%; 12.5% = 1/8.`,
+        trap: `Dividing by the percentage instead of multiplying, or working out the complement (${100 - p}%).`,
+        rule: `X% of Y = Y × X / 100; build it up from 10%, 5% and 1%.`,
       },
     };
   },
@@ -29,10 +29,10 @@ const TYPES = {
     return {
       stem: `A metric moves from ${N(old)} to ${N(nw)}. What is the percentage change?`, ...o, timeTarget: 30, level: 1, tags: ['percent-change'],
       explanation: {
-        steps: [`Differenza: ${N(nw)} − ${N(old)} = ${N(nw - old)}.`, `Dividi per il valore INIZIALE: ${N(nw - old)} / ${N(old)} = ${fmt((nw - old) / old, 4)}.`, `× 100 = ${P(p)}.`],
-        shortcut: `Rapporto nuovo/vecchio: ${N(nw)}/${N(old)} = ${fmt(nw / old, 3)}, quindi ${p >= 0 ? '+' : ''}${P(p)}.`,
-        trap: `Dividere per il valore finale (${P(round(wrongBase, 1))}): la base è sempre il valore di partenza.`,
-        rule: `Variazione % = (Nuovo − Vecchio) / Vecchio × 100.`,
+        steps: [`Difference: ${N(nw)} − ${N(old)} = ${N(nw - old)}.`, `Divide by the STARTING value: ${N(nw - old)} / ${N(old)} = ${fmt((nw - old) / old, 4)}.`, `× 100 = ${P(p)}.`],
+        shortcut: `New/old ratio: ${N(nw)}/${N(old)} = ${fmt(nw / old, 3)}, so ${p >= 0 ? '+' : ''}${P(p)}.`,
+        trap: `Dividing by the final value (${P(round(wrongBase, 1))}): the base is always the starting value.`,
+        rule: `% change = (New − Old) / Old × 100.`,
       },
     };
   },
@@ -45,10 +45,10 @@ const TYPES = {
     return {
       stem: `After a ${p >= 0 ? 'rise' : 'fall'} of ${fmt(Math.abs(p))}%, a price is ${N(now)}. What was the original price?`, ...o, timeTarget: 30, level: 2, tags: ['reverse-percent'],
       explanation: {
-        steps: [`Il prezzo attuale è il ${fmt(100 + p)}% dell'originale, cioè originale × ${fmt(1 + p / 100, 3)}.`, `Originale = ${N(now)} / ${fmt(1 + p / 100, 3)} = ${N(orig)}.`],
-        shortcut: `Dividi per (1 ${p >= 0 ? '+' : '−'} ${fmt(Math.abs(p) / 100, 3)}); non togliere la percentuale dal valore nuovo.`,
-        trap: `Fare ${N(now)} ${p >= 0 ? '−' : '+'} ${fmt(Math.abs(p))}% di ${N(now)} = ${N(naive)}: la percentuale si applicava al valore originale, non a quello nuovo.`,
-        rule: `Valore originale = Valore finale / (1 + variazione).`,
+        steps: [`The current price is ${fmt(100 + p)}% of the original, i.e. original × ${fmt(1 + p / 100, 3)}.`, `Original = ${N(now)} / ${fmt(1 + p / 100, 3)} = ${N(orig)}.`],
+        shortcut: `Divide by (1 ${p >= 0 ? '+' : '−'} ${fmt(Math.abs(p) / 100, 3)}); do not take the percentage off the new value.`,
+        trap: `Calculating ${N(now)} ${p >= 0 ? '−' : '+'} ${fmt(Math.abs(p))}% of ${N(now)} = ${N(naive)}: the percentage applied to the original value, not the new one.`,
+        rule: `Original value = Final value / (1 + change).`,
       },
     };
   },
@@ -60,9 +60,9 @@ const TYPES = {
       stem: `Express ${a}/${b} as a percentage.`, ...o, timeTarget: 20, level: 1, tags: ['fractions'],
       explanation: {
         steps: [`${a}/${b} = ${a} ÷ ${b} = ${fmt(a / b, 4)}.`, `× 100 = ${P(ans, 2)}.`],
-        shortcut: `Memorizza: 1/8 = 12,5%, 1/6 ≈ 16,7%, 1/3 ≈ 33,3%, 1/12 ≈ 8,3%, 1/40 = 2,5%; poi moltiplica per il numeratore.`,
-        trap: `Invertire la frazione (${b}/${a}) o dimenticare il × 100.`,
-        rule: `Frazione → % : dividi e moltiplica per 100; usa le frazioni base come mattoni.`,
+        shortcut: `Memorise: 1/8 = 12.5%, 1/6 ≈ 16.7%, 1/3 ≈ 33.3%, 1/12 ≈ 8.3%, 1/40 = 2.5%; then multiply by the numerator.`,
+        trap: `Inverting the fraction (${b}/${a}) or forgetting the × 100.`,
+        rule: `Fraction → %: divide, then multiply by 100; use the basic fractions as building blocks.`,
       },
     };
   },
@@ -74,10 +74,10 @@ const TYPES = {
     return {
       stem: `${a} × ${b} = ?`, ...o, timeTarget: 25, level: 1, tags: ['multiplication'],
       explanation: {
-        steps: [`Spezza ${b} in ${t} + ${u}.`, `${a} × ${t} = ${a * t}; ${a} × ${u} = ${a * u}.`, `Somma: ${a * t} + ${a * u} = ${ans}.`],
-        shortcut: `Arrotonda e correggi: ${a} × ${b} = ${a} × ${t + (u ? 10 : 0)} − ${a} × ${u ? 10 - u : 0} = ${a * (t + (u ? 10 : 0))} − ${a * (u ? 10 - u : 0)}.`,
-        trap: `Errori di riporto: controlla l'ultima cifra (${a % 10} × ${b % 10} finisce con ${(a * b) % 10}).`,
-        rule: `Distribuisci su decine e unità; verifica con l'ultima cifra.`,
+        steps: [`Split ${b} into ${t} + ${u}.`, `${a} × ${t} = ${a * t}; ${a} × ${u} = ${a * u}.`, `Add: ${a * t} + ${a * u} = ${ans}.`],
+        shortcut: `Round and adjust: ${a} × ${b} = ${a} × ${t + (u ? 10 : 0)} − ${a} × ${u ? 10 - u : 0} = ${a * (t + (u ? 10 : 0))} − ${a * (u ? 10 - u : 0)}.`,
+        trap: `Carrying errors: check the last digit (${a % 10} × ${b % 10} ends in ${(a * b) % 10}).`,
+        rule: `Distribute across tens and units; check with the last digit.`,
       },
     };
   },
@@ -89,10 +89,10 @@ const TYPES = {
     return {
       stem: `${N(a)} ÷ ${b} = ?`, ...o, timeTarget: 25, level: 1, tags: ['division'],
       explanation: {
-        steps: [`Scomponi il divisore ${b} in fattori semplici e dividi a passi.`, `${N(a)} ÷ ${b} = ${N(ans)} (verifica: ${N(ans)} × ${b} = ${N(a)}).`],
-        shortcut: `Stima prima l'ordine di grandezza: ${N(a)} / ${b} è circa ${fmt(Math.round(a / b), 0)}.`,
-        trap: `Sbagliare la posizione della virgola (risposta 10 volte più grande o piccola).`,
-        rule: `Dividi per fattori (÷ 24 = ÷ 4 poi ÷ 6) e verifica moltiplicando.`,
+        steps: [`Break the divisor ${b} into simple factors and divide step by step.`, `${N(a)} ÷ ${b} = ${N(ans)} (check: ${N(ans)} × ${b} = ${N(a)}).`],
+        shortcut: `Estimate the order of magnitude first: ${N(a)} / ${b} is roughly ${fmt(Math.round(a / b), 0)}.`,
+        trap: `Misplacing the decimal point (an answer 10 times too large or too small).`,
+        rule: `Divide by factors (÷ 24 = ÷ 4 then ÷ 6) and check by multiplying.`,
       },
     };
   },
@@ -106,10 +106,10 @@ const TYPES = {
     return {
       stem: `Revenue grows from ${fmt(start, 0)} to ${fmt(end, 0)} over ${years} years. Which annual growth rate (CAGR) is closest?`, ...o, timeTarget: 45, level: 3, tags: ['cagr'],
       explanation: {
-        steps: [`Moltiplicatore totale: ${fmt(end, 0)} / ${fmt(start, 0)} = ${fmt(end / start, 3)}.`, `CAGR = ${fmt(end / start, 3)}^(1/${years}) − 1 = ${P(g)}.`, `Verifica: ${fmt(start, 0)} × ${fmt(1 + g / 100, 2)}^${years} ≈ ${fmt(end, 0)}.`],
-        shortcut: `Prova le opzioni al contrario: (1 + g)^${years} deve dare ${fmt(end / start, 2)}. La crescita semplice (${P(simple)}) sovrastima sempre la CAGR.`,
-        trap: `Dividere la crescita totale per gli anni (${P(simple)}): ignora l'interesse composto.`,
-        rule: `CAGR = (Finale / Iniziale)^(1/anni) − 1; testa le opzioni elevando a potenza.`,
+        steps: [`Total multiplier: ${fmt(end, 0)} / ${fmt(start, 0)} = ${fmt(end / start, 3)}.`, `CAGR = ${fmt(end / start, 3)}^(1/${years}) − 1 = ${P(g)}.`, `Check: ${fmt(start, 0)} × ${fmt(1 + g / 100, 2)}^${years} ≈ ${fmt(end, 0)}.`],
+        shortcut: `Work backwards from the options: (1 + g)^${years} must give ${fmt(end / start, 2)}. Simple growth (${P(simple)}) always overstates the CAGR.`,
+        trap: `Dividing total growth by the number of years (${P(simple)}): this ignores compounding.`,
+        rule: `CAGR = (Final / Initial)^(1/years) − 1; test the options by raising them to the power.`,
       },
     };
   },
@@ -120,10 +120,10 @@ const TYPES = {
     return {
       stem: `At ${g}% per year, roughly how many years does it take for an investment to double?`, ...o, timeTarget: 15, level: 1, tags: ['rule-of-72'],
       explanation: {
-        steps: [`Regola del 72: anni per raddoppiare ≈ 72 / tasso%.`, `72 / ${g} = ${fmt(ans, 1)} anni.`],
-        shortcut: `72 è divisibile per 2, 3, 4, 6, 8, 9, 12, 18, 24: il calcolo è immediato.`,
-        trap: `Usare 100 / tasso (interesse semplice, ${fmt(100 / g, 1)} anni).`,
-        rule: `Raddoppio ≈ 72 / g; triplicare ≈ 114 / g.`,
+        steps: [`Rule of 72: years to double ≈ 72 / rate%.`, `72 / ${g} = ${fmt(ans, 1)} years.`],
+        shortcut: `72 is divisible by 2, 3, 4, 6, 8, 9, 12, 18 and 24, so the calculation is instant.`,
+        trap: `Using 100 / rate (simple interest, ${fmt(100 / g, 1)} years).`,
+        rule: `Doubling ≈ 72 / g; tripling ≈ 114 / g.`,
       },
     };
   },
@@ -137,10 +137,10 @@ const TYPES = {
     return {
       stem: `${fmt(base, 0)} grows by ${g}% a year, compounded, for ${y} years. What is the final value?`, ...o, timeTarget: 30, level: 2, tags: ['compounding'],
       explanation: {
-        steps: Array.from({ length: y }, (_, i) => `Anno ${i + 1}: ${N(base * (1 + g / 100) ** i)} × ${fmt(1 + g / 100, 2)} = ${N(base * (1 + g / 100) ** (i + 1))}.`),
-        shortcut: `${fmt(1 + g / 100, 2)}^${y} = ${fmt((1 + g / 100) ** y, 4)}; moltiplica una volta sola.`,
-        trap: `Interesse semplice: ${N(simple)} (manca l'interesse sugli interessi).`,
-        rule: `Valore finale = Iniziale × (1 + g)^n.`,
+        steps: Array.from({ length: y }, (_, i) => `Year ${i + 1}: ${N(base * (1 + g / 100) ** i)} × ${fmt(1 + g / 100, 2)} = ${N(base * (1 + g / 100) ** (i + 1))}.`),
+        shortcut: `${fmt(1 + g / 100, 2)}^${y} = ${fmt((1 + g / 100) ** y, 4)}; multiply just once.`,
+        trap: `Simple interest: ${N(simple)} (misses the interest on interest).`,
+        rule: `Final value = Initial × (1 + g)^n.`,
       },
     };
   },
@@ -155,10 +155,10 @@ const TYPES = {
     return {
       stem: `An operating margin moves from ${a}% to ${b}%. By how much did it change, in ${askPct ? 'percent (relative change)' : 'percentage points'}?`, ...o, timeTarget: 25, level: 2, tags: ['percentage-points'],
       explanation: {
-        steps: [`Punti percentuali = differenza semplice: ${b} − ${a} = ${d} pp.`, `Variazione % relativa = ${d} / ${a} × 100 = ${P(pct)}.`, `La domanda chiede ${askPct ? 'la variazione %' : 'i punti percentuali'}: ${fmt(ans, 1)}.`],
-        shortcut: `Leggi l'unità richiesta prima di calcolare: pp = sottrazione, % = divisione per il valore iniziale.`,
-        trap: `Confondere punti percentuali e percentuale (${d} contro ${P(pct)}).`,
-        rule: `Da a% a b%: (b − a) pp; ((b − a)/a) × 100 in %.`,
+        steps: [`Percentage points = simple difference: ${b} − ${a} = ${d} pp.`, `Relative % change = ${d} / ${a} × 100 = ${P(pct)}.`, `The question asks for ${askPct ? 'the % change' : 'the percentage points'}: ${fmt(ans, 1)}.`],
+        shortcut: `Read the unit asked for before calculating: pp = subtraction, % = division by the starting value.`,
+        trap: `Confusing percentage points with percent (${d} versus ${P(pct)}).`,
+        rule: `From a% to b%: (b − a) pp; ((b − a)/a) × 100 in %.`,
       },
     };
   },
@@ -172,10 +172,10 @@ const TYPES = {
     return {
       stem: askEur ? `1 EUR = ${rate} USD. How many EUR is ${N(usd)} USD?` : `1 EUR = ${rate} USD. How many USD is ${N(eur)} EUR?`, ...o, timeTarget: 30, level: 1, tags: ['fx'],
       explanation: {
-        steps: askEur ? [`Da USD a EUR si DIVIDE per il cambio: ${N(usd)} / ${rate} = ${N(eur)}.`] : [`Da EUR a USD si MOLTIPLICA per il cambio: ${N(eur)} × ${rate} = ${N(usd)}.`],
-        shortcut: `Controlla il verso: se 1 EUR vale più di 1 USD, gli EUR devono essere MENO degli USD.`,
-        trap: `Moltiplicare quando bisogna dividere (o viceversa).`,
-        rule: `Cambio "1 A = k B": da A a B × k, da B a A ÷ k.`,
+        steps: askEur ? [`From USD to EUR you DIVIDE by the rate: ${N(usd)} / ${rate} = ${N(eur)}.`] : [`From EUR to USD you MULTIPLY by the rate: ${N(eur)} × ${rate} = ${N(usd)}.`],
+        shortcut: `Check the direction: if 1 EUR is worth more than 1 USD, the EUR amount must be SMALLER than the USD amount.`,
+        trap: `Multiplying when you should divide (or vice versa).`,
+        rule: `Rate "1 A = k B": from A to B × k, from B to A ÷ k.`,
       },
     };
   },
@@ -187,10 +187,10 @@ const TYPES = {
     return {
       stem: `A bond yield moves from ${a.toFixed(2)}% to ${b.toFixed(2)}%. What is the change in basis points?`, ...o, timeTarget: 15, level: 1, tags: ['basis-points'],
       explanation: {
-        steps: [`Differenza: ${b.toFixed(2)} − ${a.toFixed(2)} = ${(d / 100).toFixed(2)} punti percentuali.`, `1 pp = 100 bps, quindi ${(d / 100).toFixed(2)} × 100 = ${d} bps.`],
-        shortcut: `Togli la virgola alla differenza: 0,35% = 35 bps.`,
-        trap: `Calcolare la variazione relativa (in %) invece della differenza assoluta.`,
-        rule: `1 bp = 0,01%; 100 bps = 1 punto percentuale.`,
+        steps: [`Difference: ${b.toFixed(2)} − ${a.toFixed(2)} = ${(d / 100).toFixed(2)} percentage points.`, `1 pp = 100 bps, so ${(d / 100).toFixed(2)} × 100 = ${d} bps.`],
+        shortcut: `Move the decimal point two places to the right on the difference: 0.35% = 35 bps.`,
+        trap: `Calculating the relative change (in %) instead of the absolute difference.`,
+        rule: `1 bp = 0.01%; 100 bps = 1 percentage point.`,
       },
     };
   },
@@ -205,10 +205,10 @@ const TYPES = {
     return {
       stem: askEquity ? `A company has EBITDA of ${ebitda} and trades at ${m}x EV/EBITDA. Net debt is ${net}. What is its equity value?` : `Enterprise value is ${fmt(ev, 1)} and EBITDA is ${ebitda}. What is the EV/EBITDA multiple?`, ...o, timeTarget: 30, level: 2, tags: ['multiples'],
       explanation: {
-        steps: askEquity ? [`EV = ${ebitda} × ${m} = ${fmt(ev, 1)}.`, `Equity value = EV − debito netto = ${fmt(ev, 1)} − ${net} = ${fmt(ev - net, 1)}.`] : [`EV/EBITDA = ${fmt(ev, 1)} / ${ebitda} = ${fmt(m, 1)}x.`],
-        shortcut: askEquity ? `EV è "per tutti i finanziatori"; per arrivare all'equity togli il debito netto.` : `Dividi e arrotonda: i multipli si leggono con una cifra decimale.`,
-        trap: askEquity ? `Sommare il debito netto invece di sottrarlo.` : `Invertire il rapporto (EBITDA / EV).`,
-        rule: `Equity value = EV − debito netto (− minoranze, + investimenti non consolidati).`,
+        steps: askEquity ? [`EV = ${ebitda} × ${m} = ${fmt(ev, 1)}.`, `Equity value = EV − net debt = ${fmt(ev, 1)} − ${net} = ${fmt(ev - net, 1)}.`] : [`EV/EBITDA = ${fmt(ev, 1)} / ${ebitda} = ${fmt(m, 1)}x.`],
+        shortcut: askEquity ? `EV belongs to "all capital providers"; to get to equity, subtract net debt.` : `Divide and round: multiples are quoted to one decimal place.`,
+        trap: askEquity ? `Adding net debt instead of subtracting it.` : `Inverting the ratio (EBITDA / EV).`,
+        rule: `Equity value = EV − net debt (− minority interests, + unconsolidated investments).`,
       },
     };
   },

@@ -8,35 +8,40 @@ import { rng, randInt, pick, shuffle } from '../util.js';
 // fill: 0 outline / 1 filled (big centre shape)
 // shape: 0 circle / 1 square / 2 triangle (big centre shape)
 const CELLS = [[0, 0], [1, 0], [2, 0], [2, 1], [2, 2], [1, 2], [0, 2], [0, 1]];
-const SHAPES = ['cerchio', 'quadrato', 'triangolo'];
-const DIRS = ['su', 'su-destra', 'destra', 'giù-destra', 'giù', 'giù-sinistra', 'sinistra', 'su-sinistra'];
+const SHAPES = ['circle', 'square', 'triangle'];
+const DIRS = ['up', 'up-right', 'right', 'down-right', 'down', 'down-left', 'left', 'up-left'];
 
 function panelSVG(p, size = 96) {
   // layout: 3x3 grid (dot on the border ring, arrow in the centre) + a bottom strip (shape, small squares)
   const W = size, G = size, c = G / 3, S = 24, H = G + S;
-  let g = `<rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="7" fill="#151a22" stroke="#3a4352"/>`;
-  for (let i = 1; i < 3; i++) g += `<line x1="${i * c}" y1="4" x2="${i * c}" y2="${G - 4}" stroke="#232a35"/><line x1="4" y1="${i * c}" x2="${W - 4}" y2="${i * c}" stroke="#232a35"/>`;
-  g += `<line x1="4" y1="${G}" x2="${W - 4}" y2="${G}" stroke="#2c3440"/>`;
-  if (p.pos !== null) { const [x, y] = CELLS[p.pos]; g += `<circle cx="${x * c + c / 2}" cy="${y * c + c / 2}" r="${c * 0.2}" fill="#5aa9ff"/>`; }
+  let g = `<rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="7" fill="#ffffff" stroke="#D5D8E6"/>`;
+  for (let i = 1; i < 3; i++) g += `<line x1="${i * c}" y1="4" x2="${i * c}" y2="${G - 4}" stroke="#ECEEF5"/><line x1="4" y1="${i * c}" x2="${W - 4}" y2="${i * c}" stroke="#ECEEF5"/>`;
+  g += `<line x1="4" y1="${G}" x2="${W - 4}" y2="${G}" stroke="#E3E5EF"/>`;
+  if (p.pos !== null) { const [x, y] = CELLS[p.pos]; g += `<circle cx="${x * c + c / 2}" cy="${y * c + c / 2}" r="${c * 0.2}" fill="#0E9F9A"/>`; }
   if (p.rot !== null) {
     const cx = G / 2, cy = G / 2;
-    g += `<g transform="rotate(${p.rot * 45} ${cx} ${cy})"><line x1="${cx}" y1="${cy + c * 0.34}" x2="${cx}" y2="${cy - c * 0.18}" stroke="#f5b453" stroke-width="3" stroke-linecap="round"/><polygon points="${cx},${cy - c * 0.42} ${cx - 6},${cy - c * 0.16} ${cx + 6},${cy - c * 0.16}" fill="#f5b453"/></g>`;
+    g += `<g transform="rotate(${p.rot * 45} ${cx} ${cy})"><line x1="${cx}" y1="${cy + c * 0.34}" x2="${cx}" y2="${cy - c * 0.18}" stroke="#D97706" stroke-width="3" stroke-linecap="round"/><polygon points="${cx},${cy - c * 0.42} ${cx - 6},${cy - c * 0.16} ${cx + 6},${cy - c * 0.16}" fill="#D97706"/></g>`;
   }
   // bottom strip: shape (left) and small squares (right)
-  const sy = G + S / 2, R = 8, fill = p.fill ? '#c9d1dc' : 'none', sx = 16;
-  if (p.shape === 0) g += `<circle cx="${sx}" cy="${sy}" r="${R}" fill="${fill}" stroke="#c9d1dc" stroke-width="2"/>`;
-  else if (p.shape === 1) g += `<rect x="${sx - R}" y="${sy - R}" width="${2 * R}" height="${2 * R}" fill="${fill}" stroke="#c9d1dc" stroke-width="2"/>`;
-  else g += `<polygon points="${sx},${sy - R} ${sx + R},${sy + R} ${sx - R},${sy + R}" fill="${fill}" stroke="#c9d1dc" stroke-width="2" stroke-linejoin="round"/>`;
-  if (p.count !== null) for (let i = 0; i < p.count; i++) g += `<rect x="${W - 14 - i * 9}" y="${sy - 3}" width="6" height="6" rx="1" fill="#6fd3a8"/>`;
+  const sy = G + S / 2, R = 8, fill = p.fill ? '#15172E' : 'none', sx = 16;
+  if (p.shape === 0) g += `<circle cx="${sx}" cy="${sy}" r="${R}" fill="${fill}" stroke="#15172E" stroke-width="2"/>`;
+  else if (p.shape === 1) g += `<rect x="${sx - R}" y="${sy - R}" width="${2 * R}" height="${2 * R}" fill="${fill}" stroke="#15172E" stroke-width="2"/>`;
+  else g += `<polygon points="${sx},${sy - R} ${sx + R},${sy + R} ${sx - R},${sy + R}" fill="${fill}" stroke="#15172E" stroke-width="2" stroke-linejoin="round"/>`;
+  // small squares: up to 2 rows of 6, right-aligned, always clear of the shape on the left
+  if (p.count !== null) for (let i = 0; i < p.count; i++) {
+    const col = i % 6, row = Math.floor(i / 6), rows = Math.ceil(p.count / 6);
+    const y = rows === 1 ? sy - 3 : sy - 7 + row * 8;
+    g += `<rect x="${W - 14 - col * 9}" y="${y}" width="6" height="6" rx="1" fill="#5B4BF5"/>`;
+  }
   return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${g}</svg>`;
 }
 
 const FEATURES = {
-  pos: { steps: [1, 2, 3, -1, -2], mod: 8, say: k => `il punto blu si sposta di ${Math.abs(k)} ${Math.abs(k) === 1 ? 'casella' : 'caselle'} in senso ${k > 0 ? 'orario' : 'antiorario'} lungo il bordo` },
-  rot: { steps: [1, 2, -1, 3, -2], mod: 8, say: k => `la freccia ruota di ${Math.abs(k) * 45}° in senso ${k > 0 ? 'orario' : 'antiorario'}` },
-  count: { steps: [1, -1, 2], mod: null, say: k => `i quadratini verdi ${k > 0 ? 'aumentano' : 'diminuiscono'} di ${Math.abs(k)} a ogni passo` },
-  fill: { steps: [1], mod: 2, say: () => `la figura centrale alterna piena / vuota` },
-  shape: { steps: [1], mod: 3, say: () => `la figura centrale cicla cerchio → quadrato → triangolo` },
+  pos: { steps: [1, 2, 3, -1, -2], mod: 8, say: k => `the teal dot moves ${Math.abs(k)} ${Math.abs(k) === 1 ? 'cell' : 'cells'} ${k > 0 ? 'clockwise' : 'anticlockwise'} around the border` },
+  rot: { steps: [1, 2, -1, 3, -2], mod: 8, say: k => `the arrow in the centre rotates ${Math.abs(k) * 45}° ${k > 0 ? 'clockwise' : 'anticlockwise'}` },
+  count: { steps: [1, -1, 2], mod: null, say: k => `the small blue squares at the bottom right ${k > 0 ? 'increase' : 'decrease'} by ${Math.abs(k)} at each step` },
+  fill: { steps: [1], mod: 2, say: () => `the shape at the bottom left alternates between filled and empty` },
+  shape: { steps: [1], mod: 3, say: () => `the shape at the bottom left cycles circle → square → triangle` },
 };
 
 function applyRule(start, f, k, i) {
@@ -86,7 +91,7 @@ export function generateShapes(seed) {
   const opts = shuffle(r, [correct, ...uniq]);
   const answer = opts.findIndex(p => key(p) === key(correct));
   const ruleText = Object.entries(rules).map(([f, k]) => FEATURES[f].say(k));
-  const descr = p => [p.pos !== null ? `punto in posizione ${p.pos + 1}` : '', p.rot !== null ? `freccia verso ${DIRS[p.rot]}` : '', p.count !== null ? `${p.count} quadratini` : '', `${SHAPES[p.shape]} ${p.fill ? 'pieno' : 'vuoto'}`].filter(Boolean).join(', ');
+  const descr = p => [p.pos !== null ? `dot in position ${p.pos + 1}` : '', p.rot !== null ? `arrow pointing ${DIRS[p.rot]}` : '', p.count !== null ? `${p.count} ${p.count === 1 ? 'small square' : 'small squares'}` : '', `${p.fill ? 'filled' : 'empty'} ${SHAPES[p.shape]}`].filter(Boolean).join(', ');
   return {
     id: `gen-abs-${seed}`, skill: 'inductive', type: 'mcq', generated: true, level: nRules === 1 ? 1 : 2,
     context: { kind: 'html', html: `<div class="panels">${seq.map(p => panelSVG(p)).join('')}<div class="panel-q">?</div></div>` },
@@ -94,10 +99,10 @@ export function generateShapes(seed) {
     options: opts.map(p => panelSVG(p, 84)), optionsHTML: true, answer,
     timeTarget: nRules === 1 ? 40 : 60,
     explanation: {
-      steps: [`Regole: ${ruleText.join('; ')}. Tutti gli altri elementi restano uguali.`, ...seq.map((p, i) => `Pannello ${i + 1}: ${descr(p)}.`), `Quindi il pannello 5: ${descr(correct)}.`],
-      shortcut: `Isola UN elemento alla volta (punto, freccia, quadratini, figura) e chiediti: si muove, ruota, cambia numero o alterna? Elimina le opzioni che violano la prima regola trovata.`,
-      trap: `Le opzioni sbagliate rispettano tutte le regole tranne una: controlla ogni elemento, non solo quello più evidente.`,
-      rule: `Checklist: posizione → rotazione → numero → riempimento → forma → alternanza.`,
+      steps: [`${ruleText.length === 1 ? 'Rule' : 'Rules'}: ${ruleText.join('; ')}. Every other element stays the same.`, ...seq.map((p, i) => `Panel ${i + 1}: ${descr(p)}.`), `So panel 5: ${descr(correct)}.`],
+      shortcut: `Isolate ONE element at a time (dot, arrow, small squares, shape) and ask: does it move, rotate, change in number or alternate? Eliminate the options that break the first rule you find.`,
+      trap: `Each wrong option follows every rule except one: check every element, not just the most obvious one.`,
+      rule: `Checklist: position → rotation → number → fill → shape → alternation.`,
     },
     tags: ['abstract', ...Object.keys(rules)],
   };

@@ -5,38 +5,40 @@ import { practiceSet, generate, content, SKILL } from '../content.js';
 import { load, logMock, setDiag } from '../store.js';
 import { runQuiz, renderReport } from '../quiz.js';
 import { videoRoom } from './interview.js';
-import { go } from './common.js';
+import { go, pageHead } from './common.js';
+
+const MOCK_TONE = { diag: 'violet', 'shl-num': 'indigo', 'shl-verb': 'sky', inductive: 'teal', capp: 'amber', bofa: 'rose', tech: 'green', video: 'violet' };
 
 export function mocksList(root) {
   const S = load();
-  root.append(h('div', { class: 'page-h' }, h('h1', {}, 'Simulazioni'), h('span', { class: 'muted' }, 'Condizioni da test vero: tempo a sezione, nessun feedback fino alla fine.')));
+  root.append(pageHead({ kicker: 'Mocks', title: 'Real test', accent: 'conditions', sub: 'Timed sections, no feedback until the end, then the explanation of every mistake. One a week is part of the mission.' }));
   const grid = h('div', { class: 'mock-grid' });
   for (const m of MOCKS) {
     const runs = (S.mocks || []).filter(x => x.mockId === m.id);
     const best = runs.length ? Math.max(...runs.map(x => x.score)) : null;
     const last = runs.length ? runs[runs.length - 1] : null;
-    grid.append(h('a', { class: 'mock-card', href: `#/simulazioni/${m.id}` },
-      h('div', { class: 'mc-top' }, h('span', { class: 'chip' }, m.tag), h('span', { class: 'muted small' }, `${m.minutes}′`)),
+    grid.append(h('a', { class: `mock-card tone-${MOCK_TONE[m.id] || 'indigo'}`, href: `#/mocks/${m.id}` },
+      h('div', { class: 'mc-top' }, h('span', { class: 'chip' }, m.tag), h('span', { class: 'mc-min' }, `${m.minutes}′`)),
       h('div', { class: 'mc-t' }, m.title), h('div', { class: 'muted small' }, m.desc),
-      h('div', { class: 'mc-foot' }, runs.length ? h('span', {}, `Migliore ${Math.round(best * 100)}% · ultima ${Math.round(last.score * 100)}% · ${runs.length}×`) : h('span', { class: 'muted' }, 'Mai fatta'), m.passMark ? h('span', { class: 'muted small' }, `soglia ${Math.round(m.passMark * 100)}%`) : '')));
+      h('div', { class: 'mc-foot' }, runs.length ? h('span', { class: 'mc-best' + (best >= (m.passMark || 0.7) ? ' ok' : '') }, `Best ${Math.round(best * 100)}% · last ${Math.round(last.score * 100)}% · ${runs.length}×`) : h('span', { class: 'muted' }, 'Never taken'), m.passMark ? h('span', { class: 'muted small' }, `pass mark ${Math.round(m.passMark * 100)}%`) : '')));
   }
   root.append(grid);
   const hist = (S.mocks || []).slice(-12).reverse();
-  if (hist.length) root.append(h('section', { class: 'card' }, h('div', { class: 'card-h' }, h('h2', {}, 'Storico')),
-    h('div', { class: 'tbl-wrap' }, h('table', { class: 'data-table compact' }, h('thead', {}, h('tr', {}, ['Data', 'Simulazione', 'Punteggio', 'Tempo'].map(t => h('th', {}, t)))),
-      h('tbody', {}, hist.map(x => h('tr', {}, h('td', {}, new Date(x.t).toLocaleDateString('it-IT')), h('td', {}, (MOCK[x.mockId] || {}).title || x.mockId), h('td', { class: 'num' + (x.score >= (x.passMark || 0.7) ? ' ok' : '') }, `${Math.round(x.score * 100)}%`), h('td', { class: 'num' }, fmtTime(x.ms || 0)))))))));
+  if (hist.length) root.append(h('section', { class: 'card' }, h('div', { class: 'card-h' }, h('h2', {}, 'History')),
+    h('div', { class: 'tbl-wrap' }, h('table', { class: 'data-table compact' }, h('thead', {}, h('tr', {}, [['Date', ''], ['Mock', ''], ['Score', 'num'], ['Time', 'num']].map(([t, c]) => h('th', { class: c }, t)))),
+      h('tbody', {}, hist.map(x => h('tr', {}, h('td', {}, new Date(x.t).toLocaleDateString('en-GB')), h('td', {}, (MOCK[x.mockId] || {}).title || x.mockId), h('td', { class: 'num' + (x.score >= (x.passMark || 0.7) ? ' ok' : '') }, `${Math.round(x.score * 100)}%`), h('td', { class: 'num' }, fmtTime(x.ms || 0)))))))));
 }
 
 export function mockRun(root, id) {
   const m = MOCK[id];
-  if (!m) { root.append(h('p', {}, 'Simulazione non trovata.')); return; }
-  root.append(h('div', { class: 'crumbs' }, h('a', { href: '#/simulazioni' }, 'Simulazioni'), ' / ', m.title));
+  if (!m) { root.append(h('p', {}, 'Mock not found.')); return; }
+  root.append(h('div', { class: 'crumbs' }, h('a', { href: '#/mocks' }, 'Mocks'), ' / ', m.title));
   if (m.video) return videoMock(root, m);
-  const intro = h('section', { class: 'card' },
-    h('h1', {}, m.title), h('p', { class: 'muted' }, m.desc),
-    h('ul', {}, (m.sections || []).map(s => h('li', {}, `${s.name || (SKILL[s.skill] ? SKILL[s.skill].name : 'Serie numeriche')}: ${s.n} domande${s.limit ? ` · ${Math.round(s.limit / 60)} min` : ''}`))),
-    h('p', { class: 'small muted' }, `${m.timeLimit ? `Tempo totale ${Math.round(m.timeLimit / 60)} min. ` : ''}Tasti rapidi: 1–5 o A–E per rispondere, T/F/C nel verbal, K per la calcolatrice. Tieni carta e penna.`),
-    h('div', { class: 'row-end' }, h('button', { class: 'primary big', onclick: () => start() }, 'Inizia ↵')));
+  const intro = h('section', { class: 'card mock-intro' },
+    h('div', { class: 'kicker' }, m.tag), h('h1', { class: 'display' }, m.title), h('p', { class: 'lead' }, m.desc),
+    h('div', { class: 'sec-list' }, (m.sections || []).map((s, i) => h('div', { class: 'sec-item' }, h('span', { class: 'sec-n' }, String(i + 1).padStart(2, '0')), h('span', { class: 'sec-name' }, s.name || (SKILL[s.skill] ? SKILL[s.skill].name : 'Number series')), h('span', { class: 'sec-meta' }, `${s.n} ${s.n === 1 ? 'question' : 'questions'}${s.limit ? ` · ${Math.round(s.limit / 60)} min` : ''}`)))),
+    h('p', { class: 'small muted' }, `${m.timeLimit ? `Total time ${Math.round(m.timeLimit / 60)} min. ` : ''}Shortcuts: 1–5 or A–E to answer, T/F/C in verbal, K for the calculator. Keep pen and paper at hand.`),
+    h('div', { class: 'row-end' }, h('button', { class: 'btn primary big', onclick: () => start() }, 'Start', h('span', { class: 'arrow' }, '↵'))));
   root.append(intro);
   const onEnter = e => { if (e.key === 'Enter') { document.removeEventListener('keydown', onEnter); start(); } };
   document.addEventListener('keydown', onEnter);
@@ -65,9 +67,9 @@ export function mockRun(root, id) {
       if (k >= sections.length) return done(box, all, totalMs, endedEarly);
       const s = sections[k];
       box.innerHTML = '';
-      box.append(h('div', { class: 'cta' }, h('div', {}, h('div', { class: 'cta-t' }, `Sezione ${k + 1}/${sections.length}: ${s.name || SKILL[s.skill].name}`), h('div', { class: 'muted' }, `${s.items.length} domande${s.limit ? ` in ${Math.round(s.limit / 60)} minuti` : ''}`)), h('button', { class: 'primary', onclick: () => {
+      box.append(h('div', { class: 'cta' }, h('div', {}, h('div', { class: 'cta-t' }, `Section ${k + 1}/${sections.length}: ${s.name || SKILL[s.skill].name}`), h('div', { class: 'muted' }, `${s.items.length} ${s.items.length === 1 ? 'question' : 'questions'}${s.limit ? ` in ${Math.round(s.limit / 60)} minutes` : ''}`)), h('button', { class: 'btn primary', onclick: () => {
         runQuiz(box, s.items, { mode: 'mock', title: `${m.title} · ${s.name || ''}`, timeLimit: s.limit, onDone: ({ results, totalMs: t, early }) => { all.push(...results.map(r => ({ ...r, section: s.name || s.skill }))); totalMs += t; if (early) endedEarly = true; k = early ? sections.length : k + 1; nextSection(); } });
-      } }, 'Inizia sezione')));
+      } }, 'Start section')));
     };
     nextSection();
   }
@@ -79,10 +81,10 @@ export function mockRun(root, id) {
     for (const r of results) { const sk = r.item.skill; per[sk] = per[sk] || { n: 0, s: 0 }; per[sk].n++; per[sk].s += r.score; }
     const perAcc = Object.fromEntries(Object.entries(per).map(([k, v]) => [k, v.s / v.n]));
     logMock({ mockId: m.id, score, ms: totalMs, n: results.length, passMark: m.passMark || 0.7, per: perAcc, early });
-    if (m.id === 'diag' && !early) setDiag(perAcc);
-    renderReport(box, { results, totalMs, title: m.title, passMark: m.passMark || 0.7, sections: true, onBack: () => go('#/simulazioni'), onRetry: () => { location.hash = `#/simulazioni/${m.id}?r=${Date.now()}`; } });
-    if (early) box.prepend(h('div', { class: 'notice' }, 'Simulazione interrotta: le risposte date contano per i livelli, ma la simulazione non risulta completata.'));
-    else if (m.id === 'diag') box.prepend(h('div', { class: 'notice ok' }, 'Diagnostico salvato: la dashboard ora usa questi risultati come punto di partenza e propone la sessione consigliata.'));
+    const remeasure = m.id === 'diag' && !early ? setDiag(perAcc) : false;
+    renderReport(box, { results, totalMs, title: m.title, passMark: m.passMark || 0.7, sections: true, onBack: () => go('#/mocks'), onRetry: () => { location.hash = `#/mocks/${m.id}?r=${Date.now()}`; } });
+    if (early) box.prepend(h('div', { class: 'notice' }, 'Mock ended early: your answers count towards the levels, but the mock is not marked as completed.'));
+    else if (m.id === 'diag') box.prepend(h('div', { class: 'notice ok' }, remeasure ? 'New measurement saved. Your starting point stays your first diagnostic, so Progress always shows how far you have come.' : 'Diagnostic saved: this is your starting point. Today now recommends a session on your weakest areas.'));
   }
 }
 
@@ -92,6 +94,6 @@ function videoMock(root, m) {
   const pool = C.behavioural;
   const pickCat = cat => shuffle(r, pool.filter(x => x.category === cat))[0];
   const qs = [pickCat('motivation'), pickCat('competency'), pickCat('competency'), pickCat('strengths') || pickCat('banking-specific'), pickCat('banking-specific') || pickCat('technical-explain')].filter(Boolean);
-  const box = h('div', {}); root.append(h('section', { class: 'card' }, h('h1', {}, m.title), h('p', { class: 'muted' }, m.desc)), box);
-  videoRoom(box, { questions: qs.length ? qs : null, onDone: () => { box.innerHTML = ''; box.append(h('div', { class: 'cta' }, h('div', {}, h('div', { class: 'cta-t' }, 'Simulazione video completata'), h('div', { class: 'muted' }, 'Le autovalutazioni contano per l’area Behavioural. Rifai le domande con un voto < 4.')), h('a', { class: 'primary btnlink', href: '#/progressi' }, 'Vedi progressi'))); } });
+  const box = h('div', {}); root.append(h('section', { class: 'card' }, h('div', { class: 'kicker' }, m.tag), h('h1', { class: 'display' }, m.title), h('p', { class: 'lead' }, m.desc)), box);
+  videoRoom(box, { questions: qs.length ? qs : null, onDone: () => { box.innerHTML = ''; box.append(h('div', { class: 'cta' }, h('div', {}, h('div', { class: 'cta-t' }, 'Video mock completed'), h('div', { class: 'muted' }, 'Your self-ratings count towards the Behavioural area. Redo any question you rated below 4.')), h('a', { class: 'btn primary', href: '#/today/progress' }, 'See progress'))); } });
 }

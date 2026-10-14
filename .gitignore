@@ -2,3 +2,4 @@ data/staging/
 .DS_Store
 node_modules/
 tests/privacy.sh
+tests/out/

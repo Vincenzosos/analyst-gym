@@ -3,18 +3,16 @@
 The site is a personal training gym for graduate-programme online tests (SHL, Kenexa, Cappfinity, HireVue style) and banking or finance interviews. The target user is a finance graduate preparing for analyst roles.
 
 ## Language rules
-- **Question text** (`stem`, `options`, passage `text`, dataset titles and labels) is in **ENGLISH**, as in the real tests.
-- **Lessons and explanations** (`explanation.*`, lesson `sections`, `examples`, `cheatsheet`, SJT option explanations, behavioural guidance) are in **ITALIAN**. Use plain, direct Italian. Keep English technical terms where bankers use them, e.g. "EBITDA", "enterprise value", "accretion/dilution".
+- All text is in **British English**, as used by London investment banks: question stems, options, passages, datasets, explanations, lessons, theme cards and interview guidance. Keep finance terms standard (EBITDA, enterprise value, accretion/dilution, bps).
+- Numbers use English formatting: decimal point and comma thousands (1,250.5).
 - Never use em dashes (—). Use commas, colons or full stops.
-- Never name real people. Real companies may appear only in neutral, factual, non-sensitive ways. Prefer fictional company names such as "Northbridge Industrials" or "Alvona Foods".
-
 ## Explanation object (for every question)
 ```json
 "explanation": {
-  "steps": ["Passo 1 ...", "Passo 2 ...", "..."],
-  "shortcut": "Il modo più veloce per arrivarci in sede di test",
-  "trap": "L'errore tipico che porta alla risposta sbagliata più scelta",
-  "rule": "La regola generale da riutilizzare (1 riga)"
+  "steps": ["Step 1 ...", "Step 2 ...", "..."],
+  "shortcut": "The fastest way to get there under test conditions",
+  "trap": "The typical mistake behind the most chosen wrong answer",
+  "rule": "The general rule to reuse (one line)"
 }
 ```
 - `steps`: 2–6 numbered-in-spirit steps, showing the actual arithmetic or logic with the numbers.
@@ -24,7 +22,7 @@ The site is a personal training gym for graduate-programme online tests (SHL, Ke
 ```json
 {
   "id": "num-012-b",
-  "skill": "numerical|verbal|logical|sjt|fin-acc|fin-val|fin-ma|fin-lbo|markets|commercial",
+  "skill": "numerical|verbal|logical|sjt|fin-acc|fin-val|fin-ma|fin-lbo|markets|commercial|culture",
   "level": 1,
   "type": "mcq|tfc|numeric",
   "ref": "optional id of a passage/dataset in the same file",
@@ -93,11 +91,11 @@ The site is a personal training gym for graduate-programme online tests (SHL, Ke
 
 ## Lesson
 ```json
-{ "id": "les-num-01", "skill": "numerical", "order": 1, "title": "Italian title", "minutes": 12,
-  "summary": "1 riga: cosa saprai fare alla fine",
-  "sections": [{ "h": "Titolo sezione", "body": "Markdown semplice in italiano: paragrafi brevi, elenchi puntati, **grassetto**, tabelle markdown, formule in testo semplice (es. Crescita % = (Nuovo − Vecchio) / Vecchio × 100)" }],
-  "examples": [{ "q": "Esempio (stem in inglese come nel test)", "steps": ["passo", "passo"], "answer": "risposta" }],
-  "cheatsheet": ["regola o formula breve", "..."] }
+{ "id": "les-num-01", "skill": "numerical", "order": 1, "title": "Lesson title", "minutes": 12,
+  "summary": "One line: what you will be able to do at the end",
+  "sections": [{ "h": "Section title", "body": "Simple markdown: short paragraphs, bullet lists, **bold**, markdown tables, plain-text formulas (e.g. Growth % = (New − Old) / Old × 100)" }],
+  "examples": [{ "q": "Worked example (stem as in the test)", "steps": ["step", "step"], "answer": "answer" }],
+  "cheatsheet": ["short rule or formula", "..."] }
 ```
 - Lessons teach a **method** the candidate can apply under time pressure, not encyclopaedic theory.
 - Each lesson has 4–8 sections, 2–4 worked examples and 4–10 cheatsheet lines.
@@ -112,3 +110,22 @@ Each pack is one JSON file in `data/staging/<pack>.json` with **top-level keys**
 - `{"questions": [...]}`.
 
 It must be valid JSON: double quotes, no trailing commas, no comments. Validate it with `python3 -c "import json;json.load(open(PATH))"` after writing.
+
+
+## News theme cards (`data/news/concepts.json`)
+```json
+{ "concepts": [{
+  "id": "central-bank-cut", "theme": "Politica monetaria", "title": "Taglio dei tassi", "skill": "markets|commercial|culture", "priority": 1,
+  "match": ["RegExp sources applied case-insensitively to English headlines"], "exclude": ["optional RegExp sources"],
+  "explainer": "markdown, 100-180 words", "interview": "guidance, then an 'EN: ' template sentence", "watch": ["2-4 bullets"], "pill": { "why": "one sentence", "watch": "one sentence", "en": "interview talking point" },
+  "questions": [{ "qid": "central-bank-cut-q1", "level": 1, "type": "mcq", "stem": "English", "options": ["4"], "answer": 0, "timeTarget": 60, "explanation": { "steps": [], "shortcut": "", "trap": "", "rule": "" }, "tags": [] }]
+}]}
+```
+- Questions are shown next to a real headline matched by the regexes, so they must test the general mechanism of the theme and stay correct whatever the specific headline says.
+- A headline gets at most 2 themes, highest `priority` first.
+
+## General culture (`data/banks/bank-culture.json`)
+Same item format as the other banks, `skill: "culture"`. Facts must be durable (no current office holders, no figures that change every year) or explicitly date-stamped.
+
+## News data (`data/news/headlines.json`, `data/news/markets.json`)
+Generated daily by `scripts/fetch-news.mjs`. Headlines: titles, source, date and link only. Markets: `series[KEY] = { name, kind, unit, source, asOf, points: [[date, value], ...] }`.

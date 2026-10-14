@@ -4,482 +4,482 @@
    "id": "les-sjt-01",
    "skill": "sjt",
    "order": 1,
-   "title": "SJT 1: come vengono corretti e quali comportamenti premiano",
+   "title": "SJT 1: how they are scored and which behaviours they reward",
    "minutes": 14,
-   "summary": "Saprai come una banca costruisce e corregge un SJT e quale gerarchia di valori usare per scegliere la risposta che la chiave considera migliore.",
+   "summary": "You will learn how a bank builds and scores an SJT, and which hierarchy of values to use to choose the response the key considers best.",
    "sections": [
     {
-     "h": "Cosa misura un SJT (e cosa no)",
-     "body": "Un Situational Judgement Test non misura l'intelligenza: misura quanto il tuo giudizio coincide con quello che la banca si aspetta da un analyst nei primi anni. Ogni scenario descrive una situazione realistica (deadline, errore, cliente, collega, conflitto di priorità) e ti chiede di valutare 4 o 5 possibili reazioni.\n\n**I formati che incontrerai:**\n- **Most / Least effective**: scegli la risposta più efficace e quella meno efficace.\n- **Rating**: valuti ogni risposta su una scala, tipicamente da 1 (controproducente) a 4 (molto efficace). Le risposte sono indipendenti: possono esserci due 4 o nessun 1.\n- **Ranking**: ordini tutte le risposte dalla più alla meno efficace.\n- **Single best**: scegli solo la migliore, spesso dentro test 'immersivi' con email, chat o brevi video.\n\nGli scenari sono di solito 15-30 e il tempo è spesso libero o ampio (in media 60-90 secondi a scenario). Il vero vincolo non è il tempo ma la coerenza: la chiave è una sola e tu devi avvicinarti il più possibile."
+     "h": "What an SJT measures (and what it does not)",
+     "body": "A Situational Judgement Test does not measure intelligence: it measures how closely your judgement matches what the bank expects from an analyst in the early years. Each scenario describes a realistic situation (deadline, error, client, colleague, conflicting priorities) and asks you to assess 4 or 5 possible reactions.\n\n**The formats you will meet:**\n- **Most / Least effective**: choose the most effective and the least effective response.\n- **Rating**: you rate each response on a scale, typically from 1 (counterproductive) to 4 (very effective). The responses are independent: there can be two 4s or no 1 at all.\n- **Ranking**: you order all the responses from most to least effective.\n- **Single best**: you choose only the best one, often within 'immersive' tests with emails, chats or short videos.\n\nThere are usually 15-30 scenarios and time is often unlimited or generous (on average 60-90 seconds per scenario). The real constraint is not time but consistency: there is only one key and you need to get as close to it as possible."
     },
     {
-     "h": "Come viene calcolato il punteggio",
-     "body": "La chiave di correzione nasce da esperti della banca (manager, high performer, HR) che valutano ogni risposta. Il tuo punteggio dipende dalla **distanza** tra le tue scelte e la chiave, non da un giusto o sbagliato secco.\n\n| Formato | Come viene premiato | Cosa implica per te |\n|---|---|---|\n| Most / Least | Punti se coincidi con la chiave; in molti modelli scegliere come 'most' la risposta peggiore costa più di un errore normale | Evita soprattutto di invertire migliore e peggiore |\n| Rating 1-4 | Credito parziale in base alla distanza dalla valutazione degli esperti | Sbagliare di 1 punto costa poco, sbagliare di 3 azzera i punti di quella risposta |\n| Ranking | Si misura quanto il tuo ordine si discosta da quello di riferimento | Primo e ultimo posto pesano di più: fissali per primi |\n\nModello semplificato per capire la logica: nel rating, punti = 3 meno la distanza dalla chiave (minimo 0). Una risposta valutata 3 quando la chiave dice 4 prende 2 punti su 3; valutata 1 prende 0. **La strategia vincente è evitare gli errori grossi**, non indovinare ogni sfumatura.\n\nIl punteggio finale viene poi confrontato con un gruppo di riferimento. Spesso l'SJT funziona da filtro con una soglia: un risultato solido e senza errori gravi basta per passare."
+     "h": "How the score is calculated",
+     "body": "The scoring key is built by experts at the bank (managers, high performers, HR) who rate each response. Your score depends on the **distance** between your choices and the key, not on a simple right or wrong.\n\n| Format | How it is rewarded | What it means for you |\n|---|---|---|\n| Most / Least | Points if you match the key; in many models choosing the worst response as 'most' costs more than an ordinary error | Above all, avoid swapping best and worst |\n| Rating 1-4 | Partial credit based on the distance from the experts' rating | Being off by 1 point costs little, being off by 3 wipes out the points for that response |\n| Ranking | It measures how far your order deviates from the reference order | First and last place carry more weight: fix them first |\n\nSimplified model to understand the logic: in rating, points = 3 minus the distance from the key (minimum 0). A response rated 3 when the key says 4 earns 2 points out of 3; rated 1, it earns 0. **The winning strategy is to avoid big errors**, not to guess every nuance.\n\nThe final score is then compared with a reference group. The SJT often works as a filter with a threshold: a solid result with no serious errors is enough to pass."
     },
     {
-     "h": "Le 6 competenze che la chiave premia",
-     "body": "| Competenza | Cosa fa l'analyst efficace | Segnali di una risposta debole |\n|---|---|---|\n| **Integrity** | Dice la verità, rispetta riservatezza e regole, segnala gli errori anche quando sono suoi | Nascondere, 'aggiustare' i numeri, condividere informazioni riservate, accettare regali senza dichiararli |\n| **Ownership** | Si prende il problema, agisce senza aspettare che qualcuno glielo chieda, porta una soluzione | 'Non è compito mio', aspettare, scaricare il problema su altri |\n| **Client focus** | Mette al centro l'interesse del cliente nel rispetto delle regole, gestisce le aspettative con onestà | Promettere ciò che non puoi garantire, ignorare una richiesta, privilegiare la comodità interna |\n| **Teamwork** | Affronta i conflitti direttamente e in privato, aiuta, condivide informazioni | Lamentarsi con terzi, criticare in pubblico, lavorare da solo in silenzio |\n| **Escalation** | Informa la persona giusta, al momento giusto, con fatti e una proposta | Tacere finché è tardi, oppure andare dal senior per ogni dettaglio |\n| **Prioritisation** | Valuta urgenza e impatto, rinegozia le scadenze presto, chiede a chi ha l'autorità di decidere | Lavorare in ordine di arrivo, accettare tutto e poi mancare le scadenze |\n\nA queste si aggiunge spesso **resilience / learning**: accettare il feedback, chiedere esempi concreti, migliorare in modo visibile."
+     "h": "The 6 competencies the key rewards",
+     "body": "| Competency | What the effective analyst does | Signs of a weak response |\n|---|---|---|\n| **Integrity** | Tells the truth, respects confidentiality and rules, flags errors even when they are their own | Hiding, 'adjusting' the numbers, sharing confidential information, accepting gifts without declaring them |\n| **Ownership** | Takes on the problem, acts without waiting to be asked, brings a solution | 'It is not my job', waiting, offloading the problem onto others |\n| **Client focus** | Puts the client's interest first while respecting the rules, manages expectations honestly | Promising what you cannot guarantee, ignoring a request, putting internal convenience first |\n| **Teamwork** | Tackles conflicts directly and in private, helps, shares information | Complaining to third parties, criticising in public, working alone in silence |\n| **Escalation** | Informs the right person, at the right time, with facts and a proposal | Staying silent until it is too late, or going to a senior over every detail |\n| **Prioritisation** | Assesses urgency and impact, renegotiates deadlines early, asks whoever has the authority to decide | Working in order of arrival, accepting everything and then missing deadlines |\n\n**Resilience / learning** is often added to these: accepting feedback, asking for concrete examples, improving visibly."
     },
     {
-     "h": "La gerarchia dei valori: cosa vince in caso di conflitto",
-     "body": "Quasi ogni scenario mette due valori in conflitto: velocità contro accuratezza, cliente contro regole, lealtà al collega contro qualità. La chiave segue quasi sempre questa gerarchia:\n\n1. **Integrità, compliance e rischio**: legge, regole interne, riservatezza, correttezza dei numeri.\n2. **Interesse del cliente**: qualità, tempi, aspettative gestite in modo onesto.\n3. **Team e banca**: rapporti, reputazione interna, efficienza.\n4. **Comodità personale**: orari, immagine, evitare conversazioni scomode.\n\nUn livello superiore batte sempre uno inferiore. Esempi:\n- Il cliente chiede un'informazione riservata su un altro cliente: vince l'integrità (livello 1) sull'accontentarlo (livello 2).\n- Rispettare la scadenza con un numero che sai sbagliato: vince l'accuratezza, ma devi avvisare subito che la scadenza è a rischio.\n- Evitare l'imbarazzo di segnalare un tuo errore: la comodità personale (livello 4) perde sempre.\n\n**Bad news early**: un problema segnalato presto, con fatti e una proposta, vale più di un problema risolto in silenzio e molto più di un problema nascosto."
+     "h": "The hierarchy of values: what wins in a conflict",
+     "body": "Almost every scenario puts two values in conflict: speed versus accuracy, client versus rules, loyalty to a colleague versus quality. The key almost always follows this hierarchy:\n\n1. **Integrity, compliance and risk**: law, internal rules, confidentiality, accuracy of the numbers.\n2. **Client interest**: quality, timing, expectations managed honestly.\n3. **Team and bank**: relationships, internal reputation, efficiency.\n4. **Personal convenience**: hours, image, avoiding awkward conversations.\n\nA higher level always beats a lower one. Examples:\n- The client asks for confidential information about another client: integrity (level 1) beats keeping them happy (level 2).\n- Meeting the deadline with a number you know is wrong: accuracy wins, but you must warn straight away that the deadline is at risk.\n- Avoiding the embarrassment of flagging your own error: personal convenience (level 4) always loses.\n\n**Bad news early**: a problem flagged early, with facts and a proposal, is worth more than a problem solved in silence and much more than a hidden problem."
     },
     {
-     "h": "L'identikit della risposta da 4 e di quella da 1",
-     "body": "**Risposta da 4 (most effective)**, di solito:\n- è **proattiva**: la fai tu, adesso;\n- è **trasparente**: le persone interessate sono informate;\n- è **proporzionata**: coinvolge il livello giusto, né troppo alto né troppo basso;\n- **risolve** il problema immediato e, se possibile, la causa.\n\n**Risposta da 1 (least effective, counterproductive)**:\n- viola una regola, mente o tiene nascosto un rischio a chi deve saperlo;\n- lascia che un danno arrivi al cliente;\n- crea un conflitto inutile (accuse pubbliche, scavalcare un collega come prima mossa).\n\n**Le risposte da 2 e 3** sono le più insidiose:\n- **3** = utile ma incompleta: risolve ma non informa chi deve sapere, informa ma senza proposta, chiede aiuto quando potresti prima provare tu;\n- **2** = passiva o tardiva ma senza danno attivo: aspettare, rimandare, chiedere permesso per cose banali, passare il problema a qualcun altro.\n\nParole spia di una risposta bassa: 'ignore', 'wait and see', 'assume', 'without telling', 'just this once'."
+     "h": "The profile of a 4 response and of a 1 response",
+     "body": "**A 4 response (most effective)** is usually:\n- **proactive**: you do it, now;\n- **transparent**: the people concerned are informed;\n- **proportionate**: it involves the right level, neither too high nor too low;\n- it **solves** the immediate problem and, where possible, the cause.\n\n**A 1 response (least effective, counterproductive)**:\n- breaks a rule, lies or hides a risk from someone who needs to know;\n- lets harm reach the client;\n- creates unnecessary conflict (public accusations, going over a colleague's head as a first move).\n\n**2 and 3 responses** are the trickiest:\n- **3** = useful but incomplete: it solves the problem but does not inform those who need to know, informs but without a proposal, or asks for help when you could try yourself first;\n- **2** = passive or late but without active harm: waiting, postponing, asking permission for trivial things, passing the problem to someone else.\n\nWarning words for a low response: 'ignore', 'wait and see', 'assume', 'without telling', 'just this once'."
     },
     {
-     "h": "Leggere i valori della banca prima del test",
-     "body": "Ogni banca pubblica i propri valori nella pagina careers o nel report annuale (parole come integrity, respect, excellence, client focus, speak up, ownership). La chiave dell'SJT riflette quei valori.\n\n**Esercizio da 10 minuti prima di ogni test:**\n1. Copia i 4-6 valori della banca.\n2. Per ciascuno scrivi un comportamento concreto da analyst (es. 'speak up' = segnalare un errore nel modello anche se l'ha fatto il VP).\n3. Collega ogni valore a una delle 6 competenze di questa lezione.\n\nSe la banca insiste su un valore, negli scenari ambigui le risposte che lo esprimono salgono di un gradino. La gerarchia della sezione precedente però resta valida ovunque: nessuna banca premia chi viola le regole per accontentare un cliente."
+     "h": "Reading the bank's values before the test",
+     "body": "Every bank publishes its values on its careers page or in its annual report (words such as integrity, respect, excellence, client focus, speak up, ownership). The SJT key reflects those values.\n\n**A 10-minute exercise before every test:**\n1. Copy down the bank's 4-6 values.\n2. For each one, write a concrete analyst behaviour (e.g. 'speak up' = flagging an error in the model even if the VP made it).\n3. Link each value to one of the 6 competencies in this lesson.\n\nIf the bank stresses a value, in ambiguous scenarios the responses that express it move up a notch. The hierarchy in the previous section, however, holds everywhere: no bank rewards someone who breaks the rules to please a client."
     }
    ],
    "examples": [
     {
      "q": "You are an analyst on a sell-side M&A process. At 11pm, while finalising the information memorandum due to the client at 8am, you re-check your model against the audited accounts and confirm that last year's EBITDA is EUR 2.1m lower than the figure shown in the teaser sent to bidders last week. Your associate is offline. Which response is MOST effective and which is LEAST effective? A) Use the audited figure in the memorandum, then email your associate and VP tonight explaining the discrepancy, its source and its size, so they can decide how to handle the teaser before the morning. B) Use the teaser figure in the memorandum so that bidders see consistent numbers, and mention it to your associate when convenient. C) Use the audited figure in the memorandum, finish the document, and tell your associate about the teaser first thing in the morning. D) Stop working on the memorandum until you can speak to your associate in the morning.",
      "steps": [
-      "Individua il conflitto: coerenza con il teaser e scadenza contro correttezza dei numeri. Il dato giusto è quello verificato sui bilanci certificati: per la gerarchia vince l'integrità (livello 1).",
-      "Filtro integrità: B inserisce consapevolmente un numero che sai sbagliato in un documento per il cliente e i bidder. È l'unica risposta che crea un danno attivo: least effective (rating 1).",
-      "A usa il numero corretto, informa subito chi ha l'autorità di decidere sul teaser (associate e, visto che l'associate non è raggiungibile e la scadenza è tra poche ore, anche il VP), fornisce fatti (fonte, entità) e non mette a rischio la scadenza: proattiva, trasparente, proporzionata. Most effective (rating 4).",
-      "C fa la cosa giusta sul documento ma informa dopo, quando resta poco tempo per decidere prima dell'invio (rating 3). D è passiva, non informa nessuno e mette a rischio la scadenza delle 8 (rating 2)."
+      "Identify the conflict: consistency with the teaser and the deadline versus accuracy of the numbers. The right figure is the one checked against the audited accounts: under the hierarchy, integrity wins (level 1).",
+      "Integrity filter: B knowingly puts a number you know is wrong into a document for the client and the bidders. It is the only response that causes active harm: least effective (rating 1).",
+      "A uses the correct number, immediately informs those with the authority to decide on the teaser (the associate and, since the associate cannot be reached and the deadline is a few hours away, the VP too), provides facts (source, size) and does not put the deadline at risk: proactive, transparent, proportionate. Most effective (rating 4).",
+      "C does the right thing on the document but informs later, when little time is left to decide before it is sent (rating 3). D is passive, informs no one and puts the 8am deadline at risk (rating 2)."
      ],
-     "answer": "Most effective: A. Least effective: B. Rating indicativi: A 4, B 1, C 3, D 2."
+     "answer": "Most effective: A. Least effective: B. Indicative ratings: A 4, B 1, C 3, D 2."
     },
     {
      "q": "Rating format, scale 1-4. The expert key for options A-D is 4, 2, 1, 3. Candidate X rates them 3, 2, 2, 4. Candidate Y rates them 1, 2, 4, 3. Using the rule 'points = 3 minus the distance from the key, minimum 0', who scores higher?",
      "steps": [
-      "Candidato X: distanze |3-4| = 1, |2-2| = 0, |2-1| = 1, |4-3| = 1. Punti 2 + 3 + 2 + 2 = 9 su 12, cioè 75%.",
-      "Candidato Y: distanze |1-4| = 3, |2-2| = 0, |4-1| = 3, |3-3| = 0. Punti 0 + 3 + 0 + 3 = 6 su 12, cioè 50%.",
-      "Y ha due valutazioni esatte e X una sola, eppure X vince: Y ha invertito la risposta migliore (A, chiave 4, valutata 1) e la peggiore (C, chiave 1, valutata 4), e ogni inversione azzera i punti di quella risposta."
+      "Candidate X: distances |3-4| = 1, |2-2| = 0, |2-1| = 1, |4-3| = 1. Points 2 + 3 + 2 + 2 = 9 out of 12, i.e. 75%.",
+      "Candidate Y: distances |1-4| = 3, |2-2| = 0, |4-1| = 3, |3-3| = 0. Points 0 + 3 + 0 + 3 = 6 out of 12, i.e. 50%.",
+      "Y has two exact ratings and X only one, yet X wins: Y swapped the best response (A, key 4, rated 1) and the worst (C, key 1, rated 4), and each swap wipes out the points for that response."
      ],
-     "answer": "X (9/12) batte Y (6/12): tanti piccoli scostamenti costano meno di un'inversione tra migliore e peggiore."
+     "answer": "X (9/12) beats Y (6/12): many small deviations cost less than one swap between best and worst."
     },
     {
      "q": "A client's CFO, with whom you are working on a sell-side mandate, asks you informally whether one of the bidders is the company your bank advised on another deal last year, and how they usually approach valuation. Choose the MOST and LEAST effective responses. A) Politely explain that you cannot discuss other clients or mandates, and offer to involve your deal team lead on what can be shared about bidders. B) Confirm only that the bank knows the bidder well, without giving details. C) Tell the CFO you will check and get back to them, then do nothing further unless they ask again. D) Without addressing the question about the bank's other clients, give the CFO your personal view of how that type of buyer typically approaches valuation, based on public information.",
      "steps": [
-      "Conflitto: client focus (accontentare il CFO) contro riservatezza (integrità). Per la gerarchia vince la riservatezza.",
-      "B sembra innocua ma conferma un rapporto con un altro cliente: è una violazione della riservatezza. Rating 1, least effective.",
-      "A rifiuta con cortesia, spiega il limite e porta la richiesta a chi può decidere cosa condividere: protegge le regole e il rapporto con il cliente. Rating 4, most effective.",
-      "D è utile e resta su informazioni pubbliche, ma elude la domanda sulla riservatezza invece di chiarire il limite e dà un parere personale su un tema da deal lead (rating 3). C promette una verifica che non arriva e lascia il cliente senza risposta (rating 2)."
+      "Conflict: client focus (pleasing the CFO) versus confidentiality (integrity). Under the hierarchy, confidentiality wins.",
+      "B looks harmless but confirms a relationship with another client: it is a breach of confidentiality. Rating 1, least effective.",
+      "A declines politely, explains the limit and takes the request to the person who can decide what to share: it protects the rules and the relationship with the client. Rating 4, most effective.",
+      "D is helpful and sticks to public information, but it sidesteps the confidentiality question instead of clarifying the limit, and gives a personal view on a matter for the deal lead (rating 3). C promises a check that never comes and leaves the client without an answer (rating 2)."
      ],
-     "answer": "Most effective: A. Least effective: B. Rating indicativi: A 4, B 1, C 2, D 3."
+     "answer": "Most effective: A. Least effective: B. Indicative ratings: A 4, B 1, C 2, D 3."
     }
    ],
    "cheatsheet": [
-    "Gerarchia: integrità e compliance > cliente > team e banca > comodità personale.",
-    "La chiave è scritta da esperti della banca: rispondi come l'analyst ideale, non come reagiresti d'istinto.",
-    "Il punteggio è a distanza: prima di tutto evita di invertire migliore e peggiore.",
-    "Risposta da 4 = proattiva, trasparente, proporzionata, risolve.",
-    "Risposta da 1 = mente, viola regole, nasconde un rischio o lascia arrivare un danno al cliente.",
-    "Bad news early: segnala presto, con fatti e una proposta.",
-    "Parole spia di una risposta bassa: ignore, wait and see, assume, without telling, just this once.",
-    "Prima del test traduci i valori della banca in comportamenti concreti da analyst."
+    "Hierarchy: integrity and compliance > client > team and bank > personal convenience.",
+    "The key is written by experts at the bank: answer as the ideal analyst would, not as you would react on instinct.",
+    "Scoring is distance-based: above all, avoid swapping best and worst.",
+    "A 4 response = proactive, transparent, proportionate, solves the problem.",
+    "A 1 response = lies, breaks rules, hides a risk or lets harm reach the client.",
+    "Bad news early: flag problems early, with facts and a proposal.",
+    "Warning words for a low response: ignore, wait and see, assume, without telling, just this once.",
+    "Before the test, translate the bank's values into concrete analyst behaviours."
    ]
   },
   {
    "id": "les-sjt-02",
    "skill": "sjt",
    "order": 2,
-   "title": "SJT 2: l'algoritmo per most/least e ranking, e gli scenari tipici in banca",
+   "title": "SJT 2: the algorithm for most/least and ranking, and typical banking scenarios",
    "minutes": 16,
-   "summary": "Saprai applicare in 60-90 secondi un algoritmo a 5 filtri per scegliere most e least, assegnare i rating e ordinare le risposte nei classici scenari bancari.",
+   "summary": "You will be able to apply a 5-filter algorithm in 60-90 seconds to choose most and least, assign ratings and rank the responses in classic banking scenarios.",
    "sections": [
     {
-     "h": "Prima di leggere le opzioni: prevedi la risposta",
-     "body": "Leggi lo scenario e fermati 10 secondi prima di guardare le opzioni. Rispondi a tre domande:\n\n1. **Qual è il conflitto?** Scadenza contro accuratezza, cliente contro regole, collega contro qualità, due capi contro il tuo tempo.\n2. **Quale competenza è in gioco?** Integrity, ownership, client focus, teamwork, escalation, prioritisation.\n3. **Cosa farebbe l'analyst ideale, adesso?** Una frase.\n\nPoi leggi le opzioni e cerca quella più vicina alla tua previsione. Così non ti fai trascinare da risposte scritte bene ma sbagliate nel merito."
+     "h": "Before reading the options: predict the answer",
+     "body": "Read the scenario and stop for 10 seconds before looking at the options. Answer three questions:\n\n1. **What is the conflict?** Deadline versus accuracy, client versus rules, colleague versus quality, two bosses versus your time.\n2. **Which competency is at stake?** Integrity, ownership, client focus, teamwork, escalation, prioritisation.\n3. **What would the ideal analyst do, now?** One sentence.\n\nThen read the options and look for the one closest to your prediction. That way you will not be swayed by responses that are well written but wrong in substance."
     },
     {
-     "h": "I 5 filtri da applicare a ogni opzione",
-     "body": "| Filtro | Domanda | Effetto sul rating |\n|---|---|---|\n| **F1 Regole** | Mente, viola regole o riservatezza, oppure tiene nascosto un rischio a chi deve saperlo? | Se sì: rating 1, candidata least |\n| **F2 Azione** | Fa qualcosa di concreto o lascia il problema dov'è? | Se è passiva: massimo 2 |\n| **F3 Soluzione** | Risolve davvero il problema immediato, tutto e non solo una parte? | Se sì: almeno 3 |\n| **F4 Persone** | Coinvolge chi deve sapere o decidere, al momento giusto e senza esagerare? | Se sì (e supera F3): candidata 4 |\n| **F5 Futuro** | Affronta anche la causa o evita che il problema si ripeta? | Decide gli spareggi tra due buone opzioni |\n\n**Lettura rapida:** F1 trova il least, F3 + F4 trovano il most, F5 decide gli spareggi."
+     "h": "The 5 filters to apply to every option",
+     "body": "| Filter | Question | Effect on the rating |\n|---|---|---|\n| **F1 Rules** | Does it lie, break rules or confidentiality, or hide a risk from someone who needs to know? | If yes: rating 1, candidate for least |\n| **F2 Action** | Does it do something concrete or leave the problem where it is? | If passive: 2 at most |\n| **F3 Solution** | Does it really solve the immediate problem, all of it and not just part? | If yes: at least 3 |\n| **F4 People** | Does it involve those who need to know or decide, at the right time and without overdoing it? | If yes (and it passes F3): candidate for 4 |\n| **F5 Future** | Does it also tackle the cause or prevent the problem from recurring? | Breaks ties between two good options |\n\n**Quick reading:** F1 finds the least, F3 + F4 find the most, F5 breaks the ties."
     },
     {
-     "h": "Most e least: le regole di spareggio",
-     "body": "**Quando due opzioni sembrano entrambe le migliori**, preferisci quella che:\n- fai **tu**, invece di delegare o chiedere permesso per cose che sono nel tuo perimetro;\n- **informa** le persone interessate, invece di risolvere in silenzio;\n- rispetta la **scala di escalation**, invece di saltare livelli;\n- è **più rapida a parità di accuratezza**.\n\n**Quando due opzioni sembrano entrambe le peggiori**, l'ordine dal peggio al meno peggio è:\n1. attivamente scorretta (mentire, violare la riservatezza, nascondere un errore);\n2. passiva che lascia arrivare un danno al cliente o al mercato;\n3. conflittuale (accusare in pubblico, scavalcare un collega come prima mossa);\n4. passiva ma innocua (aspettare, rimandare un problema interno).\n\n**Scala di escalation:** risolvi tu > parli con il collega coinvolto > informi il tuo responsabile diretto > coinvolgi senior o compliance. Salta un livello solo se c'è un rischio legale o regolamentare, se il danno al cliente è imminente e la persona giusta non è raggiungibile, oppure se è proprio il livello inferiore a chiederti di violare una regola. Un semplice errore di un collega non basta: prima ne parli con lui o lei."
+     "h": "Most and least: the tie-break rules",
+     "body": "**When two options both look like the best**, prefer the one that:\n- **you** do, rather than delegating or asking permission for things within your remit;\n- **informs** the people concerned, rather than solving it in silence;\n- respects the **escalation ladder**, rather than skipping levels;\n- is **faster for the same accuracy**.\n\n**When two options both look like the worst**, the order from worst to least bad is:\n1. actively wrong (lying, breaching confidentiality, hiding an error);\n2. passive in a way that lets harm reach the client or the market;\n3. confrontational (accusing in public, going over a colleague's head as a first move);\n4. passive but harmless (waiting, postponing an internal problem).\n\n**Escalation ladder:** you solve it > you speak to the colleague involved > you inform your direct manager > you involve seniors or compliance. Skip a level only if there is a legal or regulatory risk, if harm to the client is imminent and the right person cannot be reached, or if it is the lower level itself that is asking you to break a rule. A simple mistake by a colleague is not enough: speak to them first."
     },
     {
-     "h": "Rating e ranking: procedura passo per passo",
-     "body": "**Rating 1-4 (opzioni indipendenti):**\n1. Applica F1 a tutte: chi viola regole o nasconde un rischio prende 1.\n2. Tra le rimanenti, le passive prendono 2.\n3. Quelle che risolvono prendono 3; diventano 4 solo se superano anche F4.\n4. Controllo finale: due 4 sono possibili, così come nessun 1. Non forzare una distribuzione.\n\n**Ranking (ordina tutte):**\n1. Fissa prima il **primo** posto (F3 + F4) e l'**ultimo** (F1): sono le posizioni che pesano di più.\n2. Ordina le opzioni centrali con la regola: imperfetta ma attiva > passiva ma innocua > passiva che fa danni > attivamente scorretta.\n3. Rileggi l'ordine come una frase: 'A è meglio di B perché...'. Se non sai completarla, rileggi lo scenario.\n\n**Tempo:** 60-90 secondi a scenario. Se dopo 90 secondi sei ancora indeciso tra due posizioni centrali, scegli e vai avanti: quell'errore costa poco."
+     "h": "Rating and ranking: step-by-step procedure",
+     "body": "**Rating 1-4 (independent options):**\n1. Apply F1 to all of them: any that break rules or hide a risk get 1.\n2. Of the rest, the passive ones get 2.\n3. Those that solve the problem get 3; they become 4 only if they also pass F4.\n4. Final check: two 4s are possible, as is no 1 at all. Do not force a distribution.\n\n**Ranking (order them all):**\n1. Fix the **first** place (F3 + F4) and the **last** (F1) first: they are the positions that carry the most weight.\n2. Order the middle options with the rule: imperfect but active > passive but harmless > passive and harmful > actively wrong.\n3. Reread the order as a sentence: 'A is better than B because...'. If you cannot complete it, reread the scenario.\n\n**Time:** 60-90 seconds per scenario. If after 90 seconds you are still torn between two middle positions, choose and move on: that error costs little."
     },
     {
-     "h": "Gli 8 scenari che tornano sempre in banca",
-     "body": "| Scenario | Risposta da 4 | Risposta da 1 |\n|---|---|---|\n| Scopri un **tuo errore** in un documento già inviato | Avvisi subito il responsabile, con la correzione pronta e l'impatto quantificato | Correggi in silenzio o speri che nessuno se ne accorga |\n| Scopri un **errore di un senior** | Ricontrolli i numeri, poi ne parli in privato con lui o lei e proponi la correzione | Lasci perdere per rispetto della gerarchia mentre l'errore va al cliente |\n| **Due senior** ti danno task in conflitto | Informi entrambi, stimi i tempi, proponi un ordine e fai decidere chi ha l'autorità (staffer o VP) | Accetti tutto senza dire nulla e consegni tardi o male |\n| Il cliente chiede **informazioni riservate** | Rifiuti con cortesia, spieghi il limite, coinvolgi il deal lead o compliance | Dai 'solo un'indicazione' |\n| Un **collega non contribuisce** | Gli parli direttamente, capisci il motivo, offri aiuto; escali se il problema continua | Ti lamenti con altri o lo esponi davanti al team |\n| **Scadenza irrealistica** | Lo segnali presto e proponi alternative (scope ridotto, aiuto, nuova data) | Lavori in silenzio e consegni in ritardo o con errori |\n| **Istruzioni poco chiare** | Fai un primo tentativo e chiedi chiarimenti con domande precise | Indovini e consegni senza verificare |\n| **Regalo, conflitto di interessi, trading personale** | Applichi la policy, dichiari, chiedi a compliance | Accetti e taci, 'tanto è poco' |\n\nImpara questa tabella: copre la maggior parte degli scenari dei test delle banche. Per ogni nuovo scenario chiediti a quale riga somiglia."
+     "h": "The 8 scenarios that always come up in banking",
+     "body": "| Scenario | 4 response | 1 response |\n|---|---|---|\n| You find **your own error** in a document already sent | You alert your manager straight away, with the correction ready and the impact quantified | You correct it silently or hope nobody notices |\n| You find **a senior's error** | You recheck the numbers, then raise it with them in private and propose the correction | You let it go out of respect for the hierarchy while the error goes to the client |\n| **Two seniors** give you conflicting tasks | You inform both, estimate the time needed, propose an order and let whoever has the authority decide (staffer or VP) | You accept everything without saying anything and deliver late or badly |\n| The client asks for **confidential information** | You decline politely, explain the limit, involve the deal lead or compliance | You give 'just a hint' |\n| A **colleague is not pulling their weight** | You speak to them directly, find out why, offer help; you escalate if the problem continues | You complain to others or expose them in front of the team |\n| **Unrealistic deadline** | You flag it early and propose alternatives (reduced scope, help, new date) | You work in silence and deliver late or with errors |\n| **Unclear instructions** | You make a first attempt and ask for clarification with precise questions | You guess and deliver without checking |\n| **Gift, conflict of interest, personal trading** | You apply the policy, declare it, ask compliance | You accept and say nothing, 'it is only small' |\n\nLearn this table: it covers most of the scenarios in banks' tests. For every new scenario, ask yourself which row it resembles."
     },
     {
-     "h": "Le trappole più comuni",
-     "body": "- **La risposta eroica**: lavorare tutta la notte da solo senza dirlo a nessuno. In banca lavorare tardi è normale, ma farlo in silenzio quando qualità o scadenza sono a rischio non è la risposta migliore.\n- **L'escalation eccessiva**: 'informare subito l'MD' di un problema che puoi risolvere con l'associate. Conta la proporzionalità.\n- **Gentile non vuol dire efficace**: un'opzione educata che non risolve nulla resta da 2.\n- **Rispondere come faresti davvero**: se per abitudine sistemeresti un errore senza dirlo, nel test quella risposta vale poco. Rispondi come l'analyst che la banca vuole assumere.\n- **Leggere troppo tra le righe**: usa solo le informazioni dello scenario. Non inventare dettagli che giustificano una risposta debole."
+     "h": "The most common traps",
+     "body": "- **The heroic response**: working all night alone without telling anyone. In banking working late is normal, but doing it in silence when quality or the deadline is at risk is not the best response.\n- **Excessive escalation**: 'informing the MD straight away' about a problem you can solve with the associate. Proportionality matters.\n- **Polite does not mean effective**: a courteous option that solves nothing is still a 2.\n- **Answering as you really would**: if out of habit you would fix an error without saying anything, in the test that response is worth little. Answer as the analyst the bank wants to hire.\n- **Reading too much between the lines**: use only the information in the scenario. Do not invent details that justify a weak response."
     }
    ],
    "examples": [
     {
      "q": "It is Thursday at 9pm. A VP asks you to update a trading comparables page for a client call at 8am tomorrow (about 5 hours of work). Thirty minutes later, an associate on a different deal asks you to turn comments on a client management presentation by 9am tomorrow (about 8 hours of work). Even working through the night, you cannot finish both properly in time. Rank the responses from most to least effective. A) Tell both of them about the clash with your time estimates, propose doing the comps first because the call is earlier, and ask them to agree priorities or find extra help. B) Start the comps page now and message the associate straight away that the presentation comments may be late, offering to deliver the most urgent pages first. C) Do the comps page first, start the presentation afterwards, and tell the associate in the morning if it is not finished. D) Accept both tasks without comment and split your night between them, delivering whatever is ready by each deadline.",
      "steps": [
-      "Conflitto: prioritisation tra due senior. Conti: 5 + 8 = 13 ore di lavoro, ma dalle 21:00 alle 9:00 ce ne sono solo 12 (e la prima scadenza è alle 8). Previsione: informare entrambi presto, proporre un ordine, far decidere chi ha l'autorità.",
-      "Primo posto: A supera F3 e F4, perché risolve, coinvolge entrambi e lascia la decisione a chi ha l'autorità.",
-      "Ultimo posto: D. Non informa nessuno e compromette entrambi i documenti per i clienti: passiva con danno.",
-      "Centrali: B è attiva e trasparente ma decide da sola la priorità senza coinvolgere il VP (rating 3). C informa quando l'associate non può più reagire (rating 2). Imperfetta ma attiva batte passiva."
+      "Conflict: prioritisation between two seniors. The maths: 5 + 8 = 13 hours of work, but from 9pm to 9am there are only 12 (and the first deadline is at 8am). Prediction: inform both early, propose an order, let whoever has the authority decide.",
+      "First place: A passes F3 and F4, because it solves the problem, involves both of them and leaves the decision to whoever has the authority.",
+      "Last place: D. It informs no one and compromises both client documents: passive and harmful.",
+      "Middle: B is active and transparent but decides the priority alone without involving the VP (rating 3). C informs the associate when they can no longer react (rating 2). Imperfect but active beats passive."
      ],
      "answer": "A, B, C, D."
     },
     {
      "q": "You are preparing a pitch book with a senior associate. The evening before the client meeting, you notice that the associate's valuation page uses net debt from the prior year-end balance sheet rather than the latest quarter, which changes the implied equity value by about 8%. The associate has already sent the draft to the managing director for review. Choose the MOST and LEAST effective responses. A) Re-check the figures, then contact the associate privately, showing both numbers and offering to update the page. B) Mention to another analyst on the team that the page looks wrong, and let them decide whether to raise it. C) Email the managing director directly to point out the associate's mistake before the review. D) Leave it, since the associate and the managing director are more experienced and may have reasons for using that figure.",
      "steps": [
-      "Conflitto: rispetto della gerarchia contro accuratezza di un documento per il cliente. Previsione: verificare, poi parlarne con l'associate.",
-      "A verifica (evita falsi allarmi), segue la scala di escalation partendo dalla persona coinvolta e propone la soluzione: most effective.",
-      "D lascia che un errore dell'8% sul valore arrivi davanti al cliente: passività con danno al cliente, least effective.",
-      "C risolve ma scavalca il collega come prima mossa, senza che ce ne sia motivo: l'associate è raggiungibile e c'è tempo per correggere (conflittuale, rating 2). B scarica il problema su un pari senza autorità e lascia il rischio aperto, ma almeno qualcuno è informato (passiva, rating 2).",
-      "Trappola: molti scelgono C come least perché sembra sleale, ma D è peggiore perché il danno arriva al cliente."
+      "Conflict: respect for the hierarchy versus accuracy of a client document. Prediction: check, then raise it with the associate.",
+      "A checks (avoiding false alarms), follows the escalation ladder starting from the person involved and proposes the solution: most effective.",
+      "D lets an 8% error in value reach the client: passivity with harm to the client, least effective.",
+      "C solves the problem but goes over the colleague's head as a first move, with no reason to: the associate can be reached and there is time to correct it (confrontational, rating 2). B offloads the problem onto a peer with no authority and leaves the risk open, but at least someone is informed (passive, rating 2).",
+      "Trap: many choose C as least because it seems disloyal, but D is worse because the harm reaches the client."
      ],
      "answer": "Most effective: A. Least effective: D."
     },
     {
      "q": "After a successful closing, a client sends you a personal gift: a watch worth roughly EUR 600, with a note thanking you for your hard work. Your bank has a gifts and entertainment policy. Rate each response from 1 (counterproductive) to 4 (most effective). A) Thank the client, keep the gift, and declare it only if someone asks. B) Check the policy, declare the gift to compliance straight away, and follow their decision on whether to keep or return it. C) Return the gift immediately with a polite note, without checking the policy or telling anyone. D) Ask your associate what people usually do with gifts like this, and decide based on their answer.",
      "steps": [
-      "F1 su tutte: A tiene un regalo di valore senza dichiararlo e quindi viola la policy. Rating 1.",
-      "B applica la policy e coinvolge compliance, cioè chi ha l'autorità: supera F3 e F4. Rating 4.",
-      "C chiude il rischio di conflitto di interessi ma non informa chi deve sapere: supera F3, non F4. Rating 3.",
-      "D non risolve: sposta la decisione sull'abitudine del team invece che sulla policy e può portare a una scelta sbagliata. Rating 2."
+      "F1 on all of them: A keeps a valuable gift without declaring it and therefore breaches the policy. Rating 1.",
+      "B applies the policy and involves compliance, i.e. whoever has the authority: it passes F3 and F4. Rating 4.",
+      "C removes the conflict-of-interest risk but does not inform those who need to know: it passes F3, not F4. Rating 3.",
+      "D does not solve the problem: it bases the decision on team habit rather than on the policy and can lead to the wrong choice. Rating 2."
      ],
      "answer": "A 1, B 4, C 3, D 2."
     }
    ],
    "cheatsheet": [
-    "Prima delle opzioni: conflitto, competenza, risposta ideale in una frase.",
-    "Filtri: F1 Regole, F2 Azione, F3 Soluzione, F4 Persone, F5 Futuro.",
-    "F1 trova il least, F3 + F4 trovano il most, F5 decide gli spareggi.",
-    "Least, dal peggio: scorretta > passiva con danno al cliente > conflittuale > passiva innocua.",
-    "Escalation: tu > collega > responsabile diretto > senior o compliance. Salta livelli solo per rischio serio.",
-    "Ranking: fissa primo e ultimo, poi imperfetta ma attiva > passiva innocua.",
-    "Conflitto di priorità: informa tutti, stima i tempi, proponi un ordine, fai decidere chi ha l'autorità.",
-    "Errore di un senior: verifica, poi parlane in privato con lui o lei.",
-    "60-90 secondi a scenario; sulle posizioni centrali non perdere tempo."
+    "Before the options: conflict, competency, ideal response in one sentence.",
+    "Filters: F1 Rules, F2 Action, F3 Solution, F4 People, F5 Future.",
+    "F1 finds the least, F3 + F4 find the most, F5 breaks the ties.",
+    "Least, starting from the worst: wrong > passive with harm to the client > confrontational > passive and harmless.",
+    "Escalation: you > colleague > direct manager > senior or compliance. Skip levels only for serious risk.",
+    "Ranking: fix first and last, then imperfect but active > passive and harmless.",
+    "Priority conflict: inform everyone, estimate the time, propose an order, let whoever has the authority decide.",
+    "A senior's error: check, then raise it with them in private.",
+    "60-90 seconds per scenario; do not waste time on the middle positions."
    ]
   },
   {
    "id": "les-beh-01",
    "skill": "behavioural",
    "order": 1,
-   "title": "Behavioural 1: STAR, CAR e lo story bank da 8 storie",
+   "title": "Behavioural 1: STAR, CAR and the 8-story story bank",
    "minutes": 18,
-   "summary": "Saprai costruire risposte STAR e CAR che fanno punti sulla scheda dell'intervistatore e avrai uno story bank di 8 storie che copre tutte le competenze.",
+   "summary": "You will be able to build STAR and CAR answers that score points on the interviewer's scoresheet, and you will have a story bank of 8 stories covering every competency.",
    "sections": [
     {
-     "h": "Cosa succede dall'altra parte del tavolo",
-     "body": "Le domande comportamentali ('Tell me about a time when...') partono da un'idea semplice: **il comportamento passato è il miglior predittore di quello futuro**. L'intervistatore ha una scheda con 3-5 competenze (per esempio teamwork, resilience, attention to detail, communication, leadership) e una scala di punteggio, spesso da 1 a 4 o da 1 a 5.\n\nMentre parli scrive **evidenze**: cosa hai fatto, perché, con quale risultato. A fine colloquio assegna il punteggio in base a quanto le evidenze sono:\n- **specifiche**: una situazione precisa, non 'di solito io...';\n- **personali**: 'I', non 'we';\n- **misurabili**: numeri, tempi, esiti;\n- **riflessive**: cosa hai imparato, cosa rifaresti diversamente.\n\nSe un'evidenza non la dici, per la scheda non esiste. Il tuo obiettivo è rendere facile il lavoro di chi scrive."
+     "h": "What happens on the other side of the table",
+     "body": "Behavioural questions ('Tell me about a time when...') start from a simple idea: **past behaviour is the best predictor of future behaviour**. The interviewer has a scoresheet with 3-5 competencies (for example teamwork, resilience, attention to detail, communication, leadership) and a scoring scale, often from 1 to 4 or from 1 to 5.\n\nWhile you speak, they write down **evidence**: what you did, why, and with what result. At the end of the interview they assign the score based on how far the evidence is:\n- **specific**: a precise situation, not 'I usually...';\n- **personal**: 'I', not 'we';\n- **measurable**: numbers, timings, outcomes;\n- **reflective**: what you learned, what you would do differently.\n\nIf you do not state a piece of evidence, for the scoresheet it does not exist. Your goal is to make the note-taker's job easy."
     },
     {
-     "h": "STAR e CAR: struttura e tempi",
-     "body": "**STAR** è la struttura standard per risposte da 90-120 secondi:\n\n| Blocco | Contenuto | Peso |\n|---|---|---|\n| **S**ituation | Dove, quando, posta in gioco, in 1-2 frasi | 10% |\n| **T**ask | Il tuo obiettivo o la tua responsabilità specifica | 10% |\n| **A**ction | 2-3 azioni concrete, ognuna con il perché | 60% |\n| **R**esult | Esito con un numero e cosa hai imparato | 20% |\n\n**CAR** (Context, Action, Result) è la versione compressa: unisce Situation e Task in una frase. Usala per i follow-up, per le video interview con tempo corto e quando l'intervistatore va di fretta.\n\nFrasi di apertura utili:\n- S: 'In my second year at [company], we were running a sell-side process for...'\n- T: 'My responsibility was to...'\n- A: 'First, I... because... Then I... Finally, I...'\n- R: 'As a result, ... Looking back, I learned that...'\n\nErrore più comune: 70% del tempo sulla situazione e 10 secondi sulle azioni. La situazione non dà punti, le azioni sì."
+     "h": "STAR and CAR: structure and timing",
+     "body": "**STAR** is the standard structure for 90-120 second answers:\n\n| Block | Content | Weight |\n|---|---|---|\n| **S**ituation | Where, when, what was at stake, in 1-2 sentences | 10% |\n| **T**ask | Your specific objective or responsibility | 10% |\n| **A**ction | 2-3 concrete actions, each with the why | 60% |\n| **R**esult | Outcome with a number and what you learned | 20% |\n\n**CAR** (Context, Action, Result) is the compressed version: it merges Situation and Task into one sentence. Use it for follow-ups, for video interviews with short time limits and when the interviewer is in a hurry.\n\nUseful opening phrases:\n- S: 'In my second year at [company], we were running a sell-side process for...'\n- T: 'My responsibility was to...'\n- A: 'First, I... because... Then I... Finally, I...'\n- R: 'As a result, ... Looking back, I learned that...'\n\nMost common mistake: 70% of the time on the situation and 10 seconds on the actions. The situation scores no points; the actions do."
     },
     {
-     "h": "Come scrivere una Action che fa punti",
-     "body": "- **3 azioni, non 10.** Scegli quelle che mostrano la competenza richiesta.\n- **Verbi forti e personali**: I built, I proposed, I checked, I negotiated, I escalated. Evita 'I helped with', 'I was involved in'.\n- **Il perché di ogni azione**: 'I prioritised the valuation pages because the client would read those first'. Il perché mostra giudizio, ed è il giudizio che l'intervistatore cerca.\n- **Un trade-off esplicito**: cosa hai scelto di non fare e perché.\n- **Le persone**: chi hai coinvolto, come hai gestito il senior, il cliente o il collega.\n\n**Il Result:**\n- quantifica: tempo risparmiato, errori evitati, deal chiuso, voto, feedback ricevuto;\n- se il risultato è stato negativo va bene, ma spiega cosa hai imparato e dai **una prova concreta** che lo hai applicato dopo;\n- chiudi con una frase che collega la storia al ruolo ('That is the kind of ownership I would bring to the programme')."
+     "h": "How to write an Action that scores points",
+     "body": "- **3 actions, not 10.** Choose the ones that show the competency being assessed.\n- **Strong, personal verbs**: I built, I proposed, I checked, I negotiated, I escalated. Avoid 'I helped with', 'I was involved in'.\n- **The why behind each action**: 'I prioritised the valuation pages because the client would read those first'. The why shows judgement, and judgement is what the interviewer is looking for.\n- **An explicit trade-off**: what you chose not to do and why.\n- **The people**: who you involved, how you handled the senior, the client or the colleague.\n\n**The Result:**\n- quantify it: time saved, errors avoided, deal closed, grade, feedback received;\n- a negative result is fine, but explain what you learned and give **concrete proof** that you applied it afterwards;\n- close with a sentence that links the story to the role ('That is the kind of ownership I would bring to the programme')."
     },
     {
-     "h": "Lo story bank: 8 storie che coprono tutte le competenze",
-     "body": "Non servono 50 risposte: servono **8 storie solide**, ognuna adattabile a più domande.\n\n| # | Tipo di storia | Competenze principali | Domande a cui risponde |\n|---|---|---|---|\n| 1 | Deal o progetto sotto forte pressione | Resilience, prioritisation, attention to detail, client focus | Pressure, tight deadline, multiple priorities |\n| 2 | Un tuo errore e come l'hai gestito | Integrity, ownership, attention to detail, self-awareness | Mistake, feedback, attention to detail |\n| 3 | Iniziativa presa senza che te lo chiedessero | Ownership, leadership, problem solving | Leadership, going above and beyond, improving a process |\n| 4 | Conflitto o disaccordo in un team | Teamwork, communication, influencing | Conflict, difficult colleague, disagreement |\n| 5 | Hai convinto qualcuno più senior con l'analisi | Influencing, analytical rigour, communication | Persuasion, challenging a decision, presenting |\n| 6 | Problema analitico complesso (tesi, modello, due diligence) | Analytical rigour, problem solving, prioritisation | Complex problem, using data, learning fast |\n| 7 | Un fallimento o un obiettivo mancato, anche di squadra | Resilience, self-awareness, teamwork, leadership | Failure, setback, weakness, leading a team |\n| 8 | Cliente o stakeholder esterno difficile | Client focus, integrity, communication | Difficult client, managing expectations, ethics |\n\n**Regola di copertura:** ogni competenza deve comparire in almeno 2 storie, così hai un'alternativa se una storia l'hai già usata con lo stesso intervistatore. Nella tabella le 13 competenze compaiono tutte almeno due volte: quando sostituisci una storia, ricontrolla questa regola.\n\n**Da dove prendere le storie nel tuo caso:** deal in boutique su semiconduttori e deep tech, tesi e progetti di gruppo all'università, stage precedenti, sport o attività extra. Almeno 5 storie su 8 dovrebbero venire dal lavoro: è l'esperienza più vicina al ruolo."
+     "h": "The story bank: 8 stories that cover every competency",
+     "body": "You do not need 50 answers: you need **8 solid stories**, each adaptable to several questions.\n\n| # | Type of story | Main competencies | Questions it answers |\n|---|---|---|---|\n| 1 | Deal or project under heavy pressure | Resilience, prioritisation, attention to detail, client focus | Pressure, tight deadline, multiple priorities |\n| 2 | A mistake of yours and how you handled it | Integrity, ownership, attention to detail, self-awareness | Mistake, feedback, attention to detail |\n| 3 | Initiative taken without being asked | Ownership, leadership, problem solving | Leadership, going above and beyond, improving a process |\n| 4 | Conflict or disagreement in a team | Teamwork, communication, influencing | Conflict, difficult colleague, disagreement |\n| 5 | You convinced someone more senior with your analysis | Influencing, analytical rigour, communication | Persuasion, challenging a decision, presenting |\n| 6 | Complex analytical problem (thesis, model, due diligence) | Analytical rigour, problem solving, prioritisation | Complex problem, using data, learning fast |\n| 7 | A failure or a missed objective, including a team one | Resilience, self-awareness, teamwork, leadership | Failure, setback, weakness, leading a team |\n| 8 | Difficult client or external stakeholder | Client focus, integrity, communication | Difficult client, managing expectations, ethics |\n\n**Coverage rule:** every competency must appear in at least 2 stories, so you have an alternative if you have already used a story with the same interviewer. In the table all 13 competencies appear at least twice: whenever you replace a story, recheck this rule.\n\n**Where to find the stories in your case:** semiconductor and deep tech deals at a boutique, thesis and group projects at university, previous internships, sport or extracurricular activities. At least 5 of the 8 stories should come from work: it is the experience closest to the role."
     },
     {
-     "h": "La scheda di ogni storia (1 pagina)",
-     "body": "Per ogni storia compila questa scheda, in inglese, e ripetila ad alta voce finché non dura 90-120 secondi senza leggere:\n\n- **Titolo** in 3 parole (es. 'Comps, notte, calendarizzazione'): è l'etichetta mentale che richiami sotto pressione.\n- **Contesto** in 1 frase: azienda, periodo, posta in gioco.\n- **Il tuo ruolo** in 1 frase.\n- **3 azioni**, ciascuna con il perché.\n- **Risultato** con almeno un numero.\n- **Lezione** in 1 frase, e dove l'hai applicata dopo.\n- **Competenze coperte** (2-3).\n- **Varianti**: 2 domande diverse a cui risponde e quale azione metti in primo piano per ciascuna.\n- **Follow-up probabili**: 'What would you do differently?', 'What was the hardest part?', 'How did your manager react?'. Prepara una risposta di 2 frasi per ognuno."
+     "h": "The sheet for each story (1 page)",
+     "body": "For each story fill in this sheet, in English, and rehearse it aloud until it lasts 90-120 seconds without reading:\n\n- **Title** in 3 words (e.g. 'Comps, night, calendarisation'): it is the mental label you recall under pressure.\n- **Context** in 1 sentence: company, period, what was at stake.\n- **Your role** in 1 sentence.\n- **3 actions**, each with the why.\n- **Result** with at least one number.\n- **Lesson** in 1 sentence, and where you applied it afterwards.\n- **Competencies covered** (2-3).\n- **Variants**: 2 different questions it answers and which action you bring to the fore for each.\n- **Likely follow-ups**: 'What would you do differently?', 'What was the hardest part?', 'How did your manager react?'. Prepare a 2-sentence answer for each."
     },
     {
-     "h": "Una storia, tre domande: cambiare angolazione",
-     "body": "La stessa storia risponde a domande diverse se cambi **la frase di apertura** e **l'azione che metti al centro**.\n\nEsempio, storia 1 (deal sotto pressione):\n- 'Tell me about a time you worked under pressure': al centro come hai organizzato il lavoro e protetto la qualità.\n- 'Tell me about a time you managed competing priorities': al centro come hai negoziato le priorità con VP e associate.\n- 'Give an example of your attention to detail': al centro il controllo che ha trovato l'incongruenza nei numeri.\n\nRegole:\n- con lo **stesso intervistatore** non usare mai due volte la stessa storia;\n- in un superday puoi riusare una storia con intervistatori diversi, ma cambia angolazione;\n- **non inventare**: i follow-up scavano due o tre livelli e una storia costruita a tavolino crolla subito."
+     "h": "One story, three questions: changing the angle",
+     "body": "The same story answers different questions if you change **the opening sentence** and **the action you put at the centre**.\n\nExample, story 1 (deal under pressure):\n- 'Tell me about a time you worked under pressure': at the centre, how you organised the work and protected quality.\n- 'Tell me about a time you managed competing priorities': at the centre, how you negotiated priorities with the VP and the associate.\n- 'Give an example of your attention to detail': at the centre, the check that found the inconsistency in the numbers.\n\nRules:\n- with the **same interviewer**, never use the same story twice;\n- in a superday you can reuse a story with different interviewers, but change the angle;\n- **do not make things up**: follow-ups dig two or three levels deep and a story invented at a desk collapses straight away."
     },
     {
-     "h": "Autovalutazione: la rubrica per le tue registrazioni",
-     "body": "Registra ogni storia con il telefono, riascoltala e dai un voto per riga.\n\n| Criterio | 2: debole | 4: forte |\n|---|---|---|\n| Struttura | Racconto cronologico senza ordine | S, T, A, R riconoscibili, Action intorno al 60% |\n| Specificità | 'Di solito io...', esempi generici | Una situazione precisa, con periodo e contesto |\n| Ruolo personale | 'We did...' | 'I did... because...' |\n| Risultato | Vago o assente | Almeno un numero e un esito chiaro |\n| Riflessione | Nessuna | Una lezione e dove l'hai applicata dopo |\n| Durata | Oltre 3 minuti o sotto 45 secondi | 90-120 secondi |\n\nObiettivo misurabile: tutte le righe a 4 per tutte e 8 le storie prima del primo colloquio. Tieni traccia dei voti a ogni sessione del weekend per vedere il progresso."
+     "h": "Self-assessment: the rubric for your recordings",
+     "body": "Record each story on your phone, listen back and give a score for each row.\n\n| Criterion | 2: weak | 4: strong |\n|---|---|---|\n| Structure | Chronological account with no order | Recognisable S, T, A, R, with Action at around 60% |\n| Specificity | 'I usually...', generic examples | One precise situation, with period and context |\n| Personal role | 'We did...' | 'I did... because...' |\n| Result | Vague or missing | At least one number and a clear outcome |\n| Reflection | None | A lesson and where you applied it afterwards |\n| Length | Over 3 minutes or under 45 seconds | 90-120 seconds |\n\nMeasurable goal: every row at 4 for all 8 stories before the first interview. Track the scores at every weekend session to see your progress."
     }
    ],
    "examples": [
     {
      "q": "Tell me about a time you made a mistake at work.",
      "steps": [
-      "Scegli la storia 2 dello story bank: un errore vero, non un falso difetto. L'intervistatore valuta integrity e ownership.",
-      "Situation e Task in 2 frasi: deal, documento, tuo ruolo.",
-      "Action con tre mosse e il perché: hai avvisato subito, hai corretto e indicato le pagine coinvolte, hai introdotto un controllo per evitare che si ripeta.",
-      "Result: l'errore non è arrivato al cliente e il controllo è diventato prassi del team. Lezione in 1 frase.",
-      "Controllo dei tempi: circa 220 parole, cioè circa 90 secondi a 145 parole al minuto, dentro la fascia 90-120. Usa la tua storia vera: questo è un modello di struttura."
+      "Choose story 2 from the story bank: a real mistake, not a fake weakness. The interviewer is assessing integrity and ownership.",
+      "Situation and Task in 2 sentences: deal, document, your role.",
+      "Action with three moves and the why: you flagged it straight away, you corrected it and listed the pages affected, and you introduced a check to stop it happening again.",
+      "Result: the error did not reach the client and the check became standard practice for the team. Lesson in 1 sentence.",
+      "Timing check: about 220 words, i.e. about 90 seconds at 145 words per minute, within the 90-120 range. Use your real story: this is a model of the structure."
      ],
      "answer": "[S] Last year, on a sell-side process for a semiconductor equipment company, I was responsible for the trading comparables in the management presentation, which the client would use to anchor its price expectations. [T] The night before the draft went to the client, my task was to run the final checks on every number in the valuation section. [A] I noticed that for three peers I had used fiscal-year EBITDA, while for the others I had calendarised to December, which pushed the median multiple up by about half a turn. First, I told my associate straight away, before fixing anything, because that multiple was already in the valuation summary my associate was reviewing and the range was about to move. Second, I calendarised all the peers consistently, updated the valuation range and listed every page affected, so the review would take minutes rather than hours. Third, I added a check tab to the model that flags any peer whose financial year-end differs from the target's. [R] The corrected draft went to the client on time, with no further comments on the valuation pages, and the check tab is now part of our team's comps template. I learned that flagging an error early, with the fix ready, protects the team far more than fixing it quietly, and I have followed that approach on every deal since."
     },
     {
      "q": "Tell me about a time you disagreed with a team member. (Short answer expected, about 60 seconds.)",
      "steps": [
-      "Storia 4 dello story bank in versione CAR, perché il tempo è corto.",
-      "Context in 1 frase: progetto, disaccordo, posta in gioco.",
-      "Action: hai parlato in privato, hai portato dati, hai proposto un compromesso e ti sei offerto di fare il lavoro extra.",
-      "Result: decisione presa, rapporto preservato, esito concreto. Una frase di lezione.",
-      "Da evitare: descrivere l'altro come incompetente. L'intervistatore valuta come gestisci le persone, non chi aveva ragione."
+      "Story 4 from the story bank in the CAR version, because time is short.",
+      "Context in 1 sentence: project, disagreement, what was at stake.",
+      "Action: you spoke in private, brought data, proposed a compromise and offered to do the extra work.",
+      "Result: decision made, relationship preserved, concrete outcome. One sentence on the lesson.",
+      "Avoid: describing the other person as incompetent. The interviewer is assessing how you handle people, not who was right."
      ],
      "answer": "[C] During my MSc, in a four-person project valuing a listed company, a teammate wanted to rely on a single DCF, while I thought we needed a cross-check with trading multiples, because most of the value sat in the terminal value. [A] Rather than arguing in the group chat, I asked him for a short call, showed him that a 0.5 point change in WACC moved our enterprise value by about 7%, and suggested we keep the DCF as the main method and add a one-page multiples cross-check that I would build myself. [R] He agreed, the cross-check exposed an aggressive margin assumption that we then corrected, and the project received [grade]. I learned that disagreements are easier to solve with data and a concrete offer of help than with opinions."
     },
     {
      "q": "Tell me about a time you took the initiative without being asked.",
      "steps": [
-      "Storia 3 dello story bank. La competenza è ownership: conta che nessuno te l'abbia chiesto e che il beneficio sia per il team.",
-      "Situation: il problema ricorrente che tutti vedevano. Task: perché hai deciso di occupartene.",
-      "Action: hai proposto l'idea al VP (non hai agito da solo su risorse del team), hai costruito la prima versione, hai fissato una regola perché restasse aggiornata.",
-      "Result: tempo risparmiato con un numero, e quante volte è stato usato. Sostituisci i placeholder con i tuoi dati reali.",
-      "Durata: circa 130 parole, cioè circa 55 secondi: è la versione compatta. A voce porta la risposta verso i 90 secondi aggiungendo come hai convinto il VP e un pitch concreto in cui il database ha fatto la differenza."
+      "Story 3 from the story bank. The competency is ownership: what matters is that nobody asked you and that the benefit is for the team.",
+      "Situation: the recurring problem everyone could see. Task: why you decided to take it on.",
+      "Action: you proposed the idea to the VP (you did not act alone with the team's resources), built the first version and set a rule so that it stays up to date.",
+      "Result: time saved, with a number, and how many times it has been used. Replace the placeholders with your real data.",
+      "Length: about 130 words, i.e. about 55 seconds: this is the compact version. When speaking, take the answer towards 90 seconds by adding how you convinced the VP and a concrete pitch where the database made the difference."
      ],
      "answer": "[S] At [boutique], every new semiconductor mandate started with someone rebuilding the precedent transactions list from scratch, which took about two days. [T] Nobody had asked me to fix it, but I could see it slowing down the first week of every pitch. [A] I proposed to my VP a shared database of semiconductor and deep tech deals with standard fields: enterprise value, EV/revenue, EV/EBITDA, buyer type, date and source. I built the first version over two weekends with [N] transactions, and agreed with the associates a simple rule: whoever closes a pitch adds the new deals. [R] Building the precedents page now takes about half a day instead of two, and the database has been used in [N] pitches since. It taught me that the most useful initiatives solve a problem the team feels every week."
     }
    ],
    "cheatsheet": [
-    "Il comportamento passato predice quello futuro: ogni risposta è una situazione specifica.",
+    "Past behaviour predicts future behaviour: every answer is a specific situation.",
     "STAR: Situation 10%, Task 10%, Action 60%, Result 20%.",
-    "CAR per follow-up e tempi corti: Context, Action, Result.",
-    "3 azioni, verbi forti, 'I' e non 'we', il perché di ogni scelta.",
-    "Result con un numero e una lezione applicata dopo.",
-    "8 storie, ogni competenza coperta da almeno 2.",
-    "Stessa storia, domande diverse: cambia apertura e azione al centro.",
-    "Mai la stessa storia due volte con lo stesso intervistatore; mai storie inventate.",
-    "Durata ideale 90-120 secondi: circa 210-300 parole a 140-150 parole al minuto."
+    "CAR for follow-ups and short time limits: Context, Action, Result.",
+    "3 actions, strong verbs, 'I' and not 'we', the why behind every choice.",
+    "Result with a number and a lesson applied afterwards.",
+    "8 stories, every competency covered by at least 2.",
+    "Same story, different questions: change the opening and the action at the centre.",
+    "Never the same story twice with the same interviewer; never invented stories.",
+    "Ideal length 90-120 seconds: about 210-300 words at 140-150 words per minute."
    ]
   },
   {
    "id": "les-beh-02",
    "skill": "behavioural",
    "order": 2,
-   "title": "Behavioural 2: tell me about yourself, why this bank, why this division e strengths",
+   "title": "Behavioural 2: tell me about yourself, why this bank, why this division and strengths",
    "minutes": 18,
-   "summary": "Saprai rispondere con formule collaudate alle domande di motivazione e a quelle strengths-based, adattandole al tuo profilo da analyst M&A in boutique.",
+   "summary": "You will be able to answer motivation and strengths-based questions with proven formulas, adapting them to your profile as an M&A analyst at a boutique.",
    "sections": [
     {
-     "h": "Tell me about yourself: Present, Past, Future in 90 secondi",
-     "body": "È quasi sempre la prima domanda e fissa l'impressione per tutto il colloquio. Non è un riassunto del CV: è una **storia con un filo rosso** che porta in modo naturale a 'quindi sono qui'.\n\n| Blocco | Contenuto | Durata |\n|---|---|---|\n| **Present** | Cosa fai oggi e 1 risultato concreto | 20-25 secondi |\n| **Past** | Come ci sei arrivato: 2-3 tappe che hanno costruito le competenze | 35-40 secondi |\n| **Future** | Perché questo programma, questa banca, adesso | 20-25 secondi |\n\nTotale: 75-90 secondi, circa 180-220 parole a 145 parole al minuto. Chi non ha esperienza lavorativa può usare l'ordine cronologico Past, Present, Future; per te, che lavori già in M&A, partire dal presente è più forte.\n\n**Il filo rosso nel tuo caso:** formazione quantitativa (un MSc con voto alto) + esperienza reale di M&A su semiconduttori e deep tech in boutique = vuoi applicare queste competenze su una piattaforma più ampia, con deal più grandi, formazione strutturata e respiro internazionale.\n\n**Da evitare:** partire dalle scuole superiori, elencare tutte le esperienze, parlare male del lavoro attuale, chiudere senza collegarti al ruolo."
+     "h": "Tell me about yourself: Present, Past, Future in 90 seconds",
+     "body": "It is almost always the first question and it sets the impression for the whole interview. It is not a summary of your CV: it is a **story with a common thread** that leads naturally to 'so here I am'.\n\n| Block | Content | Length |\n|---|---|---|\n| **Present** | What you do today and 1 concrete result | 20-25 seconds |\n| **Past** | How you got there: 2-3 steps that built your skills | 35-40 seconds |\n| **Future** | Why this programme, this bank, now | 20-25 seconds |\n\nTotal: 75-90 seconds, about 180-220 words at 145 words per minute. Candidates without work experience can use the chronological order Past, Present, Future; for you, already working in M&A, starting from the present is stronger.\n\n**The common thread in your case:** a quantitative education (an MSc with a high grade) + real M&A experience in semiconductors and deep tech at a boutique = you want to apply these skills on a broader platform, with bigger deals, structured training and international scope.\n\n**Avoid:** starting from secondary school, listing every experience, speaking badly about your current job, finishing without linking yourself to the role."
     },
     {
-     "h": "Why this bank: 3 ragioni specifiche, una prova ciascuna",
-     "body": "La domanda testa due cose: se hai fatto ricerca e se la tua motivazione è vera. Formula:\n\n1. **Business**: un punto di forza concreto della banca rilevante per te (presenza in un settore, in una regione, in un tipo di deal), con una prova verificabile: un deal recente, una posizione nelle league table, un dato del report annuale.\n2. **Persone e cultura**: cosa hai capito parlando con chi ci lavora (eventi, coffee chat, networking). Cita il contesto, non serve fare nomi: 'When I spoke with two analysts from the TMT team at your Milan event...'.\n3. **Programma**: cosa ti offre il graduate programme (rotazioni, formazione, mobilità internazionale, tipo di clienti).\n\n**Test di genericità:** sostituisci il nome della banca con quello di un concorrente. Se la risposta regge ancora, è troppo generica e va riscritta.\n\n**Da evitare:** 'you are a leading global bank', il prestigio come motivo principale, lo stipendio, frasi copiate dal sito careers."
+     "h": "Why this bank: 3 specific reasons, one piece of evidence each",
+     "body": "The question tests two things: whether you have done your research and whether your motivation is genuine. Formula:\n\n1. **Business**: a concrete strength of the bank that is relevant to you (presence in a sector, in a region, in a type of deal), with verifiable evidence: a recent deal, a league table position, a figure from the annual report.\n2. **People and culture**: what you learned by speaking with people who work there (events, coffee chats, networking). Cite the context, there is no need to name names: 'When I spoke with two analysts from the TMT team at your Milan event...'.\n3. **Programme**: what the graduate programme offers you (rotations, training, international mobility, type of clients).\n\n**Genericity test:** replace the bank's name with a competitor's. If the answer still holds, it is too generic and must be rewritten.\n\n**Avoid:** 'you are a leading global bank', prestige as the main reason, salary, sentences copied from the careers website."
     },
     {
-     "h": "Why this division (e why leave a boutique)",
-     "body": "L'intervistatore vuole capire se sai **cosa si fa davvero** nella divisione e se lo hai già fatto o almeno provato.\n\nFormula in 3 passi:\n1. **Cosa fa la divisione, in concreto**: in Investment Banking, per esempio, origination ed execution di M&A e operazioni sul capitale, modelli, materiali per i clienti, processi con molti stakeholder.\n2. **La tua prova**: un'esperienza in cui hai fatto quelle cose e ti sono piaciute (nel tuo caso modelli di valutazione e processi M&A su semiconduttori e deep tech).\n3. **La traiettoria**: dove vuoi essere tra 3-5 anni e perché questa divisione ti porta lì.\n\nSe ti candidi a una divisione diversa dall'M&A (corporate banking, markets, risk), il passo 2 diventa: quali competenze trasferisci e quale esperienza ti ha fatto scoprire l'interesse. Non presentarla mai come un piano B: spiega l'attrazione specifica.\n\n**La variante che ti faranno di sicuro: 'Why leave a boutique?'** Non criticare mai il datore di lavoro attuale. Parla di ciò che **cerchi**, non di ciò da cui scappi: dimensione e varietà dei deal, operazioni cross-border, formazione strutturata, prodotti che una boutique non offre (financing, ECM, DCM). Riconosci cosa ti ha dato la boutique: responsabilità precoce e contatto diretto con il cliente."
+     "h": "Why this division (and why leave a boutique)",
+     "body": "The interviewer wants to understand whether you know **what the division actually does** and whether you have already done it or at least tried it.\n\n3-step formula:\n1. **What the division does, in practice**: in Investment Banking, for example, origination and execution of M&A and capital transactions, models, client materials, processes with many stakeholders.\n2. **Your evidence**: an experience in which you did those things and enjoyed them (in your case valuation models and M&A processes in semiconductors and deep tech).\n3. **The trajectory**: where you want to be in 3-5 years and why this division takes you there.\n\nIf you apply to a division other than M&A (corporate banking, markets, risk), step 2 becomes: which skills you transfer and which experience made you discover the interest. Never present it as a plan B: explain the specific attraction.\n\n**The variant you will certainly be asked: 'Why leave a boutique?'** Never criticise your current employer. Talk about what you are **looking for**, not what you are running away from: size and variety of deals, cross-border transactions, structured training, products a boutique does not offer (financing, ECM, DCM). Acknowledge what the boutique has given you: early responsibility and direct client contact."
     },
     {
-     "h": "Strengths-based questions: come funzionano e cosa premiano",
-     "body": "Molti graduate programme usano colloqui o video basati sui punti di forza. Le domande sono rapide e spesso non hanno una risposta giusta:\n- 'What energises you?'\n- 'Do you prefer starting tasks or finishing them?'\n- 'What do you do in your spare time?'\n- 'When are you at your best?'\n- 'What do your friends come to you for?'\n- 'Do you prefer working on the detail or on the big picture?'\n\n**Cosa viene valutato:**\n- **energia e autenticità**: tono, entusiasmo, naturalezza. Chi parla di un vero punto di forza si accende;\n- **coerenza con il ruolo**: i tuoi punti di forza naturali corrispondono a ciò che il lavoro richiede (precisione, curiosità analitica, drive, lavoro in team, resilienza)?\n- **forza contro competenza appresa**: una cosa che sai fare bene ma che ti stanca è una competenza, non una forza.\n\n**Metodo:**\n1. Prepara i tuoi 5 punti di forza veri, ognuno con un esempio di 2 frasi.\n2. Rispondi subito e in modo sincero: un'esitazione lunga o una risposta da manuale perde punti.\n3. Dai sempre un esempio concreto e breve (30-60 secondi).\n4. Nelle domande 'A o B?' scegli, spiega perché e mostra che sai gestire anche l'altro lato."
+     "h": "Strengths-based questions: how they work and what they reward",
+     "body": "Many graduate programmes use interviews or videos based on strengths. The questions are quick and often have no right answer:\n- 'What energises you?'\n- 'Do you prefer starting tasks or finishing them?'\n- 'What do you do in your spare time?'\n- 'When are you at your best?'\n- 'What do your friends come to you for?'\n- 'Do you prefer working on the detail or on the big picture?'\n\n**What is assessed:**\n- **energy and authenticity**: tone, enthusiasm, naturalness. People talking about a real strength light up;\n- **fit with the role**: do your natural strengths match what the job requires (precision, analytical curiosity, drive, teamwork, resilience)?\n- **strength versus learned skill**: something you do well but that drains you is a skill, not a strength.\n\n**Method:**\n1. Prepare your 5 real strengths, each with a 2-sentence example.\n2. Answer straight away and sincerely: a long hesitation or a textbook answer loses points.\n3. Always give a concrete, short example (30-60 seconds).\n4. In 'A or B?' questions, choose, explain why and show that you can also handle the other side."
     },
     {
-     "h": "Le domande di motivazione insidiose",
-     "body": "| Domanda | Cosa testa | Approccio |\n|---|---|---|\n| What is your greatest weakness? | Self-awareness, onestà | Un difetto reale ma non fatale per il ruolo, cosa stai facendo per migliorarlo e una prova del miglioramento |\n| Where do you see yourself in 5 years? | Ambizione realistica, coerenza | Crescita nella banca: più responsabilità sui deal, specializzazione settoriale, guida di analyst più junior |\n| Why should we hire you? | Sintesi del tuo valore | 3 punti: competenze tecniche già provate, esperienza su deal reali, motivazione specifica per loro |\n| What other firms are you applying to? | Coerenza della ricerca | Onestà e coerenza: stesso tipo di ruolo, senza classifiche |\n| What do you know about our recent deals? | Qualità della ricerca | 1-2 deal recenti nel settore che ti interessa, con un commento sul razionale strategico |\n| Why did you choose your degree or thesis? | Logica delle scelte | Il filo rosso: cosa ti ha portato lì e cosa ne hai ricavato |\n\nPer la debolezza, esempi validi per un analyst: dire sì a troppe richieste insieme, difficoltà a delegare, poca esperienza nel parlare in pubblico. Da evitare: 'sono perfezionista' usato come falso difetto."
+     "h": "The tricky motivation questions",
+     "body": "| Question | What it tests | Approach |\n|---|---|---|\n| What is your greatest weakness? | Self-awareness, honesty | A real flaw that is not fatal for the role, what you are doing to improve it and evidence of the improvement |\n| Where do you see yourself in 5 years? | Realistic ambition, consistency | Growth within the bank: more responsibility on deals, sector specialisation, guiding more junior analysts |\n| Why should we hire you? | Summary of your value | 3 points: technical skills already proven, experience on real deals, specific motivation for them |\n| What other firms are you applying to? | Consistency of your search | Honesty and consistency: the same type of role, without rankings |\n| What do you know about our recent deals? | Quality of your research | 1-2 recent deals in the sector you are interested in, with a comment on the strategic rationale |\n| Why did you choose your degree or thesis? | Logic behind your choices | The common thread: what led you there and what you got out of it |\n\nFor the weakness, valid examples for an analyst: saying yes to too many requests at once, difficulty delegating, limited experience in public speaking. Avoid: 'I am a perfectionist' used as a fake flaw."
     },
     {
-     "h": "Le domande da fare a fine colloquio",
-     "body": "'Do you have any questions for me?' fa parte della valutazione. Prepara 3 domande per ogni colloquio e usane 1-2.\n\n**Domande buone:**\n- sull'esperienza dell'intervistatore: 'What has surprised you most about working in this team?';\n- sul lavoro concreto: 'How are analysts staffed across sectors in the first year?';\n- sul mercato: 'How is the current rate environment affecting deal activity in your sector?';\n- sullo sviluppo: 'What distinguishes the analysts who progress fastest here?'.\n\n**Da evitare:** stipendio, ferie, orari, domande la cui risposta è sul sito. Con un MD fai domande più strategiche, con un analyst più operative."
+     "h": "The questions to ask at the end of the interview",
+     "body": "'Do you have any questions for me?' is part of the assessment. Prepare 3 questions for each interview and use 1-2.\n\n**Good questions:**\n- on the interviewer's experience: 'What has surprised you most about working in this team?';\n- on the actual work: 'How are analysts staffed across sectors in the first year?';\n- on the market: 'How is the current rate environment affecting deal activity in your sector?';\n- on development: 'What distinguishes the analysts who progress fastest here?'.\n\n**Avoid:** salary, holidays, working hours, questions whose answer is on the website. With an MD ask more strategic questions, with an analyst more operational ones."
     }
    ],
    "examples": [
     {
      "q": "Tell me about yourself.",
      "steps": [
-      "Present (20-25 secondi): ruolo attuale, settore, un risultato concreto.",
-      "Past (35-40 secondi): il tuo MSc e cosa ti ha dato, come sei arrivato all'M&A.",
-      "Future (20-25 secondi): perché un graduate programme in una grande banca, adesso.",
-      "Controllo: circa 165 parole con i placeholder, cioè circa 70 secondi a 145 parole al minuto; con i tuoi dati reali arriverai a 75-90 secondi. Ogni frase deve servire al filo rosso."
+      "Present (20-25 seconds): current role, sector, one concrete result.",
+      "Past (35-40 seconds): your MSc and what it gave you, how you got into M&A.",
+      "Future (20-25 seconds): why a graduate programme at a large bank, now.",
+      "Check: about 165 words with the placeholders, i.e. about 70 seconds at 145 words per minute; with your real details you will reach 75-90 seconds. Every sentence must serve the common thread."
      ],
      "answer": "I am currently an M&A analyst at [boutique], an advisory firm focused on semiconductors and deep tech. In the last [N] months I have worked on [N] mandates, including [a sell-side process for a semiconductor equipment company], where I built the valuation model and drafted large parts of the information memorandum. Before that, I completed my MSc in [programme] at [university], graduating with [top marks]; my thesis on [topic] gave me a solid grounding in valuation and in working with messy data. What drew me to M&A was [internship or course], where I realised I enjoy turning a company's numbers into a strategic story a client can act on. The boutique has given me early responsibility and direct client exposure. Now I want to build on that on a larger platform: bigger and cross-border transactions, a full product offering from advisory to financing, and the structured training of a graduate programme. That is why I am applying to [bank], and specifically to [division or team]."
     },
     {
      "q": "Why do you want to join our graduate programme instead of staying in M&A at a boutique?",
      "steps": [
-      "Riconosci in 1 frase il valore della boutique: responsabilità precoce, contatto con il cliente.",
-      "3 ragioni orientate al futuro: dimensione dei deal, ampiezza dei prodotti, formazione strutturata.",
-      "Una prova di specificità per la banca: [deal recente o presenza nel settore].",
-      "Chiudi con il contributo che porti tu: esperienza reale di execution dal primo giorno."
+      "Acknowledge the value of the boutique in 1 sentence: early responsibility, client contact.",
+      "3 forward-looking reasons: deal size, breadth of products, structured training.",
+      "One piece of evidence specific to the bank: [recent deal or presence in the sector].",
+      "Close with what you bring: real execution experience from day one."
      ],
      "answer": "My boutique experience has been very valuable: I have had early responsibility, direct contact with founders and CFOs, and I have followed deals from the first pitch to signing. But I want to develop in three ways a boutique cannot offer. First, scale: working on larger, cross-border transactions, like [recent deal in the bank's sector], where the complexity is much higher. Second, breadth: seeing how M&A connects with financing and capital markets, which is how clients actually think about their decisions. Third, structured development: the training and rotations of your programme would give me a broader base than learning only on the job. In return, I would bring hands-on execution experience from day one, from building valuation models to running data rooms."
     },
     {
      "q": "Do you prefer starting tasks or finishing them?",
      "steps": [
-      "Rispondi subito e scegli un lato: le domande 'A o B?' cercano una preferenza autentica.",
-      "Spiega perché con un esempio di 2 frasi tratto dal lavoro.",
-      "Mostra che gestisci anche l'altro lato con un'abitudine concreta.",
-      "Tono: energia vera. Se questo lato non ti accende, scegli l'altro: deve essere sincero."
+      "Answer straight away and pick a side: 'A or B?' questions look for a genuine preference.",
+      "Explain why with a 2-sentence example from work.",
+      "Show that you also handle the other side with a concrete habit.",
+      "Tone: real energy. If this side does not energise you, choose the other: it must be sincere."
      ],
      "answer": "I definitely get more energy from finishing. I like the moment when a model ties out, the numbers reconcile and the document is ready to go to a client; on deals I am usually the one doing the final consistency check across pages. Starting is less natural for me, so when a new project begins I sketch the structure on paper in the first hour, which gets me moving quickly."
     },
     {
      "q": "What is your greatest weakness?",
      "steps": [
-      "Scegli un difetto vero, rilevante ma non fatale per un analyst.",
-      "Una prova concreta di quando è emerso, in 1 frase.",
-      "Cosa fai per migliorare: un'azione specifica, non 'ci sto lavorando'.",
-      "Il segnale di miglioramento: un risultato o un feedback ricevuto."
+      "Choose a real flaw, relevant but not fatal for an analyst.",
+      "A concrete piece of evidence of when it came up, in 1 sentence.",
+      "What you do to improve: a specific action, not 'I am working on it'.",
+      "The sign of improvement: a result or feedback you have received."
      ],
      "answer": "Earlier in my career I found it hard to push back on timing when several people asked me for work at once, so I would accept everything and end up working through the night, with a higher risk of mistakes. On one deal this meant a set of comps pages came back with comments I could have avoided. Since then, whenever a new request conflicts with existing work, I send a short message with my current tasks and time estimates and ask which should come first. My deadlines have become more predictable, and my seniors have told me they appreciate always knowing where things stand."
     }
    ],
    "cheatsheet": [
-    "Tell me about yourself: Present, Past, Future, 75-90 secondi, un filo rosso.",
-    "Why this bank: business, persone, programma, ognuno con una prova verificabile.",
-    "Test di genericità: se puoi sostituire il nome della banca, la risposta è da rifare.",
-    "Why this division: cosa si fa davvero, la tua prova, la tua traiettoria a 3-5 anni.",
-    "Why leave a boutique: parla di ciò che cerchi, mai di ciò da cui scappi.",
-    "Strengths: rispondi subito, scegli un lato, esempio breve, energia autentica.",
-    "Debolezza: difetto vero + azione concreta + segnale di miglioramento.",
-    "Prepara 3 domande per l'intervistatore; niente stipendio o ferie."
+    "Tell me about yourself: Present, Past, Future, 75-90 seconds, one common thread.",
+    "Why this bank: business, people, programme, each with verifiable evidence.",
+    "Genericity test: if you can swap in another bank's name, the answer needs redoing.",
+    "Why this division: what it actually does, your evidence, your 3-5 year trajectory.",
+    "Why leave a boutique: talk about what you are looking for, never what you are running away from.",
+    "Strengths: answer straight away, pick a side, short example, genuine energy.",
+    "Weakness: real flaw + concrete action + sign of improvement.",
+    "Prepare 3 questions for the interviewer; no salary or holidays."
    ]
   },
   {
    "id": "les-beh-03",
    "skill": "behavioural",
    "order": 3,
-   "title": "Video interview one-way: setup, timing e template da 60-90 secondi",
+   "title": "One-way video interview: setup, timing and a 60-90 second template",
    "minutes": 14,
-   "summary": "Saprai preparare e registrare una video interview one-way (stile HireVue o Cappfinity) con un template a tempo, un setup tecnico pulito e una routine di pratica misurabile.",
+   "summary": "You will be able to prepare and record a one-way video interview (HireVue or Cappfinity style) with a timed template, a clean technical setup and a measurable practice routine.",
    "sections": [
     {
-     "h": "Come funziona una video interview one-way",
-     "body": "Non c'è nessuno dall'altra parte: la piattaforma mostra una domanda (testo o breve video), ti dà un tempo di preparazione e poi registra la risposta.\n\n**Parametri tipici (variano: leggi sempre le istruzioni):**\n- **domande**: di solito 3-8;\n- **preparazione**: da 30 secondi a 2-3 minuti per domanda;\n- **risposta**: da 1 a 3 minuti, con un timer visibile;\n- **ripetizioni**: a volte puoi rifare la registrazione, a volte no; spesso c'è una domanda di prova non valutata;\n- **finestra**: di solito alcuni giorni per completarla, a qualsiasi ora.\n\nLe piattaforme strengths-based alternano domande rapide e personali ('What energises you?') a domande comportamentali o situazionali, a volte con esercizi scritti o di ragionamento.\n\n**Regola d'oro:** usa sempre la domanda di prova per controllare luce, audio e inquadratura, e verifica subito se le ripetizioni sono consentite."
+     "h": "How a one-way video interview works",
+     "body": "There is nobody on the other side: the platform shows a question (text or a short video), gives you preparation time and then records your answer.\n\n**Typical parameters (they vary: always read the instructions):**\n- **questions**: usually 3-8;\n- **preparation**: from 30 seconds to 2-3 minutes per question;\n- **answer**: from 1 to 3 minutes, with a visible timer;\n- **retakes**: sometimes you can re-record, sometimes not; there is often an unassessed practice question;\n- **window**: usually a few days to complete it, at any time of day.\n\nStrengths-based platforms alternate quick, personal questions ('What energises you?') with behavioural or situational questions, sometimes with written or reasoning exercises.\n\n**Golden rule:** always use the practice question to check lighting, audio and framing, and check straight away whether retakes are allowed."
     },
     {
-     "h": "Come vengono valutate",
-     "body": "Le registrazioni sono valutate da recruiter o manager con una scheda di competenze, a volte con il supporto di sistemi automatici. In entrambi i casi conta soprattutto **cosa dici e come lo strutturi**:\n- **pertinenza**: rispondi alla domanda esatta, non a quella che avresti voluto;\n- **struttura**: inizio, sviluppo e fine riconoscibili;\n- **evidenze**: esempi specifici, azioni personali, risultati con numeri;\n- **comunicazione**: chiarezza, ritmo, energia.\n\nIl principale fornitore di video interview ha dichiarato nel 2021 di aver smesso di usare l'analisi delle espressioni facciali: il contenuto verbale pesa molto più delle micro-espressioni. Per questo è utile usare in modo naturale le parole della competenza richiesta ('I prioritised', 'I took ownership', 'I escalated early') e chiudere sempre con un risultato chiaro.\n\nChi valuta guarda decine di video di fila: una risposta che va dritta al punto nei primi 10 secondi parte in vantaggio."
+     "h": "How they are assessed",
+     "body": "Recordings are assessed by recruiters or managers with a competency scorecard, sometimes supported by automated systems. In both cases what matters most is **what you say and how you structure it**:\n- **relevance**: answer the exact question, not the one you would have liked;\n- **structure**: a recognisable beginning, middle and end;\n- **evidence**: specific examples, personal actions, results with numbers;\n- **communication**: clarity, pace, energy.\n\nThe leading video interview provider stated in 2021 that it had stopped using facial expression analysis: verbal content weighs far more than micro-expressions. That is why it helps to use the words of the required competency naturally ('I prioritised', 'I took ownership', 'I escalated early') and always to close with a clear result.\n\nAssessors watch dozens of videos in a row: an answer that gets straight to the point in the first 10 seconds starts with an advantage."
     },
     {
-     "h": "Setup tecnico: la checklist",
-     "body": "| Elemento | Come farlo bene |\n|---|---|\n| Camera | All'altezza degli occhi (alza il laptop su qualche libro), inquadratura testa e spalle, un po' di spazio sopra la testa |\n| Sguardo | Guarda l'obiettivo, non il tuo volto sullo schermo; un post-it con una freccia vicino alla camera aiuta |\n| Luce | Fonte di luce davanti a te (finestra o lampada), mai alle spalle |\n| Sfondo | Neutro e ordinato, niente rumori o persone che passano |\n| Audio | Microfono delle cuffie o esterno; meglio una stanza con tessuti che una stanza vuota che rimbomba |\n| Rete e device | Laptop in carica, connessione stabile, notifiche e altre app chiuse, telefono in silenzio |\n| Abbigliamento | Come per un colloquio in presenza |\n| Appunti | Al massimo 3 parole chiave per storia vicino alla camera, mai uno script da leggere |\n\nFai una registrazione di prova di 30 secondi e guardala: è il modo più rapido per vedere luce e inquadratura come le vedrà chi valuta."
+     "h": "Technical setup: the checklist",
+     "body": "| Element | How to get it right |\n|---|---|\n| Camera | At eye level (raise the laptop on a few books), head-and-shoulders framing, a little space above your head |\n| Eye line | Look at the lens, not at your face on the screen; a sticky note with an arrow next to the camera helps |\n| Lighting | Light source in front of you (window or lamp), never behind you |\n| Background | Neutral and tidy, no noise or people walking past |\n| Audio | Headset or external microphone; a room with soft furnishings is better than an empty room that echoes |\n| Network and device | Laptop charging, stable connection, notifications and other apps closed, phone on silent |\n| Clothing | As for an in-person interview |\n| Notes | At most 3 keywords per story next to the camera, never a script to read |\n\nDo a 30-second test recording and watch it: it is the fastest way to see lighting and framing as the assessor will see them."
     },
     {
-     "h": "Il template da 60-90 secondi",
-     "body": "A un ritmo naturale di 140-150 parole al minuto, 90 secondi corrispondono a circa 210-225 parole e 60 secondi a circa 140-150. Per le domande comportamentali usa questa scaletta:\n\n| Secondi | Blocco | Esempio di frase |\n|---|---|---|\n| 0-10 | **Headline**: rispondi subito in una frase | 'A good example is a sell-side deal where the client brought the launch forward by a week.' |\n| 10-25 | **Contesto** (Situation + Task) in 2 frasi | 'We had three days instead of ten to finalise the information memorandum...' |\n| 25-65 | **2-3 azioni** con il perché | 'First I..., because... Then I... Finally I...' |\n| 65-80 | **Risultato** con un numero | 'As a result, the document went out on time and...' |\n| 80-90 | **Chiusura**: lezione o collegamento al ruolo | 'That is how I would approach tight deadlines in your team.' |\n\nPer una risposta da 60 secondi comprimi il contesto in 1 frase e tieni 2 azioni.\n\nPer le domande di **motivazione** ('Why this programme?'): headline, 3 ragioni con una prova ciascuna, chiusura.\n\n**Come usare 30 secondi di preparazione:** non scrivere frasi. Scegli la storia dallo story bank e annota 3 parole: storia, azione chiave, numero del risultato."
+     "h": "The 60-90 second template",
+     "body": "At a natural pace of 140-150 words per minute, 90 seconds corresponds to about 210-225 words and 60 seconds to about 140-150. For behavioural questions use this outline:\n\n| Seconds | Block | Example sentence |\n|---|---|---|\n| 0-10 | **Headline**: answer straight away in one sentence | 'A good example is a sell-side deal where the client brought the launch forward by a week.' |\n| 10-25 | **Context** (Situation + Task) in 2 sentences | 'We had three days instead of ten to finalise the information memorandum...' |\n| 25-65 | **2-3 actions** with the why | 'First I..., because... Then I... Finally I...' |\n| 65-80 | **Result** with a number | 'As a result, the document went out on time and...' |\n| 80-90 | **Close**: lesson or link to the role | 'That is how I would approach tight deadlines in your team.' |\n\nFor a 60-second answer compress the context into 1 sentence and keep 2 actions.\n\nFor **motivation** questions ('Why this programme?'): headline, 3 reasons with one piece of evidence each, close.\n\n**How to use 30 seconds of preparation:** do not write sentences. Pick the story from your story bank and jot down 3 words: story, key action, result figure."
     },
     {
-     "h": "Delivery: voce, ritmo, energia",
-     "body": "- **Un gradino di energia in più**: la camera appiattisce. Sorridi all'inizio e usa una voce un po' più alta e più varia di quanto ti sembri naturale.\n- **Frasi brevi** e una pausa al posto di 'ehm'. Un secondo di silenzio non si nota, i filler sì.\n- **Se inciampi, continua**: ricominciare a metà fa perdere tempo ed è impossibile se le ripetizioni non sono ammesse.\n- **Chiudi 5-10 secondi prima del timer**: una risposta tagliata a metà frase dà un'impressione di disorganizzazione. Con la headline all'inizio, anche un taglio non ti fa perdere il punto principale.\n- **Inglese semplice e corretto** è meglio di costruzioni complesse. Ripeti a voce i termini tecnici che userai (information memorandum, due diligence, enterprise value) per pronunciarli in modo fluido.\n- **Linguaggio del corpo**: spalle aperte, mani visibili ogni tanto, niente rotazioni della sedia."
+     "h": "Delivery: voice, pace, energy",
+     "body": "- **One notch more energy**: the camera flattens you. Smile at the start and use a slightly higher and more varied voice than feels natural.\n- **Short sentences** and a pause instead of 'um'. A second of silence goes unnoticed, fillers do not.\n- **If you stumble, keep going**: restarting halfway wastes time and is impossible if retakes are not allowed.\n- **Finish 5-10 seconds before the timer**: an answer cut off mid-sentence gives an impression of disorganisation. With the headline at the start, even a cut-off does not make you lose the main point.\n- **Simple, correct English** is better than complex constructions. Say the technical terms you will use out loud beforehand (information memorandum, due diligence, enterprise value) so that you pronounce them fluently.\n- **Body language**: open shoulders, hands visible now and then, no swivelling in the chair."
     },
     {
-     "h": "La routine di pratica in 2 settimane",
-     "body": "**Settimana 1: costruzione**\n- Giorno 1: registra 3 risposte senza preparazione specifica, guardale e dai un voto con la rubrica qui sotto. È la tua base di partenza.\n- Giorni 2-5: 2 domande al giorno, 30 secondi di preparazione con timer, risposta con limite di 90 secondi. Ripeti ogni domanda finché non arrivi ad almeno 4 su ogni riga.\n- Weekend: registra le 8 storie dello story bank in versione da 90 secondi.\n\n**Settimana 2: simulazione**\n- 3 sessioni complete da 6 domande estratte a caso, senza ripetizioni, come nel test reale.\n- Dopo ogni sessione riguarda solo la risposta peggiore e riscrivi la sua headline.\n\n**Rubrica di autovalutazione (1-5):**\n\n| Criterio | 1 | 5 |\n|---|---|---|\n| Headline nei primi 10 secondi | Assente | Risponde alla domanda in una frase |\n| Struttura | Racconto disordinato | Contesto, azioni, risultato riconoscibili |\n| Evidenza | Generica, 'we' | Azioni personali con il perché |\n| Risultato | Assente | Numero ed esito chiaro |\n| Tempo | Tagliato o sotto 40 secondi | Chiude 5-10 secondi prima del limite |\n| Delivery | Filler frequenti, sguardo basso | Ritmo fluido, sguardo in camera, energia |\n\nObiettivo misurabile: passare da una media di 2-3 a una media di almeno 4 in 10 giorni. Annota il punteggio di ogni sessione per vedere il progresso."
+     "h": "The 2-week practice routine",
+     "body": "**Week 1: building**\n- Day 1: record 3 answers without specific preparation, watch them and score them with the rubric below. This is your baseline.\n- Days 2-5: 2 questions a day, 30 seconds of preparation on a timer, answer with a 90-second limit. Repeat each question until you reach at least 4 on every row.\n- Weekend: record the 8 stories from your story bank in a 90-second version.\n\n**Week 2: simulation**\n- 3 full sessions of 6 randomly drawn questions, without retakes, as in the real test.\n- After each session review only the worst answer and rewrite its headline.\n\n**Self-assessment rubric (1-5):**\n\n| Criterion | 1 | 5 |\n|---|---|---|\n| Headline in the first 10 seconds | Missing | Answers the question in one sentence |\n| Structure | Disorganised account | Recognisable context, actions, result |\n| Evidence | Generic, 'we' | Personal actions with the why |\n| Result | Missing | Number and clear outcome |\n| Time | Cut off or under 40 seconds | Finishes 5-10 seconds before the limit |\n| Delivery | Frequent fillers, eyes down | Fluent pace, eyes on the camera, energy |\n\nMeasurable goal: move from an average of 2-3 to an average of at least 4 in 10 days. Record the score of each session to track your progress."
     }
    ],
    "examples": [
     {
      "q": "Tell us about a time you had to deliver high-quality work under a tight deadline. (Preparation: 30 seconds. Answer: up to 2 minutes.)",
      "steps": [
-      "Nei 30 secondi di preparazione scegli la storia 1 dello story bank e annota 3 parole, per esempio 'one week early / key pages first / zero corrections'.",
-      "Target di durata: circa 90 secondi anche se il limite è 2 minuti. Chiudere prima del limite è meglio che riempire.",
-      "Sequenza: headline subito, contesto in 2 frasi, 3 azioni con il perché, risultato con un dato, chiusura sul ruolo.",
-      "Circa 200 parole: a 140-145 parole al minuto sono circa 85 secondi, con oltre 30 secondi di margine sul limite."
+      "In the 30 seconds of preparation pick story 1 from your story bank and jot down 3 words, for example 'one week early / key pages first / zero corrections'.",
+      "Target length: about 90 seconds even if the limit is 2 minutes. Finishing before the limit is better than filling it.",
+      "Sequence: headline straight away, context in 2 sentences, 3 actions with the why, result with a figure, close on the role.",
+      "About 200 words: at 140-145 words per minute that is about 85 seconds, with more than 30 seconds of margin on the limit."
      ],
      "answer": "A good example is a sell-side mandate where the client brought the launch forward by a week. We had three days instead of ten to finalise the information memorandum and the valuation materials, and I was the only analyst on the deal. First, I listed every deliverable with my associate and agreed which pages the client would read first, because I wanted the time pressure to fall on the less critical sections, not on the numbers. Second, I split my day: mornings on the model and the financial pages, afternoons on text and formatting, so I always checked numbers with a fresh mind. Third, before each version went out, I ran a fixed checklist: every figure in the document linked to the model, totals reconciled and sources consistent. As a result, the memorandum went to the client on the new date with no corrections needed on the financial section, and the client launched the process as planned. What I took from it is that under pressure the most useful thing I can do is protect accuracy on what matters most, and be explicit with my seniors about what can wait. That is how I would approach tight deadlines in your team."
     },
     {
      "q": "Why are you interested in our graduate programme? (Preparation: 30 seconds. Answer: up to 1 minute.)",
      "steps": [
-      "Domanda di motivazione: headline, 3 ragioni con una prova ciascuna, chiusura.",
-      "Le prove vanno preparate prima del test: deal recenti della banca, struttura del programma, conversazioni con persone del team.",
-      "Circa 120 parole, cioè circa 50 secondi a 145 parole al minuto: resta un margine di sicurezza sul limite di 60."
+      "Motivation question: headline, 3 reasons with one piece of evidence each, close.",
+      "The evidence must be prepared before the test: the bank's recent deals, the structure of the programme, conversations with people on the team.",
+      "About 120 words, i.e. about 50 seconds at 145 words per minute: this leaves a safety margin on the 60-second limit."
      ],
      "answer": "Because it combines the deal exposure I enjoy with a platform and training I cannot get where I am today. First, your [division] is very active in [sector or region], for example [recent deal], and that is exactly where my experience in semiconductor and deep tech M&A is most relevant. Second, the programme's [rotations or training] would give me a broader base across products, from advisory to financing. Third, the people: at [event], the analysts I spoke with described a culture where juniors are trusted with real work early, and that is how I have learned best so far. I would bring hands-on deal experience from day one and a strong motivation to grow with the team."
     },
     {
      "q": "What do you enjoy doing in your spare time? (Strengths-based question. Answer: up to 1 minute.)",
      "steps": [
-      "Domanda strengths: non c'è una risposta giusta, si valutano autenticità ed energia.",
-      "Scegli un'attività vera, spiega cosa ti piace e collegala con leggerezza a un punto di forza utile nel ruolo, senza forzare.",
-      "Un dettaglio concreto rende la risposta credibile. La risposta modello è di circa 80 parole, cioè poco più di 30 secondi: con i tuoi dettagli reali arriverai a 40-50 secondi, che bastano."
+      "Strengths question: there is no right answer; authenticity and energy are what is assessed.",
+      "Choose a real activity, explain what you enjoy about it and link it lightly to a strength useful in the role, without forcing it.",
+      "A concrete detail makes the answer credible. The model answer is about 80 words, i.e. just over 30 seconds: with your real details you will reach 40-50 seconds, which is enough."
      ],
      "answer": "Most weekends I [go running / play football / read about technology]. What I enjoy most is [setting a target and tracking my progress week after week]. It is probably the same thing I like at work: breaking a big goal into small steps and seeing the numbers move. Recently I [concrete detail, for example trained for a half marathon and cut my time by four minutes], and that kind of steady progress is what keeps me motivated."
     }
    ],
    "cheatsheet": [
-    "Usa sempre la domanda di prova per testare luce, audio e inquadratura.",
-    "Camera all'altezza degli occhi, luce davanti, sguardo sull'obiettivo.",
-    "140-150 parole al minuto: 60 secondi = circa 145 parole, 90 secondi = circa 215.",
-    "Template: headline 10 s, contesto 15 s, azioni 40 s, risultato 15 s, chiusura 10 s.",
-    "Nei 30 secondi di preparazione: storia, azione chiave, numero. Niente frasi scritte.",
-    "Chiudi 5-10 secondi prima del timer; se inciampi, continua.",
-    "Energia un gradino sopra il normale: la camera la appiattisce.",
-    "Contenuto e struttura pesano più dell'aspetto: rispondi alla domanda esatta.",
-    "Pratica: rubrica 1-5 su 6 criteri, obiettivo media di almeno 4 in 10 giorni."
+    "Always use the practice question to test lighting, audio and framing.",
+    "Camera at eye level, light in front, eyes on the lens.",
+    "140-150 words per minute: 60 seconds = about 145 words, 90 seconds = about 215.",
+    "Template: headline 10 s, context 15 s, actions 40 s, result 15 s, close 10 s.",
+    "In the 30 seconds of preparation: story, key action, number. No written sentences.",
+    "Finish 5-10 seconds before the timer; if you stumble, keep going.",
+    "Energy one notch above normal: the camera flattens it.",
+    "Content and structure matter more than appearance: answer the exact question.",
+    "Practice: 1-5 rubric on 6 criteria, target an average of at least 4 in 10 days."
    ]
   },
   {
    "id": "les-beh-04",
    "skill": "behavioural",
    "order": 4,
-   "title": "Assessment centre e superday: cosa osservano gli assessor e come muoverti",
+   "title": "Assessment centre and superday: what assessors observe and how to act",
    "minutes": 18,
-   "summary": "Saprai come si svolgono group exercise, case study, presentazione, role-play e superday, cosa scrivono gli assessor e quali comportamenti visibili fanno punti.",
+   "summary": "You will know how group exercises, case studies, presentations, role-plays and superdays work, what assessors write down and which visible behaviours score points.",
    "sections": [
     {
-     "h": "Formato: assessment centre e superday",
-     "body": "**Assessment centre** (tipico dei graduate programme europei): mezza giornata o una giornata intera, spesso virtuale, con 4-6 esercizi:\n- group exercise;\n- case study, scritto o con presentazione;\n- role-play (cliente, collega, manager);\n- 1-2 colloqui (competency, strengths, a volte tecnici);\n- a volte una breve ripetizione dei test numerici per confermare il risultato online.\n\n**Superday** (tipico dell'investment banking): 3-5 colloqui uno dopo l'altro, da 30-45 minuti, con persone di livelli diversi (analyst, associate, VP, MD). Mescolano domande tecniche (accounting, valutazione, M&A) e comportamentali; a volte c'è un case o un test di modelling.\n\nIn entrambi i casi ogni esercizio misura più competenze e ogni competenza viene misurata in più esercizi. Nessun esercizio da solo decide l'esito, ma un comportamento grave (scortesia, scorrettezza, arroganza) può farlo."
+     "h": "Format: assessment centre and superday",
+     "body": "**Assessment centre** (typical of European graduate programmes): half a day or a full day, often virtual, with 4-6 exercises:\n- group exercise;\n- case study, written or with a presentation;\n- role-play (client, colleague, manager);\n- 1-2 interviews (competency, strengths, sometimes technical);\n- sometimes a short repeat of the numerical tests to confirm the online result.\n\n**Superday** (typical of investment banking): 3-5 back-to-back interviews of 30-45 minutes each, with people at different levels (analyst, associate, VP, MD). They mix technical questions (accounting, valuation, M&A) and behavioural ones; sometimes there is a case or a modelling test.\n\nIn both cases each exercise measures several competencies and each competency is measured in several exercises. No single exercise decides the outcome on its own, but a serious behaviour (rudeness, unfair conduct, arrogance) can."
     },
     {
-     "h": "Cosa scrivono gli assessor",
-     "body": "Gli assessor seguono di solito il processo **ORCE**:\n1. **Observe**: guardano e ascoltano solo comportamenti visibili.\n2. **Record**: annotano quasi parola per parola cosa dici e fai, spesso con l'orario ('10:42, propone di fissare i criteri prima di discutere le opzioni').\n3. **Classify**: assegnano ogni annotazione a una competenza.\n4. **Evaluate**: danno un punteggio per competenza su una scala con indicatori positivi e negativi.\n\nAlla fine c'è il **wash-up**: gli assessor confrontano i punteggi in una matrice esercizi x competenze e decidono insieme.\n\n| Competenza | Cosa annotano come positivo | Cosa annotano come negativo |\n|---|---|---|\n| Teamwork | Coinvolge chi parla poco, costruisce sulle idee altrui | Interrompe, ignora i contributi, monopolizza |\n| Analytical | Usa i numeri del pack, identifica criteri e rischi | Opinioni senza dati, perde informazioni chiave |\n| Communication | Sintesi chiare, struttura, ascolto | Monologhi, gergo, divagazioni |\n| Drive / leadership | Propone un processo, guida verso la decisione | Passivo, oppure impone senza ascoltare |\n| Client focus | Fa domande, capisce il bisogno, gestisce le aspettative | Promette troppo, non ascolta |\n| Integrity | Ammette ciò che non sa, rispetta i limiti | Inventa dati, bluffa |\n\n**Conseguenza pratica:** ciò che pensi ma non dici non viene registrato. Ragiona ad alta voce, cita i numeri, rendi visibili le tue scelte."
+     "h": "What assessors write down",
+     "body": "Assessors usually follow the **ORCE** process:\n1. **Observe**: they watch and listen only for visible behaviours.\n2. **Record**: they note almost word for word what you say and do, often with the time ('10:42, proposes setting the criteria before discussing the options').\n3. **Classify**: they assign each note to a competency.\n4. **Evaluate**: they give a score for each competency on a scale with positive and negative indicators.\n\nAt the end there is the **wash-up**: the assessors compare scores in an exercises x competencies matrix and decide together.\n\n| Competency | What they note as positive | What they note as negative |\n|---|---|---|\n| Teamwork | Involves those who speak little, builds on others' ideas | Interrupts, ignores contributions, dominates |\n| Analytical | Uses the numbers in the pack, identifies criteria and risks | Opinions without data, misses key information |\n| Communication | Clear summaries, structure, listening | Monologues, jargon, digressions |\n| Drive / leadership | Proposes a process, steers towards the decision | Passive, or imposes without listening |\n| Client focus | Asks questions, understands the need, manages expectations | Overpromises, does not listen |\n| Integrity | Admits what they do not know, respects limits | Makes up data, bluffs |\n\n**Practical consequence:** what you think but do not say is not recorded. Think out loud, quote the numbers, make your choices visible."
     },
     {
-     "h": "Group exercise: il metodo minuto per minuto",
-     "body": "Formato tipico: 4-6 candidati, 30-45 minuti, un brief comune (scegliere tra 3 progetti, allocare un budget, classificare potenziali clienti), a volte informazioni individuali diverse e un aggiornamento a metà esercizio. Non si vince battendo gli altri: ognuno è valutato sui propri comportamenti e l'intero gruppo può passare.\n\n**Metodo per un esercizio da 40 minuti:**\n- **0-5 min**: leggi il brief e annota obiettivo, vincoli, criteri possibili e 2-3 numeri chiave.\n- **5-8 min**: proponi un processo: 'Shall we agree the criteria first, then score each option, and keep the last five minutes for a final recommendation?'. Proporre il processo è uno dei contributi più visibili.\n- **8-30 min**: contributi di qualità, non di quantità. Usa i numeri del pack, costruisci sulle idee altrui ('Building on your point...'), coinvolgi chi tace chiamandolo per nome.\n- **30-35 min**: sintetizza: 'So far we agree on A and B; the open point is C'.\n- **35-40 min**: porta il gruppo a una decisione e a una raccomandazione chiara entro il tempo.\n\n**Da evitare:** parlare sopra gli altri, restare in silenzio per 10 minuti, fare solo il timekeeper senza contenuto, cambiare posizione senza motivarlo, non arrivare a una decisione."
+     "h": "Group exercise: the minute-by-minute method",
+     "body": "Typical format: 4-6 candidates, 30-45 minutes, a common brief (choose between 3 projects, allocate a budget, rank potential clients), sometimes different individual information and an update halfway through the exercise. You do not win by beating the others: each person is assessed on their own behaviour and the whole group can pass.\n\n**Method for a 40-minute exercise:**\n- **0-5 min**: read the brief and note the objective, constraints, possible criteria and 2-3 key numbers.\n- **5-8 min**: propose a process: 'Shall we agree the criteria first, then score each option, and keep the last five minutes for a final recommendation?'. Proposing the process is one of the most visible contributions.\n- **8-30 min**: quality contributions, not quantity. Use the numbers in the pack, build on others' ideas ('Building on your point...'), involve those who are silent by calling them by name.\n- **30-35 min**: summarise: 'So far we agree on A and B; the open point is C'.\n- **35-40 min**: bring the group to a decision and a clear recommendation within the time.\n\n**Avoid:** talking over others, staying silent for 10 minutes, acting only as timekeeper without adding content, changing position without explaining why, not reaching a decision."
     },
     {
-     "h": "Case study e presentazione",
-     "body": "Formato tipico: 30-60 minuti per analizzare un pack (dati finanziari, mercato, email, articoli) e preparare una raccomandazione, poi 5-10 minuti di presentazione e 10-15 minuti di domande.\n\n**Divisione del tempo per un case da 60 minuti:**\n\n| Fase | Minuti |\n|---|---|\n| Lettura rapida del pack e definizione della domanda | 10 |\n| Analisi e calcoli chiave | 25 |\n| Struttura e slide o appunti | 15 |\n| Prova ad alta voce | 10 |\n\n**Struttura della presentazione (prima la risposta, poi le ragioni):**\n1. Raccomandazione in una frase.\n2. 3 argomenti, ognuno con un numero.\n3. Rischi principali e come mitigarli.\n4. Prossimi passi.\n\n**Domande degli assessor:** ascolta tutta la domanda, fai una pausa, rispondi in modo diretto, riconosci i limiti dell'analisi ('With more time I would test...') e torna alla raccomandazione. Cambia idea solo se ti danno un'informazione nuova: difendere una posizione con argomenti è ciò che viene premiato."
+     "h": "Case study and presentation",
+     "body": "Typical format: 30-60 minutes to analyse a pack (financial data, market, emails, articles) and prepare a recommendation, then 5-10 minutes of presentation and 10-15 minutes of questions.\n\n**Time split for a 60-minute case:**\n\n| Phase | Minutes |\n|---|---|\n| Quick read of the pack and definition of the question | 10 |\n| Analysis and key calculations | 25 |\n| Structure and slides or notes | 15 |\n| Rehearsal out loud | 10 |\n\n**Presentation structure (answer first, then the reasons):**\n1. Recommendation in one sentence.\n2. 3 arguments, each with a number.\n3. Main risks and how to mitigate them.\n4. Next steps.\n\n**Assessors' questions:** listen to the whole question, pause, answer directly, acknowledge the limits of the analysis ('With more time I would test...') and return to the recommendation. Change your mind only if they give you new information: defending a position with arguments is what gets rewarded."
     },
     {
-     "h": "Role-play: cliente, collega, manager",
-     "body": "Un assessor interpreta un personaggio (cliente scontento, collega in difficoltà, manager con una richiesta difficile) e ha un brief con informazioni nascoste e obiezioni preparate. Di solito hai 10-15 minuti per prepararti e 15-20 minuti di conversazione.\n\n**Metodo in 5 passi:**\n1. **Prepara**: il tuo obiettivo, cosa puoi e non puoi concedere, 3 domande aperte.\n2. **Apri** con contesto e agenda: 'Thank you for making the time. I would like to understand your concerns and agree next steps.'\n3. **Ascolta prima di proporre**: domande aperte per far emergere le informazioni nascoste, poi riassumi ciò che hai capito.\n4. **Proponi** soluzioni nel perimetro delle regole; se qualcosa non dipende da te, dillo e impegnati a verificarlo.\n5. **Chiudi** con passi successivi chiari: chi fa cosa, entro quando.\n\nGli assessor premiano ascolto, empatia senza cedimenti sulle regole e soluzioni concrete. Penalizzano chi promette ciò che non può garantire e chi non scopre l'informazione chiave perché parla troppo."
+     "h": "Role-play: client, colleague, manager",
+     "body": "An assessor plays a character (an unhappy client, a struggling colleague, a manager with a difficult request) and has a brief with hidden information and prepared objections. You usually have 10-15 minutes to prepare and 15-20 minutes of conversation.\n\n**5-step method:**\n1. **Prepare**: your objective, what you can and cannot concede, 3 open questions.\n2. **Open** with context and an agenda: 'Thank you for making the time. I would like to understand your concerns and agree next steps.'\n3. **Listen before proposing**: open questions to bring out the hidden information, then summarise what you have understood.\n4. **Propose** solutions within the rules; if something does not depend on you, say so and commit to checking it.\n5. **Close** with clear next steps: who does what, by when.\n\nAssessors reward listening, empathy without giving way on the rules, and concrete solutions. They penalise those who promise what they cannot guarantee and those who miss the key information because they talk too much."
     },
     {
-     "h": "Superday: 3-5 colloqui di fila senza calare",
-     "body": "- **Ogni colloquio riparte da zero**: uno andato male non chiude la giornata, di solito gli intervistatori si confrontano solo alla fine.\n- **Diversifica le storie**: tra un colloquio e l'altro annota quali storie e domande hai già usato.\n- **Adatta il livello**: con analyst e associate aspettati domande tecniche e di execution; con VP e MD più motivazione, giudizio, mercato e 'why us'.\n- **Tecnica**: ripassa i moduli di accounting, valutazione e M&A del sito; spiega il ragionamento ad alta voce anche quando sbagli un calcolo.\n- **Energia**: acqua, qualcosa da mangiare, 2 minuti di pausa tra un colloquio e l'altro per resettare.\n- **Tutti osservano**: anche chi incontri in attesa o a pranzo può dare un feedback.\n- **Domande diverse a ogni intervistatore**: dimostri curiosità e raccogli materiale per i colloqui successivi."
+     "h": "Superday: 3-5 back-to-back interviews without flagging",
+     "body": "- **Each interview starts from zero**: one that went badly does not end your day; interviewers usually compare notes only at the end.\n- **Vary your stories**: between interviews, note which stories and questions you have already used.\n- **Adapt to the level**: with analysts and associates expect technical and execution questions; with VPs and MDs more on motivation, judgement, the market and 'why us'.\n- **Technicals**: review the site's accounting, valuation and M&A modules; explain your reasoning out loud even when you get a calculation wrong.\n- **Energy**: water, something to eat, a 2-minute break between interviews to reset.\n- **Everyone is watching**: even the people you meet while waiting or at lunch can give feedback.\n- **Different questions for each interviewer**: you show curiosity and gather material for the following interviews."
     },
     {
-     "h": "Il giorno prima: checklist",
-     "body": "- Rileggi le 8 schede dello story bank e le risposte a tell me about yourself, why this bank, why this division.\n- Prepara 2-3 notizie recenti sulla banca e 1-2 deal nel settore che ti interessa.\n- Ripassa 10 domande tecniche base: collegamento tra i tre prospetti, enterprise value contro equity value, metodi di valutazione, accretion/dilution.\n- Per un assessment centre virtuale: test di camera, audio e connessione. Per uno in presenza: percorso, orario, documenti.\n- Prepara 3 domande per ciascun tipo di interlocutore.\n- Dormi: la lucidità del pomeriggio vale più dell'ultima ora di ripasso."
+     "h": "The day before: checklist",
+     "body": "- Reread the 8 story bank cards and your answers to tell me about yourself, why this bank, why this division.\n- Prepare 2-3 recent news items about the bank and 1-2 deals in the sector you are interested in.\n- Review 10 basic technical questions: how the three statements link, enterprise value versus equity value, valuation methods, accretion/dilution.\n- For a virtual assessment centre: test camera, audio and connection. For an in-person one: route, timing, documents.\n- Prepare 3 questions for each type of interviewer.\n- Sleep: being sharp in the afternoon is worth more than the last hour of revision."
     }
    ],
    "examples": [
     {
      "q": "Group exercise (40 minutes, 5 candidates): your group is the bank's coverage committee and must recommend which ONE of three mid-market companies to prioritise as a new client next year. The pack gives each company's revenue, growth, leverage, likely transactions in the next 24 months and existing relationships. What do you do and say in the first 8 minutes?",
      "steps": [
-      "0-5 minuti: leggi in silenzio. Annota l'obiettivo (una sola azienda), i criteri possibili (probabilità di un deal, dimensione delle fee, rischio, relazione esistente) e 2-3 numeri chiave per azienda.",
-      "5-6 minuti: proponi processo e tempi, in modo che il gruppo possa accettarli o modificarli.",
-      "6-8 minuti: proponi i criteri citando un dato del pack e chiedi esplicitamente il parere di chi non ha ancora parlato.",
-      "Cosa scrive l'assessor: 'proposes structure and timing', 'uses data from the pack', 'invites quieter candidate'. Tre evidenze positive in meno di un minuto di intervento."
+      "Minutes 0-5: read in silence. Note the objective (a single company), the possible criteria (likelihood of a deal, size of fees, risk, existing relationship) and 2-3 key numbers per company.",
+      "Minutes 5-6: propose a process and timing, in a way that lets the group accept or change them.",
+      "Minutes 6-8: propose the criteria citing a figure from the pack and explicitly ask for the view of someone who has not spoken yet.",
+      "What the assessor writes: 'proposes structure and timing', 'uses data from the pack', 'invites quieter candidate'. Three pieces of positive evidence in less than a minute of speaking."
      ],
      "answer": "'Before we discuss the companies, could we agree how we decide? I suggest five minutes on criteria, about twenty scoring the three companies, and the last ten for a recommendation. As criteria I would propose the likelihood of a transaction in the next 24 months, the size of the potential fees and credit risk, since Company B's leverage is already above 4x. [Name], you have not had a chance yet: what would you add?'"
     },
     {
      "q": "Case study (45 minutes, then a 10-minute presentation): a client asks whether it should acquire Target Co for an enterprise value of EUR 520m. Target Co has revenue of EUR 200m and EBITDA of EUR 40m. Comparable listed companies trade at 11.0x-13.0x EBITDA. The client expects cost synergies of EUR 6m a year, fully achieved from year 2. What is your recommendation?",
      "steps": [
-      "Multiplo implicito stand-alone: 520 / 40 = 13.0x, cioè al massimo del range dei comparabili (11.0x-13.0x).",
-      "Valore stand-alone al punto medio: 40 × 12.0 = EUR 480m. Il prezzo richiesto supera questo valore di 520 − 480 = EUR 40m.",
-      "Valore delle sinergie allo stesso multiplo, prima dei costi di integrazione: 6 × 12.0 = EUR 72m. A 520m il cliente cede al venditore 40 / 72 = circa 56% delle sinergie, che arrivano solo dal secondo anno e non sono garantite.",
-      "Multiplo includendo le sinergie: 520 / (40 + 6) = circa 11.3x, dentro il range: il deal ha senso solo se le sinergie sono credibili.",
-      "Limite da dichiarare nella presentazione: i multipli di società quotate non includono un premio di controllo, quindi una parte dei 40m sopra il punto medio può essere giustificata. Se il pack contiene transazioni precedenti, usale come secondo riferimento.",
-      "Raccomandazione: procedere con un'offerta intorno a EUR 500m (500 / 40 = 12.5x EBITDA stand-alone; (500 − 480) / 72 = 20 / 72 = circa 28% delle sinergie cedute), con 520m come prezzo massimo, condizionato a una due diligence che confermi le sinergie."
+      "Implied stand-alone multiple: 520 / 40 = 13.0x, i.e. at the top of the comparables range (11.0x-13.0x).",
+      "Stand-alone value at the midpoint: 40 × 12.0 = EUR 480m. The asking price exceeds this value by 520 − 480 = EUR 40m.",
+      "Value of the synergies at the same multiple, before integration costs: 6 × 12.0 = EUR 72m. At 520m the client hands the seller 40 / 72 = about 56% of the synergies, which only arrive from year 2 and are not guaranteed.",
+      "Multiple including synergies: 520 / (40 + 6) = about 11.3x, within the range: the deal only makes sense if the synergies are credible.",
+      "Limitation to state in the presentation: multiples of listed companies do not include a control premium, so part of the 40m above the midpoint may be justified. If the pack contains precedent transactions, use them as a second reference point.",
+      "Recommendation: proceed with an offer of around EUR 500m (500 / 40 = 12.5x stand-alone EBITDA; (500 − 480) / 72 = 20 / 72 = about 28% of the synergies given away), with 520m as the maximum price, conditional on due diligence confirming the synergies."
      ],
      "answer": "Recommendation: proceed, but not at EUR 520m. Open at around EUR 500m (12.5x stand-alone EBITDA) and treat 520m as the walk-away price, because at 520m the client would hand the seller about 56% of synergies that are not yet proven. Next step: confirmatory due diligence on the EUR 6m of synergies."
     },
     {
      "q": "Role-play (15 minutes): you are a junior banker. The CFO of a client company, played by an assessor, is unhappy because the first draft of the information memorandum arrived two days late and contained errors in the historical financials. Your brief says the delay was partly caused by late data from the client's own finance team, but the errors were the bank's. How do you open the meeting and handle it?",
      "steps": [
-      "Apri riconoscendo il problema senza difenderti: gli errori sono della banca e va detto chiaramente (integrity).",
-      "Ascolta prima di proporre: domande aperte sull'impatto per il CFO (board, timing del processo, fiducia), poi riassumi.",
-      "Gestisci il ritardo con tatto: non usare i dati arrivati tardi come scusa in apertura, ma riprendili come punto di processo comune per il futuro.",
-      "Proponi azioni concrete: versione corretta entro una data precisa, controllo a quattro occhi sui numeri, calendario condiviso per i dati mancanti.",
-      "Chiudi con prossimi passi chiari e verifica che il CFO sia d'accordo."
+      "Open by acknowledging the problem without being defensive: the errors are the bank's and this must be said clearly (integrity).",
+      "Listen before proposing: open questions on the impact for the CFO (board, process timing, trust), then summarise.",
+      "Handle the delay tactfully: do not use the late data as an excuse in your opening, but bring it up later as a shared process point for the future.",
+      "Propose concrete actions: a corrected version by a specific date, a four-eyes check on the numbers, a shared timetable for the missing data.",
+      "Close with clear next steps and check that the CFO agrees."
      ],
      "answer": "'Thank you for taking the time. You are right to be frustrated: the errors in the historical financials are ours, and I am sorry for the extra work they caused you. Before I propose anything, could you tell me what impact the delay has had on your side, for example on your board timetable? [...] Here is what I suggest: we send you a fully corrected version by Thursday, with every historical figure checked by a second person on our team, and we agree a shared timetable for the remaining data, so that both teams have more time for review. Would that work for you?'"
     }
    ],
    "cheatsheet": [
-    "Assessment centre = 4-6 esercizi su più competenze; superday = 3-5 colloqui di fila, tecnici e fit.",
-    "Gli assessor registrano solo ciò che vedono e sentono: ragiona ad alta voce.",
-    "ORCE: Observe, Record, Classify, Evaluate, poi wash-up sulla matrice esercizi x competenze.",
-    "Group exercise: proponi il processo, usa i numeri, coinvolgi chi tace, sintetizza, porta a una decisione.",
-    "Non competi con gli altri candidati: tutto il gruppo può passare.",
-    "Presentazione: raccomandazione prima, 3 argomenti con numeri, rischi, prossimi passi.",
-    "Role-play: ascolta prima di proporre, niente promesse impossibili, chiudi con next steps.",
-    "Superday: ogni colloquio riparte da zero; annota le storie già usate.",
-    "Una scortesia o un bluff possono annullare una giornata buona."
+    "Assessment centre = 4-6 exercises across several competencies; superday = 3-5 back-to-back interviews, technical and fit.",
+    "Assessors record only what they see and hear: think out loud.",
+    "ORCE: Observe, Record, Classify, Evaluate, then the wash-up on the exercises x competencies matrix.",
+    "Group exercise: propose the process, use the numbers, involve the quiet ones, summarise, drive to a decision.",
+    "You are not competing with the other candidates: the whole group can pass.",
+    "Presentation: recommendation first, 3 arguments with numbers, risks, next steps.",
+    "Role-play: listen before proposing, no impossible promises, close with next steps.",
+    "Superday: each interview starts from zero; note the stories you have already used.",
+    "One act of rudeness or one bluff can wipe out a good day."
    ]
   }
  ]

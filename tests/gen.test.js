@@ -53,5 +53,34 @@ for (let s = 1; s <= 3000; s++) {
   const d = nums[1] - nums[0];
   if (Number(q.options[q.answer].replace(/,/g, '')) !== nums[nums.length - 1] + d) bad('series arithmetic', q);
 }
+// abstract panels: every square drawn inside the panel, never more than 12, and options visually distinct
+for (let s = 1; s <= 20000; s++) {
+  const q = generateShapes(s);
+  const sig = svg => {
+    const sq = [...svg.matchAll(/<rect x="([-\d.]+)" y="[-\d.]+" width="6"/g)].map(m => Number(m[1]));
+    if (sq.some(x => x < 0) || sq.length > 12) bad('abstract squares outside panel or > 12', q);
+    return svg.replace(/<rect x="[-\d.]+" y="[-\d.]+" width="6"[^>]*>/g, '') + '#' + sq.length; // what the eye sees
+  };
+  const seen = new Set(q.options.map(sig));
+  if (seen.size !== q.options.length) bad('abstract options look identical', q);
+}
+// numerical: no ties for "largest growth" questions
+// counts offered as options must be possible counts
+for (let s = 1; s <= 6000; s++) {
+  const q = generateNumerical(s * 13);
+  if (!/How many departments/.test(q.stem)) continue;
+  const nDep = q.context.dataset.rows.length;
+  if (q.options.some(o => Number(o) < 0 || Number(o) > nDep)) bad('impossible count option', q);
+}
+for (let s = 1; s <= 6000; s++) {
+  const q = generateNumerical(s * 13);
+  if (!q.tags.includes('largest-growth') && !/highest percentage growth|largest percentage/i.test(q.stem)) continue;
+  const ds = q.context.dataset; const yy = q.stem.match(/between (\d{4}) and (\d{4})/);
+  if (!yy) continue;
+  const i0 = ds.columns.indexOf(yy[1]), i1 = ds.columns.indexOf(yy[2]);
+  const g = ds.rows.map(r => Math.round((Number(r[i1]) / Number(r[i0]) - 1) * 1e6));
+  const max = Math.max(...g);
+  if (g.filter(x => x === max).length > 1) bad('largest growth tie', q);
+}
 console.log(`checked ${n} generated items, ${fails} failures`);
 process.exit(fails ? 1 : 0);

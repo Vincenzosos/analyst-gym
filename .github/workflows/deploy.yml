@@ -1,0 +1,85 @@
+# One workflow for the whole site:
+# - push to main: deploy the repo root to GitHub Pages.
+# - schedule / manual run: refresh data/news/*.json with scripts/fetch-news.mjs
+#   (no API keys, no AI), commit the files only if they changed, push, then deploy
+#   in the same run. Pushes made with GITHUB_TOKEN do not trigger new runs, so the
+#   deploy step here is what publishes the fresh data.
+# Requires: Settings > Pages > Build and deployment > Source = "GitHub Actions".
+
+name: Refresh news and deploy
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '20 5 * * *'     # every day 05:20 UTC (before the European open)
+    - cron: '30 16 * * 1-5'  # weekdays 16:30 UTC (after the European close)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        if: github.event_name != 'push'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch headlines and market data
+        id: fetch
+        if: github.event_name != 'push'
+        continue-on-error: true
+        run: node scripts/fetch-news.mjs
+
+      - name: Commit and push data if changed
+        if: github.event_name != 'push' && steps.fetch.outcome == 'success'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898283+github-actions[bot]@users.noreply.github.com'
+          git add data/news/*.json
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(news): refresh headlines and market data [skip ci]"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt), rebasing on the latest main."
+            git pull --rebase origin main
+          done
+          echo "Could not push the data commit." >&2
+          exit 1
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

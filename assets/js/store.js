@@ -16,7 +16,12 @@ const blank = () => ({
   stories: [],
   events: [],
   commercial: [],
-  settings: { weeklyGoalMin: 180 },
+  newsRead: {},
+  activity: {},
+  weekLog: {},
+  wrapSeen: {},
+  diags: [],
+  settings: { weeklyGoalMin: 180, intensity: 'standard' },
 });
 
 let S = null;
@@ -27,42 +32,70 @@ export function load() {
   try {
     const raw = localStorage.getItem(KEY);
     S = raw ? { ...blank(), ...JSON.parse(raw) } : blank();
+    normalize();
   } catch (e) {
     storageOk = false;
     S = blank();
   }
   return S;
 }
+function normalize() {
+  const b = blank();
+  S.settings = { ...b.settings, ...(S.settings || {}) };
+  for (const k of ['newsRead', 'activity', 'weekLog', 'wrapSeen']) if (!S[k] || typeof S[k] !== 'object') S[k] = {};
+  if (!Array.isArray(S.diags)) S.diags = [];
+}
 export function save() {
   try { localStorage.setItem(KEY, JSON.stringify(S)); storageOk = true; }
-  catch (e) { storageOk = false; }
+  catch (e) {
+    // quota: drop snapshots of closed mistakes and the oldest attempts, then retry once
+    compact(true);
+    try { localStorage.setItem(KEY, JSON.stringify(S)); storageOk = true; } catch { storageOk = false; }
+  }
+  try { window.dispatchEvent(new Event('ag:saved')); } catch { /* not in a browser */ }
 }
+// Keep storage small: closed mistakes keep only what the notebook needs to count them.
+function compact(hard = false) {
+  for (const e of Object.values(S.srs || {})) if (e.done && e.item && (e.item.context || e.item.options)) e.item = { id: e.item.id, skill: e.item.skill, stem: e.item.stem };
+  if (hard && S.attempts.length > 15000) S.attempts.splice(0, S.attempts.length - 15000);
+  if (hard && S.sessions.length > 2000) S.sessions.splice(0, S.sessions.length - 2000);
+}
+// Another tab saved: reload so this tab never overwrites newer progress with a stale copy.
+try { window.addEventListener('storage', e => { if (e.key === KEY) { S = null; load(); try { window.dispatchEvent(new Event('ag:saved')); } catch { /* */ } } }); } catch { /* not in a browser */ }
 export const storageAvailable = () => storageOk;
 export const state = () => load();
 
 // ---------- attempts ----------
 // ok: boolean; score: 0..1 (SJT partial credit / self-rating); ms: time spent; target: seconds
-export function logAttempt({ id, skill, level = 2, ok, score, ms, target, mode }) {
+export function logAttempt({ id, skill, level = 2, ok, score, ms, target, mode, src }) {
   load();
-  S.attempts.push({ t: Date.now(), id, skill, level, ok: !!ok, score: score ?? (ok ? 1 : 0), ms: Math.round(ms || 0), target: target || 0, mode });
+  const a = { t: Date.now(), id, skill, level, ok: !!ok, score: score ?? (ok ? 1 : 0), ms: Math.round(ms || 0), target: target || 0, mode };
+  if (src) a.src = src;
+  S.attempts.push(a);
   if (S.attempts.length > MAX_ATTEMPTS) S.attempts.splice(0, S.attempts.length - MAX_ATTEMPTS);
   save();
 }
 
 export function logSession(s) { load(); S.sessions.push({ t: Date.now(), ...s }); save(); }
 export function logMock(m) { load(); S.mocks.push({ t: Date.now(), ...m }); save(); }
-export function setDiag(perSkill) { load(); S.diag = { t: Date.now(), perSkill }; save(); }
+// The first diagnostic stays the baseline; later ones are kept as re-measurements.
+export function setDiag(perSkill) { load(); const d = { t: Date.now(), perSkill }; if (!S.diag) S.diag = d; else S.diags.push(d); save(); return S.diags.length > 0 && S.diag !== d; }
+// Active minutes per day (page visible and the user interacting), for the weekly time KPI.
+export function addActivity(min) { load(); const d = new Date(); const k = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; S.activity[k] = Math.round(((S.activity[k] || 0) + min) * 100) / 100; save(); }
 export function markLessonRead(id) { load(); S.lessonsRead[id] = Date.now(); save(); }
+export function markWrapSeen() { load(); const k = String(weekStart()); if (!S.wrapSeen[k]) { S.wrapSeen[k] = Date.now(); save(); } }
+export function markNewsRead(id) { load(); if (!S.newsRead[id]) { S.newsRead[id] = Date.now(); save(); } }
 
 // ---------- mastery ----------
 export const LEVELS = [
-  { key: 'new', label: 'Da iniziare', min: 0 },
+  { key: 'new', label: 'Not started', min: 0 },
   { key: 'base', label: 'Base', min: 1 },
-  { key: 'bronze', label: 'Bronzo', min: 2 },
-  { key: 'silver', label: 'Argento', min: 3 },
-  { key: 'gold', label: 'Oro', min: 4 },
+  { key: 'bronze', label: 'Bronze', min: 2 },
+  { key: 'silver', label: 'Silver', min: 3 },
+  { key: 'gold', label: 'Gold', min: 4 },
 ];
 
+export const STALE_DAYS = 21;
 export function mastery(skill, attempts = load().attempts) {
   const mine = attempts.filter(a => a.skill === skill);
   const recent = mine.slice(-30);
@@ -81,7 +114,11 @@ export function mastery(skill, attempts = load().attempts) {
   if (level >= 2 && acc >= 0.75 && speed >= 0.6 && timed.length >= 10) level = 3;
   if (level >= 3 && acc >= 0.85 && speed >= 0.8 && timed.length >= 20) level = 4;
   const score = Math.round(100 * (0.7 * acc + 0.3 * (timed.length ? speed : acc * 0.5)));
-  return { skill, n, total: mine.length, acc, speed, timedN: timed.length, score, level, label: LEVELS[level].label, key: LEVELS[level].key };
+  // skills not practised for 3 weeks lose one level until the next session: keeps the pressure on
+  const idleDays = Math.floor((Date.now() - mine[mine.length - 1].t) / DAY);
+  const stale = idleDays >= STALE_DAYS && level >= 2;
+  if (stale) level -= 1;
+  return { skill, n, total: mine.length, acc, speed, timedN: timed.length, score, level, label: LEVELS[level].label + (stale ? ' ↓' : ''), key: LEVELS[level].key, stale, idleDays };
 }
 
 // accuracy per day for charts
@@ -100,7 +137,11 @@ export function dailySeries(skill, days = 60) {
 }
 
 export function minutesBetween(from, to = Date.now()) {
-  return Math.round(load().attempts.filter(a => a.t >= from && a.t <= to).reduce((s, a) => s + a.ms, 0) / 60000);
+  const S = load();
+  const answered = S.attempts.filter(a => a.t >= from && a.t <= to).reduce((s, a) => s + a.ms, 0) / 60000;
+  let active = 0;
+  for (const [k, m] of Object.entries(S.activity || {})) { const t = new Date(`${k}T12:00:00`).getTime(); if (t >= from - 12 * 3600000 && t <= to) active += m; }
+  return Math.round(Math.max(answered, active));
 }
 export function weekStart(d = new Date()) {
   const x = new Date(d); const day = (x.getDay() + 6) % 7; x.setHours(0, 0, 0, 0); x.setDate(x.getDate() - day); return x.getTime();
@@ -112,13 +153,14 @@ export function activeDays(days = 28) {
 
 // ---------- mistake notebook (Leitner boxes) ----------
 const INTERVAL = [0, 1, 3, 7, 14]; // days after a correct answer in box n
-export function addMistake(item) {
+export function addMistake(item, value) {
   load();
   const id = item.id;
   const e = S.srs[id];
   const snap = JSON.parse(JSON.stringify(item));
-  if (e) { e.box = 1; e.due = Date.now() + DAY; e.wrong++; e.last = Date.now(); e.item = snap; e.done = false; }
-  else S.srs[id] = { item: snap, box: 1, due: Date.now() + DAY, wrong: 1, added: Date.now(), last: Date.now(), done: false };
+  const yours = value === undefined ? null : JSON.parse(JSON.stringify(value));
+  if (e) { e.box = 1; e.due = Date.now() + DAY; e.wrong++; e.last = Date.now(); e.item = snap; e.done = false; e.yours = yours; }
+  else S.srs[id] = { item: snap, box: 1, due: Date.now() + DAY, wrong: 1, added: Date.now(), last: Date.now(), done: false, yours };
   save();
 }
 export function reviewResult(id, ok) {
@@ -126,8 +168,9 @@ export function reviewResult(id, ok) {
   const e = S.srs[id]; if (!e) return;
   e.last = Date.now();
   if (ok) {
+    if (e.due > Date.now()) { save(); return; } // early extra practice: fine, but it does not move the card
     e.box = Math.min(5, e.box + 1);
-    if (e.box >= 5) { e.done = true; e.due = Infinity; }
+    if (e.box >= 5) { e.done = true; e.due = Infinity; compact(); }
     else e.due = Date.now() + INTERVAL[e.box] * DAY;
   } else { e.box = 1; e.wrong++; e.due = Date.now() + DAY; e.done = false; }
   save();
@@ -151,7 +194,7 @@ export function remove(listName, id) { load(); S[listName] = S[listName].filter(
 export function exportJSON() { return JSON.stringify(load(), null, 1); }
 export function importJSON(text) {
   const data = JSON.parse(text);
-  if (!data || typeof data !== 'object' || !Array.isArray(data.attempts)) throw new Error('File non valido');
-  S = { ...blank(), ...data }; save();
+  if (!data || typeof data !== 'object' || !Array.isArray(data.attempts)) throw new Error('Not a valid backup file');
+  S = { ...blank(), ...data }; normalize(); save();
 }
 export function resetAll() { S = blank(); save(); }

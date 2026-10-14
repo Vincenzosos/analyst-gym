@@ -18,7 +18,7 @@ function regional(r) {
 function regionalQ(r, ds) {
   const yrs = ds.columns.slice(1);
   const rows = ds.rows;
-  const t = pick(r, ['change', 'share', 'largestGrowth', 'average', 'projection', 'ratio', 'combined']);
+  let t = pick(r, ['change', 'share', 'largestGrowth', 'average', 'projection', 'ratio', 'combined']);
   const row = pick(r, rows);
   const yi = randInt(r, 0, yrs.length - 2), yj = yrs.length - 1;
   const col = c => rows.map(x => x[c + 1]);
@@ -29,10 +29,10 @@ function regionalQ(r, ds) {
       stem: `What was the percentage change in ${row[0]}'s revenue between ${yrs[yi]} and ${yrs[yj]}?`,
       ...buildOptions(r, ans, [round((b - a) / b * 100, 1), (yi + 1 < yj ? round((b - row[yi + 2]) / row[yi + 2] * 100, 1) : round((row[yj] - a) / a * 100, 1)), -ans, round(ans / 2, 1)], 5, v => P(v), 1.7),
       explanation: {
-        steps: [`${row[0]}: ${yrs[yi]} = ${a}, ${yrs[yj]} = ${b}.`, `Differenza: ${b} − ${a} = ${b - a}.`, `${b - a} / ${a} × 100 = ${P(ans)}.`],
-        shortcut: `Rapporto ${b}/${a} = ${fmt(b / a, 3)}: la parte dopo l'1 è la variazione.`,
-        trap: `Usare come base l'anno finale (${b}) o prendere l'anno sbagliato nella tabella.`,
-        rule: `Variazione % = (Finale − Iniziale) / Iniziale × 100.`,
+        steps: [`${row[0]}: ${yrs[yi]} = ${a}, ${yrs[yj]} = ${b}.`, `Difference: ${b} − ${a} = ${b - a}.`, `${b - a} / ${a} × 100 = ${P(ans)}.`],
+        shortcut: `Ratio ${b}/${a} = ${fmt(b / a, 3)}: the part after the 1 is the change.`,
+        trap: `Using the final year (${b}) as the base, or reading the wrong year from the table.`,
+        rule: `% change = (Final − Initial) / Initial × 100.`,
       }, timeTarget: 60, level: 1, tags: ['percent-change'],
     };
   }
@@ -45,12 +45,17 @@ function regionalQ(r, ds) {
       stem: `In ${yrs[c]}, what share of total revenue came from ${row[0]}?`,
       ...buildOptions(r, ans, [round(row[c + 1] / others * 100, 1), round(100 / rows.length, 1), round(ans + 4, 1), round(row[c + 1] / (tot + row[c + 1]) * 100, 1)], 5, v => P(v), 1.3),
       explanation: {
-        steps: [`Totale ${yrs[c]}: ${col(c).join(' + ')} = ${tot}.`, `${row[0]}: ${row[c + 1]}.`, `${row[c + 1]} / ${tot} × 100 = ${P(ans)}.`],
-        shortcut: `Stima: ${row[c + 1]} su circa ${Math.round(tot / 10) * 10} → circa ${fmt(row[c + 1] / tot * 100, 0)}%, poi scegli l'opzione più vicina.`,
-        trap: `Dividere per la somma delle ALTRE regioni (${others}) invece che per il totale.`,
-        rule: `Quota = parte / totale; il totale include la parte stessa.`,
+        steps: [`Total ${yrs[c]}: ${col(c).join(' + ')} = ${tot}.`, `${row[0]}: ${row[c + 1]}.`, `${row[c + 1]} / ${tot} × 100 = ${P(ans)}.`],
+        shortcut: `Estimate: ${row[c + 1]} out of roughly ${Math.round(tot / 10) * 10} → about ${fmt(row[c + 1] / tot * 100, 0)}%, then pick the closest option.`,
+        trap: `Dividing by the sum of the OTHER regions (${others}) instead of the total.`,
+        rule: `Share = part / total; the total includes the part itself.`,
       }, timeTarget: 70, level: 1, tags: ['share-of-total'],
     };
+  }
+  if (t === 'largestGrowth') {
+    // a tie would make two options correct: ask a different question instead
+    const gs = rows.map(x => Math.round((x[yj + 1] - x[yi + 1]) / x[yi + 1] * 1e6));
+    if (gs.filter(v => v === Math.max(...gs)).length > 1) t = 'average';
   }
   if (t === 'largestGrowth') {
     const g = rows.map(x => ({ n: x[0], g: (x[yj + 1] - x[yi + 1]) / x[yi + 1] }));
@@ -63,10 +68,10 @@ function regionalQ(r, ds) {
       stem: `Which region recorded the largest percentage increase in revenue between ${yrs[yi]} and ${yrs[yj]}?`,
       options: names, answer: ans,
       explanation: {
-        steps: g.map(x => `${x.n}: ${P(x.g * 100)}.`).concat([`La crescita % più alta è ${best.n}.`]),
-        shortcut: `Confronta i rapporti finale/iniziale senza calcolarli tutti con precisione: elimina subito chi cala o cresce poco.`,
-        trap: bestAbs.n !== best.n ? `Scegliere ${bestAbs.n}, che ha l'aumento ASSOLUTO maggiore (+${bestAbs.d}) ma non quello percentuale.` : `Confondere aumento assoluto e percentuale: qui coincidono, ma non è sempre così.`,
-        rule: `"Percentage increase" = rapporto, non differenza.`,
+        steps: g.map(x => `${x.n}: ${P(x.g * 100)}.`).concat([`The highest % growth is ${best.n}.`]),
+        shortcut: `Compare the final/initial ratios without working each one out precisely: rule out straight away any region that falls or grows only slightly.`,
+        trap: bestAbs.n !== best.n ? `Choosing ${bestAbs.n}, which has the largest ABSOLUTE increase (+${bestAbs.d}) but not the largest percentage increase.` : `Confusing absolute and percentage increase: here they coincide, but that is not always the case.`,
+        rule: `"Percentage increase" = a ratio, not a difference.`,
       }, timeTarget: 90, level: 2, tags: ['compare-growth'],
     };
   }
@@ -78,10 +83,10 @@ function regionalQ(r, ds) {
       stem: `What was the average revenue per region in ${yrs[c]}?`,
       ...buildOptions(r, ans, [round(vals.reduce((s, v) => s + v, 0) / (vals.length - 1), 1), round((Math.max(...vals) + Math.min(...vals)) / 2, 1), round(ans * 1.1, 1)], 5, v => `EUR ${fmt(v, 1)}m`, Math.max(2, ans * 0.04)),
       explanation: {
-        steps: [`Somma ${yrs[c]}: ${vals.join(' + ')} = ${vals.reduce((s, v) => s + v, 0)}.`, `Diviso ${vals.length} regioni = ${fmt(ans, 1)}.`],
-        shortcut: `Arrotonda i valori a decine, somma, poi dividi: l'opzione giusta sarà la più vicina.`,
-        trap: `Dividere per il numero sbagliato di elementi, o fare la media tra massimo e minimo.`,
-        rule: `Media = somma / numero di elementi.`,
+        steps: [`Sum ${yrs[c]}: ${vals.join(' + ')} = ${vals.reduce((s, v) => s + v, 0)}.`, `Divided by ${vals.length} regions = ${fmt(ans, 1)}.`],
+        shortcut: `Round the values to the nearest ten, add them up, then divide: the right option will be the closest one.`,
+        trap: `Dividing by the wrong number of items, or averaging only the maximum and the minimum.`,
+        rule: `Average = sum / number of items.`,
       }, timeTarget: 60, level: 1, tags: ['average'],
     };
   }
@@ -93,10 +98,10 @@ function regionalQ(r, ds) {
       stem: `If ${row[0]}'s revenue grows in the next year at the same percentage rate as between ${yrs[yrs.length - 2]} and ${yrs[yrs.length - 1]}, what will it be (to the nearest EUR 0.1m)?`,
       ...buildOptions(r, ans, [round(b + (b - a), 1), round(a * (1 + g), 1), round(b * (1 + g * 2), 1), round(b * (1 - g), 1)], 5, v => `EUR ${fmt(v, 1)}m`, Math.max(1, ans * 0.03)),
       explanation: {
-        steps: [`Crescita ${yrs[yrs.length - 2]}→${yrs[yrs.length - 1]}: (${b} − ${a}) / ${a} = ${P(g * 100, 2)}.`, `Prossimo anno: ${b} × (1 ${g >= 0 ? '+' : '−'} ${fmt(Math.abs(g), 4)}) = ${fmt(ans, 1)}.`],
-        shortcut: `Moltiplica l'ultimo valore per il rapporto ${b}/${a} = ${fmt(b / a, 4)}.`,
-        trap: `Aggiungere la stessa variazione ASSOLUTA (${b - a}) invece della stessa percentuale.`,
-        rule: `Stessa crescita % → Valore × (Valore / Valore precedente).`,
+        steps: [`Growth ${yrs[yrs.length - 2]}→${yrs[yrs.length - 1]}: (${b} − ${a}) / ${a} = ${P(g * 100, 2)}.`, `Next year: ${b} × (1 ${g >= 0 ? '+' : '−'} ${fmt(Math.abs(g), 4)}) = ${fmt(ans, 1)}.`],
+        shortcut: `Multiply the latest value by the ratio ${b}/${a} = ${fmt(b / a, 4)}.`,
+        trap: `Adding the same ABSOLUTE change (${b - a}) instead of the same percentage.`,
+        rule: `Same % growth → Value × (Value / Previous value).`,
       }, timeTarget: 90, level: 2, tags: ['projection'],
     };
   }
@@ -108,10 +113,10 @@ function regionalQ(r, ds) {
       stem: `In ${yrs[c]}, what was the ratio of ${x[0]}'s revenue to ${y[0]}'s revenue?`,
       ...buildOptions(r, ans, [round(y[c + 1] / x[c + 1], 2), round(ans + 0.1, 2), round(ans - 0.15, 2)], 5, v => `${fmt(v, 2)} : 1`, 0.07),
       explanation: {
-        steps: [`${x[0]} = ${x[c + 1]}, ${y[0]} = ${y[c + 1]}.`, `${x[c + 1]} / ${y[c + 1]} = ${fmt(ans, 2)}, cioè ${fmt(ans, 2)} : 1.`],
-        shortcut: `Il primo nominato va al numeratore: "ratio of A to B" = A / B.`,
-        trap: `Invertire il rapporto (${fmt(y[c + 1] / x[c + 1], 2)} : 1).`,
-        rule: `Rapporto A a B = A / B.`,
+        steps: [`${x[0]} = ${x[c + 1]}, ${y[0]} = ${y[c + 1]}.`, `${x[c + 1]} / ${y[c + 1]} = ${fmt(ans, 2)}, i.e. ${fmt(ans, 2)} : 1.`],
+        shortcut: `The first item named goes in the numerator: "ratio of A to B" = A / B.`,
+        trap: `Inverting the ratio (${fmt(y[c + 1] / x[c + 1], 2)} : 1).`,
+        rule: `Ratio of A to B = A / B.`,
       }, timeTarget: 50, level: 1, tags: ['ratio'],
     };
   }
@@ -125,9 +130,9 @@ function regionalQ(r, ds) {
     ...buildOptions(r, ans, [avgOfGrowth, round((b - a) / b * 100, 1), round(ans + 3, 1)], 5, v => P(v), 1.6),
     explanation: {
       steps: [`${yrs[yi]}: ${x[yi + 1]} + ${y[yi + 1]} = ${a}.`, `${yrs[yj]}: ${x[yj + 1]} + ${y[yj + 1]} = ${b}.`, `(${b} − ${a}) / ${a} × 100 = ${P(ans)}.`],
-      shortcut: `Somma prima, poi calcola UNA sola variazione %.`,
-      trap: `Fare la media delle due crescite (${P(avgOfGrowth)}): le basi sono diverse, quindi la media semplice è sbagliata.`,
-      rule: `Crescita di un aggregato = (somma finale − somma iniziale) / somma iniziale.`,
+      shortcut: `Add up first, then work out ONE single % change.`,
+      trap: `Averaging the two growth rates (${P(avgOfGrowth)}): the bases differ, so a simple average is wrong.`,
+      rule: `Growth of a combined total = (final sum − initial sum) / initial sum.`,
     }, timeTarget: 90, level: 3, tags: ['combined-growth'],
   };
 }
@@ -150,10 +155,10 @@ function fxQ(r, ds) {
       stem: `What is the price in ${rows[i][0]} expressed in EUR?`,
       ...buildOptions(r, ans, [round(rows[i][2] * rows[i][3], 2), rows[i][2], round(ans * 1.05, 2)], 5, v => `EUR ${fmt(v, 2)}`, Math.max(1, ans * 0.04)),
       explanation: {
-        steps: [`Il cambio è ${rows[i][3]} ${rows[i][1]} per 1 EUR.`, `Da valuta locale a EUR si divide: ${rows[i][2]} / ${rows[i][3]} = ${fmt(ans, 2)} EUR.`],
-        shortcut: `Se servono più unità locali per 1 EUR (cambio > 1), il prezzo in EUR deve essere più piccolo del numero locale.`,
-        trap: `Moltiplicare per il cambio invece di dividere.`,
-        rule: `Unità locali per 1 EUR → EUR = locale / cambio.`,
+        steps: [`The exchange rate is ${rows[i][3]} ${rows[i][1]} per 1 EUR.`, `To go from local currency to EUR, divide: ${rows[i][2]} / ${rows[i][3]} = ${fmt(ans, 2)} EUR.`],
+        shortcut: `If more than one local unit buys 1 EUR (rate > 1), the EUR price must be smaller than the local figure.`,
+        trap: `Multiplying by the exchange rate instead of dividing.`,
+        rule: `Local units per 1 EUR → EUR = local / rate.`,
       }, timeTarget: 60, level: 1, tags: ['fx'],
     };
   }
@@ -164,10 +169,10 @@ function fxQ(r, ds) {
       stem: `In EUR, what is the difference between the most expensive and the cheapest country?`,
       ...buildOptions(r, ans, [round(Math.max(...rows.map(x => x[2])) / rows[0][3] - eur[iMin], 2), round(ans * 1.1, 2), round(eur[iMax] - eur[(iMin + 1) % rows.length], 2)], 5, v => `EUR ${fmt(v, 2)}`, Math.max(1, ans * 0.06)),
       explanation: {
-        steps: rows.map((x, i) => `${x[0]}: ${x[2]} / ${x[3]} = ${fmt(eur[i], 2)} EUR.`).concat([`Più caro ${rows[iMax][0]}, più economico ${rows[iMin][0]}: ${fmt(eur[iMax], 2)} − ${fmt(eur[iMin], 2)} = ${fmt(ans, 2)} EUR.`]),
-        shortcut: `Converti tutto nella stessa valuta prima di confrontare: i numeri locali non sono confrontabili.`,
-        trap: `Scegliere il più caro guardando il prezzo in valuta locale (es. JPY o SEK hanno numeri grandi).`,
-        rule: `Confronti tra valute: prima converti, poi confronta.`,
+        steps: rows.map((x, i) => `${x[0]}: ${x[2]} / ${x[3]} = ${fmt(eur[i], 2)} EUR.`).concat([`Most expensive ${rows[iMax][0]}, cheapest ${rows[iMin][0]}: ${fmt(eur[iMax], 2)} − ${fmt(eur[iMin], 2)} = ${fmt(ans, 2)} EUR.`]),
+        shortcut: `Convert everything into the same currency before comparing: local-currency figures are not comparable.`,
+        trap: `Picking the most expensive country from the local-currency price (e.g. JPY or SEK show large numbers).`,
+        rule: `Comparisons across currencies: convert first, then compare.`,
       }, timeTarget: 120, level: 3, tags: ['fx', 'compare'],
     };
   }
@@ -177,9 +182,9 @@ function fxQ(r, ds) {
     ...buildOptions(r, ans, [round((1 - eur[iMin] / eur[iMax]) * 100, 1), round(ans + 5, 1), round(ans / 2, 1)], 5, v => P(v), 2),
     explanation: {
       steps: [`${rows[iMax][0]}: ${fmt(eur[iMax], 2)} EUR; ${rows[iMin][0]}: ${fmt(eur[iMin], 2)} EUR.`, `(${fmt(eur[iMax], 2)} / ${fmt(eur[iMin], 2)} − 1) × 100 = ${P(ans)}.`],
-      shortcut: `"Più caro di X" → la base è X (il più economico).`,
-      trap: `Usare come base il paese più caro (${P(round((1 - eur[iMin] / eur[iMax]) * 100, 1))}).`,
-      rule: `"A è più caro di B del ...%" = (A / B − 1) × 100.`,
+      shortcut: `"More expensive than X" → the base is X (the cheapest).`,
+      trap: `Using the most expensive country as the base (${P(round((1 - eur[iMin] / eur[iMax]) * 100, 1))}).`,
+      rule: `"A is ...% more expensive than B" = (A / B − 1) × 100.`,
     }, timeTarget: 120, level: 3, tags: ['fx', 'percent-more'],
   };
 }
@@ -199,10 +204,10 @@ function unitsQ(r, ds) {
       stem: `What is the gross margin of product ${row[0]}?`,
       ...buildOptions(r, ans, [round((row[2] - row[3]) / row[3] * 100, 1), round(row[3] / row[2] * 100, 1), round(ans + 5, 1)], 5, v => P(v), 2),
       explanation: {
-        steps: [`Margine unitario: ${row[2]} − ${row[3]} = ${row[2] - row[3]} EUR.`, `Margine % sul prezzo: ${row[2] - row[3]} / ${row[2]} × 100 = ${P(ans)}.`],
-        shortcut: `Il margine si calcola sul PREZZO (ricavo), il mark-up sul costo.`,
-        trap: `Dividere per il costo (${P(round((row[2] - row[3]) / row[3] * 100, 1))} è il mark-up, non il margine).`,
-        rule: `Margine lordo % = (Prezzo − Costo) / Prezzo.`,
+        steps: [`Unit margin: ${row[2]} − ${row[3]} = ${row[2] - row[3]} EUR.`, `Margin as % of price: ${row[2] - row[3]} / ${row[2]} × 100 = ${P(ans)}.`],
+        shortcut: `Margin is measured on PRICE (revenue); mark-up is measured on cost.`,
+        trap: `Dividing by cost (${P(round((row[2] - row[3]) / row[3] * 100, 1))} is the mark-up, not the margin).`,
+        rule: `Gross margin % = (Price − Cost) / Price.`,
       }, timeTarget: 50, level: 1, tags: ['margin'],
     };
   }
@@ -216,10 +221,10 @@ function unitsQ(r, ds) {
       stem: `What percentage of total revenue did product ${row[0]} generate?`,
       ...buildOptions(r, ans, [unitShare, round(ans + 3, 1), round(100 / rows.length, 1)], 5, v => P(v), 1.5),
       explanation: {
-        steps: rows.map((x, j) => `${x[0]}: ${x[1]} × ${x[2]} = ${fmt(rev[j], 0)}.`).concat([`Totale: ${fmt(tot, 0)}.`, `${fmt(rev[i], 0)} / ${fmt(tot, 0)} × 100 = ${P(ans)}.`]),
-        shortcut: `Ricavo = unità × prezzo per ogni riga, poi quota; non fermarti alle unità.`,
-        trap: `Usare la quota sulle UNITÀ vendute (${P(unitShare)}) invece che sui ricavi.`,
-        rule: `Quota di ricavi = (unità × prezzo) / ricavi totali.`,
+        steps: rows.map((x, j) => `${x[0]}: ${x[1]} × ${x[2]} = ${fmt(rev[j], 0)}.`).concat([`Total: ${fmt(tot, 0)}.`, `${fmt(rev[i], 0)} / ${fmt(tot, 0)} × 100 = ${P(ans)}.`]),
+        shortcut: `Revenue = units × price for each row, then take the share; do not stop at units.`,
+        trap: `Using the share of UNITS sold (${P(unitShare)}) instead of the share of revenue.`,
+        rule: `Revenue share = (units × price) / total revenue.`,
       }, timeTarget: 110, level: 2, tags: ['revenue', 'share-of-total'],
     };
   }
@@ -230,10 +235,10 @@ function unitsQ(r, ds) {
     stem: `What was the total gross profit across all four products (in EUR)?`,
     ...buildOptions(r, ans, [revTot, round(ans * 1.08, 0), rows.reduce((s, x) => s + (x[2] - x[3]), 0) * 100], 5, v => `EUR ${fmt(v, 0)}`, Math.max(100, ans * 0.05)),
     explanation: {
-      steps: rows.map((x, j) => `${x[0]}: ${x[1]} × (${x[2]} − ${x[3]}) = ${fmt(prof[j], 0)}.`).concat([`Somma: ${fmt(ans, 0)} EUR.`]),
-      shortcut: `Per riga: unità × margine unitario; poi somma.`,
-      trap: `Riportare il ricavo totale (${fmt(revTot, 0)}) dimenticando di togliere i costi.`,
-      rule: `Profitto lordo = Σ unità × (prezzo − costo).`,
+      steps: rows.map((x, j) => `${x[0]}: ${x[1]} × (${x[2]} − ${x[3]}) = ${fmt(prof[j], 0)}.`).concat([`Sum: ${fmt(ans, 0)} EUR.`]),
+      shortcut: `Row by row: units × unit margin; then add up.`,
+      trap: `Giving total revenue (${fmt(revTot, 0)}) and forgetting to subtract the costs.`,
+      rule: `Gross profit = Σ units × (price − cost).`,
     }, timeTarget: 120, level: 2, tags: ['profit'],
   };
 }
@@ -253,10 +258,10 @@ function budgetQ(r, ds) {
       stem: `By what percentage did ${row[0]}'s actual spending differ from its budget? (positive = overspend)`,
       ...buildOptions(r, ans, [round((row[2] - row[1]) / row[2] * 100, 1), -ans, round(ans + 2.5, 1)], 5, v => P(v), 1.5),
       explanation: {
-        steps: [`Scostamento: ${row[2]} − ${row[1]} = ${row[2] - row[1]}.`, `Rispetto al BUDGET: ${row[2] - row[1]} / ${row[1]} × 100 = ${P(ans)}.`],
-        shortcut: `La base di uno scostamento è il budget (il riferimento).`,
-        trap: `Dividere per l'effettivo invece che per il budget.`,
-        rule: `Scostamento % = (Effettivo − Budget) / Budget.`,
+        steps: [`Variance: ${row[2]} − ${row[1]} = ${row[2] - row[1]}.`, `Relative to BUDGET: ${row[2] - row[1]} / ${row[1]} × 100 = ${P(ans)}.`],
+        shortcut: `The base for a variance is the budget (the benchmark).`,
+        trap: `Dividing by actual spending instead of by the budget.`,
+        rule: `Variance % = (Actual − Budget) / Budget.`,
       }, timeTarget: 50, level: 1, tags: ['variance'],
     };
   }
@@ -267,10 +272,10 @@ function budgetQ(r, ds) {
       stem: `Across all departments, by what percentage was total actual spending above (+) or below (−) total budget?`,
       ...buildOptions(r, ans, [round((totA - totB) / totA * 100, 1), round(rows.reduce((s, x) => s + (x[2] - x[1]) / x[1], 0) / rows.length * 100, 1), round(ans - 2, 1)], 5, v => P(v), 1.2),
       explanation: {
-        steps: [`Budget totale: ${rows.map(x => x[1]).join(' + ')} = ${totB}.`, `Effettivo totale: ${rows.map(x => x[2]).join(' + ')} = ${totA}.`, `(${totA} − ${totB}) / ${totB} × 100 = ${P(ans)}.`],
-        shortcut: `Somma le due colonne e fai UNA divisione.`,
-        trap: `Fare la media degli scostamenti % dei reparti: pesa allo stesso modo reparti grandi e piccoli.`,
-        rule: `Scostamento aggregato = (Σ effettivo − Σ budget) / Σ budget.`,
+        steps: [`Total budget: ${rows.map(x => x[1]).join(' + ')} = ${totB}.`, `Total actual: ${rows.map(x => x[2]).join(' + ')} = ${totA}.`, `(${totA} − ${totB}) / ${totB} × 100 = ${P(ans)}.`],
+        shortcut: `Add up the two columns and do ONE division.`,
+        trap: `Averaging the departments' % variances: that gives large and small departments the same weight.`,
+        rule: `Aggregate variance = (Σ actual − Σ budget) / Σ budget.`,
       }, timeTarget: 100, level: 2, tags: ['variance', 'aggregate'],
     };
   }
@@ -278,12 +283,13 @@ function budgetQ(r, ds) {
   const ans = rows.filter(x => (x[2] - x[1]) / x[1] * 100 > k).length;
   return {
     stem: `How many departments overspent their budget by more than ${k}%?`,
-    ...buildOptions(r, ans, [rows.filter(x => x[2] > x[1]).length, ans + 1, ans + 2, ans - 1, ans + 3, ans - 2].filter(v => v >= 0 && v <= rows.length), 5, v => fmt(v, 0), 1),
+    // every option is a possible count (0..number of departments)
+    ...buildOptions(r, ans, [rows.filter(x => x[2] > x[1]).length, ans + 1, ans - 1, ans + 2, ans - 2, ...Array.from({ length: rows.length + 1 }, (_, i) => i)].filter(v => v >= 0 && v <= rows.length), Math.min(5, rows.length + 1), v => fmt(v, 0), 1),
     explanation: {
-      steps: rows.map(x => `${x[0]}: (${x[2]} − ${x[1]}) / ${x[1]} = ${P((x[2] - x[1]) / x[1] * 100)}${(x[2] - x[1]) / x[1] * 100 > k ? ' ✓' : ''}.`).concat([`Sopra il ${k}%: ${ans}.`]),
-      shortcut: `Soglia rapida: overspend > ${k}% significa Effettivo > Budget × ${fmt(1 + k / 100, 2)}; confronta riga per riga.`,
-      trap: `Contare tutti i reparti in overspend, anche quelli sotto la soglia.`,
-      rule: `Trasforma la soglia % in un moltiplicatore e confronta.`,
+      steps: rows.map(x => `${x[0]}: (${x[2]} − ${x[1]}) / ${x[1]} = ${P((x[2] - x[1]) / x[1] * 100)}${(x[2] - x[1]) / x[1] * 100 > k ? ' ✓' : ''}.`).concat([`Above ${k}%: ${ans}.`]),
+      shortcut: `Quick threshold: overspend > ${k}% means Actual > Budget × ${fmt(1 + k / 100, 2)}; compare row by row.`,
+      trap: `Counting every department that overspent, including those below the threshold.`,
+      rule: `Turn the % threshold into a multiplier and compare.`,
     }, timeTarget: 90, level: 2, tags: ['threshold'],
   };
 }

@@ -1,438 +1,438 @@
 {
-  "lessons": [
+ "lessons": [
+  {
+   "id": "les-num-01",
+   "skill": "numerical",
+   "order": 1,
+   "title": "Numerical reasoning: how the test works and the 6 operations that matter",
+   "minutes": 15,
+   "summary": "You will be able to read any table or chart in 20 seconds, recognise which of the 6 operations the question is asking for and always choose the right base.",
+   "sections": [
     {
-      "id": "les-num-01",
-      "skill": "numerical",
-      "order": 1,
-      "title": "Numerical reasoning: come funziona il test e le 6 operazioni che contano",
-      "minutes": 15,
-      "summary": "Saprai leggere qualsiasi tabella o grafico in 20 secondi, riconoscere quale delle 6 operazioni chiede la domanda e scegliere sempre la base giusta.",
-      "sections": [
-        {
-          "h": "Cosa misura davvero il test",
-          "body": "Nei test di numerical reasoning (SHL, Kenexa, Cappfinity e simili) la matematica è da scuola media: percentuali, rapporti, medie, conversioni. Quello che viene misurato è altro:\n\n- **Selezione**: trovare in pochi secondi i 2 o 3 numeri giusti in una tabella che ne contiene 30.\n- **Impostazione**: capire quale operazione chiede la domanda e su quale base.\n- **Velocità con accuratezza**: di solito hai circa 1 minuto, a volte poco più, per domanda.\n\nFormato tipico: un dataset (tabella, grafico a barre, a linee o a torta) con titolo, unità e note, una domanda e 4 o 5 opzioni (a volte una risposta numerica da digitare). La calcolatrice è quasi sempre consentita, ma non ti salva se scegli i numeri sbagliati.\n\n**Formato dei numeri**: i test usano il formato anglosassone. 1,250.5 significa milleduecentocinquanta virgola cinque. In tutto il sito usiamo la stessa convenzione, così l'occhio si abitua."
-        },
-        {
-          "h": "Leggere tabelle e grafici in 20 secondi",
-          "body": "Prima di leggere la domanda dai al dataset una scansione strutturata, sempre nello stesso ordine:\n\n1. **Titolo**: di cosa parla e su quale periodo.\n2. **Unità**: EUR m, USD k, %, unità fisiche, valori per persona. È la fonte numero uno di errori.\n3. **Righe e colonne**: cosa sono le categorie (regioni, prodotti, anni) e se esiste una riga di totale.\n4. **Note a piè di pagina**: tassi di cambio, definizioni, dati stimati. Se c'è una nota, quasi certamente una domanda la usa.\n\nPoi leggi la domanda e fissa tre cose: la **metrica**, il **periodo**, la **categoria**. Solo dopo vai a prendere i numeri.\n\nPer i grafici:\n\n- **Barre**: controlla se l'asse parte da zero. Se parte da 80, le differenze visive sono esagerate.\n- **Barre impilate**: il valore di un segmento è la differenza tra il suo bordo superiore e quello inferiore, non l'altezza totale.\n- **Torta**: le percentuali sono quote di un totale. Per ottenere un valore assoluto ti serve il totale, spesso indicato nel titolo o in una nota.\n- **Linee con due assi**: verifica su quale asse si legge ciascuna serie."
-        },
-        {
-          "h": "Le 6 operazioni che compaiono sempre",
-          "body": "Quasi ogni domanda è una di queste sei operazioni, o una combinazione di due.\n\n| Operazione | Formula | Parole chiave nella domanda |\n|---|---|---|\n| Percentuale di un valore | Valore × % | \"what is 15% of\", \"how much tax\" |\n| Variazione percentuale | (Nuovo − Vecchio) / Vecchio × 100 | \"increase\", \"decrease\", \"change\", \"growth\" |\n| Rapporto | A / B, oppure A : B semplificato | \"ratio of\", \"for every\", \"per\" |\n| Quota sul totale | Parte / Totale × 100 | \"what proportion\", \"what percentage of the total\", \"share\" |\n| Media e media ponderata | Somma / n, oppure Σ(valore × peso) / Σ pesi | \"average\", \"mean\", \"overall\", \"combined\" |\n| Conversione di valuta o unità | Valore × tasso, oppure Valore / tasso | \"in USD\", \"in thousands\", \"per month\" |\n\nLe combinazioni più frequenti:\n\n- **conversione + variazione percentuale**: crescita misurata in un'altra valuta;\n- **quota + percentuale**: quanto vale il 30% del segmento X;\n- **media ponderata + quota**: margine complessivo di più divisioni."
-        },
-        {
-          "h": "L'abitudine che vale 3 o 4 domande: controlla la base",
-          "body": "La maggior parte delle risposte sbagliate nasce dalla **base sbagliata**, cioè il numero che va al denominatore. Prima di premere un tasto chiediti: \"percentuale di che cosa?\".\n\n- \"X is what percentage **of** Y\": base Y.\n- \"By what percentage is X **greater than** Y\": base Y, il termine di confronto.\n- \"Percentage change **from** 2023 **to** 2024\": base 2023, l'anno di partenza.\n- \"What percentage of the **total**\": base il totale, che a volte devi calcolare tu sommando le righe.\n- \"Per employee\", \"per unit\": base il numero di dipendenti o di unità, non il totale in valuta.\n\nChi costruisce il test mette **sempre** tra le opzioni il risultato ottenuto con la base sbagliata. Se il tuo numero coincide con un'opzione non vuol dire che sia giusto: vuol dire solo che hai fatto un calcolo che qualcuno aveva previsto."
-        },
-        {
-          "h": "Media ponderata: quando la media semplice ti tradisce",
-          "body": "Quando combini percentuali o rapporti di gruppi di dimensione diversa, la media semplice è quasi sempre sbagliata.\n\nMedia ponderata = Σ(valore × peso) / Σ pesi\n\n- **Margine complessivo** di due divisioni: somma gli EBITDA e dividi per la somma dei ricavi. Non fare la media dei due margini.\n- **Crescita complessiva**: somma dei valori nuovi / somma dei valori vecchi − 1.\n- **Prezzo medio pagato**: spesa totale / unità totali.\n\n**Controllo rapido**: la media ponderata sta sempre tra il valore minimo e il massimo ed è più vicina al gruppo con il peso maggiore. Con due gruppi: se il gruppo più grande ha il valore più basso, la media ponderata sta sotto la media semplice."
-        },
-        {
-          "h": "Conversioni: moltiplicare o dividere?",
-          "body": "La nota dice \"1 EUR = 1.08 USD\". Regola senza ambiguità:\n\n- Da EUR a USD: **moltiplica** per 1.08 (i dollari sono di più, il numero cresce).\n- Da USD a EUR: **dividi** per 1.08 (il numero diminuisce).\n\nControllo istantaneo: la valuta che vale di più (qui l'euro) ha sempre il numero più piccolo. Se convertendo verso EUR il numero aumenta, hai sbagliato verso.\n\nStessa logica per le unità: un dato in EUR k va diviso per 1,000 per averlo in EUR m; un dato mensile si moltiplica per 12 per renderlo annuale, uno trimestrale per 4. Fai la conversione **una volta sola, all'inizio**, e poi lavora tutto nella stessa unità. Mai sommare valori in valute diverse."
-        },
-        {
-          "h": "Il protocollo in 5 passi per ogni domanda",
-          "body": "1. **Leggi la domanda** e individua metrica, periodo, categoria.\n2. **Trova i numeri** e la loro unità; controlla le note.\n3. **Scrivi la formula** con la base esplicita, anche solo su un foglio: (2024 − 2023) / 2023.\n4. **Stima** il risultato arrotondando: ti dice ordine di grandezza e segno.\n5. **Calcola** e confronta con la stima e con le opzioni. Se stima e calcolo divergono, rileggi la domanda, non rifare solo il calcolo.\n\nCon la pratica i passi da 1 a 4 si fanno in 15-20 secondi, e il resto del minuto è tutto margine."
-        }
-      ],
-      "examples": [
-        {
-          "q": "Alvona Foods' sales were EUR 240m in 2023 and EUR 270m in 2024. By what percentage did sales increase from 2023 to 2024?",
-          "steps": [
-            "Base: l'anno di partenza, il 2023 (240).",
-            "Differenza: 270 − 240 = 30.",
-            "30 / 240 = 0.125, cioè 12.5%.",
-            "Trappola: 30 / 270 = 11.1% usa come base l'anno di arrivo."
-          ],
-          "answer": "12.5%"
-        },
-        {
-          "q": "A fund holds three portfolios: EUR 50m returning 4%, EUR 30m returning 10% and EUR 20m returning -5%. What was the fund's overall return?",
-          "steps": [
-            "Serve una media ponderata: calcola il guadagno in euro di ogni portafoglio.",
-            "50 × 4% = 2.0; 30 × 10% = 3.0; 20 × (−5%) = −1.0.",
-            "Guadagno totale: 2.0 + 3.0 − 1.0 = 4.0 su un patrimonio di 50 + 30 + 20 = 100.",
-            "4.0 / 100 = 4.0%. La media semplice (4 + 10 − 5) / 3 = 3.0% è la trappola: ignora i pesi."
-          ],
-          "answer": "4.0%"
-        },
-        {
-          "q": "Northbridge Industrials reports revenue of EUR 180m in Europe and USD 216m in the US. Using 1 EUR = 1.20 USD, what percentage of total revenue (in EUR) comes from the US?",
-          "steps": [
-            "Converti tutto in EUR prima di sommare: 216 / 1.20 = 180 EUR m.",
-            "Totale in EUR: 180 + 180 = 360.",
-            "Quota US: 180 / 360 = 50%.",
-            "Trappola: sommare valute diverse, 216 / (180 + 216) = 54.5%."
-          ],
-          "answer": "50%"
-        },
-        {
-          "q": "A division has 1,250 employees and total staff costs of EUR 87,500k. What is the average staff cost per employee, in EUR?",
-          "steps": [
-            "Unità: 87,500k = 87,500,000 EUR (EUR 87.5m).",
-            "Base: il numero di dipendenti, 1,250.",
-            "87,500,000 / 1,250 = 70,000.",
-            "Trappola: 87,500 / 1,250 = 70 dimentica le migliaia; il risultato in EUR è 70,000 (cioè 70k)."
-          ],
-          "answer": "EUR 70,000"
-        }
-      ],
-      "cheatsheet": [
-        "Variazione % = (Nuovo − Vecchio) / Vecchio × 100: la base è sempre il punto di partenza.",
-        "Quota = Parte / Totale: se il totale non è in tabella, sommalo tu.",
-        "\"X is greater than Y by what %\": base Y.",
-        "Percentuali di gruppi di dimensione diversa: media ponderata, mai semplice.",
-        "1 EUR = 1.08 USD: da EUR a USD moltiplica, da USD a EUR dividi.",
-        "Ordine di lettura: titolo, unità, righe e colonne, note. Poi la domanda.",
-        "Converti tutto nella stessa unità una volta sola, all'inizio.",
-        "Stima prima, calcola dopo: se non coincidono, rileggi la domanda."
-      ]
+     "h": "What the test really measures",
+     "body": "In numerical reasoning tests (SHL, Kenexa, Cappfinity and similar) the maths is lower-secondary-school level: percentages, ratios, averages, conversions. What is being measured is something else:\n\n- **Selection**: finding, in a few seconds, the 2 or 3 right numbers in a table that contains 30.\n- **Set-up**: understanding which operation the question is asking for and on which base.\n- **Speed with accuracy**: you usually have about 1 minute, sometimes a little more, per question.\n\nTypical format: a dataset (table, bar, line or pie chart) with a title, units and notes, a question and 4 or 5 options (sometimes a numerical answer to type in). A calculator is almost always allowed, but it will not save you if you pick the wrong numbers.\n\n**Number format**: the tests use the UK/US number format. 1,250.5 means one thousand two hundred and fifty point five. We use the same convention throughout the site, so your eye gets used to it."
     },
     {
-      "id": "les-num-02",
-      "skill": "numerical",
-      "order": 2,
-      "title": "Variazioni percentuali, percentuali inverse e CAGR",
-      "minutes": 18,
-      "summary": "Saprai calcolare variazioni, risalire al valore originale, distinguere punti percentuali e per cento e trovare un CAGR a mente o per esclusione.",
-      "sections": [
-        {
-          "h": "Pensa in moltiplicatori",
-          "body": "Il trucco che semplifica tutto il capitolo è trasformare ogni variazione percentuale in un **moltiplicatore**:\n\n- +12% diventa × 1.12\n- −8% diventa × 0.92\n- +150% diventa × 2.5\n\nVariazione % = Nuovo / Vecchio − 1. Esempio: da 70 a 84, 84 / 70 = 1.2, quindi +20%. Una sola divisione invece di sottrazione più divisione.\n\nCon i moltiplicatori diventano banali anche le variazioni in sequenza (si moltiplicano) e le percentuali inverse (si divide per il moltiplicatore)."
-        },
-        {
-          "h": "Percentuali inverse: risalire al valore originale",
-          "body": "Domanda tipica: \"After a 20% increase the price is 360. What was the original price?\"\n\n- Corretto: 360 / 1.20 = **300**.\n- Sbagliato: 360 × 0.80 = 288. Il 20% era calcolato su 300, non su 360.\n\nRegola: **Originale = Valore finale / moltiplicatore**.\n\n| Situazione | Operazione |\n|---|---|\n| Prezzo dopo un aumento del 20% | ÷ 1.20 |\n| Prezzo dopo uno sconto del 25% | ÷ 0.75 |\n| Prezzo IVA inclusa al 22% | ÷ 1.22 |\n| Netto dopo una tassa del 30% | ÷ 0.70 |\n\nVerifica sempre al contrario: 300 × 1.20 = 360. Se torna, è giusto."
-        },
-        {
-          "h": "Variazioni in sequenza e l'asimmetria",
-          "body": "Le variazioni successive **si moltiplicano**, non si sommano.\n\n- +10% poi −10%: 1.10 × 0.90 = 0.99, cioè **−1%**, non zero.\n- +10%, +20%, −5%: 1.10 × 1.20 × 0.95 = 1.254, cioè **+25.4%**, non +25%.\n- +25% poi −20%: 1.25 × 0.80 = 1.00, si torna esattamente al punto di partenza.\n\n**Recupero di una perdita**: dopo un calo x (espresso in decimali, es. 0.20) serve un aumento di x / (1 − x) per tornare al livello iniziale: 0.20 / 0.80 = 0.25, cioè +25%.\n\n| Calo | Aumento necessario per recuperare |\n|---|---|\n| −10% | +11.1% |\n| −20% | +25% |\n| −25% | +33.3% |\n| −50% | +100% |\n\nNei test compare come: \"What percentage increase is needed to return to the 2022 level?\""
-        },
-        {
-          "h": "Punti percentuali, per cento e basis points",
-          "body": "Quando la grandezza è già una percentuale (margine, tasso d'interesse, quota di mercato) ci sono due modi diversi di misurarne la variazione:\n\n- **Punti percentuali (pp)**: differenza semplice. Margine da 20% a 25% = **+5 pp**.\n- **Variazione relativa (%)**: rispetto al valore iniziale. Da 20% a 25% = 5 / 20 = **+25%**.\n\nAltro esempio: tasso dal 2% al 3% = +1 pp, ma +50% in termini relativi.\n\n**Basis points**: 1 pp = 100 bps, 1 bp = 0.01%. Margine da 18.4% a 19.1% = +0.7 pp = +70 bps.\n\nNei test leggi con attenzione: \"increased by 5 percentage points\" e \"increased by 5%\" sono affermazioni diverse, e in una domanda True / False / Cannot say la differenza decide la risposta."
-        },
-        {
-          "h": "Compounding: perché il 10% per 3 anni non è il 30%",
-          "body": "Crescere del g% per n anni significa moltiplicare per (1 + g) n volte:\n\nValore finale = Valore iniziale × (1 + g)^n\n\n3 anni al 10%: 1.1^3 = 1.331, cioè +33.1%, non +30%. L'effetto composto cresce con il tasso e con il numero di anni.\n\nFattori da memorizzare:\n\n| Tasso | 2 anni | 3 anni | 5 anni | 10 anni |\n|---|---|---|---|---|\n| 5% | 1.10 | 1.16 | 1.28 | 1.63 |\n| 10% | 1.21 | 1.33 | 1.61 | 2.59 |\n| 15% | 1.32 | 1.52 | 2.01 | 4.05 |\n| 20% | 1.44 | 1.73 | 2.49 | 6.19 |\n\nDa notare: il 15% per 5 anni raddoppia (2.01), il 7% per 10 anni quasi raddoppia (1.97), il 26% per 3 anni raddoppia (2.00)."
-        },
-        {
-          "h": "CAGR: formula esatta e 3 metodi rapidi",
-          "body": "CAGR = (Valore finale / Valore iniziale)^(1/n) − 1\n\n**n è il numero di anni di crescita, non il numero di dati**: dal 2020 al 2024 ci sono 4 anni di crescita, anche se la tabella ha 5 colonne. È l'errore più frequente.\n\nMetodi rapidi:\n\n1. **Prova le opzioni (backsolving)**: è il metodo migliore in un test a scelta multipla. Prendi l'opzione centrale, calcola (1 + g)^n con la tabella dei fattori o con la calcolatrice e guarda se il risultato è sopra o sotto il rapporto finale / iniziale. Con un solo calcolo elimini metà delle opzioni.\n2. **Radici successive**: per n = 2 fai la radice quadrata; per n = 4 fai due volte la radice quadrata. Da 100 a 146.4 in 4 anni: √1.464 = 1.21, √1.21 = 1.10, quindi CAGR del 10%.\n3. **La media semplice come tetto**: crescita totale / n è sempre più alta del CAGR (uguale solo se n = 1 o se la crescita è nulla). Da 50 a 80.5 in 5 anni: crescita totale 61%, media semplice 12.2%, CAGR vero 10%. Più la crescita totale è alta, più la distanza aumenta.\n\nBonus: se il valore raddoppia in n anni, CAGR ≈ 72 / n (regola del 72)."
-        }
-      ],
-      "examples": [
-        {
-          "q": "After a 15% price increase, a product costs EUR 92. What was the price before the increase?",
-          "steps": [
-            "Il 15% è calcolato sul prezzo originale, quindi Nuovo = Originale × 1.15.",
-            "Originale = 92 / 1.15 = 80.",
-            "Verifica: 80 × 1.15 = 92.",
-            "Trappola: 92 × 0.85 = 78.20 applica il 15% alla base sbagliata."
-          ],
-          "answer": "EUR 80"
-        },
-        {
-          "q": "A company's operating margin rose from 12% to 15%. By how many percentage points, and by what percentage in relative terms, did the margin increase?",
-          "steps": [
-            "Punti percentuali: 15 − 12 = 3 pp, cioè 300 bps.",
-            "Variazione relativa: 3 / 12 = 0.25, cioè +25%.",
-            "Trappola: dire \"il margine è cresciuto del 3%\" confonde le due misure."
-          ],
-          "answer": "+3 punti percentuali, pari a +25% in termini relativi"
-        },
-        {
-          "q": "Revenue grew from USD 50m in 2019 to USD 80.5m in 2024. What was the compound annual growth rate? (A) 8% (B) 10% (C) 12.2% (D) 61%",
-          "steps": [
-            "Anni di crescita: 2024 − 2019 = 5.",
-            "Rapporto: 80.5 / 50 = 1.61.",
-            "Dalla tabella dei fattori 1.10^5 = 1.61, quindi il CAGR è 10%.",
-            "Esclusione: 12.2% è la media semplice (61% / 5) e sovrastima sempre; 61% è la crescita totale; 8% darebbe 1.08^5 = 1.47, troppo poco."
-          ],
-          "answer": "(B) 10%"
-        },
-        {
-          "q": "A share price falls by 20% in one year. By what percentage must it rise the following year to return to its original level?",
-          "steps": [
-            "Dopo il calo il prezzo vale 0.80 volte l'originale.",
-            "Serve un moltiplicatore m tale che 0.80 × m = 1, quindi m = 1 / 0.80 = 1.25.",
-            "Aumento necessario: +25%.",
-            "Trappola: rispondere 20%, che porta a 0.80 × 1.20 = 0.96, cioè ancora −4% rispetto all'inizio."
-          ],
-          "answer": "25%"
-        }
-      ],
-      "cheatsheet": [
-        "Variazione % = Nuovo / Vecchio − 1.",
-        "Originale = Finale / (1 + g). Mai Finale × (1 − g).",
-        "Variazioni in sequenza: moltiplica i moltiplicatori, non sommare le percentuali.",
-        "Recupero dopo un calo x (in decimali): x / (1 − x). −20% richiede +25%, −50% richiede +100%.",
-        "pp = differenza tra due percentuali; % relativa = differenza / valore iniziale. 1 pp = 100 bps.",
-        "CAGR = (Fine / Inizio)^(1/n) − 1, con n = anno finale − anno iniziale, non il numero di colonne.",
-        "Crescita totale / n è un tetto: il CAGR vero è sempre più basso.",
-        "Fattori chiave: 1.1^5 = 1.61, 1.15^5 = 2.01, 1.07^10 ≈ 2, 1.26^3 ≈ 2."
-      ]
+     "h": "Reading tables and charts in 20 seconds",
+     "body": "Before reading the question, give the dataset a structured scan, always in the same order:\n\n1. **Title**: what it is about and over which period.\n2. **Units**: EUR m, USD k, %, physical units, per-person values. This is the number one source of errors.\n3. **Rows and columns**: what the categories are (regions, products, years) and whether there is a total row.\n4. **Footnotes**: exchange rates, definitions, estimated data. If there is a note, a question almost certainly uses it.\n\nThen read the question and pin down three things: the **metric**, the **period**, the **category**. Only then go and fetch the numbers.\n\nFor charts:\n\n- **Bars**: check whether the axis starts at zero. If it starts at 80, the visual differences are exaggerated.\n- **Stacked bars**: the value of a segment is the difference between its top and bottom edges, not the total height.\n- **Pie**: the percentages are shares of a total. To get an absolute value you need the total, often given in the title or in a note.\n- **Lines with two axes**: check which axis each series is read against."
     },
     {
-      "id": "les-num-03",
-      "skill": "numerical",
-      "order": 3,
-      "title": "Strategia sotto pressione: stimare, eliminare, saltare",
-      "minutes": 14,
-      "summary": "Saprai gestire il tempo del test, usare stima ed eliminazione per rispondere in meno di un minuto e riconoscere le trappole tipiche di ogni provider.",
-      "sections": [
-        {
-          "h": "Il budget di tempo e i checkpoint",
-          "body": "Prima di iniziare calcola il tuo **budget per domanda**: minuti × 60 / numero di domande. Esempio: 25 minuti per 18 domande = circa 83 secondi a domanda.\n\nRegole operative:\n\n- **Checkpoint a metà**: a metà del tempo dovresti aver chiuso circa metà delle domande. Se sei indietro di 2 o più, inizia a saltare quelle lunghe.\n- **Tetto per domanda**: nessuna domanda merita più del doppio del budget. Una domanda difficile vale quanto una facile.\n- **Le domande non costano tutte uguale**: quelle a un solo passaggio vanno chiuse in 30-40 secondi, così accumuli margine per quelle a più passaggi.\n\nNei test con timer per singola domanda (formato frequente nei test Cappfinity) il budget è imposto dal sistema: l'obiettivo diventa non far mai scadere il timer senza aver dato una risposta."
-        },
-        {
-          "h": "Stima prima di calcolare",
-          "body": "Una stima di 5 secondi ti dà tre informazioni: il **segno** (aumento o calo), l'**ordine di grandezza** (8% o 80%?) e spesso **la risposta stessa**, quando le opzioni sono distanti tra loro.\n\nCome stimare:\n\n- Arrotonda a 2 cifre significative: 4,870 diventa 4,900; 5,312 diventa 5,300.\n- Nelle divisioni arrotonda numeratore e denominatore **nella stessa direzione**: il rapporto cambia poco.\n- Usa le frazioni note: 0.124 ≈ 1/8, 0.33 ≈ 1/3.\n\nQuando le opzioni distano meno del 3-4% l'una dall'altra, la stima serve solo a eliminare gli estremi: poi calcola con precisione."
-        },
-        {
-          "h": "Eliminare le opzioni",
-          "body": "Le opzioni sbagliate non sono casuali: sono costruite sugli errori più comuni. Riconoscerle fa risparmiare tempo e ti protegge.\n\n| Distrattore | Come nasce | Come riconoscerlo |\n|---|---|---|\n| Base sbagliata | Divisione per l'anno finale invece che per l'iniziale | In caso di crescita è un po' più basso della risposta giusta |\n| Periodo sbagliato | Colonna o anno adiacente | Torna con i dati di un'altra colonna |\n| Unità dimenticata | k invece di m, mensile invece di annuale | Differisce di un fattore 1,000 o 12 |\n| Segno sbagliato | Aumento letto come calo | Stesso numero con segno opposto |\n| Media semplice | Media di percentuali di gruppi diversi | Numero \"pulito\" che ignora i pesi |\n| Valore intermedio | Ti fermi a metà calcolo | È un passaggio del calcolo giusto, non il risultato |\n\n**Cannot say**: sceglila solo se manca davvero un dato indispensabile, per esempio la domanda chiede il profitto e la tabella mostra solo i ricavi. Non sceglierla perché il calcolo è lungo."
-        },
-        {
-          "h": "Disciplina con la calcolatrice",
-          "body": "La calcolatrice elimina gli errori di aritmetica ma ne introduce altri. Regole:\n\n- **Formula prima, tasti dopo**: scrivi (5,312 − 4,870) / 4,870 su carta, poi digita.\n- **Non arrotondare i passaggi intermedi**: lascia il risultato sul display o in memoria e prosegui. Arrotondare a metà può spostarti sull'opzione sbagliata quando le opzioni sono vicine.\n- **Evita il tasto %**: si comporta in modo diverso da una calcolatrice all'altra. Usa sempre × 0.15 o ÷ 1.15.\n- **Rileggi le cifre digitate**: invertire due cifre (5,312 digitato come 5,132) è l'errore più frequente sotto stress.\n- **Confronta con la stima**: se calcolatrice e stima differiscono di un fattore 10 o hanno segno diverso, quasi sempre ha ragione la stima.\n- **Carta e penna pronte**: annota i risultati intermedi, spesso servono anche per la domanda successiva sullo stesso dataset."
-        },
-        {
-          "h": "Quando saltare e come tirare a indovinare",
-          "body": "Salta, o rispondi d'istinto e vai avanti, quando:\n\n- dopo 20 secondi non hai capito quali dati servono;\n- la domanda richiede 4 o più passaggi e sei indietro sul checkpoint;\n- hai già speso il doppio del budget.\n\nNella maggior parte di questi test le risposte sbagliate non tolgono punti: leggi sempre le istruzioni, ma in generale **non lasciare mai una risposta vuota**. Se devi tirare a indovinare, fallo in modo ragionato:\n\n- elimina le opzioni con segno o ordine di grandezza sbagliato;\n- tra le rimanenti scegli quella coerente con la tua stima;\n- se il test permette di tornare indietro, segna la domanda e riprendila alla fine solo se avanza tempo."
-        },
-        {
-          "h": "Trappole tipiche per provider",
-          "body": "I formati cambiano nel tempo e da una banca all'altra: controlla sempre l'email di invito e le prove di esempio ufficiali. Queste sono le trappole ricorrenti.\n\n| Provider | Formato tipico | Trappole ricorrenti |\n|---|---|---|\n| SHL (Verify) | Tabelle e grafici con 4 o 5 opzioni; nella versione interactive trascini barre, ordini valori o completi tabelle | Unità nel titolo (\"in thousands\"), note con tassi di cambio, opzioni molto vicine tra loro |\n| Kenexa (IBM) | Tabelle e grafici densi, più domande sullo stesso dataset | Colonna o anno sbagliato, totali da calcolare a parte, arrotondamento richiesto dalle opzioni |\n| Cappfinity | Formati misti (scelta multipla, inserimento numerico, ordinamento), timer per domanda, difficoltà adattiva | Nessuna opzione da cui ripartire nell'inserimento libero; formato della risposta (percentuale o decimale, numero di decimali) |\n| HireVue e assessment a gioco | Video interview, a volte affiancata da brevi esercizi numerici in stile gioco | Velocità e costanza contano più della singola risposta: non bloccarti su un item |\n\nTrappole universali: base sbagliata, anni di crescita contati male nel CAGR, valuta non convertita prima di sommare, percentuali di gruppi diversi mediate senza pesi."
-        },
-        {
-          "h": "Come allenarti nel weekend",
-          "body": "Il miglioramento si misura, non si percepisce. Routine consigliata:\n\n1. **Blocchi cronometrati** di 10 domande con il budget reale del test.\n2. **Registro errori**: per ogni errore annota la causa in una di 4 categorie: lettura (dato o unità sbagliati), impostazione (operazione o base sbagliata), calcolo, tempo.\n3. **Ripasso mirato**: se il 60% degli errori è di impostazione, rileggi la lezione sulle 6 operazioni e rifai solo quelle domande.\n4. **Obiettivo**: accuratezza sopra l'80% al ritmo reale prima di salire di difficoltà.\n\nLa categoria di errore più frequente ti dice cosa studiare. Il punteggio da solo no."
-        }
-      ],
-      "examples": [
-        {
-          "q": "A company's costs were GBP 4,870k in 2023 and GBP 5,312k in 2024. What was the percentage increase? (A) 0.9% (B) 8.3% (C) 9.1% (D) 90.8%",
-          "steps": [
-            "Differenza: 5,312 − 4,870 = 442. Stima: 442 / 4,870 ≈ 440 / 4,900 ≈ 9%.",
-            "La stima elimina subito (A) 0.9% e (D) 90.8%: ordine di grandezza sbagliato.",
-            "Restano 8.3% e 9.1%. 8.3% è 442 / 5,312, cioè la base sbagliata (anno finale). Con la base corretta, il 2023 più piccolo, il risultato è più alto.",
-            "Risposta 9.1%, trovata senza calcolatrice."
-          ],
-          "answer": "(C) 9.1%"
-        },
-        {
-          "q": "Revenue by region, EUR m: North 120 (2023) and 135 (2024); South 80 (2023) and 76 (2024). Statement: 'Operating profit in the North increased between 2023 and 2024.' True, False or Cannot say?",
-          "steps": [
-            "La tabella riporta solo i ricavi, non i costi né il profitto.",
-            "Ricavi in crescita non implicano profitto in crescita: i costi potrebbero essere aumentati di più.",
-            "Manca un dato indispensabile, quindi la risposta è Cannot say.",
-            "Trappola: rispondere True perché i ricavi del North passano da 120 a 135."
-          ],
-          "answer": "Cannot say"
-        },
-        {
-          "q": "You have 25 minutes for 18 questions. After 12 minutes you have answered 6 questions. Are you on schedule, and what pace do you need for the rest of the test?",
-          "steps": [
-            "Budget: 25 × 60 / 18 ≈ 83 secondi a domanda.",
-            "In 12 minuti (720 secondi) avresti dovuto chiuderne circa 720 / 83 ≈ 8.6: sei indietro di quasi 3 domande.",
-            "Restano 13 minuti (780 secondi) per 12 domande: 780 / 12 = 65 secondi a domanda.",
-            "Azione: chiudi le domande a un passaggio in meno di 45 secondi e, se una domanda supera i 90 secondi, rispondi con la migliore stima e vai avanti."
-          ],
-          "answer": "In ritardo di quasi 3 domande: servono 65 secondi a domanda per finire"
-        }
-      ],
-      "cheatsheet": [
-        "Budget = minuti × 60 / domande; checkpoint a metà del tempo.",
-        "Nessuna domanda vale più del doppio del budget.",
-        "Stima in 5 secondi: segno, ordine di grandezza, opzioni da eliminare.",
-        "Divisione: arrotonda numeratore e denominatore nella stessa direzione.",
-        "I distrattori sono errori tipici: base, periodo, unità, segno, media semplice, valore intermedio.",
-        "Cannot say solo se manca un dato indispensabile, mai perché il calcolo è lungo.",
-        "Niente tasto %, niente arrotondamenti intermedi, rileggi le cifre digitate.",
-        "Se non ci sono penalità, non lasciare mai una risposta vuota.",
-        "Registro errori in 4 categorie: lettura, impostazione, calcolo, tempo."
-      ]
+     "h": "The 6 operations that always come up",
+     "body": "Almost every question is one of these six operations, or a combination of two.\n\n| Operation | Formula | Keywords in the question |\n|---|---|---|\n| Percentage of a value | Value × % | \"what is 15% of\", \"how much tax\" |\n| Percentage change | (New − Old) / Old × 100 | \"increase\", \"decrease\", \"change\", \"growth\" |\n| Ratio | A / B, or A : B simplified | \"ratio of\", \"for every\", \"per\" |\n| Share of total | Part / Total × 100 | \"what proportion\", \"what percentage of the total\", \"share\" |\n| Average and weighted average | Sum / n, or Σ(value × weight) / Σ weights | \"average\", \"mean\", \"overall\", \"combined\" |\n| Currency or unit conversion | Value × rate, or Value / rate | \"in USD\", \"in thousands\", \"per month\" |\n\nThe most frequent combinations:\n\n- **conversion + percentage change**: growth measured in another currency;\n- **share + percentage**: what 30% of segment X is worth;\n- **weighted average + share**: overall margin of several divisions."
     },
     {
-      "id": "les-men-01",
-      "skill": "mental",
-      "order": 1,
-      "title": "Mental math toolkit: calcolare veloce senza calcolatrice",
-      "minutes": 16,
-      "summary": "Saprai moltiplicare, dividere e stimare a mente con un errore controllato, usando frazioni, arrotondamenti e la regola del 72.",
-      "sections": [
-        {
-          "h": "Perché allenare il calcolo a mente",
-          "body": "Il calcolo mentale serve in tre situazioni:\n\n- **Colloqui tecnici e case**: \"What's 8.5x on 120 of EBITDA?\". Nessuna calcolatrice, e la velocità comunica sicurezza.\n- **Test online**: anche con la calcolatrice, la stima a mente elimina opzioni e intercetta gli errori di digitazione.\n- **Esercizi numerici a tempo** in stile gioco: contano risposte rapide e costanti.\n\nL'obiettivo non è l'esattezza al centesimo, ma arrivare entro il 2-3% del valore vero in pochi secondi, sapendo da che parte stai sbagliando."
-        },
-        {
-          "h": "Moltiplicare veloce: 5 tecniche",
-          "body": "1. **Scomponi**: 47 × 6 = 40 × 6 + 7 × 6 = 240 + 42 = 282.\n2. **Numero tondo vicino**: 49 × 18 = 50 × 18 − 18 = 900 − 18 = 882.\n3. **Dimezza e raddoppia**: 25 × 36 = 50 × 18 = 100 × 9 = 900. Per moltiplicare per 5: × 10 e dimezza (68 × 5 = 680 / 2 = 340).\n4. **Differenza di quadrati**: 48 × 52 = (50 − 2) × (50 + 2) = 2,500 − 4 = 2,496.\n5. **Scambia le percentuali**: x% di y = y% di x. L'8% di 25 = il 25% di 8 = 2. Il 16% di 50 = il 50% di 16 = 8.\n\nPer le percentuali parti dal 10% e combina: 15% = 10% + metà del 10%; 18% = 20% − 2%; 35% = 3 × 10% + 5%."
-        },
-        {
-          "h": "Dividere veloce",
-          "body": "- **Semplifica prima**: 336 / 48 = 168 / 24 = 84 / 12 = 7.\n- **Dividere per 5, 25, 125**: ÷ 5 = × 2 / 10; ÷ 25 = × 4 / 100; ÷ 125 = × 8 / 1,000. Esempio: 3,400 / 25 = 3,400 × 4 / 100 = 136.\n- **Dividere per un decimale**: trasformalo in frazione. ÷ 0.8 = × 1.25; ÷ 1.25 = × 0.8; ÷ 0.75 = × 4/3; ÷ 1.5 = × 2/3.\n- **Spezza il numeratore**: 945 / 9 = 900 / 9 + 45 / 9 = 100 + 5 = 105.\n- **Dividere per numeri vicini a 1**: ÷ 1.1 ≈ × 0.909; ÷ 1.2 ≈ × 0.833. Per tassi piccoli ÷ (1 + r) ≈ × (1 − r), con un errore di circa r²: ÷ 1.04 ≈ × 0.96 (valore vero 0.9615)."
-        },
-        {
-          "h": "Tabella frazioni e percentuali da sapere a memoria",
-          "body": "| Frazione | % | Frazione | % |\n|---|---|---|---|\n| 1/2 | 50% | 1/9 | 11.1% |\n| 1/3 | 33.3% | 1/11 | 9.1% |\n| 2/3 | 66.7% | 1/12 | 8.3% |\n| 1/4 | 25% | 1/15 | 6.7% |\n| 3/4 | 75% | 1/16 | 6.25% |\n| 1/5 | 20% | 1/20 | 5% |\n| 1/6 | 16.7% | 1/25 | 4% |\n| 5/6 | 83.3% | 3/8 | 37.5% |\n| 1/7 | 14.3% | 5/8 | 62.5% |\n| 1/8 | 12.5% | 7/8 | 87.5% |\n\nUsala nei due sensi:\n\n- **Da percentuale a frazione**: il 37.5% di 448 = 3/8 di 448 = 56 × 3 = 168.\n- **Da divisione a percentuale**: 13 / 78 = 1/6 = 16.7%. Quando vedi un rapporto, cerca la frazione nota più vicina: 41 / 330 ≈ 1/8 = 12.5% (valore vero 12.4%)."
-        },
-        {
-          "h": "Strategia di arrotondamento: sapere da che parte sbagli",
-          "body": "Arrotondare è lecito, purché tu controlli la direzione dell'errore.\n\n- **Moltiplicazioni**: arrotonda i fattori in **direzioni opposte**, uno su e uno giù. 612 × 48 ≈ 600 × 50 = 30,000 (valore vero 29,376, errore circa +2%).\n- **Divisioni**: arrotonda numeratore e denominatore nella **stessa direzione**. 4,870 / 5,312 ≈ 4,900 / 5,300 ≈ 0.92 (valore vero 0.917).\n- **Errori percentuali**: in un prodotto gli errori percentuali dei singoli arrotondamenti si sommano; in un rapporto quello del denominatore entra con segno opposto. Se in un prodotto arrotondi un fattore su del 3% e l'altro giù del 2%, il risultato è circa +1%.\n- **Due cifre significative** bastano quasi sempre per scegliere tra le opzioni di un test o per rispondere in un colloquio.\n\nQuando le opzioni sono vicine ricorda la direzione: in una moltiplicazione o in una somma, se hai arrotondato tutto per eccesso, la risposta vera è leggermente sotto la tua stima. In una divisione arrotondare per eccesso il denominatore abbassa la stima."
-        },
-        {
-          "h": "Regola del 72 e varianti",
-          "body": "Anni per raddoppiare ≈ 72 / tasso annuo (in punti percentuali).\n\n| Tasso | Anni con la regola | Valore esatto |\n|---|---|---|\n| 4% | 18 | 17.7 |\n| 6% | 12 | 11.9 |\n| 8% | 9 | 9.0 |\n| 9% | 8 | 8.0 |\n| 12% | 6 | 6.1 |\n| 18% | 4 | 4.2 |\n\nFunziona anche al contrario: per raddoppiare in 5 anni serve circa 72 / 5 = 14.4% annuo (valore esatto 14.9%). Sopra il 15% circa la regola diventa meno precisa.\n\nVarianti: **regola del 114** per triplicare, **regola del 144** per quadruplicare (due raddoppi).\n\nBenchmark da colloquio per un LBO a 5 anni: 2.0x l'equity ≈ 15% di IRR, 2.5x ≈ 20%, 3.0x ≈ 25%."
-        },
-        {
-          "h": "Sanity check in 5 secondi",
-          "body": "Prima di dire un numero ad alta voce o di cliccare un'opzione:\n\n- **Ordine di grandezza**: 8.5 × 120 deve stare tra 8 × 100 = 800 e 9 × 150 = 1,350. Se ti viene 10,200 hai sbagliato uno zero.\n- **Direzione**: un calo deve dare un numero più piccolo; dividere per un numero minore di 1 deve aumentare il risultato.\n- **Ultima cifra**: 47 × 6 deve finire per 2, perché 7 × 6 = 42. Controllo gratuito sulle moltiplicazioni esatte.\n- **Benchmark**: un margine del 20% su ricavi di 500 è 100; se il tuo EBITDA è 1,000 c'è un errore di unità.\n- **Unità**: la risposta è in milioni, migliaia, percentuale o punti percentuali?"
-        }
-      ],
-      "examples": [
-        {
-          "q": "What is 18% of 650?",
-          "steps": [
-            "10% di 650 = 65, quindi 20% = 130 e 2% = 13.",
-            "18% = 20% − 2% = 130 − 13 = 117.",
-            "Controllo: 18% è poco più di 1/6 (16.7%) e 650 / 6 ≈ 108, quindi 117 è plausibile."
-          ],
-          "answer": "117"
-        },
-        {
-          "q": "What is 37.5% of 448?",
-          "steps": [
-            "37.5% = 3/8.",
-            "448 / 8 = 56.",
-            "56 × 3 = 168."
-          ],
-          "answer": "168"
-        },
-        {
-          "q": "An investment compounds at 9% a year. Roughly how long does it take to double, and to quadruple?",
-          "steps": [
-            "Regola del 72: 72 / 9 = 8 anni per raddoppiare.",
-            "Quadruplicare = due raddoppi: 8 + 8 = 16 anni (equivale alla regola del 144: 144 / 9 = 16).",
-            "Verifica: il valore esatto per raddoppiare al 9% è 8.04 anni."
-          ],
-          "answer": "Circa 8 anni per raddoppiare, circa 16 per quadruplicare"
-        },
-        {
-          "q": "Estimate 612 × 48 without a calculator, and say whether your estimate is above or below the true value.",
-          "steps": [
-            "Arrotonda in direzioni opposte: 612 diventa 600 (circa −2%), 48 diventa 50 (circa +4%).",
-            "600 × 50 = 30,000.",
-            "Errore netto ≈ −2% + 4% = +2%: la stima è sopra il valore vero di circa il 2%.",
-            "Valore vero ≈ 30,000 / 1.02 ≈ 29,400; il conto esatto dà 29,376."
-          ],
-          "answer": "Circa 30,000, leggermente sopra il valore vero (29,376)"
-        }
-      ],
-      "cheatsheet": [
-        "x% di y = y% di x (8% di 25 = 25% di 8 = 2).",
-        "Percentuali: parti dal 10% e combina (18% = 20% − 2%).",
-        "÷ 5 = × 2 / 10; ÷ 25 = × 4 / 100; ÷ 0.8 = × 1.25.",
-        "1/6 = 16.7%, 1/7 = 14.3%, 1/8 = 12.5%, 1/9 = 11.1%, 1/12 = 8.3%.",
-        "Moltiplicazioni: arrotonda in direzioni opposte. Divisioni: nella stessa direzione.",
-        "Regola del 72: anni per raddoppiare ≈ 72 / tasso. 114 per triplicare, 144 per quadruplicare.",
-        "IRR su 5 anni: 2.0x ≈ 15%, 2.5x ≈ 20%, 3.0x ≈ 25%.",
-        "Sanity check: ordine di grandezza, direzione, ultima cifra, unità."
-      ]
+     "h": "The habit worth 3 or 4 questions: check the base",
+     "body": "Most wrong answers come from the **wrong base**, that is, the number that goes in the denominator. Before pressing a key, ask yourself: \"percentage of what?\".\n\n- \"X is what percentage **of** Y\": base Y.\n- \"By what percentage is X **greater than** Y\": base Y, the term of comparison.\n- \"Percentage change **from** 2023 **to** 2024\": base 2023, the starting year.\n- \"What percentage of the **total**\": the base is the total, which you sometimes have to calculate yourself by adding up the rows.\n- \"Per employee\", \"per unit\": the base is the number of employees or units, not the total in currency.\n\nTest writers **always** include among the options the result obtained with the wrong base. If your number matches an option, that does not mean it is right: it only means you have done a calculation someone anticipated."
     },
     {
-      "id": "les-men-02",
-      "skill": "mental",
-      "order": 2,
-      "title": "Numeri da banker: margini, crescita, multipli, FX e basis points a mente",
-      "minutes": 18,
-      "summary": "Saprai fare a mente i calcoli che escono nei colloqui e nei case: margini, crescita dell'EBITDA, valutazione con i multipli, accretion/dilution, effetto cambio e basis points.",
-      "sections": [
-        {
-          "h": "Margini: la percentuale più usata in banca",
-          "body": "Margine = Metrica / Ricavi. Gross margin, EBITDA margin, EBIT margin e net margin seguono tutti la stessa logica.\n\n- **Calcolo diretto**: EBITDA di 54 su ricavi di 240: 54 / 240 = 9 / 40 = **22.5%**.\n- **Calcolo inverso**: ricavi di 380 con margine EBITDA del 15%: 380 × 0.15 = 38 + 19 = **57**.\n- **Variazione del margine**: dal 18.4% al 19.1% = +70 bps. In un colloquio non si dice \"+0.7%\": si dice \"70 basis points of margin expansion\".\n\nTrucco: con denominatori come 240 o 360 semplifica prima (54 / 240 = 9 / 40). Per i margini \"tondi\" usa la tabella delle frazioni: 1/8 = 12.5%, 1/6 = 16.7%."
-        },
-        {
-          "h": "Crescita: mix, margini che cambiano, prezzo e volume",
-          "body": "**Crescita di un gruppo con più divisioni** = media ponderata delle crescite, con pesi pari alla quota di ricavi nell'anno base. Divisione A (60% dei ricavi) cresce del 10%, divisione B (40%) del 5%: 0.6 × 10% + 0.4 × 5% = 6% + 2% = **8%**.\n\n**Crescita dell'EBITDA con margine che cambia**: moltiplica i moltiplicatori. Ricavi +10% e margine dal 20% al 22%: 1.10 × (22 / 20) = 1.10 × 1.10 = 1.21, quindi EBITDA **+21%**.\n\n**Prezzo e volume**: Ricavi = Prezzo × Volume, quindi (1 + g ricavi) = (1 + g prezzo) × (1 + g volume). Prezzo +5% e volumi +4%: 1.05 × 1.04 = 1.092, cioè **+9.2%**. A mente: 5% + 4% + 5% × 4% = 9% + 0.2% = 9.2%.\n\nRegola generale: due variazioni a e b insieme danno a + b + a × b. Il termine incrociato si può ignorare solo quando entrambe sono piccole, sotto il 5% circa."
-        },
-        {
-          "h": "Multipli: valutare in 10 secondi",
-          "body": "Le tre operazioni che servono sempre:\n\n- **Da multiplo a valore**: EV = EV/EBITDA × EBITDA. 8.5x su 120 = 8 × 120 + 0.5 × 120 = 960 + 60 = **1,020**.\n- **Da valore a multiplo**: EV di 1,350 su EBITDA di 150 = **9.0x**.\n- **Da EV a equity e prezzo per azione**: Equity value = EV − Net debt (versione semplificata). EV 1,020 e net debt 220 danno equity 800; con 40m di azioni sono **20 per azione**.\n\nCollegamenti utili:\n\n- EV/Sales = EV/EBITDA × EBITDA margin. 10x l'EBITDA con margine del 25% = 2.5x i ricavi.\n- Earnings yield = 1 / P/E. P/E 20x = 5%; P/E 12.5x = 8%.\n- Leva: Net debt / EBITDA. 3.0x su un EBITDA di 150 = debito netto di 450."
-        },
-        {
-          "h": "Accretion/dilution: la scorciatoia da colloquio",
-          "body": "Domanda classica: \"Is this deal accretive or dilutive?\". Senza sinergie né costi di transazione, il confronto si fa tra rendimenti:\n\n- **Deal tutto in azioni**: accretive se il P/E dell'acquirente è **più alto** del P/E pagato per il target. L'acquirente paga con una valuta cara (azioni a 20x) per comprare utili meno cari (target a 15x).\n- **Deal tutto cash o a debito**: accretive se il costo del finanziamento dopo le tasse è **più basso** dell'earnings yield del target (1 / P/E pagato). Target pagato 12.5x = yield dell'8%; debito al 6% con tasse al 25% costa 6% × 0.75 = 4.5% dopo le tasse, quindi accretive.\n- **Mix di fonti**: confronta l'earnings yield del target con il costo medio ponderato delle fonti.\n\nIl \"costo\" delle azioni in questo calcolo è 1 / P/E dell'acquirente: P/E 20x = 5%."
-        },
-        {
-          "h": "FX a mente",
-          "body": "La quotazione EUR/USD 1.08 significa **1 EUR = 1.08 USD**.\n\n- Da EUR a USD: × 1.08. Da USD a EUR: ÷ 1.08.\n- A mente: ÷ 1.08 ≈ × 0.926; ÷ 1.10 ≈ × 0.91; ÷ 1.25 = × 0.8.\n\n**Effetto traduzione**: una controllata USA fattura USD 540m in due anni consecutivi. Se EUR/USD passa da 1.08 a 1.20, i ricavi riportati in EUR scendono da 540 / 1.08 = 500 a 540 / 1.20 = 450: **−10%** in EUR con ricavi invariati in valuta locale. Per questo si distingue tra crescita **reported** e **constant currency**.\n\n**Asimmetria delle valute**: se EUR/USD scende da 1.20 a 1.08, l'euro si deprezza del 10% (1.08 / 1.20 − 1), ma il dollaro si apprezza dell'11.1% contro l'euro (1.20 / 1.08 − 1). È la stessa logica del recupero dopo un calo."
-        },
-        {
-          "h": "Basis points e tassi",
-          "body": "1 bp = 0.01% = 0.0001. 100 bps = 1 pp.\n\n- **Interessi**: 25 bps su EUR 400m = 400 × 0.0025 = **EUR 1m** l'anno. Trucco: 1 bp su 100m vale 10k, quindi 25 bps su 400m = 25 × 4 × 10k = 1,000k = 1m.\n- **Fee**: una fee dell'1.5% su un deal da EUR 80m = EUR 1.2m = 150 bps.\n- **Spread**: Euribor + 350 bps con Euribor al 3.0% = tasso del 6.5%.\n- **Prezzo di un bond**: variazione % del prezzo ≈ −modified duration × variazione del rendimento. Duration 6 e rendimenti +50 bps: prezzo circa −3%.\n- **Margine**: da 22.5% a 21.8% = −70 bps."
-        },
-        {
-          "h": "Come rispondere a voce in un colloquio",
-          "body": "Il calcolo a mente in un colloquio è anche comunicazione:\n\n1. **Ripeti i dati**: \"So EBITDA of 120 at 8.5x\".\n2. **Annuncia il metodo**: \"8x is 960, plus half a turn is 60\".\n3. **Dai il numero con l'unità**: \"so about 1.02 billion of EV\".\n4. **Fai il sanity check ad alta voce** se il numero sorprende: \"at a 25% margin that's roughly 2x sales, which looks reasonable\".\n\nMeglio un'approssimazione dichiarata (\"about 21%\") in 5 secondi che un numero esatto dopo 30 secondi di silenzio. Se sbagli e te ne accorgi, correggi subito: dimostra controllo."
-        }
-      ],
-      "examples": [
-        {
-          "q": "Revenue grows by 10% and the EBITDA margin expands from 20% to 22%. By what percentage does EBITDA grow?",
-          "steps": [
-            "EBITDA = Ricavi × Margine, quindi i moltiplicatori si moltiplicano.",
-            "Moltiplicatore dei ricavi: 1.10. Moltiplicatore del margine: 22 / 20 = 1.10.",
-            "1.10 × 1.10 = 1.21, quindi EBITDA +21%.",
-            "Trappola: sommare 10% + 2 pp = 12%, confondendo punti di margine e crescita relativa."
-          ],
-          "answer": "+21%"
-        },
-        {
-          "q": "A target has EBITDA of EUR 85m and is valued at 9.0x EV/EBITDA. Net debt is EUR 215m and there are 50m shares outstanding. What is the implied value per share?",
-          "steps": [
-            "EV = 9 × 85 = 765 EUR m (9 × 80 = 720, più 9 × 5 = 45).",
-            "Equity value = EV − net debt = 765 − 215 = 550 EUR m.",
-            "Valore per azione = 550 / 50 = EUR 11.0.",
-            "Trappola: dividere l'EV per le azioni (765 / 50 = 15.3) dimenticando il debito netto."
-          ],
-          "answer": "EUR 11.0 per azione"
-        },
-        {
-          "q": "A US subsidiary reported revenue of USD 540m in both 2023 and 2024. The average EUR/USD rate moved from 1.08 to 1.20. What was the change in revenue as reported in EUR?",
-          "steps": [
-            "Da USD a EUR si divide per il tasso.",
-            "2023: 540 / 1.08 = 500 EUR m. 2024: 540 / 1.20 = 450 EUR m.",
-            "Variazione: 450 / 500 − 1 = −10%.",
-            "Trappola: moltiplicare per il tasso (583.2 e 648, cioè +11.1%) oppure pensare che ricavi invariati in USD diano 0% anche in EUR."
-          ],
-          "answer": "−10% (da EUR 500m a EUR 450m)"
-        },
-        {
-          "q": "A EUR 400m term loan is repriced from Euribor + 375 bps to Euribor + 325 bps. What is the annual interest saving?",
-          "steps": [
-            "Riduzione dello spread: 375 − 325 = 50 bps = 0.50%.",
-            "1 bp su 100m vale 10k l'anno, quindi su 400m vale 40k.",
-            "50 × 40k = 2,000k = EUR 2m l'anno.",
-            "Controllo: 400 × 0.005 = 2."
-          ],
-          "answer": "EUR 2m l'anno"
-        }
-      ],
-      "cheatsheet": [
-        "Margine = Metrica / Ricavi; le variazioni di margine si esprimono in bps.",
-        "Crescita EBITDA = (1 + g ricavi) × (margine nuovo / margine vecchio) − 1.",
-        "Due variazioni a e b insieme: a + b + a × b.",
-        "EV = multiplo × EBITDA; Equity = EV − net debt; prezzo = Equity / azioni.",
-        "EV/Sales = EV/EBITDA × EBITDA margin; earnings yield = 1 / P/E.",
-        "All-stock: accretive se P/E acquirente > P/E pagato. Cash o debito: accretive se costo dopo le tasse < 1 / P/E pagato.",
-        "EUR/USD 1.08: da EUR a USD × 1.08, da USD a EUR ÷ 1.08.",
-        "1 bp su 100m = 10k l'anno; 100 bps = 1 pp.",
-        "Bond: variazione % del prezzo ≈ −modified duration × variazione del rendimento (duration 6, +50 bps: −3%)."
-      ]
+     "h": "Weighted average: when the simple average lets you down",
+     "body": "When you combine percentages or ratios from groups of different sizes, the simple average is almost always wrong.\n\nWeighted average = Σ(value × weight) / Σ weights\n\n- **Overall margin** of two divisions: add up the EBITDA figures and divide by the sum of the revenues. Do not average the two margins.\n- **Overall growth**: sum of new values / sum of old values − 1.\n- **Average price paid**: total spend / total units.\n\n**Quick check**: the weighted average always lies between the minimum and the maximum value and is closer to the group with the larger weight. With two groups: if the larger group has the lower value, the weighted average lies below the simple average."
+    },
+    {
+     "h": "Conversions: multiply or divide?",
+     "body": "The note says \"1 EUR = 1.08 USD\". An unambiguous rule:\n\n- From EUR to USD: **multiply** by 1.08 (there are more dollars, so the number grows).\n- From USD to EUR: **divide** by 1.08 (the number shrinks).\n\nInstant check: the currency worth more (here the euro) always has the smaller number. If the number increases when you convert into EUR, you have gone the wrong way.\n\nSame logic for units: a figure in EUR k must be divided by 1,000 to express it in EUR m; a monthly figure is multiplied by 12 to make it annual, a quarterly one by 4. Do the conversion **once only, at the start**, and then work entirely in the same unit. Never add up values in different currencies."
+    },
+    {
+     "h": "The 5-step protocol for every question",
+     "body": "1. **Read the question** and identify metric, period, category.\n2. **Find the numbers** and their units; check the notes.\n3. **Write the formula** with the base made explicit, even just on a sheet of paper: (2024 − 2023) / 2023.\n4. **Estimate** the result by rounding: it tells you the order of magnitude and the sign.\n5. **Calculate** and compare with the estimate and with the options. If the estimate and the calculation diverge, reread the question, do not just redo the calculation.\n\nWith practice, steps 1 to 4 take 15-20 seconds, and the rest of the minute is all margin."
     }
-  ]
+   ],
+   "examples": [
+    {
+     "q": "Alvona Foods' sales were EUR 240m in 2023 and EUR 270m in 2024. By what percentage did sales increase from 2023 to 2024?",
+     "steps": [
+      "Base: the starting year, 2023 (240).",
+      "Difference: 270 − 240 = 30.",
+      "30 / 240 = 0.125, i.e. 12.5%.",
+      "Trap: 30 / 270 = 11.1% uses the end year as the base."
+     ],
+     "answer": "12.5%"
+    },
+    {
+     "q": "A fund holds three portfolios: EUR 50m returning 4%, EUR 30m returning 10% and EUR 20m returning -5%. What was the fund's overall return?",
+     "steps": [
+      "You need a weighted average: calculate the gain in euros on each portfolio.",
+      "50 × 4% = 2.0; 30 × 10% = 3.0; 20 × (−5%) = −1.0.",
+      "Total gain: 2.0 + 3.0 − 1.0 = 4.0 on assets of 50 + 30 + 20 = 100.",
+      "4.0 / 100 = 4.0%. The simple average (4 + 10 − 5) / 3 = 3.0% is the trap: it ignores the weights."
+     ],
+     "answer": "4.0%"
+    },
+    {
+     "q": "Northbridge Industrials reports revenue of EUR 180m in Europe and USD 216m in the US. Using 1 EUR = 1.20 USD, what percentage of total revenue (in EUR) comes from the US?",
+     "steps": [
+      "Convert everything into EUR before adding: 216 / 1.20 = 180 EUR m.",
+      "Total in EUR: 180 + 180 = 360.",
+      "US share: 180 / 360 = 50%.",
+      "Trap: adding different currencies, 216 / (180 + 216) = 54.5%."
+     ],
+     "answer": "50%"
+    },
+    {
+     "q": "A division has 1,250 employees and total staff costs of EUR 87,500k. What is the average staff cost per employee, in EUR?",
+     "steps": [
+      "Units: 87,500k = 87,500,000 EUR (EUR 87.5m).",
+      "Base: the number of employees, 1,250.",
+      "87,500,000 / 1,250 = 70,000.",
+      "Trap: 87,500 / 1,250 = 70 forgets the thousands; the result in EUR is 70,000 (i.e. 70k)."
+     ],
+     "answer": "EUR 70,000"
+    }
+   ],
+   "cheatsheet": [
+    "% change = (New − Old) / Old × 100: the base is always the starting point.",
+    "Share = Part / Total: if the total is not in the table, add it up yourself.",
+    "\"X is greater than Y by what %\": base Y.",
+    "Percentages of groups of different sizes: weighted average, never simple.",
+    "1 EUR = 1.08 USD: from EUR to USD multiply, from USD to EUR divide.",
+    "Reading order: title, units, rows and columns, notes. Then the question.",
+    "Convert everything into the same unit once only, at the start.",
+    "Estimate first, calculate afterwards: if they do not match, reread the question."
+   ]
+  },
+  {
+   "id": "les-num-02",
+   "skill": "numerical",
+   "order": 2,
+   "title": "Percentage changes, reverse percentages and CAGR",
+   "minutes": 18,
+   "summary": "You will be able to calculate changes, work back to the original value, distinguish percentage points from per cent and find a CAGR in your head or by elimination.",
+   "sections": [
+    {
+     "h": "Think in multipliers",
+     "body": "The trick that simplifies this whole chapter is to turn every percentage change into a **multiplier**:\n\n- +12% becomes × 1.12\n- −8% becomes × 0.92\n- +150% becomes × 2.5\n\n% change = New / Old − 1. Example: from 70 to 84, 84 / 70 = 1.2, so +20%. A single division instead of a subtraction plus a division.\n\nWith multipliers, successive changes (they multiply) and reverse percentages (you divide by the multiplier) also become trivial."
+    },
+    {
+     "h": "Reverse percentages: working back to the original value",
+     "body": "Typical question: \"After a 20% increase the price is 360. What was the original price?\"\n\n- Correct: 360 / 1.20 = **300**.\n- Wrong: 360 × 0.80 = 288. The 20% was calculated on 300, not on 360.\n\nRule: **Original = Final value / multiplier**.\n\n| Situation | Operation |\n|---|---|\n| Price after a 20% increase | ÷ 1.20 |\n| Price after a 25% discount | ÷ 0.75 |\n| Price including 22% VAT | ÷ 1.22 |\n| Net after a 30% tax | ÷ 0.70 |\n\nAlways check in reverse: 300 × 1.20 = 360. If it works, it is right."
+    },
+    {
+     "h": "Successive changes and the asymmetry",
+     "body": "Successive changes **multiply**; they do not add up.\n\n- +10% then −10%: 1.10 × 0.90 = 0.99, i.e. **−1%**, not zero.\n- +10%, +20%, −5%: 1.10 × 1.20 × 0.95 = 1.254, i.e. **+25.4%**, not +25%.\n- +25% then −20%: 1.25 × 0.80 = 1.00, you return exactly to the starting point.\n\n**Recovering a loss**: after a fall x (expressed as a decimal, e.g. 0.20) you need an increase of x / (1 − x) to return to the initial level: 0.20 / 0.80 = 0.25, i.e. +25%.\n\n| Fall | Increase needed to recover |\n|---|---|\n| −10% | +11.1% |\n| −20% | +25% |\n| −25% | +33.3% |\n| −50% | +100% |\n\nIn tests it appears as: \"What percentage increase is needed to return to the 2022 level?\""
+    },
+    {
+     "h": "Percentage points, per cent and basis points",
+     "body": "When the quantity is already a percentage (margin, interest rate, market share) there are two different ways of measuring its change:\n\n- **Percentage points (pp)**: simple difference. Margin from 20% to 25% = **+5 pp**.\n- **Relative change (%)**: relative to the initial value. From 20% to 25% = 5 / 20 = **+25%**.\n\nAnother example: a rate from 2% to 3% = +1 pp, but +50% in relative terms.\n\n**Basis points**: 1 pp = 100 bps, 1 bp = 0.01%. Margin from 18.4% to 19.1% = +0.7 pp = +70 bps.\n\nIn tests, read carefully: \"increased by 5 percentage points\" and \"increased by 5%\" are different statements, and in a True / False / Cannot say question the difference decides the answer."
+    },
+    {
+     "h": "Compounding: why 10% for 3 years is not 30%",
+     "body": "Growing by g% for n years means multiplying by (1 + g) n times:\n\nFinal value = Initial value × (1 + g)^n\n\n3 years at 10%: 1.1^3 = 1.331, i.e. +33.1%, not +30%. The compounding effect grows with the rate and with the number of years.\n\nFactors to memorise:\n\n| Rate | 2 years | 3 years | 5 years | 10 years |\n|---|---|---|---|---|\n| 5% | 1.10 | 1.16 | 1.28 | 1.63 |\n| 10% | 1.21 | 1.33 | 1.61 | 2.59 |\n| 15% | 1.32 | 1.52 | 2.01 | 4.05 |\n| 20% | 1.44 | 1.73 | 2.49 | 6.19 |\n\nNote: 15% for 5 years doubles (2.01), 7% for 10 years almost doubles (1.97), 26% for 3 years doubles (2.00)."
+    },
+    {
+     "h": "CAGR: exact formula and 3 quick methods",
+     "body": "CAGR = (Final value / Initial value)^(1/n) − 1\n\n**n is the number of years of growth, not the number of data points**: from 2020 to 2024 there are 4 years of growth, even if the table has 5 columns. This is the most frequent error.\n\nQuick methods:\n\n1. **Try the options (backsolving)**: this is the best method in a multiple-choice test. Take the middle option, calculate (1 + g)^n with the factor table or the calculator and see whether the result is above or below the final / initial ratio. With a single calculation you eliminate half the options.\n2. **Successive roots**: for n = 2 take the square root; for n = 4 take the square root twice. From 100 to 146.4 in 4 years: √1.464 = 1.21, √1.21 = 1.10, so a CAGR of 10%.\n3. **The simple average as a ceiling**: total growth / n is always higher than the CAGR (equal only if n = 1 or if growth is zero). From 50 to 80.5 in 5 years: total growth 61%, simple average 12.2%, true CAGR 10%. The higher the total growth, the wider the gap.\n\nBonus: if the value doubles in n years, CAGR ≈ 72 / n (rule of 72)."
+    }
+   ],
+   "examples": [
+    {
+     "q": "After a 15% price increase, a product costs EUR 92. What was the price before the increase?",
+     "steps": [
+      "The 15% is calculated on the original price, so New = Original × 1.15.",
+      "Original = 92 / 1.15 = 80.",
+      "Check: 80 × 1.15 = 92.",
+      "Trap: 92 × 0.85 = 78.20 applies the 15% to the wrong base."
+     ],
+     "answer": "EUR 80"
+    },
+    {
+     "q": "A company's operating margin rose from 12% to 15%. By how many percentage points, and by what percentage in relative terms, did the margin increase?",
+     "steps": [
+      "Percentage points: 15 − 12 = 3 pp, i.e. 300 bps.",
+      "Relative change: 3 / 12 = 0.25, i.e. +25%.",
+      "Trap: saying \"the margin grew by 3%\" confuses the two measures."
+     ],
+     "answer": "+3 percentage points, equal to +25% in relative terms"
+    },
+    {
+     "q": "Revenue grew from USD 50m in 2019 to USD 80.5m in 2024. What was the compound annual growth rate? (A) 8% (B) 10% (C) 12.2% (D) 61%",
+     "steps": [
+      "Years of growth: 2024 − 2019 = 5.",
+      "Ratio: 80.5 / 50 = 1.61.",
+      "From the factor table, 1.10^5 = 1.61, so the CAGR is 10%.",
+      "Elimination: 12.2% is the simple average (61% / 5) and always overestimates; 61% is the total growth; 8% would give 1.08^5 = 1.47, too little."
+     ],
+     "answer": "(B) 10%"
+    },
+    {
+     "q": "A share price falls by 20% in one year. By what percentage must it rise the following year to return to its original level?",
+     "steps": [
+      "After the fall the price is 0.80 times the original.",
+      "You need a multiplier m such that 0.80 × m = 1, so m = 1 / 0.80 = 1.25.",
+      "Increase needed: +25%.",
+      "Trap: answering 20%, which gives 0.80 × 1.20 = 0.96, i.e. still −4% compared with the start."
+     ],
+     "answer": "25%"
+    }
+   ],
+   "cheatsheet": [
+    "% change = New / Old − 1.",
+    "Original = Final / (1 + g). Never Final × (1 − g).",
+    "Successive changes: multiply the multipliers, do not add the percentages.",
+    "Recovery after a fall x (as a decimal): x / (1 − x). −20% requires +25%, −50% requires +100%.",
+    "pp = difference between two percentages; relative % = difference / initial value. 1 pp = 100 bps.",
+    "CAGR = (End / Start)^(1/n) − 1, with n = final year − initial year, not the number of columns.",
+    "Total growth / n is a ceiling: the true CAGR is always lower.",
+    "Key factors: 1.1^5 = 1.61, 1.15^5 = 2.01, 1.07^10 ≈ 2, 1.26^3 ≈ 2."
+   ]
+  },
+  {
+   "id": "les-num-03",
+   "skill": "numerical",
+   "order": 3,
+   "title": "Strategy under pressure: estimate, eliminate, skip",
+   "minutes": 14,
+   "summary": "You will be able to manage your time in the test, use estimation and elimination to answer in under a minute and recognise the typical traps of each provider.",
+   "sections": [
+    {
+     "h": "The time budget and checkpoints",
+     "body": "Before you start, calculate your **budget per question**: minutes × 60 / number of questions. Example: 25 minutes for 18 questions = about 83 seconds per question.\n\nOperating rules:\n\n- **Halfway checkpoint**: at the halfway point in time you should have completed about half the questions. If you are 2 or more behind, start skipping the long ones.\n- **Cap per question**: no question deserves more than twice the budget. A hard question is worth the same as an easy one.\n- **Not all questions cost the same**: one-step questions should be closed in 30-40 seconds, so you build up margin for the multi-step ones.\n\nIn tests with a timer per question (a frequent format in Cappfinity tests) the budget is imposed by the system: the goal becomes never letting the timer run out without having given an answer."
+    },
+    {
+     "h": "Estimate before calculating",
+     "body": "A 5-second estimate gives you three pieces of information: the **sign** (increase or decrease), the **order of magnitude** (8% or 80%?) and often **the answer itself**, when the options are far apart.\n\nHow to estimate:\n\n- Round to 2 significant figures: 4,870 becomes 4,900; 5,312 becomes 5,300.\n- In divisions, round the numerator and the denominator **in the same direction**: the ratio changes little.\n- Use known fractions: 0.124 ≈ 1/8, 0.33 ≈ 1/3.\n\nWhen the options are less than 3-4% apart, the estimate only helps to eliminate the extremes: then calculate precisely."
+    },
+    {
+     "h": "Eliminating options",
+     "body": "Wrong options are not random: they are built on the most common errors. Recognising them saves time and protects you.\n\n| Distractor | How it arises | How to recognise it |\n|---|---|---|\n| Wrong base | Dividing by the final year instead of the initial one | With growth, it is slightly lower than the right answer |\n| Wrong period | Adjacent column or year | It matches the data in another column |\n| Forgotten unit | k instead of m, monthly instead of annual | It differs by a factor of 1,000 or 12 |\n| Wrong sign | Increase read as a decrease | Same number with the opposite sign |\n| Simple average | Average of percentages from different groups | A \"clean\" number that ignores the weights |\n| Intermediate value | You stop halfway through the calculation | It is a step of the right calculation, not the result |\n\n**Cannot say**: choose it only if an essential piece of data is genuinely missing, for example the question asks for profit and the table shows only revenue. Do not choose it because the calculation is long."
+    },
+    {
+     "h": "Calculator discipline",
+     "body": "The calculator eliminates arithmetic errors but introduces others. Rules:\n\n- **Formula first, keys after**: write (5,312 − 4,870) / 4,870 on paper, then type it in.\n- **Do not round intermediate steps**: leave the result on the display or in memory and carry on. Rounding halfway through can push you onto the wrong option when the options are close.\n- **Avoid the % key**: it behaves differently from one calculator to another. Always use × 0.15 or ÷ 1.15.\n- **Reread the digits you typed**: swapping two digits (5,312 typed as 5,132) is the most frequent error under stress.\n- **Compare with the estimate**: if the calculator and the estimate differ by a factor of 10 or have different signs, the estimate is almost always right.\n- **Pen and paper at the ready**: note down intermediate results, as they are often needed for the next question on the same dataset too."
+    },
+    {
+     "h": "When to skip and how to guess",
+     "body": "Skip, or answer on instinct and move on, when:\n\n- after 20 seconds you have not worked out which data you need;\n- the question requires 4 or more steps and you are behind on the checkpoint;\n- you have already spent twice the budget.\n\nIn most of these tests wrong answers do not cost points: always read the instructions, but in general **never leave an answer blank**. If you have to guess, do it in a reasoned way:\n\n- eliminate the options with the wrong sign or order of magnitude;\n- among the remaining ones, choose the one consistent with your estimate;\n- if the test allows you to go back, flag the question and return to it at the end only if you have time left."
+    },
+    {
+     "h": "Typical traps by provider",
+     "body": "Formats change over time and from one bank to another: always check the invitation email and the official practice tests. These are the recurring traps.\n\n| Provider | Typical format | Recurring traps |\n|---|---|---|\n| SHL (Verify) | Tables and charts with 4 or 5 options; in the interactive version you drag bars, rank values or complete tables | Units in the title (\"in thousands\"), notes with exchange rates, options very close to each other |\n| Kenexa (IBM) | Dense tables and charts, several questions on the same dataset | Wrong column or year, totals to be calculated separately, rounding required by the options |\n| Cappfinity | Mixed formats (multiple choice, numerical entry, ranking), timer per question, adaptive difficulty | No options to work back from in free entry; answer format (percentage or decimal, number of decimal places) |\n| HireVue and game-based assessments | Video interview, sometimes alongside short game-style numerical exercises | Speed and consistency count for more than any single answer: do not get stuck on one item |\n\nUniversal traps: wrong base, years of growth miscounted in the CAGR, currency not converted before adding, percentages from different groups averaged without weights."
+    },
+    {
+     "h": "How to train at the weekend",
+     "body": "Improvement is measured, not felt. Recommended routine:\n\n1. **Timed blocks** of 10 questions with the real test budget.\n2. **Error log**: for each error, record the cause in one of 4 categories: reading (wrong data or unit), set-up (wrong operation or base), calculation, time.\n3. **Targeted review**: if 60% of your errors are set-up errors, reread the lesson on the 6 operations and redo only those questions.\n4. **Goal**: accuracy above 80% at the real pace before moving up in difficulty.\n\nThe most frequent error category tells you what to study. The score alone does not."
+    }
+   ],
+   "examples": [
+    {
+     "q": "A company's costs were GBP 4,870k in 2023 and GBP 5,312k in 2024. What was the percentage increase? (A) 0.9% (B) 8.3% (C) 9.1% (D) 90.8%",
+     "steps": [
+      "Difference: 5,312 − 4,870 = 442. Estimate: 442 / 4,870 ≈ 440 / 4,900 ≈ 9%.",
+      "The estimate immediately eliminates (A) 0.9% and (D) 90.8%: wrong order of magnitude.",
+      "That leaves 8.3% and 9.1%. 8.3% is 442 / 5,312, i.e. the wrong base (final year). With the correct base, the smaller 2023 figure, the result is higher.",
+      "Answer 9.1%, found without a calculator."
+     ],
+     "answer": "(C) 9.1%"
+    },
+    {
+     "q": "Revenue by region, EUR m: North 120 (2023) and 135 (2024); South 80 (2023) and 76 (2024). Statement: 'Operating profit in the North increased between 2023 and 2024.' True, False or Cannot say?",
+     "steps": [
+      "The table shows only revenue, not costs or profit.",
+      "Rising revenue does not imply rising profit: costs may have increased by more.",
+      "An essential piece of data is missing, so the answer is Cannot say.",
+      "Trap: answering True because North revenue goes from 120 to 135."
+     ],
+     "answer": "Cannot say"
+    },
+    {
+     "q": "You have 25 minutes for 18 questions. After 12 minutes you have answered 6 questions. Are you on schedule, and what pace do you need for the rest of the test?",
+     "steps": [
+      "Budget: 25 × 60 / 18 ≈ 83 seconds per question.",
+      "In 12 minutes (720 seconds) you should have completed about 720 / 83 ≈ 8.6: you are almost 3 questions behind.",
+      "That leaves 13 minutes (780 seconds) for 12 questions: 780 / 12 = 65 seconds per question.",
+      "Action: close one-step questions in under 45 seconds and, if a question goes beyond 90 seconds, answer with your best estimate and move on."
+     ],
+     "answer": "Almost 3 questions behind: you need 65 seconds per question to finish"
+    }
+   ],
+   "cheatsheet": [
+    "Budget = minutes × 60 / questions; checkpoint at the halfway point.",
+    "No question is worth more than twice the budget.",
+    "Estimate in 5 seconds: sign, order of magnitude, options to eliminate.",
+    "Division: round the numerator and the denominator in the same direction.",
+    "Distractors are typical errors: base, period, unit, sign, simple average, intermediate value.",
+    "Cannot say only if an essential piece of data is missing, never because the calculation is long.",
+    "No % key, no intermediate rounding, reread the digits you typed.",
+    "If there are no penalties, never leave an answer blank.",
+    "Error log in 4 categories: reading, set-up, calculation, time."
+   ]
+  },
+  {
+   "id": "les-men-01",
+   "skill": "mental",
+   "order": 1,
+   "title": "Mental math toolkit: calculating fast without a calculator",
+   "minutes": 16,
+   "summary": "You will be able to multiply, divide and estimate in your head with a controlled error, using fractions, rounding and the rule of 72.",
+   "sections": [
+    {
+     "h": "Why train mental arithmetic",
+     "body": "Mental arithmetic is useful in three situations:\n\n- **Technical interviews and cases**: \"What's 8.5x on 120 of EBITDA?\". No calculator, and speed conveys confidence.\n- **Online tests**: even with a calculator, a mental estimate eliminates options and catches typing errors.\n- **Timed game-style numerical exercises**: quick, consistent answers are what count.\n\nThe goal is not accuracy to the last decimal place, but getting within 2-3% of the true value in a few seconds, knowing which side you are erring on."
+    },
+    {
+     "h": "Multiplying fast: 5 techniques",
+     "body": "1. **Break it down**: 47 × 6 = 40 × 6 + 7 × 6 = 240 + 42 = 282.\n2. **Nearby round number**: 49 × 18 = 50 × 18 − 18 = 900 − 18 = 882.\n3. **Halve and double**: 25 × 36 = 50 × 18 = 100 × 9 = 900. To multiply by 5: × 10 and halve (68 × 5 = 680 / 2 = 340).\n4. **Difference of squares**: 48 × 52 = (50 − 2) × (50 + 2) = 2,500 − 4 = 2,496.\n5. **Swap the percentages**: x% of y = y% of x. 8% of 25 = 25% of 8 = 2. 16% of 50 = 50% of 16 = 8.\n\nFor percentages, start from 10% and combine: 15% = 10% + half of 10%; 18% = 20% − 2%; 35% = 3 × 10% + 5%."
+    },
+    {
+     "h": "Dividing fast",
+     "body": "- **Simplify first**: 336 / 48 = 168 / 24 = 84 / 12 = 7.\n- **Dividing by 5, 25, 125**: ÷ 5 = × 2 / 10; ÷ 25 = × 4 / 100; ÷ 125 = × 8 / 1,000. Example: 3,400 / 25 = 3,400 × 4 / 100 = 136.\n- **Dividing by a decimal**: turn it into a fraction. ÷ 0.8 = × 1.25; ÷ 1.25 = × 0.8; ÷ 0.75 = × 4/3; ÷ 1.5 = × 2/3.\n- **Split the numerator**: 945 / 9 = 900 / 9 + 45 / 9 = 100 + 5 = 105.\n- **Dividing by numbers close to 1**: ÷ 1.1 ≈ × 0.909; ÷ 1.2 ≈ × 0.833. For small rates ÷ (1 + r) ≈ × (1 − r), with an error of about r²: ÷ 1.04 ≈ × 0.96 (true value 0.9615)."
+    },
+    {
+     "h": "Fractions and percentages table to know by heart",
+     "body": "| Fraction | % | Fraction | % |\n|---|---|---|---|\n| 1/2 | 50% | 1/9 | 11.1% |\n| 1/3 | 33.3% | 1/11 | 9.1% |\n| 2/3 | 66.7% | 1/12 | 8.3% |\n| 1/4 | 25% | 1/15 | 6.7% |\n| 3/4 | 75% | 1/16 | 6.25% |\n| 1/5 | 20% | 1/20 | 5% |\n| 1/6 | 16.7% | 1/25 | 4% |\n| 5/6 | 83.3% | 3/8 | 37.5% |\n| 1/7 | 14.3% | 5/8 | 62.5% |\n| 1/8 | 12.5% | 7/8 | 87.5% |\n\nUse it both ways:\n\n- **From percentage to fraction**: 37.5% of 448 = 3/8 of 448 = 56 × 3 = 168.\n- **From division to percentage**: 13 / 78 = 1/6 = 16.7%. When you see a ratio, look for the nearest known fraction: 41 / 330 ≈ 1/8 = 12.5% (true value 12.4%)."
+    },
+    {
+     "h": "Rounding strategy: knowing which side you are erring on",
+     "body": "Rounding is fine, as long as you control the direction of the error.\n\n- **Multiplications**: round the factors in **opposite directions**, one up and one down. 612 × 48 ≈ 600 × 50 = 30,000 (true value 29,376, error about +2%).\n- **Divisions**: round the numerator and the denominator in the **same direction**. 4,870 / 5,312 ≈ 4,900 / 5,300 ≈ 0.92 (true value 0.917).\n- **Percentage errors**: in a product, the percentage errors of the individual roundings add up; in a ratio, the denominator's error enters with the opposite sign. If in a product you round one factor up by 3% and the other down by 2%, the result is about +1%.\n- **Two significant figures** are almost always enough to choose between the options in a test or to answer in an interview.\n\nWhen the options are close, remember the direction: in a multiplication or a sum, if you rounded everything up, the true answer is slightly below your estimate. In a division, rounding the denominator up lowers the estimate."
+    },
+    {
+     "h": "Rule of 72 and variants",
+     "body": "Years to double ≈ 72 / annual rate (in percentage points).\n\n| Rate | Years by the rule | Exact value |\n|---|---|---|\n| 4% | 18 | 17.7 |\n| 6% | 12 | 11.9 |\n| 8% | 9 | 9.0 |\n| 9% | 8 | 8.0 |\n| 12% | 6 | 6.1 |\n| 18% | 4 | 4.2 |\n\nIt also works in reverse: to double in 5 years you need about 72 / 5 = 14.4% a year (exact value 14.9%). Above about 15% the rule becomes less precise.\n\nVariants: **rule of 114** to triple, **rule of 144** to quadruple (two doublings).\n\nInterview benchmark for a 5-year LBO: 2.0x the equity ≈ 15% IRR, 2.5x ≈ 20%, 3.0x ≈ 25%."
+    },
+    {
+     "h": "Sanity check in 5 seconds",
+     "body": "Before saying a number out loud or clicking an option:\n\n- **Order of magnitude**: 8.5 × 120 must lie between 8 × 100 = 800 and 9 × 150 = 1,350. If you get 10,200, you have a zero wrong.\n- **Direction**: a fall must give a smaller number; dividing by a number less than 1 must increase the result.\n- **Last digit**: 47 × 6 must end in 2, because 7 × 6 = 42. A free check on exact multiplications.\n- **Benchmark**: a 20% margin on revenue of 500 is 100; if your EBITDA is 1,000 there is a unit error.\n- **Units**: is the answer in millions, thousands, per cent or percentage points?"
+    }
+   ],
+   "examples": [
+    {
+     "q": "What is 18% of 650?",
+     "steps": [
+      "10% of 650 = 65, so 20% = 130 and 2% = 13.",
+      "18% = 20% − 2% = 130 − 13 = 117.",
+      "Check: 18% is a little more than 1/6 (16.7%) and 650 / 6 ≈ 108, so 117 is plausible."
+     ],
+     "answer": "117"
+    },
+    {
+     "q": "What is 37.5% of 448?",
+     "steps": [
+      "37.5% = 3/8.",
+      "448 / 8 = 56.",
+      "56 × 3 = 168."
+     ],
+     "answer": "168"
+    },
+    {
+     "q": "An investment compounds at 9% a year. Roughly how long does it take to double, and to quadruple?",
+     "steps": [
+      "Rule of 72: 72 / 9 = 8 years to double.",
+      "Quadrupling = two doublings: 8 + 8 = 16 years (equivalent to the rule of 144: 144 / 9 = 16).",
+      "Check: the exact time to double at 9% is 8.04 years."
+     ],
+     "answer": "About 8 years to double, about 16 to quadruple"
+    },
+    {
+     "q": "Estimate 612 × 48 without a calculator, and say whether your estimate is above or below the true value.",
+     "steps": [
+      "Round in opposite directions: 612 becomes 600 (about −2%), 48 becomes 50 (about +4%).",
+      "600 × 50 = 30,000.",
+      "Net error ≈ −2% + 4% = +2%: the estimate is about 2% above the true value.",
+      "True value ≈ 30,000 / 1.02 ≈ 29,400; the exact calculation gives 29,376."
+     ],
+     "answer": "About 30,000, slightly above the true value (29,376)"
+    }
+   ],
+   "cheatsheet": [
+    "x% of y = y% of x (8% of 25 = 25% of 8 = 2).",
+    "Percentages: start from 10% and combine (18% = 20% − 2%).",
+    "÷ 5 = × 2 / 10; ÷ 25 = × 4 / 100; ÷ 0.8 = × 1.25.",
+    "1/6 = 16.7%, 1/7 = 14.3%, 1/8 = 12.5%, 1/9 = 11.1%, 1/12 = 8.3%.",
+    "Multiplications: round in opposite directions. Divisions: in the same direction.",
+    "Rule of 72: years to double ≈ 72 / rate. 114 to triple, 144 to quadruple.",
+    "IRR over 5 years: 2.0x ≈ 15%, 2.5x ≈ 20%, 3.0x ≈ 25%.",
+    "Sanity check: order of magnitude, direction, last digit, units."
+   ]
+  },
+  {
+   "id": "les-men-02",
+   "skill": "mental",
+   "order": 2,
+   "title": "Banker numbers: margins, growth, multiples, FX and basis points in your head",
+   "minutes": 18,
+   "summary": "You will be able to do in your head the calculations that come up in interviews and cases: margins, EBITDA growth, valuation with multiples, accretion/dilution, FX effects and basis points.",
+   "sections": [
+    {
+     "h": "Margins: the most used percentage in banking",
+     "body": "Margin = Metric / Revenue. Gross margin, EBITDA margin, EBIT margin and net margin all follow the same logic.\n\n- **Direct calculation**: EBITDA of 54 on revenue of 240: 54 / 240 = 9 / 40 = **22.5%**.\n- **Reverse calculation**: revenue of 380 with a 15% EBITDA margin: 380 × 0.15 = 38 + 19 = **57**.\n- **Change in margin**: from 18.4% to 19.1% = +70 bps. In an interview you do not say \"+0.7%\": you say \"70 basis points of margin expansion\".\n\nTrick: with denominators such as 240 or 360, simplify first (54 / 240 = 9 / 40). For \"round\" margins, use the fractions table: 1/8 = 12.5%, 1/6 = 16.7%."
+    },
+    {
+     "h": "Growth: mix, changing margins, price and volume",
+     "body": "**Growth of a group with several divisions** = weighted average of the growth rates, with weights equal to each division's share of revenue in the base year. Division A (60% of revenue) grows by 10%, division B (40%) by 5%: 0.6 × 10% + 0.4 × 5% = 6% + 2% = **8%**.\n\n**EBITDA growth with a changing margin**: multiply the multipliers. Revenue +10% and margin from 20% to 22%: 1.10 × (22 / 20) = 1.10 × 1.10 = 1.21, so EBITDA **+21%**.\n\n**Price and volume**: Revenue = Price × Volume, so (1 + g revenue) = (1 + g price) × (1 + g volume). Price +5% and volumes +4%: 1.05 × 1.04 = 1.092, i.e. **+9.2%**. In your head: 5% + 4% + 5% × 4% = 9% + 0.2% = 9.2%.\n\nGeneral rule: two changes a and b together give a + b + a × b. The cross term can be ignored only when both are small, below about 5%."
+    },
+    {
+     "h": "Multiples: valuing in 10 seconds",
+     "body": "The three operations you always need:\n\n- **From multiple to value**: EV = EV/EBITDA × EBITDA. 8.5x on 120 = 8 × 120 + 0.5 × 120 = 960 + 60 = **1,020**.\n- **From value to multiple**: EV of 1,350 on EBITDA of 150 = **9.0x**.\n- **From EV to equity and price per share**: Equity value = EV − Net debt (simplified version). EV of 1,020 and net debt of 220 give equity of 800; with 40m shares that is **20 per share**.\n\nUseful links:\n\n- EV/Sales = EV/EBITDA × EBITDA margin. 10x EBITDA with a 25% margin = 2.5x revenue.\n- Earnings yield = 1 / P/E. P/E 20x = 5%; P/E 12.5x = 8%.\n- Leverage: Net debt / EBITDA. 3.0x on EBITDA of 150 = net debt of 450."
+    },
+    {
+     "h": "Accretion/dilution: the interview shortcut",
+     "body": "Classic question: \"Is this deal accretive or dilutive?\". With no synergies and no transaction costs, the comparison is between yields:\n\n- **All-stock deal**: accretive if the acquirer's P/E is **higher** than the P/E paid for the target. The acquirer pays with an expensive currency (shares at 20x) to buy cheaper earnings (target at 15x).\n- **All-cash or debt-funded deal**: accretive if the after-tax cost of financing is **lower** than the target's earnings yield (1 / P/E paid). Target bought at 12.5x = 8% yield; debt at 6% with 25% tax costs 6% × 0.75 = 4.5% after tax, so accretive.\n- **Mix of sources**: compare the target's earnings yield with the weighted average cost of the sources.\n\nThe \"cost\" of shares in this calculation is 1 / the acquirer's P/E: P/E 20x = 5%."
+    },
+    {
+     "h": "FX in your head",
+     "body": "The quote EUR/USD 1.08 means **1 EUR = 1.08 USD**.\n\n- From EUR to USD: × 1.08. From USD to EUR: ÷ 1.08.\n- In your head: ÷ 1.08 ≈ × 0.926; ÷ 1.10 ≈ × 0.91; ÷ 1.25 = × 0.8.\n\n**Translation effect**: a US subsidiary invoices USD 540m in two consecutive years. If EUR/USD moves from 1.08 to 1.20, revenue reported in EUR falls from 540 / 1.08 = 500 to 540 / 1.20 = 450: **−10%** in EUR with revenue unchanged in local currency. This is why a distinction is made between **reported** and **constant currency** growth.\n\n**Currency asymmetry**: if EUR/USD falls from 1.20 to 1.08, the euro depreciates by 10% (1.08 / 1.20 − 1), but the dollar appreciates by 11.1% against the euro (1.20 / 1.08 − 1). It is the same logic as recovering after a fall."
+    },
+    {
+     "h": "Basis points and rates",
+     "body": "1 bp = 0.01% = 0.0001. 100 bps = 1 pp.\n\n- **Interest**: 25 bps on EUR 400m = 400 × 0.0025 = **EUR 1m** a year. Trick: 1 bp on 100m is worth 10k, so 25 bps on 400m = 25 × 4 × 10k = 1,000k = 1m.\n- **Fees**: a 1.5% fee on a EUR 80m deal = EUR 1.2m = 150 bps.\n- **Spread**: Euribor + 350 bps with Euribor at 3.0% = a rate of 6.5%.\n- **Bond price**: % change in price ≈ −modified duration × change in yield. Duration 6 and yields +50 bps: price about −3%.\n- **Margin**: from 22.5% to 21.8% = −70 bps."
+    },
+    {
+     "h": "How to answer out loud in an interview",
+     "body": "Mental arithmetic in an interview is also communication:\n\n1. **Repeat the data**: \"So EBITDA of 120 at 8.5x\".\n2. **Announce the method**: \"8x is 960, plus half a turn is 60\".\n3. **Give the number with its unit**: \"so about 1.02 billion of EV\".\n4. **Do the sanity check out loud** if the number is surprising: \"at a 25% margin that's roughly 2x sales, which looks reasonable\".\n\nA stated approximation (\"about 21%\") in 5 seconds is better than an exact number after 30 seconds of silence. If you make a mistake and notice it, correct it straight away: it shows control."
+    }
+   ],
+   "examples": [
+    {
+     "q": "Revenue grows by 10% and the EBITDA margin expands from 20% to 22%. By what percentage does EBITDA grow?",
+     "steps": [
+      "EBITDA = Revenue × Margin, so the multipliers multiply.",
+      "Revenue multiplier: 1.10. Margin multiplier: 22 / 20 = 1.10.",
+      "1.10 × 1.10 = 1.21, so EBITDA +21%.",
+      "Trap: adding 10% + 2 pp = 12%, confusing margin points with relative growth."
+     ],
+     "answer": "+21%"
+    },
+    {
+     "q": "A target has EBITDA of EUR 85m and is valued at 9.0x EV/EBITDA. Net debt is EUR 215m and there are 50m shares outstanding. What is the implied value per share?",
+     "steps": [
+      "EV = 9 × 85 = 765 EUR m (9 × 80 = 720, plus 9 × 5 = 45).",
+      "Equity value = EV − net debt = 765 − 215 = 550 EUR m.",
+      "Value per share = 550 / 50 = EUR 11.0.",
+      "Trap: dividing the EV by the shares (765 / 50 = 15.3), forgetting the net debt."
+     ],
+     "answer": "EUR 11.0 per share"
+    },
+    {
+     "q": "A US subsidiary reported revenue of USD 540m in both 2023 and 2024. The average EUR/USD rate moved from 1.08 to 1.20. What was the change in revenue as reported in EUR?",
+     "steps": [
+      "From USD to EUR you divide by the rate.",
+      "2023: 540 / 1.08 = 500 EUR m. 2024: 540 / 1.20 = 450 EUR m.",
+      "Change: 450 / 500 − 1 = −10%.",
+      "Trap: multiplying by the rate (583.2 and 648, i.e. +11.1%) or thinking that revenue unchanged in USD also gives 0% in EUR."
+     ],
+     "answer": "−10% (from EUR 500m to EUR 450m)"
+    },
+    {
+     "q": "A EUR 400m term loan is repriced from Euribor + 375 bps to Euribor + 325 bps. What is the annual interest saving?",
+     "steps": [
+      "Spread reduction: 375 − 325 = 50 bps = 0.50%.",
+      "1 bp on 100m is worth 10k a year, so on 400m it is worth 40k.",
+      "50 × 40k = 2,000k = EUR 2m a year.",
+      "Check: 400 × 0.005 = 2."
+     ],
+     "answer": "EUR 2m a year"
+    }
+   ],
+   "cheatsheet": [
+    "Margin = Metric / Revenue; changes in margin are expressed in bps.",
+    "EBITDA growth = (1 + g revenue) × (new margin / old margin) − 1.",
+    "Two changes a and b together: a + b + a × b.",
+    "EV = multiple × EBITDA; Equity = EV − net debt; price = Equity / shares.",
+    "EV/Sales = EV/EBITDA × EBITDA margin; earnings yield = 1 / P/E.",
+    "All-stock: accretive if acquirer P/E > P/E paid. Cash or debt: accretive if after-tax cost < 1 / P/E paid.",
+    "EUR/USD 1.08: from EUR to USD × 1.08, from USD to EUR ÷ 1.08.",
+    "1 bp on 100m = 10k a year; 100 bps = 1 pp.",
+    "Bond: % change in price ≈ −modified duration × change in yield (duration 6, +50 bps: −3%)."
+   ]
+  }
+ ]
 }
