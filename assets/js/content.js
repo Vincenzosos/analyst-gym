@@ -17,6 +17,8 @@ export const SKILLS = [
   { id: 'fin-val', name: 'Valuation', short: 'Valuation', group: 'Technical', code: 'VAL' },
   { id: 'fin-ma', name: 'M&A', short: 'M&A', group: 'Technical', code: 'M&A' },
   { id: 'fin-lbo', name: 'LBO', short: 'LBO', group: 'Technical', code: 'LBO' },
+  { id: 'fin-ecm', name: 'Capital markets (ECM, DCM, LevFin)', short: 'Capital markets', group: 'Technical', code: 'ECM' },
+  { id: 'fin-tmt', name: 'Tech & semiconductors (TMT)', short: 'TMT', group: 'Technical', code: 'TMT' },
   { id: 'markets', name: 'Markets', short: 'Markets', group: 'Technical', code: 'MKT' },
   { id: 'culture', name: 'General knowledge', short: 'General knowledge', group: 'Culture and current affairs', code: 'CUL' },
   { id: 'commercial', name: 'Commercial awareness', short: 'Commercial', group: 'Culture and current affairs', code: 'COM' },
@@ -27,8 +29,8 @@ export const SKILL = Object.fromEntries(SKILLS.map(s => [s.id, s]));
 export const LESSON_SKILLS = { workstyle: { name: 'Work-style questionnaires', code: 'WRK' } };
 
 const PACKS = {
-  lessons: ['lessons-quant', 'lessons-reasoning', 'lessons-people', 'lessons-finance', 'lessons-culture'],
-  banks: ['bank-numerical', 'bank-verbal', 'bank-logic', 'bank-sjt', 'bank-fin-a', 'bank-fin-b', 'bank-behavioural', 'bank-culture'],
+  lessons: ['lessons-quant', 'lessons-reasoning', 'lessons-people', 'lessons-finance', 'lessons-tech', 'lessons-culture'],
+  banks: ['bank-numerical', 'bank-verbal', 'bank-logic', 'bank-sjt', 'bank-fin-a', 'bank-fin-b', 'bank-fin-c', 'bank-fin-e', 'bank-behavioural', 'bank-technicals', 'bank-culture'],
 };
 
 const OPTIONAL = new Set(['lessons-culture', 'bank-culture']);

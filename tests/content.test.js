@@ -8,7 +8,7 @@ const files = staging
   ? fs.readdirSync(path.join(ROOT, 'staging')).filter(f => f.endsWith('.json')).map(f => path.join(ROOT, 'staging', f))
   : [...fs.readdirSync(path.join(ROOT, 'lessons')).map(f => path.join(ROOT, 'lessons', f)), ...fs.readdirSync(path.join(ROOT, 'banks')).map(f => path.join(ROOT, 'banks', f)), path.join(ROOT, 'news', 'concepts.json')].filter(f => f.endsWith('.json') && fs.existsSync(f));
 
-const SKILLS = new Set(['numerical', 'mental', 'verbal', 'logical', 'inductive', 'sjt', 'fin-acc', 'fin-val', 'fin-ma', 'fin-lbo', 'markets', 'commercial', 'behavioural', 'workstyle', 'culture']);
+const SKILLS = new Set(['numerical', 'mental', 'verbal', 'logical', 'inductive', 'sjt', 'fin-acc', 'fin-val', 'fin-ma', 'fin-lbo', 'fin-ecm', 'fin-tmt', 'markets', 'commercial', 'behavioural', 'workstyle', 'culture']);
 const CONCEPT_SKILLS = new Set(['markets', 'commercial', 'culture']);
 let errors = 0, warns = 0;
 const ids = new Set();

@@ -4,13 +4,13 @@ import { content } from '../content.js';
 import { load, upsert, remove, logAttempt, logSession } from '../store.js';
 import { go, pageHead, tabs as tabBar } from './common.js';
 
-const CATS = [['all', 'All'], ['motivation', 'Motivation'], ['competency', 'Competencies'], ['strengths', 'Strengths'], ['banking-specific', 'Banking'], ['technical-explain', 'Explain a concept'], ['curveball', 'Curveball']];
+const CATS = [['all', 'All'], ['motivation', 'Motivation'], ['competency', 'Competencies'], ['strengths', 'Strengths'], ['banking-specific', 'Banking'], ['technical-explain', 'Technicals'], ['curveball', 'Curveball']];
 const COMPS = ['teamwork', 'leadership', 'conflict', 'failure', 'pressure', 'detail', 'persuasion', 'initiative', 'ethics', 'adaptability', 'client', 'analytical'];
 
 export function interviewView(root, sub, q) {
   if (sub === 'commercial') { go('#/news/notes'); return; }
   const cur = ['stories', 'video'].includes(sub) ? sub : 'questions';
-  root.append(pageHead({ kicker: 'Interviews', title: 'Speak like', accent: 'an analyst', sub: '80 questions with a structure and an answer skeleton, your STAR stories, and the video room for HireVue and Sonru.' }));
+  root.append(pageHead({ kicker: 'Interviews', title: 'Speak like', accent: 'an analyst', sub: `${content().behavioural.length} questions with a structure and an answer skeleton (technicals included), your STAR stories, and the video room for HireVue and Sonru.` }));
   root.append(tabBar([['questions', 'Questions', '#/interviews'], ['stories', 'My stories (STAR)', '#/interviews/stories'], ['video', 'Video room', '#/interviews/video']], cur));
   if (cur === 'stories') return stories(root);
   if (cur === 'video') return videoRoom(root, { questionId: q.q });

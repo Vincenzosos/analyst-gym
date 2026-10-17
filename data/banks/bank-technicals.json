@@ -1,0 +1,1241 @@
+{
+ "questions": [
+  {
+   "id": "tec-001",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "Walk me through the three statements when a company writes down inventory by 10, with a 25% tax rate.",
+   "tests": "Whether you can follow a non-cash charge that, unlike depreciation, sits above EBITDA, and whether you see why write-downs matter in a cyclical sector such as semiconductors.",
+   "structure": [
+    "Income statement: cost of sales +10 (or a separate write-down line), so pre-tax income -10, tax -2.5, net income -7.5",
+    "Cash flow statement: net income -7.5, add back the 10 as a non-cash charge, so cash +2.5",
+    "Balance sheet: inventory -10 and cash +2.5, so assets -7.5; retained earnings -7.5, so it balances",
+    "Key difference from depreciation: the charge sits above EBITDA, so EBITDA also falls by 10",
+    "Close with the analyst's angle: in a downturn, check whether 'adjusted' EBITDA excludes write-downs that recur every cycle"
+   ],
+   "good": [
+    "Correct numbers with the tax effect, in the order income statement, cash flow statement, balance sheet",
+    "Pointing out that the write-down reduces EBITDA, unlike depreciation and amortisation",
+    "Knowing the rule: lower of cost and net realisable value, with reversals allowed under IFRS but not under US GAAP",
+    "Linking it to the chip cycle: rising inventory days often come before write-downs"
+   ],
+   "pitfalls": [
+    "Saying cash falls by 10: no cash leaves the business when inventory is written down",
+    "Forgetting the tax effect, or placing the charge below EBITDA",
+    "Accepting management's 'one-off' label without checking how often write-downs recur"
+   ],
+   "skeleton": "On the income statement, [cost of sales rises by 10, so pre-tax income falls by 10; at 25% tax, net income falls by 7.5]. On the cash flow statement, [net income is down 7.5, but I add back the 10 because the write-down is non-cash, so cash rises by 2.5]. On the balance sheet, [inventory falls by 10 and cash rises by 2.5, so assets fall by 7.5, matched by retained earnings down 7.5]. Unlike depreciation, [the charge sits above EBITDA, so EBITDA falls by the full 10]. In [a chip downturn], I would check [whether 'adjusted' EBITDA strips out write-downs that recur every cycle].",
+   "explanation": {
+    "steps": [
+     "Income statement: the write-down of 10 usually goes through cost of sales, so pre-tax income falls by 10, tax by 10 × 25% = 2.5 and net income by 7.5.",
+     "Cash flow statement: -7.5 + 10 = +2.5, assuming the loss is deductible for tax now; if it is deductible only when the stock is sold or scrapped, a deferred tax asset of 2.5 appears instead and cash is unchanged.",
+     "Balance sheet: inventory -10 and cash +2.5, so assets -7.5; retained earnings -7.5. It balances."
+    ],
+    "shortcut": "Same cash effect as depreciation (10 × 25% = +2.5), but EBITDA falls by the full 10.",
+    "trap": "Treating the write-down like depreciation for EBITDA purposes: it sits in cost of sales, above EBITDA.",
+    "rule": "A tax-deductible non-cash charge raises cash by charge × tax rate; where it sits decides whether EBITDA moves."
+   },
+   "time": 60,
+   "tags": [
+    "three-statements",
+    "inventory",
+    "fin-acc"
+   ]
+  },
+  {
+   "id": "tec-002",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "A company borrows 100 to buy equipment. Walk me through the three statements at purchase and after one year, with depreciation of 10, interest at 5% and a 25% tax rate.",
+   "tests": "Whether you can separate an investing flow from a financing flow, then follow depreciation and interest through all three statements with the right tax effects.",
+   "structure": [
+    "At purchase, income statement: no impact, because buying an asset is not an expense",
+    "At purchase, cash flow statement and balance sheet: capex -100 in investing and debt +100 in financing, so cash is unchanged; PP&E +100 and debt +100",
+    "After one year, income statement: depreciation 10 plus interest 5, so pre-tax income -15, tax -3.75, net income -11.25",
+    "Cash flow statement and balance sheet, with no repayment: net income -11.25 plus depreciation 10, so cash -1.25; PP&E -10 and cash -1.25 against retained earnings -11.25",
+    "Close with the credit angle: net debt rises by 100 on day one, so leverage improves only if the equipment lifts EBITDA"
+   ],
+   "good": [
+    "Clear split between the day-one effect and the year-one effect",
+    "Correct numbers, including the tax saving on both depreciation and interest",
+    "A comment on leverage, interest cover and the return the equipment must earn"
+   ],
+   "pitfalls": [
+    "Putting the purchase through the income statement",
+    "Adding back interest on the cash flow statement: unlike depreciation, interest is paid in cash",
+    "Saying nothing appears on the cash flow statement at purchase because capex and borrowing net to zero"
+   ],
+   "skeleton": "At purchase, [nothing hits the income statement: buying equipment is not an expense]. The cash flow statement shows [capex of 100 in investing and new debt of 100 in financing, so cash is unchanged], and the balance sheet [PP&E and debt both up 100]. After a year, [depreciation of 10 and interest of 5 cut pre-tax income by 15; at 25% tax, net income falls by 11.25]. Cash [falls 1.25, as depreciation is non-cash]. The balance sheet [loses 10 of PP&E and 1.25 of cash, against retained earnings down 11.25]. For lenders, [net debt is up 100, so the equipment must lift EBITDA].",
+   "explanation": {
+    "steps": [
+     "Day one: investing -100, financing +100, net change in cash 0. Balance sheet: PP&E +100, debt +100. Nothing on the income statement.",
+     "Year one: pre-tax income -10 - 5 = -15; tax -15 × 25% = -3.75; net income -11.25.",
+     "Cash: -11.25 + 10 = -1.25, which is the after-tax interest of 3.75 less the depreciation tax saving of 2.5. Balance sheet: assets -10 - 1.25 = -11.25, equity -11.25."
+    ],
+    "shortcut": "Year-one cash effect = -interest × (1 - t) + depreciation × t = -3.75 + 2.5 = -1.25.",
+    "trap": "Saying cash falls by 15: depreciation is non-cash, and both expenses reduce tax.",
+    "rule": "Buying an asset moves the balance sheet and the cash flow statement; only depreciation and interest reach the income statement."
+   },
+   "time": 75,
+   "tags": [
+    "three-statements",
+    "capex",
+    "fin-acc"
+   ]
+  },
+  {
+   "id": "tec-003",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "How does IFRS 16 affect EBITDA, net debt and leverage, and how do you keep comps consistent?",
+   "tests": "Whether you know how lease accounting changes the reported numbers, and whether you keep enterprise value and EBITDA on the same basis when comparing companies.",
+   "structure": [
+    "Open with the mechanics: most leases now create a right-of-use asset and a lease liability on the balance sheet",
+    "Income statement: the rent is replaced by depreciation and interest, so EBITDA rises, EBIT rises slightly and net income is lower in the early years",
+    "Cash flow statement: total cash is unchanged, but the principal part of the payments moves to financing, so operating cash flow looks higher",
+    "Leverage: net debt rises by the lease liability and EBITDA by the rent, so net debt / EBITDA usually rises for lease-heavy companies",
+    "Consistency: either lease liabilities in EV with post-IFRS 16 EBITDA, or neither, using EBITDA after rent; adjust US GAAP peers, whose operating lease cost stays in EBITDA"
+   ],
+   "good": [
+    "The right direction for every metric: EBITDA up, operating cash flow up, net debt up",
+    "A numerical example of the effect on leverage",
+    "The consistency rule between EV and EBITDA, and the US GAAP difference for transatlantic comps"
+   ],
+   "pitfalls": [
+    "Saying IFRS 16 changes the company's cash generation",
+    "Comparing post-IFRS 16 EBITDA with an EV that excludes lease liabilities",
+    "Assuming leverage always falls because EBITDA goes up"
+   ],
+   "skeleton": "Under IFRS 16, [most leases go on the balance sheet as a right-of-use asset and a lease liability]. The rent [is replaced by depreciation and interest], so [EBITDA rises, EBIT rises slightly and net income is lower in the early years]. Cash is unchanged, but [principal repayments move to financing, flattering operating cash flow]. Net debt [rises by the lease liability], so leverage usually rises: [300 of debt on 100 of EBITDA becomes 450 on 120, so 3.0x becomes 3.75x]. For comps, [I either include leases in EV and use post-IFRS 16 EBITDA, or exclude both], and [I adjust US GAAP peers].",
+   "explanation": {
+    "steps": [
+     "Example: rent of 20 a year and a lease liability of 150. Before IFRS 16: debt 300, EBITDA 100, leverage 3.0x.",
+     "After IFRS 16: EBITDA 100 + 20 = 120; debt 300 + 150 = 450; leverage 450 / 120 = 3.75x. Both rise, but debt rises proportionally more.",
+     "Under US GAAP, operating leases are also on the balance sheet, but the lease cost stays in operating expenses, so EBITDA does not rise: adjust before comparing with IFRS peers."
+    ],
+    "shortcut": "EBITDA up by the rent, net debt up by the liability, cash unchanged: keep EV and EBITDA on the same lease basis.",
+    "trap": "Dividing an EV that excludes lease liabilities by post-IFRS 16 EBITDA: the multiple looks artificially low.",
+    "rule": "If lease liabilities are in EV, use EBITDA before rent; if they are not, use EBITDA after rent."
+   },
+   "time": 90,
+   "tags": [
+    "ifrs-16",
+    "leases",
+    "fin-acc"
+   ]
+  },
+  {
+   "id": "tec-004",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "How does stock-based compensation flow through the statements, and should you add it back in a valuation?",
+   "tests": "Whether you understand that stock-based compensation is non-cash but a real cost to shareholders, and whether you treat it consistently in a DCF and in comps, which matters a great deal for tech companies.",
+   "structure": [
+    "Income statement: the grant-date fair value is expensed over the vesting period, reducing EBIT and net income",
+    "Cash flow statement: added back as a non-cash charge, which flatters operating cash flow",
+    "Balance sheet: for equity-settled awards, equity reserves rise by as much as retained earnings fall, so total equity is unchanged",
+    "Valuation: it is a real cost paid in shares, so either treat it as a cash expense or count the future dilution, never neither",
+    "Close with comps: many tech peers report EBITDA excluding it, so put every company on the same basis"
+   ],
+   "good": [
+    "The distinction between non-cash and costless",
+    "A consistent rule for the DCF: expense it, or add it back and model the dilution",
+    "Awareness of how large it can be relative to revenue at tech companies",
+    "Mentioning the diluted share count for awards already granted"
+   ],
+   "pitfalls": [
+    "Adding it back to EBITDA and free cash flow while using today's share count",
+    "Saying it has no economic cost because no cash leaves the business",
+    "Comparing adjusted EBITDA for one peer with reported EBITDA for another"
+   ],
+   "skeleton": "Stock-based compensation [is expensed at grant-date fair value over the vesting period, reducing EBIT and net income]. The cash flow statement [adds it back as non-cash], and on the balance sheet [equity reserves rise by as much as retained earnings fall]. But non-cash is not free: [staff are paid in shares instead of cash, diluting existing shareholders]. In a DCF, [I treat it as a cash cost, or add it back and model the extra shares], but never [add it back and ignore the dilution]. For comps, [many tech peers exclude it from 'adjusted' EBITDA], so [I put every company on the same basis].",
+   "explanation": {
+    "steps": [
+     "Example: free cash flow of 100 after adding back 20 of stock-based compensation. Had the company paid the same staff in cash, free cash flow would be 80.",
+     "Adding back the 20 and using today's share count values the company as if that staff cost did not exist, overstating value by roughly the present value of 20 a year.",
+     "Consistent options: deduct it like a cash cost, or keep the add-back and include the shares expected to be issued. For awards already granted, include RSUs and in-the-money options (treasury stock method) in the diluted share count."
+    ],
+    "shortcut": "Non-cash is not costless: expense it or dilute for it, but always do one of the two.",
+    "trap": "Adding back stock-based compensation in free cash flow and ignoring dilution: the cost vanishes from the valuation.",
+    "rule": "Every cost of paying employees, in cash or in shares, must appear somewhere in the valuation."
+   },
+   "time": 75,
+   "tags": [
+    "sbc",
+    "fin-acc",
+    "fin-val"
+   ]
+  },
+  {
+   "id": "tec-005",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "A software company bills and collects 120 upfront for a 12-month subscription. Walk me through the statements and tell me why deferred revenue matters.",
+   "tests": "Whether you can separate billing, cash and revenue in a subscription model, and whether you understand the role of deferred revenue in working capital and in M&A negotiations.",
+   "structure": [
+    "At billing: cash +120 and deferred revenue, a liability, +120; no revenue yet",
+    "Each month: 10 of revenue is recognised and deferred revenue falls by 10, so after three months revenue is 30 and the liability 90",
+    "Cash flow statement: the increase in deferred revenue is a working capital inflow, so cash runs ahead of profit",
+    "Why it matters: growing subscription businesses are partly funded by their customers, so free cash flow can exceed EBITDA",
+    "Close with M&A: buyer and seller often argue over whether deferred revenue is debt-like or normal working capital"
+   ],
+   "good": [
+    "A clear distinction between billings, cash collected and revenue recognised",
+    "A correct balance sheet after part of the period",
+    "Linking deferred revenue to negative working capital and strong cash conversion",
+    "Knowing why buyers may treat part of it as debt-like in the equity bridge"
+   ],
+   "pitfalls": [
+    "Recognising the full 120 as revenue on the day of billing",
+    "Calling deferred revenue an asset",
+    "Treating a growing deferred revenue balance as free cash with no obligation attached"
+   ],
+   "skeleton": "When the company [bills and collects 120 upfront], cash and deferred revenue, [a liability], both rise by 120, but [there is no revenue yet]. Each month, [10 is recognised as revenue and the liability falls by 10]. After three months, ignoring costs and tax, [revenue is 30, deferred revenue 90 and cash still up 120]: on the cash flow statement, [net income of 30 plus the 90 increase in deferred revenue]. It matters because [growing subscription businesses are partly funded by their customers, so cash conversion is strong]. In M&A, [buyers may argue it is debt-like, because the service still has to be delivered].",
+   "explanation": {
+    "steps": [
+     "Day one: cash +120, deferred revenue +120. The balance sheet balances with no effect on the income statement.",
+     "After three months, ignoring costs and tax: revenue 30, net income 30. Balance sheet: cash +120 = deferred revenue 90 + retained earnings 30.",
+     "Cash flow statement: net income 30 + increase in deferred revenue 90 = operating cash flow of 120."
+    ],
+    "shortcut": "Cash when billed and collected, revenue when delivered: deferred revenue is the gap between the two.",
+    "trap": "Booking billings as revenue: under IFRS 15, revenue follows delivery of the service, not the invoice.",
+    "rule": "Deferred revenue is an obligation to deliver, so it is a liability that funds working capital."
+   },
+   "time": 75,
+   "tags": [
+    "deferred-revenue",
+    "saas",
+    "fin-acc"
+   ]
+  },
+  {
+   "id": "tec-006",
+   "category": "technical-explain",
+   "level": 1,
+   "q": "How do you choose a set of comparable companies?",
+   "tests": "Whether you select peers with judgement, on business model, end markets and financial profile rather than on the industry label, and whether you know how to clean the numbers.",
+   "structure": [
+    "Open with the principle: a peer should share the drivers of value, meaning growth, margins and risk, not just the sector label",
+    "Screen on business model and end markets, for example fabless design versus manufacturing, automotive versus consumer",
+    "Refine on size, growth, margins, capital intensity and geography, accepting a smaller but more relevant set",
+    "Clean the numbers: calendarise to the same year end, use forward estimates, strip out one-offs and align accounting (IFRS 16, stock-based compensation)",
+    "Close by tiering the set into core and wider peers, and explaining any outliers you exclude"
+   ],
+   "good": [
+    "A tiered set with a clear rationale for each peer",
+    "A sector example that shows judgement: a fabless designer is not a fab",
+    "Calendarisation and accounting alignment"
+   ],
+   "pitfalls": [
+    "Picking peers only by industry classification",
+    "Including fifteen loose peers instead of five relevant ones",
+    "Mixing trailing and forward multiples, or different financial years"
+   ],
+   "skeleton": "I start from [what drives value: growth, margins and risk], not [the sector label]. So for [a fabless chip designer selling into automotive], I would screen for [other fabless designers with similar end markets] rather than [manufacturers that own fabs, whose capital intensity is very different]. Then I refine on [size, growth, margins and geography], accepting [five relevant peers over fifteen loose ones]. I clean the numbers: [calendarise to the same year end, use forward estimates, strip out one-offs and align IFRS 16 and stock-based compensation]. Finally, I [tier the set into core and wider peers] and [explain any outlier I exclude].",
+   "explanation": {
+    "steps": [
+     "Calendarisation: for a company with a March year end, calendar year N = 0.25 × the financial year ending March N + 0.75 × the financial year ending March N+1.",
+     "Judgement: a fabless designer outsources manufacturing, so its capex is low and EV/EBITDA is meaningful; a manufacturer with its own fabs has heavy capex, so EV/EBIT is a fairer comparison.",
+     "Outliers: show mean and median, and exclude explicitly, with a reason, any peer distorted by M&A, a one-off or a very different growth rate."
+    ],
+    "shortcut": "Same value drivers, same accounting basis, same period.",
+    "trap": "Choosing peers by industry code: two 'semiconductor' companies can have completely different business models.",
+    "rule": "A comparable is a company with the same drivers of value, not the same label."
+   },
+   "time": 75,
+   "tags": [
+    "comps",
+    "multiples",
+    "fin-val"
+   ]
+  },
+  {
+   "id": "tec-007",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "Two companies in the same sector trade at very different EV/EBITDA multiples. Why might that be?",
+   "tests": "Whether you can link a multiple to its fundamentals (growth, returns on capital and risk) and spot the technical reasons, such as capital intensity and accounting, that distort the comparison.",
+   "structure": [
+    "Open with the logic: a multiple is a shortcut for a DCF, so it rises with growth and returns on capital and falls with risk",
+    "Growth and returns: faster growth, or growth that needs less reinvestment, deserves a higher multiple",
+    "Risk: cyclicality, customer concentration, leverage, size and liquidity of the shares",
+    "Technical reasons: capital intensity (EBITDA ignores capex), accounting differences, one-offs, a different point in the cycle",
+    "Close with other factors: market position, management credibility, takeover speculation and listing venue"
+   ],
+   "good": [
+    "Linking the multiple to the value driver formula: growth, return on capital, cost of capital",
+    "Separating fundamental reasons from technical distortions",
+    "A sector example, such as a capex-heavy manufacturer against an asset-light designer"
+   ],
+   "pitfalls": [
+    "Concluding that the cheaper company is undervalued without checking why",
+    "Listing reasons without structure",
+    "Forgetting that EBITDA ignores capex, so capital intensity alone can explain the gap"
+   ],
+   "skeleton": "A multiple is [a shortcut for a DCF], so it should be higher for [faster growth, higher returns on capital and lower risk]. First, [growth and returns: a company that grows without heavy reinvestment deserves more]. Second, [risk: cyclicality, customer concentration, leverage, and small or illiquid shares]. Third, [technical distortions: EBITDA ignores capex, so a capex-heavy manufacturer looks cheaper than an asset-light designer; accounting differences and one-offs; and where each company is in the cycle]. Finally, [market position, management credibility, takeover speculation and listing venue]. So before calling the cheaper one undervalued, [I check which of these explains the gap].",
+   "explanation": {
+    "steps": [
+     "Value driver formula: EV / NOPAT = (1 - g / ROIC) / (WACC - g). With g = 3%, WACC = 9% and ROIC = 15%: (1 - 0.2) / 0.06 = 13.3x.",
+     "Same growth and WACC with ROIC = 30%: (1 - 0.1) / 0.06 = 15.0x. Higher returns mean less reinvestment for the same growth, so a higher multiple.",
+     "Capital intensity: two companies with EBITDA of 100, one with capex of 10 and one with capex of 50, generate very different cash, so their EV/EBITDA multiples should differ."
+    ],
+    "shortcut": "Growth, returns, risk, then accounting and capex: check all of them before calling anything cheap.",
+    "trap": "Assuming the lower multiple is a buying opportunity: it usually reflects lower growth, higher risk or heavier capex.",
+    "rule": "A multiple is a compressed DCF: it rises with growth and returns on capital, and falls with risk."
+   },
+   "time": 75,
+   "tags": [
+    "multiples",
+    "fin-val"
+   ]
+  },
+  {
+   "id": "tec-008",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "Why do acquirers pay a control premium, and how do you judge whether it is justified?",
+   "tests": "Whether you understand what control is worth, how the premium is measured, and the link between the premium paid and the synergies the acquirer must deliver.",
+   "structure": [
+    "Open with the definition: the premium over the undisturbed share price, before any leak or rumour",
+    "Why buyers pay it: control over strategy, cash flows and capital structure, synergies, and competition from other bidders",
+    "How it is measured: against the undisturbed price and 30, 60 or 90-day volume-weighted averages, cross-checked with premiums in precedent transactions",
+    "When it is justified: the present value of synergies, net of integration costs, must exceed the premium",
+    "Close with the link to valuation: precedent multiples include the premium, so they sit above trading multiples"
+   ],
+   "good": [
+    "Using the undisturbed price, not the price after rumours",
+    "The value test: net synergies against the premium",
+    "Explaining why precedent transactions sit above trading comps"
+   ],
+   "pitfalls": [
+    "Quoting a 'standard' premium as if it applied to every deal",
+    "Measuring the premium against a share price already inflated by rumours",
+    "Forgetting that the target's shareholders pocket the premium, while the acquirer carries the risk of delivering the synergies"
+   ],
+   "skeleton": "A control premium is [what a buyer pays above the undisturbed share price], and it buys [control of strategy, cash flows and the balance sheet, and with it the synergies]. I would measure it [against the undisturbed price and the 30, 60 and 90-day volume-weighted averages], and cross-check it [with premiums in comparable precedents]. It is justified only if [the present value of synergies, net of integration costs, exceeds the premium]. For example, [paying a premium of 300 for net synergies worth 250 transfers 50 of value from the acquirer's shareholders to the target's]. That is also why [precedent multiples sit above trading multiples].",
+   "explanation": {
+    "steps": [
+     "Measurement: an offer of 13 per share against an undisturbed price of 10 is a premium of 3 / 10 = 30%; against a price of 12 already inflated by rumours, it would look like only about 8%.",
+     "Value test: a target worth 1,000 at the undisturbed price and a 30% premium means 300 paid for control. Net synergies worth 250 in present value mean the acquirer's shareholders lose about 50.",
+     "Valuation link: precedent multiples include premiums, so they are higher than trading multiples and should not be used to value a minority stake."
+    ],
+    "shortcut": "Premium against the undisturbed price; justified only if net synergies exceed it.",
+    "trap": "Measuring the premium against a price already inflated by bid speculation, which makes it look smaller than it is.",
+    "rule": "The acquirer creates value only if the synergies it gains exceed the premium and costs it pays."
+   },
+   "time": 75,
+   "tags": [
+    "control-premium",
+    "fin-ma",
+    "fin-val"
+   ]
+  },
+  {
+   "id": "tec-009",
+   "category": "technical-explain",
+   "level": 3,
+   "q": "Most of your DCF value sits in the terminal value. How do you check it is reasonable?",
+   "tests": "Whether you can stress-test the most important assumption in a DCF, with cross-checks between methods and a steady-state final year, rather than accepting the output.",
+   "structure": [
+    "Open by acknowledging the issue: the terminal value often drives most of the value, so it deserves the most scrutiny",
+    "Cross-check the methods: the exit multiple implied by the perpetuity growth method, and the growth rate implied by the exit multiple method",
+    "Check the growth rate: no higher than long-run nominal growth of the economy and currency",
+    "Check that the final year is a steady state: normalised margins, reinvestment consistent with growth, mid-cycle rather than peak for a cyclical such as semiconductors",
+    "Close with the terminal value's share of EV and a sensitivity table on WACC and growth or exit multiple"
+   ],
+   "good": [
+    "The two-way cross-check, with numbers",
+    "Consistency between growth and reinvestment: growth = reinvestment rate × return on capital",
+    "Mid-cycle margins for a cyclical business",
+    "A sensitivity table rather than a single point"
+   ],
+   "pitfalls": [
+    "Applying today's peak multiple as the exit multiple",
+    "A terminal growth rate above long-run nominal GDP growth",
+    "A final year with capex below depreciation while the business is still growing"
+   ],
+   "skeleton": "First, I [cross-check the two methods: if perpetuity growth implies an exit multiple far above the sector's long-run range, or the exit multiple implies growth of 4 to 5% forever, something is wrong]. Second, [growth should not exceed long-run nominal growth of the economy]. Third, [the final year must be a steady state: normalised margins, capex above depreciation if the business is still growing and, for a chip company, mid-cycle rather than peak margins]. Fourth, [growth must match reinvestment: growth equals the reinvestment rate times the return on capital]. Finally, [I show the terminal value's share of EV and a sensitivity table].",
+   "explanation": {
+    "steps": [
+     "Perpetuity growth: final-year FCF 100, g = 2%, WACC = 9%. TV = 100 × 1.02 / 0.07 = 1,457. With final-year EBITDA of 180, the implied exit multiple is 1,457 / 180 = 8.1x.",
+     "Exit multiple: 12x EBITDA of 180 = 2,160. Implied growth g = (TV × WACC - FCF) / (TV + FCF) = (194.4 - 100) / 2,260 = 4.2%, well above long-run nominal growth: the multiple is too generous.",
+     "Reinvestment: growth of 2% with a return on capital of 10% requires reinvesting 2% / 10% = 20% of NOPAT; a final year with almost no net reinvestment cannot support that growth."
+    ],
+    "shortcut": "Cross-check both ways: the multiple implied by the growth rate, and the growth rate implied by the multiple.",
+    "trap": "Using today's multiple at the top of the cycle as the exit multiple: it bakes peak conditions into perpetuity.",
+    "rule": "The terminal year must describe a business that can sustain itself forever: normal margins, normal reinvestment, modest growth."
+   },
+   "time": 90,
+   "tags": [
+    "dcf",
+    "terminal-value",
+    "fin-val"
+   ]
+  },
+  {
+   "id": "tec-010",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "Why do you unlever and relever beta, and how do you do it?",
+   "tests": "Whether you understand that an observed beta mixes business risk with financial risk, and whether you can apply the formulas correctly to get a cost of equity for the target's own capital structure.",
+   "structure": [
+    "Open with the reason: peers' observed betas reflect their own leverage, so they are not comparable as they stand",
+    "Unlever each peer: unlevered beta = levered beta / (1 + (1 - t) × D/E), using market values",
+    "Take the median of the unlevered betas as the business risk of the sector",
+    "Relever at the target's capital structure: levered beta = unlevered beta × (1 + (1 - t) × D/E), then use it in the CAPM",
+    "Close with the practical points: target or long-term D/E, net debt for cash-rich tech companies, noisy regressions"
+   ],
+   "good": [
+    "Correct formulas in both directions",
+    "Market values and a target capital structure",
+    "Explaining why a private company needs peers' betas at all"
+   ],
+   "pitfalls": [
+    "Averaging peers' levered betas without unlevering them",
+    "Using the book value of equity in D/E",
+    "Relevering at the peers' D/E instead of the target's"
+   ],
+   "skeleton": "An observed beta captures [business risk plus the extra risk from leverage]. Peers have [different capital structures], so I [unlever each one: divide the levered beta by one plus D/E times one minus the tax rate, at market values]. I take [the median] as [the sector's business risk], then relever it at [the target's own or long-term D/E]. For example, [a beta of 1.3 with D/E of 0.25 and 25% tax unlevers to about 1.1; relevered at D/E of 0.5, it becomes about 1.5]. That feeds [the CAPM]. For [a private company], [there is no observed beta at all, so peers are the only route].",
+   "explanation": {
+    "steps": [
+     "Unlever, assuming the debt carries no market risk: 1.3 / (1 + 0.75 × 0.25) = 1.3 / 1.1875 = 1.095.",
+     "Relever at D/E of 0.5: 1.095 × (1 + 0.75 × 0.5) = 1.095 × 1.375 = 1.51.",
+     "Cash-rich tech companies: with net debt, D/E can be negative, so the unlevered beta comes out above the levered one. That is logical: cash carries almost no risk and dampens the equity beta."
+    ],
+    "shortcut": "Unlever with each peer's D/E, relever with the target's: levered beta = unlevered beta × (1 + (1 - t) × D/E).",
+    "trap": "Averaging levered betas: the peers' financial risk ends up in the target's cost of equity.",
+    "rule": "Strip out each peer's leverage, then add back the target's own."
+   },
+   "time": 75,
+   "tags": [
+    "beta",
+    "wacc",
+    "fin-val"
+   ]
+  },
+  {
+   "id": "tec-011",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "How do higher interest rates affect valuations, and why do growth companies tend to suffer more?",
+   "tests": "Whether you understand the mechanism (discount rate, duration of cash flows, cost of financing) and its nuances, rather than simply repeating that higher rates are bad for equities.",
+   "structure": [
+    "Open with the mechanism: the risk-free rate feeds the cost of equity and the cost of debt, so the WACC rises and present values fall",
+    "Duration: the further away the cash flows, the bigger the effect, so long-duration growth stocks fall more than mature cash generators",
+    "Terminal value: the multiple 1 / (WACC - g) is very sensitive when the gap between WACC and growth is narrow",
+    "Financing: higher rates cut what LBO sponsors can pay and make debt-funded M&A more expensive",
+    "Close with the nuance: why rates move matters, since stronger growth or inflation can also lift cash flows"
+   ],
+   "good": [
+    "A numerical example of the terminal value effect",
+    "The concept of duration applied to equities",
+    "The link to LBO and M&A financing",
+    "The nuance on why rates are rising"
+   ],
+   "pitfalls": [
+    "Saying higher rates lower every valuation by the same amount",
+    "Forgetting the effect on financing and deal activity",
+    "Ignoring that the equity risk premium and growth expectations can move too"
+   ],
+   "skeleton": "Higher rates [feed into both the cost of equity and the cost of debt], so [the WACC rises and present values fall]. The effect is [largest for long-duration cash flows]: a growth company, [whose value sits mostly in the terminal value], falls more than [a mature cash generator]. With growth of 3%, [a WACC of 9% instead of 8% cuts the terminal multiple from 20x to about 16.7x, roughly 17% less]. Rates also [cut what LBO sponsors can pay and make debt-funded M&A more expensive]. But [why rates rise matters: stronger growth or inflation with pricing power can lift cash flows too].",
+   "explanation": {
+    "steps": [
+     "Terminal multiple of next year's cash flow = 1 / (WACC - g). WACC 8%, g 3%: 1 / 0.05 = 20x. WACC 9%: 1 / 0.06 = 16.7x, about 17% lower.",
+     "Duration: a cash flow in year 2 discounted at 9% instead of 8% loses about 2% of its value; one in year 20 loses about 17%.",
+     "So a mature company with most of its value in the next few years loses far less than a growth company whose cash flows are mainly in the distant future."
+    ],
+    "shortcut": "Higher rates hurt most where the cash flows are furthest away: duration drives sensitivity.",
+    "trap": "Saying all companies fall by the same amount: the impact depends on when the cash flows arrive.",
+    "rule": "The longer the duration of the cash flows, the more sensitive the value is to the discount rate."
+   },
+   "time": 75,
+   "tags": [
+    "rates",
+    "valuation",
+    "fin-val",
+    "markets"
+   ]
+  },
+  {
+   "id": "tec-012",
+   "category": "technical-explain",
+   "level": 3,
+   "q": "How would you value a profitable semiconductor company?",
+   "tests": "Whether you can adapt standard methods to the features of semiconductors (cyclicality, capital intensity, R&D, inventory cycles, geopolitics) and whether you know the sub-segments.",
+   "structure": [
+    "Open by placing the company in its sub-segment: fabless design, integrated manufacturer, foundry, equipment, or IP and software, because each has a different economic model",
+    "Normalise for the cycle: value on mid-cycle margins, because multiples look high at the trough and low at the peak",
+    "Match the metric to capital intensity: EV/EBITDA and P/E for asset-light designers, EV/EBIT or free cash flow yield for capex-heavy manufacturers",
+    "Triangulate: forward trading comps, precedent transactions (strategic buyers often pay for scarce IP) and a DCF with a mid-cycle terminal year",
+    "Close with the specific checks: inventory days, customer and end-market concentration, R&D capitalisation, export controls"
+   ],
+   "good": [
+    "A clear distinction between sub-segments",
+    "Cycle-adjusted earnings and the trough multiple paradox",
+    "Specific diligence points: inventory, customer concentration, R&D accounting, export controls"
+   ],
+   "pitfalls": [
+    "Applying a peak-cycle multiple to peak-cycle earnings",
+    "Using EV/EBITDA for a fab owner without considering capex",
+    "Treating all chip companies as one peer group"
+   ],
+   "skeleton": "First, [I place the company in its sub-segment: a fabless designer, an integrated manufacturer, a foundry and an equipment maker have very different economics]. Second, [I normalise for the cycle and value mid-cycle margins, because at the trough multiples look high and at the peak they look low]. Third, [I match the metric to capital intensity: EV/EBITDA and P/E for asset-light designers, EV/EBIT or free cash flow yield where capex is heavy]. Then I triangulate [forward comps, precedents, where buyers often pay for scarce IP, and a DCF with a mid-cycle terminal year]. Finally, I check [inventory days, customer concentration, R&D capitalisation and export controls].",
+   "explanation": {
+    "steps": [
+     "Cycle: a company earning 100 at the peak, 40 at the trough and 70 mid-cycle, worth 1,400. P/E is 14x on peak earnings, 35x on trough earnings and 20x mid-cycle: the same company looks cheap or expensive depending on the year.",
+     "Capital intensity: a manufacturer with EBITDA of 300 and capex of 200 converts far less to cash than a designer with EBITDA of 300 and capex of 30, so their EV/EBITDA multiples are not comparable.",
+     "R&D: under IFRS some development costs are capitalised and amortised below EBITDA, while US GAAP generally expenses them, so an IFRS reporter can show higher EBITDA with the same economics."
+    ],
+    "shortcut": "Sub-segment first, mid-cycle earnings second, a metric matched to capex third.",
+    "trap": "Valuing a cyclical on a low P/E of peak earnings: it is the earnings, not the multiple, that are about to fall.",
+    "rule": "For cyclicals, value the cycle, not the year."
+   },
+   "time": 90,
+   "tags": [
+    "semiconductors",
+    "valuation",
+    "fin-val",
+    "fin-tmt"
+   ]
+  },
+  {
+   "id": "tec-013",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "How would you value a high-growth SaaS company?",
+   "tests": "Whether you know the operating metrics that drive the value of subscription software, and when revenue multiples, cash flow multiples and a DCF are each appropriate.",
+   "structure": [
+    "Open with the metrics that drive value: ARR growth, net revenue retention, gross margin, churn and the payback on customer acquisition costs",
+    "High growth, low profitability: EV to forward revenue or to ARR, benchmarked against peers with similar growth and Rule of 40 scores",
+    "As margins mature: EV/EBITDA or EV/free cash flow, with stock-based compensation treated as a cost",
+    "DCF with a long explicit period until margins reach mature levels, cross-checked against unit economics",
+    "Close with the quality checks: ARR definitions, capitalised commissions and development costs, deferred revenue trends"
+   ],
+   "good": [
+    "Linking the multiple to growth and retention, not just to the sector",
+    "The Rule of 40 explained and used correctly",
+    "Stock-based compensation treated as a real cost"
+   ],
+   "pitfalls": [
+    "Comparing revenue multiples without adjusting for growth and margins",
+    "Taking management's ARR definition at face value",
+    "A five-year DCF that ends while margins are still far from maturity"
+   ],
+   "skeleton": "I start from [the metrics that drive value: ARR growth, net revenue retention, gross margin, churn and the payback on acquisition costs]. If it is [growing fast and barely profitable], I use [EV to forward revenue or ARR], benchmarked against [peers with similar growth and Rule of 40 scores, growth plus free cash flow margin]. As [margins mature], I move to [EV/EBITDA or EV/free cash flow, treating stock-based compensation as a cost]. I cross-check with [a DCF that runs long enough for margins to reach maturity]. And I test quality: [how ARR is defined, what is capitalised, and whether deferred revenue is growing].",
+   "explanation": {
+    "steps": [
+     "Rule of 40: revenue growth % + free cash flow margin % should be at least 40. A company growing 30% with a 15% margin scores 45; one growing 50% with a -20% margin scores 30.",
+     "Retention: net revenue retention of 120% means last year's customers spend 20% more this year, net of churn and downgrades, so the company grows even before it wins new customers.",
+     "Benchmarking: peers' revenue multiples tend to rise with growth and margins, so comparing against peers with a similar profile, or regressing multiples on growth, beats a simple average."
+    ],
+    "shortcut": "Revenue multiples for growth, cash flow multiples for maturity, unit economics to check both.",
+    "trap": "Applying the peer median revenue multiple to a company with much lower growth or retention.",
+    "rule": "Software is worth what its retained, recurring revenue will earn at maturity."
+   },
+   "time": 90,
+   "tags": [
+    "saas",
+    "valuation",
+    "fin-val",
+    "fin-tmt"
+   ]
+  },
+  {
+   "id": "tec-014",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "On a sell-side mandate, how do you choose between a broad auction, a targeted process and a bilateral negotiation?",
+   "tests": "Whether you can design a process around the client's objectives (price, certainty, speed, confidentiality) and the buyer universe, rather than reciting the standard timetable.",
+   "structure": [
+    "Open with the client's objectives: price, certainty, speed, confidentiality and fit with the buyer",
+    "Broad auction: maximum competitive tension, but more leak risk, more management time and the risk of a visible failure",
+    "Targeted process with a handful of buyers: often the default when the logical buyers are few, as in many technology niches",
+    "Bilateral negotiation: speed and confidentiality with one obvious buyer, but less tension on price, so keep a credible alternative",
+    "Close with how you keep tension in any format: firm deadlines, a credible second option, and a process letter that makes bids comparable"
+   ],
+   "good": [
+    "Starting from the client's objectives, not from the process",
+    "The trade-offs of each format, including confidentiality with competitors",
+    "A sector point: when competitors bid, sensitive data needs staged disclosure and clean teams"
+   ],
+   "pitfalls": [
+    "Recommending a broad auction by default",
+    "Ignoring the risk of sharing sensitive information with competitors",
+    "Forgetting that a failed, visible process damages the asset"
+   ],
+   "skeleton": "I start from [the client's objectives: price, certainty, speed, confidentiality and the right home for the team], then [the buyer universe]. A broad auction [maximises tension, but raises leak risk and the cost of a visible failure]. A targeted process, [with a handful of credible buyers, is often right in technology niches, where the logical buyers are few]. A bilateral [is fastest and most confidential with one obvious buyer, but I would keep a credible alternative to protect price]. Whatever the format, [competitors who bid need clean-team arrangements for sensitive data], and [firm deadlines and a clear process letter keep the tension].",
+   "explanation": {
+    "steps": [
+     "Map objectives to formats: price above all, with many plausible buyers, points to a broad auction; confidentiality and speed with few buyers point to a targeted process or a bilateral.",
+     "Competitive tension comes from credible alternatives, not from the number of names contacted: three motivated bidders beat twenty half-interested ones.",
+     "With competitors in the process, stage the disclosure: the most sensitive data, such as customer pricing or the roadmap, only in the final round and through a clean team."
+    ],
+    "shortcut": "Objectives first, buyer universe second, format third.",
+    "trap": "Assuming more bidders always means a higher price: leaks and distraction can hurt both the business and the outcome.",
+    "rule": "Choose the format that creates credible tension at the lowest cost to confidentiality and to the business."
+   },
+   "time": 90,
+   "tags": [
+    "sell-side",
+    "process",
+    "fin-ma"
+   ]
+  },
+  {
+   "id": "tec-015",
+   "category": "technical-explain",
+   "level": 1,
+   "q": "What goes into a teaser and a CIM, and how do they differ?",
+   "tests": "Whether you know the purpose and contents of the two main sale documents and the analyst's role in preparing them, including anonymity and consistency with the model.",
+   "structure": [
+    "Purpose: the teaser creates interest without naming the company; the CIM supports a non-binding offer after the NDA",
+    "Teaser: one or two pages with a business description, investment highlights, headline financials and the contact for the process",
+    "CIM: executive summary, investment highlights, market, business and technology, customers, management, historical financials and the business plan",
+    "The analyst's role: drafting, charts, every number tied back to the model and the data book, and an anonymity check on the teaser",
+    "Close with a sector point: in deep tech, explain the technology for non-specialist buyers, such as financial sponsors"
+   ],
+   "good": [
+    "A clear distinction in purpose, audience and timing, before and after the NDA",
+    "The analyst's checks: consistency with the model and anonymity",
+    "A sector-specific point on presenting technology and IP"
+   ],
+   "pitfalls": [
+    "A teaser so detailed that the company can be identified",
+    "Numbers in the CIM that do not tie to the model",
+    "Describing the documents without saying what each is for"
+   ],
+   "skeleton": "The teaser is [a one or two-page summary with no names, sent before the NDA]: [a business description, a few investment highlights, headline financials and the process contact]. Its job is [to get buyers to sign the NDA]. The CIM [comes after the NDA and supports a non-binding offer]: [market, business model, technology, customers, management, historical financials and the business plan]. As an analyst, I [draft sections and charts, tie every number back to the model and the data book, and check the teaser cannot be traced to the client]. In [deep tech], I make [the technology clear to non-specialist buyers, such as sponsors].",
+   "explanation": {
+    "steps": [
+     "Sequence: teaser, NDA, CIM with the process letter, then non-binding offers.",
+     "Anonymity test: could a sector specialist identify the company from the teaser? If so, widen the revenue range, generalise the location or drop a distinctive product.",
+     "Consistency: every figure in the CIM must reconcile with the model and the data book, because buyers will rebuild the numbers."
+    ],
+    "shortcut": "Teaser: anonymous, before the NDA, to win interest. CIM: detailed, after the NDA, to win offers.",
+    "trap": "A teaser that mentions a unique product or location: the client is identified before any NDA is signed.",
+    "rule": "Each sale document has one job: the teaser wins the NDA, the CIM wins the offer."
+   },
+   "time": 75,
+   "tags": [
+    "teaser",
+    "cim",
+    "fin-ma"
+   ]
+  },
+  {
+   "id": "tec-016",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "You receive three binding bids in an auction. How do you compare them?",
+   "tests": "Whether you look beyond the headline price to the value and certainty for the seller: consideration, conditions, the price mechanism, the SPA mark-up and timing.",
+   "structure": [
+    "Open with the principle: compare the equity value the seller receives and the certainty of closing, not the headline enterprise value",
+    "Bridge each bid to equity value on the same basis: net debt and working capital assumptions, locked box or completion accounts",
+    "Adjust for the form of consideration: shares, earn-outs and deferred payments are worth less than cash at closing",
+    "Assess certainty: committed financing, regulatory risk, remaining due diligence, and the SPA mark-up on warranties, indemnities and caps",
+    "Close with a comparison table and a recommendation, including non-financial factors such as management and employees"
+   ],
+   "good": [
+    "Translating every bid into risk-adjusted equity value",
+    "Attention to conditionality and to the SPA mark-up",
+    "A clear recommendation, not just a table"
+   ],
+   "pitfalls": [
+    "Picking the highest headline number",
+    "Ignoring differences between the bidders' net debt and working capital assumptions",
+    "Valuing an earn-out at its maximum"
+   ],
+   "skeleton": "I compare [what the seller actually receives, and how certain it is], not [the headline number]. First, I [bridge every bid to equity value on the same net debt and working capital basis], as [bidders' assumptions differ]. Second, I [adjust for consideration: an earn-out or deferred payment is worth less than cash at closing]. Third, I [assess certainty: committed financing, regulatory risk, remaining diligence, and the SPA mark-up on warranties, indemnities and caps]. For example, [130 including 20 of earn-out, with uncommitted financing, can be worth less than 120 in committed cash on a locked box]. Then I [recommend, including management and employee factors].",
+   "explanation": {
+    "steps": [
+     "Bid A: 120 enterprise value, all cash, committed financing, locked box, light SPA mark-up.",
+     "Bid B: 130, of which 20 is an earn-out with an estimated 50% probability, and financing not yet committed. Risk-adjusted: 110 + 50% × 20 = 120, before discounting the earn-out and before the financing risk.",
+     "Bid C: 125 in cash, but with uncapped indemnities and a long regulatory review, so part of the price is at risk after signing. The table makes A the cleanest bid despite the lowest headline."
+    ],
+    "shortcut": "Equity value to the seller × probability of closing, on a like-for-like basis.",
+    "trap": "Choosing the highest headline price: conditions and contingent consideration can make it the least valuable bid.",
+    "rule": "A bid is worth what the seller is likely to receive, and when."
+   },
+   "time": 90,
+   "tags": [
+    "auction",
+    "bids",
+    "fin-ma"
+   ]
+  },
+  {
+   "id": "tec-017",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "What is the difference between a locked box and completion accounts, and when would you use each?",
+   "tests": "Whether you understand the two price mechanisms in an SPA, who bears the risk between the reference date and completion, and the protections each one requires.",
+   "structure": [
+    "Open with the issue: the price is agreed on an enterprise value basis, but net debt and working capital move before completion",
+    "Locked box: the equity price is fixed on a historical balance sheet, the economics pass to the buyer from that date, and the seller gives a no-leakage covenant",
+    "Completion accounts: an estimated price is paid at closing and adjusted afterwards for actual net debt and working capital against a target",
+    "Pros and cons: the locked box gives certainty and simplicity and favours the seller; completion accounts pay the seller for what the buyer actually gets, but invite disputes",
+    "Close with when to use each: a locked box in competitive auctions with reliable accounts; completion accounts for carve-outs or volatile working capital"
+   ],
+   "good": [
+    "Explaining who bears the risk and reward between the reference date and completion",
+    "Mentioning leakage, permitted leakage and a ticker where relevant",
+    "A numerical example of the completion adjustment"
+   ],
+   "pitfalls": [
+    "Saying a locked box price can never change: leakage is still recovered",
+    "Forgetting the working capital target in completion accounts",
+    "Not linking the choice to the quality of the target's accounts"
+   ],
+   "skeleton": "Both deal with [the gap between the enterprise value agreed and the equity price paid, as net debt and working capital move before completion]. With a locked box, [the equity price is fixed on a historical balance sheet, the buyer takes the economics from that date, and the seller promises no leakage, such as dividends or fees]. With completion accounts, [an estimated price is paid at closing and trued up for actual net debt and working capital against an agreed target]. A locked box [gives certainty and suits competitive auctions with reliable accounts]; completion accounts [suit carve-outs or volatile working capital, but invite post-closing disputes].",
+   "explanation": {
+    "steps": [
+     "Completion accounts: enterprise value 100 and estimated net debt 20, so 80 is paid at closing. Actual net debt at completion is 25 and working capital is 3 below target: final equity price 100 - 25 - 3 = 72, so the seller repays 8.",
+     "Locked box: equity price fixed at 80 on the locked box date. If 5 of dividends leak to the seller before completion, the buyer recovers 5 under the no-leakage covenant.",
+     "A ticker, a daily amount paid to the seller, can compensate for the cash the business generates between the locked box date and completion."
+    ],
+    "shortcut": "Locked box: price fixed early, protected by no leakage. Completion accounts: price trued up after closing.",
+    "trap": "Thinking a locked box shifts no risk: the buyer bears the performance of the business from the locked box date.",
+    "rule": "Choose the mechanism by who should bear the risk before completion and how reliable the accounts are."
+   },
+   "time": 90,
+   "tags": [
+    "locked-box",
+    "completion-accounts",
+    "spa",
+    "fin-ma"
+   ]
+  },
+  {
+   "id": "tec-018",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "When does an earn-out make sense, and what makes it work or fail?",
+   "tests": "Whether you see an earn-out as a tool to bridge a valuation gap, and whether you know the design choices (metric, period, cap, control of the business) that decide whether it ends in a dispute.",
+   "structure": [
+    "Open with the purpose: bridging a valuation gap when buyer and seller disagree on the future, typically in high-growth or milestone-driven businesses",
+    "Design: the metric (revenue, EBITDA or a technical milestone), the period, thresholds and caps, and how it is paid",
+    "What makes it work: a measurable metric the buyer cannot easily influence, clear accounting definitions and operating covenants",
+    "What makes it fail: integration that changes the metric, cost allocations, and sellers who leave or lose control of the business",
+    "Close with valuation and accounting: probability-weighted and discounted for the seller; contingent consideration at fair value for the buyer, remeasured over time"
+   ],
+   "good": [
+    "Framing the earn-out as risk sharing, not as extra price",
+    "Concrete design choices, with the trade-off between revenue and EBITDA",
+    "Knowing that payments tied to the sellers staying on may be treated as remuneration rather than price"
+   ],
+   "pitfalls": [
+    "Valuing the earn-out at its maximum",
+    "Choosing a metric the buyer controls after closing",
+    "Ignoring the alternatives: deferred consideration, vendor loan notes or rolled-over equity"
+   ],
+   "skeleton": "An earn-out makes sense when [buyer and seller disagree on the future, for example on a deep-tech company still short of a key milestone]. Part of the price [depends on a metric over one to three years]: [revenue, EBITDA or a technical milestone such as a product qualification]. It works when [the metric is measurable and hard for the buyer to influence, with clear accounting definitions]. It fails when [integration changes the metric or the sellers lose control]. For the seller, [I value it probability-weighted and discounted, not at the maximum]. For the buyer, [it is contingent consideration at fair value, remeasured over time].",
+   "explanation": {
+    "steps": [
+     "Example: 100 upfront plus up to 30 if year-two revenue beats a target. With a 40% probability and a 10% discount rate over two years: 30 × 40% / 1.1^2 = 9.9. The deal is worth about 110 to the seller, not 130.",
+     "Metric: revenue is harder to distort through cost allocations than EBITDA, but EBITDA is closer to value; the choice depends on how far the business will be integrated.",
+     "Accounting: under IFRS 3, earn-outs classified as liabilities are remeasured at fair value through profit or loss; payments that depend on the sellers remaining employed are usually treated as remuneration."
+    ],
+    "shortcut": "Earn-out value = maximum × probability, discounted for time.",
+    "trap": "Counting the earn-out at its maximum: the seller's real price is the probability-weighted, discounted amount.",
+    "rule": "An earn-out shares risk; it works only if the metric is clear and outside the buyer's easy control."
+   },
+   "time": 90,
+   "tags": [
+    "earn-out",
+    "fin-ma"
+   ]
+  },
+  {
+   "id": "tec-019",
+   "category": "technical-explain",
+   "level": 3,
+   "q": "Walk me through a purchase price allocation. How is goodwill created, and what happens to it afterwards?",
+   "tests": "Whether you understand acquisition accounting: fair values of identifiable assets, new intangibles, deferred tax and goodwill as the residual, plus the later effects on earnings.",
+   "structure": [
+    "Open with the principle: the price is allocated to the target's identifiable assets and liabilities at fair value; goodwill is the residual",
+    "Identify the step-ups: intangibles not on the target's balance sheet, such as technology, customer relationships and order backlog, plus fair value adjustments to assets such as inventory",
+    "Recognise a deferred tax liability on the step-ups where the tax base does not change",
+    "Goodwill = purchase price - fair value of identifiable net assets; any goodwill already on the target's balance sheet is eliminated",
+    "Close with the aftermath: under IFRS, goodwill is tested for impairment rather than amortised, while acquired intangibles are amortised, which is why acquirers report adjusted EPS"
+   ],
+   "good": [
+    "A correct numerical example, including the deferred tax liability",
+    "The distinction between goodwill and identifiable intangibles",
+    "The effect on post-deal earnings: amortisation of intangibles and impairment risk"
+   ],
+   "pitfalls": [
+    "Calculating goodwill against book value, without fair value step-ups",
+    "Forgetting the deferred tax liability",
+    "Saying goodwill is amortised under IFRS"
+   ],
+   "skeleton": "In an acquisition, [the price is allocated to the target's identifiable assets and liabilities at fair value]; goodwill is [the residual]. For a tech target, [the big step-ups are usually technology, customer relationships and backlog]. If [the tax base does not change], I also recognise [a deferred tax liability on the step-ups]. For example, [paying 500 for book net assets of 200, with 150 of new intangibles and 25% tax, gives a deferred tax liability of 37.5 and goodwill of 187.5]. Afterwards, [the intangibles are amortised, but under IFRS goodwill is only tested for impairment], which is why [acquirers often report adjusted EPS].",
+   "explanation": {
+    "steps": [
+     "Fair value of identifiable net assets: book value 200 + intangibles 150 - deferred tax liability (150 × 25% = 37.5) = 312.5.",
+     "Goodwill = 500 - 312.5 = 187.5. Any goodwill already on the target's balance sheet is eliminated and replaced.",
+     "After the deal: amortisation of the 150 of intangibles reduces EPS for years, while goodwill stays on the balance sheet unless an impairment test shows the business is worth less. Under UK GAAP (FRS 102), by contrast, goodwill is amortised."
+    ],
+    "shortcut": "Goodwill = price - (book net assets + step-ups - deferred tax on the step-ups).",
+    "trap": "Forgetting the deferred tax liability on the step-ups, which understates goodwill.",
+    "rule": "Goodwill is the residual after every identifiable asset and liability, deferred tax included, is at fair value."
+   },
+   "time": 90,
+   "tags": [
+    "ppa",
+    "goodwill",
+    "fin-acc",
+    "fin-ma"
+   ]
+  },
+  {
+   "id": "tec-020",
+   "category": "technical-explain",
+   "level": 3,
+   "q": "A buyer tells you the deal has synergies of 50 a year. How would you assess and haircut that number?",
+   "tests": "Whether you can turn an announced run-rate figure into a realistic value (type of synergy, probability, timing, costs to achieve, tax) and judge how much of it the buyer can afford to pay away.",
+   "structure": [
+    "Open by splitting cost and revenue synergies, because their probability of delivery is very different",
+    "Test the cost synergies bottom-up: overlapping sites, procurement, headcount, with a phase-in over two to three years",
+    "Haircut revenue synergies more heavily, and count only their margin contribution, not the revenue itself",
+    "Value them after tax, net of one-off costs to achieve and dis-synergies, and discounted for the phase-in",
+    "Close with the negotiation angle: the buyer should pay away only part of that value, keeping a margin for execution risk"
+   ],
+   "good": [
+    "A clear split between cost and revenue synergies, with different haircuts",
+    "Timing, costs to achieve, tax and dis-synergies all included",
+    "Linking the synergy value to the maximum premium the buyer can pay"
+   ],
+   "pitfalls": [
+    "Capitalising the gross headline figure as if it arrived in full on day one",
+    "Counting revenue synergies at the revenue line rather than at the margin",
+    "Forgetting integration costs and dis-synergies, such as customers lost after the deal"
+   ],
+   "skeleton": "First, I [split the 50 into cost and revenue synergies], because [cost synergies are far more likely to be delivered]. I test the cost part [bottom-up: overlapping sites, procurement and headcount, phased in over two to three years]. Revenue synergies [I haircut heavily, and I count only the margin on the extra revenue]. Then I value them properly: [after tax, net of one-off costs to achieve and any dis-synergies, and discounted for the phase-in], rather than [taking the headline run-rate at face value]. Finally, [the buyer should pay away only part of that value in the premium], keeping [a margin for execution risk].",
+   "explanation": {
+    "steps": [
+     "Split and risk-adjust: 30 of cost synergies at 80% and 20 of margin from revenue synergies at 40% give 24 + 8 = 32 a year before tax.",
+     "After tax at 25%: 24 a year. Phased in at 50% in year one and in full afterwards, discounted at 10% in perpetuity: 12 / 1.1 + (24 / 0.1) / 1.1 = 10.9 + 218.2 = 229.",
+     "Less one-off costs to achieve of 40 in year one (36 in present value): about 193, roughly half the 375 the headline implies if delivered in full from day one at no cost (50 × 0.75 / 0.1)."
+    ],
+    "shortcut": "Cost synergies are probable, revenue synergies possible: haircut, tax, phase in, deduct the costs, then discount.",
+    "trap": "Valuing the gross run-rate as if it were certain and immediate: it ignores delivery risk, phase-in and the costs to achieve.",
+    "rule": "Synergies are worth their risk-adjusted, after-tax net present value, and only part of that should be paid away."
+   },
+   "time": 90,
+   "tags": [
+    "synergies",
+    "fin-ma"
+   ]
+  },
+  {
+   "id": "tec-021",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "What is the difference between an asset deal and a share deal, and why might each side prefer one?",
+   "tests": "Whether you understand how the structure changes which liabilities transfer, the tax position of buyer and seller, and the practical complexity of the transfer.",
+   "structure": [
+    "Open with the definitions: in a share deal the buyer acquires the company with everything in it; in an asset deal it chooses specific assets and liabilities",
+    "Liabilities: a share deal transfers the whole history, known and unknown; an asset deal lets the buyer leave liabilities behind",
+    "Tax: sellers often prefer share deals, where gains may be exempt or lightly taxed; buyers may prefer asset deals for the step-up in the tax base",
+    "Practicalities: in an asset deal contracts and permits must be transferred, often with consents, and employee transfer rules apply; in a share deal they stay in place, subject to change-of-control clauses",
+    "Close with typical uses: share deals for whole companies, asset deals or a hive-down for carve-outs and distressed sales"
+   ],
+   "good": [
+    "Analysis from both the buyer's and the seller's perspective",
+    "The tax step-up explained as a source of future tax savings",
+    "Practical points: consents, change-of-control clauses, employee transfer rules"
+   ],
+   "pitfalls": [
+    "Saying one structure is always better",
+    "Forgetting that in a share deal the buyer inherits unknown liabilities, so warranties and indemnities matter more",
+    "Ignoring that tax rules differ by country"
+   ],
+   "skeleton": "In a share deal, [the buyer acquires the company with its whole history, unknown liabilities included], and [contracts and permits stay in place, subject to change-of-control clauses]. In an asset deal, [the buyer picks the assets and liabilities it wants], but [contracts and permits must be transferred, often with consents, and employee transfer rules apply]. On tax, [sellers often prefer share deals, where gains may be exempt or lightly taxed], while [buyers may prefer asset deals, where a stepped-up tax base creates future tax savings], though [rules vary by country]. So [asset deals or hive-downs] mostly suit [carve-outs and distressed sales].",
+   "explanation": {
+    "steps": [
+     "Step-up: buying assets for 300 with a tax base of 100 lets the buyer deduct an extra 200 over time; at 25% tax, that is up to 50 of future tax savings, worth less in present value.",
+     "Seller's side: in an asset deal the company sells the assets and must then distribute the proceeds, which can mean two layers of tax.",
+     "Hive-down: the seller moves the business into a new subsidiary and sells its shares, combining a clean perimeter with the mechanics of a share deal."
+    ],
+    "shortcut": "Share deal: everything transfers, simpler, often better for the seller's tax. Asset deal: pick and choose, tax step-up, more consents.",
+    "trap": "Forgetting that a share deal brings unknown liabilities with it: the protection comes from due diligence, warranties and indemnities.",
+    "rule": "The structure decides which liabilities move and who gets the tax benefit; the price should reflect both."
+   },
+   "time": 90,
+   "tags": [
+    "deal-structure",
+    "tax",
+    "fin-ma"
+   ]
+  },
+  {
+   "id": "tec-022",
+   "category": "technical-explain",
+   "level": 3,
+   "q": "Why would a company run a dual track, a sale process alongside a funding round, and what are the risks?",
+   "tests": "Whether you understand the logic of parallel options (price tension, certainty, a fallback) and their costs: management bandwidth, information shared with competitors and a split focus.",
+   "structure": [
+    "Open with the logic: two credible routes create tension on price and terms, and give a fallback if one fails",
+    "How it works: one set of materials and one data room, aligned timetables, and a decision point where offers and term sheets are compared",
+    "How to compare: the sale price today against the risk-adjusted value of the shareholders' stake after the round, net of dilution and preferences",
+    "Risks: management distraction, leaks, sensitive data shared with strategic bidders, and investors who lose interest if they sense a sale",
+    "Close with when it works: genuine interest from both buyers and investors, and an adviser who can run both without damaging either"
+   ],
+   "good": [
+    "Explaining why a credible alternative raises the price",
+    "A like-for-like comparison of the two outcomes",
+    "Realism about the costs and about sequencing disclosure"
+   ],
+   "pitfalls": [
+    "Running a dual track with no credible buyer, or no credible investor",
+    "Comparing a sale price with a headline pre-money valuation without considering dilution and preferences",
+    "Sharing the same sensitive information with competitors and with investors"
+   ],
+   "skeleton": "A dual track [runs a sale and a funding round in parallel, so each route puts pressure on the other]. Buyers know [the company can fund its independence]; investors know [there is a credible exit]. In practice, [one data room, aligned timetables and a single decision point]. At that point, I compare [the sale price today with the risk-adjusted value of the shareholders' stake after the round, net of dilution and preferences]. The risks are [management distraction, leaks, and sensitive data reaching strategic bidders who may be competitors]. It only works if [both routes are credible]; otherwise [the bluff shows and weakens both].",
+   "explanation": {
+    "steps": [
+     "Tension: a buyer offering 200 knows the alternative is a round at 250 pre-money, so it must beat the value of that alternative to the shareholders, not just match a headline figure.",
+     "Like-for-like: a round of 50 at 250 pre-money leaves existing shareholders with 250 / 300 = 83% of a company that still has to deliver its plan, with new investors' preferences ranking ahead; the sale pays 200 in cash today.",
+     "Disclosure: stage the sensitive data, such as customer contracts or the roadmap, so that strategic bidders see it late and through a clean team."
+    ],
+    "shortcut": "Two credible routes, one data room, one decision point, compared like for like.",
+    "trap": "Treating a 250 pre-money valuation as better than a 200 sale: the round price is paper value for preferred shares, with execution risk and no liquidity.",
+    "rule": "A dual track creates value only if both routes are credible and the outcomes are compared like for like."
+   },
+   "time": 90,
+   "tags": [
+    "dual-track",
+    "fundraising",
+    "fin-ma"
+   ]
+  },
+  {
+   "id": "tec-023",
+   "category": "technical-explain",
+   "level": 1,
+   "q": "What makes a good LBO candidate?",
+   "tests": "Whether you know the features that let a business carry debt and generate returns for a sponsor: stable cash flows, low capex, a defensible position, levers for improvement and a clear exit.",
+   "structure": [
+    "Open with the principle: the business must service and repay significant debt from its own cash flows",
+    "Cash flow: stable, predictable revenue, ideally recurring, with low capex and limited working capital needs",
+    "Position: a defensible market position, pricing power and diversified customers",
+    "Upside: room to improve margins, buy-and-build opportunities and a strong management team",
+    "Close with the exit and the price: a credible buyer universe or IPO route, and an entry price that leaves room for returns"
+   ],
+   "good": [
+    "Linking each feature to debt capacity or to returns",
+    "A sector contrast: a mature software or components business against a capex-heavy, highly cyclical fab",
+    "Mentioning the entry price, not just the quality of the business"
+   ],
+   "pitfalls": [
+    "Listing features without linking them to debt service",
+    "Forgetting that a great business bought at too high a price is a poor LBO",
+    "Ignoring cyclicality, which can break the covenants in a downturn"
+   ],
+   "skeleton": "A good LBO candidate can [service and repay a lot of debt from its own cash flows]. That means [stable, predictable revenue, ideally recurring, with low capex and modest working capital needs], [a defensible market position with pricing power and diversified customers], and [levers for improvement: margins, buy-and-build, a strong management team]. The sponsor also needs [a credible exit, to a strategic buyer, another sponsor or through an IPO], and [an entry price that leaves room for returns]. So [a mature software or electronic-components business with sticky customers] fits better than [a capex-heavy, highly cyclical chip manufacturer, where a downturn can break the covenants].",
+   "explanation": {
+    "steps": [
+     "Debt capacity: with EBITDA of 100, capex of 10, tax of 15 and working capital needs of 5, 70 a year is available for debt service, far more than in a business with capex of 50.",
+     "Cyclicality: if EBITDA falls 40% in a downturn, leverage of 5.0x becomes 5.0 / 0.6 = 8.3x, which can breach covenants.",
+     "Price: even a strong business gives weak returns if the entry multiple leaves no room for the exit multiple to stay flat or fall."
+    ],
+    "shortcut": "Cash in, little capex, a strong position, levers to pull, a way out, at a sensible price.",
+    "trap": "Choosing a high-growth, cash-hungry business: growth that consumes cash cannot service debt.",
+    "rule": "An LBO candidate is judged on its ability to repay debt and on the price paid, not only on its quality."
+   },
+   "time": 60,
+   "tags": [
+    "lbo",
+    "fin-lbo"
+   ]
+  },
+  {
+   "id": "tec-024",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "A sponsor made 3.0x its money on a buyout. How would you break down where that return came from?",
+   "tests": "Whether you can build a returns attribution (EBITDA growth, multiple expansion, debt paydown) and judge the quality of each source, beyond the basic logic of leverage.",
+   "structure": [
+    "Open with the equity bridge: exit equity minus entry equity, split into EBITDA growth, the change in multiple and the reduction in net debt",
+    "EBITDA growth: from revenue growth and margin improvement, the operational part of value creation",
+    "Multiple expansion: buying low and selling high, often driven by the market and less repeatable",
+    "Debt paydown: cash generated during the holding period that reduces net debt and accrues to equity",
+    "Close with time and quality: MOIC against IRR, and why sponsors prefer returns from operations to returns from the market"
+   ],
+   "good": [
+    "A numerical attribution that adds up",
+    "The distinction between operational value creation and market or financial effects",
+    "The link between holding period, IRR and MOIC"
+   ],
+   "pitfalls": [
+    "Double-counting the overlap between EBITDA growth and multiple expansion",
+    "Confusing MOIC and IRR",
+    "Presenting multiple expansion as skill"
+   ],
+   "skeleton": "I would bridge [entry equity to exit equity]. Say [the sponsor bought at 10x EBITDA of 100, so 1,000, funded with 600 of debt and 400 of equity, and sold five years later at 10x EBITDA of 150, with net debt down to 300]. Exit equity is [1,500 minus 300, so 1,200: 3.0x]. Of the 800 gain, [500 comes from EBITDA growth and 300 from debt paydown, with no multiple expansion]. That is [a high-quality return: it came from operations and cash generation, not from the market]. And time matters: [3.0x over five years is an IRR of about 25%, over seven about 17%].",
+   "explanation": {
+    "steps": [
+     "Entry: EV 10 × 100 = 1,000; debt 600; equity 400. Exit: EV 10 × 150 = 1,500; net debt 300; equity 1,200. MOIC = 1,200 / 400 = 3.0x, an IRR of 3^(1/5) - 1 = about 24.6% over five years.",
+     "Attribution: EBITDA growth 50 × 10 = 500; multiple expansion 0; debt paydown 600 - 300 = 300. Total 800 = 1,200 - 400.",
+     "With an exit at 11x, value the EBITDA growth at the entry multiple (50 × 10 = 500) and the multiple change on exit EBITDA (1 × 150 = 150): the pieces add up to the 650 increase in EV with no double-counting."
+    ],
+    "shortcut": "Equity gain = change in EBITDA × entry multiple + change in multiple × exit EBITDA + reduction in net debt.",
+    "trap": "Valuing both effects at exit levels (50 × 11 + 1 × 150 = 700): the overlap is counted twice and the bridge no longer adds up to 650.",
+    "rule": "A return is only as good as its source: operations and cash generation are repeatable, the market multiple is not."
+   },
+   "time": 90,
+   "tags": [
+    "lbo",
+    "returns",
+    "fin-lbo"
+   ]
+  },
+  {
+   "id": "tec-025",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "Walk me through an IPO process.",
+   "tests": "Whether you know the main phases of a listing, the role of the banks and how the price is set, including the tools that support trading after the listing.",
+   "structure": [
+    "Preparation: appoint the banks, lawyers and auditors; prepare the equity story, governance and financial track record",
+    "Due diligence and documentation: drafting the prospectus for regulatory review and approval, while research analysts prepare their models",
+    "Public phase: intention to float and investor education, then a price range, the roadshow and bookbuilding over one to two weeks",
+    "Pricing and allocation: the price is set from the book, usually at a discount to fair value, and shares go mainly to quality long-term investors",
+    "Close with after-market support: stabilisation through the over-allotment (greenshoe) option, and lock-ups for existing shareholders"
+   ],
+   "good": [
+    "The correct sequence with indicative timings",
+    "Explaining the IPO discount and why it exists",
+    "Mentioning the greenshoe, stabilisation and lock-ups",
+    "The distinction between primary shares (new money) and secondary shares (existing shareholders selling)"
+   ],
+   "pitfalls": [
+    "Confusing bookbuilding with regulatory approval",
+    "Saying the banks guarantee the price from the start",
+    "Forgetting what happens after the first day of trading"
+   ],
+   "skeleton": "An IPO usually takes [several months]. First, [preparation: the company appoints banks, lawyers and auditors, and builds its equity story, governance and financial track record]. Second, [due diligence and the prospectus, which the regulator reviews and approves]. Third, the public phase: [an intention to float and investor education, then a price range, a roadshow and bookbuilding over one to two weeks]. Fourth, [the price is set from the book, usually at a discount to fair value, and shares go mainly to quality long-term investors]. Finally, [the greenshoe supports trading in the first weeks, and lock-ups stop existing shareholders selling too early].",
+   "explanation": {
+    "steps": [
+     "Primary versus secondary: new shares raise money for the company; existing shares sold give liquidity to current owners. A large secondary component can read as owners cashing out.",
+     "Greenshoe: the banks sell up to 15% more shares than the base offer; if the price falls they buy shares back in the market, supporting it, and if it rises they exercise the option to cover.",
+     "IPO discount: pricing below estimated fair value compensates investors for buying an untested stock and supports a stable first day of trading."
+    ],
+    "shortcut": "Prepare, document, market, price, stabilise.",
+    "trap": "Thinking the price range is the final price: the price is set from demand in the book.",
+    "rule": "An IPO is priced by demand in the book, with a discount that buys a stable after-market."
+   },
+   "time": 90,
+   "tags": [
+    "ipo",
+    "fin-ecm"
+   ]
+  },
+  {
+   "id": "tec-026",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "Why would a company issue a convertible bond rather than straight debt or new shares?",
+   "tests": "Whether you understand the hybrid nature of a convertible (a bond plus an equity option), who issues it and why, and what it costs existing shareholders.",
+   "structure": [
+    "Open with the definition: a bond the holder can convert into shares at a conversion price set at a premium to today's share price",
+    "Versus straight debt: a lower coupon, because investors receive an equity option; often accessible to issuers with no rating or volatile shares",
+    "Versus equity: less and later dilution, because conversion happens only above the conversion price",
+    "Costs and risks: dilution if the shares rise, repayment at maturity if they do not, and short selling by hedge funds at launch",
+    "Close with typical issuers (growth and technology companies with volatile shares) and tools such as capped calls that limit dilution"
+   ],
+   "good": [
+    "A clear comparison with both alternatives",
+    "Explaining why higher volatility lowers the coupon",
+    "Mentioning the accounting: under IFRS the bond is usually split into a debt and an equity component"
+   ],
+   "pitfalls": [
+    "Calling a convertible cheap money without explaining the cost of the option",
+    "Forgetting the refinancing risk if the shares never reach the conversion price",
+    "Ignoring the dilution in the diluted share count"
+   ],
+   "skeleton": "A convertible is [a bond plus an option to convert into shares at a premium to today's price]. Versus straight debt, [investors accept a lower coupon for the equity option, which is worth more when the shares are volatile]. Versus equity, [dilution is lower and deferred, as conversion only happens above the conversion price]. It suits [growth tech companies with volatile shares and often no rating], and [it can be done overnight]. The costs are [dilution if the shares rise, repayment if they do not, and hedge funds shorting the stock at launch]. A [capped call] can [raise the effective conversion price].",
+   "explanation": {
+    "steps": [
+     "Example: share price 10 and a 30% conversion premium, so a conversion price of 13. A bond of 130 converts into 10 shares, against 13 new shares if the company raised 130 of equity at 10 today.",
+     "If the share price stays below 13, nobody converts and the company must repay or refinance 130 at maturity.",
+     "Accounting: under IFRS the instrument is usually split into a liability and an equity component, so the interest expense is higher than the cash coupon."
+    ],
+    "shortcut": "A lower coupon than debt and less dilution than equity, paid for with an option.",
+    "trap": "Calling the low coupon free: investors are paid through the equity option, which existing shareholders give away.",
+    "rule": "A convertible trades a lower coupon today for possible dilution tomorrow."
+   },
+   "time": 75,
+   "tags": [
+    "convertible",
+    "fin-ecm"
+   ]
+  },
+  {
+   "id": "tec-027",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "Walk me through a deal you have worked on.",
+   "tests": "Whether you can describe your real work clearly and technically while respecting confidentiality: sector, region and size band only, with no names and no non-public figures.",
+   "structure": [
+    "Open by setting the boundary: you will keep to sector, region and size band because the deal is confidential",
+    "Context: type of deal (sell-side or buy-side), type of client (for example founder-owned or sponsor-backed), sector, region, size band",
+    "Your role: the work you personally did, such as the model, the CIM, the buyer list, the data room and Q&A",
+    "One key challenge and how you handled it, with technical detail you can defend under follow-up questions",
+    "Close with the outcome in general terms and what you learned"
+   ],
+   "good": [
+    "Stating the confidentiality boundary at the start, calmly and without apology",
+    "A clear separation between the team's work and your own",
+    "One technical point you can defend in depth, for example how customer concentration was reflected in the valuation",
+    "Follow-up answers on valuation and process prepared in advance"
+   ],
+   "pitfalls": [
+    "Revealing names, exact figures or details that identify the client",
+    "Describing the deal without saying what you did",
+    "Claiming credit for senior decisions",
+    "Being vague on technical details you should know well"
+   ],
+   "skeleton": "As the deal is confidential, [I will stick to sector, region and size]. It was [a sell-side mandate for a founder-owned deep-tech company in Europe, in the EUR X to Y million enterprise value band]. My role was to [build the model, draft parts of the CIM, prepare the buyer list and run the data room and Q&A]. The main challenge was [customer concentration], so I [analysed contract terms and renewal history, and we addressed it upfront in the CIM]. The outcome was [a signed deal with a strategic buyer], and I learned [to address buyers' concerns before they raise them].",
+   "explanation": {
+    "steps": [
+     "Safe level of detail: sector (for example semiconductor equipment), region (for example Europe), a size band, the type of client and the type of process. No names, exact figures, dates or details that could identify the client.",
+     "If the deal has been announced, refer only to what is public, and still keep non-public details out.",
+     "Prepare the follow-ups: how the business was valued, the main buyer concerns, and what you would do differently."
+    ],
+    "shortcut": "Boundary, context, your role, one challenge, outcome, lesson.",
+    "trap": "Sharing a detail that seems harmless, such as a unique product or a town, that lets the interviewer identify the client: it signals poor judgement on confidentiality.",
+    "rule": "Show the work, not the client: technical depth and discretion together."
+   },
+   "time": 120,
+   "tags": [
+    "deal-discussion",
+    "confidentiality",
+    "fin-ma"
+   ]
+  },
+  {
+   "id": "tec-028",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "Pitch me a recent tech deal and tell me whether it made sense for the buyer.",
+   "tests": "Whether you can apply a value-creation test to a real transaction (strategy, price against synergies, financing, risks, the market's reaction) and reach a reasoned verdict of your own.",
+   "structure": [
+    "Open with the facts in one sentence: buyer, target, value, multiple, consideration",
+    "Strategy: why this target, why now, and why buy rather than build",
+    "Price: the multiple against peers and precedents, and the premium against a realistic value of synergies",
+    "Financing and risk: the effect on leverage and EPS, regulatory and integration risk, retention of key people",
+    "Close with the market's reaction and your verdict, including what would prove you wrong"
+   ],
+   "good": [
+    "A verdict, not just a description",
+    "The value test: net synergies against the premium",
+    "Using the buyer's share price reaction as evidence, with caution"
+   ],
+   "pitfalls": [
+    "Summarising the press release without any judgement",
+    "Equating EPS accretion with value creation",
+    "Choosing a deal you cannot discuss in technical depth"
+   ],
+   "skeleton": "I would pick [buyer acquiring target for an EV of X, about Y times forward revenue, paid in cash and shares]. The logic is [filling a gap in the buyer's roadmap faster than building it]. On price, [the premium was about Z, against synergies the buyer quantified at W a year]; [risk-adjusted and net of costs, I value them at V, so most were paid away]. The risks are [regulatory review and retaining key engineers]. The buyer's shares [fell on announcement], so [investors share that doubt]. My verdict: [strategically right, but expensive]. I would change my mind if [the synergies arrive faster than planned].",
+   "explanation": {
+    "steps": [
+     "Value test: value created for the buyer is roughly the present value of synergies net of costs minus the premium paid. A premium of 300 against net synergies worth 200 destroys about 100 for the buyer's shareholders.",
+     "Market check: if the buyer's market value falls by about 100 on announcement while the market is flat, investors see a similar gap; treat it as evidence, not proof.",
+     "Build or buy: estimate the time and cost of developing the capability internally; a premium can be rational if buying saves years in a fast-moving market."
+    ],
+    "shortcut": "Facts, strategy, price against synergies, risks, the market's verdict, your verdict.",
+    "trap": "Calling a deal good because it is accretive: EPS accretion says nothing about whether the premium was justified.",
+    "rule": "A deal makes sense for the buyer only if what it gains exceeds what it pays, premium and costs included."
+   },
+   "time": 120,
+   "tags": [
+    "deal-discussion",
+    "commercial-awareness",
+    "fin-ma"
+   ]
+  },
+  {
+   "id": "tec-029",
+   "category": "technical-explain",
+   "level": 3,
+   "q": "A deep-tech founder asks whether to sell the company now or raise another round. How would you advise them?",
+   "tests": "Whether you can structure an advisory conversation: the founder's objectives, the company's needs, a like-for-like financial comparison, and the options between the two extremes.",
+   "structure": [
+    "Start with the founder's objectives: liquidity, control, the mission, the team, and how much risk they want to keep",
+    "Then the company's needs: cash runway, the capital required to reach the next milestone, and how that milestone would change the value",
+    "Compare the options like for like: a certain value today against the risk-adjusted, diluted value of the stake later",
+    "Test the market: strategic buyers' interest and the scarcity of the technology, against investor appetite and terms",
+    "Close with the options in between: a minority stake for a strategic investor, a partial secondary sale for the founder, or a process that tests both routes"
+   ],
+   "good": [
+    "Starting from the founder's objectives before the numbers",
+    "A probability-weighted comparison that includes dilution",
+    "Middle options that show creativity"
+   ],
+   "pitfalls": [
+    "Pushing a sale because it generates a fee",
+    "Comparing a sale price with a headline pre-money valuation",
+    "Ignoring that most of the founder's wealth is tied up in a single company"
+   ],
+   "skeleton": "First, I would understand [what the founder wants: liquidity, control, the mission, the team]. Then [how much cash the company needs to reach the next milestone, and what that milestone does to value]. I would compare like for like: [a sale at 200 gives the founder's 50% stake 100 in cash today; raising 50 at 200 pre-money dilutes them to 40%, so if success at 800 and failure at 150 are equally likely, the stake is worth 320 or 60 in three years]. Then I test [buyer interest against investor appetite] and show [middle options: a strategic minority investor or a partial secondary sale].",
+   "explanation": {
+    "steps": [
+     "Sale today: equity value 200, founder owns 50%, so 100 in cash.",
+     "Round: 50 raised at 200 pre-money gives a post-money of 250, so the founder falls to 50% × 200 / 250 = 40%. In three years, success (50%) at 800 gives 320 and failure (50%) at 150 gives 60: an expected 190, about 125 today at a 15% discount rate.",
+     "The round wins on expected value (125 against 100), but the range is wide (60 to 320), the new investors' preferences would cut the downside further, and a founder with most of their wealth in one company may rationally prefer certainty."
+    ],
+    "shortcut": "Objectives, needs, a like-for-like comparison, then the options in between.",
+    "trap": "Comparing 100 today with 190 in three years without discounting for time or looking at the range of outcomes.",
+    "rule": "Advise on the founder's objectives and appetite for risk, using a risk-adjusted, diluted comparison rather than headline valuations."
+   },
+   "time": 120,
+   "tags": [
+    "deal-discussion",
+    "fundraising",
+    "fin-ma"
+   ]
+  },
+  {
+   "id": "tec-030",
+   "category": "technical-explain",
+   "level": 2,
+   "q": "You have just been given access to a data room. What do you look at first?",
+   "tests": "Whether you can prioritise in due diligence, starting from what drives value and what could stop the deal, rather than reading the folders in order.",
+   "structure": [
+    "Open with the method: read the index first, to see what is there and what is missing, then prioritise by value and deal-breakers",
+    "Financials: audited accounts, management accounts and the bridge from historical results to the business plan, plus any quality of earnings report",
+    "Revenue quality: the main customer contracts, concentration, terms, change-of-control and termination clauses",
+    "The equity bridge: debt, leases, provisions, earn-outs from past deals, litigation and any other debt-like items",
+    "Close with sector specifics: ownership of the IP, key engineers' contracts, public grants with clawbacks, export controls"
+   ],
+   "good": [
+    "A clear order of priority, with a reason for each step",
+    "Treating gaps in the data room as information",
+    "Deep-tech specifics: IP ownership, grants, export controls"
+   ],
+   "pitfalls": [
+    "Reading the folders in order without priorities",
+    "Ignoring change-of-control clauses in key contracts",
+    "Focusing only on the financials and missing legal or IP issues"
+   ],
+   "skeleton": "I start with [the index, because what is missing tells me as much as what is there]. Then I prioritise [what drives value and what could stop the deal]. First, [the financials: audited and management accounts, any quality of earnings report, and the bridge from history to the plan]. Second, [revenue quality: the main customer contracts, concentration, and change-of-control or termination clauses]. Third, [anything that moves the equity bridge: debt, leases, provisions, earn-outs from past deals and litigation]. For [a deep-tech target], I also check [IP ownership, key engineers' contracts, clawbacks on public grants and export controls].",
+   "explanation": {
+    "steps": [
+     "Priority test: for each folder, ask whether it could change the price or kill the deal; those folders come first.",
+     "Change of control: a key customer contract that the customer can terminate on a sale can remove a large share of revenue at closing.",
+     "Deep tech: IP developed by the founders before incorporation, or with a university, must be properly assigned or licensed to the company, otherwise the buyer may not own what it is paying for."
+    ],
+    "shortcut": "Index, financials, revenue quality, equity bridge, then sector-specific deal-breakers.",
+    "trap": "Reading the data room in folder order: the issues that move the price can sit in the last folder.",
+    "rule": "In a data room, prioritise by impact on price and on deal certainty."
+   },
+   "time": 90,
+   "tags": [
+    "due-diligence",
+    "data-room",
+    "fin-ma"
+   ]
+  }
+ ]
+}

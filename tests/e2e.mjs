@@ -114,7 +114,7 @@ export const CONFIG = {
   skills: ['numerical', 'mental', 'verbal', 'logical', 'inductive', 'sjt', 'fin-acc', 'fin-val', 'fin-ma', 'fin-lbo', 'markets', 'commercial'],
   skillsExclude: ['behavioural', 'workstyle'],
   mobileDrillSkills: ['numerical', 'verbal', 'inductive', 'sjt'],
-  mockIds: ['diag', 'shl-num', 'shl-verb', 'inductive', 'capp', 'bofa', 'tech', 'video'],
+  mockIds: ['diag', 'shl-num', 'shl-verb', 'inductive', 'capp', 'bofa', 'tech', 'tmt', 'video'],
   videoMocks: ['video'],
   drillSize: 5,
   maxDiscoveredLinks: 60,

@@ -128,7 +128,7 @@ function startSet(root, skill, mode, n, level) {
 }
 
 // ---------- lessons ----------
-const ORDER = ['numerical', 'mental', 'verbal', 'logical', 'inductive', 'workstyle', 'sjt', 'fin-acc', 'fin-val', 'fin-ma', 'fin-lbo', 'markets', 'culture', 'commercial', 'behavioural'];
+const ORDER = ['numerical', 'mental', 'verbal', 'logical', 'inductive', 'workstyle', 'sjt', 'fin-acc', 'fin-val', 'fin-ma', 'fin-lbo', 'fin-ecm', 'fin-tmt', 'markets', 'culture', 'commercial', 'behavioural'];
 function lessonsList(root) {
   const C = content(); const S = load();
   const groups = new Map();

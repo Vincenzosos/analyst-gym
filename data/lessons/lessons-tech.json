@@ -1,0 +1,741 @@
+{
+ "lessons": [
+  {
+   "id": "les-acc-03",
+   "skill": "fin-acc",
+   "order": 3,
+   "title": "Ten accounting walk-throughs interviewers love",
+   "minutes": 25,
+   "summary": "You will be able to walk through ten classic transactions, from deferred tax on depreciation to IFRS 16 leases and buybacks, giving the number trail on all three statements and the follow-up the interviewer is waiting for.",
+   "sections": [
+    {
+     "h": "Before you speak: four questions and one check",
+     "body": "The basic method (IS, then CFS, then BS) is in the previous lesson. At the next level the interviewer adds a twist: tax timing, a gain, fees, a lease. Before you answer, ask yourself four questions:\n\n1. **Does it touch the income statement, and above or below EBITDA?** An inventory write-down in COGS hits EBITDA; depreciation and goodwill impairment do not.\n2. **Is it cash, and when?** Capex is cash today and expense later; deferred revenue is cash today and revenue later.\n3. **Is it tax-deductible now, later or never?** Now: cash tax falls this year. Later: a deferred tax asset or liability. Never: no tax effect at all.\n4. **Which section of the cash flow statement?** CFO, CFI (capex, disposals) or CFF (debt, dividends, buybacks, lease principal).\n\nThen the usual check: change in assets = change in liabilities + equity.\n\nAssumptions for this lesson: tax rate 25% and, unless stated otherwise, the tax deduction follows the accounting expense. Say your assumptions out loud: interviewers reward it."
+    },
+    {
+     "h": "Walk-throughs 1 to 3: depreciation with tax timing, inventory write-down, capex and disposal",
+     "body": "**1. Depreciation when tax depreciation is faster.** A machine (already paid for) is depreciated by 20 in the accounts, but the tax rules allow 40 this year.\n\n| Statement | Number trail |\n|---|---|\n| IS | Depreciation 20, taxes -5, net income -15 |\n| CFS | -15 + 20 (D&A) + 5 (increase in deferred tax liability) = cash +10 |\n| BS | Cash +10, PP&E -20: assets -10. DTL +5, retained earnings -15: -10. It balances |\n\nCash rises by the **tax** deduction x t (40 x 25% = 10), not by the book expense x t (5). The DTL reverses in later years, when tax depreciation falls below book depreciation.\n\n**2. Inventory write-down of 40, deductible only when the goods are sold or scrapped.**\n- IS: COGS +40, so gross profit and **EBITDA** fall by 40; taxes -10 (a deferred tax credit); net income -30.\n- CFS: -30 + 40 (non-cash) - 10 (increase in deferred tax asset) = cash 0.\n- BS: inventory -40, DTA +10: assets -30. Retained earnings -30.\n\nFollow-ups: under IFRS the write-down is reversed if the selling price recovers (US GAAP does not allow a reversal); and when the written-down stock is later sold, gross margin looks flattered, a classic effect after a chip downturn.\n\n**3. Capex of 100, then a sale at a gain.** Day 0: CFI -100, cash -100, PP&E +100, no IS effect. After three years of depreciation of 20, book value is 40 and the machine is sold for 50.\n- IS: gain +10, taxes +2.5, net income +7.5.\n- CFS: +7.5 - 10 (remove the gain: the cash belongs in CFI) = CFO -2.5; CFI +50; cash +47.5.\n- BS: cash +47.5, PP&E -40: assets +7.5. Retained earnings +7.5."
+    },
+    {
+     "h": "Walk-throughs 4 and 5: debt with fees or PIK, stock-based compensation",
+     "body": "**4. You raise 200 of debt at 6% and pay 4 of arrangement fees.** The fees are netted against the debt and amortised through interest expense over the 5-year life: 0.8 a year, a straight-line approximation of the effective interest method.\n\n| | Day 0 | Year 1 |\n|---|---|---|\n| IS | No effect | Interest 12 + fee amortisation 0.8 = 12.8; net income -9.6 |\n| CFS | CFF +200 - 4 = +196 | -9.6 + 0.8 (non-cash) = CFO -8.8 |\n| BS | Cash +196, debt +196 (200 less unamortised fees) | Cash -8.8; debt +0.8 (to 196.8), retained earnings -9.6 |\n\n**PIK variant**: 10 of interest paid in kind, i.e. added to the principal. Net income -7.5; add back 10 of non-cash interest: cash +2.5 (the tax shield, if deductible); debt +10. Common in mezzanine and holdco debt in LBOs.\n\n**5. Stock-based compensation: the second-round questions.** The basic case (SBC of 20: net income -15, cash +5, equity +5) is where the conversation starts, not where it ends.\n- **Net share settlement**: RSUs over 1.0m shares vest at a share price of 50 and the employees' tax rate is 40%. The company withholds 0.4m shares and pays 20m of tax in cash on their behalf: CFF -20m, equity -20m, no IS effect at vesting (the expense was booked over the vesting period), and only 0.6m new shares. Economically it is a buyback of 0.4m shares at 50.\n- **In valuation**: SBC is a real cost. Either treat it as a cash expense (no add-back in FCF or EBITDA) and use today's diluted shares, or add it back and model the future dilution. Adding it back and ignoring the dilution overstates value, a frequent mistake with tech companies."
+    },
+    {
+     "h": "Walk-throughs 6 and 7: an IFRS 16 lease, a goodwill impairment",
+     "body": "**6. IFRS 16 lease.** Five-year lease, annual payments of 25 in arrears; discounted at 8%, the lease liability is about 100 (99.8, rounded to 100).\n- Day 0: right-of-use (ROU) asset +100, lease liability +100. No IS effect, no cash.\n- Year 1, IS: the rent of 25 no longer sits in operating costs, so EBITDA is 25 higher than under rent accounting; in its place the P&L shows depreciation of 100 / 5 = 20 and interest of 8% x 100 = 8. Pre-tax expense 28, net income -21.\n- Year 1, CFS: -21 + 20 (depreciation) = CFO -1 (interest sits inside net income in this model); principal 25 - 8 = 17 in CFF. Cash -18, which is -25 of payment + 7 of tax saving (28 x 25%).\n- Year 1, BS: cash -18, ROU asset -20 (to 80): assets -38. Lease liability -17 (to 83), retained earnings -21: -38.\n\nThe follow-ups: IFRS 16 does not change the cash paid to the landlord, but it raises EBITDA, CFO and net debt, and it front-loads the expense (28 versus 25 in year 1). Under US GAAP an operating lease is also on the balance sheet, but its cost stays as a single rent-like expense in operating costs, so EBITDA is not boosted: adjust before comparing IFRS and US GAAP peers. In valuation, if EBITDA is post-IFRS 16, the lease liability goes into net debt.\n\n**7. Goodwill impairment of 50.**\n- IS: impairment 50, EBIT -50. No tax effect: goodwill impairment is generally not tax-deductible and no deferred tax is recognised on goodwill. Net income -50.\n- CFS: -50 + 50 (non-cash) = cash 0.\n- BS: goodwill -50, retained earnings -50.\n\nThe follow-ups: EBITDA and EBITDA-based covenants are normally unaffected; the impairment says that an earlier acquisition was overpaid or has underperformed. Under IFRS goodwill is not amortised, it is tested for impairment at least once a year, and a goodwill impairment can never be reversed. If it were tax-deductible (as in some asset deals), net income would fall by 37.5 and cash would rise by 12.5."
+    },
+    {
+     "h": "Walk-throughs 8 to 10: deferred revenue, buyback versus dividend, working-capital swing",
+     "body": "**8. Deferred revenue (a SaaS prepayment).** On 1 October a customer signs a 12-month contract for 120 and pays upfront. Year end is 31 December; assume no costs and tax on recognised revenue.\n- IS: revenue 3/12 x 120 = 30; net income +22.5.\n- CFS: +22.5 + 90 (increase in deferred revenue, a liability) = CFO +112.5.\n- BS: cash +112.5. Deferred revenue (a contract liability under IFRS 15) +90, retained earnings +22.5.\n- Next year, with no new contracts: revenue 90 and net income +67.5, but deferred revenue falls by 90, so CFO -22.5 (the tax).\n\nBillings = revenue + change in deferred revenue = 30 + 90 = 120. This is why a growing subscription business shows CFO above net income, and why in M&A buyers sometimes argue that deferred revenue is debt-like: they must deliver a service that has already been paid for.\n\n**9. Buyback versus dividend.** Net income 100, 100m shares, price 20 (EPS 1.00, P/E 20x), cash earning 2% pre-tax. The company returns 200.\n\n| | Dividend of 200 | Buyback of 200 (10m shares) |\n|---|---|---|\n| IS | Lost interest 200 x 2% x 0.75 = 3; net income 97 | Same: net income 97 |\n| CFS | CFF -200 | CFF -200 |\n| BS | Cash -200, retained earnings -200 | Cash -200, equity -200 (treasury shares) |\n| EPS | 97 / 100 = 0.97 (-3%) | 97 / 90 = 1.08 (+7.8%) |\n| Value per share | Price 1,800 / 100 = 18, plus 2 of dividend = 20 | Price 1,800 / 90 = 20 |\n\nSame cash, same fall in equity, same shareholder wealth before taxes and signalling. The EPS accretion appears because the earnings yield (1 / 20 = 5%) is above the after-tax return on cash (1.5%): it is not value creation.\n\n**10. Working-capital swing.**\n- Receivable days rise from 45 to 60 on revenue of 730 (2 a day): receivables 90 -> 120. No IS effect; CFO -30; on the BS cash -30 and receivables +30.\n- A supplier extends terms from 30 to 60 days on COGS of 730: payables 60 -> 120, cash +60, once.\n- In a downturn revenue falls from 1,000 to 800 with NWC at 20% of revenue: NWC 200 -> 160 releases 40 of cash while profit falls. In the recovery the swing reverses and absorbs cash."
+    },
+    {
+     "h": "The pattern behind all ten",
+     "body": "| # | Event | Net income | Cash | What the interviewer wants to hear |\n|---|---|---|---|---|\n| 1 | Book depreciation 20, tax depreciation 40 | -15 | +10 | Cash follows the tax deduction; DTL +5 |\n| 2 | Inventory write-down 40, deductible later | -30 | 0 | It hits EBITDA; DTA +10 |\n| 3 | Machine with book value 40 sold for 50 | +7.5 | +47.5 | Gain out of CFO, proceeds in CFI |\n| 4 | Debt of 200 with 4 of fees, year 1 | -9.6 | -8.8 | Fees amortised through interest |\n| 5 | RSUs net-settled: 0.4m shares withheld at 50 | 0 | -20m | A buyback in disguise |\n| 6 | IFRS 16 lease, year 1 | -21 | -18 | EBITDA +25 versus rent; lease liability of 83 in net debt |\n| 7 | Goodwill impairment 50 | -50 | 0 | Not tax-deductible, never reversed |\n| 8 | Prepaid contract of 120, 3 months earned | +22.5 | +112.5 | Billings 120, revenue 30 |\n| 9 | Buyback or dividend of 200 | -3 | -200 | EPS rises only with the buyback |\n| 10 | Receivable days from 45 to 60 | 0 | -30 | One-off cash, no profit effect |\n\nTwo ideas explain almost every answer: **cash follows the tax deduction, not the accounting expense**, and **working capital and financing move cash without touching profit**."
+    },
+    {
+     "h": "How to say it in an interview",
+     "body": "Three habits make these answers sound senior: state the assumptions, give the number trail statement by statement, then add the one follow-up that shows judgement.\n\n- Assumptions: 'I'll assume a 25% tax rate and that the tax deduction follows the accounting expense, unless you want me to treat tax differently.'\n- IFRS 16: 'On day one a right-of-use asset and a lease liability of 100 come onto the balance sheet, with no cash or P&L effect. In year one the rent of 25 is replaced by depreciation of 20 and interest of 8, so EBITDA is 25 higher and pre-tax profit 3 lower than under rent accounting; 17 of the payment moves to financing cash flow, and the cash paid to the landlord does not change.'\n- Goodwill: 'A goodwill impairment of 50 cuts EBIT and net income by 50, because it is not tax-deductible; cash does not move, goodwill and retained earnings both fall by 50, and EBITDA-based covenants are unaffected. It tells me the acquisition was overpaid or has underperformed.'"
+    }
+   ],
+   "examples": [
+    {
+     "q": "A company bought a machine for 300 at the start of the year (already paid). Book depreciation is 50 a year; the tax rules allow 90 in year 1. The tax rate is 25%. What is the impact of depreciation on net income, cash and deferred tax in year 1?",
+     "steps": [
+      "IS: depreciation 50; the tax expense falls by 50 x 25% = 12.5; net income -37.5.",
+      "Tax actually paid falls by 90 x 25% = 22.5. The difference, 22.5 - 12.5 = 10, is a deferred tax liability: tax postponed to later years.",
+      "CFS: -37.5 + 50 (D&A) + 10 (increase in DTL) = cash +22.5.",
+      "BS: cash +22.5, PP&E -50: assets -27.5. DTL +10, retained earnings -37.5: -27.5. It balances."
+     ],
+     "answer": "Net income -37.5, cash +22.5, deferred tax liability +10."
+    },
+    {
+     "q": "A company signs a 5-year lease. The lease liability, discounted at 6%, is 200 and the annual payment (in arrears) is 47.5. The right-of-use asset is depreciated straight-line, the tax rate is 25% and tax follows the accounting expense. In year 1, what are the effects on net income, CFO, CFF, cash and the lease liability, and how much higher is EBITDA than if the payment were expensed as rent?",
+     "steps": [
+      "Depreciation = 200 / 5 = 40. Interest = 6% x 200 = 12. Principal = 47.5 - 12 = 35.5.",
+      "IS: pre-tax expense 40 + 12 = 52; net income -52 x 0.75 = -39. As rent, the 47.5 would have reduced EBITDA; under IFRS 16 it does not, so EBITDA is 47.5 higher.",
+      "CFS: CFO = -39 + 40 = +1 (interest inside net income); CFF = -35.5 (principal). Cash -34.5, which is -47.5 of payment + 13 of tax saving (52 x 25%).",
+      "BS: cash -34.5, ROU asset 200 -> 160: assets -74.5. Lease liability 200 -> 164.5, retained earnings -39: -74.5. It balances."
+     ],
+     "answer": "Net income -39, CFO +1, CFF -35.5, cash -34.5, lease liability 164.5; EBITDA 47.5 higher than under rent accounting."
+    },
+    {
+     "q": "Net income is 300, there are 150m shares at a price of 30 and surplus cash earns 3% pre-tax (tax rate 25%). The company can return 450 through a dividend or through a buyback at the current price. What happens to EPS in each case, and up to what P/E is a cash-funded buyback accretive?",
+     "steps": [
+      "Starting EPS = 300 / 150 = 2.00; P/E = 30 / 2.00 = 15x.",
+      "After-tax interest lost = 450 x 3% x 0.75 = 10.1; net income = 289.9 in both cases.",
+      "Dividend: EPS = 289.9 / 150 = 1.93 (-3.4%). Buyback: 450 / 30 = 15m shares repurchased; EPS = 289.9 / 135 = 2.15 (+7.4%).",
+      "Break-even: the buyback is accretive while the earnings yield exceeds the after-tax yield on cash, 1 / P/E > 3% x 0.75 = 2.25%, i.e. at a P/E below 1 / 2.25% = 44.4x."
+     ],
+     "answer": "Dividend: EPS 1.93 (-3.4%). Buyback: EPS 2.15 (+7.4%). A cash-funded buyback is accretive at any P/E below about 44x."
+    },
+    {
+     "q": "Revenue falls from 1,200 to 900. COGS is 60% of revenue. Receivable days are 60, inventory days 90 and payable days 45 (inventory and payables measured on COGS) and stay unchanged. Using a 360-day year, how much cash does working capital release, and what is the cash conversion cycle?",
+     "steps": [
+      "Year 1: receivables 1,200 x 60 / 360 = 200; COGS 720, inventory 720 x 90 / 360 = 180, payables 720 x 45 / 360 = 90. NWC = 200 + 180 - 90 = 290.",
+      "Year 2: receivables 150; COGS 540, inventory 135, payables 67.5. NWC = 217.5.",
+      "Release = 290 - 217.5 = 72.5 of cash in CFO, even though profit falls.",
+      "Cash conversion cycle = DSO + DIO - DPO = 60 + 90 - 45 = 105 days, unchanged: the release comes from lower volumes, not from better management."
+     ],
+     "answer": "Working capital releases 72.5 of cash; the cash conversion cycle stays at 105 days."
+    }
+   ],
+   "cheatsheet": [
+    "Four questions: which IS line (above or below EBITDA)? Cash or not, and when? Tax now, later or never? CFO, CFI or CFF?",
+    "Cash effect of a non-cash expense = tax deduction taken this year x t; a deduction before the book expense creates a DTL, after it a DTA.",
+    "Gain on disposal: subtract it in CFO, show the full proceeds in CFI.",
+    "Debt fees: netted against the debt and amortised through interest. PIK: cash +interest x t, debt +interest.",
+    "Net share settlement of RSUs: cash out in CFF and fewer new shares, a buyback in disguise.",
+    "IFRS 16: EBITDA up by the rent, lease liability in net debt, cash paid to the landlord unchanged.",
+    "Goodwill impairment: EBIT and net income down, no tax, no cash, never reversed under IFRS.",
+    "Billings = revenue + change in deferred revenue.",
+    "Buyback or dividend: cash -X, equity -X, CFF -X; EPS rises with a buyback only if 1 / P/E > after-tax yield on cash.",
+    "Working-capital swings are one-off cash: falling revenue releases NWC, the recovery absorbs it."
+   ]
+  },
+  {
+   "id": "les-val-05",
+   "skill": "fin-val",
+   "order": 5,
+   "title": "Valuing high-growth and pre-profit tech companies",
+   "minutes": 22,
+   "summary": "You will be able to value a company without profits using revenue and gross-profit multiples, the rule of 40, the VC method and probability-weighted scenarios, and work out who owns what after a round with an option pool, convertible notes and SAFEs.",
+   "sections": [
+    {
+     "h": "Why the usual toolkit struggles",
+     "body": "With negative EBITDA, P/E and EV/EBITDA are meaningless, and in a DCF almost all the value sits in the terminal value. The answer is not to abandon fundamentals but to change the question: **what margins will the business earn at maturity, when, and with what probability?**\n\nThe toolkit, from the most used to the most specialised:\n- **Revenue or gross-profit multiples** on next-twelve-months (NTM) figures, adjusted for growth and margins.\n- **Rule of 40**, to judge the balance between growth and profitability.\n- **A long DCF** (10 years or more) that converges to a steady-state margin, used as a cross-check rather than as the main method.\n- **VC method** for start-ups: value at exit, discounted at the investor's target return.\n- **Probability-weighted scenarios** when the outcome is binary (the technology works or it does not).\n\nA multiple on a loss-making company is a shortcut for a DCF: it only makes sense if the peers are similar in growth, gross margin and path to profitability."
+    },
+    {
+     "h": "EV/Revenue versus EV/Gross profit",
+     "body": "EV/Revenue is the default for high growth, but it treats every euro of revenue as equal. A software euro with an 80% gross margin is worth far more than a hardware euro with 40%.\n\n**EV/Gross profit = EV / (revenue x gross margin)** puts businesses with different margins on the same basis.\n\n| Company | EV | Revenue | Gross margin | EV/Revenue | EV/Gross profit |\n|---|---|---|---|---|---|\n| X (software) | 1,200 | 200 | 80% | 6.0x | 7.5x |\n| Y (hardware and software) | 600 | 200 | 40% | 3.0x | 7.5x |\n\nY looks 'cheaper' on revenue, but on gross profit the two trade at the same multiple. EV/Gross profit is the better yardstick for mixed hardware and software models, for marketplaces (gross versus net revenue) and for any peer group with very different margins.\n\n**Growth-adjusted multiple** = EV/NTM revenue divided by growth in percentage points. 12x at 40% growth = 0.30; 6x at 15% growth = 0.40: the 'expensive' company is cheaper per point of growth.\n\nUse NTM figures: for a company growing 50% a year, an LTM multiple looks 50% higher than the NTM one for the same price."
+    },
+    {
+     "h": "The rule of 40",
+     "body": "**Rule of 40: revenue growth % + profit margin % >= 40**, where the margin is usually the EBITDA or the FCF margin (say which one you use).\n\n| Company | Growth | FCF margin | Score | Reading |\n|---|---|---|---|---|\n| A | 50% | -5% | 45 | Burns cash, but buys a lot of growth |\n| B | 20% | 25% | 45 | Slower but very profitable |\n| C | 35% | -15% | 20 | Expensive growth: a red flag |\n\nWhy it matters: software companies above 40 tend to command higher revenue multiples, and investors use the score to judge whether losses are buying enough growth.\n\nCaveats:\n- It is a heuristic, not a valuation, and it is most meaningful for scaled software companies: 100% growth from a tiny base says little.\n- Check how the margin treats stock-based compensation: a margin before SBC flatters the score.\n- It says nothing about retention or the quality of growth."
+    },
+    {
+     "h": "The VC method",
+     "body": "A start-up has no reliable cash flows, so the investor works backwards from the exit.\n\n1. **Exit value** in year N: forecast revenue (or EBITDA) x an exit multiple from comparable companies.\n2. **Target return**: a multiple of money (for example 10x) or an IRR (a 50% IRR over 5 years is 1.5^5 = 7.6x). The rate is high because it absorbs the risk of failure.\n3. **Post-money today = exit value x retention / target multiple**, where retention is the share of its stake the investor expects to keep after future rounds dilute it.\n4. **Pre-money = post-money - investment**; ownership = investment / post-money.\n\nExample: revenue of 50 in year 5, exit at 4.0x revenue = 200. The investor puts in 5 and wants 10x.\n- Without future dilution: post-money = 200 / 10 = 20, pre-money = 15, ownership 25%.\n- If later rounds will dilute it by 30% (retention 70%), it needs 25% / 0.7 = 35.7% today: post-money = 5 / 35.7% = 14 and pre-money = 9.\n\nForgetting the dilution of future rounds is the most common mistake: it overstates what the investor can pay today."
+    },
+    {
+     "h": "Pre-money, post-money and the option pool",
+     "body": "**Post-money = pre-money + new money. Investor ownership = new money / post-money. Price per share = pre-money / fully diluted pre-money shares.**\n\nFully diluted means all shares, all granted options and the unallocated option pool. Investors usually ask for the pool to be created or topped up **in the pre-money**, so that its dilution falls on the existing shareholders rather than on them: the 'option pool shuffle'.\n\n**Effective pre-money = headline pre-money - new pool % x post-money**\n\nExample: headline pre-money 20, new money 5 (post-money 25, investor 20%), and a pool equal to 10% of the post-money to be created in the pre-money. The founders' effective pre-money is 20 - 10% x 25 = 17.5: the pool costs them 2.5 of value, even though the headline says 20.\n\nWhat founders negotiate: the pool size (based on the real hiring plan, not on a round number), the headline pre-money, and whether existing unallocated options count towards the new pool."
+    },
+    {
+     "h": "Convertible notes and SAFEs at the next round",
+     "body": "Early rounds are often done before anyone agrees a valuation:\n- **Convertible note**: a loan that converts into shares at the next priced round. It accrues interest, which converts too, and has a maturity date.\n- **SAFE** (simple agreement for future equity): not debt; no interest and no maturity. It converts at the next priced round.\n\nBoth usually carry a **discount** (for example 20% off the round price) and/or a **valuation cap**. At conversion the holder gets the better of the two:\n\n**Conversion price = lower of round price x (1 - discount) and cap / fully diluted pre-money shares**\n\n**Shares received = amount converting (plus accrued interest for a note) / conversion price**\n\nTwo definitions to check in every term sheet:\n- **Pre-money or post-money cap.** With a post-money SAFE the cap is a post-money valuation: 1 invested on a cap of 10 buys 10% of the company measured just before the new money, and only the new round then dilutes it (a Series A raising 5 at a 20 pre-money takes it to 10% x 20 / 25 = 8%).\n- **Who absorbs the conversion.** If the round's pre-money is defined to include the converting shares, the dilution falls on the founders; if not, the effective post-money is higher than pre-money + new money.\n\nThe cap matters most when the round prices well above it: that is when early holders are rewarded for the risk they took."
+    },
+    {
+     "h": "Probability-weighted scenarios",
+     "body": "When the outcome is binary (the chip is qualified by customers or it is not), a single 'base case' hides the real risk. Build scenarios at a common horizon, weight them and discount:\n\n| Scenario (year 5) | Value | Probability | Weighted |\n|---|---|---|---|\n| Success: product in volume | 600 | 25% | 150 |\n| Partial: niche product | 200 | 40% | 80 |\n| Failure: sale of IP and team | 20 | 35% | 7 |\n| **Expected value** | | 100% | **237** |\n\nDiscounted at 20% for 5 years: 237 / 1.2^5 = 237 / 2.49 = 95.\n\nRule: **put the risk in the probabilities or in the discount rate, never in both.** A VC rate of 50% applied to the success case alone gives 600 / 1.5^5 = 79, a similar order of magnitude, because the high rate already prices failure. Applying 50% to the probability-weighted 237 would count the risk twice and give only 31.\n\nThe sensitivity that matters most is the success probability: always show how the value changes when it moves."
+    },
+    {
+     "h": "How to say it in an interview",
+     "body": "Show that you know the shortcut and its limits:\n\n- 'For a loss-making software company I'd start with EV to NTM revenue against peers with similar growth and gross margin, cross-check it on gross profit and the rule of 40, and sanity-check it with a long DCF that converges to a steady-state margin.'\n- 'In a venture round I'd work back from the exit: exit value divided by the investor's target multiple, adjusted for the dilution of future rounds, gives the post-money; minus the new money, the pre-money.'\n- 'With an option pool in the pre-money and notes converting at a cap, the headline valuation overstates what the founders get, so I'd always rebuild the fully diluted cap table before comparing offers.'"
+    }
+   ],
+   "examples": [
+    {
+     "q": "A hardware-and-software target has revenue of 150 and a 45% gross margin. Software peers trade at a median 6.0x EV/Revenue with an average gross margin of 75%. What EV do the revenue multiple and the gross-profit multiple imply?",
+     "steps": [
+      "Peers' EV/Gross profit = 6.0x / 75% = 8.0x.",
+      "Target gross profit = 150 x 45% = 67.5. EV on gross profit = 67.5 x 8.0 = 540.",
+      "EV on revenue = 150 x 6.0 = 900, i.e. 67% higher, because it implicitly assumes software margins.",
+      "Implied EV/Revenue on the gross-profit basis = 540 / 150 = 3.6x."
+     ],
+     "answer": "The revenue multiple implies 900 and the gross-profit multiple 540 (3.6x revenue); the gross-profit basis is the defensible one."
+    },
+    {
+     "q": "A deep-tech start-up expects revenue of 80 in year 6; comparable companies are acquired at 5.0x revenue. A VC invests 8 now and targets 10x its money. Two later rounds are expected to dilute it by 20% each. What pre-money valuation can the VC accept?",
+     "steps": [
+      "Exit value = 80 x 5.0 = 400. The VC needs 8 x 10 = 80 at exit, i.e. 80 / 400 = 20% of the company at exit.",
+      "Retention = 0.8 x 0.8 = 64%. Ownership needed today = 20% / 0.64 = 31.25%.",
+      "Post-money = 8 / 31.25% = 25.6; pre-money = 25.6 - 8 = 17.6.",
+      "Ignoring dilution would give a post-money of 400 / 10 = 40 and a pre-money of 32, almost double. A 10x target over 6 years is an IRR of 10^(1/6) - 1 = 47%."
+     ],
+     "answer": "A pre-money of about 17.6 (post-money 25.6, a 31.25% stake)."
+    },
+    {
+     "q": "Founders own 6m shares and there is no option pool. An investor offers 4m at a 12m pre-money, on condition that an unallocated pool equal to 15% of the post-money capitalisation is created in the pre-money. What is the price per share, and what is the founders' effective pre-money?",
+     "steps": [
+      "Post-money = 12 + 4 = 16; investor 4 / 16 = 25%; pool 15%; founders 100% - 25% - 15% = 60%.",
+      "Post-money shares = 6m / 60% = 10m. Price = 16m / 10m = 1.60 per share (check: pre-money 12m / (6m + 1.5m pool) = 1.60).",
+      "Investor shares = 4m / 1.60 = 2.5m; pool = 15% x 10m = 1.5m.",
+      "Founders' effective pre-money = 6m x 1.60 = 9.6m, i.e. 12 - 15% x 16 = 9.6: the pool costs them 2.4m."
+     ],
+     "answer": "1.60 per share; the founders' effective pre-money is 9.6m, not 12m."
+    },
+    {
+     "q": "Founders hold 9m shares and the option pool 1m (10m fully diluted). A convertible note of 1.0m carries 8% simple interest (one year accrued), a 20% discount and an 8m pre-money cap. The Series A raises 4m at a 16m pre-money, with the price set on the 10m existing fully diluted shares. How many shares does the note receive and who owns what after the round?",
+     "steps": [
+      "Series A price = 16m / 10m = 1.60. Discount price = 1.60 x 0.8 = 1.28. Cap price = 8m / 10m = 0.80. The note converts at the lower: 0.80.",
+      "Amount converting = 1.0m x 1.08 = 1.08m; shares = 1.08m / 0.80 = 1.35m.",
+      "Series A shares = 4m / 1.60 = 2.5m. Total = 10 + 1.35 + 2.5 = 13.85m; post-money at the round price = 13.85m x 1.60 = 22.16m.",
+      "Ownership: founders 9 / 13.85 = 65.0%, pool 7.2%, noteholder 9.7%, Series A 18.1%. The noteholder's claim of 1.08m is now worth 1.35m x 1.60 = 2.16m, twice as much."
+     ],
+     "answer": "1.35m shares for the note; founders 65.0%, pool 7.2%, noteholder 9.7%, Series A 18.1%."
+    }
+   ],
+   "cheatsheet": [
+    "EV/Gross profit = EV / (revenue x gross margin): use it when gross margins differ.",
+    "Growth-adjusted multiple = EV/NTM revenue / growth in percentage points.",
+    "Rule of 40: growth % + EBITDA or FCF margin % >= 40.",
+    "VC method: post-money = exit value x retention / target multiple; pre-money = post-money - investment.",
+    "Ownership = new money / post-money; price per share = pre-money / fully diluted pre-money shares.",
+    "Pool in the pre-money: effective pre-money = headline pre-money - pool % x post-money.",
+    "Note or SAFE: conversion price = lower of round price x (1 - discount) and cap / pre-money shares.",
+    "Notes accrue interest that converts; SAFEs have no interest and no maturity.",
+    "Risk goes in the probabilities or in the discount rate, never in both."
+   ]
+  },
+  {
+   "id": "les-ma-02",
+   "skill": "fin-ma",
+   "order": 2,
+   "title": "The sell-side M&A process, step by step: what the analyst does",
+   "minutes": 20,
+   "summary": "You will be able to describe each phase of a sell-side auction from the analyst's desk, name the deliverables and the classic mistakes, compare bids on a like-for-like basis and talk about your own deals without breaching confidentiality.",
+   "sections": [
+    {
+     "h": "The analyst's job in one line",
+     "body": "The analyst is the **owner of the numbers, the documents and the process logistics**. The MD runs the client relationship and the negotiation; the VP or associate runs the workstreams day to day; the analyst makes sure that every number is right, every document is current and every bidder receives exactly what it should, on time.\n\nThree workstreams run through the whole process:\n- **Model and valuation**: the operating model (management case and sensitivities), trading comps, precedent transactions, DCF and an LBO analysis to see what a financial sponsor could pay.\n- **Documents**: teaser, information memorandum, management presentation, process letters, bid comparisons, board materials.\n- **Process management**: buyer list, NDA tracker, contact log, data room, Q&A log, timetable.\n\nEverything has a **code name** (for example Project Orion): it appears in file names, emails and documents instead of the client's name."
+    },
+    {
+     "h": "Phase 1: preparation (around 6 to 10 weeks)",
+     "body": "| What the analyst does | Deliverable |\n|---|---|\n| Collects historicals, KPIs and the business plan through a request list | Information request list and tracker |\n| Builds the model and spreads the comps | Operating model, valuation summary (football field) |\n| Maps strategic buyers and sponsors by fit, ability to pay and likelihood of bidding | Long list, then a short list approved by the client |\n| Drafts the anonymous short summary of the opportunity | **Teaser** |\n| Drafts the full equity story with financials and KPIs | **Information memorandum (IM)** |\n| Coordinates the vendor due diligence providers (financial, tax, legal, commercial) | VDD reports, ready for the second round |\n| Prepares the NDA and the data room structure | NDA template, data room index |\n\nThe quality test of this phase: every number in the teaser, the IM and the model ties to the same source, and every adjustment to EBITDA (one-offs, IFRS 16, pro forma acquisitions) is explained in a bridge from reported to adjusted figures."
+    },
+    {
+     "h": "Phase 2: first round (around 4 to 6 weeks)",
+     "body": "1. **Contact the buyers**: send the teaser, negotiate and track NDAs. The analyst logs every mark-up and every signature.\n2. **Send the IM and the first process letter**: deadline, format of the offer (EV on a cash-free, debt-free basis with a normal level of working capital), key assumptions, sources of financing, due diligence needs, approvals still required.\n3. **Answer questions** through a single channel, always with the client's sign-off.\n4. **Analyse the non-binding offers**: the analyst builds the **bid comparison**, with headline value, implied multiples, assumptions on net debt and working capital, conditions, financing and credibility of each bidder.\n5. **Shortlist** typically 3-6 bidders for the second round, balancing price and certainty.\n\nThe contact log matters: the team must know at any moment who has received which document, and when."
+    },
+    {
+     "h": "Phase 3: second round (around 6 to 8 weeks)",
+     "body": "- **Virtual data room (VDR)**: the analyst uploads documents, manages permissions by bidder and keeps the index current. Competitively sensitive data (prices and margins by customer) goes only to a **clean team** of the bidder, or is released late, especially when the bidder is a competitor.\n- **Management presentation**: the analyst builds the deck, consistent with the IM, and prepares a Q&A book for management.\n- **Q&A log**: every question, its owner, the draft answer and the client's approval. Fast, consistent answers are the sign of a well-run process.\n- **Draft SPA**: prepared by the seller's lawyers; bidders return a mark-up with their binding offer.\n- **Second process letter**: asks for a binding offer, the SPA mark-up, committed financing, any remaining conditions and the timetable to signing.\n- **Final bid comparison**: value **and** terms. The SPA mark-up (price mechanism, warranties, liability caps, conditions) can be worth as much as the headline price."
+    },
+    {
+     "h": "Phase 4: signing and closing",
+     "body": "**Signing**: final negotiation with one or two bidders; the SPA and the disclosure letter are signed and the deal is announced (press release, and for a listed company board materials and often a fairness opinion). The analyst prepares the final valuation materials and checks every number in the announcement.\n\n**Between signing and closing**: the conditions precedent, typically merger control and foreign investment approvals, sometimes third-party consents. The **long-stop date** is the date after which either party can walk away if the conditions are not met.\n\n**Closing**: the **funds flow memorandum** (who pays what to whom: price, repayment of debt, fees), the closing statement (completion accounts) or the leakage confirmation (locked box), then payment and transfer of the shares. After closing: the completion accounts process and earn-out monitoring, where relevant.\n\nIndicatively, a process runs for 4-6 months to signing; closing can follow immediately or months later, depending on the approvals."
+    },
+    {
+     "h": "Classic analyst mistakes",
+     "body": "- **Numbers that do not tie** across the IM, the model, the management presentation and the VDD. Keep one source of truth and tick and tie every page before it goes out.\n- **Version chaos**: sending an old version or the wrong file. Put the date and version in every file name and keep a distribution log.\n- **The wrong recipient**: one bidder sees another's Q&A, or a competitor sees sensitive pricing. Check data room permissions twice and never 'reply all' to bidders.\n- **Leaking the client's identity**: the real name in a file name, an email subject, document metadata, tracked changes or a hidden Excel tab.\n- **Inconsistent definitions**: adjusted versus reported EBITDA, pre- versus post-IFRS 16, LTM versus budget year.\n- **Wrong premium or multiple**: premium measured on the wrong undisturbed date, basic instead of diluted shares, EV built on a different net debt from the one in the bid.\n- **Answering bidders without the client's sign-off**, or promising dates the client has not agreed."
+    },
+    {
+     "h": "Talking about your deals without breaching confidentiality",
+     "body": "Interviewers will ask about your deals, and they are also testing your judgement: a candidate who reveals a client's name or numbers fails, however good the story.\n\nRules:\n- **Never name the client, the bidders, the price or the timetable** unless the deal has been announced; after the announcement, use only what is in the press release and public filings.\n- **Describe it at a level that cannot identify it**: 'a sell-side process for a European technology hardware company'. In a niche sector even a precise size, sub-sector and country can point to one company: use broad ranges.\n- **Talk about the process and your role**, not the confidential content: what you built, what went wrong, what you learned.\n- **If they push, decline politely**: 'I'm afraid I can't go into the specifics, but I can tell you how we handled it.' This earns respect rather than losing points.\n- **Never use real numbers from a live deal** in a case study, a test or a modelling exercise."
+    },
+    {
+     "h": "How to say it in an interview",
+     "body": "Structure: the process, your role, one concrete problem you solved, what you learned.\n\n- 'I'm working on a sell-side process for a European deep-tech business. I can't share names or numbers, but I can walk you through the process and what I own: the model, the buyer list, the bid comparison and the data room Q&A.'\n- 'In the first round my job was to make the offers comparable: each bidder assumed a different net debt and working capital, so I rebuilt every bid on the same cash-free, debt-free basis before we discussed the shortlist with the client.'\n- 'The biggest lesson was that headline price is not value: conditions, the SPA mark-up and certainty of closing can change the ranking.'"
+    }
+   ],
+   "examples": [
+    {
+     "q": "Three binding bids on a cash-free, debt-free basis. A: EV 520, all cash, no material conditions. B: EV 560, of which 80 is an earn-out payable in 2 years if a revenue target is met (estimated probability 50%, discount rate 10%). C: EV 545, all cash, but subject to a lengthy regulatory review with an estimated 80% chance of clearance; if it fails, the seller expects to re-run the sale and achieve 470. Rank the bids.",
+     "steps": [
+      "A: 520, with near-certain value.",
+      "B: 480 upfront + 50% x 80 / 1.1^2 = 480 + 33.1 = 513.1. The headline of 560 is worth about 47 less.",
+      "C: 80% x 545 + 20% x 470 = 436 + 94 = 530, before the cost of a longer timetable, and with a one-in-five chance of ending at 470.",
+      "Ranking on expected value: C (530), A (520), B (513). The seller would ask C for a reverse break fee: a fee of 50 payable if clearance fails lifts the downside to 520 and the expected value to 0.8 x 545 + 0.2 x 520 = 540, making C clearly the best bid."
+     ],
+     "answer": "Expected value: C 530, A 520, B 513; C becomes clearly the best bid if it offers a reverse break fee that protects the downside."
+    },
+    {
+     "q": "A listed target's undisturbed share price is 10.80. A bidder offers 13.50 per share. The target has 48m basic shares and 3m options with a strike of 9.00, net debt of 138.5 and LTM EBITDA of 80. Calculate the premium, the equity value, the EV and the implied EV/LTM EBITDA.",
+     "steps": [
+      "Premium = 13.50 / 10.80 - 1 = 25.0%.",
+      "Treasury stock method at the offer price: proceeds 3m x 9.00 = 27m, shares bought back 27 / 13.50 = 2m, net new shares 1m. Diluted shares = 49m.",
+      "Equity value = 49m x 13.50 = 661.5. EV = 661.5 + 138.5 = 800.",
+      "EV/LTM EBITDA = 800 / 80 = 10.0x. Use the offer price, not the undisturbed price, to calculate the dilution."
+     ],
+     "answer": "Premium 25.0%, equity value 661.5, EV 800, 10.0x LTM EBITDA."
+    },
+    {
+     "q": "Bidder X offers 430 for 100% of the shares. Bidder Y offers an EV of 540 on a cash-free, debt-free basis. The target has net financial debt of 95 and debt-like items of 15 (pension deficit 10, unpaid prior-year bonuses 5). Y's SPA mark-up also treats 20 of deferred revenue as debt-like. Which bid is better for the seller?",
+     "steps": [
+      "Put both bids in equity value: the cash the seller actually receives.",
+      "Y with the seller's definitions: 540 - 95 - 15 = 430, the same as X.",
+      "Y with its own definitions: 430 - 20 (deferred revenue) = 410.",
+      "X is worth 20 more unless the seller gets Y to drop the deferred revenue deduction: the definition of debt-like items is part of the price."
+     ],
+     "answer": "X is worth 430 against 410 for Y after Y's debt-like adjustments; the two are equal only if Y drops the deferred revenue deduction."
+    }
+   ],
+   "cheatsheet": [
+    "Analyst = owner of the numbers, the documents and the process logistics.",
+    "Preparation: model, comps, buyer list, teaser, IM, VDD, data room.",
+    "First round: NDAs, IM and process letter, non-binding offers, bid comparison, shortlist.",
+    "Second round: management presentation, data room and Q&A, draft SPA, binding offers with mark-ups.",
+    "Signing: SPA and announcement. Closing: conditions precedent, funds flow, payment.",
+    "Compare bids in equity value received, adjusted for timing, probability and debt-like items.",
+    "Tick and tie every number; code names everywhere; check permissions twice.",
+    "In interviews: process and role, yes; names, prices and dates, no."
+   ]
+  },
+  {
+   "id": "les-ma-03",
+   "skill": "fin-ma",
+   "order": 3,
+   "title": "Purchase price allocation, goodwill and deal mechanics",
+   "minutes": 22,
+   "summary": "You will be able to run a purchase price allocation with deferred taxes, explain locked box versus completion accounts and the working-capital peg, and say what earn-outs, W&I insurance, MAC clauses, break fees and the asset versus share deal choice do to value and risk.",
+   "sections": [
+    {
+     "h": "Purchase price allocation in five steps",
+     "body": "After a deal the buyer allocates the price paid to what it bought (IFRS 3; US GAAP works the same way in substance). Goodwill is the residual.\n\n1. **Purchase price** for the equity, including the fair value of any earn-out at closing.\n2. **Book value of the target's net assets**, less any goodwill already on its balance sheet (it is eliminated).\n3. **Fair value step-ups**: identifiable intangibles not on the target's balance sheet (technology, customer relationships, brands, order backlog) and write-ups of PP&E and inventory.\n4. **Deferred tax liability on the step-ups** in a share deal: the tax base of the assets does not change, so DTL = step-ups x tax rate.\n5. **Goodwill = purchase price - (book net assets - old goodwill + step-ups - DTL)**.\n\nWhat happens afterwards:\n- The new intangibles are **amortised**, cutting EBIT and EPS (the DTL unwinds and offsets part of it): hence the 'adjusted EPS' that excludes acquisition amortisation.\n- The **inventory step-up** unwinds through COGS in the first months, depressing gross margin: a classic adjustment in semiconductor deals.\n- **Goodwill** is not amortised; it is tested for impairment at least once a year.\n- If the price is below the fair value of the net assets, the result is a **bargain purchase** gain, recognised only after a careful reassessment."
+    },
+    {
+     "h": "A worked PPA",
+     "body": "Price paid for the equity 1,000. Target book equity 400, including old goodwill of 50. Identified: technology 150 (5-year life), customer relationships 200 (10 years), PP&E write-up 50 (10 years). Tax rate 25%.\n\n| Step | Calculation | Value |\n|---|---|---|\n| Book net assets excluding old goodwill | 400 - 50 | 350 |\n| Step-ups | 150 + 200 + 50 | +400 |\n| DTL on step-ups | 400 x 25% | -100 |\n| Fair value of identifiable net assets | 350 + 400 - 100 | 650 |\n| **Goodwill** | 1,000 - 650 | **350** |\n\nEvery year after closing: amortisation of 150 / 5 + 200 / 10 + 50 / 10 = 55 pre-tax, the DTL releases 55 x 25% = 13.75, and net income falls by 41.25. Cash does not change: in a share deal the extra amortisation is not tax-deductible, which is exactly why the DTL exists.\n\nForgetting the DTL understates goodwill by 100 (250 instead of 350): you would be ignoring that the buyer inherits the target's lower tax base."
+    },
+    {
+     "h": "Locked box versus completion accounts",
+     "body": "Both start from the same idea: **equity price = EV - net debt +/- working-capital adjustment**. They differ in **when** net debt and working capital are measured.\n\n| | Locked box | Completion accounts |\n|---|---|---|\n| Price | Fixed equity price, based on a balance sheet at a past date (the locked box date) | EV agreed at signing; equity price trued up after closing |\n| Economic risk and cash generated after the reference date | Pass to the buyer from the locked box date | Stay with the seller until closing |\n| Protection | No-leakage covenant: dividends, fees or transfers to the seller are repaid euro for euro; 'permitted leakage' is listed | Closing statement, review period, independent expert for disputes |\n| Time value for the seller | Ticker: interest on the equity price from the locked box date to closing | Not needed: the seller keeps the cash it generates |\n| Preferred by | Sellers, especially sponsors: price certainty and a clean exit | Buyers, and carve-outs without standalone accounts |\n\nA locked box needs solid diligence on the locked box accounts **before** signing; completion accounts move the work, and the arguments, to **after** closing."
+    },
+    {
+     "h": "The working-capital peg",
+     "body": "An EV assumes the business comes with a **normal level of working capital**. The peg is that level, written into the SPA; at closing the price moves euro for euro by the difference:\n\n**Equity price = EV - net debt at closing - debt-like items + (actual NWC - peg)**\n\nHow the peg is set:\n- Usually the **average NWC over the last 12 months**, to remove seasonality, adjusted for one-offs.\n- With the same accounting definitions as the closing statement: what counts as NWC and what counts as net debt must never overlap.\n- For a fast-growing business the seller may argue for a lower, historical peg and the buyer for a forward-looking one.\n\nWhy the mechanism stops gaming: if the seller delays paying suppliers before closing, cash rises (net debt falls, price up) but NWC falls by the same amount (price down). Net debt and NWC are two sides of the same coin, which is why their definitions are negotiated together.\n\nDebt-like items are the other battleground: pension deficits, deferred consideration, unpaid bonuses, tax liabilities, sometimes deferred revenue."
+    },
+    {
+     "h": "Earn-outs, W&I, MAC and break fees",
+     "body": "**Earn-out**: part of the price is paid later if targets are met (revenue, EBITDA, a technical milestone). It bridges a valuation gap and keeps founders engaged. Disputes come from how the buyer runs the business afterwards, so sellers negotiate operating covenants. Two accounting points under IFRS 3:\n- At closing the earn-out is part of the price at fair value: up to 60 in two years, 50% likely, discounted at 10%, is worth 0.5 x 60 / 1.1^2 = 24.8. If it is a liability, later changes go through the P&L: if the target outperforms and the fair value rises to 40, the buyer books a loss of 15.2.\n- If payments are forfeited when a founder leaves, they are **remuneration** (an expense), not purchase price: crucial in deep-tech deals.\n\n**W&I insurance**: covers the buyer against losses from breaches of the seller's warranties. The seller limits its liability and gets a clean exit; known issues, matters found in due diligence and some specific areas are excluded.\n\n**MAC (material adverse change)**: lets the buyer walk away between signing and closing if something seriously damages the target. The bar is high: the effect must usually be long-lasting and specific to the target, and market-wide events are excluded unless they hit the target disproportionately.\n\n**Break fees**: a target break fee if the seller walks away (for example for a better offer); a **reverse break fee** paid by the buyer if the deal fails on regulatory approval or financing. Some takeover regimes restrict target break fees. In tech deals with long regulatory reviews, the reverse break fee is the main tool to share regulatory risk."
+    },
+    {
+     "h": "Asset deal versus share deal",
+     "body": "| | Share deal | Asset deal |\n|---|---|---|\n| What transfers | The company, with all its assets, liabilities and history | Selected assets and the liabilities the buyer accepts |\n| Contracts, permits, IP | Stay in place (check change-of-control clauses) | Must be assigned; consents needed |\n| Employees | Stay with the same employer | Transfer under employment rules (automatically in many jurisdictions) |\n| Tax for the buyer | No step-up: DTL on the PPA write-ups | Tax base stepped up to the price: amortisation creates a tax shield |\n| Tax for the seller | Gain on shares, exempt or lightly taxed in many jurisdictions | Gain inside the company, then possibly a second layer of tax when the cash is distributed |\n| Historical liabilities | Inherited (protect with warranties, indemnities, W&I) | Mostly left behind |\n| Typical use | Most private deals, all acquisitions of listed companies | Carve-outs, distressed sales, IP transfers |\n\nThe negotiation: the buyer values the step-up as the present value of its tax savings; the seller compares it with its extra tax. A deal works when the buyer's gain exceeds the seller's cost, and the difference is shared through the price."
+    },
+    {
+     "h": "How to say it in an interview",
+     "body": "- 'Goodwill is the residual: the price paid minus the fair value of identifiable net assets, after writing up the intangibles and recognising a deferred tax liability on the write-ups, because in a share deal the tax base does not change.'\n- 'A locked box fixes the equity price at a past balance sheet date, so the buyer takes the economics from that date; the seller is compensated through a ticker and the buyer is protected by a no-leakage covenant. Completion accounts instead true up net debt and working capital against a peg after closing.'\n- 'In tech deals with long regulatory reviews the key protections are the long-stop date and a reverse break fee; and for founder-led deep-tech targets, earn-outs tied to employment are remuneration, not purchase price.'"
+    }
+   ],
+   "examples": [
+    {
+     "q": "A buyer pays 2,400 for the equity of a chip designer with book equity of 900, including old goodwill of 100. It identifies technology of 400 (8-year life), customer relationships of 300 (10 years) and an inventory step-up of 40, sold within six months. The tax rate is 25%. Calculate goodwill and the effect of the PPA on net income in years 1 and 2.",
+     "steps": [
+      "Step-ups = 400 + 300 + 40 = 740; DTL = 740 x 25% = 185.",
+      "Fair value of identifiable net assets = 900 - 100 + 740 - 185 = 1,355. Goodwill = 2,400 - 1,355 = 1,045.",
+      "Year 1: amortisation 400 / 8 + 300 / 10 = 80, plus the inventory step-up of 40 through COGS = 120 pre-tax; DTL release 30; net income -90 (and gross margin depressed by 40).",
+      "Year 2: only the amortisation of 80; net income -80 x 0.75 = -60. Analysts add these back in adjusted EPS."
+     ],
+     "answer": "Goodwill 1,045; net income -90 in year 1 and -60 in year 2."
+    },
+    {
+     "q": "Agreed EV 600. Net debt at the locked box date (31 December) is 120. Closing is expected 6 months later, and the business will generate 20 of free cash flow in between. The seller can choose a locked box with a 5% annual ticker on the equity price, or completion accounts (assume NWC at closing equals the peg). What does the seller receive in each case?",
+     "steps": [
+      "Locked box: equity price = 600 - 120 = 480, fixed. Ticker = 480 x 5% x 6/12 = 12. Total 492; the 20 of cash generated belongs to the buyer.",
+      "Completion accounts: net debt at closing = 120 - 20 = 100; equity price = 600 - 100 = 500.",
+      "The seller gets 8 more under completion accounts, in exchange for less certainty and a post-closing process. A ticker matching the cash generation would be 20 / 480 per half-year, about 8.3% a year.",
+      "Leakage check: if the seller had paid itself a dividend of 15 after the locked box date, outside permitted leakage, the buyer would recover the 15 euro for euro."
+     ],
+     "answer": "Locked box 492 (480 plus a ticker of 12); completion accounts 500."
+    },
+    {
+     "q": "Completion accounts deal at an EV of 750. At closing: cash 40, financial debt 260, deferred consideration from an old acquisition of 15 (treated as debt-like), NWC of 82 against a peg of 95. What is the equity price?",
+     "steps": [
+      "Net debt = 260 - 40 = 220.",
+      "Debt-like items = 15.",
+      "NWC adjustment = 82 - 95 = -13: the business is delivered with less working capital than normal.",
+      "Equity price = 750 - 220 - 15 - 13 = 502."
+     ],
+     "answer": "502."
+    },
+    {
+     "q": "A buyer pays 500 for a business whose assets have a tax base of 200. In an asset deal the buyer can amortise the step-up of 300 for tax over 10 years, straight-line. The tax rate is 25% and the discount rate 8%. How much is the step-up worth to the buyer?",
+     "steps": [
+      "Annual tax amortisation = 300 / 10 = 30; tax saving = 30 x 25% = 7.5 a year for 10 years.",
+      "10-year annuity factor at 8% = 6.71.",
+      "PV of the tax savings = 7.5 x 6.71 = 50.3.",
+      "The buyer could pay up to about 50 more for an asset deal; the seller accepts if its extra tax is lower, and the two share the difference."
+     ],
+     "answer": "About 50 (7.5 a year for 10 years at 8%)."
+    }
+   ],
+   "cheatsheet": [
+    "Goodwill = price - (book net assets - old goodwill + step-ups - DTL).",
+    "DTL on step-ups = step-ups x t in a share deal; no DTL in an asset deal.",
+    "Acquired intangibles: amortisation lowers EPS but not cash; the inventory step-up hits gross margin after closing.",
+    "Equity price = EV - net debt - debt-like items + (NWC - peg).",
+    "Locked box: fixed price, no-leakage covenant, ticker. Completion accounts: true-up after closing.",
+    "Peg = normalised NWC (12-month average); NWC and net debt definitions must not overlap.",
+    "Earn-out: fair value at closing, later changes in the P&L; if tied to employment, it is remuneration.",
+    "Reverse break fee: paid by the buyer if regulators or financing kill the deal.",
+    "Asset deal: tax step-up for the buyer (PV of the tax savings), possible double tax for the seller."
+   ]
+  },
+  {
+   "id": "les-lbo-02",
+   "skill": "fin-lbo",
+   "order": 2,
+   "title": "Debt, returns and value creation in an LBO",
+   "minutes": 22,
+   "summary": "You will be able to structure an LBO debt stack, test leverage, interest cover and covenant headroom, run a cash sweep, attribute returns to their drivers and explain what dividend recaps and higher rates do to IRR and MOIC.",
+   "sections": [
+    {
+     "h": "The debt stack",
+     "body": "From the safest and cheapest to the riskiest and most expensive:\n\n| Tranche | Ranking | Structure | Typical lenders | Key features |\n|---|---|---|---|---|\n| Revolving credit facility (RCF) | Super senior or senior secured | Floating; commitment fee on undrawn amounts | Banks | Liquidity line, often undrawn at closing |\n| Term loan A | Senior secured | Floating, amortising | Banks | Maintenance covenants |\n| Term loan B | Senior secured | Floating, around 1% a year of amortisation, bullet at maturity | Institutional investors (CLOs, funds) | Usually covenant-lite, prepayable |\n| Senior secured or high-yield notes | Secured or unsecured | Fixed coupon, bullet, non-call period | Bond investors | Incurrence covenants |\n| Second lien or mezzanine | Junior | Higher margin, often partly PIK; mezzanine may carry warrants | Credit funds | Flexible but expensive |\n| Unitranche | Single senior facility | One blended margin | Private credit funds | Speed, certainty, few lenders |\n| Holdco PIK, vendor loan | Structurally subordinated | Interest accrues rather than being paid | Specialist funds, the seller | No cash interest; a vendor loan bridges a valuation gap |\n\nTwo principles: **cost rises as you go down the stack**, and **security and ranking decide recoveries** in a default. Floating-rate debt is usually partly hedged with interest rate swaps."
+    },
+    {
+     "h": "Covenants, leverage and cover",
+     "body": "The metrics lenders look at:\n- **Total net leverage = net debt / EBITDA**; senior net leverage counts only senior secured debt.\n- **Interest cover = EBITDA / cash interest.**\n- **Fixed charge cover = (EBITDA - capex - cash taxes) / (cash interest + scheduled repayments).**\n- **FCF / debt**: how fast the company can delever.\n\nTwo types of covenant:\n- **Maintenance**: tested periodically (usually quarterly) whatever the company does, for example net leverage below 5.0x. Typical of bank loans and private credit.\n- **Incurrence**: tested only when the company does something (raises debt, pays a dividend, buys a business). Typical of high-yield bonds and covenant-lite term loans. On the RCF, a **springing** covenant is tested only when the facility is drawn above a threshold.\n\n**Headroom** = how far EBITDA can fall before a breach, with net debt unchanged: **1 - net debt / (covenant multiple x EBITDA)**. Net debt 400, EBITDA 100, covenant 5.0x: EBITDA can fall to 400 / 5.0 = 80, so headroom is 20%.\n\nRead the EBITDA definition: add-backs (run-rate synergies, cost savings) loosen every covenant. In a breach the sponsor can use an **equity cure** (injecting equity) or negotiate a waiver or a reset with the lenders."
+    },
+    {
+     "h": "Debt capacity: how much can the company borrow?",
+     "body": "Debt capacity is the **lowest** amount allowed by several constraints:\n- a **leverage** limit that lenders and rating agencies accept (x times EBITDA);\n- a **minimum interest cover** (EBITDA / interest);\n- the ability to repay a meaningful share of the debt from FCF within the life of the loans.\n\n**Debt capacity = min (leverage limit x EBITDA, EBITDA / (minimum cover x interest rate))**\n\nThis is why rates matter so much for LBOs. When rates rise, the cover constraint binds, the company can borrow fewer turns of EBITDA, the sponsor must write a larger equity cheque and the IRR falls, unless the entry price falls too. It is the mechanism behind lower buyout volumes and wider bid-ask gaps between buyers and sellers when rates go up."
+    },
+    {
+     "h": "Cash sweep and the repayment waterfall",
+     "body": "Each year, FCF after interest is applied in a fixed order:\n1. **Mandatory amortisation**: for example 1% a year of the term loan B, a set schedule for the term loan A.\n2. **Excess cash flow sweep**: a percentage of the excess (often 50%, stepping down to 25% and 0% as leverage falls) prepays the term loans.\n3. **The rest** stays on the balance sheet or is used, within the covenants, for optional prepayments, add-on acquisitions or distributions.\n\nKey point: **net debt falls by the full FCF whatever the sweep**. The sweep changes gross debt, and therefore next year's interest and the lenders' risk, not this year's net debt.\n\nBonds are usually not prepayable during their non-call period (or only with a make-whole premium), so the sweep applies to the loans."
+    },
+    {
+     "h": "MOIC, IRR, timing and dividend recaps",
+     "body": "Rules of thumb beyond the basic table:\n- **IRR = MOIC^(1/n) - 1** only without interim cash flows. With interim dividends, solve the IRR on the full series of cash flows.\n- **Time is the enemy of IRR**: the same 2.5x is 25.7% over 4 years but 20.1% over 5; 3.0x is 24.6% over 5 years but 20.1% over 6. For deals returning 20-25% over 3-5 years, a year of delay at the same MOIC costs roughly 3.5-7 IRR points.\n- **MOIC says how much, IRR says how fast**: funds care about both, because a high IRR on a quick flip may return little money.\n\n**Dividend recap**: the company raises new debt to pay a dividend to the sponsor before exit.\n- IRR **up** (cash comes back early), MOIC usually **down** (the extra interest reduces exit equity), risk **up** (more leverage).\n- It needs lender appetite and room under the restricted-payments covenant.\n\n**Fees and management incentives**: transaction fees raise the equity cheque, and the management incentive plan takes a share of the upside, so the sponsor's net returns are below the headline equity returns."
+    },
+    {
+     "h": "Returns attribution",
+     "body": "Every euro of equity value created comes from three sources:\n\n**Equity gain = EBITDA growth x entry multiple + (exit multiple - entry multiple) x exit EBITDA + net debt paydown**\n\n- **EBITDA growth**: organic growth, margin improvement, add-on acquisitions. The most valued source, because it is operational.\n- **Multiple expansion**: selling at a higher multiple than you bought, through market moves, a better business mix or buy-and-build arbitrage (small add-ons bought at lower multiples). Sponsors usually underwrite **exit multiple = entry multiple**, so any expansion is upside.\n- **Deleveraging**: FCF used to repay debt or accumulated as cash.\n\nConvention: here the multiple effect is measured on exit EBITDA, so it includes the cross term (EBITDA growth x change in multiple). Some firms show the cross term separately: say which convention you use.\n\nA deal where most of the gain comes from multiple expansion is a market bet, not value creation: interviewers like to hear you say so."
+    },
+    {
+     "h": "What makes a good LBO candidate, with tech twists",
+     "body": "Classic profile: **stable and predictable cash flows**, low capex, low cyclicality, a strong market position, cost levers, an experienced management team, assets that can provide security and clear exit routes (trade sale, another sponsor, IPO).\n\nTech twists:\n- **Software**: recurring revenue, high gross margins, low capex and sticky customers support high leverage; some lenders lend against recurring revenue before EBITDA is meaningful. Watch churn and capitalised development costs.\n- **IT services**: asset-light and cash-generative, but with lower margins and dependent on people.\n- **Semiconductors**: cyclical revenue, heavy capex, technology obsolescence and customer concentration mean lower leverage and more equity. Workable cases: carve-outs of mature, cash-generative units with long product lives (analogue, power, discretes) and test or packaging services with long contracts.\n- **Pre-profit deep tech**: not an LBO candidate. With no cash flow to service debt, it needs venture or growth equity."
+    },
+    {
+     "h": "How to say it in an interview",
+     "body": "- 'I'd size the debt on the binding constraint, say 5.0x leverage or 3.0x interest cover. At an 8% cost of debt, cover limits a company with 120 of EBITDA to 500 of debt, about 4.2x, so cover binds; if rates rise to 10%, capacity falls to 400 and the equity cheque rises by 100.'\n- 'Returns come from EBITDA growth, deleveraging and multiple expansion; I'd want most of the gain from the first two, and I'd underwrite the exit at the entry multiple.'\n- 'A dividend recap raises the IRR because cash comes back earlier, but it usually lowers the MOIC and adds risk, so I'd check covenant headroom and the restricted-payments capacity first.'"
+    }
+   ],
+   "examples": [
+    {
+     "q": "A target with EBITDA of 120 is bought at 10.0x. Lenders accept up to 5.0x total leverage and require interest cover of at least 3.0x. The all-in cost of debt is 8%. What are the debt capacity and the equity cheque (ignore fees)? What changes if the cost of debt rises to 10%?",
+     "steps": [
+      "Leverage limit: 5.0 x 120 = 600.",
+      "Cover limit: maximum interest = 120 / 3.0 = 40; at 8%, debt = 40 / 8% = 500.",
+      "Capacity = the lower of the two = 500 (4.2x). EV = 1,200, so equity = 1,200 - 500 = 700.",
+      "At 10%: cover limit = 40 / 10% = 400 (3.3x) and equity = 800. The extra 100 of equity at the same price lowers the IRR."
+     ],
+     "answer": "500 of debt (4.2x) and 700 of equity; at 10% debt capacity falls to 400 and the equity cheque rises to 800."
+    },
+    {
+     "q": "Opening debt: term loan B of 400 and senior notes of 100, both at 7%; no cash. Year 1: EBITDA 100, capex 15, cash taxes 10, increase in NWC 5. The TLB amortises 1% a year and has a 50% excess cash flow sweep. What are closing gross debt, cash and net debt?",
+     "steps": [
+      "Interest = 7% x 500 = 35. FCF after interest = 100 - 15 - 10 - 5 - 35 = 35.",
+      "Mandatory amortisation = 1% x 400 = 4. Excess cash flow = 35 - 4 = 31; the 50% sweep prepays 15.5 and 15.5 stays in cash.",
+      "Closing TLB = 400 - 4 - 15.5 = 380.5; gross debt = 380.5 + 100 = 480.5; cash = 15.5.",
+      "Net debt = 480.5 - 15.5 = 465 = 500 - 35: it falls by the full FCF. Net leverage moves from 5.0x to 4.65x."
+     ],
+     "answer": "Gross debt 480.5, cash 15.5, net debt 465 (4.65x EBITDA)."
+    },
+    {
+     "q": "Entry: EBITDA 100 at 10.0x, net debt 600. Exit after 5 years: EBITDA 140 at 11.0x, net debt 340. Calculate the MOIC, the IRR and the attribution of the equity gain.",
+     "steps": [
+      "Entry equity = 1,000 - 600 = 400. Exit equity = 140 x 11.0 - 340 = 1,540 - 340 = 1,200. Gain = 800.",
+      "MOIC = 1,200 / 400 = 3.0x; IRR = 3.0^(1/5) - 1 = 24.6%.",
+      "EBITDA growth = 40 x 10.0 = 400 (50%). Multiple expansion = 1.0 x 140 = 140 (17.5%). Deleveraging = 600 - 340 = 260 (32.5%). Total 800.",
+      "With the cross term shown separately: multiple expansion on entry EBITDA = 1.0 x 100 = 100 and cross term = 40 x 1.0 = 40; the total is the same."
+     ],
+     "answer": "3.0x and a 24.6% IRR: 400 from EBITDA growth, 140 from multiple expansion and 260 from deleveraging."
+    },
+    {
+     "q": "A sponsor invests 400. Without a recap it expects exit equity of 1,100 in year 5. Alternatively, at the end of year 2 the company raises 200 of new debt at 8% to pay a dividend; the tax rate is 25%. Ignoring interest on interest, compare the MOIC and the IRR.",
+     "steps": [
+      "No recap: MOIC = 1,100 / 400 = 2.75x; IRR = 2.75^(1/5) - 1 = 22.4%.",
+      "Recap: extra after-tax interest = 200 x 8% x 0.75 = 12 a year for 3 years = 36. Exit equity = 1,100 - 200 (new debt) - 36 = 864.",
+      "Cash flows: -400 in year 0, +200 in year 2, +864 in year 5. MOIC = (200 + 864) / 400 = 2.66x.",
+      "The IRR solves 400 = 200 / (1 + r)^2 + 864 / (1 + r)^5, which gives r = 25.8%."
+     ],
+     "answer": "With the recap the IRR rises from 22.4% to 25.8%, while the MOIC falls from 2.75x to 2.66x."
+    }
+   ],
+   "cheatsheet": [
+    "Stack: RCF and TLA, TLB, senior notes, second lien or mezzanine, PIK, equity: cost and risk rise as you go down.",
+    "Net leverage = net debt / EBITDA; interest cover = EBITDA / cash interest.",
+    "Headroom = 1 - net debt / (covenant multiple x EBITDA).",
+    "Maintenance covenants are tested regularly; incurrence covenants only when the company acts.",
+    "Debt capacity = min (leverage limit x EBITDA, EBITDA / (minimum cover x rate)).",
+    "Net debt falls by the FCF whatever the sweep; the sweep changes gross debt and interest.",
+    "Equity gain = EBITDA growth x entry multiple + change in multiple x exit EBITDA + debt paydown.",
+    "Same MOIC, one more year: roughly 3.5-7 IRR points less at 20-25% returns.",
+    "Dividend recap: IRR up, MOIC down, risk up.",
+    "Good candidates: recurring cash flows, low capex, low cyclicality, cost levers, a clear exit."
+   ]
+  },
+  {
+   "id": "les-ecm-01",
+   "skill": "fin-ecm",
+   "order": 1,
+   "title": "Capital markets for M&A bankers: IPOs, follow-ons, convertibles and leveraged finance",
+   "minutes": 24,
+   "summary": "You will be able to explain how an IPO is run and priced, how the greenshoe and lock-ups work, calculate TERP and convertible dilution, outline the essentials of DCM and leveraged finance, and argue IPO versus sale in a dual-track.",
+   "sections": [
+    {
+     "h": "IPO: timetable and bookbuilding",
+     "body": "Capital markets touch almost every M&A deal: acquisitions are financed with bonds, loans or new shares, sponsors exit through IPOs and block trades, and sellers often prepare an IPO alongside a sale. You need the mechanics, not the trading detail.\n\n**A typical IPO timetable** (European style, illustrative):\n\n| Phase | What happens |\n|---|---|\n| Preparation (several months) | Banks appointed, due diligence, equity story, business plan, prospectus drafting, governance and accounting readiness |\n| Analyst presentation and research | Syndicate analysts meet management and publish pre-deal research |\n| Investor education | Early-look and pre-deal meetings: investors' feedback on value |\n| Intention to float | Public announcement; the price range follows |\n| Roadshow and bookbuilding (1-2 weeks) | Management meets investors; orders come in with size and price limits |\n| Pricing and allocation | Price set from the book; shares allocated with a preference for long-term investors |\n| Trading and stabilisation | First day of trading; a stabilisation window, usually up to 30 days |\n\n**Bookbuilding** builds a demand curve: the bookrunners look at coverage (demand / shares offered), price sensitivity and quality (long-only funds versus short-term money). The price is usually set at a **discount to estimated fair value** (the IPO discount, often 10-20%) to reward investors for buying an unknown stock and to leave room for the shares to trade up.\n\n**Primary** shares raise new money for the company; **secondary** shares are sold by existing holders (a sponsor exit). The **free float** must be large enough for liquidity and index inclusion."
+    },
+    {
+     "h": "Greenshoe, stabilisation and lock-ups",
+     "body": "**Greenshoe (over-allotment option)**: the syndicate allocates up to 15% more shares than the base deal, borrowing them from the issuer or the selling shareholder, and holds an option to buy the same number at the offer price.\n- **The price falls below the offer price**: the stabilisation manager buys shares in the market to cover the short position, which supports the price; the option is not exercised.\n- **The price rises**: the syndicate exercises the option at the offer price to cover the short, and the issuer or seller sells more shares.\n\nEither way the syndicate is covered and the stock gets support in its first weeks. Stabilisation is allowed only for a limited period and must be disclosed.\n\n**Lock-ups**: the issuer, the selling shareholders and management agree not to sell (or issue) shares for a period, commonly 6-12 months, unless the bookrunners consent. When lock-ups expire, the potential supply of shares (the overhang) can weigh on the price, and sponsors often sell down afterwards through accelerated bookbuilds."
+    },
+    {
+     "h": "Follow-ons, ABBs and rights issues",
+     "body": "**Follow-on offerings**: a listed company issues new shares (primary) or a shareholder sells existing ones (secondary).\n- **Marketed offering**: a short roadshow; more demand, but more days at market risk.\n- **Accelerated bookbuild (ABB)**: launched after the market closes, books open for a few hours, priced overnight at a **discount to the last close** that compensates investors for the size and the price risk. Used by sponsors after a lock-up and by companies that need money fast, for example to fund an acquisition.\n- **Bought deal**: the bank buys the block at a fixed price and resells it, taking the price risk itself.\n\n**Pre-emption rights**: in many markets existing shareholders can subscribe pro rata to new shares, so large non-pre-emptive placings need shareholder authority. Large raises go through a **rights issue**: new shares offered to existing holders pro rata, usually at a deep discount, with **tradable rights** and bank underwriting.\n\n**TERP (theoretical ex-rights price) = (N x P + n x S) / (N + n)**, with N existing shares at price P and n new shares at subscription price S.\n\n**Value of a right** = cum-rights price - TERP per existing share, or TERP - S per new share. Example: 4 shares at 10 plus 1 new share at 6: TERP = 46 / 5 = 9.20; each existing share's right is worth 0.80, and the 4 rights needed for a new share are worth 3.20.\n\nA shareholder who takes up the rights or sells them keeps the same wealth; one who does nothing loses value unless the lapsed rights are sold on his or her behalf. Historical EPS and share prices are restated for the bonus element of the discount."
+    },
+    {
+     "h": "Convertible bonds",
+     "body": "A convertible is a **bond plus a call option** on the issuer's shares: the investor accepts a lower coupon in exchange for the upside.\n\nKey terms:\n- **Conversion price = reference share price x (1 + conversion premium)**.\n- **Conversion shares = nominal / conversion price** (per bond: the conversion ratio).\n- A coupon well below the issuer's straight-debt cost; tenors often of 5-7 years; issuer calls and investor puts are common.\n\nWhy issuers like them: a cheap coupon, conversion at a premium to today's price (less dilution than issuing shares now), fast execution. Why investors like them: the bond floor protects the downside and the option gives the upside; hedge funds buy them and short the shares (delta hedging), which can push the share price down at launch. Volatile, growth-oriented tech companies are classic issuers because the option is worth more.\n\nAccounting and valuation:\n- Under IFRS the instrument is split into a liability (the cash flows discounted at the straight-debt rate) and an equity component (the rest); interest expense is booked at the straight-debt rate, above the cash coupon.\n- Diluted EPS uses the if-converted method (add back the after-tax interest, add the conversion shares) when the effect is dilutive.\n- In the EV bridge: in the money, treat it as shares; out of the money, treat it as debt.\n\nVariants: **exchangeables** (into shares of another company the issuer holds) and **mandatory convertibles** (they always convert, so they are closer to equity)."
+    },
+    {
+     "h": "DCM and leveraged finance essentials",
+     "body": "**Ratings**: investment grade means BBB- (S&P, Fitch) or Baa3 (Moody's) and above; below that is **high yield**. The rating decides the investor base, the cost and the covenants.\n\n**Pricing**: yield = benchmark (government bond or swap rate) + **credit spread**; a new issue usually pays a small new-issue premium over the issuer's existing bonds. The price moves inversely to the yield: % price change = about - duration x change in yield.\n\n| | Investment-grade bonds | High-yield bonds | Leveraged loans (TLB) | Private credit |\n|---|---|---|---|---|\n| Rate | Fixed | Fixed | Floating | Floating |\n| Security | Usually unsecured | Secured or unsecured | Secured | Secured |\n| Covenants | Few | Incurrence | Usually covenant-lite | Often maintenance |\n| Prepayment | Make-whole | Non-call period, then call premiums | At par after a short soft-call period | Prepayment fees |\n| Strength | Cheapest, long tenors | Deep market, flexible terms | Prepayable, floating | Speed, certainty, confidentiality |\n\n**Acquisition finance**: at signing the buyer needs committed money, typically a **bridge loan** from banks, later refinanced ('taken out') with bonds, loans, new equity or disposal proceeds. In public takeovers several regimes require **certain funds**: financing that cannot be withdrawn except in very limited cases. Arrangers keep **flex** rights to change pricing or terms within limits so that they can sell the debt. For investment-grade acquirers, the rating agencies' view of post-deal leverage often decides the mix of cash and shares.\n\nHigh-yield bonds typically carry a non-call period, then calls at declining premiums, and a change-of-control put at 101%."
+    },
+    {
+     "h": "Dual-track: IPO or sale?",
+     "body": "A **dual-track** runs IPO preparation and a sale process in parallel. The IPO is a credible alternative that adds tension to the auction and keeps options open if the sale stalls.\n\n| | IPO | Sale |\n|---|---|---|\n| Value | Market multiple less the IPO discount; no control premium | Includes a control premium and part of the synergies |\n| Liquidity for the seller | Partial at listing; the rest sold over time after the lock-up | Full, in cash, at closing |\n| Certainty | Market window risk until pricing | Execution and regulatory risk until closing |\n| Upside | Keeps exposure to a future re-rating | None after closing |\n| Cost and effort | Prospectus, governance, public reporting | Due diligence, SPA negotiation |\n\nThe decision compares like with like: cash now from the sale versus IPO proceeds plus the **risk-adjusted** value of the retained stake. Sponsors usually prefer a sale at a good price, because it delivers the whole return at once."
+    },
+    {
+     "h": "How to say it in an interview",
+     "body": "- 'An IPO is priced through a bookbuild at a discount to fair value; the greenshoe lets the syndicate over-allot by up to 15% and then either buy back in the market to support the price or exercise the option if the stock trades up.'\n- 'For a rights issue I'd compute the TERP: if you take up or sell your rights you keep your wealth, so the deep discount is not a gift, it is what makes the raise safe.'\n- 'In a dual-track I'd compare the sale price in cash today with the IPO proceeds plus the retained stake, haircut for the discount, the lock-up and market risk; that is why sponsors often take a strong trade offer over an IPO.'"
+    }
+   ],
+   "examples": [
+    {
+     "q": "An IPO of 20m shares is priced at 10.00 with a 15% greenshoe. What happens (a) if the shares trade down to 9.20 and the stabilisation manager covers the short at an average of 9.40, and (b) if they trade up to 11.50?",
+     "steps": [
+      "Over-allotment = 15% x 20m = 3m shares: 23m shares are allocated, so the syndicate is short 3m and has received 30m from investors for them.",
+      "(a) It buys 3m shares in the market for 3m x 9.40 = 28.2m, supporting the price, and the option is not exercised. The short is closed with a gain of 30.0 - 28.2 = 1.8m; the issuer's gross proceeds stay at 20m x 10.00 = 200m.",
+      "(b) Buying in the market at 11.50 would cost 34.5m, so the syndicate exercises the option at 10.00: the issuer sells 3m more shares and raises 30m more.",
+      "Total gross proceeds in (b) = 23m x 10.00 = 230m."
+     ],
+     "answer": "(a) Shares bought back in the market, option not exercised, issuer raises 200m. (b) Option exercised, issuer raises 230m."
+    },
+    {
+     "q": "A company has 100m shares trading at 8.00 and needs to raise 240m through a rights issue at 4.80 per share. How many new shares, at what ratio? What are the TERP and the value of a right? Show what happens to a holder of 100 shares who takes up, sells, or does nothing.",
+     "steps": [
+      "New shares = 240 / 4.80 = 50m: 1 new share for every 2 held.",
+      "TERP = (100 x 8.00 + 50 x 4.80) / 150 = 1,040 / 150 = 6.93. The subscription price is 30.8% below TERP.",
+      "Value of a right = 8.00 - 6.93 = 1.07 per existing share (2.13 per new share).",
+      "Take up: pays 50 x 4.80 = 240 and holds 150 x 6.93 = 1,040, i.e. the original 800 plus the 240 paid in. Sell the rights: 100 x 6.93 + 100 x 1.07 = 800. Do nothing: 693, a loss of 107 unless the lapsed rights are sold on the holder's behalf."
+     ],
+     "answer": "50m new shares (1 for 2), TERP 6.93, a right worth 1.07 per existing share; wealth is unchanged if the holder takes up or sells the rights, and falls by 107 if the holder does nothing."
+    },
+    {
+     "q": "A company with 150m shares at 25.00 issues a 400m 5-year convertible with a 1.5% coupon and a 30% conversion premium; its straight debt would cost 6.0%. What are the conversion price, the number of conversion shares and the dilution? How much cash interest does it save, and how does IFRS split the instrument?",
+     "steps": [
+      "Conversion price = 25.00 x 1.30 = 32.50. Conversion shares = 400 / 32.50 = 12.3m.",
+      "Dilution = 12.3 / (150 + 12.3) = 7.6% of the enlarged share count; conversion pays only if the shares rise above 32.50.",
+      "Cash interest saving versus straight debt = 400 x (6.0% - 1.5%) = 18m a year.",
+      "IFRS: liability = PV of 6 a year for 5 years and 400 at maturity, at 6% = 324.2; equity component = 400 - 324.2 = 75.8. Year-1 interest expense = 6% x 324.2 = 19.5, against a cash coupon of 6."
+     ],
+     "answer": "Conversion price 32.50, 12.3m shares, 7.6% dilution; 18m a year of cash interest saved; under IFRS a liability of 324.2 and an equity component of 75.8."
+    },
+    {
+     "q": "A sponsor owns 100% of a company with EBITDA of 100 and net debt of 300. IPO option: listed peers trade at 12.0x EBITDA, the IPO discount is 15% and the sponsor sells 30% at listing. Sale option: a trade buyer offers 12.5x EBITDA in cash. Compare the two.",
+     "steps": [
+      "Fair equity value = 12.0 x 100 - 300 = 900. Equity value at the IPO price = 900 x 0.85 = 765; sponsor proceeds = 30% x 765 = 229.5.",
+      "Retained 70%, valued at fair value if the shares trade up to it = 0.7 x 900 = 630, but subject to the lock-up and to market risk. IPO total = 229.5 + 630 = 859.5.",
+      "Sale: 12.5 x 100 - 300 = 950, all in cash at closing.",
+      "The sale is worth 90.5 more and is all cash today. The IPO would match it only if the retained stake were eventually sold for 950 - 229.5 = 720.5, about 14% above today's fair value of 630."
+     ],
+     "answer": "Sale 950 in cash against an IPO worth 859.5 (229.5 of cash plus a 630 stake at risk): the sale is better unless the shares re-rate by about 14%."
+    }
+   ],
+   "cheatsheet": [
+    "IPO: preparation -> intention to float -> price range -> bookbuild -> pricing and allocation -> trading -> stabilisation.",
+    "Greenshoe: up to 15% over-allotment; price down, buy in the market; price up, exercise the option.",
+    "Lock-up: issuer, sellers and management cannot sell for an agreed period (commonly 6-12 months).",
+    "ABB: launched overnight at a discount to the last close; speed and certainty over price.",
+    "TERP = (N x P + n x S) / (N + n); right per existing share = cum price - TERP.",
+    "Rights issue: take up or sell and your wealth is unchanged; do nothing and you lose.",
+    "Convertible: conversion price = reference price x (1 + premium); shares = nominal / conversion price.",
+    "Investment grade = BBB- / Baa3 and above; below is high yield.",
+    "Loans: floating, secured, prepayable. High-yield bonds: fixed, non-call, incurrence covenants.",
+    "Dual-track: sale cash today versus IPO proceeds plus a risk-adjusted retained stake."
+   ]
+  },
+  {
+   "id": "les-tmt-01",
+   "skill": "fin-tmt",
+   "order": 1,
+   "title": "The semiconductor value chain and how each business makes money",
+   "minutes": 20,
+   "summary": "You will be able to map the semiconductor value chain, explain how EDA and IP, fabless, foundry, IDM, packaging and test, equipment and materials companies make money, and read their margins, capital intensity, KPIs and cycles.",
+   "sections": [
+    {
+     "h": "The chain from design to package",
+     "body": "A chip goes through four stages, and each has its own business model:\n\n1. **Design**: engineers use **EDA software** (electronic design automation) and licensed **IP blocks** (processor cores, interfaces) to design the chip. Done by **fabless** companies, **IDMs** and, increasingly, system companies that design their own chips.\n2. **Wafer fabrication (front end)**: transistors are built on silicon wafers in a fab, either at a **foundry** (which manufactures for others) or in an IDM's own fab, using **equipment** (lithography, deposition, etch, inspection) and **materials** (wafers, chemicals, gases, photomasks).\n3. **Assembly, packaging and test (back end)**: the dies are cut, packaged and tested, in house or by **OSATs** (outsourced semiconductor assembly and test). Advanced packaging, which stacks or combines several dies ('chiplets'), is now a performance lever, not just a commodity step.\n4. **Systems and end markets**: modules and devices for data centres, smartphones, PCs, automotive, industrial and consumer electronics.\n\n**Fabless**: designs and sells chips, owns no fab. **Foundry**: manufactures, but does not sell chips of its own design. **IDM** (integrated device manufacturer): does both. **Fab-lite**: an IDM that keeps some fabs and outsources the rest."
+    },
+    {
+     "h": "How each business makes money",
+     "body": "| Business | What it sells | Revenue model | Gross margin (indicative) | Capex intensity |\n|---|---|---|---|---|\n| EDA | Design software, emulation hardware | Multi-year licences, largely recurring | Very high (often 80%+) | Very low |\n| Semiconductor IP | Cores and interfaces | Upfront licence fee + royalty per chip shipped | Very high (often 80%+) | Very low |\n| Fabless | Chips | Units x average selling price (ASP); design wins drive future revenue | High (often 50-70%) | Low |\n| Foundry | Processed wafers | Price per wafer, by technology node | Wide range (about 20-60%), set by node leadership and utilisation | Very high |\n| IDM | Its own chips (analogue, power, microcontrollers, memory) | Units x ASP | Roughly 40-65%; memory swings from below zero to above 50% | Medium to high |\n| OSAT | Packaging and test services | Price per unit or per wafer | Low (roughly 15-25%) | Medium to high |\n| Equipment | Tools for fabs, plus services | System sales + recurring services on the installed base | Roughly 40-50%, higher for leaders | Low |\n| Materials | Wafers, chemicals, gases, masks | Volume x price, often under long-term agreements | Roughly 25-45% | Medium |\n\nThe ranges are indicative through-cycle levels for established players; leaders and laggards differ widely. The logic is durable: **margins follow scarcity and IP**. Software and IP sit at the top; services that customers can source elsewhere (packaging, test, trailing-edge wafers) sit lower.\n\nR&D is the other big cost line: fabless, EDA and IP companies typically spend between a fifth and a third of revenue on it."
+    },
+    {
+     "h": "Capital intensity and operating leverage",
+     "body": "A fab is a **fixed-cost machine**: most of its cost is depreciation of very expensive equipment, plus facilities and staff. Revenue depends on how full it is, so **utilisation drives gross margin**.\n\n**Gross profit = wafers x (price - variable cost per wafer) - fixed costs**\n\nConsequences:\n- A small fall in volume causes a large fall in profit (in the worked example, revenue -22% and gross profit -58%).\n- In downturns IDMs and foundries report **underutilisation charges** and cut capex; in upturns margins expand quickly.\n- Each new leading-edge node costs more to develop and needs a more expensive fab, which concentrates the leading edge in very few hands.\n\n**Fabless versus foundry**: the fabless company pays for capacity through the wafer price, so its gross margin is high, but its big costs (R&D and SG&A) sit below gross profit. The foundry's depreciation sits inside COGS, so its gross margin is lower, but its EBITDA margin can be higher because depreciation is added back. That is why **EV/EBITDA flatters capital-intensive businesses**: compare them on EV/EBIT, EV/(EBITDA - capex) or FCF yield."
+    },
+    {
+     "h": "The KPIs analysts track",
+     "body": "| Business | KPIs |\n|---|---|\n| EDA and IP | Share of recurring revenue, backlog or remaining performance obligations, renewal rates, royalty revenue (units x royalty per unit), new licences |\n| Fabless | Revenue by end market, gross margin, R&D / revenue, design wins, units and ASP, inventory days (own and in the channel), customer concentration |\n| Foundry | Utilisation, wafer shipments (12-inch equivalent), revenue per wafer, revenue by node, capex / revenue, capacity (wafer starts per month) |\n| IDM | Utilisation, inventory days, gross margin and underutilisation charges; for memory, bit growth, price per bit and cost per bit |\n| OSAT | Utilisation, share of advanced packaging, capex / revenue |\n| Equipment | Orders, **book-to-bill**, backlog, services share of revenue, customer concentration |\n| Materials | Volumes linked to wafer starts, contract pricing, share of revenue under long-term agreements |\n\nThree formulas that work across the chain:\n- **Book-to-bill = orders / revenue**: above 1 means the backlog is building.\n- **Inventory days = inventory / COGS x 365**: rising days with falling sales announce a correction and possible write-downs.\n- **Capex / revenue**: the capital intensity of the model; for chipmakers, it is also next year's demand for equipment."
+    },
+    {
+     "h": "Cyclicality: why semis swing more than their end markets",
+     "body": "End demand (phones, cars, servers) moves by a few per cent; chip and equipment revenue can move by tens of per cent. Four amplifiers:\n\n1. **Inventory (the bullwhip effect)**: if end demand falls 5% and customers also cut their inventory from 12 to 9 weeks of supply, their chip orders in that quarter fall by about 30%.\n2. **Lead times and double ordering**: in shortages customers over-order to secure supply; when lead times normalise, orders collapse.\n3. **Lumpy capacity**: fabs take years to build and come in large steps, so new supply often arrives when demand has already turned.\n4. **Capex depends on the change in demand**: equipment orders follow capacity **additions**, so a slowdown in chip growth can cut equipment demand sharply (see the worked example).\n\n**Memory** is the most cyclical segment: products are close to commodities and the price per bit swings with the balance of supply and demand.\n\nLeading indicators: book-to-bill, inventory days (at companies and in the channel), lead times, utilisation and customers' capex plans. Long-term growth comes from rising **semiconductor content** per device (cars, data centres, industrial automation), so the cycle moves around a rising trend."
+    },
+    {
+     "h": "Questions interviewers ask about semis",
+     "body": "- **'Why does a fabless company have a higher gross margin than a foundry, but often a lower EBITDA margin?'** Its COGS is wafers bought at a price that already includes the foundry's margin and depreciation, while its big costs, R&D and SG&A, sit below gross profit. The foundry's depreciation is in COGS and is added back in EBITDA.\n- **'Why is equipment more cyclical than chips?'** Equipment demand depends on capacity additions, i.e. on the change in chip demand, not on its level.\n- **'What happens to a foundry when utilisation falls from 90% to 70%?'** Revenue falls in proportion, fixed costs stay, and the gross margin collapses.\n- **'What is Moore's law and why does it matter economically?'** Transistor density has historically doubled roughly every two years, lowering the cost per transistor; but each new node costs more to design and to build, which rewards scale and pushes alternatives such as advanced packaging.\n- **'What is a design win?'** A customer selects your chip for its product. Revenue follows when the product ramps, often a year or more later, and lasts for the product's life, many years in automotive and industrial. It gives visibility and creates switching costs."
+    },
+    {
+     "h": "How to say it in an interview",
+     "body": "- 'The chain runs from EDA and IP, through design by fabless companies and IDMs, to manufacturing at foundries or IDM fabs using equipment and materials, and then packaging and test. Margins follow scarcity and IP: EDA and IP at the top, packaging and test at the bottom.'\n- 'A fab is a fixed-cost business, so utilisation drives margins; that is why I'd compare a foundry with a fabless peer on EV/EBIT or EBITDA minus capex rather than on EV/EBITDA.'\n- 'Equipment is the most cyclical part of the chain because it depends on the change in chip demand, so I watch book-to-bill, inventory days and customers' capex plans.'"
+    }
+   ],
+   "examples": [
+    {
+     "q": "A fab has a capacity of 100,000 wafers a year, sells at 6,000 per wafer, has fixed costs of 250m a year and variable costs of 1,500 per wafer. What are revenue, gross profit and gross margin at 90% and at 70% utilisation, and what is the break-even utilisation?",
+     "steps": [
+      "90%: 90,000 wafers; revenue 540m; variable costs 135m; gross profit 540 - 135 - 250 = 155m; gross margin 28.7%.",
+      "70%: 70,000 wafers; revenue 420m; variable costs 105m; gross profit 420 - 105 - 250 = 65m; gross margin 15.5%.",
+      "Revenue -22.2%, gross profit -58.1%: operating leverage of about 2.6x.",
+      "Break-even: 250m / ((6,000 - 1,500) x 100,000) = 55.6% utilisation."
+     ],
+     "answer": "Gross profit 155m (28.7% margin) at 90% and 65m (15.5%) at 70%; break-even at about 56% utilisation."
+    },
+    {
+     "q": "Fabless company: revenue 1,000, EBITDA 330, capex 30, D&A 30. Foundry: revenue 1,000, EBITDA 500, capex 350, D&A 250. Both trade at 10.0x EV/EBITDA. Compare them on EV/EBIT and on EV/(EBITDA - capex).",
+     "steps": [
+      "EVs: fabless 10.0 x 330 = 3,300; foundry 10.0 x 500 = 5,000.",
+      "EBIT: fabless 330 - 30 = 300; foundry 500 - 250 = 250. EV/EBIT: 11.0x versus 20.0x.",
+      "EBITDA - capex: fabless 300 (91% of EBITDA); foundry 150 (30%). EV/(EBITDA - capex): 11.0x versus 33.3x.",
+      "Same EV/EBITDA, very different prices for the cash each business generates: the foundry is far more expensive per euro of cash, and only growth (capex above D&A builds future capacity) can justify it."
+     ],
+     "answer": "Fabless 11.0x on both measures; foundry 20.0x EV/EBIT and 33.3x EV/(EBITDA - capex)."
+    },
+    {
+     "q": "Chipmakers' capex = 50 of maintenance + 10 per unit of new capacity. Capacity is 100 and tracks demand. Demand grows 20% in year 1, 5% in year 2 and 10% in year 3. What happens to equipment demand (capex)?",
+     "steps": [
+      "Year 1: capacity added = 20% x 100 = 20; capex = 50 + 200 = 250. Capacity becomes 120.",
+      "Year 2: added = 5% x 120 = 6; capex = 50 + 60 = 110, a fall of 56% while chip demand is still growing.",
+      "Year 3: added = 10% x 126 = 12.6; capex = 50 + 126 = 176, a rise of 60%.",
+      "Equipment revenue follows the change in chip growth, not its level: the accelerator effect."
+     ],
+     "answer": "Capex goes 250, 110, 176: -56% and then +60%, while chip demand grows every year."
+    },
+    {
+     "q": "A fabless company had inventory of 300 and annual COGS of 1,320 a year ago; today inventory is 450 and annualised COGS is 1,200. Calculate inventory days and say what they signal.",
+     "steps": [
+      "A year ago: 300 / 1,320 x 365 = 83 days.",
+      "Today: 450 / 1,200 x 365 = 137 days.",
+      "Inventory is up 50% while COGS is down 9%: the company is building stock faster than it sells.",
+      "Signal: a correction is likely (lower wafer orders to the foundry, price pressure), with a risk of inventory write-downs and gross margin pressure in the coming quarters; check channel inventory too."
+     ],
+     "answer": "Inventory days rise from about 83 to about 137: an early warning of a downturn and of possible write-downs."
+    }
+   ],
+   "cheatsheet": [
+    "Chain: EDA and IP -> design (fabless, IDM) -> fab (foundry, IDM) with equipment and materials -> packaging and test -> systems.",
+    "Margins follow scarcity and IP: EDA and IP highest, OSAT lowest.",
+    "Fabless: asset-light, R&D-heavy. Foundry and IDM: capex-heavy, utilisation-driven.",
+    "Fab gross profit = wafers x (price - variable cost) - fixed costs.",
+    "Capital-intensive versus asset-light: compare on EV/EBIT or EV/(EBITDA - capex), not EV/EBITDA.",
+    "Book-to-bill = orders / revenue; inventory days = inventory / COGS x 365.",
+    "Equipment demand depends on the change in chip demand: the accelerator effect.",
+    "Memory is the most cyclical segment: the price per bit follows supply and demand.",
+    "Moore's law: cost per transistor falls, but each node costs more to design and to build."
+   ]
+  },
+  {
+   "id": "les-tmt-02",
+   "skill": "fin-tmt",
+   "order": 2,
+   "title": "How tech and semiconductor deals are valued and why they happen",
+   "minutes": 22,
+   "summary": "You will be able to choose the right multiple for each tech business, read SaaS KPIs, explain the strategic logic and synergies of tech and chip deals, flag the regulatory risks, value pre-revenue deep tech and pitch a recent deal in two minutes.",
+   "sections": [
+    {
+     "h": "Which multiple for which tech business",
+     "body": "| Business | Main multiples | Why |\n|---|---|---|\n| SaaS and software | EV/NTM revenue, EV/ARR; EV/FCF and P/E once mature | Growth spending depresses margins; recurring revenue drives value |\n| EDA and semiconductor IP | EV/revenue, EV/EBITDA, EV/FCF | Recurring revenue, very high margins, almost no capex |\n| Fabless | EV/EBITDA, P/E on NTM; EV/revenue for high growth | Asset-light, earnings are meaningful |\n| Foundry and IDM | EV/EBITDA and EV/EBIT through the cycle; P/B at the trough | Capital-intensive: depreciation is a real cost and book value anchors in downturns |\n| Memory | P/B, EV/EBITDA on mid-cycle earnings | Earnings swing too much for P/E |\n| Equipment | P/E and EV/EBIT on mid-cycle earnings | Cyclical orders, low capex |\n| OSAT | EV/EBITDA, EV/EBIT | Capital-intensive services, lower margins |\n| IT services | EV/EBITDA, P/E | People-based, stable margins |\n\n**The cyclical paradox**: at the trough earnings are depressed, so the P/E looks high; at the peak earnings are inflated, so the P/E looks low. Value cyclicals on **normalised (mid-cycle) earnings**, and remember that chip stocks often look 'expensive' at the best time to buy.\n\nFor precedents, prefer deals done at a similar point in the cycle, and check whether the multiples are on LTM or NTM figures: for a fast-growing or recovering business the difference is large."
+    },
+    {
+     "h": "SaaS KPIs that drive the multiple",
+     "body": "- **ARR** (annual recurring revenue): the annualised value of subscription contracts at a date.\n- **Net new ARR = new + expansion - contraction - churn.**\n- **NRR (net revenue retention) = (starting ARR + expansion - contraction - churn) / starting ARR**, measured on the customers at the start of the period. Above 100% means the business grows even without new customers.\n- **GRR (gross revenue retention) = (starting ARR - contraction - churn) / starting ARR**: the quality of the base, at most 100%.\n- **Gross margin**: typically 70-85% for software; hosting and services lower it.\n- **CAC payback = sales and marketing spend / (new ARR x gross margin)**: how long new customers take to repay what it cost to win them.\n- **LTV / CAC**: the lifetime gross profit of a customer over the cost of acquiring it; 3x or more is the usual benchmark.\n- **RPO and billings**: contracted revenue not yet recognised; revenue + change in deferred revenue.\n- **Rule of 40**: growth % + margin % >= 40 (see the lesson on high-growth valuation).\n\nWhat moves the multiple most: growth, NRR and the path to FCF. A company with 120% NRR compounds its base; one with 85% GRR must replace 15% of its ARR every year before it can grow."
+    },
+    {
+     "h": "Why tech and semiconductor deals happen",
+     "body": "Five recurring rationales, often combined:\n1. **Buy versus build (time to market)**: a proven design team and IP portfolio can take years to build; buying one is faster and less risky.\n2. **Scale in R&D**: design costs rise with every node, so spreading them over more revenue is a lasting advantage; consolidation in mature segments (analogue, memory, equipment) also brings cost synergies.\n3. **Portfolio breadth**: selling a complete solution to the same customer (processor + connectivity + power + software) and cross-selling through a larger sales force.\n4. **Vertical integration**: system companies bringing chip design in house, chipmakers adding software to capture more value, or securing scarce capacity (advanced packaging, specialty processes).\n5. **Talent and technology**: scarce engineering teams (AI architectures, RF, analogue, power) and patents; at the extreme, an acqui-hire.\n\nFinancial sponsors add their own logic: carve-outs of non-core divisions from large groups, take-privates of mature software companies with recurring revenue, and buy-and-build platforms in fragmented niches (test services, components, IT services)."
+    },
+    {
+     "h": "Synergies in tech deals",
+     "body": "- **Cost**: overlapping R&D roadmaps, SG&A and back office, purchasing power with foundries and OSATs, fab consolidation for IDMs, distribution.\n- **Revenue**: cross-selling to the combined customer base, bundles and higher attach rates, entry into the partner's end markets. Discount them heavily: they depend on customers' decisions.\n- **Capex**: avoiding a new fab or production line by using the partner's capacity.\n\n**Post-synergy multiple = price / (EBITDA + run-rate synergies)**: the number bankers use to defend a high headline multiple.\n\nTech-specific dis-synergies:\n- **Talent flight**: engineers leave after closing; retention packages (often in shares) are part of the cost of the deal.\n- **Customer reaction**: customers that compete with the acquirer may dual-source or switch.\n- **Roadmap disruption**: cutting overlapping R&D too fast can destroy the very products the buyer paid for.\n\nR&D cost synergies are credible only if the roadmaps really overlap; in deep tech the value usually lies in keeping the team intact, not in cutting it."
+    },
+    {
+     "h": "Regulatory risks: merger control, investment screening and export controls",
+     "body": "Tech and chip deals carry three generic regulatory risks that can delay, reshape or block a transaction:\n\n- **Merger control (antitrust)**: horizontal overlaps in product markets, and vertical concerns when the combined group could **foreclose** rivals from a key input (IP, equipment, a component) or from customers. Remedies: divestments, or behavioural commitments such as continued supply and interoperability.\n- **Foreign investment screening**: many jurisdictions review acquisitions by foreign investors of companies active in semiconductors and other critical technologies, sometimes including minority stakes. Outcomes: clearance, clearance with conditions (governance limits, ring-fencing of sensitive activities, supply commitments) or prohibition.\n- **Export controls**: licences may be required to ship certain technologies, software or know-how to certain destinations or end users, and sharing controlled technology with foreign staff can itself count as an export. In due diligence: product classification, the customer base by destination, compliance history and any voluntary disclosures. Controls can shrink the addressable market and complicate integration.\n\nHow deals protect themselves: a realistic **long-stop date** with extensions, clear **efforts** obligations (which remedies the buyer must accept), **reverse break fees** if approvals fail, pre-agreed remedies, and sometimes carving out a sensitive business before signing.\n\nIn an interview, discuss these risks as mechanisms, not as predictions about specific governments."
+    },
+    {
+     "h": "Valuing pre-revenue deep tech",
+     "body": "No revenue, no earnings to compare, binary technical risk. Four methods, best used together:\n\n1. **Risk-adjusted NPV (rNPV) by milestones**: the success value at a horizon, multiplied by the cumulative probability of passing each milestone (prototype, customer qualification, volume production), minus the expected funding costs, discounted at a rate that reflects the remaining market risk.\n2. **Comparable rounds and acquisitions**: post-money valuations of companies at a similar stage; read the terms (liquidation preferences, caps) as well as the headline.\n3. **Cost to recreate**: engineer-years x fully loaded cost + equipment + a premium for the time saved; often the buyer's real benchmark in a buy-versus-build decision.\n4. **VC method and scenarios**: see the lesson on high-growth valuation.\n\nDiligence questions that move value: technology readiness (lab, prototype, qualified), IP ownership and freedom to operate, the path to manufacturing (foundry access, yields), customer engagement (design-ins, letters of intent) and cash runway."
+    },
+    {
+     "h": "A framework to pitch a recent tech deal",
+     "body": "'Tell me about a tech deal you have followed.' Use six steps and about two minutes, with public information only:\n\n1. **The facts in one sentence**: who buys whom, for how much (EV and multiple), paid how, expected closing.\n2. **Why**: the strategic rationale, in two points (from the list above).\n3. **Price**: the multiple against peers and precedents, the premium, the post-synergy multiple.\n4. **Structure and financing**: cash, shares or debt; the impact on leverage, rating and EPS.\n5. **Risks**: regulatory approvals, integration and talent, the cycle.\n6. **Your view and what to watch**: one judgement and one indicator to follow (approval timing, synergy delivery, customer reaction).\n\nPrepare two deals: one in semiconductors and one in software. Never use deals you have worked on unless they are public, and even then use only public facts."
+    },
+    {
+     "h": "How to say it in an interview",
+     "body": "- 'For software I'd look at EV to NTM revenue against growth, NRR and the rule of 40; for semis, at EV/EBIT or P/E on mid-cycle earnings, because trough earnings make cyclicals look expensive exactly when they are cheap.'\n- 'The deal makes sense on a post-synergy basis: 25 times EBITDA headline, but about 17 times including run-rate cost synergies, against peers at 20 times; the risk is delivering those synergies without losing the engineers.'\n- 'The key risks are regulatory, from merger control, foreign investment screening and export controls, which is why I'd expect an extended long-stop date and a reverse break fee.'"
+    }
+   ],
+   "examples": [
+    {
+     "q": "A SaaS company starts the year with ARR of 100. During the year it adds 30 of ARR from new customers and 15 of expansion, and loses 3 to downgrades and 7 to churn. Sales and marketing spend was 36 and the gross margin is 80%. Calculate ending ARR, growth, NRR, GRR and CAC payback.",
+     "steps": [
+      "Ending ARR = 100 + 30 + 15 - 3 - 7 = 135: growth of 35%.",
+      "NRR = (100 + 15 - 3 - 7) / 100 = 105%. GRR = (100 - 3 - 7) / 100 = 90%.",
+      "CAC payback = 36 / (30 x 80%) = 1.5 years = 18 months.",
+      "Reading: healthy expansion, but 10% of the base is lost every year and must be replaced before the company can grow."
+     ],
+     "answer": "ARR 135 (+35%), NRR 105%, GRR 90%, CAC payback 18 months."
+    },
+    {
+     "q": "An equipment maker earns EPS of 2.00 at the trough of the cycle, 4.00 mid-cycle and 6.00 at the peak. The market values it at 15x mid-cycle EPS. What is the fair price, and what P/E does that price show at the trough and at the peak?",
+     "steps": [
+      "Fair price = 15 x 4.00 = 60.",
+      "At the trough: 60 / 2.00 = 30x, so it looks expensive.",
+      "At the peak: 60 / 6.00 = 10x, so it looks cheap.",
+      "An investor using the spot P/E would sell at the trough and buy at the peak, exactly the wrong way round: value cyclicals on normalised earnings."
+     ],
+     "answer": "Fair price 60: 30x trough EPS and 10x peak EPS for the same value."
+    },
+    {
+     "q": "A chip-design start-up would be worth 1,000 in year 5 if it succeeds. It must pass three milestones: prototype (60% probability), customer qualification (50%) and volume production (70%). It needs 60 of funding now and 40 in year 2 if the prototype works. The discount rate is 15%. What is the risk-adjusted NPV, and what would a naive success-case DCF give?",
+     "steps": [
+      "Cumulative probability of success = 0.6 x 0.5 x 0.7 = 21%.",
+      "PV of the expected exit = 21% x 1,000 / 1.15^5 = 210 / 2.011 = 104.4.",
+      "PV of the expected funding = 60 + 60% x 40 / 1.15^2 = 60 + 24 / 1.3225 = 60 + 18.1 = 78.1.",
+      "rNPV = 104.4 - 78.1 = 26.3. A success-case DCF (1,000 / 1.15^5 - 60 - 40 / 1.15^2 = 406.9) overstates the value about 15 times."
+     ],
+     "answer": "An rNPV of about 26, against about 407 for the naive success case."
+    },
+    {
+     "q": "A buyer offers an EV of 3,000 for a fictional analogue chip company with NTM revenue of 400 and NTM EBITDA of 120. Peers trade at 6.0x revenue and 20.0x EBITDA. The buyer announces run-rate cost synergies of 60. Build the valuation line of your pitch.",
+     "steps": [
+      "Headline multiples: 3,000 / 400 = 7.5x revenue and 3,000 / 120 = 25.0x EBITDA.",
+      "Peer-implied value: 20.0 x 120 = 2,400 (and 6.0 x 400 = 2,400), so the price is a 25% premium to peers.",
+      "Post-synergy multiple: 3,000 / (120 + 60) = 16.7x, below the peers' 20.0x.",
+      "Pitch line: 'expensive on a standalone basis at 25 times EBITDA, but under 17 times after synergies, so the deal works if the buyer delivers the 60 of savings and keeps the team'."
+     ],
+     "answer": "7.5x revenue and 25.0x EBITDA headline; 16.7x after synergies, against peers at 20.0x."
+    }
+   ],
+   "cheatsheet": [
+    "Software: EV/NTM revenue or EV/ARR, read together with growth, NRR and the rule of 40.",
+    "Fabless and IP: EV/EBITDA and P/E. Capital-heavy fabs: EV/EBIT, EBITDA - capex, P/B at the trough.",
+    "Cyclicals: value on mid-cycle earnings; high P/E at the trough, low P/E at the peak.",
+    "NRR = (starting ARR + expansion - contraction - churn) / starting ARR.",
+    "CAC payback = S&M spend / (new ARR x gross margin).",
+    "Deal logic: buy versus build, scale in R&D, portfolio breadth, vertical integration, talent and technology.",
+    "Post-synergy multiple = price / (EBITDA + run-rate synergies).",
+    "Regulatory risk: merger control, investment screening, export controls; protect with long-stop dates and reverse break fees.",
+    "Deep tech: rNPV = probability x discounted success value - expected discounted funding.",
+    "Deal pitch: facts, rationale, price, structure, risks, view."
+   ]
+  }
+ ]
+}

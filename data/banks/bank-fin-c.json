@@ -1,0 +1,1187 @@
+{
+  "items": [
+    {
+      "id": "acc-041",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "numeric",
+      "stem": "Before adopting IFRS 16, a retailer reported EBITDA of EUR 200m and net debt of EUR 500m, with operating lease rentals of EUR 60m a year expensed above EBITDA. On adoption it recognises lease liabilities of EUR 280m. Ignoring all other effects, what is net debt (including lease liabilities) / EBITDA after IFRS 16 (x, one decimal place)?",
+      "answer": 3.0,
+      "tolerance": 0.05,
+      "unit": "x",
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "EBITDA: the rent of 60 is replaced by depreciation of the right-of-use asset and interest on the lease liability, both below EBITDA, so EBITDA = 200 + 60 = 260.",
+          "Net debt: the lease liability is added, so 500 + 280 = 780.",
+          "Leverage after IFRS 16 = 780 / 260 = 3.0x, against 500 / 200 = 2.5x before.",
+          "Leverage rises because the lease liability is 280 / 60 = 4.7x the rent, above the starting 2.5x."
+        ],
+        "shortcut": "Add the rent to EBITDA and the lease liability to net debt, then divide: 780 / 260 = 3.0x.",
+        "trap": "Adjusting only one side: (500 + 280) / 200 = 3.9x or 500 / 260 = 1.9x. Numerator and denominator must be on the same lease basis.",
+        "rule": "Post-IFRS 16 leverage = (net debt + lease liabilities) / (EBITDA + rent); never mix pre- and post-IFRS 16 figures."
+      },
+      "tags": ["ifrs-16", "leverage", "net-debt"]
+    },
+    {
+      "id": "acc-042",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A company replaces EUR 40m of annual cash bonuses with equity-settled share awards of the same fair value, expensed under IFRS 2 in the same year. Ignoring tax, how do its figures compare with paying the bonuses in cash?",
+      "options": [
+        "Operating profit and net income unchanged; CFO and free cash flow up by 40; existing shareholders bear the cost through dilution",
+        "Operating profit up by 40, because share awards are non-cash; CFO unchanged",
+        "Operating profit, net income, CFO and free cash flow all unchanged; only the share count rises",
+        "Net income unchanged; CFO unchanged, but financing cash flow rises by 40 for the shares issued"
+      ],
+      "answer": 0,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Under IFRS 2 the share awards are expensed at their grant-date fair value, so the 40 stays in operating costs: operating profit and net income are unchanged.",
+          "The charge is non-cash and is added back in the cash flow statement, so CFO and free cash flow are 40 higher than with cash bonuses.",
+          "No cash is received for the shares, so financing cash flow does not change; the cost is borne by existing shareholders through dilution."
+        ],
+        "shortcut": "Same P&L, more CFO, more shares.",
+        "trap": "Treating share-based pay as free because it is non-cash: adding it back to EBITDA or FCF in a valuation without counting the dilution makes a real cost disappear.",
+        "rule": "Share-based compensation is a real expense paid in equity: it flatters CFO and FCF, and the cost shows up as dilution."
+      },
+      "tags": ["stock-based-compensation", "cash-flow-statement", "dilution"]
+    },
+    {
+      "id": "acc-043",
+      "skill": "fin-acc",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A company makes a pre-tax loss of EUR 80m, all of it in cash. The loss cannot be carried back, but taxable profits are expected within two years, so a deferred tax asset (DTA) is recognised. Tax rate 25%. What is the effect on the statements this year?",
+      "options": [
+        "Net income -80; CFO -80; cash -80; no deferred tax asset",
+        "Net income -60; CFO -60; cash -60, because the 20 tax credit is received as a refund",
+        "Net income -60; CFO -80; cash -80; DTA +20; shareholders' equity -60",
+        "Net income -80; CFO -80; cash -80; DTA +20 recognised directly in equity"
+      ],
+      "answer": 2,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Tax credit: 80 × 25% = 20, recognised as deferred tax income because the loss will reduce future tax bills. Net income = -80 + 20 = -60.",
+          "No cash is received this year: start from -60 and deduct the non-cash increase in the DTA (-20), so CFO = -80 and cash falls by 80.",
+          "Balance sheet: cash -80 and DTA +20, so assets fall by 60, matched by retained earnings -60.",
+          "If future profits were not probable, no DTA would be recognised and net income would be -80."
+        ],
+        "shortcut": "Recognised DTA: the tax benefit reaches net income now and cash later.",
+        "trap": "Treating the 20 as a cash refund: that only happens when a loss can be carried back against tax already paid.",
+        "rule": "Tax losses carried forward create a DTA if recovery is probable: a P&L benefit today, a cash tax saving later."
+      },
+      "tags": ["deferred-tax", "dta", "tax-losses"]
+    },
+    {
+      "id": "acc-044",
+      "skill": "fin-acc",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A cash-generating unit (CGU) has a carrying amount of EUR 500m, including goodwill of EUR 120m. Its value in use is EUR 430m and its fair value less costs of disposal is EUR 410m. Under IAS 36, what impairment is recognised?",
+      "options": [
+        "70, charged first against goodwill, which falls to 50; the goodwill impairment can never be reversed",
+        "90, charged against goodwill, which falls to 30",
+        "70, allocated pro rata across goodwill and the CGU's other assets",
+        "120: once a CGU is impaired, all of its goodwill is written off"
+      ],
+      "answer": 0,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Recoverable amount is the higher of value in use (430) and fair value less costs of disposal (410): 430.",
+          "Impairment = carrying amount - recoverable amount = 500 - 430 = 70.",
+          "The loss is allocated to goodwill first: 70 < 120, so goodwill falls to 50 and the other assets are untouched. Only a loss above 120 would reduce them, pro rata.",
+          "The charge is non-cash, usually not tax-deductible, and a goodwill impairment is never reversed under IFRS."
+        ],
+        "shortcut": "Take the higher of the two values, subtract it from the carrying amount and hit goodwill first.",
+        "trap": "Using the lower of the two values (500 - 410 = 90): the recoverable amount reflects the better of using the unit or selling it.",
+        "rule": "IAS 36: impairment = carrying amount - max(value in use, fair value less costs of disposal), goodwill first, no reversal for goodwill."
+      },
+      "tags": ["goodwill", "impairment", "ias-36"]
+    },
+    {
+      "id": "acc-045",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A manufacturer holds work-in-progress inventory at a cost of EUR 200m. It now expects to sell the finished goods for EUR 190m, after spending EUR 15m to complete them and EUR 5m on selling costs. Under IAS 2, what write-down is needed, and can it be reversed if prices recover next year?",
+      "options": [
+        "10; reversible up to the original cost",
+        "25; reversible up to the original cost",
+        "30; reversible up to the original cost",
+        "30; never reversible"
+      ],
+      "answer": 2,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Net realisable value (NRV) = estimated selling price - costs to complete - costs to sell = 190 - 15 - 5 = 170.",
+          "Inventory is carried at the lower of cost (200) and NRV (170): write-down 200 - 170 = 30, usually charged to cost of sales.",
+          "Under IAS 2 the write-down is reversed if NRV recovers, but never above the original cost. US GAAP does not allow the reversal."
+        ],
+        "shortcut": "NRV = price minus every cost still to be incurred; write down to NRV.",
+        "trap": "Comparing cost with the selling price only (200 - 190 = 10): the costs still to be spent to complete and sell the goods also reduce NRV.",
+        "rule": "IAS 2: lower of cost and NRV; write-downs are reversible up to original cost, unlike under US GAAP."
+      },
+      "tags": ["inventory", "write-down", "ias-2"]
+    },
+    {
+      "id": "acc-046",
+      "skill": "fin-acc",
+      "level": 3,
+      "type": "numeric",
+      "stem": "Trade receivables rose from EUR 100m to EUR 160m over the year, which included the acquisition of a subsidiary that brought EUR 35m of receivables at the acquisition date. There were no disposals or currency effects. What change in receivables appears in the indirect cash flow from operations (EUR m, negative for an outflow)?",
+      "answer": -25,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Balance sheet increase: 160 - 100 = 60.",
+          "35 of it arrived with the acquisition. It was paid for in the purchase price, which sits in investing activities (acquisition of subsidiary, net of cash acquired), not in CFO.",
+          "Organic increase: 60 - 35 = 25, which absorbs cash: CFO shows -25."
+        ],
+        "shortcut": "Working capital movement in CFO = balance sheet change - balances acquired (+ balances disposed of).",
+        "trap": "Taking the whole balance sheet change (-60): that counts the acquired receivables twice, once in the acquisition outflow and again in CFO.",
+        "rule": "Working capital lines in the cash flow statement exclude balances acquired or disposed of with subsidiaries and currency translation effects."
+      },
+      "tags": ["cash-flow-statement", "working-capital", "acquisitions"]
+    },
+    {
+      "id": "acc-047",
+      "skill": "fin-acc",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Company A expenses all its development costs. Company B is identical but capitalises them under IAS 38 and amortises them straight-line over 3 years. Both have spent EUR 60m a year for many years and will keep doing so. Ignoring tax, how do B's figures compare with A's?",
+      "options": [
+        "EBITDA +60; EBIT +40; CFO +60; free cash flow after capitalised spend unchanged",
+        "EBITDA +60; EBIT +60; CFO +60; free cash flow after capitalised spend +60",
+        "EBITDA +60; EBIT unchanged; CFO unchanged; free cash flow after capitalised spend unchanged",
+        "EBITDA +60; EBIT unchanged; CFO +60; free cash flow after capitalised spend unchanged"
+      ],
+      "answer": 3,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "EBITDA: B records no development expense in operating costs, so its EBITDA is 60 higher.",
+          "EBIT: in steady state B amortises three annual vintages of 60 / 3 = 20 each, i.e. 60 a year, so its EBIT equals A's.",
+          "Cash flow: B's 60 is an investing outflow (purchase of intangible assets), so CFO is 60 higher and CFI 60 lower; total cash flow and FCF after capitalised spend are identical.",
+          "EV/EBITDA therefore flatters B; compare the two on EBIT or on FCF after all capitalised spend."
+        ],
+        "shortcut": "Steady state: capitalising only moves the cost from opex to amortisation and from CFO to CFI.",
+        "trap": "Using first-year logic (only 20 of amortisation, so EBIT +40): once the asset base has built up, annual amortisation equals annual spend.",
+        "rule": "Capitalising costs boosts EBITDA and CFO, not economic cash flow; compare capitalisers on EBIT or FCF after capitalised spend."
+      },
+      "tags": ["capitalisation", "r-and-d", "earnings-quality"]
+    },
+    {
+      "id": "acc-048",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A SaaS company invoices annual subscriptions upfront. This year it recognises revenue of EUR 400m and its deferred revenue balance rises from EUR 120m to EUR 150m. Receivables are unchanged. What are this year's billings, and how does the deferred revenue movement appear in CFO?",
+      "options": [
+        "Billings 370; the 30 increase is deducted in CFO",
+        "Billings 430; the 30 increase is added in CFO",
+        "Billings 550; the 150 closing balance is added in CFO",
+        "Billings 430; the 30 increase is deducted in CFO"
+      ],
+      "answer": 1,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Billings = revenue recognised + increase in deferred revenue (amounts invoiced but not yet earned) = 400 + (150 - 120) = 430.",
+          "Deferred revenue is a liability: an increase means cash came in ahead of revenue, so the 30 is added in CFO.",
+          "With receivables unchanged, cash collected equals billings: 430, i.e. 30 more than revenue."
+        ],
+        "shortcut": "Billings = revenue + change in deferred revenue.",
+        "trap": "Treating deferred revenue like an asset and deducting its increase: it is a liability, so a rise is a source of cash.",
+        "rule": "Rising deferred revenue means billings and cash run ahead of revenue: a working capital inflow typical of subscription models."
+      },
+      "tags": ["deferred-revenue", "billings", "saas"]
+    },
+    {
+      "id": "acc-049",
+      "skill": "fin-acc",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A company has net income of EUR 100m, 50m shares and a share price of EUR 40.00. It holds EUR 200m of surplus cash earning 4.0% pre-tax; tax rate 25%. It can pay out the EUR 200m as a special dividend or spend it buying back shares at EUR 40.00. What is EPS under each option?",
+      "options": [
+        "Dividend: EUR 1.88; buyback: EUR 2.09",
+        "Dividend: EUR 2.00; buyback: EUR 2.22",
+        "Dividend: EUR 1.88; buyback: EUR 1.88",
+        "Dividend: EUR 1.84; buyback: EUR 2.04"
+      ],
+      "answer": 0,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Lost interest after tax: 200 × 4.0% × (1 - 25%) = 6, so net income falls to 94 under both options.",
+          "Dividend: shares stay at 50m, EPS = 94 / 50 = EUR 1.88.",
+          "Buyback: 200 / 40 = 5m shares repurchased, EPS = 94 / 45 = EUR 2.09.",
+          "The buyback is accretive because the earnings yield on the shares (1 / 20x = 5.0%) beats the after-tax yield on cash (3.0%). Both options reduce cash and equity by 200."
+        ],
+        "shortcut": "A buyback raises EPS if 1 / P/E is above the after-tax yield on the cash used: 5.0% > 3.0%.",
+        "trap": "Forgetting the interest income lost on the cash (EPS 2.00 and 2.22): both options remove the cash and the income it earned.",
+        "rule": "Dividends and buybacks hit cash and equity equally; a buyback lifts EPS when the earnings yield exceeds the after-tax cost of the cash used."
+      },
+      "tags": ["share-buyback", "dividends", "eps"]
+    },
+    {
+      "id": "acc-050",
+      "skill": "fin-acc",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A parent pays EUR 350m for 70% of a target. The fair value of the target's identifiable net assets is EUR 400m and the fair value of the 30% non-controlling interest (NCI) is EUR 140m. Under IFRS 3, what goodwill arises if NCI is measured (a) at its proportionate share of net assets and (b) at fair value?",
+      "options": ["(a) 70; (b) 70", "(a) 70; (b) 100", "(a) 90; (b) 70", "(a) 70; (b) 90"],
+      "answer": 3,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Goodwill = consideration + NCI - 100% of the fair value of identifiable net assets.",
+          "(a) Proportionate method: NCI = 30% × 400 = 120, so goodwill = 350 + 120 - 400 = 70, only the parent's share of goodwill.",
+          "(b) Fair value method: NCI = 140, so goodwill = 350 + 140 - 400 = 90, 'full' goodwill including 140 - 120 = 20 attributable to the NCI.",
+          "The choice is made deal by deal and also sets the NCI shown in equity (120 or 140)."
+        ],
+        "shortcut": "Full goodwill - partial goodwill = NCI fair value - NCI share of net assets = 140 - 120 = 20.",
+        "trap": "Grossing up the price paid (350 / 70% = 500, goodwill 100): the NCI's fair value usually excludes the control premium, so it is below a pro rata share of the price.",
+        "rule": "IFRS 3: goodwill = consideration + NCI - 100% of net assets at fair value; NCI at fair value gives full goodwill."
+      },
+      "tags": ["non-controlling-interest", "goodwill", "ifrs-3"]
+    },
+    {
+      "id": "acc-051",
+      "skill": "fin-acc",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A company holds 30% of an associate, equity-accounted at a carrying amount of EUR 90m. It buys a further 40% for EUR 160m in cash and obtains control. At that date the original 30% stake has a fair value of EUR 120m. Under IFRS 3, what happens to the original stake?",
+      "options": [
+        "It stays at 90 and is added to the 160 paid when calculating goodwill; no gain is recognised",
+        "It is remeasured to 120, with a gain of 30 in profit or loss; 160 + 120 + NCI are then compared with 100% of the net assets to calculate goodwill",
+        "It is remeasured to 120, with the gain of 30 taken to other comprehensive income",
+        "It continues to be equity-accounted, while only the newly acquired 40% is consolidated"
+      ],
+      "answer": 1,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Obtaining control is treated like disposing of an associate and acquiring a 70%-owned subsidiary: a business combination achieved in stages.",
+          "The previously held stake is remeasured to its acquisition-date fair value: 120 - 90 = a gain of 30 in profit or loss. It is non-cash, so it is deducted in CFO.",
+          "Goodwill = 160 (cash paid) + 120 (fair value of the old stake) + NCI on the remaining 30% - 100% of identifiable net assets at fair value.",
+          "From that date the target is fully consolidated and equity accounting stops; the 160, net of the target's cash, is an investing outflow."
+        ],
+        "shortcut": "Crossing the control line resets the old stake to fair value through profit or loss.",
+        "trap": "Keeping the old stake at book value (90): IFRS 3 treats the move from significant influence to control as a disposal and reacquisition, so the gain is recognised.",
+        "rule": "Step acquisition: remeasure the previously held interest to fair value through P&L, then consolidate 100% and calculate goodwill on the total."
+      },
+      "tags": ["equity-method", "associates", "step-acquisition"]
+    },
+    {
+      "id": "acc-052",
+      "skill": "fin-acc",
+      "level": 3,
+      "type": "numeric",
+      "stem": "Revenue EUR 1,000m, COGS 600m, operating expenses 200m (including 10m of share-based compensation), D&A 50m, interest expense 30m, tax rate 25% with all tax paid in cash. Capex is 70m; receivables rise by 20m, inventory by 10m and payables by 15m. The company repays 40m of debt and pays dividends of 20m. Opening cash is 100m. What is closing cash (EUR m)?",
+      "answer": 105,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Pre-tax profit = 1,000 - 600 - 200 - 50 - 30 = 120; net income = 120 × 0.75 = 90.",
+          "CFO = 90 + D&A 50 + share-based compensation 10 - receivables 20 - inventory 10 + payables 15 = 135.",
+          "CFI = -70 (capex); CFF = -40 (debt) - 20 (dividends) = -60.",
+          "Change in cash = 135 - 70 - 60 = +5, so closing cash = 100 + 5 = 105.",
+          "Balance sheet check: assets +55 (cash 5, receivables 20, inventory 10, net PP&E 70 - 50 = 20) = liabilities -25 (payables +15, debt -40) + equity +80 (90 + 10 - 20)."
+        ],
+        "shortcut": "Go straight to cash: net income + non-cash items +/- working capital - capex - debt repaid - dividends.",
+        "trap": "Forgetting to add back the share-based compensation (closing cash 95) or reversing the sign of the payables increase (75).",
+        "rule": "Closing cash = opening cash + CFO + CFI + CFF; then check that the balance sheet still balances."
+      },
+      "tags": ["three-statement", "cash-flow-statement", "modelling"]
+    },
+    {
+      "id": "val-041",
+      "skill": "fin-val",
+      "level": 3,
+      "type": "numeric",
+      "stem": "A DCF of post-IFRS 16 unlevered free cash flows (lease payments treated as financing) gives an enterprise value of EUR 3,000m. Borrowings are EUR 900m, lease liabilities EUR 200m, cash EUR 300m, preferred shares EUR 150m, non-controlling interest EUR 120m, investments in associates EUR 80m and the pension deficit, net of tax, EUR 100m. There are 50m diluted shares. What is the equity value per share (EUR)?",
+      "answer": 38.2,
+      "tolerance": 0.05,
+      "unit": "EUR",
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Start from enterprise value: 3,000.",
+          "Subtract the other claims on the business: borrowings 900, lease liabilities 200 (the cash flows exclude lease payments, so leases are debt), preferred 150, NCI 120 and pension deficit 100: total 1,470.",
+          "Add the assets whose returns are not in the cash flows: cash 300 and associates 80: total 380.",
+          "Equity value = 3,000 - 1,470 + 380 = 1,910; per share 1,910 / 50 = EUR 38.20."
+        ],
+        "shortcut": "EV - debt-like claims + non-operating assets: 3,000 - 1,470 + 380 = 1,910.",
+        "trap": "Not deducting the lease liabilities when the cash flows are after IFRS 16 (EUR 42.20), or adding NCI and deducting associates the wrong way round (EUR 39.80).",
+        "rule": "From EV to equity: subtract every claim other than ordinary equity (debt, leases, preferred, NCI, pension deficit), add every asset not captured in the cash flows, then divide by diluted shares."
+      },
+      "tags": ["ev-bridge", "equity-value", "ifrs-16"]
+    },
+    {
+      "id": "val-042",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A bidder offers EUR 25.00 per share for a target with 80m basic shares, currently trading at EUR 20.00. The target has 6m options with an exercise price of EUR 15.00 and 4m options with an exercise price of EUR 28.00. Using the treasury stock method, what is the diluted equity purchase price?",
+      "options": ["EUR 2,000m", "EUR 2,037.5m", "EUR 2,060m", "EUR 2,150m"],
+      "answer": 2,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Use the offer price, not the current price: the options are exercised or cashed out at the deal price.",
+          "First tranche, in the money (15 < 25): 6m new shares, proceeds 6 × 15 = 90, which buy back 90 / 25 = 3.6m shares: net 2.4m.",
+          "Second tranche (28 > 25) is out of the money at the offer price: excluded.",
+          "Diluted shares = 80 + 2.4 = 82.4m; purchase price = 82.4 × 25 = EUR 2,060m."
+        ],
+        "shortcut": "Net new shares = options × (1 - strike / price) = 6 × (1 - 15 / 25) = 2.4m.",
+        "trap": "Running the treasury stock method at the current price of 20 (only 1.5m net shares, EUR 2,037.5m): in a takeover, dilution is measured at the offer price.",
+        "rule": "M&A diluted share count: treasury stock method at the offer price, including only options in the money at that price."
+      },
+      "tags": ["treasury-stock-method", "dilution", "offer-price"]
+    },
+    {
+      "id": "val-043",
+      "skill": "fin-val",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Your DCF gives an enterprise value of EUR 2,800m. Net debt excluding a convertible bond is EUR 400m. The convertible has a face value of EUR 300m and a conversion price of EUR 20.00 (15m shares). There are 100m basic shares and no other dilutive instruments. What is the value per share?",
+      "options": [
+        "EUR 21.00: keep the bond as debt, since it is a liability on the balance sheet",
+        "EUR 24.00: ignore the bond, since it will convert anyway",
+        "EUR 18.26: deduct the bond and also add the 15m conversion shares",
+        "EUR 20.87: treat it as converted, since the value per share exceeds the conversion price"
+      ],
+      "answer": 3,
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Equity value before the convertible: 2,800 - 400 = 2,400.",
+          "Test the bond as debt: (2,400 - 300) / 100 = EUR 21.00, above the conversion price of 20, so holders would convert. This treatment is inconsistent.",
+          "If-converted: remove the 300 from debt and add 300 / 20 = 15m shares: 2,400 / 115 = EUR 20.87.",
+          "Check: 20.87 > 20, so conversion is rational and the result is consistent with the treatment."
+        ],
+        "shortcut": "Compare value per share with the conversion price: above it, the bond is equity (shares in, debt out); below it, the bond is debt.",
+        "trap": "Deducting the bond and also adding the shares (EUR 18.26): this counts the same claim twice.",
+        "rule": "If-converted method: in the money means add the shares and remove the debt; always check that the answer is consistent with the treatment chosen."
+      },
+      "tags": ["convertible-bonds", "dilution", "if-converted"]
+    },
+    {
+      "id": "val-044",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "numeric",
+      "stem": "A company's financial year ends on 31 March. EBITDA is EUR 120m for the year ending 31 March 2025 and EUR 160m for the year ending 31 March 2026. Its peers report on a calendar-year basis. What is its calendarised EBITDA for the year ending 31 December 2025 (EUR m)?",
+      "answer": 150,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Calendar 2025 = January to March 2025 + April to December 2025.",
+          "January to March 2025 belongs to the year ending March 2025: 3/12 × 120 = 30.",
+          "April to December 2025 belongs to the year ending March 2026: 9/12 × 160 = 120.",
+          "Calendarised EBITDA = 30 + 120 = 150."
+        ],
+        "shortcut": "0.25 × 120 + 0.75 × 160 = 150: the fiscal year that covers most of the calendar year gets the 9/12 weight.",
+        "trap": "Swapping the weights (0.75 × 120 + 0.25 × 160 = 130), which assigns most of calendar 2025 to the year that ended in March 2025.",
+        "rule": "Calendarise by weighting each fiscal year by the months it shares with the calendar year, assuming no strong seasonality."
+      },
+      "tags": ["calendarisation", "trading-comps"]
+    },
+    {
+      "id": "val-045",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A target has 50m shares trading at an unaffected price of EUR 20.00, net debt of EUR 300m and EBITDA of EUR 130m. A bidder offers a 30% premium to the share price. What are the implied premium on enterprise value and the offer EV/EBITDA?",
+      "options": ["30.0% on EV; 13.0x", "23.1% on EV; 12.3x", "30.0% on EV; 10.0x", "18.8% on EV; 12.3x"],
+      "answer": 1,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Offer price: 20.00 × 1.30 = EUR 26.00; offer equity value 26 × 50 = 1,300, against 1,000 unaffected.",
+          "Net debt is refinanced or assumed at face value, with no premium: unaffected EV = 1,000 + 300 = 1,300; offer EV = 1,300 + 300 = 1,600.",
+          "EV premium = 1,600 / 1,300 - 1 = 23.1%; offer EV/EBITDA = 1,600 / 130 = 12.3x, against 10.0x unaffected."
+        ],
+        "shortcut": "EV premium = equity premium × equity / EV = 30% × 1,000 / 1,300 = 23.1%.",
+        "trap": "Applying the 30% to the whole EV (1,690, 13.0x): the premium is paid to shareholders only, not to lenders.",
+        "rule": "Control premia are quoted on the share price; the more levered the target, the smaller the premium on EV."
+      },
+      "tags": ["control-premium", "enterprise-value", "precedent-transactions"]
+    },
+    {
+      "id": "val-046",
+      "skill": "fin-val",
+      "level": 3,
+      "type": "mcq",
+      "stem": "Three listed peers have levered betas of 1.20, 1.50 and 0.90, with debt-to-equity ratios of 0.40, 0.80 and 0.20 respectively. The tax rate is 25%. Your target will operate at a D/E of 1.00. Using the Hamada formula and the average unlevered beta, what is the target's relevered beta?",
+      "options": ["0.88", "1.20", "1.54", "1.76"],
+      "answer": 2,
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Unlever each peer with βu = βL / (1 + (1 - t) × D/E): 1.20 / 1.30 = 0.923; 1.50 / 1.60 = 0.938; 0.90 / 1.15 = 0.783.",
+          "Average unlevered beta: (0.923 + 0.938 + 0.783) / 3 = 0.881.",
+          "Relever at the target's D/E: 0.881 × (1 + 0.75 × 1.00) = 0.881 × 1.75 = 1.54."
+        ],
+        "shortcut": "Unlever peer by peer, average, then multiply by 1 + 0.75 × target D/E.",
+        "trap": "Averaging the levered betas (1.20) and using that: each peer's beta embeds its own leverage, which must be stripped out first. Forgetting (1 - t) when relevering gives 1.76.",
+        "rule": "Unlever each comparable, average the asset betas, relever at the target's capital structure."
+      },
+      "tags": ["beta", "wacc", "relevering"]
+    },
+    {
+      "id": "val-047",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A profitable, fully tax-paying company has bonds with a 4.0% coupon that now trade at a yield to maturity of 7.0%. The tax rate is 25%. Which cost of debt should go into its WACC?",
+      "options": ["7.00%", "5.25%", "4.00%", "3.00%"],
+      "answer": 1,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "WACC needs today's market cost of debt: the yield to maturity (7.0%), not the coupon fixed when the bond was issued (4.0%).",
+          "Interest is tax-deductible for a tax-paying company: 7.0% × (1 - 25%) = 5.25%.",
+          "If the company had large tax losses and paid no tax for years, the shield would be worth less and the after-tax cost would move towards 7.0%."
+        ],
+        "shortcut": "Yield to maturity × (1 - t) = 7.0% × 0.75 = 5.25%.",
+        "trap": "Using the coupon (3.00% after tax): it reflects interest rates and credit quality at issuance, not the current cost of borrowing.",
+        "rule": "Kd in WACC = current market yield (YTM or rate on new borrowing) × (1 - marginal tax rate)."
+      },
+      "tags": ["cost-of-debt", "wacc", "tax-shield"]
+    },
+    {
+      "id": "val-048",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "mcq",
+      "stem": "In a DCF, year-5 unlevered free cash flow is EUR 80m and year-5 EBITDA is EUR 150m. WACC is 9.0% and the perpetual growth rate is 2.0%. What exit multiple (terminal value / year-5 EBITDA) does the Gordon growth terminal value imply?",
+      "options": ["14.6x", "7.8x", "6.0x", "5.1x"],
+      "answer": 1,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Terminal value at the end of year 5 = FCF × (1 + g) / (WACC - g) = 80 × 1.02 / 0.07 = 1,165.7.",
+          "Implied multiple = 1,165.7 / 150 = 7.8x.",
+          "Compare it with peers' multiples: if it is far away, revisit g, WACC or the terminal-year margins."
+        ],
+        "shortcut": "Implied multiple = (FCF / EBITDA) × (1 + g) / (WACC - g) = 0.533 × 14.57 = 7.8x.",
+        "trap": "Dividing the present value of the terminal value (757.6) by EBITDA (5.1x): the terminal value and year-5 EBITDA must be measured at the same date, the end of year 5.",
+        "rule": "Always cross-check a Gordon growth terminal value against the exit multiple it implies, both at the end of the forecast."
+      },
+      "tags": ["dcf", "terminal-value", "exit-multiple"]
+    },
+    {
+      "id": "val-049",
+      "skill": "fin-val",
+      "level": 2,
+      "type": "mcq",
+      "stem": "In your SaaS peer set, EV / NTM revenue is roughly 0.20x per point of rule-of-40 score (NTM revenue growth % + FCF margin %). The target has LTM revenue of EUR 250m, expected NTM revenue growth of 52% and an FCF margin of -7%. What enterprise value does this imply?",
+      "options": ["EUR 2,250m", "EUR 2,950m", "EUR 3,420m", "EUR 4,484m"],
+      "answer": 2,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Rule-of-40 score = growth + FCF margin = 52 + (-7) = 45.",
+          "Multiple = 0.20 × 45 = 9.0x NTM revenue.",
+          "NTM revenue = 250 × 1.52 = 380; EV = 9.0 × 380 = EUR 3,420m.",
+          "A score above 40 means growth more than compensates for the cash burn, which is why investors accept the negative margin."
+        ],
+        "shortcut": "Score 45 gives 9.0x, applied to forward revenue of 380.",
+        "trap": "Applying a forward (NTM) multiple to LTM revenue (EUR 2,250m), or dropping the minus sign on the margin (score 59, 11.8x).",
+        "rule": "Value high-growth, loss-making software on EV / forward revenue and adjust for quality with the rule of 40 (growth + margin ≥ 40%)."
+      },
+      "tags": ["ev-revenue", "rule-of-40", "saas"]
+    },
+    {
+      "id": "val-050",
+      "skill": "fin-val",
+      "level": 3,
+      "type": "numeric",
+      "stem": "A group has three divisions: Packaging (EBITDA EUR 120m; peers trade at 7.0x EBITDA), Speciality Chemicals (EBITDA EUR 60m; peers at 11.0x) and a loss-making Digital unit (revenue EUR 90m; peers at 2.0x revenue). Unallocated head-office costs are EUR 20m a year, capitalised at the group's blended multiple of 8.0x. Net debt is EUR 420m and a minority stake in an associate is worth EUR 100m. There are 80m shares. What is the sum-of-the-parts value per share (EUR)?",
+      "answer": 15.0,
+      "tolerance": 0.05,
+      "unit": "EUR",
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Divisions: 120 × 7.0 = 840; 60 × 11.0 = 660; 90 × 2.0 = 180; total 1,680.",
+          "Head-office costs: -20 × 8.0 = -160, so group EV = 1,680 - 160 = 1,520.",
+          "Equity value = 1,520 - 420 (net debt) + 100 (associate, not in divisional EBITDA) = 1,200.",
+          "Per share: 1,200 / 80 = EUR 15.00."
+        ],
+        "shortcut": "Value each part, treat central costs as a negative part, then bridge to equity as usual.",
+        "trap": "Forgetting head-office costs (EUR 17.00 per share): divisional EBITDA is usually stated before central costs, so ignoring them overstates value.",
+        "rule": "SOTP: each division on its own peers' multiple, minus capitalised central costs, minus net debt, plus non-consolidated assets."
+      },
+      "tags": ["sum-of-the-parts", "multiples", "conglomerate"]
+    },
+    {
+      "id": "val-051",
+      "skill": "fin-val",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A venture fund invests EUR 8m in a start-up and targets a 10.0x return at exit in year 5. It expects the company to earn EUR 25m in year 5 and to be sold at 16.0x earnings. Later funding rounds will dilute the fund's stake by 25% before exit. Using the VC method, what is the maximum pre-money valuation the fund can accept today?",
+      "options": ["EUR 22.0m", "EUR 30.0m", "EUR 32.0m", "EUR 40.0m"],
+      "answer": 0,
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Exit value: 25 × 16.0 = 400. The fund needs 8 × 10.0 = 80 at exit, i.e. 80 / 400 = 20% of the company.",
+          "It keeps only 75% of its stake through later rounds, so it needs 20% / 0.75 = 26.7% today.",
+          "Post-money = investment / ownership = 8 / 26.7% = 30.0; pre-money = 30.0 - 8 = 22.0.",
+          "A 10x target over 5 years is a required return of about 58% a year, reflecting the high failure rate of start-ups."
+        ],
+        "shortcut": "Post-money = exit value × retention / target multiple = 400 × 0.75 / 10 = 30; pre-money = 30 - 8 = 22.",
+        "trap": "Ignoring future dilution (post-money 40, pre-money 32): the stake will shrink, so the fund needs more of the company today and can pay less.",
+        "rule": "VC method: post-money = exit value × retention / target multiple; pre-money = post-money - new money."
+      },
+      "tags": ["vc-method", "venture-capital", "pre-money"]
+    },
+    {
+      "id": "val-052",
+      "skill": "fin-val",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A start-up raises EUR 5m at a headline pre-money valuation of EUR 20m. The investor requires an unallocated employee option pool equal to 15% of the post-money share capital, created before the round (included in the pre-money). What do the founders own after the round, and what is the effective pre-money valuation of their shares?",
+      "options": ["80.0%; EUR 20.0m", "68.0%; EUR 17.0m", "65.0%; EUR 16.25m", "65.0%; EUR 20.0m"],
+      "answer": 2,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Post-money = 20 + 5 = 25; the investor owns 5 / 25 = 20%.",
+          "The pool is 15% of post-money and sits inside the pre-money, so only the founders are diluted by it: they own 100% - 20% - 15% = 65%.",
+          "Effective pre-money for the founders = 65% × 25 = 16.25, i.e. the headline 20 less the pool's value of 15% × 25 = 3.75."
+        ],
+        "shortcut": "Effective pre-money = headline pre-money - pool % × post-money = 20 - 3.75 = 16.25.",
+        "trap": "Assuming the pool dilutes investor and founders pro rata (founders 80% × 85% = 68%): placing it in the pre-money shifts its whole cost onto the existing shareholders.",
+        "rule": "An option pool created in the pre-money lowers the founders' effective valuation: negotiate pool size and headline price together."
+      },
+      "tags": ["pre-money", "option-pool", "venture-capital"]
+    },
+    {
+      "id": "ma-031",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Which statement about the stages of a two-stage sell-side auction is correct?",
+      "options": [
+        "The teaser is sent after the NDA is signed, because it contains the target's detailed financials",
+        "Indicative offers are binding, which is why the data room opens before they are submitted",
+        "Management presentations are given to every party that received the teaser, to help it decide whether to sign the NDA",
+        "Binding offers come with a marked-up SPA; the SPA is signed at signing, and ownership and payment transfer at closing once conditions such as merger control are met"
+      ],
+      "answer": 3,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Teaser: a short, often anonymous summary used to test interest. The NDA comes next and must be signed before any confidential information is shared.",
+          "The CIM (information memorandum) follows the NDA; indicative, non-binding offers based on it decide the shortlist.",
+          "Phase two: management presentations and the data room for the shortlist, then binding offers with a marked-up SPA.",
+          "Signing: the SPA is executed and the parties are bound, subject to conditions precedent. Closing: the conditions are met, the price is paid and the shares are transferred."
+        ],
+        "shortcut": "Information rises step by step (teaser, CIM, data room) as the field narrows, and commitment rises with it (NDA, indicative, binding, signing, closing).",
+        "trap": "Thinking ownership passes at signing: between signing and closing the seller still owns the business, which is why the SPA includes conduct-of-business covenants and closing conditions.",
+        "rule": "Teaser, NDA, CIM, indicative offers, management presentations and data room, binding offers with SPA mark-up, signing, closing."
+      },
+      "tags": ["deal-process", "sell-side-auction", "signing-and-closing"]
+    },
+    {
+      "id": "ma-032",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "mcq",
+      "stem": "An acquirer trades at a P/E of 12.0x. It buys a target at a purchase P/E of 15.0x and could pay with cash on hand (earning 3.0% pre-tax), new debt (8.0% pre-tax) or new shares. The tax rate is 25%. Ignoring synergies and fees, which funding choices are EPS-accretive?",
+      "options": [
+        "None, because the purchase P/E is above the acquirer's P/E",
+        "Cash only, because the 8.0% cost of debt exceeds the 6.7% earnings yield acquired",
+        "Cash and debt, but not stock",
+        "Cash, debt and stock"
+      ],
+      "answer": 2,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Earnings yield acquired: 1 / 15.0 = 6.67%.",
+          "After-tax cost of cash: 3.0% × 0.75 = 2.25%; of debt: 8.0% × 0.75 = 6.0%; of stock: the acquirer's earnings yield, 1 / 12.0 = 8.33%.",
+          "Accretive when the yield acquired exceeds the cost of funding: cash (2.25%) and debt (6.0%) are below 6.67%, stock (8.33%) is above, so a share-funded deal is dilutive.",
+          "The 'higher P/E paid is dilutive' rule applies only to all-stock deals."
+        ],
+        "shortcut": "Rank the costs: cash 2.25% < debt 6.0% < target 6.67% < stock 8.33%.",
+        "trap": "Comparing the pre-tax cost of debt (8.0%) with the earnings yield: interest is tax-deductible, so debt costs 6.0% after tax and the debt-funded deal is accretive.",
+        "rule": "Accretive if 1 / purchase P/E > after-tax cost of cash or debt, or > 1 / acquirer P/E for stock."
+      },
+      "tags": ["accretion-dilution", "earnings-yield", "funding-mix"]
+    },
+    {
+      "id": "ma-033",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "numeric",
+      "stem": "An acquirer has net income of EUR 200m and 100m shares. It buys a target with net income of EUR 30m for EUR 800m, funded entirely with new debt at 7.0% pre-tax. The tax rate is 25%. What run-rate pre-tax synergies (EUR m) are needed for the deal to be EPS-neutral?",
+      "answer": 16,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "After-tax interest: 800 × 7.0% × (1 - 25%) = 56 × 0.75 = 42.",
+          "Pro forma net income before synergies: 200 + 30 - 42 = 188; shares unchanged at 100m, so EPS falls from 2.00 to 1.88.",
+          "After-tax shortfall: 200 - 188 = 12.",
+          "Pre-tax synergies needed: 12 / (1 - 25%) = 16."
+        ],
+        "shortcut": "No new shares: break-even synergies = (after-tax interest - target net income) / (1 - t) = (42 - 30) / 0.75 = 16.",
+        "trap": "Stopping at the after-tax gap (12) or comparing pre-tax interest with net income (56 - 30 = 26): synergies are taxed too, so gross up the after-tax gap.",
+        "rule": "Debt-funded deal: EPS-neutral when target net income + synergies × (1 - t) = interest × (1 - t)."
+      },
+      "tags": ["accretion-dilution", "breakeven-synergies", "debt-financed"]
+    },
+    {
+      "id": "ma-034",
+      "skill": "fin-ma",
+      "level": 3,
+      "type": "mcq",
+      "stem": "An acquirer with 150m shares at EUR 40.00 plans an all-share offer for a target with 50m shares and an unaffected price of EUR 24.00. Its board wants the target's shareholders to own no more than 20% of the combined company. What is the maximum premium it can offer?",
+      "options": ["0.0%", "20.0%", "25.0%", "33.3%"],
+      "answer": 2,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "New shares N must satisfy N / (150 + N) = 20%, so N = 0.20 × 150 / 0.80 = 37.5m.",
+          "Exchange ratio: 37.5 / 50 = 0.75 acquirer shares per target share.",
+          "Offer value: 0.75 × 40.00 = EUR 30.00 per target share; premium = 30.00 / 24.00 - 1 = 25.0%."
+        ],
+        "shortcut": "A stake of s needs s / (1 - s) × existing shares: 0.25 × 150 = 37.5m new shares.",
+        "trap": "Taking 20% of the acquirer's existing shares (30m, ratio 0.60, offer EUR 24.00, no premium): the 20% is measured on the enlarged share count.",
+        "rule": "An ownership cap fixes the exchange ratio; premium = exchange ratio × acquirer price / target unaffected price - 1."
+      },
+      "tags": ["exchange-ratio", "premium", "pro-forma-ownership"]
+    },
+    {
+      "id": "ma-035",
+      "skill": "fin-ma",
+      "level": 3,
+      "type": "numeric",
+      "stem": "A buyer pays EUR 900m for 100% of a target's shares. The target's book equity is EUR 400m, including EUR 50m of goodwill from its own past acquisitions. In the purchase price allocation, customer relationships are recognised at EUR 200m and PP&E is written up by EUR 100m. There is no step-up in tax basis and the tax rate is 25%. What goodwill is recognised (EUR m)?",
+      "answer": 325,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Remove the target's existing goodwill, which is not an identifiable asset: 400 - 50 = 350.",
+          "Add the fair value adjustments: 200 + 100 = 300, so 650 before tax.",
+          "Share deal with no tax step-up: the write-ups have no tax base, so a deferred tax liability of 300 × 25% = 75 is recognised. Identifiable net assets = 650 - 75 = 575.",
+          "Goodwill = 900 - 575 = 325."
+        ],
+        "shortcut": "Goodwill = price - (book equity - old goodwill + write-ups × (1 - t)) = 900 - (350 + 225) = 325.",
+        "trap": "Forgetting the deferred tax liability (goodwill 250) or leaving the old goodwill in net assets (goodwill 275).",
+        "rule": "In a share deal, write-ups create a DTL that increases goodwill, and the target's old goodwill is replaced by the new one."
+      },
+      "tags": ["purchase-price-allocation", "goodwill", "deferred-tax"]
+    },
+    {
+      "id": "ma-036",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "numeric",
+      "stem": "A seller agrees a locked-box deal at an equity price of EUR 400m, based on the target's balance sheet at the locked-box date of 31 December. Completion is on 30 April. Between those dates the target generates EUR 20m of cash profit, pays a EUR 15m dividend to the seller and pays EUR 1m of monitoring fees to the seller's fund, which the SPA lists as permitted leakage. Ignoring any ticking fee, what does the buyer pay at completion (EUR m)?",
+      "answer": 385,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "In a locked box the price is fixed on the locked-box balance sheet, and economic risk and reward pass to the buyer from that date: the 20 of profit does not change the price.",
+          "Value extracted by the seller after the locked-box date is leakage, deducted from the price or repaid euro for euro: the 15 dividend.",
+          "Permitted leakage (the 1 of agreed fees) was priced in at signing and is not deducted.",
+          "Price at completion = 400 - 15 = 385."
+        ],
+        "shortcut": "Locked box: fixed price minus non-permitted leakage.",
+        "trap": "Adjusting for the cash generated after the locked-box date (400 + 20 - 15 = 405), as in completion accounts, or also deducting the permitted leakage (384).",
+        "rule": "Locked box: price certainty, buyer protected by leakage covenants. Completion accounts: price trued up to actual net debt and working capital at completion."
+      },
+      "tags": ["locked-box", "completion-accounts", "spa"]
+    },
+    {
+      "id": "ma-037",
+      "skill": "fin-ma",
+      "level": 3,
+      "type": "mcq",
+      "stem": "At acquisition, a buyer recognises a cash-settled earn-out at a fair value of EUR 30m as part of the consideration. A year later the acquired business is beating its plan and the earn-out's fair value rises to EUR 50m. Under IFRS 3, how is the EUR 20m increase accounted for?",
+      "options": [
+        "Goodwill increases by 20, because the consideration paid has risen",
+        "A loss of 20 in profit or loss; goodwill is unchanged",
+        "Nothing is recorded until the earn-out is paid",
+        "Equity is reduced by 20 directly, with no effect on profit or loss"
+      ],
+      "answer": 1,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "IFRS 3 includes contingent consideration in the price at its acquisition-date fair value (30), so goodwill was set using that figure.",
+          "A cash-settled earn-out is a financial liability and is remeasured to fair value at each reporting date.",
+          "Changes caused by events after the acquisition, such as outperformance, do not adjust goodwill: the 20 increase is a loss in profit or loss.",
+          "The paradox: the better the acquired business does, the lower reported profit, so analysts usually strip these remeasurements out of adjusted earnings."
+        ],
+        "shortcut": "Goodwill is fixed at the acquisition date; later earn-out revaluations go through the P&L.",
+        "trap": "Adjusting goodwill: only measurement-period adjustments for facts that existed at the acquisition date can change it.",
+        "rule": "IFRS 3: liability-classified contingent consideration is remeasured at fair value through profit or loss; equity-classified contingent consideration is not remeasured."
+      },
+      "tags": ["earn-out", "contingent-consideration", "ifrs-3"]
+    },
+    {
+      "id": "ma-038",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A private equity seller wants a clean exit with minimal liability after closing, so the buyer takes out buy-side warranty and indemnity (W&I) insurance. Which loss is the policy most likely to cover?",
+      "options": [
+        "A breach of the warranty on the accounts that neither party knew about at signing",
+        "A tax liability that the buyer's due diligence identified and flagged before signing",
+        "A first-year EBITDA shortfall against the business plan used to set the price",
+        "A reduction in the price under the completion accounts mechanism"
+      ],
+      "answer": 0,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "W&I insurance covers losses from unknown breaches of the seller's warranties (and often the tax indemnity), above a retention and up to a policy limit.",
+          "Known issues, identified in due diligence or disclosed, are excluded: they are handled through the price, a specific indemnity or an escrow.",
+          "Forward-looking items such as forecasts, and purchase price adjustments, are also excluded.",
+          "With the policy in place the seller can cap its own liability at a very low level, while the buyer claims against the insurer."
+        ],
+        "shortcut": "W&I insures the unknown, not the known and not the future.",
+        "trap": "Assuming the policy covers issues found in due diligence: insurers exclude known matters, so the buyer must negotiate a specific indemnity or a price cut.",
+        "rule": "W&I covers unknown warranty breaches; it excludes known issues, forecasts and price adjustments."
+      },
+      "tags": ["warranty-and-indemnity", "spa", "private-equity"]
+    },
+    {
+      "id": "ma-039",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Between signing and closing, which event is most likely to let the buyer invoke a typical material adverse change (MAC) clause and walk away?",
+      "options": [
+        "A broad market sell-off that cuts sector trading multiples by 20%",
+        "An industry-wide downturn that hits the target and its peers equally",
+        "The buyer's own share price falling 15%, which makes its share consideration more costly",
+        "The loss of the target's main operating licence, permanently removing about 40% of its earnings"
+      ],
+      "answer": 3,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "A MAC clause lets the buyer terminate if the target suffers a material adverse change between signing and closing.",
+          "Standard carve-outs exclude general economic, market and industry conditions unless the target is hit disproportionately, so a sell-off or a sector-wide downturn rarely qualifies.",
+          "Courts set a high bar: the change must be specific to the target, significant and durable, measured in years rather than quarters.",
+          "A lost licence that permanently removes 40% of earnings fits that test; the buyer's own share price is irrelevant."
+        ],
+        "shortcut": "Target-specific, material and lasting: only then is a MAC credible.",
+        "trap": "Thinking a market crash or a sector downturn is enough: those risks are usually carved out and stay with the buyer.",
+        "rule": "MAC clauses leave systemic risk with the buyer and target-specific risk with the seller; successful invocations are rare."
+      },
+      "tags": ["mac-clause", "spa", "deal-risk"]
+    },
+    {
+      "id": "ma-040",
+      "skill": "fin-ma",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A target with 100m shares has agreed a recommended EUR 50.00 per share cash offer from Bidder A. The merger agreement includes a break fee of 3% of the deal's equity value, payable by the target if it accepts a superior proposal. Bidder B values the target, including synergies, at EUR 52.00 per share before any fee. What is the most Bidder B can offer per share without destroying value for its own shareholders?",
+      "options": [
+        "EUR 52.00, because the break fee is paid by the target, not by Bidder B",
+        "EUR 50.50, because the EUR 150m fee leaves the target and lowers the value Bidder B acquires",
+        "EUR 51.50, Bidder A's price plus the fee per share",
+        "EUR 48.50, Bidder A's price less the fee per share"
+      ],
+      "answer": 1,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Break fee: 3% × 50.00 × 100m = EUR 150m, i.e. EUR 1.50 per share.",
+          "If Bidder B wins, the target pays the fee to Bidder A, so that cash leaves the company Bidder B is buying.",
+          "Value to Bidder B after the fee: 52.00 - 1.50 = EUR 50.50 per share, its walk-away price.",
+          "50.50 still beats 50.00, so a topping bid is possible but the room is narrow: that is how a break fee deters interlopers."
+        ],
+        "shortcut": "Interloper's walk-away price = its value per share - break fee per share.",
+        "trap": "Ignoring the fee because the target pays it: once Bidder B owns the target, it bears that cost.",
+        "rule": "Break fees protect the first bidder by reducing the value a rival acquires; whether they are allowed, and how large, depends on the jurisdiction (the UK Takeover Code generally prohibits target break fees)."
+      },
+      "tags": ["breakup-fee", "deal-protection", "topping-bid"]
+    },
+    {
+      "id": "ma-041",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A buyer can acquire a business by buying the shares of the company that owns it or by buying its assets. Which statement is generally correct?",
+      "options": [
+        "An asset deal lets the buyer choose which assets and liabilities to take and usually step up their tax base, but transferring contracts, licences and employees is more complex",
+        "In a share deal the buyer can leave unwanted historical liabilities behind with the seller",
+        "Sellers usually prefer asset deals, because the proceeds are taxed only once",
+        "A share deal requires every customer contract to be novated to the buyer"
+      ],
+      "answer": 0,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Share deal: the buyer acquires the legal entity with its whole history, including unknown liabilities, which is why it relies on due diligence, warranties and indemnities. Contracts stay in place, subject to change-of-control clauses.",
+          "Asset deal: the buyer picks assets and liabilities, and the price paid usually becomes the new tax base, so the step-up creates extra tax-deductible depreciation and amortisation.",
+          "But contracts, licences and permits must be transferred or novated one by one, and the seller may be taxed twice (on the company's gain and again when the proceeds are distributed).",
+          "So sellers tend to prefer share deals and buyers asset deals, and the price reflects the trade-off."
+        ],
+        "shortcut": "Share deal: simple, everything comes along. Asset deal: cherry-picking and a tax step-up, at the cost of complexity.",
+        "trap": "Thinking a share deal lets the buyer leave liabilities behind: it inherits all of them with the company.",
+        "rule": "Asset deal = selectivity and a tax step-up for the buyer; share deal = simplicity and often lower tax for the seller."
+      },
+      "tags": ["asset-deal", "share-deal", "deal-structuring"]
+    },
+    {
+      "id": "ma-042",
+      "skill": "fin-ma",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A sponsor runs a dual-track exit for a portfolio company, preparing an IPO while running a sale process. The IPO is expected to value the equity slightly above the best trade bid. Why might the sponsor still choose the sale?",
+      "options": [
+        "An IPO usually sells only a minority stake at an IPO discount and leaves the rest exposed to lock-ups and market risk, while a sale gives a full, certain cash exit",
+        "Once the intention to float is announced, the sponsor can no longer accept a trade bid",
+        "Running both tracks costs less than running either one alone",
+        "IPO valuations already include a control premium, so the higher IPO value is overstated"
+      ],
+      "answer": 0,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "A dual track creates competitive tension: the IPO is a credible alternative that puts a floor under the bids.",
+          "At an IPO the sponsor typically sells only part of its stake, priced at a discount to attract investors, and the rest is locked up and exposed to market moves.",
+          "A trade sale delivers 100% of the proceeds in cash at closing, usually with a control premium and synergies priced in.",
+          "On a risk- and time-adjusted basis, a slightly higher headline IPO value can be worth less than the sale."
+        ],
+        "shortcut": "IPO = partial, delayed and uncertain exit; sale = full, immediate and certain exit.",
+        "trap": "Comparing headline equity values only: the sponsor's realised proceeds and IRR depend on the timing and certainty of the exit.",
+        "rule": "A dual track maximises tension and optionality; choose the route with the best risk- and time-adjusted proceeds."
+      },
+      "tags": ["dual-track", "exit-routes", "ipo"]
+    },
+    {
+      "id": "lbo-021",
+      "skill": "fin-lbo",
+      "level": 2,
+      "type": "numeric",
+      "stem": "A sponsor buys all the shares of a target for EUR 600m and refinances its existing debt of EUR 250m. Transaction fees are EUR 20m and financing fees EUR 10m. Funding: a term loan B of 4.0x and senior notes of 1.5x the target's EBITDA of EUR 100m, EUR 30m of the target's own cash and EUR 20m of rolled-over management equity. How much equity must the sponsor contribute (EUR m)?",
+      "answer": 280,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Uses: equity purchase price 600 + debt refinanced 250 + transaction fees 20 + financing fees 10 = 880.",
+          "Sources other than the sponsor: term loan B 4.0 × 100 = 400 + senior notes 1.5 × 100 = 150 + target cash 30 + management rollover 20 = 600.",
+          "Sponsor equity = 880 - 600 = 280."
+        ],
+        "shortcut": "Sponsor equity is the plug: total uses - every other source.",
+        "trap": "Forgetting the refinancing of existing debt (sponsor equity 30) or the fees (250): the equity price is not the only use of funds.",
+        "rule": "Sources = uses; uses include the equity price, refinanced debt and all fees, and sponsor equity balances the table."
+      },
+      "tags": ["sources-and-uses", "sponsor-equity", "refinancing"]
+    },
+    {
+      "id": "lbo-022",
+      "skill": "fin-lbo",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Three years after entry, a sponsor can sell a company now for 2.0x its equity, or hold it for two more years and exit at 3.0x. There are no interim cash flows. Using IRR rules of thumb, which statement is correct?",
+      "options": [
+        "Holding is better on both measures: 3.0x in 5 years is about a 30% IRR",
+        "Both options give the same IRR, because the MoM rises in line with the extra time",
+        "Selling now gives only about a 15% IRR, against about 25% for holding",
+        "Selling now gives a slightly higher IRR (about 26% against 25%), holding gives a higher MoM, and the extra two years earn only about 22% a year"
+      ],
+      "answer": 3,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Sell now: 2.0x in 3 years, 2^(1/3) = 1.26, so the IRR is about 26%.",
+          "Hold: 3.0x in 5 years, 3^(1/5) = 1.246, so the IRR is about 25%.",
+          "The extra two years turn 2.0x into 3.0x: 1.5x in 2 years, 1.5^(1/2) = 1.22, about 22% a year on the value already built.",
+          "An IRR-focused fund may sell now; a fund that values MoM, or has no better use for the cash, may hold."
+        ],
+        "shortcut": "2x in 3 years ≈ 26%, 2x in 5 years ≈ 15%, 3x in 5 years ≈ 25%; the incremental leg is 1.5x in 2 years ≈ 22%.",
+        "trap": "Confusing 2x in 3 years (about 26%) with 2x in 5 years (about 15%), which makes holding look far better than it is.",
+        "rule": "IRR rewards speed, MoM rewards size; judge a longer hold by the IRR on the incremental period."
+      },
+      "tags": ["irr", "mom", "rule-of-thumb"]
+    },
+    {
+      "id": "lbo-023",
+      "skill": "fin-lbo",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A sponsor buys a company at 12.0x EBITDA of EUR 100m with EUR 700m of debt. Five years later it sells at 10.0x EBITDA of EUR 150m, with net debt of EUR 400m. Valuing EBITDA growth at the entry multiple and the multiple change on exit EBITDA, how does the equity gain break down?",
+      "options": [
+        "EBITDA growth +600; multiple contraction -200; debt paydown +300",
+        "EBITDA growth +600; multiple contraction -300; debt paydown +300",
+        "EBITDA growth +600; no multiple effect, as the multiple matters only at entry; debt paydown +300",
+        "EBITDA growth +600; multiple contraction -300; debt paydown +700, as all the entry debt is repaid at exit"
+      ],
+      "answer": 1,
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Entry: EV 1,200, equity 1,200 - 700 = 500. Exit: EV 1,500, equity 1,500 - 400 = 1,100. Gain 600, a 2.2x MoM.",
+          "EBITDA growth: (150 - 100) × 12.0 = +600.",
+          "Multiple contraction: (10.0 - 12.0) × 150 = -300.",
+          "Debt paydown: 700 - 400 = +300. Check: 600 - 300 + 300 = 600, the actual gain."
+        ],
+        "shortcut": "Compute the three pieces and check that they add up to exit equity - entry equity.",
+        "trap": "Applying the multiple change to entry EBITDA (-200): the pieces then add up to 700, not the 600 actually earned.",
+        "rule": "Equity gain = change in EBITDA × entry multiple + change in multiple × exit EBITDA + debt paydown; buying at a peak multiple can give back much of the operational gain."
+      },
+      "tags": ["returns-attribution", "multiple-contraction", "deleveraging"]
+    },
+    {
+      "id": "lbo-024",
+      "skill": "fin-lbo",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A sponsor's financing needs are: (i) a facility to fund seasonal working capital swings, (ii) the main long-term senior secured debt at the lowest cost, and (iii) extra leverage with no cash interest at the operating company. Which combination fits best?",
+      "options": [
+        "(i) term loan B; (ii) high-yield bond; (iii) revolver",
+        "(i) revolver; (ii) holding company PIK notes; (iii) term loan B",
+        "(i) high-yield bond; (ii) revolver; (iii) unitranche",
+        "(i) revolver; (ii) term loan B; (iii) holding company PIK notes"
+      ],
+      "answer": 3,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Revolver: a committed facility that can be drawn and repaid repeatedly, super senior, with the cheapest margin plus a commitment fee on undrawn amounts, so it suits seasonal working capital.",
+          "Term loan B: senior secured, floating rate, about 1% annual amortisation with a bullet at maturity; it is the core long-term institutional debt and cheaper than any junior tranche.",
+          "Holding company PIK notes: interest is added to principal instead of being paid in cash, and they sit above the operating group, so they add leverage without draining operating cash, at the highest cost.",
+          "High-yield bonds and unitranche loans are term funding, not working capital lines, and both normally pay cash interest."
+        ],
+        "shortcut": "Liquidity = revolver; core senior debt = term loan B; stretch without cash interest = PIK.",
+        "trap": "Using term debt for working capital swings: a term loan cannot be redrawn once repaid, while a revolver can be drawn and repaid as needs change.",
+        "rule": "Each tranche has a job: revolver for liquidity, term loan B for cheap senior term debt, high yield for longer fixed-rate debt, PIK for leverage without cash interest."
+      },
+      "tags": ["debt-tranches", "leveraged-finance", "capital-structure"]
+    },
+    {
+      "id": "lbo-025",
+      "skill": "fin-lbo",
+      "level": 3,
+      "type": "mcq",
+      "stem": "At entry, a sponsor funds part of an LBO with EUR 150m of holding company PIK notes at 12% a year, compounding annually, with no cash interest. Five years later the company is sold for an EV of EUR 1,500m, and operating company net debt at exit is EUR 500m. What is the PIK balance at exit, and how much is left for the sponsor's equity?",
+      "options": [
+        "PIK balance about 264; sponsor equity about 736",
+        "PIK balance 240; sponsor equity 760",
+        "PIK balance 150, as no interest has been paid in cash; sponsor equity 850",
+        "PIK balance about 264; sponsor equity 1,000, because the PIK sits at the holding company, outside the operating company's debt"
+      ],
+      "answer": 0,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "PIK interest is added to principal every year, so it compounds: 150 × 1.12^5 = 150 × 1.762 = 264.4.",
+          "Equity value at exit before the PIK: 1,500 - 500 = 1,000.",
+          "The holding company PIK is structurally subordinated to the operating company debt but ranks ahead of the sponsor's equity, so it is repaid first: 1,000 - 264.4 = 735.6, about 736.",
+          "At 12% the claim grows by about 76% in five years: cheap on cash, expensive on value."
+        ],
+        "shortcut": "1.12^5 ≈ 1.76, so the PIK balance rises by about three quarters over five years.",
+        "trap": "Using simple interest (150 + 5 × 18 = 240): each year's PIK interest is added to the principal and earns interest itself.",
+        "rule": "PIK balance = principal × (1 + r)^n, repaid before the sponsor at exit."
+      },
+      "tags": ["pik", "debt-tranches", "structural-subordination"]
+    },
+    {
+      "id": "lbo-026",
+      "skill": "fin-lbo",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A borrower's high-yield bond allows new debt only if net leverage, tested pro forma for the transaction, stays at or below 5.0x (an incurrence test). EBITDA is EUR 100m and net debt EUR 420m. It wants to borrow EUR 120m to buy a business with EBITDA of EUR 20m, paying the full price in cash. Which statement is correct?",
+      "options": [
+        "Not permitted: leverage would be 540 / 100 = 5.4x, because acquired EBITDA cannot be counted",
+        "Permitted: pro forma leverage is 540 / 120 = 4.5x, within the 5.0x test",
+        "Not permitted: the bond's leverage covenant is tested every quarter and today's 4.2x leaves too little headroom",
+        "Permitted, but the bond then defaults if leverage exceeds 5.0x at any later quarter end because EBITDA falls"
+      ],
+      "answer": 1,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Pro forma net debt: 420 + 120 = 540. Pro forma EBITDA, including the acquired business: 100 + 20 = 120.",
+          "Pro forma leverage: 540 / 120 = 4.5x, at or below 5.0x, so the new debt can be incurred.",
+          "An incurrence covenant is tested only when the borrower acts (new debt, dividends, acquisitions). If EBITDA later falls and leverage drifts above 5.0x, there is no default: the borrower simply cannot take further restricted actions.",
+          "A maintenance covenant, typical of bank and private credit loans, would instead be tested every quarter, whatever the borrower does."
+        ],
+        "shortcut": "Incurrence asks 'may I do this?', tested pro forma when the borrower acts; maintenance asks 'am I still compliant?', tested every quarter.",
+        "trap": "Leaving out the acquired EBITDA (5.4x): a pro forma test gives effect to the whole transaction, both the new debt and the earnings it buys.",
+        "rule": "Incurrence covenants restrict actions on a pro forma basis and never trip on their own; maintenance covenants are tested regularly and can be breached by falling EBITDA alone."
+      },
+      "tags": ["covenants", "incurrence-covenant", "maintenance-covenant"]
+    },
+    {
+      "id": "lbo-027",
+      "skill": "fin-lbo",
+      "level": 3,
+      "type": "numeric",
+      "stem": "A borrower has EBITDA of EUR 120m, a EUR 480m term loan at 7.0%, EUR 180m of senior notes at 9.0% and EUR 60m of cash. Its covenants require total net leverage of at most 6.0x and interest cover (EBITDA / interest) of at least 2.0x. Holding debt and cash constant, by what percentage can EBITDA fall before the first covenant is breached (%, one decimal place)?",
+      "answer": 16.7,
+      "tolerance": 0.1,
+      "unit": "%",
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Net debt = 480 + 180 - 60 = 600, so leverage = 600 / 120 = 5.0x. Interest = 480 × 7.0% + 180 × 9.0% = 33.6 + 16.2 = 49.8, so cover = 120 / 49.8 = 2.41x.",
+          "Leverage test: breached when EBITDA < 600 / 6.0 = 100.",
+          "Interest cover test: breached when EBITDA < 2.0 × 49.8 = 99.6.",
+          "The leverage covenant bites first, at 100: headroom = (120 - 100) / 120 = 16.7%."
+        ],
+        "shortcut": "Leverage headroom = 1 - actual / maximum = 1 - 5.0 / 6.0 = 16.7%; cover headroom = 1 - 2.0 / 2.41 = 17.0%.",
+        "trap": "Quoting the gap in turns as a percentage (1.0x out of 5.0x = 20%): the question is how far EBITDA can fall, which is 1 - 5.0 / 6.0 = 16.7%.",
+        "rule": "EBITDA headroom = 1 - actual leverage / maximum leverage; check every covenant and report the tightest."
+      },
+      "tags": ["leverage", "interest-cover", "covenants"]
+    },
+    {
+      "id": "lbo-028",
+      "skill": "fin-lbo",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A newly drawn EUR 500m term loan B has mandatory amortisation of 1% of the original principal a year and a 50% excess cash flow sweep, where excess cash flow is free cash flow after mandatory debt repayments. This year free cash flow after interest and tax is EUR 40m. What is the term loan balance at year end?",
+      "options": ["EUR 460.0m", "EUR 475.0m", "EUR 477.5m", "EUR 495.0m"],
+      "answer": 2,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Mandatory amortisation: 1% × 500 = 5.",
+          "Excess cash flow: 40 - 5 = 35; sweep: 50% × 35 = 17.5.",
+          "Total repayment: 5 + 17.5 = 22.5, so the closing balance is 500 - 22.5 = 477.5.",
+          "The other 17.5 stays with the company for capex, acquisitions or a cash buffer, as the loan documents allow."
+        ],
+        "shortcut": "Repayment = amortisation + sweep % × (FCF - amortisation) = 5 + 0.5 × 35 = 22.5.",
+        "trap": "Applying the sweep to free cash flow before mandatory repayments (5 + 20 = 25, closing balance 475.0): the sweep percentage applies to excess cash flow, after scheduled debt service.",
+        "rule": "Debt repayment = mandatory amortisation + sweep % × excess cash flow; a higher sweep speeds deleveraging but leaves less cash in the business."
+      },
+      "tags": ["cash-sweep", "debt-paydown", "term-loan-b"]
+    },
+    {
+      "id": "lbo-029",
+      "skill": "fin-lbo",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A sponsor bought a company two years ago with EBITDA of EUR 100m, net debt of EUR 500m (5.0x) and equity of EUR 400m. EBITDA is now EUR 140m and net debt has fallen to EUR 350m. Lenders will lend up to 5.0x net leverage again. Ignoring fees, how large a dividend recap can the company pay?",
+      "options": [
+        "EUR 150m, the debt repaid since entry",
+        "EUR 200m, 5.0x the EBITDA growth",
+        "EUR 700m, 5.0x current EBITDA",
+        "EUR 350m, about 88% of the sponsor's original equity"
+      ],
+      "answer": 3,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Debt capacity at 5.0x: 5.0 × 140 = 700.",
+          "Existing net debt is 350, so new debt available for the dividend = 700 - 350 = 350.",
+          "That combines the debt repaid (500 - 350 = 150) and the relevering of EBITDA growth (5.0 × 40 = 200).",
+          "The sponsor gets back 350 / 400 = 87.5% of its equity after two years while keeping full ownership, which lifts IRR, at the cost of a more levered company."
+        ],
+        "shortcut": "Recap capacity = target leverage × current EBITDA - current net debt.",
+        "trap": "Taking 5.0x current EBITDA (700) as the dividend: the existing net debt uses up part of the same capacity.",
+        "rule": "A dividend recap monetises deleveraging and EBITDA growth before exit: IRR up, risk up."
+      },
+      "tags": ["dividend-recap", "leverage", "debt-capacity"]
+    },
+    {
+      "id": "lbo-030",
+      "skill": "fin-lbo",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Two companies each have EBITDA of EUR 100m and are offered at the same multiple. Which feature of Company X would most reduce the debt that lenders are willing to provide?",
+      "options": [
+        "A fragmented market offering bolt-on acquisitions",
+        "Negative working capital, as customers pay in advance",
+        "A management team willing to roll over part of its equity",
+        "Maintenance capex of EUR 55m a year, so only 45% of EBITDA converts into pre-tax cash"
+      ],
+      "answer": 3,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Lenders size debt on the cash available to pay interest and repay principal, not on EBITDA alone.",
+          "With 55 of maintenance capex, EBITDA - capex is only 45: repaying 5.0x EBITDA (500) would take more than 11 years of that cash, even before interest and tax.",
+          "Bolt-on opportunities, negative working capital and management rollover are positives: growth, cash generation and alignment.",
+          "Strong LBO candidates combine stable cash flows, low capex, a defensible market position and room for operational improvement."
+        ],
+        "shortcut": "Debt capacity follows cash conversion: (EBITDA - capex) / EBITDA.",
+        "trap": "Treating negative working capital as a weakness: customers funding the business is a source of cash that supports leverage.",
+        "rule": "Good LBO candidates: predictable cash flows with high cash conversion, low capex and a clear value creation plan."
+      },
+      "tags": ["lbo-candidate", "cash-conversion", "debt-capacity"]
+    },
+    {
+      "id": "lbo-031",
+      "skill": "fin-lbo",
+      "level": 2,
+      "type": "mcq",
+      "stem": "For a mid-market buyout, a sponsor chooses a unitranche loan from a private credit fund instead of a syndicated term loan B and high-yield bond. What is the main reason?",
+      "options": [
+        "A single lender group and one set of documents give speed, certainty and confidentiality, with no rating or syndication risk, in exchange for a higher margin",
+        "A unitranche always carries a lower margin than syndicated debt",
+        "Unitranche lenders never require financial covenants",
+        "A unitranche ranks behind the equity, so it does not count towards leverage"
+      ],
+      "answer": 0,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "A unitranche is a single loan that blends senior and junior risk at one margin, provided by one or a few direct lenders.",
+          "Benefits: fast execution, certainty of terms with no market flex or syndication risk, confidentiality, no credit rating and simpler intercreditor arrangements.",
+          "Costs: a higher margin than senior syndicated loans, call protection and usually a maintenance covenant.",
+          "Large deals with deep market access often still choose a term loan B and high-yield bonds for the lowest cost and looser terms."
+        ],
+        "shortcut": "Unitranche = pay more for speed, certainty and simplicity.",
+        "trap": "Assuming private credit is cheaper: its blended margin is usually above syndicated senior debt, and the sponsor pays for certainty.",
+        "rule": "Unitranche for mid-market speed and certainty; syndicated loans and bonds for scale and price."
+      },
+      "tags": ["unitranche", "private-credit", "debt-tranches"]
+    },
+    {
+      "id": "lbo-032",
+      "skill": "fin-lbo",
+      "level": 3,
+      "type": "numeric",
+      "stem": "Paper LBO: a sponsor buys a company with EBITDA of EUR 80m at 10.0x, funded with 5.0x debt and the rest in equity, with no fees. Interest is 7.5% of the initial debt every year (ignore the saving from repayments). EBITDA grows by EUR 10m a year to EUR 130m in year 5. D&A equals capex at EUR 10m a year, working capital is unchanged, the tax rate is 25% and all free cash flow repays debt. The sponsor exits at 10.0x at the end of year 5. What is the MoM (x, one decimal place)?",
+      "answer": 2.9,
+      "tolerance": 0.05,
+      "unit": "x",
+      "timeTarget": 120,
+      "explanation": {
+        "steps": [
+          "Entry: EV 80 × 10.0 = 800; debt 5.0 × 80 = 400; equity 400. Interest: 400 × 7.5% = 30 a year.",
+          "FCF each year = (EBITDA - D&A - interest) × (1 - t) + D&A - capex = (EBITDA - 40) × 0.75: 37.5, 45.0, 52.5, 60.0 and 67.5.",
+          "Cumulative FCF: 262.5, so net debt at exit = 400 - 262.5 = 137.5.",
+          "Exit: EV 130 × 10.0 = 1,300; equity 1,300 - 137.5 = 1,162.5; MoM = 1,162.5 / 400 = 2.9x, an IRR of about 24%, close to the 3x in 5 years ≈ 25% rule."
+        ],
+        "shortcut": "Sum EBITDA with the average: 5 × 110 = 550; cumulative FCF = 0.75 × (550 - 5 × 40) = 262.5.",
+        "trap": "Ignoring the debt paydown (equity 1,300 - 400 = 900, 2.25x) or forgetting tax on the cash flows (net debt 50, 3.1x).",
+        "rule": "Paper LBO: entry EV and equity, yearly FCF, cumulative paydown, exit EV less remaining net debt, then MoM and IRR by rule of thumb."
+      },
+      "tags": ["paper-lbo", "mom", "debt-paydown"]
+    }
+  ]
+}

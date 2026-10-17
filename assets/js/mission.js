@@ -9,7 +9,7 @@ export const INTENSITY = {
   intensa: { label: 'Intense', k: 1.5, minutes: 270 },
 };
 const TEST = new Set(['numerical', 'mental', 'verbal', 'logical', 'inductive', 'sjt']);
-const TECH = new Set(['fin-acc', 'fin-val', 'fin-ma', 'fin-lbo', 'markets']);
+const TECH = new Set(['fin-acc', 'fin-val', 'fin-ma', 'fin-lbo', 'fin-ecm', 'fin-tmt', 'markets']);
 // News-linked attempts: tagged at answer time (src), or recognised by id for older logs.
 // Bank 'Mercati' items are mkt-001..; generated market items are mkt-<family>-<seed>.
 const isNews = a => a.src === 'news' || (typeof a.id === 'string' && (a.id.startsWith('news-') || /^mkt-[a-z]/.test(a.id)));
@@ -22,7 +22,7 @@ const TASKS = [
   { id: 'newsq', tone: 'amber', title: 'News and markets quiz', unit: 'questions', base: 12, href: '#/news/practice', why: "This week's real data and the mechanisms behind the news." },
   { id: 'culture', tone: 'amber', title: 'General knowledge', unit: 'questions', base: 15, href: '#/train/culture', why: 'Economic history, institutions, geopolitics, business.' },
   { id: 'tests', tone: 'indigo', title: 'Online tests', unit: 'questions', base: 40, href: '#/train', why: 'Numerical, verbal, logical, abstract, SJT: the first filter.' },
-  { id: 'tech', tone: 'teal', title: 'Technical', unit: 'questions', base: 20, href: '#/train/fin-acc', why: 'Accounting, valuation, M&A, LBO, markets.' },
+  { id: 'tech', tone: 'teal', title: 'Technical', unit: 'questions', base: 30, href: '#/train/fin-val', why: 'Accounting, valuation, M&A, LBO, capital markets and TMT: what every bank interview tests.' },
   { id: 'mock', tone: 'violet', title: 'Full mock test', unit: 'mock', base: 1, href: '#/mocks', why: 'Time pressure and stamina, as in the real test.' },
   { id: 'video', tone: 'sky', title: 'Video answers', unit: 'answers', base: 2, href: '#/interviews/video', why: 'Speaking to a camera only improves by speaking to a camera.' },
   { id: 'note', tone: 'green', title: 'Commercial awareness note', unit: 'note', base: 1, href: '#/news/notes', why: 'One story explained in your own words, ready for the interview.' },

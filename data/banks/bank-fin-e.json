@@ -1,0 +1,1003 @@
+{
+  "items": [
+    {
+      "id": "ecm-001",
+      "skill": "fin-ecm",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Which sequence best describes a typical IPO process on a European exchange?",
+      "options": [
+        "Kick-off and due diligence, intention to float, pre-deal investor education, price range and prospectus, bookbuilding and roadshow, pricing and allocation, trading and stabilisation",
+        "Kick-off and due diligence, intention to float, price range and prospectus, pre-deal investor education, bookbuilding and roadshow, pricing and allocation, trading and stabilisation",
+        "Kick-off and due diligence, intention to float, bookbuilding and roadshow, price range and prospectus, pricing and allocation, stabilisation, first day of trading",
+        "Kick-off and due diligence, pre-deal investor education, pricing and allocation, bookbuilding and roadshow, price range and prospectus, trading and stabilisation"
+      ],
+      "answer": 0,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Preparation: the issuer appoints banks and advisers, due diligence is carried out and the prospectus is drafted, while the syndicate's research analysts prepare their reports.",
+          "Public phase: the intention to float is announced and analysts meet investors in pre-deal investor education; their feedback is used to set the price range.",
+          "With the range set and the prospectus published, management goes on the roadshow while the bookrunners build the book; the deal is then priced and allocated.",
+          "Trading starts and, for a limited period (typically up to 30 days), the stabilising manager can support the price using the over-allotment."
+        ],
+        "shortcut": "Feedback before the range, range before the book, book before the price, trading before stabilisation.",
+        "trap": "Setting the price range before pre-deal investor education: the range is built from the feedback that investor education generates.",
+        "rule": "Prepare, educate investors, set the range, build the book, price and allocate, then trade and stabilise."
+      },
+      "tags": ["ipo-process", "bookbuilding"]
+    },
+    {
+      "id": "ecm-002",
+      "skill": "fin-ecm",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Which pairing of IPO participant and role is correct?",
+      "options": [
+        "Research analysts at the syndicate banks: run the order book and decide the final allocation of shares",
+        "Cornerstone investors: underwrite the whole offering in exchange for the gross spread",
+        "Bookrunners: build the order book and recommend price and allocations to the issuer and sellers",
+        "Stabilising manager: sets the price range before the intention to float is announced"
+      ],
+      "answer": 2,
+      "timeTarget": 40,
+      "explanation": {
+        "steps": [
+          "Bookrunners, led by the global coordinators, market the deal, collect investor orders in the book, recommend the price and allocations and sign the underwriting agreement at pricing.",
+          "The issuer and the selling shareholders take the final decision on price and allocation, based on the bookrunners' recommendation.",
+          "Research analysts educate investors before launch but are kept separate from the deal team; cornerstones are investors, not underwriters; the stabilising manager acts only after trading starts."
+        ],
+        "shortcut": "Ask who sees every order: only the bookrunners, so they recommend price and allocation.",
+        "trap": "Giving the analysts the bookrunners' job: research influences the price range, but it must stay independent and does not run the book.",
+        "rule": "Bookrunners build the book and advise; issuer and sellers decide; analysts educate; the stabilising manager acts after listing."
+      },
+      "tags": ["ipo-process", "syndicate-roles"]
+    },
+    {
+      "id": "ecm-003",
+      "skill": "fin-ecm",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Before its IPO, a company has 150m shares, all held by its founder. In the IPO it issues 30m new shares and the founder sells 20m existing shares, all at EUR 10.00, with no greenshoe. How much does the company raise, and what is the free float after the IPO?",
+      "options": ["EUR 500m; 27.8%", "EUR 300m; 33.3%", "EUR 300m; 27.8%", "EUR 500m; 33.3%"],
+      "answer": 2,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Primary: 30m new shares x EUR 10.00 = EUR 300m, paid to the company. Secondary: 20m x EUR 10.00 = EUR 200m, paid to the founder.",
+          "Shares after the IPO: 150m + 30m = 180m, because only new shares increase the share count.",
+          "Free float: shares now held by public investors, 30m + 20m = 50m; 50 / 180 = 27.8%."
+        ],
+        "shortcut": "Company cash = primary only; free float = (primary + secondary shares sold) / post-IPO shares.",
+        "trap": "Dividing the 50m shares sold by the pre-IPO 150m (33.3%): the new shares also enlarge the denominator.",
+        "rule": "Primary shares raise cash for the company and dilute; secondary shares only change ownership. Free float = shares in public hands / total shares after the offer."
+      },
+      "tags": ["primary-secondary", "free-float"]
+    },
+    {
+      "id": "ecm-004",
+      "skill": "fin-ecm",
+      "level": 2,
+      "type": "mcq",
+      "stem": "An IPO is marketed at a price range of EUR 18.00 to EUR 21.00 per share. At the end of the bookbuild the book is more than 8 times covered at the top of the range, mostly by high-quality long-only funds, many with price limits at or just above EUR 21.00. What are the bookrunners most likely to recommend?",
+      "options": [
+        "Price at the bottom of the range to maximise the first-day rise and reward investors",
+        "Price at or near the top of the range and favour long-only funds, leaving some upside for the after-market",
+        "Price well above the range at the highest bid in the book and allocate shares pro rata to every order received",
+        "Price at the midpoint and exercise the greenshoe before pricing to increase the size of the deal"
+      ],
+      "answer": 1,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Demand is deep and high quality at EUR 21.00, so the deal can price at or near the top of the range; much stronger demand could justify revising the range upwards.",
+          "Going well above the range loses the many investors whose limits sit around EUR 21.00, and a full price leaves nothing for the after-market.",
+          "Allocation favours investors likely to hold for the long term; the greenshoe is exercised after trading starts, not before pricing."
+        ],
+        "shortcut": "Strong, high-quality book: top of the range, allocate to long-only funds, leave something on the table.",
+        "trap": "Pricing at the single highest bid: the aim is a price that most quality investors accept and a stable after-market, not the most one investor would pay.",
+        "rule": "Set the price from the depth and quality of demand, not the highest bid, and allocate to the shareholders you want to keep."
+      },
+      "tags": ["bookbuilding", "ipo-pricing", "allocation"]
+    },
+    {
+      "id": "ecm-005",
+      "skill": "fin-ecm",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Why might an issuer and its bookrunners sign up cornerstone investors before launching an IPO?",
+      "options": [
+        "Cornerstones buy at a fixed discount to the price range, which then sets a floor for the offer price paid by other investors",
+        "Cornerstones underwrite the full deal size and receive the gross spread in place of the banks",
+        "Cornerstones replace the bookbuild, so the deal no longer needs to be marketed to other investors",
+        "Cornerstones commit early to buy a set amount at the offer price, which de-risks the deal and signals quality"
+      ],
+      "answer": 3,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "A cornerstone signs a commitment before launch to buy a fixed amount of shares at whatever the final offer price turns out to be, so it takes the same price risk as other investors.",
+          "Its commitment is usually disclosed in the prospectus, covers part of the deal before the bookbuild starts and, if the investor is well regarded, signals quality to the rest of the market.",
+          "In return it receives a guaranteed allocation, sometimes with a lock-up; it does not underwrite the deal, get a discount or replace the bookbuild."
+        ],
+        "shortcut": "Cornerstone = early, disclosed commitment at the offer price in exchange for a guaranteed allocation.",
+        "trap": "Thinking cornerstones get a discount or set a price floor: they pay the same offer price as everyone else; their reward is the certainty of allocation.",
+        "rule": "Cornerstones de-risk an IPO by committing early at the offer price; the banks, not the cornerstones, underwrite."
+      },
+      "tags": ["cornerstone-investors", "ipo-process"]
+    },
+    {
+      "id": "ecm-006",
+      "skill": "fin-ecm",
+      "level": 2,
+      "type": "mcq",
+      "stem": "An IPO has a base size of 100m shares and a 15% greenshoe granted by the company. The syndicate allocates 115m shares to investors. After listing, the shares trade below the offer price. What does the stabilising manager typically do?",
+      "options": [
+        "Exercise the greenshoe in full, buying 15m new shares from the company at the offer price to cover the short",
+        "Buy up to 15m shares in the market to support the price, covering the short so the greenshoe lapses",
+        "Cancel 15m shares from investors' allocations and refund the money they paid for them",
+        "Ask the company to buy back 15m shares in the market to bring the price back to the offer price"
+      ],
+      "answer": 1,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Allocating 115m shares against a 100m base leaves the syndicate short 15m shares, usually borrowed from an existing shareholder.",
+          "With the price below the offer price, the stabilising manager buys shares in the market, up to the 15m short, which supports the price and lets it return the borrowed shares.",
+          "Because the short is covered in the market, the greenshoe is not exercised (or only for any part not bought back), so the company issues fewer new shares.",
+          "If instead the price had risen above the offer price, the syndicate would cover the short by exercising the greenshoe at the offer price."
+        ],
+        "shortcut": "Price below offer: buy in the market and the greenshoe lapses. Price above offer: exercise the greenshoe.",
+        "trap": "Exercising the greenshoe when the price falls: that means paying the offer price for shares available more cheaply in the market, and it gives the price no support.",
+        "rule": "The over-allotment creates a short, covered by market purchases if the price falls (stabilisation) or by the greenshoe if it rises."
+      },
+      "tags": ["greenshoe", "stabilisation"]
+    },
+    {
+      "id": "ecm-007",
+      "skill": "fin-ecm",
+      "level": 2,
+      "type": "numeric",
+      "stem": "A company lists with a base offer of 50m shares at EUR 20.00: 40m new shares and 10m existing shares sold by a private equity owner. The company grants a greenshoe of 15% of the base offer, in new shares, and it is exercised in full. What are the gross proceeds to the company, in EUR m?",
+      "answer": 950,
+      "tolerance": 0.5,
+      "unit": "EUR m",
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Greenshoe size: 15% x 50m base shares = 7.5m shares, sized on the whole base offer (primary and secondary).",
+          "The greenshoe shares are new, so the company issues 40m + 7.5m = 47.5m shares in total.",
+          "Gross proceeds to the company: 47.5m x EUR 20.00 = EUR 950m. The EUR 200m for the 10m existing shares goes to the private equity owner."
+        ],
+        "shortcut": "(Primary shares + greenshoe shares) x offer price = (40 + 7.5) x 20 = EUR 950m.",
+        "trap": "Taking 15% of the 40m primary shares only (EUR 920m) or counting the secondary sale as company cash (EUR 1,150m).",
+        "rule": "Only new shares raise money for the company; the greenshoe is up to 15% of the base offer and its proceeds go to whoever supplies those shares."
+      },
+      "tags": ["greenshoe", "primary-secondary", "ipo-proceeds"]
+    },
+    {
+      "id": "ecm-008",
+      "skill": "fin-ecm",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A sponsor-backed software company listed six months ago. The sponsor still owns 55% of the shares, and its IPO lock-up expires next week. What is the most likely market concern?",
+      "options": [
+        "The free float will shrink when the lock-up ends, so the shares may drop out of equity indices",
+        "The company must buy back the sponsor's shares at the IPO price once the lock-up ends",
+        "Overhang: investors expect the sponsor to sell down, so the shares may weaken around the expiry",
+        "The greenshoe becomes exercisable after the lock-up, which will dilute existing shareholders"
+      ],
+      "answer": 2,
+      "timeTarget": 50,
+      "explanation": {
+        "steps": [
+          "A lock-up stops the company, the sponsor and management from selling or issuing shares for an agreed period after the IPO, commonly 6 to 12 months, so that extra supply does not swamp the after-market.",
+          "Once it expires the sponsor is free to sell, and a 55% stake is a large potential supply of shares: an overhang.",
+          "Investors anticipate sell-downs, often through accelerated bookbuilds priced at a discount, so the shares tend to come under pressure before or around the expiry."
+        ],
+        "shortcut": "Lock-up expiry + large insider stake = overhang = expected supply and price pressure.",
+        "trap": "Mixing up the lock-up with the greenshoe: the greenshoe and the stabilisation period end around 30 days after listing, long before a six-month lock-up expires.",
+        "rule": "Lock-ups protect the after-market; when they expire, the expected selling becomes an overhang that the market prices in early."
+      },
+      "tags": ["lock-up", "overhang", "sell-down"]
+    },
+    {
+      "id": "ecm-009",
+      "skill": "fin-ecm",
+      "level": 2,
+      "type": "numeric",
+      "stem": "Your valuation of an IPO candidate gives a fair equity value of EUR 2,400m before any new money, with 120m existing shares. The bookrunners apply a 15% IPO discount to fair value to set the offer price, and the company will also raise EUR 300m of new money. What is the offer price per share, in EUR, to two decimal places?",
+      "answer": 17,
+      "tolerance": 0.05,
+      "unit": "EUR",
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Apply the discount to the pre-money fair value: EUR 2,400m x (1 - 0.15) = EUR 2,040m.",
+          "Divide by the existing shares: 2,040 / 120 = EUR 17.00 per share.",
+          "The EUR 300m of new money does not change the price: it buys 300 / 17.00 = 17.6m new shares and adds cash worth exactly what the new investors pay.",
+          "The discount compensates investors for buying a company with no trading history and supports after-market trading."
+        ],
+        "shortcut": "Fair value per share x (1 - discount): 2,400 / 120 = EUR 20.00, x 0.85 = EUR 17.00.",
+        "trap": "Forgetting the discount (EUR 20.00), or adding the EUR 300m to the value without adding the new shares (EUR 19.50).",
+        "rule": "Offer price = pre-money fair value x (1 - IPO discount) / existing shares; primary proceeds come in at that price and leave it unchanged."
+      },
+      "tags": ["ipo-discount", "ipo-pricing"]
+    },
+    {
+      "id": "ecm-010",
+      "skill": "fin-ecm",
+      "level": 1,
+      "type": "mcq",
+      "stem": "A private equity fund wants to sell a 7% stake in a listed company quickly, keeping its exposure to market moves during the sale to a minimum. Which description fits an accelerated bookbuild (ABB)?",
+      "options": [
+        "A two-week roadshow with a new prospectus and a price range, run much like a second IPO for the remaining stake",
+        "A pro rata offer of new shares to all existing shareholders, with tradable rights",
+        "A sale of the stake back to the company itself, funded by new debt and approved by shareholders",
+        "An overnight offer to institutions, launched after the close and priced at a discount to the last close"
+      ],
+      "answer": 3,
+      "timeTarget": 40,
+      "explanation": {
+        "steps": [
+          "An ABB is launched after the close (or before the open); the bookrunners call institutional investors, build the book, and price and allocate the shares within hours.",
+          "Investors get a discount to the last closing price as compensation for taking a large block at short notice.",
+          "Because marketing takes hours rather than weeks, the seller's exposure to price moves is small, and an offer to institutions usually needs no full prospectus or roadshow."
+        ],
+        "shortcut": "ABB = overnight, institutions only, priced at a discount to the last close.",
+        "trap": "Confusing an ABB with a rights issue: a rights issue offers new shares to all existing shareholders and runs for weeks.",
+        "rule": "Use an ABB to sell a block or raise a modest amount quickly; the discount is the price of speed and size."
+      },
+      "tags": ["accelerated-bookbuild", "follow-on", "sell-down"]
+    },
+    {
+      "id": "ecm-011",
+      "skill": "fin-ecm",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A bank wins a bought deal for 8m shares, paying the seller a fixed EUR 42.50 per share after the stock closed at EUR 45.00. Overnight demand is weaker than expected and the bank can resell the whole block only at EUR 42.00. Ignoring fees, what is the outcome?",
+      "options": [
+        "The seller receives EUR 336.0m and the bank breaks even",
+        "The seller receives EUR 340.0m and the bank loses EUR 4.0m",
+        "The seller receives EUR 340.0m and the bank loses EUR 24.0m",
+        "The bank reprices the deal, so the seller receives EUR 336.0m"
+      ],
+      "answer": 1,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "In a bought deal the bank buys the whole block from the seller at a fixed price before marketing it, so the seller receives 8m x EUR 42.50 = EUR 340.0m whatever the demand.",
+          "The bank resells at EUR 42.00: 8m x 42.00 = EUR 336.0m.",
+          "Bank result: 336.0 - 340.0 = a loss of EUR 4.0m (EUR 0.50 per share). The gap to the EUR 45.00 close is the discount given to investors, not the bank's loss."
+        ],
+        "shortcut": "Bank P&L = (resale price - price paid to the seller) x shares = (42.00 - 42.50) x 8m = -EUR 4.0m.",
+        "trap": "Measuring the loss from the last close (EUR 3.00 x 8m = EUR 24.0m), or assuming weak demand can be passed back to the seller: in a bought deal the price risk sits with the bank.",
+        "rule": "Bought deal: the seller gets a certain price; the bank earns, or loses, the gap between resale price and purchase price."
+      },
+      "tags": ["bought-deal", "block-trade", "underwriting-risk"]
+    },
+    {
+      "id": "ecm-012",
+      "skill": "fin-ecm",
+      "level": 2,
+      "type": "numeric",
+      "stem": "A company has 100m shares trading at EUR 12.00. It announces a 1-for-4 rights issue at EUR 8.00 per new share. What is the theoretical ex-rights price (TERP), in EUR, to two decimal places?",
+      "answer": 11.2,
+      "tolerance": 0.02,
+      "unit": "EUR",
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "New shares: 1 for every 4 held, 100m / 4 = 25m, raising 25m x EUR 8.00 = EUR 200m.",
+          "Value after the issue: 100m x EUR 12.00 + EUR 200m = EUR 1,400m.",
+          "Shares after the issue: 100m + 25m = 125m. TERP = 1,400 / 125 = EUR 11.20.",
+          "The issue price is a 28.6% discount to TERP ((11.20 - 8.00) / 11.20), and the right to buy one new share is worth about 11.20 - 8.00 = EUR 3.20."
+        ],
+        "shortcut": "Weight a block of 5 shares: (4 x 12.00 + 1 x 8.00) / 5 = 56 / 5 = EUR 11.20.",
+        "trap": "Averaging the two prices without weighting ((12.00 + 8.00) / 2 = EUR 10.00): the old shares outnumber the new ones 4 to 1.",
+        "rule": "For a 1-for-N rights issue, TERP = (N x cum-rights price + issue price) / (N + 1)."
+      },
+      "tags": ["rights-issue", "terp"]
+    },
+    {
+      "id": "ecm-013",
+      "skill": "fin-ecm",
+      "level": 2,
+      "type": "numeric",
+      "stem": "A listed company with 80m shares raises EUR 240m by placing new shares with institutional investors at EUR 20.00 per share. A shareholder that owns 8m shares (10%) does not take part. What is its stake after the placing, in %, to two decimal places?",
+      "answer": 8.7,
+      "tolerance": 0.05,
+      "unit": "%",
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "New shares: EUR 240m / EUR 20.00 = 12m.",
+          "Enlarged share count: 80m + 12m = 92m.",
+          "Stake after: 8m / 92m = 8.70%, down from 10.00%. Every holder that does not take part is diluted by 12 / 92 = 13.0% in relative terms."
+        ],
+        "shortcut": "New stake = old stake x old shares / new total = 10% x 80 / 92 = 8.70%.",
+        "trap": "Measuring the dilution on the old share count (12 / 80 = 15%, giving 8.50%): the new shares sit in the enlarged denominator.",
+        "rule": "Stake after a primary raise = shares held / (existing + new shares); ownership dilution is not value dilution if the new shares are sold at a fair price."
+      },
+      "tags": ["dilution", "primary-raise"]
+    },
+    {
+      "id": "ecm-014",
+      "skill": "fin-ecm",
+      "level": 2,
+      "type": "numeric",
+      "stem": "A company whose shares trade at EUR 40.00 issues a EUR 500m convertible bond with a 30% conversion premium. How many new shares, in millions, would be issued if the whole bond converted? Answer to two decimal places.",
+      "answer": 9.62,
+      "tolerance": 0.02,
+      "unit": "m shares",
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Conversion price = reference share price x (1 + premium) = 40.00 x 1.30 = EUR 52.00.",
+          "Shares on full conversion = principal / conversion price = 500 / 52.00 = 9.62m.",
+          "Holders gain from converting only if the share price rises above EUR 52.00; at today's EUR 40.00 they would rather be repaid in cash."
+        ],
+        "shortcut": "500 / (40 x 1.3) = 500 / 52, about 9.6m shares.",
+        "trap": "Dividing by today's share price (500 / 40 = 12.5m): the premium means each new share is issued at EUR 52.00, so dilution is lower than in a placing at today's price.",
+        "rule": "Conversion shares = principal / conversion price, where conversion price = reference share price x (1 + conversion premium)."
+      },
+      "tags": ["convertible-bonds", "conversion-premium", "dilution"]
+    },
+    {
+      "id": "ecm-015",
+      "skill": "fin-ecm",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A fast-growing, loss-making technology company with a volatile share price needs EUR 400m. Why might it choose a convertible bond rather than a straight bond or a share placement?",
+      "options": [
+        "The equity option cuts the coupon, and new shares are issued only above a conversion price set at a premium",
+        "A convertible never dilutes shareholders, because it is always repaid in cash at maturity, whatever the share price does by then",
+        "A convertible pays a higher coupon than a high-yield bond, but rating agencies count all of it as equity",
+        "A convertible lets the company issue shares below today's price without asking shareholders for approval"
+      ],
+      "answer": 0,
+      "timeTarget": 50,
+      "explanation": {
+        "steps": [
+          "Investors receive a bond plus a call option on the shares, so they accept a lower coupon than on straight debt; the more volatile the shares, the more the option is worth and the lower the coupon.",
+          "For a loss-making issuer, straight debt would be expensive or restrictive, so selling the option is a cheap way to borrow.",
+          "Compared with a placing, any new shares are issued at a premium to today's price, so dilution is smaller, deferred and only happens if the shares perform."
+        ],
+        "shortcut": "Convertible = cheap coupon now, possible dilution later at a higher price.",
+        "trap": "Believing convertibles never dilute: if the share price ends above the conversion price, holders convert and new shares are issued.",
+        "rule": "Issuers sell an equity option to cut the coupon; high volatility makes that option more valuable and the trade more attractive."
+      },
+      "tags": ["convertible-bonds", "capital-raising"]
+    },
+    {
+      "id": "ecm-016",
+      "skill": "fin-ecm",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A EUR 300m convertible bond with a conversion price of EUR 30.00 matures today. What happens if the share price is EUR 24.00, and what happens if it is EUR 39.00?",
+      "options": [
+        "At EUR 24.00 holders convert into 12.5m shares; at EUR 39.00 they convert into 7.7m shares",
+        "In both cases holders convert into 10m shares, because the conversion ratio is fixed at issue",
+        "At EUR 24.00 holders take EUR 300m in cash; at EUR 39.00 they convert into 10m shares worth EUR 390m",
+        "At EUR 24.00 holders convert into 10m shares; at EUR 39.00 the company repays EUR 390m in cash"
+      ],
+      "answer": 2,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Conversion ratio for the whole issue: 300 / 30.00 = 10m shares, fixed at issue.",
+          "At EUR 24.00: 10m shares are worth EUR 240m, less than the EUR 300m repayment, so holders take cash and no shares are issued.",
+          "At EUR 39.00: 10m shares are worth EUR 390m, more than EUR 300m, so holders convert and 10m new shares dilute existing shareholders.",
+          "Holders take whichever is worth more, repayment or conversion; dilution happens only when the bond is in the money."
+        ],
+        "shortcut": "Share price above the conversion price: conversion and dilution. Below it: cash repayment.",
+        "trap": "Dividing the principal by the share price on the day: the number of shares is set by the conversion price, not the market price.",
+        "rule": "A convertible dilutes only when the share price exceeds the conversion price; shares issued = principal / conversion price."
+      },
+      "tags": ["convertible-bonds", "dilution"]
+    },
+    {
+      "id": "ecm-017",
+      "skill": "fin-ecm",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Market interest rates rise by 1 percentage point across all maturities and credit spreads are unchanged. What happens to an issuer's existing fixed-rate bond and to its existing floating-rate note (FRN)?",
+      "options": [
+        "The fixed-rate bond's price rises because its yield is now higher; the FRN's price falls",
+        "Both prices fall by the same amount, because both bonds were issued by the same company",
+        "The fixed-rate bond's coupon resets higher at the next fixing date; the FRN's price falls below par",
+        "The fixed-rate bond's price falls; the FRN's coupon resets higher and its price stays near par"
+      ],
+      "answer": 3,
+      "timeTarget": 40,
+      "explanation": {
+        "steps": [
+          "A fixed-rate bond's coupons do not change, so its price must fall until its yield matches the new, higher market yield: price and yield move in opposite directions.",
+          "An FRN pays a reference rate plus a fixed spread; when the reference rate rises, the coupon resets upwards at the next fixing, so the price stays near par.",
+          "With spreads unchanged, the FRN carries credit risk but little interest-rate risk, while the fixed-rate bond carries both."
+        ],
+        "shortcut": "Fixed rate: yields up, price down. Floating rate: the coupon follows rates and the price stays near par.",
+        "trap": "Thinking a higher yield means a higher price: the yield rises precisely because the price falls while the coupons stay fixed.",
+        "rule": "Bond prices move inversely to yields; floating-rate coupons reset, so FRNs have very low interest-rate duration."
+      },
+      "tags": ["bond-pricing", "fixed-vs-floating", "dcm"]
+    },
+    {
+      "id": "ecm-018",
+      "skill": "fin-ecm",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A company's 7-year bond yields 5.40% when the matching government bond yields 3.70%. The company is then downgraded from BBB- to BB+ and, with government yields unchanged, its spread widens by 120bps. The bond's modified duration is 6.0. What are the new spread and the approximate change in the bond's price?",
+      "options": ["290bps; about -7.2%", "170bps; about -7.2%", "290bps; about -17.4%", "290bps; about +7.2%"],
+      "answer": 0,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Initial spread: 5.40% - 3.70% = 1.70%, or 170bps over government bonds.",
+          "BB+ is below the investment-grade cut-off (BBB- at S&P and Fitch, Baa3 at Moody's), so the bond becomes high yield and investors restricted to investment grade may have to sell: the spread widens 120bps to 290bps.",
+          "The yield rises by 1.20 percentage points, from 5.40% to 6.60%.",
+          "Approximate price change = -modified duration x change in yield = -6.0 x 1.20% = -7.2%."
+        ],
+        "shortcut": "Only the change in yield moves the price: -6.0 x 1.2 = -7.2%.",
+        "trap": "Applying duration to the whole new spread (6.0 x 2.90% = 17.4%) instead of to the change in yield.",
+        "rule": "Yield = government yield + spread; price change is about -duration x change in yield; below BBB- or Baa3 a bond is high yield."
+      },
+      "tags": ["credit-spreads", "investment-grade", "duration"]
+    },
+    {
+      "id": "ecm-019",
+      "skill": "fin-ecm",
+      "level": 2,
+      "type": "mcq",
+      "stem": "In a leveraged buyout financing, which comparison of a Term Loan B (TLB) and a high-yield bond is most accurate?",
+      "options": [
+        "The TLB is usually fixed rate with several years of call protection; the bond floats and can be repaid at par at any time",
+        "The high-yield bond normally ranks ahead of the TLB, so it pays a lower spread than the loan",
+        "Both must amortise in equal annual instalments and test leverage every quarter through maintenance covenants",
+        "The TLB is usually senior secured, floating rate and prepayable at or near par; the bond is usually fixed rate with non-call protection"
+      ],
+      "answer": 3,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "A TLB is a syndicated loan sold to institutional investors: senior secured, paying a floating reference rate plus a margin, with little or no amortisation, and prepayable at par, sometimes after a short soft-call period.",
+          "A high-yield bond usually pays a fixed coupon, can be secured or unsecured, and has a non-call period followed by call premiums that step down over time.",
+          "Bonds rely on incurrence covenants, tested only when the issuer acts (for example raising debt or paying dividends), rather than on quarterly maintenance tests."
+        ],
+        "shortcut": "Loan: floating, secured, prepayable. Bond: fixed, call-protected, incurrence covenants.",
+        "trap": "Swapping the features: the loan is the floating-rate, prepayable instrument; the bond is the fixed-rate one with call protection.",
+        "rule": "TLBs give the borrower flexibility to repay and float with rates; high-yield bonds lock in a fixed coupon and protect investors with non-call periods."
+      },
+      "tags": ["term-loan-b", "high-yield", "leveraged-finance"]
+    },
+    {
+      "id": "ecm-020",
+      "skill": "fin-ecm",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A sponsor finances an LBO with a covenant-lite Term Loan B. A year later EBITDA has fallen 30% and leverage is well above the level in the original model, but the company is still paying interest. What does covenant-lite mean for the term lenders?",
+      "options": [
+        "They can declare an event of default and demand immediate repayment as soon as leverage rises above the level at closing",
+        "With no maintenance covenant, higher leverage alone is not a default; only incurrence tests and missed payments bite",
+        "The loan converts automatically into equity once leverage passes a threshold set at closing",
+        "The sponsor is obliged to inject new equity until leverage returns to the level at closing"
+      ],
+      "answer": 1,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "A maintenance covenant, such as a maximum net leverage ratio, is tested every quarter whatever the borrower does; a breach gives lenders an early seat at the table to reprice or restructure.",
+          "Covenant-lite term loans drop maintenance tests and keep incurrence covenants, which bite only when the borrower takes an action such as raising more debt, paying a dividend or making an acquisition.",
+          "Falling EBITDA alone therefore triggers nothing; lenders usually gain influence only when liquidity runs short or a payment is missed, which delays any restructuring.",
+          "Any springing financial covenant typically protects only the revolving facility lenders, and only when the revolver is drawn above a set level."
+        ],
+        "shortcut": "Cov-lite = no maintenance test, so a fall in EBITDA alone is not a default.",
+        "trap": "Assuming any rise in leverage is a default: that is true only with a maintenance covenant, which a covenant-lite term loan does not have.",
+        "rule": "Maintenance covenants give lenders an early warning and a seat at the table; covenant-lite removes it and leaves only incurrence tests."
+      },
+      "tags": ["covenant-lite", "leveraged-finance", "term-loan-b"]
+    },
+    {
+      "id": "tmt-001",
+      "skill": "fin-tmt",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Which pairing of semiconductor business model and main source of revenue is correct?",
+      "options": [
+        "IDM (integrated device manufacturer): designs chips but outsources all of its manufacturing to foundries",
+        "Foundry: sells chips of its own design under its own brand to device makers",
+        "IP vendor: licence fees for its designs plus a royalty on each chip its customers ship",
+        "EDA vendor: a royalty on every chip that customers design with its software"
+      ],
+      "answer": 2,
+      "timeTarget": 40,
+      "explanation": {
+        "steps": [
+          "IP vendors license building blocks such as processor cores or interfaces: a licence fee when the customer starts a design, then a royalty on each chip once it ships in volume.",
+          "EDA vendors sell chip design software, mostly as multi-year subscriptions or term licences, so revenue follows customers' R&D spending, not chip volumes.",
+          "An IDM designs and makes chips in its own fabs; a fabless company designs chips and outsources manufacturing; a foundry makes other companies' designs and charges per wafer."
+        ],
+        "shortcut": "Royalties per chip point to IP, tool subscriptions to EDA, per-wafer fees to a foundry, own fabs to an IDM and no fabs to a fabless designer.",
+        "trap": "Mixing up EDA and IP: both sit at the design stage, but EDA sells tools on subscription while IP vendors sell pieces of the chip itself for licence fees and royalties.",
+        "rule": "Map each model to what it sells: tools (EDA), designs (IP), chips (fabless and IDM), wafers (foundry), packaging and test (OSAT), fab tools (equipment), consumables (materials)."
+      },
+      "tags": ["semiconductors", "value-chain", "business-model"]
+    },
+    {
+      "id": "tmt-002",
+      "skill": "fin-tmt",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Chipmakers announce deep cuts to next year's capex budgets but expect wafer starts and fab utilisation to stay broadly flat. Which suppliers are likely to see the bigger fall in revenue?",
+      "options": [
+        "Equipment makers, because tool orders come out of capex budgets, while materials track wafer starts",
+        "Materials suppliers, because silicon wafers, gases and chemicals are mainly bought when new fabs are being built",
+        "EDA vendors, because chip design software is bought only when chipmakers open new fabs",
+        "Neither group, because equipment and materials revenue both track end demand for devices with no lag"
+      ],
+      "answer": 0,
+      "timeTarget": 50,
+      "explanation": {
+        "steps": [
+          "Equipment makers sell tools such as lithography, deposition, etch and inspection systems to foundries, IDMs and memory makers; new tool orders are capex, so a capex cut hits them directly.",
+          "Materials suppliers sell silicon wafers, gases, chemicals and photoresists that are consumed with every wafer processed, so their revenue follows wafer starts and utilisation.",
+          "With wafer starts flat, materials demand holds up; equipment revenue falls, cushioned only by recurring service and spare parts revenue on the installed base."
+        ],
+        "shortcut": "Capex drives equipment; wafer starts drive materials.",
+        "trap": "Treating materials as capex-driven: they are consumed in production, so they move with volumes, not with fab construction.",
+        "rule": "Equipment is a capex-cycle business with a service tail on the installed base; materials are a volume business tied to wafer starts."
+      },
+      "tags": ["semiconductors", "equipment", "materials"]
+    },
+    {
+      "id": "tmt-003",
+      "skill": "fin-tmt",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Which ranking from most to least capital intensive (capex as a share of revenue) is typical for these semiconductor business models?",
+      "options": [
+        "Fabless designer, then foundry, then assembly and test (OSAT)",
+        "Assembly and test (OSAT), then foundry, then fabless designer",
+        "Foundry, then fabless designer, then assembly and test (OSAT)",
+        "Foundry, then assembly and test (OSAT), then fabless designer"
+      ],
+      "answer": 3,
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Foundries build and keep upgrading front-end fabs that cost billions each, so capex is a large share of revenue and depreciation is a major fixed cost.",
+          "Assembly and test companies (OSATs) also own plants and equipment, but back-end lines cost far less than front-end fabs, so capex intensity is lower; advanced packaging is the most capital-hungry part of the back end.",
+          "Fabless designers outsource manufacturing, so capex is small and their big investment is R&D; IP and EDA vendors, with software-like economics, typically earn the highest gross margins in the chain."
+        ],
+        "shortcut": "Front-end fab, then back-end plant, then no plant at all.",
+        "trap": "Ranking the OSAT above the foundry because both are manufacturing services: back-end equipment costs far less per unit of revenue than front-end fabs.",
+        "rule": "Capital intensity falls from front-end manufacturing (foundry, IDM) to back-end (OSAT) to design-only models (fabless, IP, EDA)."
+      },
+      "tags": ["semiconductors", "capital-intensity", "business-model"]
+    },
+    {
+      "id": "tmt-004",
+      "skill": "fin-tmt",
+      "level": 2,
+      "type": "numeric",
+      "stem": "A foundry has capacity of 100,000 wafers a month. Its fixed manufacturing costs, mainly depreciation, are EUR 150m a month, variable costs are EUR 1,000 per wafer and the average selling price is EUR 5,000 per wafer. Its gross margin at 90% utilisation is 46.7%. What is its gross margin at 70% utilisation, in %, to one decimal place?",
+      "answer": 37.1,
+      "tolerance": 0.1,
+      "unit": "%",
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Wafers at 70%: 100,000 x 0.70 = 70,000. Revenue: 70,000 x EUR 5,000 = EUR 350m.",
+          "Cost of sales: fixed EUR 150m + variable 70,000 x EUR 1,000 = EUR 70m, so EUR 220m in total.",
+          "Gross profit: 350 - 220 = EUR 130m; gross margin = 130 / 350 = 37.1%.",
+          "At 90%, gross profit was 450 - 240 = EUR 210m: a 22% fall in volume cuts gross profit by 38%, because the fixed costs do not fall."
+        ],
+        "shortcut": "Contribution is EUR 4,000 per wafer: 70,000 x 4,000 = EUR 280m, less EUR 150m fixed = EUR 130m, on EUR 350m of revenue.",
+        "trap": "Scaling the fixed costs down with volume, which keeps the margin at 46.7%: depreciation does not fall when the fab runs below capacity.",
+        "rule": "With high fixed costs, gross margin = (units x contribution per unit - fixed costs) / revenue, so it swings with utilisation."
+      },
+      "tags": ["utilisation", "operating-leverage", "semiconductors"]
+    },
+    {
+      "id": "tmt-005",
+      "skill": "fin-tmt",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Why do analysts track design wins at a fabless chip company?",
+      "options": [
+        "Because they are booked as revenue as soon as the customer selects the chip for its product",
+        "Because they lead revenue: sales follow when the customer's product ramps, and switching is costly",
+        "Because they guarantee fixed volumes and prices for the whole life of the customer's product",
+        "Because they count how many of the company's chip designs passed manufacturing tests at the foundry"
+      ],
+      "answer": 1,
+      "timeTarget": 40,
+      "explanation": {
+        "steps": [
+          "A design win means a customer has chosen the chip for a product it is developing; revenue comes only when that product enters volume production.",
+          "The lag depends on the end market: months for consumer devices, several years for automotive and industrial products, which then stay in production for a long time.",
+          "Once designed in, the chip is sticky, because replacing it means redesign and requalification; but volumes and prices are not guaranteed."
+        ],
+        "shortcut": "Design wins today, revenue tomorrow: a leading indicator, not an order.",
+        "trap": "Treating a design win as a firm order: volumes depend on how well the customer's product sells.",
+        "rule": "Design wins are a sticky leading indicator of revenue; their value depends on the lag, the customer's volumes and the product's life."
+      },
+      "tags": ["design-wins", "semiconductor-kpis"]
+    },
+    {
+      "id": "tmt-006",
+      "skill": "fin-tmt",
+      "level": 1,
+      "type": "numeric",
+      "stem": "A chipmaker shipped 120m units last year at an average selling price (ASP) of USD 2.50. This year units grow 10% but the ASP falls 6%. What is revenue growth, in %, to one decimal place?",
+      "answer": 3.4,
+      "tolerance": 0.05,
+      "unit": "%",
+      "timeTarget": 45,
+      "explanation": {
+        "steps": [
+          "Revenue = units x ASP. Last year: 120m x USD 2.50 = USD 300.0m.",
+          "This year: 132m units (120 x 1.10) x USD 2.35 (2.50 x 0.94) = USD 310.2m.",
+          "Growth: 310.2 / 300.0 - 1 = 3.4%."
+        ],
+        "shortcut": "Multiply the growth factors: 1.10 x 0.94 = 1.034, so +3.4%.",
+        "trap": "Subtracting the percentages (10% - 6% = 4%): the changes compound, so the cross term (10% x -6% = -0.6%) matters.",
+        "rule": "Revenue growth = (1 + volume growth) x (1 + ASP growth) - 1."
+      },
+      "tags": ["asp", "volume-price", "semiconductor-kpis"]
+    },
+    {
+      "id": "tmt-007",
+      "skill": "fin-tmt",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Over three quarters, a chip supplier's book-to-bill ratio falls from 1.15 to 0.85, while its customers' inventories rise from about 90 to 140 days of cost of sales. What does this most likely signal?",
+      "options": [
+        "Accelerating demand: customers are building stock because they expect shortages ahead",
+        "Rising revenue next quarter, because the supplier is now shipping more than it books",
+        "Nothing meaningful, because book-to-bill matters only for equipment makers' order books",
+        "A downturn: orders trail shipments while customers work down excess stock"
+      ],
+      "answer": 3,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Book-to-bill = orders booked / revenue billed in the period. Above 1 the order book grows; at 0.85, orders are 15% below what is being shipped.",
+          "Inventory days = inventory / annual cost of sales x 365. Moving from about 90 to 140 days means customers hold some 50 extra days of stock, which they will use up before reordering.",
+          "Lower orders now mean lower shipments later, and fabs running below capacity hurt utilisation, margins and often pricing: the classic shape of a semiconductor downturn."
+        ],
+        "shortcut": "Book-to-bill below 1 plus bloated customer inventories = destocking = downturn.",
+        "trap": "Reading high inventories as strong demand: after a shortage customers often over-order, and the excess stock later turns into sharp order cuts.",
+        "rule": "Orders versus shipments and inventory days along the chain lead semiconductor revenue and explain why the cycle overshoots both ways."
+      },
+      "tags": ["book-to-bill", "inventory-days", "cyclicality"]
+    },
+    {
+      "id": "tmt-008",
+      "skill": "fin-tmt",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Which pairing of company and primary valuation multiple is most appropriate?",
+      "options": [
+        "Fast-growing, loss-making SaaS company: EV/Revenue or EV/Gross profit, read with growth and retention",
+        "Pre-revenue deep-tech start-up: EV/EBITDA on current-year EBITDA, using the negative figure as reported",
+        "Highly cyclical chipmaker: P/E on peak-year earnings, since that is the latest reported figure",
+        "Asset-light IP licensing company: price-to-book value, since its patents are its main asset"
+      ],
+      "answer": 0,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "A loss-making SaaS company has no meaningful earnings or EBITDA, so investors use EV/Revenue, or EV/Gross profit to adjust for margin differences, judged against growth, retention and the path to profitability.",
+          "A pre-revenue start-up has negative EBITDA, so EBITDA multiples are meaningless; it needs scenario-based, milestone or funding-round methods.",
+          "A cyclical chipmaker's peak earnings flatter its P/E, so use mid-cycle earnings. An IP licensor's value lies in internally generated IP that is mostly not on the balance sheet, so book value says little."
+        ],
+        "shortcut": "Use the deepest line of the income statement that is positive and comparable: revenue or gross profit early on, EBITDA or earnings when mature, mid-cycle earnings for cyclicals.",
+        "trap": "Applying an earnings or EBITDA multiple when the figure is negative or at a cyclical extreme: the result is meaningless or misleading.",
+        "rule": "Match the multiple to the business: revenue or gross profit for high-growth loss-makers, EBITDA or P/E for mature firms, mid-cycle earnings for cyclicals, no multiple for pre-revenue."
+      },
+      "tags": ["multiples", "valuation", "saas"]
+    },
+    {
+      "id": "tmt-009",
+      "skill": "fin-tmt",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A cyclical semiconductor company trades at 8x this year's record earnings, against a 10-year average P/E of 15x. You estimate mid-cycle (normalised) earnings at 45% below this year's level. A colleague says the stock is clearly cheap. What is the best response?",
+      "options": [
+        "Agree: at 8x the stock trades at close to half its 15x average, so it is undervalued",
+        "Disagree: on mid-cycle earnings the P/E is about 14.5x, close to the average, so the stock is not clearly cheap",
+        "Disagree: on mid-cycle earnings the P/E is about 11.6x, so the discount is real but smaller than it looks",
+        "Agree: on mid-cycle earnings the P/E is about 4.4x, an even bigger discount to the 15x average"
+      ],
+      "answer": 1,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Mid-cycle earnings = this year's earnings x (1 - 0.45) = 0.55 x this year's.",
+          "P/E on mid-cycle earnings = 8 / 0.55 = 14.5x, close to the 15x average, so the stock is not obviously cheap.",
+          "For cyclicals, the P/E tends to be lowest at the earnings peak, because the market looks through to the downturn, and highest at the trough."
+        ],
+        "shortcut": "Divide the multiple by the earnings haircut: 8 / 0.55 = 14.5x.",
+        "trap": "Multiplying instead of dividing (8 x 1.45 = 11.6x, or 8 x 0.55 = 4.4x): lower earnings at the same price mean a higher multiple.",
+        "rule": "Value cyclicals on mid-cycle earnings; a low P/E on peak earnings is a warning, not a bargain."
+      },
+      "tags": ["cyclicality", "multiples", "normalised-earnings"]
+    },
+    {
+      "id": "tmt-010",
+      "skill": "fin-tmt",
+      "level": 1,
+      "type": "mcq",
+      "stem": "Which is the best definition of annual recurring revenue (ARR) for a SaaS company?",
+      "options": [
+        "Revenue recognised over the last 12 months, including one-off implementation and consulting fees",
+        "The total value of all contracts signed in the year, including the later years of multi-year deals",
+        "Cash collected from customers in the year, including annual subscriptions invoiced in advance",
+        "The annualised value of recurring subscription contracts in force at a point in time, excluding one-off fees"
+      ],
+      "answer": 3,
+      "timeTarget": 35,
+      "explanation": {
+        "steps": [
+          "ARR is a run-rate snapshot: take the subscription contracts active at a date and annualise their recurring value, for example monthly recurring revenue x 12.",
+          "It excludes one-off items such as implementation, consulting or hardware, which do not repeat.",
+          "It differs from recognised revenue (an accounting measure over a period), from bookings or total contract value (which include future years) and from cash collected (driven by billing terms)."
+        ],
+        "shortcut": "ARR = recurring, annualised, at a point in time.",
+        "trap": "Using last-twelve-months revenue: it is a historical accounting figure that mixes in one-off fees and lags the current run-rate.",
+        "rule": "ARR measures the current recurring run-rate; it is a company-defined metric rather than an accounting one, so check each company's definition."
+      },
+      "tags": ["arr", "saas-metrics"]
+    },
+    {
+      "id": "tmt-011",
+      "skill": "fin-tmt",
+      "level": 2,
+      "type": "numeric",
+      "stem": "A SaaS company starts the year with EUR 50.0m of ARR. During the year, existing customers add EUR 8.0m through upsells and cut their contracts by EUR 2.0m, and customers with EUR 3.0m of ARR leave. New customers add EUR 10.0m of ARR. What is net revenue retention (NRR), in %?",
+      "answer": 106,
+      "tolerance": 0.5,
+      "unit": "%",
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "NRR looks only at the customers present at the start: opening ARR + expansion - contraction - churn.",
+          "50.0 + 8.0 - 2.0 - 3.0 = EUR 53.0m from the opening customer base.",
+          "NRR = 53.0 / 50.0 = 106%. The EUR 10.0m from new customers is excluded: it drives growth, not retention.",
+          "For comparison, gross revenue retention, which ignores upsells, is (50.0 - 2.0 - 3.0) / 50.0 = 90%."
+        ],
+        "shortcut": "NRR = 1 + (expansion - contraction - churn) / opening ARR = 1 + 3.0 / 50.0 = 106%.",
+        "trap": "Including new-customer ARR (63.0 / 50.0 = 126%): that is total ARR growth, not retention.",
+        "rule": "NRR = (opening ARR + expansion - contraction - churn) / opening ARR; above 100% the base grows even without new customers."
+      },
+      "tags": ["net-revenue-retention", "churn", "saas-metrics"]
+    },
+    {
+      "id": "tmt-012",
+      "skill": "fin-tmt",
+      "level": 2,
+      "type": "numeric",
+      "stem": "In a quarter, a SaaS company spends EUR 12.0m on sales and marketing and adds EUR 8.0m of new ARR. Its subscription gross margin is 75%. What is its gross-margin-adjusted CAC payback, in months?",
+      "answer": 24,
+      "tolerance": 0.5,
+      "unit": "months",
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "New ARR of EUR 8.0m is 8.0 / 12 = EUR 0.667m of new revenue per month.",
+          "Gross profit on it: 0.667 x 75% = EUR 0.50m per month.",
+          "CAC payback = sales and marketing spend / monthly gross profit from new customers = 12.0 / 0.50 = 24 months."
+        ],
+        "shortcut": "Payback in months = S&M / (new ARR x gross margin) x 12 = 12.0 / 6.0 x 12 = 24.",
+        "trap": "Ignoring the gross margin (12.0 / 0.667 = 18 months): it is gross profit, not revenue, that repays the cost of winning customers.",
+        "rule": "CAC payback (months) = S&M spend / (new ARR x gross margin / 12); the shorter the better, and well inside the expected customer lifetime."
+      },
+      "tags": ["cac-payback", "unit-economics", "saas-metrics"]
+    },
+    {
+      "id": "tmt-013",
+      "skill": "fin-tmt",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Company A's revenue grows 50% with a free cash flow margin of -15%. Company B's revenue grows 18% with a free cash flow margin of 25%. Which statement about the rule of 40 is correct?",
+      "options": [
+        "A passes and B fails, because A's revenue growth alone is above 40%",
+        "B passes with a score of 43, while A fails with a score of 35",
+        "Both pass, because the rule needs either growth or margin above 40% for a pass",
+        "A passes with a score of 65, because the negative margin is added back"
+      ],
+      "answer": 1,
+      "timeTarget": 50,
+      "explanation": {
+        "steps": [
+          "Rule of 40 score = revenue growth % + profit margin % (commonly the free cash flow or EBITDA margin); 40 or more is a pass.",
+          "A: 50 + (-15) = 35, below 40. B: 18 + 25 = 43, above 40.",
+          "B passes despite growing far more slowly, because it pairs growth with strong cash generation; A's growth is bought with heavy losses."
+        ],
+        "shortcut": "Add growth and margin, keeping the sign of the margin: 50 - 15 = 35; 18 + 25 = 43.",
+        "trap": "Judging on growth alone: the rule balances growth against profitability, so A's negative margin counts against it.",
+        "rule": "Rule of 40: growth % + margin % of at least 40 is a quick health screen for software companies, not a valuation method."
+      },
+      "tags": ["rule-of-40", "saas-metrics"]
+    },
+    {
+      "id": "tmt-014",
+      "skill": "fin-tmt",
+      "level": 2,
+      "type": "numeric",
+      "stem": "A SaaS company loses 2% of its customers every month (logo churn) and adds no new customers. What share of the customers it had at the start of the year has it lost by the end of the year, in %, to one decimal place?",
+      "answer": 21.5,
+      "tolerance": 0.2,
+      "unit": "%",
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Each month 98% of the remaining customers stay, so after 12 months the share retained is 0.98^12.",
+          "0.98^12 = 0.785, so 78.5% of the customers remain.",
+          "Annual churn = 1 - 0.785 = 21.5%."
+        ],
+        "shortcut": "For small rates, annual churn is a little below 12 x the monthly rate: 24% less the compounding effect, about 21.5%.",
+        "trap": "Multiplying by 12 (2% x 12 = 24%): each month's churn applies to a shrinking base, so the losses compound downwards.",
+        "rule": "Annual churn = 1 - (1 - monthly churn)^12; average customer lifetime is roughly 1 / monthly churn (here 1 / 2% = 50 months)."
+      },
+      "tags": ["churn", "compounding", "saas-metrics"]
+    },
+    {
+      "id": "tmt-015",
+      "skill": "fin-tmt",
+      "level": 2,
+      "type": "mcq",
+      "stem": "Two software companies each have an enterprise value of EUR 1,200m. Company A has revenue of EUR 300m at an 80% gross margin. Company B has revenue of EUR 400m at a 45% gross margin, because much of its revenue is hardware resale and services. Which company is cheaper on the more like-for-like multiple?",
+      "options": [
+        "B: it trades at 3.0x revenue against 4.0x for A",
+        "Neither: equal enterprise values mean equal valuations",
+        "A: it trades at 5.0x gross profit against 6.7x for B",
+        "A: it trades at 4.0x revenue against 6.7x gross profit for B"
+      ],
+      "answer": 2,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "EV/Revenue: A = 1,200 / 300 = 4.0x; B = 1,200 / 400 = 3.0x, so B looks cheaper.",
+          "Gross profit: A = 300 x 80% = EUR 240m; B = 400 x 45% = EUR 180m.",
+          "EV/Gross profit: A = 1,200 / 240 = 5.0x; B = 1,200 / 180 = 6.7x. Adjusted for B's low-margin revenue, A is the cheaper company."
+        ],
+        "shortcut": "EV/Gross profit = EV/Revenue / gross margin: A = 4.0 / 0.80 = 5.0x; B = 3.0 / 0.45 = 6.7x.",
+        "trap": "Comparing EV/Revenue across very different revenue mixes: a euro of hardware resale is worth far less than a euro of software subscription.",
+        "rule": "When gross margins differ, compare companies on EV/Gross profit rather than EV/Revenue."
+      },
+      "tags": ["ev-revenue", "ev-gross-profit", "multiples"]
+    },
+    {
+      "id": "tmt-016",
+      "skill": "fin-tmt",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A large chip company pays a high EV/Revenue multiple for a small, loss-making start-up with a promising AI accelerator design and a strong engineering team. Which rationale best justifies the price?",
+      "options": [
+        "Buy versus build: it gets the technology and scarce engineers years sooner and can sell through its own channels",
+        "Cost synergies from closing the start-up's offices and merging its teams into the acquirer will repay the premium within a year",
+        "The start-up's current earnings justify the price at a normal sector P/E, so no real premium is being paid",
+        "The goodwill created will increase the acquirer's equity and so raise its reported return on equity"
+      ],
+      "answer": 0,
+      "timeTarget": 50,
+      "explanation": {
+        "steps": [
+          "Early-stage tech deals are usually about buy versus build: time to market, intellectual property and scarce talent that would take years to replicate internally.",
+          "The acquirer can push the product through its existing sales channels and customer relationships, so revenue synergies, not cost cuts, drive the value.",
+          "The target is loss-making, so earnings cannot justify the price, and cutting costs risks losing the team; goodwill is simply the accounting result of paying more than the fair value of identifiable net assets, not a source of value."
+        ],
+        "shortcut": "Small, loss-making tech target at a high multiple: the case rests on time to market, talent and revenue synergies.",
+        "trap": "Defending the price with cost synergies: cutting the start-up's costs risks losing the engineers who are the reason for the deal.",
+        "rule": "Price strategic tech deals on what the asset is worth inside the acquirer (speed, IP, talent, cross-selling), net of integration and retention risk."
+      },
+      "tags": ["tech-ma", "strategic-rationale", "synergies"]
+    },
+    {
+      "id": "tmt-017",
+      "skill": "fin-tmt",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A foreign buyer plans to acquire a 25% stake, with a board seat and access to technical information, in a small domestic company that designs specialised chips. The deal is far below merger-control turnover thresholds. Which statement is most accurate?",
+      "options": [
+        "It may still face foreign-investment screening, which looks at sensitive technology and the buyer's identity and can catch minority stakes",
+        "No regulatory review is possible, because the merger-control turnover thresholds are not met",
+        "Only the competition authority can review it, and only if the parties' combined market share is high",
+        "It cannot be reviewed by any authority, because a 25% minority stake does not confer control"
+      ],
+      "answer": 0,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "Merger control asks whether a deal harms competition and is usually triggered by turnover thresholds; foreign-investment screening asks whether it threatens national security or public order.",
+          "Screening regimes typically focus on sensitive sectors such as semiconductors, AI, defence-related technology and critical infrastructure, and on who the buyer is and who controls it.",
+          "Many regimes catch minority stakes and targets with little or no turnover, especially when the buyer gains board seats, information rights or access to sensitive technology.",
+          "So the deal may need a filing and could be cleared only with conditions, which affects timing, conditions precedent and deal certainty."
+        ],
+        "shortcut": "Sensitive technology + foreign buyer + influence (board seat, know-how) = think foreign-investment screening, whatever the deal size.",
+        "trap": "Assuming that falling below merger-control thresholds means no approval is needed: foreign-investment screening uses different tests and can apply to small deals.",
+        "rule": "Check merger control and foreign-investment screening separately: one tests competition, the other national security, with different triggers."
+      },
+      "tags": ["fdi-screening", "regulatory-risk", "semiconductors"]
+    },
+    {
+      "id": "tmt-018",
+      "skill": "fin-tmt",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A buyer is acquiring a company whose chip design software and technical data are subject to export controls. After closing, the buyer wants engineers in several countries to work on the target's technology. Which approach best handles the export-control risk?",
+      "options": [
+        "Classify the products and technology, review licences and compliance history, check whether access by staff abroad needs new licences, and reflect this in the SPA and integration plan",
+        "Rely on the seller's general warranty of compliance with laws, since export controls rarely affect value or timing",
+        "Ignore export controls, because they apply only to physical goods shipped across borders, not to software or data",
+        "Leave export controls until after closing, because they matter only for the competition filings"
+      ],
+      "answer": 0,
+      "timeTarget": 75,
+      "explanation": {
+        "steps": [
+          "Export controls can restrict where products, software and technology go and who may receive them, including transfers to foreign nationals or foreign affiliates, not just physical shipments.",
+          "Diligence should classify what the target sells and develops, map its customers and end uses, and check the licences it holds and any past breaches or voluntary disclosures.",
+          "Integration matters too: giving the buyer's engineers abroad access to controlled technology may itself need licences, which can delay or limit the planned synergies.",
+          "Findings feed into the valuation and the SPA: specific indemnities, conditions or remediation before closing and, in serious cases, ring-fencing the restricted business."
+        ],
+        "shortcut": "Ask four questions: what is it, where does it go, who can see it, and does the deal or the integration change any of that?",
+        "trap": "Relying on a general compliance warranty: past breaches can bring fines and loss of export privileges, and a warranty does not provide the licences the buyer needs after closing.",
+        "rule": "Export controls are a value and timing risk in tech deals: diligence classification, licences and compliance history, and plan the integration around them."
+      },
+      "tags": ["export-controls", "due-diligence", "regulatory-risk"]
+    },
+    {
+      "id": "tmt-019",
+      "skill": "fin-tmt",
+      "level": 3,
+      "type": "mcq",
+      "stem": "A pre-revenue deep-tech company estimates it will be worth EUR 800m in 5 years if its technology works and is commercialised, and close to nothing otherwise. You put the probability of success at 25% and use a 15% discount rate for time value and market risk. What is a reasonable risk-adjusted value today?",
+      "options": ["About EUR 398m", "About EUR 200m", "About EUR 99m", "About EUR 114m"],
+      "answer": 2,
+      "timeTarget": 90,
+      "explanation": {
+        "steps": [
+          "Probability-weighted value in 5 years: 25% x EUR 800m + 75% x 0 = EUR 200m.",
+          "Discount factor: 1.15^5 = 2.011.",
+          "Value today: 200 / 2.011 = about EUR 99m.",
+          "Failure risk is already in the probability, so the discount rate covers only time value and market risk; a venture-style hurdle rate already prices failure, so using one here would count that risk twice.",
+          "Cross-check with recent funding rounds and comparable transactions, since multiples of current revenue or EBITDA are meaningless here."
+        ],
+        "shortcut": "Expected value first, then discount: 800 x 0.25 / 2.01 = about EUR 99m.",
+        "trap": "Discounting the success value without weighting it by the probability (about EUR 398m): for a pre-revenue business, the chance of failure is the biggest value driver.",
+        "rule": "Value pre-revenue deep tech with probability-weighted scenarios at a market discount rate, or with a venture hurdle rate on the success case, but never both."
+      },
+      "tags": ["deep-tech", "risk-adjusted-valuation", "probability-weighting"]
+    },
+    {
+      "id": "tmt-020",
+      "skill": "fin-tmt",
+      "level": 2,
+      "type": "mcq",
+      "stem": "A buyer is acquiring a software division that is being carved out of a large technology group. Which issue is most specific to a carve-out and should shape the valuation?",
+      "options": [
+        "The division's EBITDA in group reporting already shows what it would cost to run on its own",
+        "The division should be valued at the parent's trading multiple, as it benefits from the group's scale, brand and customers",
+        "Its reliance on the parent's shared services, systems and contracts, which means standalone costs and a TSA must be priced in",
+        "The main risk is squeezing out the division's minority shareholders after closing"
+      ],
+      "answer": 2,
+      "timeTarget": 60,
+      "explanation": {
+        "steps": [
+          "A division inside a group usually relies on shared functions (finance, HR, IT, data centres, procurement) and may share customer contracts, IP and staff with other divisions.",
+          "Its reported figures rest on cost allocations that rarely match what a standalone business would pay, so EBITDA must be adjusted for recurring standalone costs (dis-synergies).",
+          "The buyer also budgets one-off separation costs (new systems, data migration, re-papering contracts, IP licences) and agrees a transitional services agreement (TSA) under which the seller keeps providing services for a period.",
+          "All of this feeds into the price: paying a full multiple on allocated EBITDA overstates what the buyer is getting."
+        ],
+        "shortcut": "Carve-out = standalone costs, separation costs, a TSA and untangling people, IP, contracts and systems.",
+        "trap": "Taking the division's internally reported EBITDA at face value: group allocations rarely match the true standalone cost base.",
+        "rule": "In a carve-out, value the business as it will run on its own: adjust EBITDA for standalone costs, budget separation costs and secure a TSA."
+      },
+      "tags": ["carve-out", "standalone-costs", "tsa"]
+    }
+  ]
+}

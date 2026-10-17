@@ -37,9 +37,15 @@ export const MOCKS = [
   },
   {
     id: 'tech', title: 'Technical interview (IB analyst)', tag: 'Interview', minutes: 25, passMark: 0.75,
-    desc: '20 technical questions: accounting, valuation, M&A, LBO, markets. First-round pace.',
-    sections: [{ skill: 'fin-acc', n: 4 }, { skill: 'fin-val', n: 6 }, { skill: 'fin-ma', n: 4 }, { skill: 'fin-lbo', n: 3 }, { skill: 'markets', n: 3 }],
+    desc: '24 technical questions: accounting, valuation, M&A, LBO, capital markets, markets. First-round pace.',
+    sections: [{ skill: 'fin-acc', n: 5 }, { skill: 'fin-val', n: 6 }, { skill: 'fin-ma', n: 5 }, { skill: 'fin-lbo', n: 3 }, { skill: 'fin-ecm', n: 3 }, { skill: 'markets', n: 2 }],
     timeLimit: 25 * 60, single: true,
+  },
+  {
+    id: 'tmt', title: 'TMT banker round (superday)', tag: 'Interview', minutes: 35, passMark: 0.75,
+    desc: '30 questions as a technology team would ask them: valuation of tech and semiconductor businesses, M&A mechanics, capital markets, accounting.',
+    sections: [{ skill: 'fin-tmt', n: 8, name: 'Tech & semiconductors' }, { skill: 'fin-val', n: 7, name: 'Valuation' }, { skill: 'fin-ma', n: 7, name: 'M&A' }, { skill: 'fin-ecm', n: 4, name: 'Capital markets' }, { skill: 'fin-acc', n: 4, name: 'Accounting' }],
+    timeLimit: 35 * 60, single: true,
   },
   {
     id: 'video', title: 'Video interview (HireVue / Cappfinity)', tag: 'Interview', minutes: 15, video: true,
